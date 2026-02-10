@@ -79,7 +79,7 @@ global $product;
         
         
         <div class="feature">
-      <img src="https://noriks.com/hr/wp-content/uploads/2025/07/footer_icon1-1.png" alt="Shirt Icon" class="feature__icon info-icon">
+      <img src="https://noriks.com/ro/wp-content/uploads/2025/07/footer_icon1-1.png" alt="Shirt Icon" class="feature__icon info-icon">
           <p class="feature__text">Încercați 30 de zile, fără risc</p>
         </div>
         
@@ -89,7 +89,7 @@ global $product;
         <div class="feature">
      
        
-        <img src="https://noriks.com/hr/wp-content/uploads/2025/07/footer_icon3-1.png" alt="Shipping Icon" class="feature__icon info-icon">
+        <img src="https://noriks.com/ro/wp-content/uploads/2025/07/footer_icon3-1.png" alt="Shipping Icon" class="feature__icon info-icon">
           <p class="feature__text">Livrare gratuită pentru comenzi peste 150 lei</p>
         </div>
 
@@ -439,7 +439,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'sady', 'orto-starter', 'ort
         
         
         
-              Τα premium μπλουζάκια μας είναι κατασκευασμένα από πρωτοκλασάτο μείγμα 60% βαμβακιού ring-spun και 40% πολυεστέρα, που εξασφαλίζει εξαιρετικά απαλό ύφασμα ανθεκτικό στις τσαλάκωσες.
+              Tricourile noastre premium sunt fabricate dintr-un amestec de primă clasă de 60% bumbac ring-spun și 40% poliester, care asigură un material excepțional de moale și rezistent la șifonare.
 <br><br>
 Τα μποξεράκια NORIKS είναι κατασκευασμένα από πρωτοκλασάτο μείγμα 95% modal και 5% ελαστάνης, που εξασφαλίζει εξαιρετικά απαλό και ελαστικό ύφασμα που προσαρμόζεται τέλεια στο σώμα. Το ελαστικό λάστιχο είναι σχεδιασμένο για βέλτιστη εφαρμογή, παρέχοντας άνεση χωρίς σφίξιμο και τέλεια εμφάνιση κάτω από τα ρούχα.
 <br>
@@ -535,7 +535,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'sady', 'orto-starter', 'ort
       </div>
     <div class="accordion-content">
   <p></p>
-  Πιστεύουμε τόσο πολύ ότι θα σας αρέσει το NORIKS, που έχετε <b data-stringify-type="bold">30 ημέρες</b> για επιστροφή ή δωρεάν ανταλλαγή.
+  Credem atât de mult că vă va plăcea NORIKS încât aveți <b data-stringify-type="bold">30 de zile</b> pentru returnare sau schimb gratuit.
   Χωρίς γραφειοκρατία, χωρίς άγχος – το λύνουμε με λίγα κλικ.
   </p>
 
@@ -549,7 +549,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'sady', 'orto-starter', 'ort
   </p>
 
   <p>
-    Απλώς στείλτε μας email ότι θέλετε ανταλλαγή και <b data-stringify-type="bold">τα κανονίζουμε αμέσως.</b>
+    Pur și simplu trimiteți-ne un email că doriți un schimb și <b data-stringify-type="bold">îl aranjăm imediat.</b>
   </p>
 </div>
 

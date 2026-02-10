@@ -53,7 +53,7 @@ PROČ LIDÉ VOLÍ STARTOVACÍ BALÍČEK?
 
 
 </strong><span style="font-weight:normal;">Γιώργος - Αθήνα</span></p>
-        <p class="description">Το μπλουζάκι και τα μποξεράκια είναι μαλακά, ελαφριά και ευχάριστα στο δέρμα. Το πακέτο εκκίνησης είναι ο πιο συχνός λόγος που το NORIKS γίνεται γρήγορα μέρος της καθημερινής γκαρνταρόμπας.
+        <p class="description">Tricoul și boxerii sunt moi, ușori și plăcuți pe piele. Pachetul de start este cel mai frecvent motiv pentru care NORIKS devine rapid parte din garderoba zilnică.
 
 
 
@@ -88,7 +88,7 @@ PROČ LIDÉ VOLÍ STARTOVACÍ BALÍČEK?
 
 
 </strong></p>
-        <p class="description">Το μπλουζάκι και τα μποξεράκια είναι φτιαγμένα για φόρεμα από το πρωί μέχρι το βράδυ, χωρίς ρυθμίσεις και δυσφορία. Όλα μένουν στη θέση τους, δεν σφίγγουν και επιτρέπουν ελεύθερη κίνηση όλη μέρα.
+        <p class="description">Tricoul și boxerii sunt făcuți să fie purtați de dimineață până seara, fără ajustări și disconfort. Totul rămâne la locul său, nu strânge și permite mișcare liberă toată ziua.
 
 
 </p>
@@ -99,7 +99,7 @@ PROČ LIDÉ VOLÍ STARTOVACÍ BALÍČEK?
 
 
 </strong></p>
-        <p class="description">Η εφαρμογή του μπλουζακιού αναδεικνύει το πάνω μέρος του σώματος, ενώ τα μποξεράκια παρέχουν αρκετό χώρο και σταθερότητα χωρίς να ανεβαίνουν. Το αποτέλεσμα είναι μια σίγουρη, χαλαρή αίσθηση και περιποιημένη εμφάνιση σε κάθε περίσταση.
+        <p class="description">Croiala tricoului evidențiază partea superioară a corpului, în timp ce boxerii oferă suficient spațiu și stabilitate fără să se ridice. Rezultatul este o senzație sigură, relaxată și un aspect îngrijit pentru orice ocazie.
 
 </p>
       </div>
@@ -145,7 +145,7 @@ CEL MAI UȘOR ȘI SIGUR ÎNCEPUT
 
 
 </strong></p>
-        <p class="description">Γιατί σας επιτρέπει να γνωρίσετε την ποιότητα χωρίς μεγάλη επένδυση. Αντί να αγοράσετε πολλά κομμάτια εκ των προτέρων, παίρνετε ένα μπλουζάκι και ένα μποξεράκι - ακριβώς αρκετά για να δείτε πώς εφαρμόζουν, πώς φοριούνται και ποιο είναι το υλικό.
+        <p class="description">Pentru că vă permite să cunoașteți calitatea fără o investiție mare. În loc să cumpărați multe articole în avans, primiți un tricou și un boxer - exact suficient pentru a vedea cum se potrivesc, cum se poartă și care este materialul.
 
 </p>
       </div>
@@ -155,7 +155,7 @@ CEL MAI UȘOR ȘI SIGUR ÎNCEPUT
 
 
 </strong></p>
-        <p class="description">Το πακέτο εκκίνησης δημιουργήθηκε ως πρώτη εμπειρία, όχι ως απόθεμα. Είναι διαθέσιμο μόνο μία φορά ανά πελάτη σε ειδική τιμή, ώστε η απόφαση να είναι απλή και χωρίς δεύτερη σκέψη.
+        <p class="description">Pachetul de start a fost creat ca o primă experiență, nu ca stoc. Este disponibil doar o singură dată per client la un preț special, astfel încât decizia să fie simplă și fără ezitare.
 
 
 </p>
@@ -166,7 +166,7 @@ CEL MAI UȘOR ȘI SIGUR ÎNCEPUT
 
 
 </strong></p>
-        <p class="description">Οι περισσότεροι άνδρες μένουν στη NORIKS γιατί αναγνωρίζουν τη διαφορά στην εφαρμογή, την άνεση και την ποιότητα. Αλλά το πρώτο βήμα είναι ακριβώς αυτό - ελάχιστο ρίσκο, καθαρή εντύπωση.
+        <p class="description">Majoritatea bărbaților rămân cu NORIKS pentru că recunosc diferența în croială, confort și calitate. Dar primul pas este exact acesta - risc minim, impresie clară.
 </p>
       </div>
     </div>
@@ -304,7 +304,7 @@ if (  has_term( array( 'tricka', 'orto-majice', 'mplouzoakia', 't-shirts', 'blou
       <div class="video-wrapper">
           <img style="width: 100%;
     aspect-ratio: 1/1;
-    object-fit: cover;  " src="/hr/wp-content/themes/noriks/img/majice-3 (1).jpeg">
+    object-fit: cover;  " src="/ro/wp-content/themes/noriks/img/majice-3 (1).jpeg">
       </div>
     </div>
 
@@ -393,7 +393,7 @@ endif;
 
     <!-- Left Video -->
     <div class="why-col">
-       <img src="/hr/wp-content/uploads/2025/12/recreate_without_photo_equipment_98300wkq98yf4jbkroa5.jpg">
+       <img src="/ro/wp-content/uploads/2025/12/recreate_without_photo_equipment_98300wkq98yf4jbkroa5.jpg">
     </div>
 
     <!-- Right Content -->
@@ -403,7 +403,7 @@ endif;
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Άνεση όλη μέρα
+        <p><strong>Confort toată ziua
 </strong></p>
         <p class="description">Ειδικά σχεδιασμένα για άνδρες με πιο γεμάτους μηρούς. Το ελαστικό και εύκαμπτο υλικό παρέχει μέγιστη άνεση χωρίς σφίξιμο ή δυσάρεστη πίεση στη μέση. Το εσώρουχο μένει στη θέση του και δεν ανεβαίνει, ώστε να κινείστε ελεύθερα όλη μέρα.</p>
       </div>
@@ -479,7 +479,7 @@ endif;
     <div class="why-col">
        <img style="width: 100%;
     aspect-ratio: 1/1;
-    object-fit: cover;  " src="/hr/wp-content/uploads/2025/12/create_same_style_studio_photo_with_younger_guy_30_years_normal_look_and_croatian_can_look_midldle__e99c86vy07c57mjd38f6.jpg">
+    object-fit: cover;  " src="/ro/wp-content/uploads/2025/12/create_same_style_studio_photo_with_younger_guy_30_years_normal_look_and_croatian_can_look_midldle__e99c86vy07c57mjd38f6.jpg">
     </div>
 
     <!-- Right Content -->
