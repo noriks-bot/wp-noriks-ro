@@ -27,7 +27,7 @@ PROČ LIDÉ VOLÍ STARTOVACÍ BALÍČEK?
 
 
 </strong><span style="font-weight:normal;">Marko - Zagreb</span></p>
-        <p class="description">Mnoho zákazníků začíná se startovacím balíčkem, protože si chtějí nejdřív ověřit, jak NORIKS sedí a jak se nosí. Jedno tričko a jedny boxerky stačí k rozhodnutí bez velké investice.
+        <p class="description">Mulți clienți încep cu pachetul de start, deoarece vor să verifice mai întâi cum se potrivește și se poartă NORIKS. Un tricou și un boxer sunt suficiente pentru a lua o decizie fără o investiție mare.
 
 
 
@@ -36,12 +36,12 @@ PROČ LIDÉ VOLÍ STARTOVACÍ BALÍČEK?
 
       <div style="margin-left: 20px;" class="why-point">
         <p  style="    font-style: italic;
-    line-height: 1.2;" ><strong>"Po prvním nošení jsem si hned objednal další."
+    line-height: 1.2;" ><strong>"După prima purtare, am comandat imediat mai multe.""
 
 
 
 </strong><span style="font-weight:normal;">Pavle - Split</span></p>
-        <p class="description">Více než 95 % zákazníků si po startovacím balíčku objedná znovu. Ne proto, že by to plánovali, ale protože už první den cítí rozdíl ve střihu, pohodlí a kvalitě.
+        <p class="description">Mai mult de 95% dintre clienți comandă din nou după pachetul de start. Nu pentru că ar fi planificat, ci pentru că simt diferența în croială, confort și calitate încă din prima zi.
 
 </p>
       </div>
@@ -109,7 +109,7 @@ PROČ LIDÉ VOLÍ STARTOVACÍ BALÍČEK?
 
 
 </strong></p>
-        <p class="description">Materiály jsou měkké, prodyšné a příjemné na pokožce, aniž by po praní ztrácely tvar. Už při prvním nošení je jasné, proč se tato kombinace rychle stává součástí každodenního šatníku.
+        <p class="description">Materialele sunt moi, respirabile și plăcute pe piele, fără să își piardă forma după spălare. Încă de la prima purtare este clar de ce această combinație devine rapid parte din garderoba zilnică.
 
 
 </p>
@@ -317,21 +317,21 @@ if (  has_term( array( 'tricka', 'orto-majice', 'mplouzoakia', 't-shirts', 'blou
       <div style="margin-left: 20px;" class="why-point">
         <p><strong>Navrženo pro skutečný život
 </strong></p>
-        <p class="description">Toto tričko je určené pro celodenní nošení - od rána do večera. Nevyžaduje žádné upravování ani přemýšlení, jednoduše dobře sedí v každé situaci.
+        <p class="description">Acest tricou este conceput pentru purtare toată ziua - de dimineață până seara. Nu necesită ajustări sau gândire, pur și simplu se potrivește bine în orice situație.
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Střih, který rozumí tělu
+        <p><strong>O croială care înțelege corpul
 </strong></p>
-        <p class="description">Střih byl vyvíjen tak, aby kopíroval linii těla bez stahování a zvýraznil to správné. Výsledkem je upravený, sebevědomý vzhled bez pocitu nepohodlí.
+        <p class="description">Croiala a fost dezvoltată pentru a urma linia corpului fără să strângă și să evidențieze zonele potrivite. Rezultatul este un aspect îngrijit, încrezător, fără senzație de disconfort.
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
         <p><strong>Rozdíl poznáš už při prvním obléknutí
 </strong></p>
-        <p class="description">Materiál je na pokožce měkký, lehký a prodyšný. Už po prvním nošení je jasné, proč se toto tričko rychle stane tím, po kterém saháš nejčastěji.
+        <p class="description">Materialul este moale, ușor și respirabil pe piele. După prima purtare este clar de ce acest tricou devine rapid cel la care ajungi cel mai des.
 </p>
       </div>
     </div>

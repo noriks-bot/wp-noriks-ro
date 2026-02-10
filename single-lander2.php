@@ -345,7 +345,7 @@ get_header();
                   </h3>
                   <div class="rte">
                     <p style="color: #303030;">
-                      <strong>Napisao Ivan Horvat • Zadnje ažurirano: 10. listopada 2025</strong>
+                      <strong>Scris de Ivan Horvat • Ultima actualizare: 10 octombrie 2025</strong>
                     </p>
                   </div>
                 </div>
@@ -404,7 +404,7 @@ get_header();
                   <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#2e2a39"> Lenjeria ta ar putea afecta serios sănătatea ta chiar acum</h2>
                   <div class="image-with-text__text rte body">
                     <p>Dacă porți în prezent boxeri din bumbac sau alți boxeri obișnuiți, citește cu atenție informațiile de pe această pagină.</p>
-                    <p>Ako još uvijek nosiš tradicionalni pamuk ili, još gore, sintetičko rublje od poliestera, riskiraš ozbiljne zdravstvene probleme.</p>
+                    <p>Dacă încă porți bumbac tradițional sau, și mai rău, lenjerie sintetică din poliester, riști probleme serioase de sănătate.</p>
                   </div>
                   <a href="https://noriks.com/ro/product-category/boxers/" class="button button--primary"> Verifică disponibilitatea </a>
                 </div>
@@ -427,12 +427,12 @@ get_header();
               <div style="width: 50%;" class="image-with-text__text-item grid__item">
                 <div class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt content-container color-scheme-template--19454951555210__multirow_Rmp8Af color-custom gradient">
                   <p class="image-with-text__text image-with-text__text--caption caption-with-letter-spacing caption-with-letter-spacing--medium"></p>
-                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#2e2a39"> Strašna istina: Što tvoje donje rublje radi tvom tijelu</h2>
+                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#2e2a39"> Adevărul înfricoșător: Ce face lenjeria ta corpului tău</h2>
                   <div class="image-with-text__text rte body">
                     <p>
-                      <strong>1) Zadržavanje topline = Savršeno tlo za bakterije i gljivice</strong>
+                      <strong>1) Retenția căldurii = Teren perfect pentru bacterii și ciuperci</strong>
                     </p>
-                    <p>Tvoje preponsko područje je već toplo i vlažno. Tradicionalne tkanine zadržavaju toplinu i vlagu, stvarajući idealno okruženje za razvoj bakterija i gljivica. Ovo nakupljanje topline može smanjiti proizvodnju sperme i potaknuti prekomjerni rast mikroorganizama.</p>
+                    <p>Zona inghinală este deja caldă și umedă. Țesăturile tradiționale rețin căldura și umezeala, creând mediul ideal pentru dezvoltarea bacteriilor și ciupercilor. Această acumulare de căldură poate reduce producția de spermă și poate stimula creșterea excesivă a microorganismelor.</p>
                   </div>
                   <a href="https://noriks.com/ro/product-category/boxers/" class="button button--primary"> Verifică disponibilitatea </a>
                 </div>
@@ -457,16 +457,16 @@ get_header();
               <div style="width: 50%;" class="image-with-text__text-item grid__item">
                 <div class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt content-container color-scheme-template--19454951555210__multirow_Rmp8Af color-custom gradient">
                   <p class="image-with-text__text image-with-text__text--caption caption-with-letter-spacing caption-with-letter-spacing--medium"></p>
-                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#2e2a39">Trenje i loša ventilacija = Oštećenja kože i rizik od infekcija </h2>
+                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#2e2a39">Fricțiune și ventilație slabă = Deteriorarea pielii și risc de infecții </h2>
                   <div class="image-with-text__text rte body">
                     <p>
-                      <strong>2) Trenje i iritacija:</strong>Gruba vlakna mogu s vremenom uzrokovati mikrooštećenja i iritacije.
+                      <strong>2) Fricțiune și iritație:</strong>Fibrele grosolane pot provoca în timp microdeterioare și iritații.
                     </p>
                     <p>
-                      <strong>3) Slaba ventilacija:</strong> Vruće i vlažno okruženje povećava rizik od osipa, infekcija mokraćnog sustava i gljivičnih infekcija.
+                      <strong>3) Ventilație slabă:</strong> Mediul cald și umed crește riscul de iritații, infecții urinare și infecții fungice.
                     </p>
                     <p>
-                      <em>Bokserice NORIKS s ventilacijom i ultra mekim modal-om pomažu da koža ostane hladna, suha i zaštićena.</em>
+                      <em>Boxerii NORIKS cu ventilație și modal ultra moale ajută pielea să rămână răcoroasă, uscată și protejată.</em>
                     </p>
                   </div>
                   <a href="https://noriks.com/ro/product-category/boxers/" class="button button--primary"> Verifică disponibilitatea </a>
@@ -549,19 +549,19 @@ get_header();
    <details>
   <summary>Prije i poslije: Što se mijenja s NORIKS-om?</summary>
   <div class="content">
-    <p><strong>Prije:</strong> Crvena, iziritirana koža; uporni mirisi; ponavljajuće gljivične/bakterijske infekcije; bolni osipi.</p>
+    <p><strong>Înainte:</strong> Piele roșie, iritată; mirosuri persistente; infecții fungice/bacteriene recurente; iritații dureroase.</p>
     <p><strong>După:</strong> Piele sănătoasă fără iritații; rezistență naturală la mirosuri; risc mai mic de infecții; confort și respirabilitate excepționale.</p>
   </div>
 </details>
 
 <details>
-  <summary>Zašto je NORIKS jedan od najsigurnijih izbora</summary>
+  <summary>De ce NORIKS este una dintre cele mai sigure alegeri</summary>
   <div class="content">
     <ul>
-      <li><strong>Prirodna antimikrobna zaštita:</strong> bioagenti modala pomažu u borbi protiv bakterija i gljivica.</li>
-      <li><strong>Izvrsna prozračnost:</strong> napredan protok zraka pomaže održavati kožu suhom i hladnom.</li>
-      <li><strong>Iznimna mekoća:</strong> glađa i tanja vlakna smanjuju trenje.</li>
-      <li><strong>Reglarea temperaturii:</strong> podržava zdravo temperaturno okruženje.</li>
+      <li><strong>Protecție antimicrobiană naturală:</strong> bioagenții modalului ajută în lupta împotriva bacteriilor și ciupercilor.</li>
+      <li><strong>Respirabilitate excelentă:</strong> fluxul avansat de aer ajută la menținerea pielii uscate și răcoroase.</li>
+      <li><strong>Moliciune excepțională:</strong> fibrele mai netede și mai subțiri reduc fricțiunea.</li>
+      <li><strong>Reglarea temperaturii:</strong> susține un mediu de temperatură sănătos.</li>
     </ul>
   </div>
 </details>
@@ -635,9 +635,9 @@ get_header();
               <div style="width: 50%;" class="image-with-text__text-item grid__item">
                 <div class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt content-container color-scheme-template--19454951555210__multirow_BXHadv color-custom gradient">
                   <p class="image-with-text__text image-with-text__text--caption caption-with-letter-spacing caption-with-letter-spacing--medium"></p>
-                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#121212"> 1) Zadržavanje topline = Savršeno tlo za bakterije i gljivice </h2>
+                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#121212"> 1) Retenția căldurii = Teren perfect pentru bacterii și ciuperci </h2>
                   <div class="image-with-text__text rte body">
-                    <p>Preponsko područje je već toplo i vlažno. Tradicionalni pamuk i poliester zadržavaju toplinu i vlagu — upravo ono što bakterije i gljivice trebaju za razmnožavanje.</p>
+                    <p>Zona inghinală este deja caldă și umedă. Bumbacul și poliesterul tradițional rețin căldura și umezeala — exact ceea ce au nevoie bacteriile și ciupercile pentru a se înmulți.</p>
                     <p>Acumularea de căldură poate reduce producția de spermă și poate afecta negativ sănătatea reproductivă masculină.</p>
                   </div>
                   <a href="https://noriks.com/ro/product-category/boxers/" class="button button--primary"> Cumpără NORIKS </a>
@@ -663,15 +663,15 @@ get_header();
                   <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#121212"> Posljedice zarobljene topline i vlage </h2>
                   <div class="image-with-text__text rte body">
                     <p>
-                      <strong>-Infekcije mokraćnog sustava (UTI):</strong> Uzrokovane bakterijama koje se množe u toplom, vlažnom okruženju. Muškarci sa slabijom higijenom ili uskim, nezračnim rubljem u većem su riziku.
+                      <strong>-Infecții ale tractului urinar (ITU):</strong> Cauzate de bacterii care se înmulțesc în medii calde și umede. Bărbații cu igienă slabă sau lenjerie strâmtă, nerespirantă sunt expuși unui risc mai mare.
                     </p>
                     <p>
                       <br>
-                      <strong>-Gljivične infekcije:</strong> Prekomjeran rast gljivica uzrokuje svrbež, peckanje i nelagodu. <br>
+                      <strong>-Infecții fungice:</strong> Creșterea excesivă a ciupercilor provoacă mâncărime, usturime și disconfort. <br>
                     </p>
                     <p>
                       <br>
-                      <strong>-Toplinski osip (miliaria):</strong> Začepljeni kanalići znojnih žlijezda stvaraju bolne, svrbeće izbočine koje se mogu inficirati ako se češu.
+                      <strong>-Iritație termică (miliaria):</strong> Canalele blocate ale glandelor sudoripare creează umflături dureroase, cu mâncărime, care se pot infecta dacă sunt scărpinate.
                     </p>
                   </div>
                   <a href="https://noriks.com/ro/product-category/boxers/" class="button button--primary"> Verifică disponibilitatea </a>
@@ -694,14 +694,14 @@ get_header();
               <div style="width: 50%;" class="image-with-text__text-item grid__item">
                 <div class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt content-container color-scheme-template--19454951555210__multirow_BXHadv color-custom gradient">
                   <p class="image-with-text__text image-with-text__text--caption caption-with-letter-spacing caption-with-letter-spacing--medium"></p>
-                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#121212"> Kako NORIKS pomaže kod oštećenja kože </h2>
+                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#121212"> Cum ajută NORIKS la deteriorarea pielii </h2>
                   <div class="image-with-text__text rte body">
                     <p>
-                      <strong>Inovativni ventilacijski sustav NORIKS</strong> sprječava pregrijavanje i održava kožu hladnom i suhom. Prirodna antimikrobna svojstva modal vlakana pomažu u borbi protiv bakterija i gljivica, pa ostaješ svjež dulje.
+                      <strong>Sistemul inovator de ventilație NORIKS</strong> previne supraîncălzirea și menține pielea răcoroasă și uscată. Proprietățile antimicrobiene naturale ale fibrelor modale ajută în lupta împotriva bacteriilor și ciupercilor, astfel încât rămâi proaspăt mai mult timp.
                     </p>
-                    <p>Gruba, abrazivna vlakna trljaju kožu, uzrokuju mikroonštećenja i iritacije, što vodi do infekcija i upala.</p>
+                    <p>Fibrele grosolane, abrazive freacă pielea, provocând microdeterioare și iritații, ceea ce duce la infecții și inflamații.</p>
                     <p>
-                      <strong>Ultra mekani NORIKS</strong> modal je glađi i tanji od pamuka, smanjuje trenje i štiti osjetljivu kožu.
+                      <strong>Ultra moliciunea NORIKS</strong> modalul este mai neted și mai subțire decât bumbacul, reduce fricțiunea și protejează pielea sensibilă.
                     </p>
                   </div>
                   <a href="https://noriks.com/ro/product-category/boxers/" class="button button--primary"> Comandă NORIKS </a>
@@ -730,20 +730,20 @@ get_header();
                       <strong>Prije NORIKS:</strong>
                     </p>
                     <ul>
-                      <li>Crvena, iziritirana koža zbog stalnog trenja <br>
+                      <li>Piele roșie, iritată din cauza fricțiunii constante <br>
                       </li>
                       <li>Uporne neugodne mirise <br>
                       </li>
-                      <li>Česte gljivične ili bakterijske infekcije <br>
+                      <li>Infecții fungice sau bacteriene frecvente <br>
                       </li>
-                      <li>Bolni osipi koji otežavaju kretanje <br>
+                      <li>Iritații dureroase care îngreunează mișcarea <br>
                       </li>
                     </ul>
                     <p>
                       <strong>Nakon NORIKS-a:</strong>
                     </p>
                     <ul>
-                      <li>Zdrava koža bez iritacija <br>
+                      <li>Piele sănătoasă fără iritații <br>
                       </li>
                       <li>Prirodna otpornost na mirise <br>
                       </li>
@@ -771,24 +771,24 @@ get_header();
               <div style="width: 50%;" class="image-with-text__text-item grid__item">
                 <div class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-left image-with-text__content--mobile-left image-with-text__content--adapt content-container color-scheme-template--19454951555210__multirow_BXHadv color-custom gradient">
                   <p class="image-with-text__text image-with-text__text--caption caption-with-letter-spacing caption-with-letter-spacing--medium"></p>
-                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#121212"> Zašto je NORIKS sigurniji izbor</h2>
+                  <h2 class="image-with-text__heading h2 rte title-with-highlight" style="--hightlight-color:#121212"> De ce NORIKS este o alegere mai sigură</h2>
                   <div class="image-with-text__text rte body">
                     <ul>
                       <li>
-                        <strong>Prirodna antimikrobna zaštita</strong> pomaže u borbi protiv bakterija i gljivica. <br>
+                        <strong>Protecție antimicrobiană naturală</strong> ajută în lupta împotriva bacteriilor și ciupercilor. <br>
                       </li>
                       <li>
-                        <strong>Izvrsna prozračnost</strong> održava kožu suhom i hladnom. <br>
+                        <strong>Respirabilitate excelentă</strong> menține pielea uscată și răcoroasă. <br>
                       </li>
                       <li>
-                        <strong>Izvanredna mekoća </strong> smanjuje trenje i iritaciju. <br>
+                        <strong>Moliciune excepțională </strong> reduce fricțiunea și iritația. <br>
                       </li>
                       <li>
                         <strong>Reglarea temperaturii </strong> susține sănătatea reproductivă. <br>
                       </li>
                     </ul>
                     <p>
-                      <em>Svi navodi potkrijepljeni su objavljenim istraživanjima koja su dostupna na zahtjev.
+                      <em>Toate afirmațiile sunt susținute de cercetări publicate disponibile la cerere.
 Individualni rezultati mogu se razlikovati. </em>
                     </p>
                   </div>
@@ -834,14 +834,14 @@ Individualni rezultati mogu se razlikovati. </em>
               <h2 style="margin-top: 25px; font-size: 2.2rem; line-height:1.1;" class="rich-text__heading rte h1 title-with-highlight" style="--hightlight-color:#6d388b"> Alătură-te miilor care au trecut deja • 70% reducere la prima comandă </h2>
               <div class="rich-text__text rte">
                 <h2 class="second-h2" style=" font-size: 1.7rem; line-height:1.1;" >
-                  <strong>6-mjesečno jamstvo protiv rupa • 30-dnevno probno razdoblje bez rizika</strong>
+                  <strong>Garanție de 6 luni împotriva găurilor • Perioadă de probă de 30 de zile fără risc</strong>
                 </h2>
               </div>
               <div style="margin-top: 15px;" class="rich-text__buttons">
                 <a href="https://noriks.com/ro/product-category/boxers/" class="button button--primary">Comandă acum și protejează-ți sănătatea</a>
               </div>
               <div class="rich-text__text rte">
-                <p>Više od 2.225.000 muškaraca već je prešlo na NORIKS. Ne čekaj da se pojave osipi, infekcije ili neugodni mirisi.</p>
+                <p>Mai mult de 2.225.000 de bărbați au trecut deja la NORIKS. Nu aștepta să apară iritații, infecții sau mirosuri neplăcute.</p>
               </div>
             </div>
           </div>
@@ -972,11 +972,11 @@ Individualni rezultati mogu se razlikovati. </em>
               </div>
               <div class="rich-text__text rte">
                 <h6>
-                  <strong>Sva prava pridržana, NORIKS</strong>
+                  <strong>Toate drepturile rezervate, NORIKS</strong>
                 </h6>
        
                 <h6>
-                 Najbolje što muškarac može nositi.
+                 Cel mai bun lucru pe care un bărbat îl poate purta.
                 </h6>
            
               </div>
