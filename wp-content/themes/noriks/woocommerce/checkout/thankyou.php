@@ -41,26 +41,26 @@ $upsell_is_tricouri = $has_only_boxeri;
 
 if ( $upsell_is_tricouri ) {
     $upsell_product_id = 250; // Negru tricou (variable)
-    $upsell_name       = 'Crne Tricouri';
+    $upsell_name       = 'Tricouri negre';
     $upsell_qty_prices = array( 1 => 12.99, 3 => 29.99, 6 => 39.99 );
-    $upsell_qty_names  = array( 1 => '1x Negru Tricoul', 3 => '3x Crne Tricouri', 6 => '6x Crnih Tricoul' );
+    $upsell_qty_names  = array( 1 => '1x tricou negru', 3 => '3x tricouri negre', 6 => '6x tricouri negre' );
     $upsell_qty_images = array(
         1 => 'https://noriks.com/ro/wp-content/uploads/2025/09/black-1.jpg',
         3 => 'https://noriks.com/ro/wp-content/uploads/2025/09/black-3x.jpg',
         6 => 'https://noriks.com/ro/wp-content/uploads/2026/01/15xcrnatricou.png',
     );
-    $upsell_title_text = 'Dodaj tricouri sada – 50% popusta';
+    $upsell_title_text = 'Adauga tricouri acum - 50% reducere';
 } else {
-    $upsell_product_id = 2781; // Crne Boxeri
-    $upsell_name       = 'Crne Boxeri';
+    $upsell_product_id = 2781; // Boxeri negri
+    $upsell_name       = 'Boxeri negri';
     $upsell_qty_prices = array( 1 => 7.99, 3 => 19.99, 5 => 29.99 );
-    $upsell_qty_names  = array( 1 => '1x Crne Boxeri', 3 => '3x Crne Boxeri', 5 => '5x Crnih Bokseric' );
+    $upsell_qty_names  = array( 1 => '1x boxeri negri', 3 => '3x boxeri negri', 5 => '5x boxeri negri' );
     $upsell_qty_images = array(
         1 => 'https://noriks.com/ro/wp-content/uploads/2025/11/crne-boksarice-produktna.jpg',
         3 => 'https://noriks.com/ro/wp-content/uploads/2025/11/boksarice_3x_crne.png',
         5 => 'https://noriks.com/ro/wp-content/uploads/2026/01/boksarice_5x_crne.png',
     );
-    $upsell_title_text = 'Dodaj boxeri sada – 50% popusta';
+    $upsell_title_text = 'Adauga boxeri acum - 50% reducere';
 }
 $upsell_product    = wc_get_product( $upsell_product_id );
 $upsell_image      = $upsell_qty_images[3];

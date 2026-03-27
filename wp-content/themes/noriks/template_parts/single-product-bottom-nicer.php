@@ -51,7 +51,7 @@ DE CE ALEG OAMENII PACHETUL STARTER?
 
       <div style="margin-left: 20px;" class="why-point">
         <p  style="    font-style: italic;
-    line-height: 1.2;"  ><strong>“Materijal i fit su me uvjerili.” 
+    line-height: 1.2;"  ><strong>“Materialul si croiala m-au convins.” 
 
 
 
@@ -83,12 +83,12 @@ DE CE ALEG OAMENII PACHETUL STARTER?
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-KOMBINACIJA KOJA SE NOSI SVAKI DAN
+COMBINATIA PE CARE O PORTI ZILNIC
 
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Dizajnirano za cjelodnevnu confort
+        <p><strong>Creat pentru confort pe tot parcursul zilei
 
 
 </strong></p>
@@ -99,7 +99,7 @@ KOMBINACIJA KOJA SE NOSI SVAKI DAN
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Kroj care radi s tijelom
+        <p><strong>Croiala care se misca odata cu corpul
 
 
 </strong></p>
@@ -170,7 +170,7 @@ Este disponibil o singura data per client si la un pret special, pentru ca deciz
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Iskustvo care se ponavlja
+        <p><strong>O experienta pe care vrei sa o repeti
 
 
 </strong></p>
@@ -332,7 +332,7 @@ if (  has_term( array( 'tricouri', 'orto-tricouri' ), 'product_cat', get_the_id(
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Kroj care razumije tijelo
+        <p><strong>Croiala care intelege corpul
 </strong></p>
         <p class="description">Croiala a fost dezvoltata ca sa urmeze linia corpului fara sa stranga si sa evidentieze exact ce trebuie. Rezultatul este un aspect ingrijit si increzator, fara senzatie de disconfort.
 </p>
