@@ -46,23 +46,23 @@ function is_active_menu_item( $path ) {
 <nav class="category-menu">
   <ul>
     <li class="<?php echo is_shop() ? 'active' : ''; ?>">
-      <a href="/hr/shop">Svi produkti</a>
+      <a href="/ro/shop">Toate produsele</a>
     </li>
 
     <li class="<?php echo is_active_menu_item('/product-category/majice') ? 'active' : ''; ?>">
-      <a href="/hr/product-category/majice/">Majice</a>
+      <a href="/ro/product-category/majice/">Tricouri</a>
     </li>
 
     <li class="<?php echo is_active_menu_item('/product-category/bokserice') ? 'active' : ''; ?>">
-      <a href="/hr/product-category/bokserice/">Bokserice</a>
+      <a href="/ro/product-category/bokserice/">Boxeri</a>
     </li>
 
     <li class="<?php echo is_active_menu_item('/product-category/kompleti') ? 'active' : ''; ?>">
-      <a href="/hr/product-category/kompleti/">Kompleti</a>
+      <a href="/ro/product-category/kompleti/">Seturi</a>
     </li>
 
     <li class="<?php echo is_active_menu_item('/product-category/carape') ? 'active' : ''; ?>">
-      <a href="/hr/product-category/carape/">Čarape</a>
+      <a href="/ro/product-category/carape/">Sosete</a>
     </li>
   </ul>
 </nav>
@@ -358,7 +358,7 @@ if ( is_shop() ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2"]');
 
-// CATEGORY: /bokserice + ALL CHILD CATEGORIES
+// CATEGORY: /boxeri + ALL CHILD CATEGORIES
 } elseif ( is_product_category_or_child('bokserice') ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2-2-2"]');
@@ -372,7 +372,7 @@ if ( is_shop() ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-3"]');
 
-// CATEGORY: /majice + children
+// CATEGORY: /tricouri + children
 } elseif ( is_product_category_or_child('majice') ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2-2"]');

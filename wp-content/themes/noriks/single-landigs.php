@@ -398,7 +398,7 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
 
         $related_size_markup = '
                     <div class="related-product-size-options" id="related-product-sizes-rp-0">
-                      <span class="related-product-size-label">Veličina:</span>
+                      <span class="related-product-size-label">Marime:</span>
                       <div class="related-product-size-list">
                         <button type="button" class="related-product-size-button is-selected" data-size="S">S</button>
                         <button type="button" class="related-product-size-button" data-size="M">M</button>
@@ -444,12 +444,12 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
                 'var relatedProductsData = [{"id":"rp-0","name":"2x blazinica za peto za zmanjšanje bolečin v peti","description":"Zapolni prevelik čevelj, ne da bi drgnila ali povzročala žulje.\n","price":3.99,"originalPrice":11.95,"discountPercentage":67,"wcId":981495,"imageUrl":"https://images.hs-plus.com/product/product-image/67fb0394c5d0a_STEPHEEL-3831127625931-N-1.jpg"}];',
             ),
             array(
-                '<img class="related-product-image" src="' . esc_url($boxers_image_url) . '" alt="NORIKS bokserice">',
-                'NORIKS crne bokserice',
-                'Mekane, elastične i udobne bokserice za nošenje kroz cijeli dan.',
+                '<img class="related-product-image" src="' . esc_url($boxers_image_url) . '" alt="NORIKS boxeri">',
+                'NORIKS crne boxeri',
+                'Mekane, elastične i udobne boxeri za nošenje kroz cijeli dan.',
                 '7.99&#x20AC;',
                 '15.99&#x20AC;',
-                'var relatedProductsData = [{"id":"rp-0","name":"NORIKS crne bokserice","description":"Mekane, elastične i udobne bokserice za nošenje kroz cijeli dan.","price":7.99,"originalPrice":15.99,"discountPercentage":50,"wcId":981495,"imageUrl":"' . esc_js($boxers_image_url) . '"}];',
+                'var relatedProductsData = [{"id":"rp-0","name":"NORIKS crne boxeri","description":"Mekane, elastične i udobne boxeri za nošenje kroz cijeli dan.","price":7.99,"originalPrice":15.99,"discountPercentage":50,"wcId":981495,"imageUrl":"' . esc_js($boxers_image_url) . '"}];',
             ),
             $markup
         );
@@ -464,15 +464,15 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
             'STEPEASE - OrthoStep' => 'NORIKS - NORIKS',
             'Ortopedski vlo&#x17E;ki z masa&#x17E;nimi to&#x10D;kami | STEPEASE' => 'NORIKS MAJICA | NORIKS',
             'Ortopedski vložki z masažnimi točkami | STEPEASE' => 'NORIKS MAJICA | NORIKS',
-            'Ortopedski vlo&#x17E;ki z masa&#x17E;nimi to&#x10D;kami' => 'NORIKS majice',
-            'Ortopedski vložki z masažnimi točkami' => 'NORIKS majice',
+            'Ortopedski vlo&#x17E;ki z masa&#x17E;nimi to&#x10D;kami' => 'NORIKS tricouri',
+            'Ortopedski vložki z masažnimi točkami' => 'NORIKS tricouri',
             'STEPEASE&#xA0;|&#xA0;Masa&#x17E;ni vlo&#x17E;ki' => 'NORIKS&#xA0;|&#xA0;Majica',
             'STEPEASE | Masažni vložki' => 'NORIKS | Majica',
             '93% strank je ocenilo Stepease z odličnostjo' => '93% strank je ocenilo NORIKS z odličnostjo',
-            'Ali se STEPEASE prilegajo mojim &#x10D;evljem?' => 'Ali mi NORIKS majica odgovara?',
-            'Ali se STEPEASE prilegajo mojim čevljem?' => 'Ali mi NORIKS majica odgovara?',
-            'Kako dolgo zdr&#x17E;ijo vlo&#x17E;ki STEPEASE?' => 'Kako dolgo traju NORIKS majice?',
-            'Kako dolgo zdržijo vložki STEPEASE?' => 'Kako dolgo traju NORIKS majice?',
+            'Ali se STEPEASE prilegajo mojim &#x10D;evljem?' => 'Ali mi NORIKS tricou odgovara?',
+            'Ali se STEPEASE prilegajo mojim čevljem?' => 'Ali mi NORIKS tricou odgovara?',
+            'Kako dolgo zdr&#x17E;ijo vlo&#x17E;ki STEPEASE?' => 'Kako dolgo traju NORIKS tricouri?',
+            'Kako dolgo zdržijo vložki STEPEASE?' => 'Kako dolgo traju NORIKS tricouri?',
             'Spoznaj vlo&#x17E;ke STEPEASE &#x2013; popolno udobje za tvoja stopala.' => 'Spoznaj NORIKS majicu za vsakodnevnu udobnost.',
             'Spoznaj vložke STEPEASE – popolno udobje za tvoja stopala.' => 'Spoznaj NORIKS majicu za svakodnevnu udobnost.',
             '✔ Takojšnje olajšanje ✔ Klinično preizkušeno ✔ Priporočajo podiatri' => '✔ Udoban kroj ✔ Kvalitetna izrada ✔ NORIKS stil',
@@ -492,44 +492,44 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
             'name":"STEPEASE - OrthoStep"' => 'name":"NORIKS - NORIKS"',
             'Olaj&#x161;aj</span> bole&#x10D;ine v stopalih' => 'Istakni</span> svoj stil',
             'Olajšaj</span> bolečine v stopalih' => 'Istakni</span> svoj stil',
-            'Prihodnost je </span>brez bole&#x10D;in v stopalih' => 'Budućnost je </span>u NORIKS majicama',
-            'Prihodnost je </span>brez bolečin v stopalih' => 'Budućnost je </span>u NORIKS majicama',
+            'Prihodnost je </span>brez bole&#x10D;in v stopalih' => 'Budućnost je </span>u NORIKS tricouma',
+            'Prihodnost je </span>brez bolečin v stopalih' => 'Budućnost je </span>u NORIKS tricouma',
             'Poskrbite za svoja stopala <span class="accent">&#x161;e danes</span>!' => 'Odaberi svoju NORIKS majicu <span class="accent">još danas</span>!',
             'Poskrbite za svoja stopala <span class="accent">še danes</span>!' => 'Odaberi svoju NORIKS majicu <span class="accent">još danas</span>!',
-            'Ne glede na to, ali ste zaposlen strokovnjak ali &#x161;portnik, ki premika svoje meje &#x2013; ortopedski vlo&#x17E;ki z masa&#x17E;nimi to&#x10D;kami STEPEASE vam zagotavljajo vrhunsko oporo in olaj&#x161;anje. Vzemite si trenutek zase, vlo&#x17E;ite v udobje in ob&#x10D;utite razliko na lastnih stopalih.' => 'Bez obzira trebaš li majicu za svaki dan ili za poseban outfit, NORIKS majice donose udobnost, bolji fit i sigurniji izgled. Uzmi trenutak za sebe i odaberi model koji ti najbolje pristaje.',
-            'Ne glede na to, ali ste zaposlen strokovnjak ali športnik, ki premika svoje meje – ortopedski vložki z masažnimi točkami STEPEASE vam zagotavljajo vrhunsko oporo in olajšanje. Vzemite si trenutek zase, vložite v udobje in občutite razliko na lastnih stopalih.' => 'Bez obzira trebaš li majicu za svaki dan ili za poseban outfit, NORIKS majice donose udobnost, bolji fit i sigurniji izgled. Uzmi trenutak za sebe i odaberi model koji ti najbolje pristaje.',
-            'Preizkusite spremembo na lastnih stopalih in zakorakajte v svetlej&#x161;o, nebole&#x10D;o prihodnost &#x17E;e danes.' => 'Isprobaj razliku na sebi i otkrij koliko dobra majica može promijeniti cijeli dojam outfita.',
-            'Preizkusite spremembo na lastnih stopalih in zakorakajte v svetlejšo, nebolečo prihodnost že danes.' => 'Isprobaj razliku na sebi i otkrij koliko dobra majica može promijeniti cijeli dojam outfita.',
+            'Ne glede na to, ali ste zaposlen strokovnjak ali &#x161;portnik, ki premika svoje meje &#x2013; ortopedski vlo&#x17E;ki z masa&#x17E;nimi to&#x10D;kami STEPEASE vam zagotavljajo vrhunsko oporo in olaj&#x161;anje. Vzemite si trenutek zase, vlo&#x17E;ite v udobje in ob&#x10D;utite razliko na lastnih stopalih.' => 'Bez obzira trebaš li majicu za svaki dan ili za poseban outfit, NORIKS tricouri donose udobnost, bolji fit i sigurniji izgled. Uzmi trenutak za sebe i odaberi model koji ti najbolje pristaje.',
+            'Ne glede na to, ali ste zaposlen strokovnjak ali športnik, ki premika svoje meje – ortopedski vložki z masažnimi točkami STEPEASE vam zagotavljajo vrhunsko oporo in olajšanje. Vzemite si trenutek zase, vložite v udobje in občutite razliko na lastnih stopalih.' => 'Bez obzira trebaš li majicu za svaki dan ili za poseban outfit, NORIKS tricouri donose udobnost, bolji fit i sigurniji izgled. Uzmi trenutak za sebe i odaberi model koji ti najbolje pristaje.',
+            'Preizkusite spremembo na lastnih stopalih in zakorakajte v svetlej&#x161;o, nebole&#x10D;o prihodnost &#x17E;e danes.' => 'Isprobaj razliku na sebi i otkrij koliko dobra tricou može promijeniti cijeli dojam outfita.',
+            'Preizkusite spremembo na lastnih stopalih in zakorakajte v svetlejšo, nebolečo prihodnost že danes.' => 'Isprobaj razliku na sebi i otkrij koliko dobra tricou može promijeniti cijeli dojam outfita.',
             'Obvladovanje zdravja stopal: Va&#x161; vodnik do sre&#x10D;nih stopal' => 'NORIKS vodič: kako izbrati pravo majico za svoj stil',
             'Obvladovanje zdravja stopal: Vaš vodnik do srečnih stopal' => 'NORIKS vodič: kako izbrati pravo majico za svoj stil',
-            'Celovito znanje o stopalih' => 'Savjeti za bolji fit majice',
-            'Uporaba tehnik zdravljenja stopal' => 'Kako kombinirati NORIKS majice',
+            'Celovito znanje o stopalih' => 'Savjeti za bolji fit tricouri',
+            'Uporaba tehnik zdravljenja stopal' => 'Kako kombinirati NORIKS tricouri',
             'Celotno dobro po&#x10D;utje stopal' => 'Udobnost i stil kroz cijeli dan',
             'Celotno dobro počutje stopal' => 'Udobnost i stil kroz cijeli dan',
             'Podpora loka stopala' => 'Moderan kroj',
-            'Kako dolgo zdr&#x17E;ijo vlo&#x17E;ki?' => 'Kako dugo traju NORIKS majice?',
-            'Kako dolgo zdržijo vložki?' => 'Kako dugo traju NORIKS majice?',
+            'Kako dolgo zdr&#x17E;ijo vlo&#x17E;ki?' => 'Kako dugo traju NORIKS tricouri?',
+            'Kako dolgo zdržijo vložki?' => 'Kako dugo traju NORIKS tricouri?',
             'Priporo&#x10D;ajo podiatri' => 'Omiljen izbor kupaca',
             'Priporočajo podiatri' => 'Omiljen izbor kupaca',
             'strokovnjaki priporo&#x10D;ajo' => 'kupci priporočajo',
             'strokovnjaki priporočajo' => 'kupci priporočajo',
             'Dolga leta sem se spopadal s plantarno fascio, a STEPEASE so vse spremenili. Podpora loku je neverjetna in bole&#x10D;ina je kon&#x10D;no izginila!' => 'Dugo sam tražio majicu koja mi stvarno dobro stoji, a NORIKS je konačno pogodio pravi kroj. Odmah se vidi razlika u izgledu i udobnosti.',
             'V slu&#x17E;bi ves dan stojim in ti vlo&#x17E;ki so mi re&#x161;ili noge. Ob koncu dneva me stopala ne bolijo ve&#x10D;.' => 'Majicu nosim cijeli dan na poslu i stvarno ostaje udobna od jutra do večeri. Kroj stoji odlično i nakon dugog dana izgleda uredno.',
-            'Preizkusil sem ne&#x161;teto vlo&#x17E;kov, a nobeni se ne morejo primerjati s&#xA0;STEPEASE. Razlika v udobju in po&#x10D;utju je res opazna.' => 'Isprobao sam puno basic majica, ali NORIKS je daleko iznad svega što sam nosio prije. Materijal, kroj i osjećaj na tijelu su odmah primjetni.',
-            'Svoje dni pre&#x17E;ivim na betonskih tleh v delovnih &#x10D;evljih s kovinsko kapico. Ortopedski vlo&#x17E;ki z masa&#x17E;nimi to&#x10D;kami | STEPEASE odli&#x10D;no bla&#x17E;ijo udarce in nudijo podporo, kar zmanj&#x161;uje obremenitev stopal in sklepov. Presene&#x10D;en sem, koliko so mi pomagali &#x2013; o njih sem povedal vsem sodelavcem.' => 'Radim zahtjevan posao i treba mi odjeća koja izgleda dobro i kada je dan dug. NORIKS majica drži formu, ugodna je za nošenje i izgleda dovoljno dobro da sam je preporučio i kolegama.',
-            'Kot medicinska sestra sem ves dan na nogah. Ko sem jih prvi&#x10D; vstavila, sem takoj za&#x10D;utila razliko. Podpora loka je odli&#x10D;na in prina&#x161;a prepotrebno olaj&#x161;anje. Mehka blazina popolno ubla&#x17E;i stalne pritiske na stopala.' => 'Kao medicinska sestra trebam odjeću koja je udobna i pouzdana cijeli dan. NORIKS majica je mekana, dobro sjedi i stvarno izgleda odlično i nakon duge smjene.',
-            'Vau, ti vlo&#x17E;ki so presegli vsa moja pri&#x10D;akovanja! Po dveh dneh no&#x161;enja med 12-urnimi izmenami sem ugotovil, da so resni&#x10D;no izjemni. So izredno udobni, nudijo oporo ves dan &#x2013; naro&#x10D;il sem &#x161;e dva para!' => 'Ova majica je nadmašila moja očekivanja. Nakon par dugih dana nošenja bilo mi je jasno da želim još komada, zato sam odmah naručio dodatne boje.',
-            'Sem predan teka&#x10D; in preizkusil sem &#x17E;e veliko vlo&#x17E;kov. Odkar uporabljam ortopedske vlo&#x17E;ke z masa&#x17E;nimi to&#x10D;kami STEPEASE, opa&#x17E;am bolj&#x161;o zmogljivost in hitrej&#x161;e okrevanje. Toplo priporo&#x10D;am vsem teka&#x10D;em, ki &#x17E;elijo izbolj&#x161;ati rezultate in za&#x161;&#x10D;ititi svoja stopala.' => 'Aktivan sam i volim odjeću koja izgleda čisto i sportski, ali i dalje dovoljno ozbiljno za svaki dan. NORIKS majica mi je postala prvi izbor jer odlično izgleda i lako se kombinira.',
+            'Preizkusil sem ne&#x161;teto vlo&#x17E;kov, a nobeni se ne morejo primerjati s&#xA0;STEPEASE. Razlika v udobju in po&#x10D;utju je res opazna.' => 'Isprobao sam puno basic tricou, ali NORIKS je daleko iznad svega što sam nosio prije. Materijal, kroj i osjećaj na tijelu su odmah primjetni.',
+            'Svoje dni pre&#x17E;ivim na betonskih tleh v delovnih &#x10D;evljih s kovinsko kapico. Ortopedski vlo&#x17E;ki z masa&#x17E;nimi to&#x10D;kami | STEPEASE odli&#x10D;no bla&#x17E;ijo udarce in nudijo podporo, kar zmanj&#x161;uje obremenitev stopal in sklepov. Presene&#x10D;en sem, koliko so mi pomagali &#x2013; o njih sem povedal vsem sodelavcem.' => 'Radim zahtjevan posao i treba mi odjeća koja izgleda dobro i kada je dan dug. NORIKS tricou drži formu, ugodna je za nošenje i izgleda dovoljno dobro da sam je preporučio i kolegama.',
+            'Kot medicinska sestra sem ves dan na nogah. Ko sem jih prvi&#x10D; vstavila, sem takoj za&#x10D;utila razliko. Podpora loka je odli&#x10D;na in prina&#x161;a prepotrebno olaj&#x161;anje. Mehka blazina popolno ubla&#x17E;i stalne pritiske na stopala.' => 'Kao medicinska sestra trebam odjeću koja je udobna i pouzdana cijeli dan. NORIKS tricou je mekana, dobro sjedi i stvarno izgleda odlično i nakon duge smjene.',
+            'Vau, ti vlo&#x17E;ki so presegli vsa moja pri&#x10D;akovanja! Po dveh dneh no&#x161;enja med 12-urnimi izmenami sem ugotovil, da so resni&#x10D;no izjemni. So izredno udobni, nudijo oporo ves dan &#x2013; naro&#x10D;il sem &#x161;e dva para!' => 'Ova tricou je nadmašila moja očekivanja. Nakon par dugih dana nošenja bilo mi je jasno da želim još komada, zato sam odmah naručio dodatne culori.',
+            'Sem predan teka&#x10D; in preizkusil sem &#x17E;e veliko vlo&#x17E;kov. Odkar uporabljam ortopedske vlo&#x17E;ke z masa&#x17E;nimi to&#x10D;kami STEPEASE, opa&#x17E;am bolj&#x161;o zmogljivost in hitrej&#x161;e okrevanje. Toplo priporo&#x10D;am vsem teka&#x10D;em, ki &#x17E;elijo izbolj&#x161;ati rezultate in za&#x161;&#x10D;ititi svoja stopala.' => 'Aktivan sam i volim odjeću koja izgleda čisto i sportski, ali i dalje dovoljno ozbiljno za svaki dan. NORIKS tricou mi je postala prvi izbor jer odlično izgleda i lako se kombinira.',
             'Moji vsakodnevni sprehodi s psom so zdaj povsem druga&#x10D;ni. Prej sem imela bole&#x10D;a stopala in utrujene noge, zdaj pa brez te&#x17E;av sledim svojemu kosmatincu. Ortopedski vlo&#x17E;ki z masa&#x17E;nimi to&#x10D;kami STEPEASE nudijo odli&#x10D;no oporo, udobje in izbolj&#x161;ajo dr&#x17E;o.' => 'NORIKS majico nosim za šetnje, obaveze i kavu u gradu. Udobna je, lijepo pada i uvijek izgleda dovoljno sređeno bez puno razmišljanja.',
             'Ortopedski vlo&#x17E;ki' => 'Majica',
             'Ortopedski vložki' => 'Majica',
             'vlo&#x17E;ki' => 'majice',
-            'Vlo&#x17E;ki' => 'Majice',
+            'Vlo&#x17E;ki' => 'Tricouri',
             'vložki' => 'majice',
-            'Vložki' => 'Majice',
+            'Vložki' => 'Tricouri',
             'stopal' => 'majic',
             'stopala' => 'majice',
-            'Stopala' => 'Majice',
+            'Stopala' => 'Tricouri',
             'čevljem' => 'stilu',
             'čevljih' => 'kombinacijama',
             'čevlje' => 'outfite',
@@ -540,7 +540,7 @@ if (!function_exists('noriks_customize_step_landing_markup')) {
             'podolog' => 'kupac',
             'peto' => 'majicu',
             'peti' => 'majici',
-            'blazinica' => 'majica',
+            'blazinica' => 'tricou',
             'blazinice' => 'majice',
         );
 
@@ -555,7 +555,7 @@ $target_product_id  = (int) get_post_meta(get_the_ID(), '_landigs_target_product
 $boxers_image_url   = trailingslashit(get_template_directory_uri()) . 'lander2/images/noriks_boxers_gif_1.gif';
 
 if (!$target_product_url) {
-    $target_product_url = home_url('/hr/product/noriks-majica/');
+    $target_product_url = home_url('/ro/product/noriks-tricou/');
 }
 
 if (!$target_product_id) {
@@ -570,11 +570,11 @@ $hide_secondary    = get_post_meta(get_the_ID(), '_landigs_hide_secondary', true
 $offer_options     = get_post_meta(get_the_ID(), '_landigs_offer_options', true);
 
 if ($primary_label === '') {
-    $primary_label = 'Boja';
+    $primary_label = 'Culoare';
 }
 
 if ($secondary_label === '') {
-    $secondary_label = 'Veličina';
+    $secondary_label = 'Marime';
 }
 
 if ($secondary_options === '') {
@@ -603,20 +603,20 @@ if (noriks_landigs_use_apparel_sizes($secondary_options)) {
 
 if ($primary_options === '') {
     $primary_options = implode("\n", array(
-        'Crna|#000000',
-        'Bijela|#f3f4f6',
-        'Siva|#9ca3af',
-        'Tamnoplava|#203240',
-        'Smeđa|#6b4f3a',
-        'Zelena|#556b2f',
+        'Negru|#000000',
+        'Alb|#f3f4f6',
+        'Gri|#9ca3af',
+        'Bleumarin|#203240',
+        'Maro|#6b4f3a',
+        'Verde|#556b2f',
     ));
 }
 
 if ($offer_options === '') {
     $offer_options = implode("\n", array(
-        '1|1 majica|Odličan ulazni paket|',
-        '2|2 majice|Najbolji omjer cijene i količine|NAJPOPULARNIJE',
-        '3|3 majice|Najveća ušteda po komadu|',
+        '1|1 tricou|Pachet excelent pentru inceput|',
+        '2|2 tricouri|Najbolji omjer cijene i cantitatii|CEL MAI POPULAR',
+        '3|3 tricouri|Cea mai mare economie per bucata|',
         '5|5 majic|Najveći paket za maksimalnu uštedu|',
     ));
 }

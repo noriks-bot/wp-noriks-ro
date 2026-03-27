@@ -42,9 +42,9 @@ if ( ! empty( $order->get_billing_first_name() ) ) {
 <?php if ( $email_improvements_enabled ) : ?>
 
 
-	<p style="color:black;">Tvoja narudžba je uspješno zaprimljena – hvala ti što si odabrao NORIKS!
+	<p style="color:black;">Tvoja comanda je uspješno zaprimljena – hvala ti što si odabrao NORIKS!
 	<br/>	<br/>
-	Sad pripremamo tvoj NORIKS proizvod i uskoro kreće na put.
+	Sad pripremamo tvoj NORIKS produs i uskoro kreće na put.
     <br/><br/>
     Samo udobnost i dobar osjećaj – cijeli dan.<br/><br/>
     
@@ -52,7 +52,7 @@ if ( ! empty( $order->get_billing_first_name() ) ) {
     Ako ti bilo što zatreba – tu smo. 🙂<br/><br/>
     
     
-    <strong>Ako ste se zabunili oko veličine, količine ili boje u narudžbi – bez brige!</strong><br/>
+    <strong>Ako ste se zabunili oko marimi, cantitatii ili culori u narudžbi – bez brige!</strong><br/>
     Odgovorite direktno na ovaj e-mail i javite nam što treba promijeniti prije slanja paketa. Rado ćemo sve brzo srediti.<br/><br/>
     
     NORIKS tim
@@ -65,9 +65,9 @@ if ( ! empty( $order->get_billing_first_name() ) ) {
 	<?php /* translators: %s: Order number */ ?>
 	
 		
-	<p style="color:black;">Tvoja narudžba je uspješno zaprimljena – hvala ti što si odabrao NORIKS!
+	<p style="color:black;">Tvoja comanda je uspješno zaprimljena – hvala ti što si odabrao NORIKS!
 	<br/>	<br/>
-Sad pripremamo tvoj NORIKS proizvod i uskoro kreće na put.
+Sad pripremamo tvoj NORIKS produs i uskoro kreće na put.
     <br/><br/>
     Samo udobnost i dobar osjećaj – cijeli dan.<br/><br/>
     
@@ -75,7 +75,7 @@ Sad pripremamo tvoj NORIKS proizvod i uskoro kreće na put.
     Ako ti bilo što zatreba – tu smo. 🙂<br/><br/>
     
     
-    <strong>Ako ste se zabunili oko veličine, količine ili boje u narudžbi – bez brige!</strong><br/>
+    <strong>Ako ste se zabunili oko marimi, cantitatii ili culori u narudžbi – bez brige!</strong><br/>
     Odgovorite direktno na ovaj e-mail i javite nam što treba promijeniti prije slanja paketa. Rado ćemo sve brzo srediti.<br/><br/>
     
     NORIKS tim

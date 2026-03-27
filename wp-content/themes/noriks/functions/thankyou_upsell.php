@@ -205,7 +205,7 @@ function noriks_remove_upsell() {
 
     // Only allow removing upsell items
     if ( $item->get_meta( '_noriks_upsell' ) !== 'thank you upsell' ) {
-        wp_send_json_error( 'Samo upsell proizvode je moguće ukloniti' );
+        wp_send_json_error( 'Samo upsell produse je moguće ukloniti' );
     }
 
     // Only allow while in primary-hold
@@ -240,7 +240,7 @@ function noriks_handle_add_upsell() {
     }
 
     $order = wc_get_order( $order_id );
-    if ( ! $order ) wp_send_json_error( 'Narudžba nije pronađena' );
+    if ( ! $order ) wp_send_json_error( 'Comanda nu a fost gasita' );
 
     // Only allow upsell on COD orders in primary-hold
     if ( $order->get_payment_method() !== 'cod' ) {
@@ -258,7 +258,7 @@ function noriks_handle_add_upsell() {
 
     // Get the actual product (variation or simple)
     $product = $variation_id ? wc_get_product( $variation_id ) : wc_get_product( $product_id );
-    if ( ! $product ) wp_send_json_error( 'Proizvod nije pronađen' );
+    if ( ! $product ) wp_send_json_error( 'Produsul nu a fost gasit' );
 
     // Duplicate check
     $check_product_id = $variation_id ? $product_id : $product->get_id();
@@ -267,7 +267,7 @@ function noriks_handle_add_upsell() {
         $item_variation_id = $item->get_variation_id();
         if ( $item_product_id == $check_product_id || ( $variation_id && $item_variation_id == $variation_id ) ) {
             if ( $item->get_meta( '_noriks_upsell' ) ) {
-                wp_send_json_error( 'Već ste dodali ovaj proizvod' );
+                wp_send_json_error( 'Već ste dodali ovaj produs' );
             }
         }
     }
@@ -286,15 +286,15 @@ function noriks_handle_add_upsell() {
         $active_price = (float) $product->get_regular_price();
     }
     if ( ! $active_price ) {
-        wp_send_json_error( 'Cijena proizvoda nije dostupna' );
+        wp_send_json_error( 'Pretul produsului nu este disponibil' );
     }
 
     $quantity = max( 1, absint( $_POST['quantity'] ?? 3 ) );
-    // Prices depend on product type (bokserice vs majice)
-    $bokserice_prices = array( 1 => 7.99, 3 => 19.99, 5 => 29.99 );
-    $majice_prices    = array( 1 => 12.99, 3 => 29.99, 6 => 39.99 );
-    $is_majice = strpos(strtolower($product->get_name()), 'majic') !== false;
-    $qty_prices = $is_majice ? $majice_prices : $bokserice_prices;
+    // Prices depend on product type (boxeri vs tricouri)
+    $boxeri_prices = array( 1 => 7.99, 3 => 19.99, 5 => 29.99 );
+    $tricouri_prices    = array( 1 => 12.99, 3 => 29.99, 6 => 39.99 );
+    $is_tricouri = strpos(strtolower($product->get_name()), 'majic') !== false;
+    $qty_prices = $is_tricouri ? $tricouri_prices : $boxeri_prices;
     $total_price = isset( $qty_prices[$quantity] ) ? $qty_prices[$quantity] : $active_price;
     $upsell_price = $total_price / $quantity;
 

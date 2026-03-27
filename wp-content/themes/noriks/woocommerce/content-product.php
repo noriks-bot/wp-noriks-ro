@@ -104,7 +104,7 @@ $topseler_text =  get_field("singlepp_bestseller_text", "options");
          endif;
       
       
-      // here check bokserice
+      // here check boxeri
       
     else:
     

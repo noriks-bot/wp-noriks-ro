@@ -29,7 +29,7 @@ ZAŠTO LJUDI BIRAJU STARTER PAKET?
 
 
 </strong><span style="font-weight:normal;">Marko - Zagreb</span></p>
-        <p class="description">Mnogi kupci krenu sa starter paketom jer žele prvo vidjeti kako NORIKS stoji i kako se nosi. Jedna majica i jedne bokserice dovoljne su da bez velikog ulaganja donesu odluku.
+        <p class="description">Mnogi kupci krenu sa starter paketom jer žele prvo vidjeti kako NORIKS stoji i kako se nosi. Jedna tricou i jedne boxeri dovoljne su da bez velikog ulaganja donesu odluku.
 
 
 
@@ -56,7 +56,7 @@ ZAŠTO LJUDI BIRAJU STARTER PAKET?
 
 
 </strong><span style="font-weight:normal;">Ante - Pula</span></p>
-        <p class="description">Majica i bokserice su mekane, lagane i ugodne na koži. Starter paket je najčešći razlog zašto NORIKS brzo postane dio svakodnevne garderobe.
+        <p class="description">Majica i boxeri su mekane, lagane i ugodne na koži. Starter paket je najčešći razlog zašto NORIKS brzo postane dio svakodnevne garderobe.
 
 
 
@@ -92,7 +92,7 @@ KOMBINACIJA KOJA SE NOSI SVAKI DAN
 
 
 </strong></p>
-        <p class="description">Majica i bokserice napravljene su za nošenje od jutra do večeri, bez prilagođavanja i nelagode. Sve stoji na mjestu, ne steže i omogućuje slobodno kretanje tijekom cijelog dana.
+        <p class="description">Majica i boxeri napravljene su za nošenje od jutra do večeri, bez prilagođavanja i nelagode. Sve stoji na mjestu, ne steže i omogućuje slobodno kretanje tijekom cijelog dana.
 
 
 </p>
@@ -103,7 +103,7 @@ KOMBINACIJA KOJA SE NOSI SVAKI DAN
 
 
 </strong></p>
-        <p class="description">Kroj majice naglašava gornji dio tijela, dok bokserice pružaju dovoljno prostora i stabilnost bez podizanja. Rezultat je siguran, opušten osjećaj i uredan izgled u svakoj situaciji.
+        <p class="description">Kroj tricouri naglašava gornji dio tijela, dok boxeri pružaju dovoljno prostora i stabilnost bez podizanja. Rezultat je siguran, opušten osjećaj i uredan izgled u svakoj situaciji.
 
 
 </p>
@@ -152,7 +152,7 @@ NAJLAKŠI I NAJSIGURNIJI POČETAK
 
 </strong></p>
         <p class="description">Zato što ti omogućuje da upoznaš kvalitetu bez velikog ulaganja.
-Umjesto da kupuješ više komada unaprijed, uzmeš jednu majicu i jedne bokserice — taman dovoljno da vidiš kako stoje, kako se nose i kako se osjeća materijal.
+Umjesto da kupuješ više komada unaprijed, uzmeš jednu majicu i jedne boxeri — taman dovoljno da vidiš kako stoje, kako se nose i kako se osjeća materijal.
 
 </p>
       </div>
@@ -211,7 +211,7 @@ if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() ) 
         <video 
           autoplay muted loop playsinline 
           class="why-video">
-          <source src="https://noriks.com/hr/wp-content/uploads/2025/09/noriks_gif_hr_2-1.mp4" type="video/mp4">
+          <source src="https://noriks.com/ro/wp-content/uploads/2025/09/noriks_gif_hr_2-1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -327,7 +327,7 @@ if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() ) 
       <div style="margin-left: 20px;" class="why-point">
         <p><strong>Dizajnirana za stvarni život
 </strong></p>
-        <p class="description">Ova majica napravljena je za cjelodnevno nošenje, od jutra do večeri. Ne traži prilagođavanje ni razmišljanje — jednostavno stoji dobro u svakoj situaciji.
+        <p class="description">Ova tricou napravljena je za cjelodnevno nošenje, od jutra do večeri. Ne traži prilagođavanje ni razmišljanje — jednostavno stoji dobro u svakoj situaciji.
 </p>
       </div>
 
@@ -341,7 +341,7 @@ if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() ) 
       <div style="margin-left: 20px;" class="why-point">
         <p><strong>Osjeti razliku već pri prvom nošenju
 </strong></p>
-        <p class="description">Materijal je mekan, lagan i prozračan na koži. Nakon prvog nošenja jasno je zašto ova majica brzo postaje ona koju najčešće biraš.
+        <p class="description">Materijal je mekan, lagan i prozračan na koži. Nakon prvog nošenja jasno je zašto ova tricou brzo postaje ona koju najčešće biraš.
 </p>
       </div>
     </div>
@@ -403,7 +403,7 @@ endif;
 
     <!-- Left Video -->
     <div class="why-col">
-       <img src="/hr/wp-content/uploads/2025/12/recreate_without_photo_equipment_98300wkq98yf4jbkroa5.jpg">
+       <img src="/ro/wp-content/uploads/2025/12/recreate_without_photo_equipment_98300wkq98yf4jbkroa5.jpg">
     </div>
 
     <!-- Right Content -->
@@ -439,7 +439,7 @@ endif;
 
     <!-- Left Video -->
     <div class="why-col">
-       <img src="/hr/wp-content/uploads/2025/12/recreate_this_picture_to_look_more_real_same_text_on_it_zidddz68sbcgp6wmizbl.jpg">
+       <img src="/ro/wp-content/uploads/2025/12/recreate_this_picture_to_look_more_real_same_text_on_it_zidddz68sbcgp6wmizbl.jpg">
     </div>
 
     <!-- Right Content -->
@@ -488,7 +488,7 @@ endif;
     <div class="why-col">
        <img style="width: 100%;       
     aspect-ratio: 1/1; 
-    object-fit: cover;  " src="/hr/wp-content/uploads/2025/12/create_same_style_studio_photo_with_younger_guy_30_years_normal_look_and_croatian_can_look_midldle__e99c86vy07c57mjd38f6.jpg">
+    object-fit: cover;  " src="/ro/wp-content/uploads/2025/12/create_same_style_studio_photo_with_younger_guy_30_years_normal_look_and_croatian_can_look_midldle__e99c86vy07c57mjd38f6.jpg">
     </div>
 
     <!-- Right Content -->
@@ -1061,15 +1061,15 @@ a:hover {
   $reviews_language = get_field("webshop_language", "options");
   if (!$reviews_language) { $reviews_language = "EN"; }
 
-  // Detect if current product belongs to bokserice group
+  // Detect if current product belongs to boxeri group
   $current_product_id = (function_exists('is_product') && is_product()) ? get_queried_object_id() : get_the_id();
-  $is_bokserice_page  = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id );
+  $is_boxeri_page  = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id );
 
   // Include review pools
-  if ( ! $is_bokserice_page )  {
+  if ( ! $is_boxeri_page )  {
     include get_stylesheet_directory() . '/auto_reviews/'.$reviews_language.'.php';
   } else {
-    include get_stylesheet_directory() . '/auto_reviews/HR_bokserice.php';
+    include get_stylesheet_directory() . '/auto_reviews/HR_boxeri.php';
   }
 
   include get_stylesheet_directory() . '/auto_reviews/'.$reviews_language.'-2.php';
@@ -1130,12 +1130,12 @@ a:hover {
           $product_id = get_queried_object_id();
       }
 
-      $is_bokserice = false;
+      $is_boxeri = false;
       if ( $product_id ) {
-          $is_bokserice = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $product_id );
+          $is_boxeri = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $product_id );
       }
 
-      $cache_key = $transient_key . ( $is_bokserice ? '_bokserice' : '_all' );
+      $cache_key = $transient_key . ( $is_boxeri ? '_boxeri' : '_all' );
 
       if ( function_exists( 'get_transient' ) ) {
           $cached = get_transient( $cache_key );
@@ -1152,7 +1152,7 @@ a:hover {
           'order'   => 'DESC',
       ];
 
-      if ( $is_bokserice ) {
+      if ( $is_boxeri ) {
           $args['category'] = [ 'bokserice' ];
       } else {
           $args['tax_query'] = [
@@ -1191,8 +1191,8 @@ a:hover {
   /**
    * Load avatar images from theme folder and return URLs.
    * Expected folders:
-   *  - /auto_reviews/bokserice-slike/
-   *  - /auto_reviews/majice-slike/
+   *  - /auto_reviews/boxeri-slike/
+   *  - /auto_reviews/tricouri-slike/
    */
   function get_review_avatar_pool(string $type = 'majice'): array {
     $type = ($type === 'bokserice') ? 'bokserice' : 'majice';
@@ -1396,7 +1396,7 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
   $daily_seed = $today_obj->format('Y-m-d');
 
   // Avatar pools based on page category
-  $avatar_type = $is_bokserice_page ? 'bokserice' : 'majice';
+  $avatar_type = $is_boxeri_page ? 'bokserice' : 'majice';
   $avatar_pool = get_review_avatar_pool($avatar_type);
 
   $product_pool = get_wc_product_pool();
@@ -1446,7 +1446,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
     <div class="reviews-tabs" style="display:flex;gap:18px;border-bottom:1px solid #cbc8c8;margin-bottom:18px;">
       <button type="button" class="reviews-tab is-active" data-tab="product"
         style="appearance:none;background:#00000008;border:1px solid #cbc8c8;border-bottom:0;padding:8px 14px;border-radius:0;font-weight:700;">
-        <?php echo esc_html__('Recenzije proizvoda', 'your-textdomain'); ?> (692)
+        <?php echo esc_html__('Recenzije produsului', 'your-textdomain'); ?> (692)
       </button>
       <button type="button" class="reviews-tab" data-tab="shipping"
         style="appearance:none;background:transparent;border:1px solid transparent;border-bottom:0;padding:8px 14px;border-radius:0;font-weight:700;">
@@ -1459,7 +1459,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
       <?php if (!empty($initial_product)) : foreach ($initial_product as $review) :
         $name  = $review['name'] ?? 'Anonymní';
         $text  = $review['text'] ?? '';
-        $title = !empty($review['product_title']) ? $review['product_title'] : 'Jedna Siva Majica';
+        $title = !empty($review['product_title']) ? $review['product_title'] : 'Jedna Gri Majica';
         $url   = !empty($review['product_url'])   ? $review['product_url']   : '#';
         $stars = '★★★★★';
         $date_display = $review['assigned_date'] ?? '';
@@ -1494,7 +1494,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
       <?php if (!empty($initial_ship)) : foreach ($initial_ship as $review) :
         $name  = $review['name'] ?? 'Anonymní';
         $text  = $review['text'] ?? '';
-        $title = !empty($review['product_title']) ? $review['product_title'] : 'Jedna Siva Majica';
+        $title = !empty($review['product_title']) ? $review['product_title'] : 'Jedna Gri Majica';
         $url   = !empty($review['product_url'])   ? $review['product_url']   : '#';
         $stars = '★★★★★';
         $date_display = $review['assigned_date'] ?? '';
@@ -1598,7 +1598,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
         article.className = 'review-card is-new';
 
         const url       = review.product_url   || '#';
-        const title     = review.product_title || 'Jedna Siva Majica';
+        const title     = review.product_title || 'Jedna Gri Majica';
         const name      = review.name          || 'Anonymní';
         const text      = review.text          || '';
         const headline  = review.headline      || '';

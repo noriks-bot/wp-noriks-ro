@@ -327,7 +327,7 @@ add_action( 'wp_footer', function() {
         $('form.checkout').css({'opacity':'0.4','pointer-events':'none','transition':'opacity 0.3s'});
       });
       $(document.body).on('checkout_error', function(){
-        $('#place_order').css('opacity','1').text('Naruči');
+        $('#place_order').css('opacity','1').text('Comanda');
         $('form.checkout').css({'opacity':'1','pointer-events':''});
       });
 
@@ -467,14 +467,14 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_city']['label'] = 'Grad';
     $fields['billing']['billing_city']['placeholder'] = 'Odaberite grad';
     $fields['billing']['billing_phone']['label'] = 'Telefon';
-    $fields['billing']['billing_phone']['placeholder'] = 'Broj mobilnog telefona';
+    $fields['billing']['billing_phone']['placeholder'] = 'Numar de telefon mobil';
     $fields['billing']['billing_phone']['required'] = true;
     /* Description injected via JS to survive update_checkout AJAX re-renders */
     // $fields['billing']['billing_phone']['description'] = '...';
     $fields['billing']['billing_email']['label'] = 'E-mail adresa';
     $fields['billing']['billing_email']['placeholder'] = 'E-mail adresa';
     /* Description injected via JS to survive update_checkout AJAX re-renders */
-    // $fields['billing']['billing_email']['description'] = 'Za potvrdu narudžbe i praćenje pošiljke';
+    // $fields['billing']['billing_email']['description'] = 'Za potvrdu comenzi i praćenje pošiljke';
     $fields['billing']['billing_email']['required'] = true;
     $fields['billing']['billing_country']['default'] = 'HR';
     unset( $fields['billing']['billing_company'] );
@@ -513,11 +513,11 @@ add_filter( 'woocommerce_form_field_text', function( $field, $key ) {
  * Billing title
  */
 add_action( 'woocommerce_before_checkout_billing_form', function() {
-    echo '<h3 class="checkout-billing-title">Plaćanje i Dostava</h3>';
+    echo '<h3 class="checkout-billing-title">Plata si livrare</h3>';
 });
 
-add_filter( 'default_checkout_billing_country', function() { return 'HR'; });
-add_filter( 'woocommerce_order_button_text', function() { return 'Naruči'; });
+add_filter( 'default_checkout_billing_country', function() { return 'RO'; });
+add_filter( 'woocommerce_order_button_text', function() { return 'Comanda'; });
 
 /**
  * Payment gateway order: COD → Stripe → PayPal
@@ -540,7 +540,7 @@ add_action( 'woocommerce_cart_calculate_fees', function( $cart ) {
 
     $chosen_gateway = WC()->session->get( 'chosen_payment_method' );
     if ( $chosen_gateway === 'cod' ) {
-        $cart->add_fee( 'Plaćanje prilikom preuzimanja', 1.99, false );
+        $cart->add_fee( 'Plata la livrare', 1.99, false );
     }
 });
 
@@ -615,7 +615,7 @@ add_action('woocommerce_review_order_before_submit', function(){
     </script>
     <?php
     endif;
-    echo '<h3 class="place-order-title" style="display:block;margin:15px 0 10px;">Sažetak narudžbe</h3>';
+    echo '<h3 class="place-order-title" style="display:block;margin:15px 0 10px;">Sažetak comenzi</h3>';
     echo '<div class="vigo-checkout-total order-total shop_table" style="margin-bottom:20px;">';
     woocommerce_order_review();
     echo '</div>';

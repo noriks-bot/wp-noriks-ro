@@ -79,7 +79,7 @@ function noriks_get_abandoned_carts($request) {
 add_action('init', function () {
 	// Server-side redirect for NON-AJAX adds (highest priority wins)
 	add_filter('woocommerce_add_to_cart_redirect', function ($url) {
-		return home_url('/hr/cart/'); // or wc_get_cart_url()
+		return home_url('/ro/cart/'); // or wc_get_cart_url()
 	}, 9999);
 });
  */
@@ -98,6 +98,8 @@ if ($webshop_language == "EN") {
   include(get_template_directory() . '/functions/lang/en.php');
 } else if ($webshop_language == "HR") {
   include(get_template_directory() . '/functions/lang/hr.php');
+} else if ($webshop_language == "RO") {
+  include(get_template_directory() . '/functions/lang/ro.php');
 }
 /*  include language specific files */
 

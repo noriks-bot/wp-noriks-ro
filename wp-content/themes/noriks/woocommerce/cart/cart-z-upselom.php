@@ -99,7 +99,7 @@ $(this).append('<div class="qty-btn-group"><button type="button" class="qty-btn 
                     </svg>
                   </span>
                   <span class="wc-reserve-note__text">
-                    Molimo, požuri! Netko je upravo naručio jedan od proizvoda u tvojoj košarici. 
+                    Molimo, požuri! Netko je upravo naručio jedan od produsului u tvojoj košarici. 
                     Rezervacija vrijedi još samo <strong id="wc-reserve-timer">10:00</strong> minuta.
                   </span>
                 </div>
@@ -875,7 +875,7 @@ img.emoji {
 
         <div class="upsell-actions">
           <button type="button" class="upsell-add-btn" id="upsell-add-btn">
-            <span id="upsell-btn-text"><?php echo $upsell_in_cart ? 'DODANO' : 'Dodaj u košaricu'; ?></span>
+            <span id="upsell-btn-text"><?php echo $upsell_in_cart ? 'DODANO' : 'Adauga in cos'; ?></span>
           </button>
 
           <button type="button" class="upsell-remove-btn" id="upsell-remove-btn" <?php echo $upsell_in_cart ? '' : 'style="display:none"'; ?>>
@@ -958,7 +958,7 @@ img.emoji {
       if (removeBtn) removeBtn.style.display = isAdded ? 'inline-flex' : 'none';
 
       setOptionsDisabled(isAdded);
-      if (btnText) btnText.textContent = isAdded ? 'DODANO' : 'Dodaj u košaricu';
+      if (btnText) btnText.textContent = isAdded ? 'DODANO' : 'Adauga in cos';
     }
 
     function clearAttrHiddenInputs(){
@@ -1192,7 +1192,7 @@ img.emoji {
           if (!res.ok || data?.error) {
             checkbox.checked = false;
             syncAddedUI(false);
-            alert('Ne mogu dodati proizvod. Provjeri odabrane opcije (varijacije) i dostupnost.');
+            alert('Ne mogu dodati produs. Provjeri odabrane opcije (varijacije) i dostupnost.');
             setBusy(false);
             return;
           }
@@ -1220,7 +1220,7 @@ img.emoji {
         }
 
         if (!removeUrl) {
-          alert('Ne mogu ukloniti proizvod (ne mogu pronaći remove link u košarici).');
+          alert('Ne mogu ukloniti produs (ne mogu pronaći remove link u košarici).');
           checkbox.checked = true;
           syncAddedUI(true);
           setBusy(false);

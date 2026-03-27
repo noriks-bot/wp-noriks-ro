@@ -15,7 +15,7 @@ if ( WC()->cart->is_empty() ) return;
 <div class="before_form container container--xs">
 
 <form name="checkout" method="post" class="checkout woocommerce-checkout"
-      action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data" aria-label="Plaćanje">
+      action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data" aria-label="Plata">
 
   <div class="col2-set" id="customer_details">
     <div class="col-1 clearfix">
@@ -32,7 +32,7 @@ if ( WC()->cart->is_empty() ) return;
 
         <!-- SHIPPING -->
         <div id="custom_shipping">
-          <h3>Dostava</h3>
+          <h3>Livrare</h3>
           <ul class="shipping_method_custom">
             <li class="standard-shipping shipping-tab">
               <input name="shipping_method[0]" data-index="0" id="shipping_method_0_standard_custom"
@@ -55,7 +55,7 @@ if ( WC()->cart->is_empty() ) return;
           </ul>
           <div class="delivery-from-eu-warehouse">
             <img decoding="async" class="delivery-from-eu-warehouse__icon" src="https://images.vigo-shop.com/general/flags/eu-warehouse.svg">
-            <span class="delivery-from-eu-warehouse__text">Skladište u EU</span>
+            <span class="delivery-from-eu-warehouse__text">Depozit in UE</span>
           </div>
         </div>
 
@@ -98,7 +98,7 @@ if ( WC()->cart->is_empty() ) return;
 
 <!-- Terms -->
 <div class="agreed_terms_txt">
-  <span class="policy-agreement-obligation">Klikom na gumb <strong>Naruči</strong> pristajem na narudžbu uz obvezu plaćanja.</span><br>
+  <span class="policy-agreement-obligation">Klikom na gumb <strong>Comanda</strong> pristajem na narudžbu uz obvezu plaćanja.</span><br>
   <div class="terms-checkbox-and-links">
     <label class="checkbox">
       <input type="checkbox" class="input-checkbox" name="agree_to_checkout_terms" id="agree_to_terms_checkbox" value="1">

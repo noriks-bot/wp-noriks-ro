@@ -45,7 +45,7 @@ if ( ! wp_doing_ajax() ) {
 		</ul>
 	<?php endif; ?>
 	
-	<?php // Shipping display removed — handled by standalone Dostava section ?>
+	<?php // Shipping display removed — handled by standalone Livrare section ?>
 	
 	
 	
