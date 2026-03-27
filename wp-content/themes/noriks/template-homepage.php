@@ -171,7 +171,7 @@ get_header(); ?>
   
   <section class="collections">
   <div class="collections__header">
-    <h2 class="collections__title">Cumpara dupa colectie</h2>
+    <h2 class="collections__title">Cumparati dupa colectie</h2>
 
     <a class="collections__cta" href="/ro/shop">
       Toate produsele <span aria-hidden="true">›</span>
@@ -180,10 +180,10 @@ get_header(); ?>
 
   <div class="collections__grid">
     <!-- Card 1 -->
-    <a class="collection-card" href="/ro/product-category/majice/">
+    <a class="collection-card" href="/ro/product-category/tricouri/">
       <div class="collection-card__media">
         <img
-          src="<?php echo get_template_directory_uri(); ?>/img/noriks-majice.jpeg"
+          src="<?php echo get_template_directory_uri(); ?>/img/noriks-tricouri.jpeg"
           alt="Crew neck t-shirt"
         />
       </div>
@@ -203,7 +203,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 2 -->
-    <a class="collection-card" href="/ro/product-category/bokserice/">
+    <a class="collection-card" href="/ro/product-category/boxeri/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-boksarice.jpeg"
@@ -242,7 +242,7 @@ get_header(); ?>
        
           </div>
           <p class="collection-card__desc">
-Najbolja vrijednost po paketu.
+Najbolja vrijednost po pachetu.
           </p>
         </div>
 
@@ -251,10 +251,10 @@ Najbolja vrijednost po paketu.
     </a>
     
     <!-- Card 3 -->
-    <a class="collection-card" href="/ro/product-category/starter-paketi/">
+    <a class="collection-card" href="/ro/product-category/pachete-starter/">
       <div class="collection-card__media">
         <img
-          src="<?php echo get_template_directory_uri(); ?>/img/starter-paket_.jpeg"
+          src="<?php echo get_template_directory_uri(); ?>/img/starter-pachet_.jpeg"
           alt="Long sleeve shirt"
         />
       </div>
@@ -669,13 +669,13 @@ a:hover {
                   if ( $alt_output == false ):
 
                     $current_product_id = $product->get_id();
-                    $is_boxers = has_term( array('bokserice','bokserice-sastavi-paket'), 'product_cat', $current_product_id );
+                    $is_boxers = has_term( array('boxeri','boxeri-creeaza-pachet'), 'product_cat', $current_product_id );
 
                     if ( $is_boxers ):
                       if ( has_term('black-friday', 'product_cat', $current_product_id ) ):
                         $topseler_text = "Black Friday ";
                       else:
-                        $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . "€ po boksericama";
+                        $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . "€ pe boxeri";
                       endif;
                     else:
                       $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . get_field("singlepp_priceper_after","options");
@@ -873,5 +873,4 @@ a:hover {
 	</div><!-- #primary -->
 <?php
 get_footer();
-
 

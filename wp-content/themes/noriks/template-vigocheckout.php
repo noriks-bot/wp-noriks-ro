@@ -21,15 +21,15 @@ if (!defined('ABSPATH')) exit;
 	        <meta name="robots" content="noindex, nofollow"><link rel='dns-prefetch' href='//widget.trustpilot.com' />
 <link rel='dns-prefetch' href='//static.klaviyo.com' />
 <link rel='dns-prefetch' href='//js.braintreegateway.com' />
-<meta name="title" content="Dovršite kupnju" />
-<meta name="description" content="Sve što vam treba na jednom mjestu. Istražite veliki izbor produsului po najnižim cijenama. Kliknite sada i uživajte u najboljim ponudama i velikoj raznolikosti!" />
+<meta name="title" content="Finalizati comanda" />
+<meta name="description" content="Tot ce aveti nevoie intr-un singur loc. Descoperiti o selectie mare de produse la cele mai bune preturi. Faceti clic acum si bucurati-va de cele mai bune oferte si de o varietate mare!" />
 <meta name="image" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x310.png" />
 <meta property="og:locale" content="ro" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Dovršite kupnju" />
-<meta property="og:description" content="Sve što vam treba na jednom mjestu. Istražite veliki izbor produsului po najnižim cijenama. Kliknite sada i uživajte u najboljim ponudama i velikoj raznolikosti!" />
+<meta property="og:title" content="Finalizati comanda" />
+<meta property="og:description" content="Tot ce aveti nevoie intr-un singur loc. Descoperiti o selectie mare de produse la cele mai bune preturi. Faceti clic acum si bucurati-va de cele mai bune oferte si de o varietate mare!" />
 <meta property="og:image" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x310.png" />
-<meta property="og:image:alt" content="Vigoshop - Dovršite kupnju" />
+<meta property="og:image:alt" content="Vigoshop - Finalizati comanda" />
 <style id='classic-theme-styles-inline-css' type='text/css'>
 /*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
@@ -185,10 +185,10 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
   
   
   <div class="woocommerce-billing-fields__field-wrapper">
-    <p class="form-row form-row-first form-group col-xs-12 validate-required" id="billing_first_name_field" data-priority="30"><label for="billing_first_name" class="required_field">Ime&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_first_name" id="billing_first_name" placeholder="Ime"  value="" aria-required="true" maxlength="80" autocomplete="given-name" /></span></p><p class="form-row form-row-last form-group col-xs-12 validate-required" id="billing_last_name_field" data-priority="40"><label for="billing_last_name" class="required_field">Prezime&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_last_name" id="billing_last_name" placeholder="Prezime"  value="" aria-required="true" maxlength="80" autocomplete="family-name" /></span></p><div class="form-row form-row-wide col-xs-12">Unesite adresu na kojoj ćete biti <b>između 8:00 i 16:00 sati</b>.</div><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required" id="billing_address_1_field" data-priority="50"><label for="billing_address_1" class="required_field">Ulica&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_address_1" id="billing_address_1" placeholder="Ulica"  value="" aria-required="true" maxlength="80" autocomplete="address-line1" /></span></p><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required" id="billing_address_2_field" data-priority="60"><label for="billing_address_2" class="screen-reader-text required_field">Kućni broj&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_address_2" id="billing_address_2" placeholder="Kućni broj"  value="" autocomplete="address-line2" maxlength="80" aria-required="true" /></span></p><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required validate-postcode" id="billing_postcode_field" data-priority="70"><label for="billing_postcode" class="required_field">Poštanski broj&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text form-input" name="billing_postcode" id="billing_postcode" placeholder="Poštanski broj"  value="" aria-required="true" maxlength="30" autocomplete="postal-code" /></span></p><p class="form-row form-row-wide dropdown form-group form-group col-xs-12 validate-required" id="billing_city_field" data-priority=""><label for="billing_city" class="required_field">Grad&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><select name="billing_city" id="billing_city" class="select form-input" aria-required="true" data-allow_clear="true" data-placeholder="Odaberite grad">
-							<option value=""  selected='selected'>Odaberite grad</option>
-						</select></span></p><p class="form-row form-row-wide form-group col-xs-12 validate-required validate-phone" id="billing_phone_field" data-priority="10"><label for="billing_phone" class="required_field">Telefon&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text form-input" name="billing_phone" id="billing_phone" placeholder="Numar de telefon mobil"  value="" maxlength="17" aria-required="true" autocomplete="tel" /></span></p><p class="form-row form-row-wide form-group col-xs-12 validate-email" id="billing_email_field" data-priority="20"><label for="billing_email" class="">E-mail adresa&nbsp;<span class="optional">(neobavezno)</span></label><span class="woocommerce-input-wrapper"><input type="email" class="input-text form-input" name="billing_email" id="billing_email" placeholder="E-mail adresa"  value="" maxlength="80" autocomplete="email" /></span></p><p class="form-row form-row-wide address-field form-group col-xs-12 validate-state" id="billing_state_field" data-priority="80"><label for="billing_state" class="">Županija&nbsp;<span class="optional">(neobavezno)</span></label><span class="woocommerce-input-wrapper"><select name="billing_state" id="billing_state" class="state_select form-input" autocomplete="address-level1" data-placeholder="placeholder_province"  data-input-classes="form-input" data-label="Županija">
-						<option value="">Alegeti optiunea&hellip;</option><option value="HR-01" >Zagreb County</option><option value="HR-02" >Krapina-Zagorje County</option><option value="HR-03" >Sisak-Moslavina County</option><option value="HR-04" >Karlovac County</option><option value="HR-05" >Varaždin County</option><option value="HR-06" >Koprivnica-Križevci County</option><option value="HR-07" >Bjelovar-Bilogora County</option><option value="HR-08" >Primorje-Gorski Kotar County</option><option value="HR-09" >Lika-Senj County</option><option value="HR-10" >Virovitica-Podravina County</option><option value="HR-11" >Požega-Slavonia County</option><option value="HR-12" >Brod-Posavina County</option><option value="HR-13" >Zadar County</option><option value="HR-14" >Osijek-Baranja County</option><option value="HR-15" >Šibenik-Knin County</option><option value="HR-16" >Vukovar-Srijem County</option><option value="HR-17" >Split-Dalmatia County</option><option value="HR-18" >Istria County</option><option value="HR-19" >Dubrovnik-Neretva County</option><option value="HR-20" >Međimurje County</option><option value="HR-21" >Zagreb City</option></select></span></p><p class="form-row form-row-wide address-field update_totals_on_change form-group col-xs-12 validate-required" id="billing_country_field" data-priority="90"><label for="billing_country" class="required_field">Country / Region&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><strong>Romania</strong><input type="hidden" name="billing_country" id="billing_country" value="HR" aria-required="true" autocomplete="do-not-autofill" class="country_to_state" readonly="readonly" /></span></p><p class="form-row kl_newsletter_checkbox_field form-group col-xs-12" id="kl_newsletter_checkbox_field" data-priority=""><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="kl_newsletter_checkbox" id="kl_newsletter_checkbox" value="1" class="input-checkbox form-input"  /> Sign me up to receive email updates and news&nbsp;<span class="optional">(neobavezno)</span></label></span></p><p class="form-row form-row-wide hsplus-checkout-field hsplus-checkout-field--no-top-margin hsplus-checkout-field--hidden" id="hsplus_accepts_marketing_field" data-priority="11"><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="hsplus_accepts_marketing" id="hsplus_accepts_marketing" value="1" class="input-checkbox woocommerce-form__input woocommerce-form__input-checkbox hsplus-checkbox"  /> Sign up for exclusive offers and news via text messages&nbsp;<span class="optional">(neobavezno)</span></label></span></p>  </div>
+    <p class="form-row form-row-first form-group col-xs-12 validate-required" id="billing_first_name_field" data-priority="30"><label for="billing_first_name" class="required_field">Prenume&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_first_name" id="billing_first_name" placeholder="Prenume"  value="" aria-required="true" maxlength="80" autocomplete="given-name" /></span></p><p class="form-row form-row-last form-group col-xs-12 validate-required" id="billing_last_name_field" data-priority="40"><label for="billing_last_name" class="required_field">Nume&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_last_name" id="billing_last_name" placeholder="Nume"  value="" aria-required="true" maxlength="80" autocomplete="family-name" /></span></p><div class="form-row form-row-wide col-xs-12">Introduceti adresa la care veti fi disponibil intre <b>8:00 si 16:00</b>.</div><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required" id="billing_address_1_field" data-priority="50"><label for="billing_address_1" class="required_field">Strada&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_address_1" id="billing_address_1" placeholder="Strada"  value="" aria-required="true" maxlength="80" autocomplete="address-line1" /></span></p><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required" id="billing_address_2_field" data-priority="60"><label for="billing_address_2" class="screen-reader-text required_field">Numar&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_address_2" id="billing_address_2" placeholder="Numar"  value="" autocomplete="address-line2" maxlength="80" aria-required="true" /></span></p><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required validate-postcode" id="billing_postcode_field" data-priority="70"><label for="billing_postcode" class="required_field">Cod postal&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text form-input" name="billing_postcode" id="billing_postcode" placeholder="Cod postal"  value="" aria-required="true" maxlength="30" autocomplete="postal-code" /></span></p><p class="form-row form-row-wide dropdown form-group form-group col-xs-12 validate-required" id="billing_city_field" data-priority=""><label for="billing_city" class="required_field">Oras&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><select name="billing_city" id="billing_city" class="select form-input" aria-required="true" data-allow_clear="true" data-placeholder="Alegeti orasul">
+							<option value=""  selected='selected'>Alegeti orasul</option>
+						</select></span></p><p class="form-row form-row-wide form-group col-xs-12 validate-required validate-phone" id="billing_phone_field" data-priority="10"><label for="billing_phone" class="required_field">Telefon&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text form-input" name="billing_phone" id="billing_phone" placeholder="Numar de telefon mobil"  value="" maxlength="17" aria-required="true" autocomplete="tel" /></span></p><p class="form-row form-row-wide form-group col-xs-12 validate-email" id="billing_email_field" data-priority="20"><label for="billing_email" class="">E-mail adresa&nbsp;<span class="optional">(optional)</span></label><span class="woocommerce-input-wrapper"><input type="email" class="input-text form-input" name="billing_email" id="billing_email" placeholder="E-mail adresa"  value="" maxlength="80" autocomplete="email" /></span></p><p class="form-row form-row-wide address-field form-group col-xs-12 validate-state" id="billing_state_field" data-priority="80"><label for="billing_state" class="">Judet&nbsp;<span class="optional">(optional)</span></label><span class="woocommerce-input-wrapper"><select name="billing_state" id="billing_state" class="state_select form-input" autocomplete="address-level1" data-placeholder="placeholder_province"  data-input-classes="form-input" data-label="Judet">
+						<option value="">Alegeti judetul&hellip;</option><option value="B">Bucuresti</option><option value="CJ">Cluj</option><option value="TM">Timis</option><option value="IS">Iasi</option><option value="CT">Constanta</option><option value="BV">Brasov</option><option value="PH">Prahova</option><option value="AG">Arges</option></select></span></p><p class="form-row form-row-wide address-field update_totals_on_change form-group col-xs-12 validate-required" id="billing_country_field" data-priority="90"><label for="billing_country" class="required_field">Country / Region&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><strong>Romania</strong><input type="hidden" name="billing_country" id="billing_country" value="RO" aria-required="true" autocomplete="do-not-autofill" class="country_to_state" readonly="readonly" /></span></p><p class="form-row kl_newsletter_checkbox_field form-group col-xs-12" id="kl_newsletter_checkbox_field" data-priority=""><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="kl_newsletter_checkbox" id="kl_newsletter_checkbox" value="1" class="input-checkbox form-input"  /> Inscrieti-ma pentru actualizari si noutati prin e-mail&nbsp;<span class="optional">(optional)</span></label></span></p><p class="form-row form-row-wide hsplus-checkout-field hsplus-checkout-field--no-top-margin hsplus-checkout-field--hidden" id="hsplus_accepts_marketing_field" data-priority="11"><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="hsplus_accepts_marketing" id="hsplus_accepts_marketing" value="1" class="input-checkbox woocommerce-form__input woocommerce-form__input-checkbox hsplus-checkbox"  /> Inscrieti-va pentru oferte exclusive si noutati prin SMS&nbsp;<span class="optional">(optional)</span></label></span></p>  </div>
 
   </div>
 
@@ -205,7 +205,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 
 		
 		<div class="woocommerce-additional-fields__field-wrapper">
-							<p class="form-row notes form-group col-xs-12" id="order_comments_field" data-priority=""><label for="order_comments" class="">Note privind comanda&nbsp;<span class="optional">(neobavezno)</span></label><span class="woocommerce-input-wrapper"><textarea name="order_comments" class="input-text form-input" id="order_comments" placeholder="Note despre comanda dvs.  "  rows="2" cols="5"maxlength="80"></textarea></span></p>					</div>
+							<p class="form-row notes form-group col-xs-12" id="order_comments_field" data-priority=""><label for="order_comments" class="">Note privind comanda&nbsp;<span class="optional">(optional)</span></label><span class="woocommerce-input-wrapper"><textarea name="order_comments" class="input-text form-input" id="order_comments" placeholder="Note despre comanda dvs.  "  rows="2" cols="5"maxlength="80"></textarea></span></p>					</div>
 
 	
 	<div id="custom_shipping">
@@ -222,12 +222,12 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                     <svg viewBox="0 0 19 14" fill="#3DBD00"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.5725 3.40179L8.14482 13.5874C7.5815 14.1375 6.66839 14.1375 6.1056 13.5874L0.422493 8.03956C-0.140831 7.48994 -0.140831 6.59748 0.422493 6.04707L1.44121 5.05126C2.00471 4.50094 2.91854 4.50094 3.48132 5.05126L7.12254 8.60835L15.5145 0.412609C16.078 -0.137536 16.9909 -0.137536 17.5537 0.412609L18.5733 1.40842C19.1424 1.95795 19.1424 2.8505 18.5725 3.40179Z" /></svg>                                        <div class="outer-wrapper">
                         <div class="inner-wrapper-dates">
                         <strong
-                            class="hs-custom-date">srijeda, 18.3. - četvrtak, 19.3.</strong>
+                            class="hs-custom-date">miercuri, 18.3. - joi, 19.3.</strong>
                         </div>
                         <div class="inner-wrapper-img">
                                                         <span class="shipping_method_delivery_price tag tag--red">
                                 <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>                            </span>
-                                                        <span class="delivery_img"><img decoding="async" class="hrvatska_posta standard" src="https://images.vigo-shop.com/general/curriers/home_small_paket24@2x.png"/></span>
+                                                        <span class="delivery_img"><img decoding="async" class="romania_posta standard" src="https://images.vigo-shop.com/general/curriers/home_small_pachet24@2x.png"/></span>
                         </div>
                     </div>
                 </label>
@@ -264,7 +264,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                                     <span class="woocommerce-Price-amount amount"><bdi>3,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>                                </div>
                             </div>
                         </div>
-                        <div class="f--m c--darkgray s-top--s">U vrijednosti između 5 € i 15 €.</div>
+                        <div class="f--m c--darkgray s-top--s">U vrijednosti intre 5 € i 15 €.</div>
                     </div>
                     <div class="vigo-checkout-gift__img">
                         <img decoding="async" class="img" src="https://images.vigo-shop.com/general/present_responsive.svg" alt="Gift icon">
@@ -279,7 +279,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
     </div>
 </div>
 
-    <h3 class="payment-title">Način plaćanja</h3>
+    <h3 class="payment-title">Metoda de plata</h3>
     <div id="payment" class="woocommerce-checkout-payment">
 			<ul class="wc_payment_methods payment_methods methods">
 			<li class="wc_payment_method payment_method_cod">
@@ -296,7 +296,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
   <label for="payment_method_braintree_credit_card">
     Kreditna kartica <span class="payment-fee-free">Besplatno</span><div class="sv-wc-payment-gateway-card-icons"><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-visa.svg" alt="visa" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-mastercard.svg" alt="mastercard" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-maestro.svg" alt="maestro" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /></div>  </label>
       <div class="payment_box payment_method_braintree_credit_card" style="display:none;">
-      <fieldset id="wc-braintree-credit-card-credit-card-form" aria-label="Informacije o plaćanju"><legend style="display:none;">Informacije o plaćanju</legend><div class="wc-braintree-credit-card-new-payment-method-form js-wc-braintree-credit-card-new-payment-method-form"><input type="hidden" name="wc-braintree-credit-card-card-type" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-enabled" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-verified" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-order-total" value="21.98" />		<input type="hidden" id="wc_braintree_credit_card_payment_nonce" name="wc_braintree_credit_card_payment_nonce" />
+      <fieldset id="wc-braintree-credit-card-credit-card-form" aria-label="Informacije o platestenju"><legend style="display:none;">Informacije o platestenju</legend><div class="wc-braintree-credit-card-new-payment-method-form js-wc-braintree-credit-card-new-payment-method-form"><input type="hidden" name="wc-braintree-credit-card-card-type" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-enabled" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-verified" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-order-total" value="21.98" />		<input type="hidden" id="wc_braintree_credit_card_payment_nonce" name="wc_braintree_credit_card_payment_nonce" />
 		<input type="hidden" id="wc-braintree-credit-card-device-data" name="wc_braintree_device_data" />
 				<div class="form-row ">
 			<label for="wc-braintree-credit-card-context-hosted"></label>
@@ -325,7 +325,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
   <label for="payment_method_braintree_paypal">
     PayPal <span class="payment-fee-free">Besplatno</span><img decoding="async" src="https://images.vigo-shop.com/general/checkout/paypal/PayPal.svg" alt="PayPal">  </label>
       <div class="payment_box payment_method_braintree_paypal" style="display:none;">
-      <fieldset id="wc-braintree-paypal-paypal-form" aria-label="Informacije o plaćanju"><legend style="display:none;">Informacije o plaćanju</legend><div class="wc-braintree-paypal-new-payment-method-form js-wc-braintree-paypal-new-payment-method-form">		<input type="hidden" id="wc_braintree_paypal_payment_nonce" name="wc_braintree_paypal_payment_nonce" />
+      <fieldset id="wc-braintree-paypal-paypal-form" aria-label="Informacije o platestenju"><legend style="display:none;">Informacije o platestenju</legend><div class="wc-braintree-paypal-new-payment-method-form js-wc-braintree-paypal-new-payment-method-form">		<input type="hidden" id="wc_braintree_paypal_payment_nonce" name="wc_braintree_paypal_payment_nonce" />
 		<input type="hidden" id="wc-braintree-paypal-device-data" name="wc_braintree_device_data" />
 		<p class="form-row " id="wc-braintree-paypal-context_field" data-priority=""><span class="woocommerce-input-wrapper"><input type="hidden" class="input-hidden " name="wc-braintree-paypal-context" id="wc-braintree-paypal-context" value="shortcode"  /></span></p>
 		
@@ -347,14 +347,14 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 			</div>
 	
 		        <div id="hs-cod-checkout-prompt" style="display:none;">
-            <div class="cod-prompt-text">Dovršite narudžbu sada, <strong>platite pouzećem 🙂</strong></div>
+            <div class="cod-prompt-text">Finalizati comanda acum, <strong>platiti ramburs 🙂</strong></div>
             <img decoding="async" class="cod-prompt-image" src="https://images.vigo-shop.com/general/checkout/cod/uni_cash_on_delivery.svg">
         </div>
 
 
                 <div id="hs-vat-tax-checkout-prompt">
-            <span class="tax-and-vat-checkout-claims">Nema dodatnih troškova za carinu</span>
-            <span class="tax-and-vat-checkout-claims">PDV je uključen u cijenu</span>
+            <span class="tax-and-vat-checkout-claims">Fara costuri suplimentare de vama</span>
+            <span class="tax-and-vat-checkout-claims">TVA-ul este inclus in pret</span>
         </div>
         <div id="pdf">
     <div class="pdf-title-container">
@@ -363,7 +363,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <!--                --><!--            </span>-->
         </h3>
     </div>
-    <p class="pdf-description">Kada kupite e-knjigu, besplatno Vam dajemo troškove dostave.</p>
+    <p class="pdf-description">Kada kupite e-knjigu, besplatno Vam dajemo costurile livrarii.</p>
 
     <div id="pdf-grid">
         <div class="table-grid">
@@ -379,7 +379,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
             </div>
             <div id="pdf-select-false" class="cell-grid column-selected top">
                 <input type="radio" id="ebook_false"  name="ebook_offer" value="false" checked>
-                <label for="ebook_false">Ne želim e-knjigu</label>
+                <label for="ebook_false">Ne dorestem e-knjigu</label>
             </div>
 
             <div class="cell-grid">
@@ -410,14 +410,14 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
     </div>
     <p class="pdf-more-info">
         <img decoding="async" src="https://images.vigo-shop.com/general/checkout/pdf_info_icon.svg">
-        <u>Više informacija o e-knjizi</u>
+        <u>Mai multe informatii despre e-book</u>
     </p>
     <p class="pdf-more-info-description">
-        Odaberite našu e-knjigu i dobijte pristup trikovima koji mijenjaju život, savjetima za uštedu novca i vrhunskoj pogodnosti. Također štedite na otpremi. Odaberite e-knjigu za pametniju, lakšu i pristupačniju budućnost!</p>
+        Alegeti e-book-ul nostru si obtineti acces la sfaturi utile, idei practice si continut valoros. In plus, economisiti la livrare. Alegeti e-book-ul pentru o experienta mai simpla si mai avantajoasa!</p>
 </div>
 
 
-<h3 class="place-order-title" style="display: block;">Sažetak comenzi</h3>
+<h3 class="place-order-title" style="display: block;">Rezumatul comenzii</h3>
 <div class="vigo-checkout-total order-total shop_table woocommerce-checkout-review-order-table">
     <div class="grid m-top--s review-all-products-container">
 
@@ -441,7 +441,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
             <div class="c--darkgray review-section-container review-addons shipping_order_review">
                 <div class="review-addons-title">
                     <div>
-                        Paket24 Hrvatske pošte                    </div>
+                        Serviciu de livrare rapida                    </div>
                 </div>
 
                                     <div class="review-addons-price review-sale-price"> <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>                    </div>
@@ -454,7 +454,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 
         <div class="vigo-checkout-total__sum flex flex--middle border_price">
         <div class="flex__item f--l">
-            Ukupni iznos: <span class="f--bold price_total_wrapper"><span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>        </div>
+            Total: <span class="f--bold price_total_wrapper"><span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>        </div>
     </div>
 </div>
 
@@ -477,227 +477,43 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
        <img decoding="async" src="https://images.vigo-shop.com/general/guarantee_money_back/satisfaction_icon_hr.png">
     </div>
     <div class="flex__item--autosize f--m checkout-warranty__text">
-        <strong>Kupujte bez brige </strong><br>
-        Povrat novca moguć u roku od 90 dana    </div>
+        <strong>Cumparati fara griji </strong><br>
+        Rambursare posibila in termen de 90 de zile    </div>
 </div>
 
 <div class="agreed_terms_txt">
-    <span class="policy-agreement-obligation">Klikom na gumb <strong>Comanda</strong> pristajem na narudžbu uz obvezu plaćanja.</span> <br>
+    <span class="policy-agreement-obligation">Prin apasarea butonului <strong>Comanda</strong> accept comanda cu obligatia de plata.</span> <br>
             <div class="terms-checkbox-and-links">
             <label class="checkbox">
                 <input type="checkbox" class="input-checkbox" name="agree_to_checkout_terms" id="agree_to_terms_checkbox" value="1">
             </label>
-            Pročitao sam i prihvaćam <a href="#" id="terms_conditions_link"> Opće uvjete prodaje </a> i <a href="#" id="withdrawal_policy_link"> pravo na odustajanje </a>.        </div>
+            Am citit si accept <a href="#" id="terms_conditions_link"> termenii si conditiile de vanzare </a> si <a href="#" id="withdrawal_policy_link"> dreptul de retragere </a>.        </div>
     </div>
 
 <div id="terms-conditions-popup" class="checkout-popup" style="display: none;">
     <div class="checkout-popup-wrapper">
         <div id="terms-conditions-content">
-            <h2 class="ql-align-justify"><strong>Opći uvjeti poslovanja</strong></h2>
-<p class="ql-align-justify"></p>
-<p class="ql-align-justify"><a class="button" href="https://images.hs-plus.com/legal/terms-conditions/terms-conditions_Vigoshop_hr.pdf" style="background-color: lightgray"> Spremite i ispišite</a></p>
-<p class="ql-align-justify">Dobro došli na web-mjesto <a href="https://vigoshop.hr">vigoshop.hr</a> kojim upravlja tvrtka HS plus d.o.o., Gmajna 8, SI-1236 Trzin (dalje u tekstu: tvrtka).</p>
-<p class="ql-align-justify">Ovi se Opći uvjeti poslovanja primjenjuju na sve aktivnosti omogućene u internetskoj trgovini koja je dostupna na&nbsp;<a href="https://vigoshop.hr">vigoshop.hr</a> (dalje u tekstu: web-mjesto). Opći uvjeti poslovanja obvezujući su za sve korisnike. Molimo vas da ih pažljivo pročitate. Ako se ne slažete s bilo kojim dijelom ovih Općih uvjeta poslovanja ili ako se u potpunosti ne slažete s njima, ne smijete upotrebljavati naše web-mjesto i naše usluge. Opći uvjeti poslovanja predstavljaju valjani ugovor sklopljen između vas i tvrtke.</p>
-<p class="ql-align-justify">Web-mjesto dostupno je „takvo kakvo jest”, a tvrtka ne pruža jamstva, ni neizravno ni izravno, koja se odnose na pravo vlasništva, marketing ili prikladnost za bilo koju svrhu produsului koji su predstavljeni na web-mjestu.</p>
-<p class="ql-align-justify">Vlasnik web-mjesta postupat će s dužnom pažnjom kako bi pokušao osigurati da podaci navedeni na web-mjestu budu detaljni i ažurni. Istodobno, vlasnik web-mjesta zadržava pravo izmijeniti sadržaj web-mjesta ili ga prestati dopunjavati u bilo kojem trenutku, bez prethodne najave. Osim toga, vlasnik web-mjesta može izmijeniti usluge, produse, cijene ili programe opisane na ovom web-mjestu u bilo kojem trenutku i bez najave.</p>
-<h2 class="ql-align-justify"><strong>1 DEFINICIJE</strong></h2>
-<p class="ql-align-justify"><strong>Tvrtka</strong>&nbsp;je tvrtka HS plus d.o.o., Gmajna 8, SI-1236 Trzin koja je vlasnik web-mjesta&nbsp;<a href="https://vigoshop.hr">vigoshop.hr</a>&nbsp;i upravlja njime.</p>
-<p class="ql-align-justify"><strong>Web-mjesto&nbsp;</strong>je web-mjesto dostupno na&nbsp;<a href="https://vigoshop.hr">https://vigoshop.hr</a>, kojom upravlja tvrtka, i u okviru koje djeluje internetska trgovina.</p>
-<p class="ql-align-justify"><strong>Korisnik</strong>&nbsp;je svaka fizička osoba koja se koristi web-mjestom.</p>
-<p class="ql-align-justify"><strong>Kupac</strong>&nbsp;(ili&nbsp;<strong>„vi”</strong>&nbsp;) je svaka fizička osoba koja izvrši kupnju u internetskoj trgovini.</p>
-<p class="ql-align-justify"><strong>Potrošač</strong>&nbsp;je fizička osoba koja nabavlja ili upotrebljava robu i usluge u svrhe izvan opsega njegove profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka. Za potrebe ovih Općih uvjeta poslovanja svi kupci smatraju se i potrošačima.</p>
-<p class="ql-align-justify"><strong>Pravila o zaštiti privatnosti</strong>&nbsp;dokument je koji sadržava sve informacije o obradi osobnih podataka koja se odvija u okviru web-mjesta. Navedena Pravila o zaštiti privatnosti dostupna su&nbsp;<a href="https://vigoshop.hr/pravila-o-zastiti-privatnosti">ovdje</a>.</p>
-<p class="ql-align-justify"><strong>Pravila o kolačićima</strong>&nbsp;dokument je koji sadržava sve informacije o upotrebi kolačića koja se odvija u okviru web-mjesta. Navedena Pravila o kolačićima dostupna su&nbsp;<a href="https://vigoshop.hr/pravila-o-kolacicima">ovdje</a>.</p>
-<h2 class="ql-align-justify"><strong>2. VIGOSHOP.HR INTERNETSKA TRGOVINA</strong></h2>
-<p class="ql-align-justify">Općim uvjetima poslovanja utvrđuje se rad internetske trgovine, definiraju prava i obveze korisnika i internetske trgovine te uređuje poslovni odnos između internetske trgovine i kupca.&nbsp;Opći uvjeti poslovanja koji vrijede u trenutku kupnje (u trenutku kada se vrši internetska comanda) obvezujući su za kupca. Svaki put kada se izvrši comanda, korisnik će biti obaviješten o Općim uvjetima poslovanja. Izvršavanjem comenzi korisnik potvrđuje da je obaviješten o ovim Općim uvjetima poslovanja.</p>
-<p class="ql-align-justify">Potvrda Općih uvjeta poslovanja pri izvršavanju comenzi u našoj internetskoj trgovini predstavlja obvezujući ugovor između vas i tvrtke. Molimo vas da&nbsp;<strong>pažljivo pročitate</strong>&nbsp;Opće uvjete poslovanja&nbsp;<strong>prije potvrde comenzi</strong>. Ako se ne slažete s našim Općim uvjetima poslovanja, ne možete upotrebljavati usluge koje pruža naša internetska trgovina. Također, nije moguće djelomično se složiti s Općim uvjetima poslovanja. Da biste dovršili kupnju, morate prihvatiti&nbsp;<strong>cjelokupne</strong>&nbsp;Opće uvjete poslovanja koji su na snazi u trenutku kupnje.</p>
-<h3 class="ql-align-justify"><strong>i. Upotreba internetske trgovine</strong></h3>
-<p class="ql-align-justify">Tvrtka upravlja internetskom trgovinom u skladu s Općim uvjetima poslovanja. Internetska trgovina dostupna je kupcima u svakom trenutku, pri čemu tvrtka zadržava pravo privremeno onemogućiti ili obustaviti internetsku trgovinu bez prethodne najave.</p>
-<p class="ql-align-justify">Postoji mogućnost da će internetska trgovina biti privremeno nedostupna ili da privremeno neće biti moguće izvršiti plaćanja zbog održavanja i ažuriranja internetske trgovine. Tvrtka neće biti odgovorna za štetu koju biste mogli pretrpjeti tijekom održavanja i/ili ažuriranja internetske trgovine.</p>
-<h3 class="ql-align-justify"><strong>ii. Izvršavanje comenzi u internetskoj trgovini</strong></h3>
-<p class="ql-align-justify">Smatra se da je kupoprodajni ugovor između dobavljača i kupca sklopljen kad kupac potvrdi narudžbu (kupac dobiva poruku e-pošte s potvrdom statusa „Comanda potvrđena”). Od tog su trenutka sve cijene i ostali uvjeti kupnje fiksni i primjenjivi i za pružatelja usluge i za kupca. Kupoprodajni ugovor učitava se na poslužitelj tvrtke u elektroničkom obliku.</p>
-<p class="ql-align-justify">
-<p class="ql-align-justify">Postupak kupnje:</p>
-<ol>
-<li class="ql-align-justify">korak: U ponudi dostupnoj u internetskoj trgovini kupac odabire željeni artikl i željenu količinu te potvrđuje svoj izbor pritiskom gumba „Adauga in cos”. Ako kupac želi kupiti nekoliko različitih artikala, postupak treba ponoviti za svaki pojedinačni artikl. Nakon što kupac završi postupak odabira produsului, može nastaviti s postupkom kupnje pritiskom gumba „Continua la plata”.</li>
-<li class="ql-align-justify">korak: U ovom koraku kupac ispunjava obrazac sa svojim osobnim podacima potrebnima za isporuku željene comenzi. Nakon ispunjavanja obrasca, kupac u određenim slučajevima može odabrati između nekoliko mogućnosti dostave i dodati druge produse ili usluge svojoj narudžbi. U ovom koraku kupac je obaviješten i o planiranom datumu isporuke. Prije dovršenja comenzi, kupac ima mogućnost izbora između različitih načina plaćanja. Uzimajući u obzir odabrani izbor, konačni iznos koji treba platiti za narudžbu izračunava se još jednom prije završetka kupnje. Kupac potvrđuje postupak kupnje pritiskom gumba „Završi kupnju”. </li>
-<li class="ql-align-justify">korak: Nakon završetka kupnje, kupcu se na web-mjestu prikazuje poruka potvrde u kojoj se navodi da je comanda uspješno poslana i prikazuju pojedinosti poslane comenzi. Uz to, kupac prima i potvrdnu poruku e-pošte na adresu e-pošte navedenu u 2. točki, pri čemu se u navedenoj potvrdnoj poruci e-pošte nalaze pregled comenzi, upute za upotrebu naručenih produsului i upute za odustajanje od kupnje ili podnošenje reklamacije ako kupac nije zadovoljan produsom ili ga više ne želi.</li>
-</ol>
-<p class="ql-align-justify">Svi podaci koje nam dostavite tijekom slanja comenzi bit će obrađeni u skladu s Pravilima o zaštiti privatnosti koje možete pronaći na dnu web-mjesta.</p>
-<p class="ql-align-justify">Obavještavamo vas da će se vrijednost cjelokupne kupnje, uključujući isporuku ili druge troškove koji vrijede za kupnju, naplatiti nakon potvrde vaše comenzi. Obavijestit ćemo vas o svim dodatnim troškovima prije nego što izvršite kupnju. S odabranim načinom plaćanja mogu biti povezati i dodatni troškovi.</p>
-<p class="ql-align-justify">Možete pratiti i upravljati svojom narudžbom u RMA aplikaciji na ovoj poveznici <a href="https://rma.hs-plus.com/language/hr_HR/" rel="noopener noreferrer" target="_blank" style="background-color: rgb(248, 248, 248); color: rgba(var(--sk_highlight,18,100,163),1);">https://rma.hs-plus.com/language/hr_HR/</a>. Za pristup Vam je potreban broj comenzi ili kod za praćenje te e-mail ili broj telefona koje ste unijeli u comenzinicu prilikom kupnje. U ovoj aplikaciji (ako comanda još nije u pripremi) također možete otkazati narudžbu, promijeniti sadržaj comenzi, adresu, broj telefona, pratiti narudžbu te također pristupiti potvrdi o plaćanju.</p>
-<h3 class="ql-align-justify"><strong>iii. Cijene, načini plaćanja i promocije</strong></h3>
-<p class="ql-align-justify"><strong>Cijene</strong></p>
-<p class="ql-align-justify">Sve cijene navedene na web-mjestu izražene su u EUR i uključuju PDV.&nbsp;Cijene se primjenjuju od trenutka kada je comanda izvršena. Ponuda vrijedi do opoziva.</p>
-<p class="ql-align-justify"><strong>UPOZORENJE:&nbsp;</strong>Ovo je maloprodajna internetska trgovina čija su ciljana publika isključivo krajnji kupci (B2C). Iz tog razloga na ovom web-mjestu ne omogućujemo B2B prodaju, a ne možemo ponuditi ni mogućnost izdavanja računa pravnim subjektima. To znači i da naknadne korekcije računa (s fizičke na pravnu osobu) nisu moguće zato što se prodajna transakcija zaključuje isključivo s fizičkom osobom.</p>
-<p class="ql-align-justify">Ako želite uspostaviti B2B odnos s našom tvrtkom i kupiti veće cantitatii naših produsului (cijelo pakiranje / karton), možete se obratiti našoj trgovini na veliko na&nbsp;<a href="/cdn-cgi/l/email-protection#51336333113922213d24227f2238"><span class="__cf_email__" data-cfemail="b2d080d0f2dac1c2dec7c19cc1db">[email&#160;protected]</span></a>.</p>
-<p class="ql-align-justify"><strong>Načini plaćanja</strong></p>
-<p class="ql-align-justify">U našoj internetskoj trgovini možete upotrebljavati sljedeće načine plaćanja:</p>
-<ul>
-<li class="ql-align-justify">Plata ramburs – kupac plaća račun gotovinom ili kreditnom karticom dostavnom kuriru koji robu isporučuje na adresu kupca;</li>
-<li class="ql-align-justify">Plata cu cardul;</li>
-<li class="ql-align-justify">Plata prin PayPal.</li>
-</ul>
-<p class="ql-align-justify">Tvrtka zadržava pravo provjere odabranog načina plaćanja s pomoću provjere autentičnosti. Nadalje, zadržavamo pravo daljnje provjere odabranog načina plaćanja tražeći da nam pošaljete dokaz o uplati.&nbsp;</p>
-<p class="ql-align-justify">Upoznati ste s činjenicom da morate platiti cjelokupan iznos comenzi (uključujući sve troškove povezane s transakcijom i isporukom) u skladu s odabranim načinom plaćanja. Jamčite da imate sposobnost i pravo izvršavati transakcije s pomoću kreditne kartice ili bilo kojeg drugog odabranog načina plaćanja.</p>
-<p class="ql-align-justify"><strong>Promocije</strong></p>
-<p class="ql-align-justify">Web-mjesto nudi i popuste i druge promocije kojima se snižavaju cijene produsului (dalje u tekstu: promocije). Svaka promocija nudi se po sniženoj cijeni za određeno (ograničeno) razdoblje utvrđeno za svaku pojedinačnu promociju. Snižena cijena odnosi se na sve kupnje izvršene tijekom trajanja promocije.</p>
-<p class="ql-align-justify">Želimo vas upozoriti da su određene promocije ograničene samo na nove korisnike koji još uvijek nisu izvršili kupnju u našoj internetskoj trgovini. U tom se slučaju navedena promocija ne odnosi na postojeće korisnike. Svaki pokušaj upotrebe takvih promocija bit će odmah blokiran, a adrese e-pošte upotrebljavane za izvršenje spomenute zlouporabe bit će izbrisane bez prethodne najave. Popusti i druge promocije obično nisu kumulativni, osim ako se u okviru svake pojedinačne promocije izričito ne navodi drugačije.</p>
-<h3 class="ql-align-justify"><strong>iv. Troškovi i dostava robe</strong></h3>
-<p class="ql-align-justify">U cijene nisu uključeni troškovi dostave. Troškove dostave možete pronaći u internetskoj trgovini, gdje također imate mogućnost odabira načina dostave. Naša tvrtka nudi dva načina dostave: standardna i brza. Ključna razlika između ove dvije metode dostave jest u tome što se s comandama za ekspresnu dostavu postupa, i one se pakiraju, s većim prioritetom.&nbsp;&nbsp;Prije odabira željenog načina dostave, provjerite cijenu navedenu pored svakog pojedinačnog izbora. Tijekom podnošenja comenzi vidjet ćete pregled cijena koji se sastoji od troškova kupnje, troškova dostave i ukupnih troškova.</p>
-<p class="ql-align-justify">Ako odaberete plaćanje pouzećem, kurirska služba naplatit će naknadu za dostavu paketa izračunatu tijekom podnošenja comenzi.&nbsp;Ako odlučite platiti kreditnom karticom ili putem PayPala, navedeni trošak neće vam biti naplaćen.</p>
-<p class="ql-align-justify">Produsi koje ste naručili dostavit će se na adresu koju ste unijeli kao adresu za dostavu na našem web-mjestu.</p>
-<p class="ql-align-justify">Predviđeni rok dostave dostupan je kupcu nakon predaje comenzi. Tvrtka zadržava pravo produžiti rok dostave u slučaju povećane potražnje ili kašnjenja usluge dostave. Dostave se uglavnom izvršavaju prije podneva. Ako tijekom dostave ne možete prihvatiti paket, kurirska služba pokušat će se dogovoriti s kupcem o novom načinu i mjestu dostave.</p>
-<p class="ql-align-justify">Ako kurir za dostavu ne uspije kontaktirati kupca, slijedi drugi pokušaj dostave paketa sljedeći radni dan. Ako i drugi pokušaj dostave ne uspije, paket i njegov sadržaj vraćaju se pošiljatelju.</p>
-<p class="ql-align-justify">Iznos plaćen za neuspješno isporučene i unaprijed plaćene comenzi automatski se vraća u roku od 8 (osam) radnih dana skladišta koje bilježi povrat paketa ili tvrtke koja utvrdi da paket nije uspješno isporučen.</p>
-<p class="ql-align-justify"><strong>Sigurnosna upozorenja za upotrebu svih produsului</strong></p>
-<p class="ql-align-justify">Upotreba produsului iz naše internetske trgovine može predstavljati određeni rizik za život i zdravlje. Morate izričito potvrditi da razumijete da uporaba navedenih produsului predstavlja takav rizik koji u potpunosti prihvaćate. Comandavanjem i/ili upotrebom spomenutih produsului potvrđujete da ste upoznati s navedenim rizicima koji mogu uključivati rizik od bolesti, ozljeda, invaliditeta ili smrti. Morate preuzeti punu odgovornost za sve posljedice koje bi mogle nastati naručivanjem i/ili upotrebom produsului.</p>
-<p class="ql-align-justify">Prije upotrebe bilo kojeg produsului morate pročitati upute za upotrebu.</p>
-<p class="ql-align-justify">Prije upotrebe svaki produs mora biti testiran na siguran način. Ako niste potpuno sigurni kako testirati produs, ljubazno vas molimo da ga ne upotrebljavate, da nas o tome obavijestite ili ga vratite.</p>
-<p class="ql-align-justify">Tvrtka ne preuzima nikakvu odgovornost za neizravnu ili izravnu štetu nastalu upotrebom produsului naručenih na web-mjestu, bez obzira je li kupac ili treća strana produse upotrebljavao ispravno ili neispravno. Ovo izuzeće primjenjuje se u najvećoj mogućoj mjeri dopuštenoj zakonodavstvom.</p>
-<p class="ql-align-justify">U slučaju zahtjeva za naknadu štete podnesenog protiv tvrtke, tvrtka ograničava svoju odgovornost za štete na trostruku tržišnu cijenu produsului.</p>
-<p class="ql-align-justify">Nastojimo pružiti što detaljnije i preciznije opise produsului i fotografije. Ipak, ne možemo jamčiti da su svi podaci o produsu i njihove fotografije potpuno točni. Budući da se određeni produse mogu nabaviti kod različitih dobavljača, moguća su manja odstupanja u pakiranju ili izgledu produsului. Spomenuta odstupanja ni na koji način ne utječu na kvalitetu ili funkcionalnost produsului.&nbsp;&nbsp;</p>
-<h3 class="ql-align-justify"><strong>v. Pravo na odustajanje od Ugovora</strong></h3>
-<p class="ql-align-justify">Kupac koji izvrši kupnju u našoj internetskoj trgovini ima pravo odustati od Ugovora. Navedeno odustajanje od Ugovora može se izjaviti u roku od 90 dana od datuma isporuke comenzi, a tvrtku o tome obavještava dostavna služba.&nbsp;Kupac ne mora navesti razlog svoje odluke. Navedeno pravo na odustajanje od Ugovora primjenjuje se samo na kupce koji su fizičke osobe i koji robu i usluge stječu ili upotrebljavaju izvan svoje profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka.&nbsp;</p>
-<p class="ql-align-justify">Smatra se da je izjava o odustajanju izdana pravodobno ako je podnesena u roku za odustajanje od Ugovora. Izjavu o odustajanju možete dostaviti na unaprijed dogovorenom obrascu ili nam je možete poslati e-poštom.&nbsp;Obrazac možete pronaći na kartici „Pravo na odustajanje od kupnje” pri dnu web-mjesta. Teret dokazivanja koji se odnosi na ostvarivanje prava na odustajanje iz ovog članka snosi potrošač.</p>
-<p class="ql-align-justify"><strong>Odustajanjem od Ugovora kupac može steći povrat novca ili zamijeniti produs, ali ne može iskoristiti kredit!</strong></p>
-<p class="ql-align-justify">Nakon predaje izjave o odustajanju, svoje produse morate vratiti u roku od 14 dana od datuma izjave o odustajanju. Robu pošaljite na našu adresu: <strong>HS PLUS d.o.o., Poštanska ulica 25, 10410 Velika Gorica</strong>.&nbsp;Smatra se da je roba pravovremeno vraćena ako je pošaljete prije isteka roka za povrat u trajanju od 90 dana.&nbsp;Morate vratiti neizmijenjenu količinu neoštećenih produsului, zapakiranih u originalno pakiranje ili ambalažu koja produse štiti na isti način kao i originalna ambalaža. Ne možete vratiti oštećene produse, produse u izmijenjenoj količini ili produse upakirane u neprikladnu ambalažu. Molimo vratite artikle kao paketnu pošiljku, a ne kao pismo, osiguravajući da je paket označen kodom za odustanak od kupnje, koji ćete dobiti tijekom postupka.Ako paket nije pravilno označen (poslan bez koda za odustanak od kupnje), to može značajno produžiti vrijeme potrebno za obradu vašeg zahtjeva. U slučaju odustajanja od ugovora, podmirit ćete samo troškove povrata robe, s tim da se navedeni troškovi ne mogu nadoknaditi.</p>
-<p class="ql-align-justify">Ako ste već platili naručenu robu, odmah ćemo, ili najkasnije u roku od 8 radnih dana od slanja paketa na našu adresu, nadoknaditi sve zaprimljene uplate i uplate koje ste izvršili u vezi s narudžbom. Smatra se da je paket poslan na našu adresu kada ga naše skladište evidentira kao vraćeni paket. Zadržavamo pravo zadržati primljenu uplatu do povrata produsului koji su predmet odustajanja od ugovora.</p>
-<p class="ql-align-justify">Zaprimljene uplate nadoknadit ćemo istim sredstvima plaćanja koja ste upotrebljavali tijekom kupnje. U slučaju plaćanja pouzećem nabavna cijena vratit će na broj tekućeg računa koji ste naveli u svom obrascu.</p>
-<p class="ql-align-justify">Izuzetak od prava na povlačenje</p>
-<p class="ql-align-justify">Iskorištavanje prava na odustajanje isključeno je za sljedeće ugovore:</p>
-<ul>
-<li class="ql-align-justify">ugovori o isporuci robe izrađeni prema specifikacijama potrošača ili jasno personalizirani;</li>
-<li class="ql-align-justify">ugovori o opskrbi robom koji se mogu pogoršati ili brzo isteći;</li>
-<li class="ql-align-justify">ugovori o nabavi novina, periodike ili časopisa, osim ugovora o pretplati na ove publikacije;</li>
-<li class="ql-align-justify">ugovori o isporuci robe koju je potrošač otpečatio nakon isporuke i koja se ne može vratiti iz higijenskih ili zdravstvenih razloga (na primjer: kozmetika, sredstva za čišćenje, paste za poliranje i kupaći kostim, donje rublje, čarape)</li>
-<li class="ql-align-justify">ugovori o isporuci robe koja se nakon isporuke i po svojoj prirodi nerazdvojno miješaju s drugim artiklima; (na primjer: set/kit, svi produse iz Mystery box -a, oba produsului iz ponude 1+1 besplatno, bilo koji POKLON);</li>
-<li class="ql-align-justify">ugovori o isporuci audio ili video zapisa ili računalnog softvera ako ih je potrošač otpečatio nakon isporuke;</li>
-<li class="ql-align-justify">ugovori o opskrbi alkoholnim pićima čija se isporuka odgađa nakon trideset dana i čija vrijednost dogovorena pri sklapanju ugovora ovisi o fluktuacijama na tržištu na koje profesionalci ne mogu utjecati;</li>
-<li class="ql-align-justify">ugovori o isporuci robe ili usluga, čija cijena ovisi o fluktuacijama na financijskom tržištu na koje profesionalci ne mogu utjecati i do kojih će vjerojatno doći tijekom razdoblja odustajanja;</li>
-<li class="ql-align-justify">ugovori o pružanju usluga u potpunosti izvršeni prije isteka roka za odustajanje i čije je izvršavanje započelo nakon izričitog prethodnog pristanka potrošača i izričitog odricanja od prava na odustajanje; (na primjer: provizija za plaćanje po pouzeću, brza dostava, osiguranje paketa);</li>
-<li class="ql-align-justify">ugovori o radovima na održavanju ili popravcima koji se moraju hitno izvršiti u potrošačevoj kući i izričito to zatražiti, u granicama rezervnih dijelova i radova koji su strogo potrebni za reagiranje u hitnim slučajevima;</li>
-<li class="ql-align-justify">ugovori o pružanju usluga smještaja, prijevoza, ugostiteljstva i razonode, koji se moraju pružati određenog datuma ili s određenom učestalošću;</li>
-<li class="ql-align-justify">ugovori o isporuci digitalnog sadržaja koji nisu isporučeni na materijalnom mediju, čije je izvršavanje počelo nakon izričitog prethodnog pristanka potrošača i izričitog odricanja od prava na odustajanje (na primjer: preuzeti digitalni sadržaji, e-knjige).</li>
-</ul>
-<p class="ql-align-justify"><strong>UPOZORENJE: </strong>Ako dobrovoljno vratite produs za koji nije moguće odstupanje od kupnje,&nbsp;nakon perioda za povrat od 90 dana, nakon 14 dana od obavijesti o odstupanju od kupnje, koji nije kupljen u našoj trgovini Takav Vam produs možemo vratiti natrag isključivo uz naplatu 10 EUR što predstavlja trošak obrade neopravdane reklamacije. Produs koji nije preuzet bit će uništen nakon 2 mjeseca.</p>
-<h3 class="ql-align-justify"><strong>vi. Reklamacije</strong></h3>
-<p class="ql-align-justify">Ako otkrijete da vaš produs ne radi ispravno ili ste dobili neprimjeren ili oštećen produs, na raspolaganju su vam sljedeće mogućnosti:</p>
-<ul>
-<li class="ql-align-justify">provedba jamstva dostave,</li>
-<li class="ql-align-justify">provedba jamstva na tehničke produse i</li>
-<li class="ql-align-justify">podnošenje reklamacije produsului.</li>
-</ul>
-<p class="ql-align-justify"><strong>a) Jamstvo isporuke</strong></p>
-<ol>
-<li class="ql-align-justify">Dajemo dodatno jamstvo za besprijekornu isporuku koje se može primijeniti&nbsp;<strong>u roku od 48 sati nakon primitka produsului</strong>.</li>
-<li class="ql-align-justify">Ako su vaši produse oštećeni tijekom transporta ili nisu u skladu s vašom narudžbom, ljubazno vas molimo da nam prijavite grešku u roku od 48 sati od isporuke. Pošaljite nam poruku e-pošte koja sadrži fotografiju pakiranja (naljepnica mora biti jasno istaknuta na fotografiji) i primljenog produsului koji jasno ukazuje na oštećeno područje.</li>
-<li class="ql-align-justify">Dat ćemo prednost rješavanju vašeg zahtjeva u najkraćem mogućem roku i pružit ćemo vam zamjenski produs.</li>
-<li class="ql-align-justify">Ako je zahtjev poslan prekasno, riješit će se kao reklamacija produsului.</li>
-</ol>
-<p class="ql-align-justify"></p>
-<p class="ql-align-justify"><strong>b) Jamstvo na tehničke produse</strong></p>
-<p class="ql-align-justify">Za određene produse u našoj ponudi primjenjuje se jamstveno razdoblje od 24 mjeseci. Jamstvo se može primijeniti samo za tehničke produse i električne uređaje iz naše ponude. Jamstveno razdoblje od 24 mjeseci započinje na dan primitka robe. Svoje jamstvo možete ostvariti u skladu Zakonom o zaštiti potrošača, na temelju računa koji predstavlja potvrdu o jamstvu.</p>
-<p class="ql-align-justify">Tvrtka zadržava pravo odbiti jamstvo ako uz zahtjev nije priložen račun ili ako račun nije čitljiv ili na drugi način nedostaje.</p>
-<p class="ql-align-justify">Jamstvo se ne primjenjuje ako:</p>
-<ul>
-<li class="ql-align-justify">je produs fizički oštećen;</li>
-<li class="ql-align-justify">produs pokazuje znakove trošenja zbog uobičajene upotrebe;</li>
-<li class="ql-align-justify">produs predstavlja nedostatke koji su nastali kao rezultat nepravilne, neprikladne ili neoprezne upotrebe produsului.</li>
-</ul>
-<p class="ql-align-justify">Produsi za koje želite iskoristiti jamstvo moraju se ispitati, zbog čega vas molimo da svome zahtjevu za jamstvom priložite fotografije ili video isječke koji prikazuju nedostatak. Ako je potrebno, zamolit ćemo vas da nam vratite produs kako bismo ga mogli ispitati.</p>
-<p class="ql-align-justify">Ako odobrimo vaš zahtjev za jamstvom, pružit ćemo vam novi produs. Imate pravo zatražiti i popravak svojeg produsului, ali morate biti svjesni činjenice da je razdoblje popravka duže od razdoblja isporuke novog produsului. Ako popravak traje više od 45 dana, vaš će produs biti zamijenjen novim. Ako se novi produs ne može dostaviti, vratit ćemo vam cijenu produsului u cijelosti.</p>
-<p class="ql-align-justify">Sažetak postupka možete pronaći na kartici „Zamjena u jamstvu” pri dnu web-mjesta.</p>
-<p class="ql-align-justify"><strong>UPOZORENJE: Tvrtka HS Plus prihvatit će povrat samo onih paketa koji sadržavaju produse kupljene na web-mjestu. Svi paketi koje pošalje pojedinac, a koji ne sadržavaju produse kupljene u našoj tvrtki, vratit će se pošiljatelju o njegovom trošku.</strong></p>
-<p class="ql-align-justify">&nbsp;</p>
-<p class="ql-align-justify"><strong>c) Reklamacija produsului zbog materijalnih nedostataka</strong></p>
-<ol>
-<li class="ql-align-justify">Ako produs ne radi ispravno, pošaljite nam poruku e-pošte na <a href="/cdn-cgi/l/email-protection#c0a9aea6af80b6a9a7afb3a8afb0eea8b2"><span class="__cf_email__" data-cfemail="a9c0c7cfc6e9dfc0cec6dac1c6d987c1db">[email&#160;protected]</span></a> i pomoći ćemo pružanjem potrebnog objašnjenja. Na taj ćete način spriječiti bilo kakvu potencijalnu zlouporabu produsului i štetu na samom produsu, kao i bilo kakve ozljede sebe ili drugih.</li>
-<li class="ql-align-justify">Ako vaš produs ne radi, možete podnijeti reklamaciju navodeći materijalne nedostatke na produsu. Slučajevi koji se smatraju materijalnim nedostacima na produsu navedeni su u odjeljku vii. ovih Općih uvjeta poslovanja. Materijalne nedostatke možete primijeniti samo ako su navedeni nedostaci već postojali u trenutku kupnje, ali su otkriveni kasnije.</li>
-<li class="ql-align-justify">Ako vaš produs ne radi zbog materijalnog nedostatka, molimo vas da nedostatak prijavite odmah nakon što ga otkrijete, ali ni u kojem slučaju kasnije od dva mjeseca od dana kada ste taj nedostatak otkrili. Pošaljite nam poruku e-pošte s fotografijom ili video isječkom s prikazom neispravnog produsului, na temelju kojeg se nedvosmisleno može utvrditi da produs ne radi. Ako je potrebno, zamolit ćemo vas da nam vratite predmetni produs kako bismo ga mogli ispitati i utvrditi nedostatak produsului.</li>
-<li class="ql-align-justify">Nećemo moći razmotriti vašu reklamaciju za produse koji su oštećeni zbog nepravilne ili neprikladne upotrebe ili ponašanja koje nije strogo neophodno za utvrđivanje prirode, svojstva i funkcioniranja robe. Ako želite povrat predmetnog produsului nakon odbijanja vaše reklamacije, poslat ćemo vam ga zajedno s računom za troškove povezane s isporukom navedenog produsului.</li>
-<li class="ql-align-justify">Tvrtka je odgovorna za nedostatke u izradi produsului koji se pojave kroz 2 godine nakon isporuke. Tvrtka je dužna odgovoriti na prigovor u roku od 3 radna dana.</li>
-<li class="ql-align-justify">Ako izvršavate nalog o materijalnom nedostatku, dostupne su vam sljedeće mogućnosti:</li>
-</ol>
-<ul>
-<li class="ql-align-justify">zamjena produsului,</li>
-<li class="ql-align-justify">povrat kupoprodajne cijene,</li>
-<li class="ql-align-justify">otklanjanje nedostatka produsului ili</li>
-<li class="ql-align-justify">proporcionalni povrat kupoprodajne cijene.</li>
-</ul>
-<p class="ql-align-justify">Sažetak postupka možete pronaći u kartici „Pritužbe i sporovi” na dnu web-mjesta.</p>
-<h3 class="ql-align-justify"><strong>vii. Materijalni nedostatak</strong></h3>
-<p class="ql-align-justify">Materijalni nedostatak može se primijeniti u sljedećim slučajevima:</p>
-<ul>
-<li class="ql-align-justify">ako produs ne sadrži karakteristike potrebne za njegovu uobičajenu upotrebu ili za stavljanje na tržište;</li>
-<li class="ql-align-justify">ako produs ne sadrži karakteristike potrebne za određenu upotrebu za koju je kupac kupio produs, a koje su prodavatelju bile poznate ili su prodavatelju trebale biti poznate;</li>
-<li class="ql-align-justify">ako produs ne sadrži karakteristike i kvalitete koje su izričito ili implicitno dogovorene ili propisane;</li>
-<li class="ql-align-justify">ako je prodavatelj kupcu dostavio produs koji nije u skladu s uzorkom ili modelom produsului, osim ako uzorak ili model produsului nisu prikazani samo u informativne svrhe.</li>
-</ul>
-<p class="ql-align-justify">Sažetak postupka možete pronaći u kartici „Pritužbe i sporovi” na dnu web-mjesta.</p>
-<p class="ql-align-justify">Tvrtka je odgovorna za nedostatke u izradi produsului koji se pojave kroz 2 godine nakon isporuke. Tvrtka je dužna odgovoriti na prigovor u roku od 3 radna dana.</p>
-<h3 class="ql-align-justify"><strong>viii. Dostupnost informacija</strong></h3>
-<p class="ql-align-justify">Pružatelj se obvezuje da će kupcu uvijek pružiti sljedeće informacije:</p>
-<ul>
-<li class="ql-align-justify">identitet tvrtke (naziv i registrirana adresa tvrtke, matični broj),</li>
-<li class="ql-align-justify">podatke za kontakt koji korisniku omogućuju brzu i učinkovitu komunikaciju s pružateljem (e-pošta, automatska sekretarica),</li>
-<li class="ql-align-justify">bitne karakteristike robe ili usluga (uključujući usluge nakon prodaje i jamstva),</li>
-<li class="ql-align-justify">konačnu cijenu robe ili usluga, uključujući poreze, ili način izračuna cijene ako se zbog prirode robe ili usluge konačna cijena ne može izračunati unaprijed,</li>
-<li class="ql-align-justify">dostupnost produsului (svi produse ili usluge ponuđeni na web-mjestu trebali bi biti dostupni u razumnom roku),</li>
-<li class="ql-align-justify">uvjete plaćanja, uvjete isporuke produsului ili uvjete za izvršenje usluge (način dostave, lokacija i rok),</li>
-<li class="ql-align-justify">informacije o svim potencijalnim troškovima prijevoza, dostave ili slanja, ili upozorenje da takvi troškovi mogu nastati ako se ne mogu izračunati unaprijed,</li>
-<li class="ql-align-justify">vremenski rok ponude,</li>
-<li class="ql-align-justify">uvjete, rokove i postupke u slučaju odustajanja od Ugovora i podatke o troškovima povrata robe (ako postoje),</li>
-<li class="ql-align-justify">objašnjenje postupka koji treba poduzeti u slučaju reklamacije, uključujući sve podatke o kontaktnoj osobi ili korisničkoj službi,</li>
-<li class="ql-align-justify">svijest o odgovornosti u slučaju materijalnih nedostataka,</li>
-<li class="ql-align-justify">mogućnost i uvjete usluga nakon prodaje i dobrovoljnog jamstva, ako je potrebno.</li>
-<li class="ql-align-justify">Pri pripremi web-mjesta može doći do određenih pogrešaka. Budući da ne možemo utjecati na te pogreške, ne snosimo odgovornost za njih. U slučaju većih odstupanja u pogledu cijena ili tehničkih svojstava produsului, obavijestit ćemo vas o tome kada izvršite narudžbu.</li>
-</ul>
-<h3 class="ql-align-justify"><strong>ix. Podaci o registraciji, naziv registra, registarski broj:</strong></h3>
-<p class="ql-align-justify">Naziv tvrtke: HS PLUS, trgovina in storitve d.o.o.</p>
-<p class="ql-align-justify">Sjedište: Gmajna 8, Trzin, SI-1236 Trzin</p>
-<p class="ql-align-justify">Matični broj tvrtke: 6579639000</p>
-<p class="ql-align-justify">PDV ID: SI15553442</p>
-<p class="ql-align-justify">Porezni obveznik: DA</p>
-<p class="ql-align-justify">Datum upisa u registar: 28/03/2014</p>
-<p class="ql-align-justify">Standardna klasifikacija djelatnosti G47.910 – Trgovina na malo preko pošte ili interneta</p>
-<h3 class="ql-align-justify"><strong>x. Izvansudsko rješavanje sporova i drugi pravni lijekovi</strong></h3>
-<p class="ql-align-justify">Tvrtka se trudi sve sporove riješiti na sporazuman način. Ako takvo rješavanje sporova nije moguće, sud u Ljubljani bit će nadležan za rješavanje navedenih sporova.</p>
-<h3 class="ql-align-justify"><strong>xi. Platforma za rješavanje sporova</strong></h3>
-<p class="ql-align-justify">U skladu s pravnim standardima, tvrtka HS plus d.o.o. ne priznaje nijednog pružatelja usluga izvansudskog rješavanja potrošačkih sporova kao pružatelja koji je ovlašten rješavati potrošačke sporove koje potrošači mogu pokrenuti na temelju izvansudske nagodbe Zakona o potrošačkim sporovima.</p>
-<p class="ql-align-justify">Platforma za rješavanje sporova dostupna je na stranici&nbsp;<a href="https://ec.europa.eu/consumers/odr/">http://ec.europa.eu/consumers/odr/</a>.</p>
-<p class="ql-align-justify">Više informacija o platformi za rješavanje sporova potražite na <a href="https://ec.europa.eu/commission/presscorner/detail/ro/MEMO_13_193">ec.europa.eu</a>.</p>
-<p class="ql-align-justify">
-<h2 class="ql-align-justify"><strong>3. KOMUNIKACIJA</strong></h2>
-<p class="ql-align-justify">Tvrtka će se obratiti korisniku samo s pomoću daljinske komunikacije ako je to potrebno za izvršavanje comenzi.</p>
-<p class="ql-align-justify">Tvrtka pruža usluge podrške svojim korisnicima na <a href="/cdn-cgi/l/email-protection#ff96919990bf899698908c97908fd1978d"><span class="__cf_email__" data-cfemail="4f262129200f392628203c27203f61273d">[email&#160;protected]</span></a>.</p>
-<p class="ql-align-justify">Međutim, korisnicima se možemo obratiti i u komercijalne svrhe ako nam za to daju svoju privolu ili ako su već obavili kupnju u našoj internetskoj trgovini, pri čemu će navedena komunikacija:</p>
-<ul>
-<li class="ql-align-justify">biti jasno i nedvosmisleno označena kao reklamna poruka,</li>
-<li class="ql-align-justify">jasno prikazivati pošiljatelja,</li>
-<li class="ql-align-justify">jasno označiti razne promocije i druge tehnike marketinga kao takve.</li>
-</ul>
-<p class="ql-align-justify">Više informacija u vezi s komunikacijom potražite u našim Pravilima o zaštiti privatnosti i Pravilima o kolačićima.</p>
-<h2 class="ql-align-justify"><strong>4. INTELEKTUALNO VLASNIŠTVO</strong></h2>
-<p class="ql-align-justify">Svi podaci, slike i tekstovi, kao i bilo koji drugi materijali (npr. video sadržaji, grafikoni, skice itd.) na našem web-mjestu zaštićeni su autorskim pravima i/ili zakonom o intelektualnom vlasništvu.</p>
-<p class="ql-align-justify">Kupnjom produsului ili upotrebom web-mjesta, korisnik neće steći autorska prava, imovinska prava ili prava intelektualnog vlasništva za produse i/ili web-mjesto. Korisnik može upotrebljavati materijale samo u svoje nekomercijalne svrhe.</p>
-<h2 class="ql-align-justify"><strong>5. IZJAVA O ODRICANJU ODGOVORNOSTI</strong></h2>
-<p class="ql-align-justify">Imajući na umu izjave o odricanju odgovornosti navedene u ovim Općim uvjetima poslovanja, tvrtka pruža sljedeća ograničenja:</p>
-<p class="ql-align-justify">Ako odlučite upotrebljavati našu internetsku trgovinu i/ili naše web-mjesto, pristajete na to dobrovoljno i stoga preuzimate sve rizike. Web-mjesto i trgovina pružaju se „takvi kakvi jesu”, bez ikakvih neizravnih ili izravnih jamstava. Sve izjave o odricanju odgovornosti navedene u ovom poglavlju ili na drugim mjestima u ovim Općim uvjetima poslovanja vrijede u najvećoj mjeri dopuštenoj zakonom.</p>
-<p class="ql-align-justify">Tvrtka ne jamči rad web-mjesta i njegovih funkcija te ne jamči da će web-mjesto raditi bez pogrešaka, virusa ili zlonamjernog softvera sličnog virusu. Uz to, tvrtka ne jamči da su podaci objavljeni na web-mjestu točni i sveobuhvatni. Tvrtka neće biti odgovorna za bilo kakvu štetu, uključujući, ali ne ograničavajući se na: izravnu, neizravnu ili posljedičnu štetu koja nastane ili se pojavi uslijed upotrebe web-mjesta.&nbsp;</p>
-<p class="ql-align-justify">Ako se odlučite za upotrebu internetske trgovine i izvršite plaćanje u našoj internetskoj trgovini, izričito se slažete da je upotrebljavate na vlastitu odgovornost i da ćete sami snositi sve rizike koji se odnose na plaćanje u našoj internetskoj trgovini, uključujući, ali ne ograničavajući se na neuspjela plaćanja od strane korisnika, pogreške u plaćanju i pogreške povrata u slučaju reklamacije. Ova se izjava o odricanju odgovornosti primjenjuje u najvećoj mjeri dopuštenoj zakonom. Tvrtka neće biti odgovorna za bilo kakvu štetu koja bi mogla nastati u vezi s upotrebom web-mjesta i/ili produsului dostupnih u našoj internetskoj trgovini.</p>
-<h2 class="ql-align-justify"><strong>6. ZAVRŠNE ODREDBE</strong></h2>
-<p class="ql-align-justify"><strong>Sklapanje ugovora</strong>&nbsp;Zajedno s naručivanjem usluga na web-mjestu, kao i na svim podstranicama ovog web-mjesta, ovi Opći uvjeti poslovanja imaju karakter ugovora sklopljenog između kupca i tvrtke.</p>
-<p class="ql-align-justify"><strong>Odvojivost odredbi</strong>&nbsp;Ako se bilo koja od odredbi ovih Općih uvjeta poslovanja pokaže (u cijelosti ili djelomično) nezakonitom ili ništavnom na bilo koji drugi način, navedena će se odredba smatrati (u cijelosti ili djelomično) izbrisanom, dok se preostali Opći uvjeti poslovanja i dalje primjenjuju.</p>
-<p class="ql-align-justify"><strong>Puna pravna sposobnost</strong>&nbsp;Korisnik jamči da ima potpunu sposobnost za preuzimanje prava i obveza koje proizlaze iz ovih Općih uvjeta poslovanja. Time jamčite da vam nije potreban pristanak ili odobrenje bilo koje treće strane da biste ispunili svoje obveze koje proizlaze iz ovih Općih uvjeta poslovanja.</p>
-<p class="ql-align-justify"><strong>Poznavanje Općih uvjeta poslovanja</strong>&nbsp;Ovime jamčite da ste pročitali i da ste u potpunosti upoznati s ovim Općim uvjetima poslovanja prije nego što ih prihvatite, osobito kada je riječ o utvrđenim izjavama o odricanju odgovornosti.</p>
-<p class="ql-align-justify"><strong>Zakon koji se primjenjuje na ove Opće uvjete poslovanja</strong>&nbsp;Na ove se Opće uvjete poslovanja primjenjuje zakonodavstvo Republike Slovenije. Svi sporovi koji proizlaze iz ovih Općih uvjeta poslovanja u nadležnosti su sudova u Republici Sloveniji.</p>
-<p class="ql-align-justify"><strong>Izmjene ovih Općih uvjeta poslovanja</strong>&nbsp;Nemate pravo mijenjati bilo koju odredbu navedenu u ovim Općim uvjetima poslovanja ili se odricati (u cijelosti ili djelomično) valjanosti bilo koje od navedenih odredbi. Tvrtka ima pravo izmijeniti ove Opće uvjete poslovanja u bilo kojem trenutku. Sve izmjene bit će objavljene na web-mjestu. Ako i dalje upotrebljavate web-mjesto, smatrat će se da se slažete s izmjenama na snazi u relevantno vrijeme. Ako se ne slažete s izmjenama, imate pravo odustati od Ugovora.</p>
-<p class="ql-align-justify"><strong>Cjelokupnost ugovora</strong>&nbsp;Ovi Opći uvjeti poslovanja predstavljaju cjelokupnost sporazuma koji se primjenjuje između ugovornih strana. Svi potencijalni prethodni pisani ili usmeni sporazumi ili pregovori bit će u potpunosti zamijenjeni ovim Općim uvjetima poslovanja.</p>
-<p class="ql-align-justify"><strong>Jezične verzije&nbsp;</strong>Ovi su Opći uvjeti poslovanja bili izrađeni na slovenskom jeziku. Svaka izmjena ovih Općih uvjeta poslovanja na bilo kojem drugom jeziku pripremljena je kako bi se omogućio lakši pristup Općim uvjetima poslovanja. Ovim se slažete i u potpunosti razumijete da će slovenska verzija imati prednost u slučaju bilo kakvih sporova.</p>
-<p class="ql-align-justify"><strong>Značenje pojmova</strong>&nbsp;Definicije pojmova upotrebljavanih u ovim Općim uvjetima poslovanja navedene su na početku ovih Općih uvjeta poslovanja.</p>
-<p class="ql-align-justify"><strong>HS PLUS&nbsp;d.o.o.&nbsp;&nbsp;</strong>Gmajna 8&nbsp;/&nbsp;SI-1236 Trzin&nbsp;/&nbsp;Slovenija&nbsp;/&nbsp;&nbsp;<a href="/cdn-cgi/l/email-protection#89e0e7efe6c9ffe0eee6fae1e6f9a7e1fb"><span class="__cf_email__" data-cfemail="f1989f979eb18798969e82999e81df9983">[email&#160;protected]</span></a></p>
-<p class="ql-align-justify">Tijelo za registraciju: Okružni sud u Ljubljani&nbsp;/&nbsp;Temeljni kapital: 7 500 EUR&nbsp;/&nbsp;IBAN SI56 2900&nbsp;0005&nbsp;2694&nbsp;428&nbsp;/&nbsp;PDV ID: 15553442&nbsp;/&nbsp;Matični broj tvrtke: 6579639000</p>
+<h2 class="ql-align-justify"><strong>Termeni si conditii generale</strong></h2>
+<p class="ql-align-justify"><a class="button" href="https://images.hs-plus.com/legal/terms-conditions/terms-conditions_Vigoshop_hr.pdf" style="background-color: lightgray">Salvati si imprimati</a></p>
+<p class="ql-align-justify">Bine ati venit pe site-ul NORIKS. Acesti termeni si conditii se aplica utilizarii magazinului online si tuturor comenzilor plasate prin intermediul acestuia.</p>
+<p class="ql-align-justify">Prin utilizarea site-ului si prin finalizarea unei comenzi, confirmati ca ati citit, ati inteles si ati acceptat acesti termeni si conditii.</p>
+<h2 class="ql-align-justify"><strong>1. Informatii generale</strong></h2>
+<p class="ql-align-justify">Operatorul magazinului este HS PLUS d.o.o., Gmajna 8, SI-1236 Trzin, Slovenia.</p>
+<p class="ql-align-justify">Site-ul poate fi actualizat, modificat sau completat fara notificare prealabila. Depunem eforturi rezonabile pentru ca informatiile publicate sa fie corecte si actualizate.</p>
+<h2 class="ql-align-justify"><strong>2. Comenzi</strong></h2>
+<p class="ql-align-justify">Contractul de vanzare se considera incheiat in momentul in care clientul finalizeaza comanda si primeste confirmarea prin e-mail.</p>
+<p class="ql-align-justify">Preturile afisate sunt in EUR si includ TVA, cu exceptia cazului in care este mentionat altfel. Costurile de livrare sunt afisate inainte de finalizarea comenzii.</p>
+<h2 class="ql-align-justify"><strong>3. Plata si livrare</strong></h2>
+<p class="ql-align-justify">Magazinul accepta plata ramburs, plata cu cardul si plata prin PayPal, in functie de optiunile disponibile la checkout.</p>
+<p class="ql-align-justify">Termenul estimat de livrare este afisat in procesul de comanda. In cazul unor intarzieri independente de controlul nostru, termenul se poate modifica.</p>
+<h2 class="ql-align-justify"><strong>4. Reclamatii si defecte</strong></h2>
+<p class="ql-align-justify">Daca produsul primit are un defect de fabricatie sau nu corespunde comenzii, ne puteti contacta pentru inlocuire, rambursare sau alta solutie legala aplicabila.</p>
+<p class="ql-align-justify">Solicitarile se proceseaza in termen rezonabil, iar echipa noastra de suport va ofera instructiunile necesare pentru solutionare.</p>
+<h2 class="ql-align-justify"><strong>5. Raspundere</strong></h2>
+<p class="ql-align-justify">Site-ul si serviciile sunt furnizate in forma disponibila. Nu garantam functionarea neintrerupta a site-ului si nu raspundem pentru indisponibilitati temporare, erori tehnice sau intarzieri cauzate de terti.</p>
+<h2 class="ql-align-justify"><strong>6. Dispozitii finale</strong></h2>
+<p class="ql-align-justify">Pentru orice intrebare legata de comenzi, livrare, retur sau reclamatii, ne puteti contacta prin canalele de suport afisate pe site.</p>
+<p class="ql-align-justify"><strong>HS PLUS d.o.o.</strong> / Gmajna 8 / SI-1236 Trzin / Slovenia</p>
 </div>
         <img decoding="async" id="close_terms_conditions" src="https://images.vigo-shop.com/general/remove.png" alt="Close">
     </div>
@@ -706,264 +522,34 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <div id="withdrawal-policy-popup" class="checkout-popup" style="display: none;">
     <div class="checkout-popup-wrapper">
         <div id="withdrawal-policy-content">
-            <h2 class="ql-align-justify"><strong>PRAVO NA ODUSTAJANJE OD KUPNJE</strong></h2>
-<p class="ql-align-justify">Od kupnje možete odustati u roku&nbsp;<strong>od 90 dana od isporuke, </strong>bez navođenja razloga. Morate vratiti produs na našu adresu da biste mogli zatražiti zamjenu za drugi produs ili povrat novca za produs. Rok za odustajanje od kupnje istječe 90 dana nakon kada vi ili treća strana koju ste odredili, a koja nije prevoznik, fizički preuzmu robu.</p>
-<p class="ql-align-justify"><strong>Produs koji želite vratiti mora biti neoštećen, ako je razumno moguće u originalnoj i neoštećenoj ambalaži sa svom isporučenom opremom. </strong>U slučaju da se produs ili originalno pakiranje oštete ili pretjerano koriste, trgovina ima pravo naplatiti odbitak pri povratu kupovne vrijednosti produsului.</p>
-<p class="ql-align-justify"><strong>U roku 90 dana od isporuke možete ispuniti</strong>&nbsp;obrazac na poveznici za zamjenu produsului&nbsp;ili&nbsp;povrat novca<strong>&nbsp;ILI&nbsp;</strong>možete nas obavijestiti e-poštom o namjeri da odustajete od kupnje.</p>
-<p class="ql-align-justify">U slučaju zamjene produsului ili povrata novca ispunite: <a href="https://rma.hs-plus.com/language/hr_HR/">LINK</a></p>
-<p>Odmah nakon podnošenja obrasca, primit ćete kod za otkazivanje putem e-pošte kako biste potvrdili svoj zahtjev. Ovaj kod mora biti napisan na paketu zajedno s vašim podacima.</p>
-<p class="ql-align-justify">Ako ne primite kod za otkazivanje nakon podnošenja obrasca, molimo kontaktirajte nas putem e-pošte.</p>
-<p class="ql-align-justify">Također možete koristiti obrazac eurposkog modela za odstupanje od kupnje, kojem možete pristupiti na sljedećem linku <strong><a href="https://images.hs-plus.com/shared/pdf/0ccf93b329048_HR_UNIVERSAL_FORM.pdf">OBRAZAC</a></strong>. U tom slučaju isprintajte obrazac, ispunite podatke koji nedostaju i stavite potpisan dokument u paket koji se vraća. OPREZ: Korištenje ovog obrazca ipak nije obavezno i može produžiti vrijeme obrade vašeg zahtjeva jer će se paket vratiti bez reklamacijskog koda što će zahtjevati ručnu obradu.</p>
-<p class="ql-align-justify"><strong>Prije slanja paketa, provjerite potvrdu comenzi ili račun koji ste dobili e-poštom u vrijeme comenzi, da budete sigurni da ste kupili produs na našoj internetskoj stranici i provjerite naš spisak produsului za koje nije moguća reklamacija.</strong>&nbsp;U slučaju da isporučite produs koji nije naš ili<strong>&nbsp;nije legitiman za povlačenje,</strong> ne odgovaramo za Vašu grešku i nećemo vratiti produs, odnosno nećemo računati troškove.</p>
-<p class="ql-align-justify">Imate <strong>14 dana</strong> od podnošenja zahtjeva da nam pošaljete paket s Hrvatskom poštom na našu adresu:</p>
-<p class="ql-align-justify"><strong>HS PLUS d.o.o.,</strong></p>
-<p class="ql-align-justify"><strong>Poštanska ulica 25,</strong></p>
+<h2 class="ql-align-justify"><strong>Dreptul de retragere din cumparare</strong></h2>
+<p class="ql-align-justify">Puteti renunta la cumparare in termen de <strong>90 de zile de la livrare</strong>, fara a oferi un motiv.</p>
+<p class="ql-align-justify">Produsul returnat trebuie sa fie, pe cat posibil in mod rezonabil, in stare buna, cu toate accesoriile primite si intr-un ambalaj adecvat pentru transport.</p>
+<p class="ql-align-justify">Pentru schimb sau rambursare, completati cererea in aplicatia RMA sau contactati-ne prin e-mail. Dupa trimiterea cererii, veti primi instructiuni pentru retur.</p>
+<p class="ql-align-justify">Daca folositi formularul de retur, introduceti toate datele necesare si includeti documentele solicitate in colet. Acest lucru accelereaza procesarea cererii.</p>
+<p class="ql-align-justify">Aveti la dispozitie <strong>14 zile</strong> de la inregistrarea cererii pentru a trimite coletul catre adresa noastra de retur.</p>
+<p class="ql-align-justify"><strong>HS PLUS d.o.o.</strong></p>
+<p class="ql-align-justify"><strong>Postanska ulica 25</strong></p>
 <p class="ql-align-justify"><strong>10410 Velika Gorica</strong></p>
-<p class="ql-align-justify"><strong>Romania</strong></p>
-<p class="ql-align-justify">Savjetujemo vam da paket pošaljete preporučenom poštom s potvrdom pošiljke, kako bi bilo moguće riješiti vaš prigovor čak i u slučaju gubitka paketa na temelju potvrde o isporuci putem broja za praćenje.</p>
-<p class="ql-align-justify"><strong>Trošak dostave je na strani pošiljatelja, ne prihvaćamo pošiljke sa otkupninom.</strong></p>
-<p class="ql-align-justify"><strong>Čim reklamacijska služba primi Vaš paket</strong>, novi produs šalje se u zamjenu ili se otkupnina vraća na Vaš tekući račun u roku od 8 radnih dana. Vratit ćemo iznos za vraćene produse i troškove najjeftinijeg rješenja dostave (standardna naknada za dostavu). Prioritetno rukovanje, osiguranje paketa i plaćanje pouzećem predstavljaju dodatni trošak koji se može izbjeći, a usluga se izvršava samo na poseban zahtjev klijenta. Prilagođeni troškovi neće biti vraćeni. U slučaju odustajanja od kupnje, kupac snosi troškove povratne dostave, tako da se također ne vraćaju troškovi povratne dostave produsului.</p>
-<p class="ql-align-justify"><strong>Izuzetak od prava na povlačenje</strong></p>
-<p class="ql-align-justify">Iskorištavanje prava na odustajanje isključeno je za sljedeće ugovore:</p>
-<ul>
-<li class="ql-align-justify">ugovori o isporuci robe izrađeni prema specifikacijama potrošača ili jasno personalizirani;</li>
-<li class="ql-align-justify">ugovori o opskrbi robom koji se mogu pogoršati ili brzo isteći;</li>
-<li class="ql-align-justify">ugovori o nabavi novina, periodike ili časopisa, osim ugovora o pretplati na ove publikacije;</li>
-<li class="ql-align-justify">ugovori o isporuci robe koju je potrošač otpečatio nakon isporuke i koja se ne može vratiti iz higijenskih ili zdravstvenih razloga (na primjer: kozmetika, sredstva za čišćenje, paste za poliranje i kupaći kostim, donje rublje, čarape)</li>
-<li class="ql-align-justify">ugovori o isporuci robe koja se nakon isporuke i po svojoj prirodi nerazdvojno miješaju s drugim artiklima; (na primjer: set/kit, svi produse iz Mystery box -a, oba produsului iz ponude 1+1 besplatno, bilo koji POKLON)</li>
-<li class="ql-align-justify">ugovori o isporuci audio ili video zapisa ili računalnog softvera ako ih je potrošač otpečatio nakon isporuke;</li>
-<li class="ql-align-justify">ugovori o opskrbi alkoholnim pićima čija se isporuka odgađa nakon trideset dana i čija vrijednost dogovorena pri sklapanju ugovora ovisi o fluktuacijama na tržištu na koje profesionalci ne mogu utjecati;</li>
-<li class="ql-align-justify">ugovori o isporuci robe ili usluga, čija cijena ovisi o fluktuacijama na financijskom tržištu na koje profesionalci ne mogu utjecati i do kojih će vjerojatno doći tijekom razdoblja odustajanja;</li>
-<li class="ql-align-justify">ugovori o pružanju usluga u potpunosti izvršeni prije isteka roka za odustajanje i čije je izvršavanje započelo nakon izričitog prethodnog pristanka potrošača i izričitog odricanja od prava na odustajanje; (na primjer: provizija za plaćanje po pouzeću, brza dostava, osiguranje paketa)</li>
-<li class="ql-align-justify">ugovori o radovima na održavanju ili popravcima koji se moraju hitno izvršiti u potrošačevoj kući i izričito to zatražiti, u granicama rezervnih dijelova i radova koji su strogo potrebni za reagiranje u hitnim slučajevima;</li>
-<li class="ql-align-justify">ugovori o pružanju usluga smještaja, prijevoza, ugostiteljstva i razonode, koji se moraju pružati određenog datuma ili s određenom učestalošću;</li>
-<li class="ql-align-justify">ugovori o isporuci digitalnog sadržaja koji nisu isporučeni na materijalnom mediju, čije je izvršavanje počelo nakon izričitog prethodnog pristanka potrošača i izričitog odricanja od prava na odustajanje. (na primjer: preuzeti digitalni sadržaji, e-knjige)</li>
-</ul>
-<p class="ql-align-justify"><strong>UPOZORENJE: </strong>Ako dobrovoljno vratite produs za koji nije moguće odstupanje od kupnje,&nbsp;nakon perioda za povrat od 90 dana, nakon 14 dana od obavijesti o odstupanju od kupnje, koji nije kupljen u našoj trgovini Takav Vam produs možemo vratiti natrag isključivo uz naplatu 10 EUR što predstavlja trošak obrade neopravdane reklamacije. Produs koji nije preuzet bit će uništen nakon 2 mjeseca.</p>
-<p class="ql-align-justify"><strong>POZITIVNO ĆE BITI RJEŠENI SAMO ZAHTJEVI KOJI ISPUNJAVAJU SVE NAVEDENE UVJETE.</strong></p>
-<p class="ql-align-justify">Više o Općim uvjetima i politici kolačića možete pročitati na poveznicama pri dnu stranice.</p>
+<p class="ql-align-justify">Dupa receptionarea si verificarea produsului returnat, rambursarea va fi efectuata prin aceeasi metoda de plata folosita la comanda sau printr-o alta metoda convenita cu dvs.</p>
+<p class="ql-align-justify">Daca produsul returnat prezinta deteriorari sau urme de utilizare excesiva, magazinul isi rezerva dreptul de a aplica o diminuare proportionala a valorii rambursate, in conformitate cu legislatia aplicabila.</p>
 </div>
         <img decoding="async" id="close_withdrawal_policy" src="https://images.vigo-shop.com/general/remove.png" alt="Close">
     </div>
 </div>
         <div id="custom_mailing_checkout_field">
-            <p class="form-row email_opt_in" id="email_opt_in_field" data-priority="15"><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="email_opt_in" id="email_opt_in" value="1" class="input-checkbox "  /> Da, želim prvi/a saznati za trenutne akcije. <span id="mailing_read_more_link" style="text-decoration: underline">Više informacija</span>&nbsp;<span class="optional">(neobavezno)</span></label></span></p>        </div>
+            <p class="form-row email_opt_in" id="email_opt_in_field" data-priority="15"><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="email_opt_in" id="email_opt_in" value="1" class="input-checkbox "  /> Da, doresc sa aflu primul despre ofertele curente. <span id="mailing_read_more_link" style="text-decoration: underline">Mai multe informatii</span>&nbsp;<span class="optional">(optional)</span></label></span></p>        </div>
         <div id="checkout-popup">
             <div class="checkout-popup-wrapper">
                 <img decoding="async" class="img-info" src="https://images.vigo-shop.com/general/vigoshop_info.svg">
-                <span>HSplus d.o.o. može UPOTREBLJAVATI osobne podatke koji su poslani (uključujući povijest kupnje i vaše postavke) za prilagođenu komunikaciju putem SMS poruka, telefonskih poziva, tiskanih kataloga i/ili e-pošte u vezi s produsema, posebnim ponudama, istraživanjima, promocijama, događajima i ostalim komunikacijama. U svakom trenutku možete povući svoju suglasnost za primanje e-pošte pritiskanjem veze za odjavu pretplate u svakoj poruci e-pošte. Informatii suplimentare, uključujući informacije o ostvarivanju vaših prava u vezi s osobnim podacima koje smo prikupili, potražite u                     <span id="terms-conditions-content_email-checkbox">
-                        UVJETIMA I ODREDBAMA                    </span>.
+                <span>HSplus d.o.o. poate utiliza datele personale trimise (inclusiv istoricul comenzilor si preferintele dvs.) pentru comunicari personalizate prin SMS, telefon, cataloage tiparite si/sau e-mail despre produse, oferte speciale, cercetari, promotii, evenimente si alte comunicari. Va puteti retrage consimtamantul pentru e-mail in orice moment prin linkul de dezabonare din fiecare mesaj. Informatii suplimentare, inclusiv despre exercitarea drepturilor dvs. privind datele personale colectate, gasiti in                     <span id="terms-conditions-content_email-checkbox">
+                        TERMENII SI CONDITIILE                    </span>.
                         <div class="terms-conditions-content_email" style="display: none;">
-                            <h2 class="ql-align-justify"><strong>Opći uvjeti poslovanja</strong></h2>
-<p class="ql-align-justify"></p>
-<p class="ql-align-justify"><a class="button" href="https://images.hs-plus.com/legal/terms-conditions/terms-conditions_Vigoshop_hr.pdf" style="background-color: lightgray"> Spremite i ispišite</a></p>
-<p class="ql-align-justify">Dobro došli na web-mjesto <a href="https://vigoshop.hr">vigoshop.hr</a> kojim upravlja tvrtka HS plus d.o.o., Gmajna 8, SI-1236 Trzin (dalje u tekstu: tvrtka).</p>
-<p class="ql-align-justify">Ovi se Opći uvjeti poslovanja primjenjuju na sve aktivnosti omogućene u internetskoj trgovini koja je dostupna na&nbsp;<a href="https://vigoshop.hr">vigoshop.hr</a> (dalje u tekstu: web-mjesto). Opći uvjeti poslovanja obvezujući su za sve korisnike. Molimo vas da ih pažljivo pročitate. Ako se ne slažete s bilo kojim dijelom ovih Općih uvjeta poslovanja ili ako se u potpunosti ne slažete s njima, ne smijete upotrebljavati naše web-mjesto i naše usluge. Opći uvjeti poslovanja predstavljaju valjani ugovor sklopljen između vas i tvrtke.</p>
-<p class="ql-align-justify">Web-mjesto dostupno je „takvo kakvo jest”, a tvrtka ne pruža jamstva, ni neizravno ni izravno, koja se odnose na pravo vlasništva, marketing ili prikladnost za bilo koju svrhu produsului koji su predstavljeni na web-mjestu.</p>
-<p class="ql-align-justify">Vlasnik web-mjesta postupat će s dužnom pažnjom kako bi pokušao osigurati da podaci navedeni na web-mjestu budu detaljni i ažurni. Istodobno, vlasnik web-mjesta zadržava pravo izmijeniti sadržaj web-mjesta ili ga prestati dopunjavati u bilo kojem trenutku, bez prethodne najave. Osim toga, vlasnik web-mjesta može izmijeniti usluge, produse, cijene ili programe opisane na ovom web-mjestu u bilo kojem trenutku i bez najave.</p>
-<h2 class="ql-align-justify"><strong>1 DEFINICIJE</strong></h2>
-<p class="ql-align-justify"><strong>Tvrtka</strong>&nbsp;je tvrtka HS plus d.o.o., Gmajna 8, SI-1236 Trzin koja je vlasnik web-mjesta&nbsp;<a href="https://vigoshop.hr">vigoshop.hr</a>&nbsp;i upravlja njime.</p>
-<p class="ql-align-justify"><strong>Web-mjesto&nbsp;</strong>je web-mjesto dostupno na&nbsp;<a href="https://vigoshop.hr">https://vigoshop.hr</a>, kojom upravlja tvrtka, i u okviru koje djeluje internetska trgovina.</p>
-<p class="ql-align-justify"><strong>Korisnik</strong>&nbsp;je svaka fizička osoba koja se koristi web-mjestom.</p>
-<p class="ql-align-justify"><strong>Kupac</strong>&nbsp;(ili&nbsp;<strong>„vi”</strong>&nbsp;) je svaka fizička osoba koja izvrši kupnju u internetskoj trgovini.</p>
-<p class="ql-align-justify"><strong>Potrošač</strong>&nbsp;je fizička osoba koja nabavlja ili upotrebljava robu i usluge u svrhe izvan opsega njegove profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka. Za potrebe ovih Općih uvjeta poslovanja svi kupci smatraju se i potrošačima.</p>
-<p class="ql-align-justify"><strong>Pravila o zaštiti privatnosti</strong>&nbsp;dokument je koji sadržava sve informacije o obradi osobnih podataka koja se odvija u okviru web-mjesta. Navedena Pravila o zaštiti privatnosti dostupna su&nbsp;<a href="https://vigoshop.hr/pravila-o-zastiti-privatnosti">ovdje</a>.</p>
-<p class="ql-align-justify"><strong>Pravila o kolačićima</strong>&nbsp;dokument je koji sadržava sve informacije o upotrebi kolačića koja se odvija u okviru web-mjesta. Navedena Pravila o kolačićima dostupna su&nbsp;<a href="https://vigoshop.hr/pravila-o-kolacicima">ovdje</a>.</p>
-<h2 class="ql-align-justify"><strong>2. VIGOSHOP.HR INTERNETSKA TRGOVINA</strong></h2>
-<p class="ql-align-justify">Općim uvjetima poslovanja utvrđuje se rad internetske trgovine, definiraju prava i obveze korisnika i internetske trgovine te uređuje poslovni odnos između internetske trgovine i kupca.&nbsp;Opći uvjeti poslovanja koji vrijede u trenutku kupnje (u trenutku kada se vrši internetska comanda) obvezujući su za kupca. Svaki put kada se izvrši comanda, korisnik će biti obaviješten o Općim uvjetima poslovanja. Izvršavanjem comenzi korisnik potvrđuje da je obaviješten o ovim Općim uvjetima poslovanja.</p>
-<p class="ql-align-justify">Potvrda Općih uvjeta poslovanja pri izvršavanju comenzi u našoj internetskoj trgovini predstavlja obvezujući ugovor između vas i tvrtke. Molimo vas da&nbsp;<strong>pažljivo pročitate</strong>&nbsp;Opće uvjete poslovanja&nbsp;<strong>prije potvrde comenzi</strong>. Ako se ne slažete s našim Općim uvjetima poslovanja, ne možete upotrebljavati usluge koje pruža naša internetska trgovina. Također, nije moguće djelomično se složiti s Općim uvjetima poslovanja. Da biste dovršili kupnju, morate prihvatiti&nbsp;<strong>cjelokupne</strong>&nbsp;Opće uvjete poslovanja koji su na snazi u trenutku kupnje.</p>
-<h3 class="ql-align-justify"><strong>i. Upotreba internetske trgovine</strong></h3>
-<p class="ql-align-justify">Tvrtka upravlja internetskom trgovinom u skladu s Općim uvjetima poslovanja. Internetska trgovina dostupna je kupcima u svakom trenutku, pri čemu tvrtka zadržava pravo privremeno onemogućiti ili obustaviti internetsku trgovinu bez prethodne najave.</p>
-<p class="ql-align-justify">Postoji mogućnost da će internetska trgovina biti privremeno nedostupna ili da privremeno neće biti moguće izvršiti plaćanja zbog održavanja i ažuriranja internetske trgovine. Tvrtka neće biti odgovorna za štetu koju biste mogli pretrpjeti tijekom održavanja i/ili ažuriranja internetske trgovine.</p>
-<h3 class="ql-align-justify"><strong>ii. Izvršavanje comenzi u internetskoj trgovini</strong></h3>
-<p class="ql-align-justify">Smatra se da je kupoprodajni ugovor između dobavljača i kupca sklopljen kad kupac potvrdi narudžbu (kupac dobiva poruku e-pošte s potvrdom statusa „Comanda potvrđena”). Od tog su trenutka sve cijene i ostali uvjeti kupnje fiksni i primjenjivi i za pružatelja usluge i za kupca. Kupoprodajni ugovor učitava se na poslužitelj tvrtke u elektroničkom obliku.</p>
-<p class="ql-align-justify">
-<p class="ql-align-justify">Postupak kupnje:</p>
-<ol>
-<li class="ql-align-justify">korak: U ponudi dostupnoj u internetskoj trgovini kupac odabire željeni artikl i željenu količinu te potvrđuje svoj izbor pritiskom gumba „Adauga in cos”. Ako kupac želi kupiti nekoliko različitih artikala, postupak treba ponoviti za svaki pojedinačni artikl. Nakon što kupac završi postupak odabira produsului, može nastaviti s postupkom kupnje pritiskom gumba „Continua la plata”.</li>
-<li class="ql-align-justify">korak: U ovom koraku kupac ispunjava obrazac sa svojim osobnim podacima potrebnima za isporuku željene comenzi. Nakon ispunjavanja obrasca, kupac u određenim slučajevima može odabrati između nekoliko mogućnosti dostave i dodati druge produse ili usluge svojoj narudžbi. U ovom koraku kupac je obaviješten i o planiranom datumu isporuke. Prije dovršenja comenzi, kupac ima mogućnost izbora između različitih načina plaćanja. Uzimajući u obzir odabrani izbor, konačni iznos koji treba platiti za narudžbu izračunava se još jednom prije završetka kupnje. Kupac potvrđuje postupak kupnje pritiskom gumba „Završi kupnju”. </li>
-<li class="ql-align-justify">korak: Nakon završetka kupnje, kupcu se na web-mjestu prikazuje poruka potvrde u kojoj se navodi da je comanda uspješno poslana i prikazuju pojedinosti poslane comenzi. Uz to, kupac prima i potvrdnu poruku e-pošte na adresu e-pošte navedenu u 2. točki, pri čemu se u navedenoj potvrdnoj poruci e-pošte nalaze pregled comenzi, upute za upotrebu naručenih produsului i upute za odustajanje od kupnje ili podnošenje reklamacije ako kupac nije zadovoljan produsom ili ga više ne želi.</li>
-</ol>
-<p class="ql-align-justify">Svi podaci koje nam dostavite tijekom slanja comenzi bit će obrađeni u skladu s Pravilima o zaštiti privatnosti koje možete pronaći na dnu web-mjesta.</p>
-<p class="ql-align-justify">Obavještavamo vas da će se vrijednost cjelokupne kupnje, uključujući isporuku ili druge troškove koji vrijede za kupnju, naplatiti nakon potvrde vaše comenzi. Obavijestit ćemo vas o svim dodatnim troškovima prije nego što izvršite kupnju. S odabranim načinom plaćanja mogu biti povezati i dodatni troškovi.</p>
-<p class="ql-align-justify">Možete pratiti i upravljati svojom narudžbom u RMA aplikaciji na ovoj poveznici <a href="https://rma.hs-plus.com/language/hr_HR/" rel="noopener noreferrer" target="_blank" style="background-color: rgb(248, 248, 248); color: rgba(var(--sk_highlight,18,100,163),1);">https://rma.hs-plus.com/language/hr_HR/</a>. Za pristup Vam je potreban broj comenzi ili kod za praćenje te e-mail ili broj telefona koje ste unijeli u comenzinicu prilikom kupnje. U ovoj aplikaciji (ako comanda još nije u pripremi) također možete otkazati narudžbu, promijeniti sadržaj comenzi, adresu, broj telefona, pratiti narudžbu te također pristupiti potvrdi o plaćanju.</p>
-<h3 class="ql-align-justify"><strong>iii. Cijene, načini plaćanja i promocije</strong></h3>
-<p class="ql-align-justify"><strong>Cijene</strong></p>
-<p class="ql-align-justify">Sve cijene navedene na web-mjestu izražene su u EUR i uključuju PDV.&nbsp;Cijene se primjenjuju od trenutka kada je comanda izvršena. Ponuda vrijedi do opoziva.</p>
-<p class="ql-align-justify"><strong>UPOZORENJE:&nbsp;</strong>Ovo je maloprodajna internetska trgovina čija su ciljana publika isključivo krajnji kupci (B2C). Iz tog razloga na ovom web-mjestu ne omogućujemo B2B prodaju, a ne možemo ponuditi ni mogućnost izdavanja računa pravnim subjektima. To znači i da naknadne korekcije računa (s fizičke na pravnu osobu) nisu moguće zato što se prodajna transakcija zaključuje isključivo s fizičkom osobom.</p>
-<p class="ql-align-justify">Ako želite uspostaviti B2B odnos s našom tvrtkom i kupiti veće cantitatii naših produsului (cijelo pakiranje / karton), možete se obratiti našoj trgovini na veliko na&nbsp;<a href="/cdn-cgi/l/email-protection#2a4818486a42595a465f59045943"><span class="__cf_email__" data-cfemail="27451545674f54574b525409544e">[email&#160;protected]</span></a>.</p>
-<p class="ql-align-justify"><strong>Načini plaćanja</strong></p>
-<p class="ql-align-justify">U našoj internetskoj trgovini možete upotrebljavati sljedeće načine plaćanja:</p>
-<ul>
-<li class="ql-align-justify">Plata ramburs – kupac plaća račun gotovinom ili kreditnom karticom dostavnom kuriru koji robu isporučuje na adresu kupca;</li>
-<li class="ql-align-justify">Plata cu cardul;</li>
-<li class="ql-align-justify">Plata prin PayPal.</li>
-</ul>
-<p class="ql-align-justify">Tvrtka zadržava pravo provjere odabranog načina plaćanja s pomoću provjere autentičnosti. Nadalje, zadržavamo pravo daljnje provjere odabranog načina plaćanja tražeći da nam pošaljete dokaz o uplati.&nbsp;</p>
-<p class="ql-align-justify">Upoznati ste s činjenicom da morate platiti cjelokupan iznos comenzi (uključujući sve troškove povezane s transakcijom i isporukom) u skladu s odabranim načinom plaćanja. Jamčite da imate sposobnost i pravo izvršavati transakcije s pomoću kreditne kartice ili bilo kojeg drugog odabranog načina plaćanja.</p>
-<p class="ql-align-justify"><strong>Promocije</strong></p>
-<p class="ql-align-justify">Web-mjesto nudi i popuste i druge promocije kojima se snižavaju cijene produsului (dalje u tekstu: promocije). Svaka promocija nudi se po sniženoj cijeni za određeno (ograničeno) razdoblje utvrđeno za svaku pojedinačnu promociju. Snižena cijena odnosi se na sve kupnje izvršene tijekom trajanja promocije.</p>
-<p class="ql-align-justify">Želimo vas upozoriti da su određene promocije ograničene samo na nove korisnike koji još uvijek nisu izvršili kupnju u našoj internetskoj trgovini. U tom se slučaju navedena promocija ne odnosi na postojeće korisnike. Svaki pokušaj upotrebe takvih promocija bit će odmah blokiran, a adrese e-pošte upotrebljavane za izvršenje spomenute zlouporabe bit će izbrisane bez prethodne najave. Popusti i druge promocije obično nisu kumulativni, osim ako se u okviru svake pojedinačne promocije izričito ne navodi drugačije.</p>
-<h3 class="ql-align-justify"><strong>iv. Troškovi i dostava robe</strong></h3>
-<p class="ql-align-justify">U cijene nisu uključeni troškovi dostave. Troškove dostave možete pronaći u internetskoj trgovini, gdje također imate mogućnost odabira načina dostave. Naša tvrtka nudi dva načina dostave: standardna i brza. Ključna razlika između ove dvije metode dostave jest u tome što se s comandama za ekspresnu dostavu postupa, i one se pakiraju, s većim prioritetom.&nbsp;&nbsp;Prije odabira željenog načina dostave, provjerite cijenu navedenu pored svakog pojedinačnog izbora. Tijekom podnošenja comenzi vidjet ćete pregled cijena koji se sastoji od troškova kupnje, troškova dostave i ukupnih troškova.</p>
-<p class="ql-align-justify">Ako odaberete plaćanje pouzećem, kurirska služba naplatit će naknadu za dostavu paketa izračunatu tijekom podnošenja comenzi.&nbsp;Ako odlučite platiti kreditnom karticom ili putem PayPala, navedeni trošak neće vam biti naplaćen.</p>
-<p class="ql-align-justify">Produsi koje ste naručili dostavit će se na adresu koju ste unijeli kao adresu za dostavu na našem web-mjestu.</p>
-<p class="ql-align-justify">Predviđeni rok dostave dostupan je kupcu nakon predaje comenzi. Tvrtka zadržava pravo produžiti rok dostave u slučaju povećane potražnje ili kašnjenja usluge dostave. Dostave se uglavnom izvršavaju prije podneva. Ako tijekom dostave ne možete prihvatiti paket, kurirska služba pokušat će se dogovoriti s kupcem o novom načinu i mjestu dostave.</p>
-<p class="ql-align-justify">Ako kurir za dostavu ne uspije kontaktirati kupca, slijedi drugi pokušaj dostave paketa sljedeći radni dan. Ako i drugi pokušaj dostave ne uspije, paket i njegov sadržaj vraćaju se pošiljatelju.</p>
-<p class="ql-align-justify">Iznos plaćen za neuspješno isporučene i unaprijed plaćene comenzi automatski se vraća u roku od 8 (osam) radnih dana skladišta koje bilježi povrat paketa ili tvrtke koja utvrdi da paket nije uspješno isporučen.</p>
-<p class="ql-align-justify"><strong>Sigurnosna upozorenja za upotrebu svih produsului</strong></p>
-<p class="ql-align-justify">Upotreba produsului iz naše internetske trgovine može predstavljati određeni rizik za život i zdravlje. Morate izričito potvrditi da razumijete da uporaba navedenih produsului predstavlja takav rizik koji u potpunosti prihvaćate. Comandavanjem i/ili upotrebom spomenutih produsului potvrđujete da ste upoznati s navedenim rizicima koji mogu uključivati rizik od bolesti, ozljeda, invaliditeta ili smrti. Morate preuzeti punu odgovornost za sve posljedice koje bi mogle nastati naručivanjem i/ili upotrebom produsului.</p>
-<p class="ql-align-justify">Prije upotrebe bilo kojeg produsului morate pročitati upute za upotrebu.</p>
-<p class="ql-align-justify">Prije upotrebe svaki produs mora biti testiran na siguran način. Ako niste potpuno sigurni kako testirati produs, ljubazno vas molimo da ga ne upotrebljavate, da nas o tome obavijestite ili ga vratite.</p>
-<p class="ql-align-justify">Tvrtka ne preuzima nikakvu odgovornost za neizravnu ili izravnu štetu nastalu upotrebom produsului naručenih na web-mjestu, bez obzira je li kupac ili treća strana produse upotrebljavao ispravno ili neispravno. Ovo izuzeće primjenjuje se u najvećoj mogućoj mjeri dopuštenoj zakonodavstvom.</p>
-<p class="ql-align-justify">U slučaju zahtjeva za naknadu štete podnesenog protiv tvrtke, tvrtka ograničava svoju odgovornost za štete na trostruku tržišnu cijenu produsului.</p>
-<p class="ql-align-justify">Nastojimo pružiti što detaljnije i preciznije opise produsului i fotografije. Ipak, ne možemo jamčiti da su svi podaci o produsu i njihove fotografije potpuno točni. Budući da se određeni produse mogu nabaviti kod različitih dobavljača, moguća su manja odstupanja u pakiranju ili izgledu produsului. Spomenuta odstupanja ni na koji način ne utječu na kvalitetu ili funkcionalnost produsului.&nbsp;&nbsp;</p>
-<h3 class="ql-align-justify"><strong>v. Pravo na odustajanje od Ugovora</strong></h3>
-<p class="ql-align-justify">Kupac koji izvrši kupnju u našoj internetskoj trgovini ima pravo odustati od Ugovora. Navedeno odustajanje od Ugovora može se izjaviti u roku od 90 dana od datuma isporuke comenzi, a tvrtku o tome obavještava dostavna služba.&nbsp;Kupac ne mora navesti razlog svoje odluke. Navedeno pravo na odustajanje od Ugovora primjenjuje se samo na kupce koji su fizičke osobe i koji robu i usluge stječu ili upotrebljavaju izvan svoje profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka.&nbsp;</p>
-<p class="ql-align-justify">Smatra se da je izjava o odustajanju izdana pravodobno ako je podnesena u roku za odustajanje od Ugovora. Izjavu o odustajanju možete dostaviti na unaprijed dogovorenom obrascu ili nam je možete poslati e-poštom.&nbsp;Obrazac možete pronaći na kartici „Pravo na odustajanje od kupnje” pri dnu web-mjesta. Teret dokazivanja koji se odnosi na ostvarivanje prava na odustajanje iz ovog članka snosi potrošač.</p>
-<p class="ql-align-justify"><strong>Odustajanjem od Ugovora kupac može steći povrat novca ili zamijeniti produs, ali ne može iskoristiti kredit!</strong></p>
-<p class="ql-align-justify">Nakon predaje izjave o odustajanju, svoje produse morate vratiti u roku od 14 dana od datuma izjave o odustajanju. Robu pošaljite na našu adresu: <strong>HS PLUS d.o.o., Poštanska ulica 25, 10410 Velika Gorica</strong>.&nbsp;Smatra se da je roba pravovremeno vraćena ako je pošaljete prije isteka roka za povrat u trajanju od 90 dana.&nbsp;Morate vratiti neizmijenjenu količinu neoštećenih produsului, zapakiranih u originalno pakiranje ili ambalažu koja produse štiti na isti način kao i originalna ambalaža. Ne možete vratiti oštećene produse, produse u izmijenjenoj količini ili produse upakirane u neprikladnu ambalažu. Molimo vratite artikle kao paketnu pošiljku, a ne kao pismo, osiguravajući da je paket označen kodom za odustanak od kupnje, koji ćete dobiti tijekom postupka.Ako paket nije pravilno označen (poslan bez koda za odustanak od kupnje), to može značajno produžiti vrijeme potrebno za obradu vašeg zahtjeva. U slučaju odustajanja od ugovora, podmirit ćete samo troškove povrata robe, s tim da se navedeni troškovi ne mogu nadoknaditi.</p>
-<p class="ql-align-justify">Ako ste već platili naručenu robu, odmah ćemo, ili najkasnije u roku od 8 radnih dana od slanja paketa na našu adresu, nadoknaditi sve zaprimljene uplate i uplate koje ste izvršili u vezi s narudžbom. Smatra se da je paket poslan na našu adresu kada ga naše skladište evidentira kao vraćeni paket. Zadržavamo pravo zadržati primljenu uplatu do povrata produsului koji su predmet odustajanja od ugovora.</p>
-<p class="ql-align-justify">Zaprimljene uplate nadoknadit ćemo istim sredstvima plaćanja koja ste upotrebljavali tijekom kupnje. U slučaju plaćanja pouzećem nabavna cijena vratit će na broj tekućeg računa koji ste naveli u svom obrascu.</p>
-<p class="ql-align-justify">Izuzetak od prava na povlačenje</p>
-<p class="ql-align-justify">Iskorištavanje prava na odustajanje isključeno je za sljedeće ugovore:</p>
-<ul>
-<li class="ql-align-justify">ugovori o isporuci robe izrađeni prema specifikacijama potrošača ili jasno personalizirani;</li>
-<li class="ql-align-justify">ugovori o opskrbi robom koji se mogu pogoršati ili brzo isteći;</li>
-<li class="ql-align-justify">ugovori o nabavi novina, periodike ili časopisa, osim ugovora o pretplati na ove publikacije;</li>
-<li class="ql-align-justify">ugovori o isporuci robe koju je potrošač otpečatio nakon isporuke i koja se ne može vratiti iz higijenskih ili zdravstvenih razloga (na primjer: kozmetika, sredstva za čišćenje, paste za poliranje i kupaći kostim, donje rublje, čarape)</li>
-<li class="ql-align-justify">ugovori o isporuci robe koja se nakon isporuke i po svojoj prirodi nerazdvojno miješaju s drugim artiklima; (na primjer: set/kit, svi produse iz Mystery box -a, oba produsului iz ponude 1+1 besplatno, bilo koji POKLON);</li>
-<li class="ql-align-justify">ugovori o isporuci audio ili video zapisa ili računalnog softvera ako ih je potrošač otpečatio nakon isporuke;</li>
-<li class="ql-align-justify">ugovori o opskrbi alkoholnim pićima čija se isporuka odgađa nakon trideset dana i čija vrijednost dogovorena pri sklapanju ugovora ovisi o fluktuacijama na tržištu na koje profesionalci ne mogu utjecati;</li>
-<li class="ql-align-justify">ugovori o isporuci robe ili usluga, čija cijena ovisi o fluktuacijama na financijskom tržištu na koje profesionalci ne mogu utjecati i do kojih će vjerojatno doći tijekom razdoblja odustajanja;</li>
-<li class="ql-align-justify">ugovori o pružanju usluga u potpunosti izvršeni prije isteka roka za odustajanje i čije je izvršavanje započelo nakon izričitog prethodnog pristanka potrošača i izričitog odricanja od prava na odustajanje; (na primjer: provizija za plaćanje po pouzeću, brza dostava, osiguranje paketa);</li>
-<li class="ql-align-justify">ugovori o radovima na održavanju ili popravcima koji se moraju hitno izvršiti u potrošačevoj kući i izričito to zatražiti, u granicama rezervnih dijelova i radova koji su strogo potrebni za reagiranje u hitnim slučajevima;</li>
-<li class="ql-align-justify">ugovori o pružanju usluga smještaja, prijevoza, ugostiteljstva i razonode, koji se moraju pružati određenog datuma ili s određenom učestalošću;</li>
-<li class="ql-align-justify">ugovori o isporuci digitalnog sadržaja koji nisu isporučeni na materijalnom mediju, čije je izvršavanje počelo nakon izričitog prethodnog pristanka potrošača i izričitog odricanja od prava na odustajanje (na primjer: preuzeti digitalni sadržaji, e-knjige).</li>
-</ul>
-<p class="ql-align-justify"><strong>UPOZORENJE: </strong>Ako dobrovoljno vratite produs za koji nije moguće odstupanje od kupnje,&nbsp;nakon perioda za povrat od 90 dana, nakon 14 dana od obavijesti o odstupanju od kupnje, koji nije kupljen u našoj trgovini Takav Vam produs možemo vratiti natrag isključivo uz naplatu 10 EUR što predstavlja trošak obrade neopravdane reklamacije. Produs koji nije preuzet bit će uništen nakon 2 mjeseca.</p>
-<h3 class="ql-align-justify"><strong>vi. Reklamacije</strong></h3>
-<p class="ql-align-justify">Ako otkrijete da vaš produs ne radi ispravno ili ste dobili neprimjeren ili oštećen produs, na raspolaganju su vam sljedeće mogućnosti:</p>
-<ul>
-<li class="ql-align-justify">provedba jamstva dostave,</li>
-<li class="ql-align-justify">provedba jamstva na tehničke produse i</li>
-<li class="ql-align-justify">podnošenje reklamacije produsului.</li>
-</ul>
-<p class="ql-align-justify"><strong>a) Jamstvo isporuke</strong></p>
-<ol>
-<li class="ql-align-justify">Dajemo dodatno jamstvo za besprijekornu isporuku koje se može primijeniti&nbsp;<strong>u roku od 48 sati nakon primitka produsului</strong>.</li>
-<li class="ql-align-justify">Ako su vaši produse oštećeni tijekom transporta ili nisu u skladu s vašom narudžbom, ljubazno vas molimo da nam prijavite grešku u roku od 48 sati od isporuke. Pošaljite nam poruku e-pošte koja sadrži fotografiju pakiranja (naljepnica mora biti jasno istaknuta na fotografiji) i primljenog produsului koji jasno ukazuje na oštećeno područje.</li>
-<li class="ql-align-justify">Dat ćemo prednost rješavanju vašeg zahtjeva u najkraćem mogućem roku i pružit ćemo vam zamjenski produs.</li>
-<li class="ql-align-justify">Ako je zahtjev poslan prekasno, riješit će se kao reklamacija produsului.</li>
-</ol>
-<p class="ql-align-justify"></p>
-<p class="ql-align-justify"><strong>b) Jamstvo na tehničke produse</strong></p>
-<p class="ql-align-justify">Za određene produse u našoj ponudi primjenjuje se jamstveno razdoblje od 24 mjeseci. Jamstvo se može primijeniti samo za tehničke produse i električne uređaje iz naše ponude. Jamstveno razdoblje od 24 mjeseci započinje na dan primitka robe. Svoje jamstvo možete ostvariti u skladu Zakonom o zaštiti potrošača, na temelju računa koji predstavlja potvrdu o jamstvu.</p>
-<p class="ql-align-justify">Tvrtka zadržava pravo odbiti jamstvo ako uz zahtjev nije priložen račun ili ako račun nije čitljiv ili na drugi način nedostaje.</p>
-<p class="ql-align-justify">Jamstvo se ne primjenjuje ako:</p>
-<ul>
-<li class="ql-align-justify">je produs fizički oštećen;</li>
-<li class="ql-align-justify">produs pokazuje znakove trošenja zbog uobičajene upotrebe;</li>
-<li class="ql-align-justify">produs predstavlja nedostatke koji su nastali kao rezultat nepravilne, neprikladne ili neoprezne upotrebe produsului.</li>
-</ul>
-<p class="ql-align-justify">Produsi za koje želite iskoristiti jamstvo moraju se ispitati, zbog čega vas molimo da svome zahtjevu za jamstvom priložite fotografije ili video isječke koji prikazuju nedostatak. Ako je potrebno, zamolit ćemo vas da nam vratite produs kako bismo ga mogli ispitati.</p>
-<p class="ql-align-justify">Ako odobrimo vaš zahtjev za jamstvom, pružit ćemo vam novi produs. Imate pravo zatražiti i popravak svojeg produsului, ali morate biti svjesni činjenice da je razdoblje popravka duže od razdoblja isporuke novog produsului. Ako popravak traje više od 45 dana, vaš će produs biti zamijenjen novim. Ako se novi produs ne može dostaviti, vratit ćemo vam cijenu produsului u cijelosti.</p>
-<p class="ql-align-justify">Sažetak postupka možete pronaći na kartici „Zamjena u jamstvu” pri dnu web-mjesta.</p>
-<p class="ql-align-justify"><strong>UPOZORENJE: Tvrtka HS Plus prihvatit će povrat samo onih paketa koji sadržavaju produse kupljene na web-mjestu. Svi paketi koje pošalje pojedinac, a koji ne sadržavaju produse kupljene u našoj tvrtki, vratit će se pošiljatelju o njegovom trošku.</strong></p>
-<p class="ql-align-justify">&nbsp;</p>
-<p class="ql-align-justify"><strong>c) Reklamacija produsului zbog materijalnih nedostataka</strong></p>
-<ol>
-<li class="ql-align-justify">Ako produs ne radi ispravno, pošaljite nam poruku e-pošte na <a href="/cdn-cgi/l/email-protection#f59c9b939ab5839c929a869d9a85db9d87"><span class="__cf_email__" data-cfemail="630a0d050c23150a040c100b0c134d0b11">[email&#160;protected]</span></a> i pomoći ćemo pružanjem potrebnog objašnjenja. Na taj ćete način spriječiti bilo kakvu potencijalnu zlouporabu produsului i štetu na samom produsu, kao i bilo kakve ozljede sebe ili drugih.</li>
-<li class="ql-align-justify">Ako vaš produs ne radi, možete podnijeti reklamaciju navodeći materijalne nedostatke na produsu. Slučajevi koji se smatraju materijalnim nedostacima na produsu navedeni su u odjeljku vii. ovih Općih uvjeta poslovanja. Materijalne nedostatke možete primijeniti samo ako su navedeni nedostaci već postojali u trenutku kupnje, ali su otkriveni kasnije.</li>
-<li class="ql-align-justify">Ako vaš produs ne radi zbog materijalnog nedostatka, molimo vas da nedostatak prijavite odmah nakon što ga otkrijete, ali ni u kojem slučaju kasnije od dva mjeseca od dana kada ste taj nedostatak otkrili. Pošaljite nam poruku e-pošte s fotografijom ili video isječkom s prikazom neispravnog produsului, na temelju kojeg se nedvosmisleno može utvrditi da produs ne radi. Ako je potrebno, zamolit ćemo vas da nam vratite predmetni produs kako bismo ga mogli ispitati i utvrditi nedostatak produsului.</li>
-<li class="ql-align-justify">Nećemo moći razmotriti vašu reklamaciju za produse koji su oštećeni zbog nepravilne ili neprikladne upotrebe ili ponašanja koje nije strogo neophodno za utvrđivanje prirode, svojstva i funkcioniranja robe. Ako želite povrat predmetnog produsului nakon odbijanja vaše reklamacije, poslat ćemo vam ga zajedno s računom za troškove povezane s isporukom navedenog produsului.</li>
-<li class="ql-align-justify">Tvrtka je odgovorna za nedostatke u izradi produsului koji se pojave kroz 2 godine nakon isporuke. Tvrtka je dužna odgovoriti na prigovor u roku od 3 radna dana.</li>
-<li class="ql-align-justify">Ako izvršavate nalog o materijalnom nedostatku, dostupne su vam sljedeće mogućnosti:</li>
-</ol>
-<ul>
-<li class="ql-align-justify">zamjena produsului,</li>
-<li class="ql-align-justify">povrat kupoprodajne cijene,</li>
-<li class="ql-align-justify">otklanjanje nedostatka produsului ili</li>
-<li class="ql-align-justify">proporcionalni povrat kupoprodajne cijene.</li>
-</ul>
-<p class="ql-align-justify">Sažetak postupka možete pronaći u kartici „Pritužbe i sporovi” na dnu web-mjesta.</p>
-<h3 class="ql-align-justify"><strong>vii. Materijalni nedostatak</strong></h3>
-<p class="ql-align-justify">Materijalni nedostatak može se primijeniti u sljedećim slučajevima:</p>
-<ul>
-<li class="ql-align-justify">ako produs ne sadrži karakteristike potrebne za njegovu uobičajenu upotrebu ili za stavljanje na tržište;</li>
-<li class="ql-align-justify">ako produs ne sadrži karakteristike potrebne za određenu upotrebu za koju je kupac kupio produs, a koje su prodavatelju bile poznate ili su prodavatelju trebale biti poznate;</li>
-<li class="ql-align-justify">ako produs ne sadrži karakteristike i kvalitete koje su izričito ili implicitno dogovorene ili propisane;</li>
-<li class="ql-align-justify">ako je prodavatelj kupcu dostavio produs koji nije u skladu s uzorkom ili modelom produsului, osim ako uzorak ili model produsului nisu prikazani samo u informativne svrhe.</li>
-</ul>
-<p class="ql-align-justify">Sažetak postupka možete pronaći u kartici „Pritužbe i sporovi” na dnu web-mjesta.</p>
-<p class="ql-align-justify">Tvrtka je odgovorna za nedostatke u izradi produsului koji se pojave kroz 2 godine nakon isporuke. Tvrtka je dužna odgovoriti na prigovor u roku od 3 radna dana.</p>
-<h3 class="ql-align-justify"><strong>viii. Dostupnost informacija</strong></h3>
-<p class="ql-align-justify">Pružatelj se obvezuje da će kupcu uvijek pružiti sljedeće informacije:</p>
-<ul>
-<li class="ql-align-justify">identitet tvrtke (naziv i registrirana adresa tvrtke, matični broj),</li>
-<li class="ql-align-justify">podatke za kontakt koji korisniku omogućuju brzu i učinkovitu komunikaciju s pružateljem (e-pošta, automatska sekretarica),</li>
-<li class="ql-align-justify">bitne karakteristike robe ili usluga (uključujući usluge nakon prodaje i jamstva),</li>
-<li class="ql-align-justify">konačnu cijenu robe ili usluga, uključujući poreze, ili način izračuna cijene ako se zbog prirode robe ili usluge konačna cijena ne može izračunati unaprijed,</li>
-<li class="ql-align-justify">dostupnost produsului (svi produse ili usluge ponuđeni na web-mjestu trebali bi biti dostupni u razumnom roku),</li>
-<li class="ql-align-justify">uvjete plaćanja, uvjete isporuke produsului ili uvjete za izvršenje usluge (način dostave, lokacija i rok),</li>
-<li class="ql-align-justify">informacije o svim potencijalnim troškovima prijevoza, dostave ili slanja, ili upozorenje da takvi troškovi mogu nastati ako se ne mogu izračunati unaprijed,</li>
-<li class="ql-align-justify">vremenski rok ponude,</li>
-<li class="ql-align-justify">uvjete, rokove i postupke u slučaju odustajanja od Ugovora i podatke o troškovima povrata robe (ako postoje),</li>
-<li class="ql-align-justify">objašnjenje postupka koji treba poduzeti u slučaju reklamacije, uključujući sve podatke o kontaktnoj osobi ili korisničkoj službi,</li>
-<li class="ql-align-justify">svijest o odgovornosti u slučaju materijalnih nedostataka,</li>
-<li class="ql-align-justify">mogućnost i uvjete usluga nakon prodaje i dobrovoljnog jamstva, ako je potrebno.</li>
-<li class="ql-align-justify">Pri pripremi web-mjesta može doći do određenih pogrešaka. Budući da ne možemo utjecati na te pogreške, ne snosimo odgovornost za njih. U slučaju većih odstupanja u pogledu cijena ili tehničkih svojstava produsului, obavijestit ćemo vas o tome kada izvršite narudžbu.</li>
-</ul>
-<h3 class="ql-align-justify"><strong>ix. Podaci o registraciji, naziv registra, registarski broj:</strong></h3>
-<p class="ql-align-justify">Naziv tvrtke: HS PLUS, trgovina in storitve d.o.o.</p>
-<p class="ql-align-justify">Sjedište: Gmajna 8, Trzin, SI-1236 Trzin</p>
-<p class="ql-align-justify">Matični broj tvrtke: 6579639000</p>
-<p class="ql-align-justify">PDV ID: SI15553442</p>
-<p class="ql-align-justify">Porezni obveznik: DA</p>
-<p class="ql-align-justify">Datum upisa u registar: 28/03/2014</p>
-<p class="ql-align-justify">Standardna klasifikacija djelatnosti G47.910 – Trgovina na malo preko pošte ili interneta</p>
-<h3 class="ql-align-justify"><strong>x. Izvansudsko rješavanje sporova i drugi pravni lijekovi</strong></h3>
-<p class="ql-align-justify">Tvrtka se trudi sve sporove riješiti na sporazuman način. Ako takvo rješavanje sporova nije moguće, sud u Ljubljani bit će nadležan za rješavanje navedenih sporova.</p>
-<h3 class="ql-align-justify"><strong>xi. Platforma za rješavanje sporova</strong></h3>
-<p class="ql-align-justify">U skladu s pravnim standardima, tvrtka HS plus d.o.o. ne priznaje nijednog pružatelja usluga izvansudskog rješavanja potrošačkih sporova kao pružatelja koji je ovlašten rješavati potrošačke sporove koje potrošači mogu pokrenuti na temelju izvansudske nagodbe Zakona o potrošačkim sporovima.</p>
-<p class="ql-align-justify">Platforma za rješavanje sporova dostupna je na stranici&nbsp;<a href="https://ec.europa.eu/consumers/odr/">http://ec.europa.eu/consumers/odr/</a>.</p>
-<p class="ql-align-justify">Više informacija o platformi za rješavanje sporova potražite na <a href="https://ec.europa.eu/commission/presscorner/detail/ro/MEMO_13_193">ec.europa.eu</a>.</p>
-<p class="ql-align-justify">
-<h2 class="ql-align-justify"><strong>3. KOMUNIKACIJA</strong></h2>
-<p class="ql-align-justify">Tvrtka će se obratiti korisniku samo s pomoću daljinske komunikacije ako je to potrebno za izvršavanje comenzi.</p>
-<p class="ql-align-justify">Tvrtka pruža usluge podrške svojim korisnicima na <a href="/cdn-cgi/l/email-protection#e38a8d858ca3958a848c908b8c93cd8b91"><span class="__cf_email__" data-cfemail="a7cec9c1c8e7d1cec0c8d4cfc8d789cfd5">[email&#160;protected]</span></a>.</p>
-<p class="ql-align-justify">Međutim, korisnicima se možemo obratiti i u komercijalne svrhe ako nam za to daju svoju privolu ili ako su već obavili kupnju u našoj internetskoj trgovini, pri čemu će navedena komunikacija:</p>
-<ul>
-<li class="ql-align-justify">biti jasno i nedvosmisleno označena kao reklamna poruka,</li>
-<li class="ql-align-justify">jasno prikazivati pošiljatelja,</li>
-<li class="ql-align-justify">jasno označiti razne promocije i druge tehnike marketinga kao takve.</li>
-</ul>
-<p class="ql-align-justify">Više informacija u vezi s komunikacijom potražite u našim Pravilima o zaštiti privatnosti i Pravilima o kolačićima.</p>
-<h2 class="ql-align-justify"><strong>4. INTELEKTUALNO VLASNIŠTVO</strong></h2>
-<p class="ql-align-justify">Svi podaci, slike i tekstovi, kao i bilo koji drugi materijali (npr. video sadržaji, grafikoni, skice itd.) na našem web-mjestu zaštićeni su autorskim pravima i/ili zakonom o intelektualnom vlasništvu.</p>
-<p class="ql-align-justify">Kupnjom produsului ili upotrebom web-mjesta, korisnik neće steći autorska prava, imovinska prava ili prava intelektualnog vlasništva za produse i/ili web-mjesto. Korisnik može upotrebljavati materijale samo u svoje nekomercijalne svrhe.</p>
-<h2 class="ql-align-justify"><strong>5. IZJAVA O ODRICANJU ODGOVORNOSTI</strong></h2>
-<p class="ql-align-justify">Imajući na umu izjave o odricanju odgovornosti navedene u ovim Općim uvjetima poslovanja, tvrtka pruža sljedeća ograničenja:</p>
-<p class="ql-align-justify">Ako odlučite upotrebljavati našu internetsku trgovinu i/ili naše web-mjesto, pristajete na to dobrovoljno i stoga preuzimate sve rizike. Web-mjesto i trgovina pružaju se „takvi kakvi jesu”, bez ikakvih neizravnih ili izravnih jamstava. Sve izjave o odricanju odgovornosti navedene u ovom poglavlju ili na drugim mjestima u ovim Općim uvjetima poslovanja vrijede u najvećoj mjeri dopuštenoj zakonom.</p>
-<p class="ql-align-justify">Tvrtka ne jamči rad web-mjesta i njegovih funkcija te ne jamči da će web-mjesto raditi bez pogrešaka, virusa ili zlonamjernog softvera sličnog virusu. Uz to, tvrtka ne jamči da su podaci objavljeni na web-mjestu točni i sveobuhvatni. Tvrtka neće biti odgovorna za bilo kakvu štetu, uključujući, ali ne ograničavajući se na: izravnu, neizravnu ili posljedičnu štetu koja nastane ili se pojavi uslijed upotrebe web-mjesta.&nbsp;</p>
-<p class="ql-align-justify">Ako se odlučite za upotrebu internetske trgovine i izvršite plaćanje u našoj internetskoj trgovini, izričito se slažete da je upotrebljavate na vlastitu odgovornost i da ćete sami snositi sve rizike koji se odnose na plaćanje u našoj internetskoj trgovini, uključujući, ali ne ograničavajući se na neuspjela plaćanja od strane korisnika, pogreške u plaćanju i pogreške povrata u slučaju reklamacije. Ova se izjava o odricanju odgovornosti primjenjuje u najvećoj mjeri dopuštenoj zakonom. Tvrtka neće biti odgovorna za bilo kakvu štetu koja bi mogla nastati u vezi s upotrebom web-mjesta i/ili produsului dostupnih u našoj internetskoj trgovini.</p>
-<h2 class="ql-align-justify"><strong>6. ZAVRŠNE ODREDBE</strong></h2>
-<p class="ql-align-justify"><strong>Sklapanje ugovora</strong>&nbsp;Zajedno s naručivanjem usluga na web-mjestu, kao i na svim podstranicama ovog web-mjesta, ovi Opći uvjeti poslovanja imaju karakter ugovora sklopljenog između kupca i tvrtke.</p>
-<p class="ql-align-justify"><strong>Odvojivost odredbi</strong>&nbsp;Ako se bilo koja od odredbi ovih Općih uvjeta poslovanja pokaže (u cijelosti ili djelomično) nezakonitom ili ništavnom na bilo koji drugi način, navedena će se odredba smatrati (u cijelosti ili djelomično) izbrisanom, dok se preostali Opći uvjeti poslovanja i dalje primjenjuju.</p>
-<p class="ql-align-justify"><strong>Puna pravna sposobnost</strong>&nbsp;Korisnik jamči da ima potpunu sposobnost za preuzimanje prava i obveza koje proizlaze iz ovih Općih uvjeta poslovanja. Time jamčite da vam nije potreban pristanak ili odobrenje bilo koje treće strane da biste ispunili svoje obveze koje proizlaze iz ovih Općih uvjeta poslovanja.</p>
-<p class="ql-align-justify"><strong>Poznavanje Općih uvjeta poslovanja</strong>&nbsp;Ovime jamčite da ste pročitali i da ste u potpunosti upoznati s ovim Općim uvjetima poslovanja prije nego što ih prihvatite, osobito kada je riječ o utvrđenim izjavama o odricanju odgovornosti.</p>
-<p class="ql-align-justify"><strong>Zakon koji se primjenjuje na ove Opće uvjete poslovanja</strong>&nbsp;Na ove se Opće uvjete poslovanja primjenjuje zakonodavstvo Republike Slovenije. Svi sporovi koji proizlaze iz ovih Općih uvjeta poslovanja u nadležnosti su sudova u Republici Sloveniji.</p>
-<p class="ql-align-justify"><strong>Izmjene ovih Općih uvjeta poslovanja</strong>&nbsp;Nemate pravo mijenjati bilo koju odredbu navedenu u ovim Općim uvjetima poslovanja ili se odricati (u cijelosti ili djelomično) valjanosti bilo koje od navedenih odredbi. Tvrtka ima pravo izmijeniti ove Opće uvjete poslovanja u bilo kojem trenutku. Sve izmjene bit će objavljene na web-mjestu. Ako i dalje upotrebljavate web-mjesto, smatrat će se da se slažete s izmjenama na snazi u relevantno vrijeme. Ako se ne slažete s izmjenama, imate pravo odustati od Ugovora.</p>
-<p class="ql-align-justify"><strong>Cjelokupnost ugovora</strong>&nbsp;Ovi Opći uvjeti poslovanja predstavljaju cjelokupnost sporazuma koji se primjenjuje između ugovornih strana. Svi potencijalni prethodni pisani ili usmeni sporazumi ili pregovori bit će u potpunosti zamijenjeni ovim Općim uvjetima poslovanja.</p>
-<p class="ql-align-justify"><strong>Jezične verzije&nbsp;</strong>Ovi su Opći uvjeti poslovanja bili izrađeni na slovenskom jeziku. Svaka izmjena ovih Općih uvjeta poslovanja na bilo kojem drugom jeziku pripremljena je kako bi se omogućio lakši pristup Općim uvjetima poslovanja. Ovim se slažete i u potpunosti razumijete da će slovenska verzija imati prednost u slučaju bilo kakvih sporova.</p>
-<p class="ql-align-justify"><strong>Značenje pojmova</strong>&nbsp;Definicije pojmova upotrebljavanih u ovim Općim uvjetima poslovanja navedene su na početku ovih Općih uvjeta poslovanja.</p>
-<p class="ql-align-justify"><strong>HS PLUS&nbsp;d.o.o.&nbsp;&nbsp;</strong>Gmajna 8&nbsp;/&nbsp;SI-1236 Trzin&nbsp;/&nbsp;Slovenija&nbsp;/&nbsp;&nbsp;<a href="/cdn-cgi/l/email-protection#d6bfb8b0b996a0bfb1b9a5beb9a6f8bea4"><span class="__cf_email__" data-cfemail="355c5b535a75435c525a465d5a451b5d47">[email&#160;protected]</span></a></p>
-<p class="ql-align-justify">Tijelo za registraciju: Okružni sud u Ljubljani&nbsp;/&nbsp;Temeljni kapital: 7 500 EUR&nbsp;/&nbsp;IBAN SI56 2900&nbsp;0005&nbsp;2694&nbsp;428&nbsp;/&nbsp;PDV ID: 15553442&nbsp;/&nbsp;Matični broj tvrtke: 6579639000</p>
+<h2 class="ql-align-justify"><strong>Termeni si conditii generale</strong></h2>
+<p class="ql-align-justify">Datele personale trimise pot fi folosite pentru informari comerciale legate de produse, oferte speciale, noutati si campanii promotionale, doar in conditiile prevazute de legislatia aplicabila si conform preferintelor dvs.</p>
+<p class="ql-align-justify">Va puteti retrage acordul in orice moment, iar detalii suplimentare despre prelucrarea datelor personale si drepturile dvs. sunt disponibile in politica de confidentialitate si in termenii magazinului.</p>
 </div>
-                </span>
-                <img decoding="async" id="close_ab_optin" src="https://images.vigo-shop.com/general/remove.png">
-            </div>
-        </div>
+                    </div>
             </div>
     
   </form>
@@ -986,7 +572,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
         <div class="partial_inner_section">
             <img src="https://images.vigo-shop.com/general/banner_icons/delivery_icon.svg" alt="">
             <div class="text_wrapper">
-                Dostavlja: Paket24 Hrvatske pošte            </div>
+                Dostavlja: Serviciu de livrare rapida            </div>
         </div>
 
                     <div class="partial_inner_section">
@@ -1008,36 +594,36 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                     <div class="footer-main__links">
                         <ul>
                                                             <li>
-                                    <a href="https://vigoshop.hr/opci-uvjeti-poslovanja/"
-                                       class="button button--link c--gray">Opći uvjeti poslovanja</a>
+                                    <a href="https://vigoshop.hr/termeni-si-conditii/"
+                                       class="button button--link c--gray">Termeni si conditii generale</a>
                                 </li>
                                                             <li>
-                                    <a href="https://vigoshop.hr/pravila-o-zastiti-privatnosti/"
-                                       class="button button--link c--gray">Pravila o zaštiti privatnosti</a>
+                                    <a href="https://vigoshop.hr/politica-de-confidentialitate/"
+                                       class="button button--link c--gray">Politica de confidentialitate</a>
                                 </li>
                                                             <li>
-                                    <a href="https://vigoshop.hr/pravila-o-kolacicima/"
-                                       class="button button--link c--gray">Pravila o kolačićima</a>
+                                    <a href="https://vigoshop.hr/politica-de-cookies/"
+                                       class="button button--link c--gray">Politica de cookies</a>
                                 </li>
                                                             <li>
-                                    <a href="https://vigoshop.hr/pravo-na-odustajanje-od-kupnje/"
-                                       class="button button--link c--gray">Pravo na odustajanje od kupnje</a>
+                                    <a href="https://vigoshop.hr/drept-de-retragere/"
+                                       class="button button--link c--gray">Drept de retragere</a>
                                 </li>
                                                             <li>
-                                    <a href="https://vigoshop.hr/prituzbe-i-sporovi/"
-                                       class="button button--link c--gray">Pritužbe i sporovi</a>
+                                    <a href="https://vigoshop.hr/reclamatii-si-litigi/"
+                                       class="button button--link c--gray">Reclamatii si litigii</a>
                                 </li>
                                                             <li>
-                                    <a href="https://vigoshop.hr/zamjena-u-jamstvu/"
-                                       class="button button--link c--gray">Zamjena u jamstvu</a>
+                                    <a href="https://vigoshop.hr/schimb-in-garantie/"
+                                       class="button button--link c--gray">Schimb in garantie</a>
                                 </li>
                                                             <li>
-                                    <a href="https://vigoshop.hr/informacije-o-tvrtki/"
-                                       class="button button--link c--gray">Informacije o tvrtki</a>
+                                    <a href="https://vigoshop.hr/despre-companie/"
+                                       class="button button--link c--gray">Despre companie</a>
                                 </li>
                                                             <li>
-                                    <a href="https://manuals.hs-plus.com/hr?brand=vigoshop"
-                                       class="button button--link c--gray">Upute za upotrebu</a>
+                                    <a href="https://manuals.hs-plus.com/ro?brand=vigoshop"
+                                       class="button button--link c--gray">Instructiuni de utilizare</a>
                                 </li>
                                                     </ul>
                     </div>
@@ -1067,7 +653,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                                 class="flex__item f--bold c--gray">100% sigurna kupnja</div>
                         </div>
                         <div
-                            class="f--s c--gray">osigurano 256-bitnim šifriranjem</div>
+                            class="f--s c--gray">securizat prin criptare pe 256 de biti</div>
                     </div>
                 </div>
             </div>
@@ -1119,7 +705,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                 <img id="close_terms_conditions" src="https://images.vigo-shop.com/general/remove.png" alt="Close">
             </div>
             <div class='mobile-notice-modal__head s-all--s'>
-                <div class="f--l f--bold c--darkgray">Trebate li pomoć pri kupnji?</div>
+                <div class="f--l f--bold c--darkgray">Aveti nevoie de ajutor la cumparare?</div>
                 <div class="f--s c--gray">Za Vas smo dostupni svaki radni dan od <strong>07:00 - 19:00</strong>, a vikendom od <strong>08:00 - 18:00.</strong></div>
             </div>
                 <div class="mobile-notice-modal__body">
@@ -1129,9 +715,9 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                     <a class="  flex__item t--no-decoration c--text s-all--s"
                        href="https://api.whatsapp.com/send?phone=+386 64 109 783&text=Pozdrav,%20zanimam%20se%20za%20kupovinu%20produsului: (vigoshop)">
                         <div class="flex flex--autosize flex--gaps">
-                            <div class="flex__item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><linearGradient id="ge5urdfv4a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#66ff74"/><stop offset="1" stop-color="#00b822"/></linearGradient><clipPath id="1s5y4t255b"><path data-name="Rectangle 3641" style="fill:none" d="M0 0h17.171v17.296H0z"/></clipPath></defs><path data-name="Path 11937" d="M4 0h16a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z" style="fill:#00b822"/><g data-name="Group 10478"><g data-name="Group 10477" style="clip-path:url(#1s5y4t255b)" transform="translate(3.415 3)"><path data-name="Path 11934" d="M8.594 1.484a7.093 7.093 0 1 1-3.846 13.052.142.142 0 0 0-.114-.018l-1.128.3L2.1 15.2l.377-1.406.29-1.084a.142.142 0 0 0-.021-.118 7.091 7.091 0 0 1 5.848-11.1m0-1.492a8.577 8.577 0 0 0-7.443 12.84.142.142 0 0 1 .014.108l-.123.459-.377 1.406L0 17.3l2.483-.665 1.406-.377.526-.141a.142.142 0 0 1 .1.013A8.577 8.577 0 1 0 8.594 0" style="fill:#fff"/><path data-name="Path 11935" d="M52.9 55.99a1.835 1.835 0 0 1 .8-.027.4.4 0 0 1 .293.226c.324.688.431.961.663 1.486a.986.986 0 0 1-.233 1.118 12.15 12.15 0 0 0-.333.316c-.168.179.9 2.308 3.106 2.9a.276.276 0 0 0 .284-.092c.223-.271.438-.554.659-.828a.4.4 0 0 1 .459-.118c.732.286.942.448 1.675.734a.378.378 0 0 1 .284.386 1.781 1.781 0 0 1-1.2 1.845 2.723 2.723 0 0 1-.462.076c-2.867.179-6.64-2.839-7.028-5.7A2.291 2.291 0 0 1 52.9 55.99" transform="translate(-47.575 -51.327)" style="fill:#fff"/></g></g></svg></div>
+                            <div class="flex__item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><linearOrasient id="ge5urdfv4a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#66ff74"/><stop offset="1" stop-color="#00b822"/></linearOrasient><clipPath id="1s5y4t255b"><path data-name="Rectangle 3641" style="fill:none" d="M0 0h17.171v17.296H0z"/></clipPath></defs><path data-name="Path 11937" d="M4 0h16a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z" style="fill:#00b822"/><g data-name="Group 10478"><g data-name="Group 10477" style="clip-path:url(#1s5y4t255b)" transform="translate(3.415 3)"><path data-name="Path 11934" d="M8.594 1.484a7.093 7.093 0 1 1-3.846 13.052.142.142 0 0 0-.114-.018l-1.128.3L2.1 15.2l.377-1.406.29-1.084a.142.142 0 0 0-.021-.118 7.091 7.091 0 0 1 5.848-11.1m0-1.492a8.577 8.577 0 0 0-7.443 12.84.142.142 0 0 1 .014.108l-.123.459-.377 1.406L0 17.3l2.483-.665 1.406-.377.526-.141a.142.142 0 0 1 .1.013A8.577 8.577 0 1 0 8.594 0" style="fill:#fff"/><path data-name="Path 11935" d="M52.9 55.99a1.835 1.835 0 0 1 .8-.027.4.4 0 0 1 .293.226c.324.688.431.961.663 1.486a.986.986 0 0 1-.233 1.118 12.15 12.15 0 0 0-.333.316c-.168.179.9 2.308 3.106 2.9a.276.276 0 0 0 .284-.092c.223-.271.438-.554.659-.828a.4.4 0 0 1 .459-.118c.732.286.942.448 1.675.734a.378.378 0 0 1 .284.386 1.781 1.781 0 0 1-1.2 1.845 2.723 2.723 0 0 1-.462.076c-2.867.179-6.64-2.839-7.028-5.7A2.291 2.291 0 0 1 52.9 55.99" transform="translate(-47.575 -51.327)" style="fill:#fff"/></g></g></svg></div>
                             <div
-                                class="flex__item desktop_contact desktop_whatsapp_contact">Pošaljite nam Whatsapp poruku</div>
+                                class="flex__item desktop_contact desktop_whatsapp_contact">Trimiteti-ne un mesaj pe WhatsApp</div>
                             <div class="flex__item mobile_contact mobile_whatsapp_contact">
                                 <strong>Whatsapp</strong></div>
                         </div>
@@ -1140,7 +726,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                     <a class="  flex__item t--no-decoration c--text s-all--s" href="tel:+385-1-3300-004">
                         <div class="flex flex--autosize flex--gaps">
                             <div class="flex__item"><svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg"><path d="M18.298 13.0304L14.2715 11.3042C13.7973 11.0989 13.241 11.2374 12.9189 11.6374L11.2827 13.6346C8.71287 12.3729 6.62544 10.2833 5.36371 7.71585L7.36059 6.08161C7.75952 5.75577 7.89534 5.20253 7.69361 4.72829L5.96763 0.702075C5.74148 0.185903 5.18461 -0.0964881 4.63947 0.03005L0.8988 0.89281C0.369985 1.01341 0 1.47911 0 2.02312C0 11.3855 7.61494 19 16.9777 19C17.5221 19 17.9864 18.6301 18.1077 18.1012L18.9705 14.3608C19.0955 13.8171 18.8139 13.2531 18.298 13.0304Z"/></svg></div>
-                            <div class="flex__item desktop_contact desktop_phone_contact">Za naručivanje nazovite: <span class="phone-padding-top"><strong>01 3300 004</strong></span></div>
+                            <div class="flex__item desktop_contact desktop_phone_contact">Pentru comenzi sunati la: <span class="phone-padding-top"><strong>01 3300 004</strong></span></div>
                             <div class="flex__item mobile_contact mobile_phone_contact">
                                 <strong>01 3300 004</strong></div>
                         </div>

@@ -316,7 +316,7 @@ add_action( 'wp_footer', function() {
     jQuery(function($){
       var messages = {
         required: '\u2715 Obavezna informacija',
-        billing_address_2: '\u2715 Ukoliko nemate kućni broj upišite BB',
+        billing_address_2: '\u2715 Daca nu aveti numar, introduceti F.N.',
       };
       var submitted = false; /* only validate after first submit attempt */
       /* Set submitted=true when WC native button is clicked */
@@ -459,11 +459,11 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_last_name']['placeholder'] = 'Prezime';
     $fields['billing']['billing_address_1']['label'] = 'Ulica';
     $fields['billing']['billing_address_1']['placeholder'] = 'Ulica';
-    $fields['billing']['billing_address_2']['label'] = 'Kućni broj';
-    $fields['billing']['billing_address_2']['placeholder'] = 'Kućni broj';
+    $fields['billing']['billing_address_2']['label'] = 'Numar';
+    $fields['billing']['billing_address_2']['placeholder'] = 'Numar';
     $fields['billing']['billing_address_2']['required'] = true;
-    $fields['billing']['billing_postcode']['label'] = 'Poštanski broj';
-    $fields['billing']['billing_postcode']['placeholder'] = 'Poštanski broj';
+    $fields['billing']['billing_postcode']['label'] = 'Cod postal';
+    $fields['billing']['billing_postcode']['placeholder'] = 'Cod postal';
     $fields['billing']['billing_city']['label'] = 'Grad';
     $fields['billing']['billing_city']['placeholder'] = 'Odaberite grad';
     $fields['billing']['billing_phone']['label'] = 'Telefon';
@@ -502,7 +502,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
  */
 add_filter( 'woocommerce_form_field_text', function( $field, $key ) {
     if ( $key === 'billing_last_name' ) {
-        $field .= '<div class="form-row form-row-wide col-xs-12">Unesite adresu na kojoj ćete biti <b>između 8:00 i 16:00 sati</b>.</div>';
+        $field .= '<div class="form-row form-row-wide col-xs-12">Unesite adresu na kojoj veti biti <b>intre 8:00 i 16:00 sati</b>.</div>';
     }
     return $field;
 }, 10, 2 );
@@ -576,7 +576,7 @@ add_action('woocommerce_review_order_before_submit', function(){
         </button>
         <div id="noriks-coupon-expanded" style="display:none;gap:8px;align-items:center;">
             <input type="text" id="noriks_coupon_code" placeholder="Kupon kod" style="flex:1;padding:10px 14px;border:1px solid #ccc;border-radius:6px;font-size:14px;" />
-            <button type="button" style="padding:10px 20px;background:#000;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap;" onclick="noriksApplyCoupon()">Primijeni</button>
+            <button type="button" style="padding:10px 20px;background:#000;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap;" onclick="noriksApplyCoupon()">Aplica</button>
             <button type="button" style="padding:8px 10px;background:none;border:1px solid #ddd;border-radius:6px;font-size:14px;color:#999;cursor:pointer;line-height:1;" onclick="this.parentElement.style.display='none';document.getElementById('noriks-coupon-btn').style.display='inline-flex';">✕</button>
         </div>
         <div id="noriks-coupon-msg" style="display:none;margin-top:8px;padding:6px 10px;border-radius:4px;font-size:12px;"></div>
@@ -606,16 +606,16 @@ add_action('woocommerce_review_order_before_submit', function(){
                 document.getElementById('noriks_coupon_code').value='';
                 if(window.jQuery)jQuery('body').trigger('update_checkout');
             }
-            btn.textContent='Primijeni';btn.disabled=false;
+            btn.textContent='Aplica';btn.disabled=false;
         }).catch(function(){
             msg.style.display='block';msg.style.background='#fde8e8';msg.style.color='#c00';
-            msg.textContent='Greška. Pokušajte ponovo.';btn.textContent='Primijeni';btn.disabled=false;
+            msg.textContent='Eroare. Incercati din nou.';btn.textContent='Aplica';btn.disabled=false;
         });
     }
     </script>
     <?php
     endif;
-    echo '<h3 class="place-order-title" style="display:block;margin:15px 0 10px;">Sažetak comenzi</h3>';
+    echo '<h3 class="place-order-title" style="display:block;margin:15px 0 10px;">Rezumatul comenzii</h3>';
     echo '<div class="vigo-checkout-total order-total shop_table" style="margin-bottom:20px;">';
     woocommerce_order_review();
     echo '</div>';
@@ -654,6 +654,6 @@ add_filter('woocommerce_checkout_posted_data', function($data){
  */
 add_action('woocommerce_checkout_process', function(){
     if ( empty( $_POST['billing_address_2'] ) ) {
-        wc_add_notice( 'Molimo unesite kućni broj.', 'error' );
+        wc_add_notice( 'Va rugam introduceti numarul.', 'error' );
     }
 });

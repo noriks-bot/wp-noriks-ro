@@ -205,12 +205,12 @@ function noriks_remove_upsell() {
 
     // Only allow removing upsell items
     if ( $item->get_meta( '_noriks_upsell' ) !== 'thank you upsell' ) {
-        wp_send_json_error( 'Samo upsell produse je moguće ukloniti' );
+        wp_send_json_error( 'Doar produsele upsell pot fi eliminate' );
     }
 
     // Only allow while in primary-hold
     if ( $order->get_status() !== 'primary-hold' ) {
-        wp_send_json_error( 'Vrijeme za izmjene je isteklo' );
+        wp_send_json_error( 'Timpul pentru modificari a expirat' );
     }
 
     $product_name = $item->get_name();
@@ -218,9 +218,9 @@ function noriks_remove_upsell() {
     $order->calculate_totals();
     $order->save();
 
-    $order->add_order_note( sprintf( 'Upsell uklojen: %s', $product_name ) );
+    $order->add_order_note( sprintf( 'Upsell eliminat: %s', $product_name ) );
 
-    wp_send_json_success( array( 'message' => 'Uklonjeno' ) );
+    wp_send_json_success( array( 'message' => 'Eliminat' ) );
 }
 
 
@@ -236,7 +236,7 @@ function noriks_handle_add_upsell() {
     $nonce        = $_POST['nonce'] ?? '';
 
     if ( ! wp_verify_nonce( $nonce, 'noriks_upsell_' . $order_id ) ) {
-        wp_send_json_error( 'Nevažeći zahtjev' );
+        wp_send_json_error( 'Solicitare invalida' );
     }
 
     $order = wc_get_order( $order_id );
@@ -244,16 +244,16 @@ function noriks_handle_add_upsell() {
 
     // Only allow upsell on COD orders in primary-hold
     if ( $order->get_payment_method() !== 'cod' ) {
-        wp_send_json_error( 'Upsell dostupan samo za plaćanje pouzećem' );
+        wp_send_json_error( 'Upsell disponibil doar pentru plata ramburs' );
     }
     if ( $order->get_status() !== 'primary-hold' ) {
-        wp_send_json_error( 'Vrijeme za dodavanje je isteklo' );
+        wp_send_json_error( 'Timpul pentru adaugare a expirat' );
     }
 
     // Time limit: 5 min from order creation (safety check)
     $created = $order->get_date_created();
     if ( $created && ( time() - $created->getTimestamp() ) > 330 ) { // 5.5 min grace
-        wp_send_json_error( 'Vrijeme za dodavanje je isteklo' );
+        wp_send_json_error( 'Timpul pentru adaugare a expirat' );
     }
 
     // Get the actual product (variation or simple)
@@ -267,7 +267,7 @@ function noriks_handle_add_upsell() {
         $item_variation_id = $item->get_variation_id();
         if ( $item_product_id == $check_product_id || ( $variation_id && $item_variation_id == $variation_id ) ) {
             if ( $item->get_meta( '_noriks_upsell' ) ) {
-                wp_send_json_error( 'Već ste dodali ovaj produs' );
+                wp_send_json_error( 'Ati adaugat deja acest produs' );
             }
         }
     }
@@ -304,7 +304,7 @@ function noriks_handle_add_upsell() {
         'total'    => $upsell_price * $quantity,
     ));
 
-    if ( ! $item_id ) wp_send_json_error( 'Greška pri dodavanju' );
+    if ( ! $item_id ) wp_send_json_error( 'Eroare la adaugare' );
 
     // Mark as upsell
     $item = $order->get_item( $item_id );

@@ -81,7 +81,7 @@ $topseler_text =  get_field("singlepp_bestseller_text", "options");
      if($alt_output == false): 
          
          
-         $is_boxers = has_term( array( 'bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id );
+         $is_boxers = has_term( array( 'boxeri', 'boxeri-creeaza-pachet' ), 'product_cat', $current_product_id );
 
          
          if( $is_boxers ): 
@@ -93,7 +93,7 @@ $topseler_text =  get_field("singlepp_bestseller_text", "options");
              $topseler_text =  "Zimska ponuda"; 
              
             else:
-                 $topseler_text =  get_field("singlepp_priceper_before","options") . " " . $tmp_price . " ".  "€ po boksericama"; 
+                 $topseler_text =  get_field("singlepp_priceper_before","options") . " " . $tmp_price . " ".  "€ pe boxeri"; 
             endif;
          
          

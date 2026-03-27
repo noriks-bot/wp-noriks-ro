@@ -620,7 +620,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const baseSize = getBaseSize(height, weight);
             const bodyType = selectedInput.value;
             const finalSize = adjustSize(baseSize, bodyType);
-            resultDiv.innerHTML = `Preporučena marime: <strong>${finalSize}</strong>`;
+            resultDiv.innerHTML = `Marime recomandata: <strong>${finalSize}</strong>`;
             resultDiv.style.display = "block";
             
             
@@ -681,4 +681,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 </script>
-

@@ -1,6 +1,6 @@
 
 <?php 
-if (  has_term( array( 'starter-paketi','orto-starter' ), 'product_cat', get_the_id() )  )   : 
+if (  has_term( array( 'pachete-starter','orto-starter' ), 'product_cat', get_the_id() )  )   : 
 ?>
 
 
@@ -19,17 +19,17 @@ if (  has_term( array( 'starter-paketi','orto-starter' ), 'product_cat', get_the
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-ZAŠTO LJUDI BIRAJU STARTER PAKET?
+DE CE ALEG OAMENII PACHETUL STARTER?
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
         <p  style="    font-style: italic;
-    line-height: 1.2;"  ><strong>“Uzeo sam jer nisam bio siguran hoće li mi odgovarati.” 
+    line-height: 1.2;"  ><strong>“L-am luat pentru ca nu eram sigur daca mi se va potrivi.” 
 
 
 
 </strong><span style="font-weight:normal;">Marko - Zagreb</span></p>
-        <p class="description">Mnogi kupci krenu sa starter paketom jer žele prvo vidjeti kako NORIKS stoji i kako se nosi. Jedna tricou i jedne boxeri dovoljne su da bez velikog ulaganja donesu odluku.
+        <p class="description">Multi clienti incep cu pachetul starter pentru ca vor mai intai sa vada cum se aseaza NORIKS si cum se simte la purtare. Un tricou si o pereche de boxeri sunt suficiente pentru a lua o decizie fara o investitie mare.
 
 
 
@@ -38,12 +38,12 @@ ZAŠTO LJUDI BIRAJU STARTER PAKET?
 
       <div style="margin-left: 20px;" class="why-point">
         <p  style="    font-style: italic;
-    line-height: 1.2;" ><strong>“Nakon prvog nošenja sam odmah naručio još.” 
+    line-height: 1.2;" ><strong>“Dupa prima purtare am comandat imediat inca unul.” 
 
 
 
 </strong><span style="font-weight:normal;">Pavle - Split</span></p>
-        <p class="description">Više od 95% kupaca nakon starter paketa ponovno naruči. Ne zato što su planirali, nego zato što već prvi dan osjete razliku u kroju, udobnosti i kvaliteti.
+        <p class="description">Peste 95% dintre clienti comanda din nou dupa pachetul starter. Nu pentru ca asta era planul lor, ci pentru ca din prima zi simt diferenta de croiala, confort si calitate.
 
 
 </p>
@@ -56,7 +56,7 @@ ZAŠTO LJUDI BIRAJU STARTER PAKET?
 
 
 </strong><span style="font-weight:normal;">Ante - Pula</span></p>
-        <p class="description">Majica i boxeri su mekane, lagane i ugodne na koži. Starter paket je najčešći razlog zašto NORIKS brzo postane dio svakodnevne garderobe.
+        <p class="description">Tricoul si boxerii sunt moi, usori si placuti pe piele. Pachetul starter este cel mai des motivul pentru care NORIKS devine rapid parte din garderoba de zi cu zi.
 
 
 
@@ -88,33 +88,33 @@ KOMBINACIJA KOJA SE NOSI SVAKI DAN
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Dizajnirano za cjelodnevnu udobnost
+        <p><strong>Dizajnirano za cjelodnevnu confort
 
 
 </strong></p>
-        <p class="description">Majica i boxeri napravljene su za nošenje od jutra do večeri, bez prilagođavanja i nelagode. Sve stoji na mjestu, ne steže i omogućuje slobodno kretanje tijekom cijelog dana.
+        <p class="description">Tricoul si boxerii sunt facuti pentru a fi purtati de dimineata pana seara, fara ajustari si fara disconfort. Totul ramane la locul lui, nu strange si permite libertate de miscare pe tot parcursul zilei.
 
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Kroj koji radi s tijelom
+        <p><strong>Kroj care radi s tijelom
 
 
 </strong></p>
-        <p class="description">Kroj tricouri naglašava gornji dio tijela, dok boxeri pružaju dovoljno prostora i stabilnost bez podizanja. Rezultat je siguran, opušten osjećaj i uredan izgled u svakoj situaciji.
+        <p class="description">Croiala tricoului accentueaza partea superioara a corpului, iar boxerii ofera suficient spatiu si stabilitate fara sa se ridice. Rezultatul este o senzatie sigura, relaxata si un aspect ingrijit in orice situatie.
 
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Kvaliteta koju osjetiš odmah
+        <p><strong>Calitatea pe care o simti imediat
 
 
 </strong></p>
-        <p class="description">Materijali su mekani, prozračni i ugodni na koži, bez gubitka oblika nakon pranja. Već pri prvom nošenju jasno je zašto ova kombinacija brzo postaje dio svakodnevne garderobe.
+        <p class="description">Materialele sunt moi, aerisite si placute pe piele, fara sa-si piarda forma dupa spalare. Chiar de la prima purtare este clar de ce aceasta combinatie devine rapid parte din garderoba de zi cu zi.
 
 
 </p>
@@ -143,39 +143,39 @@ KOMBINACIJA KOJA SE NOSI SVAKI DAN
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-NAJLAKŠI I NAJSIGURNIJI POČETAK
+CEL MAI USOR SI SIGUR INCEPUT
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Najmanji mogući rizik
+        <p><strong>Cel mai mic risc posibil
 
 
 </strong></p>
-        <p class="description">Zato što ti omogućuje da upoznaš kvalitetu bez velikog ulaganja.
-Umjesto da kupuješ više komada unaprijed, uzmeš jednu majicu i jedne boxeri — taman dovoljno da vidiš kako stoje, kako se nose i kako se osjeća materijal.
+        <p class="description">Pentru ca iti permite sa descoperi calitatea fara o investitie mare.
+In loc sa cumperi mai multe bucati din start, iei un tricou si o pereche de boxeri - exact cat trebuie ca sa vezi cum se aseaza, cum se poarta si cum se simte materialul.
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Osmišljeno za prvi korak
+        <p><strong>Gandit pentru primul pas
 
 
 </strong></p>
-        <p class="description">Starter paket je osmišljen kao prvo iskustvo, ne kao zaliha.
-Dostupan je samo jednom po kupcu i po posebnoj cijeni, kako bi odluka bila jednostavna i bez razmišljanja.
+        <p class="description">Pachetul starter este gandit ca o prima experienta, nu ca un stoc.
+Este disponibil o singura data per client si la un pret special, pentru ca decizia sa fie simpla si fara ezitare.
 
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Iskustvo koje se ponavlja
+        <p><strong>Iskustvo care se ponavlja
 
 
 </strong></p>
-        <p class="description">Većina muškaraca nakon toga nastavi s NORIKS-om jer shvati razliku u kroju, udobnosti i kvaliteti.
-Ali prvi korak je ovaj — najmanji rizik, najčišći dojam. 
+        <p class="description">Majoritatea barbatilor continua apoi cu NORIKS pentru ca inteleg diferenta de croiala, confort si calitate.
+Dar primul pas este acesta - cel mai mic risc, cea mai clara impresie. 
 
 </p>
       </div>
@@ -195,7 +195,7 @@ Ali prvi korak je ovaj — najmanji rizik, najčišći dojam.
 
 
 <?php 
-if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() )  ||  has_term( 'black-friday', 'product_cat', get_the_id() )) : 
+if (  has_term( array( 'tricouri', 'orto-tricouri' ), 'product_cat', get_the_id() )  ||  has_term( 'black-friday', 'product_cat', get_the_id() )) : 
 ?>
 
 
@@ -314,34 +314,34 @@ if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() ) 
       <div class="video-wrapper">
           <img style="width: 100%;       
     aspect-ratio: 1/1; 
-    object-fit: cover;  " src="<?php echo get_template_directory_uri(); ?>/img/majice-3 (1).jpeg">
+    object-fit: cover;  " src="<?php echo get_template_directory_uri(); ?>/img/tricouri-3 (1).jpeg">
       </div>
     </div>
 
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-        ZAŠTO ĆE TI OVA MAJICA POSTATI STANDARD?
+        DE CE VA DEVENI ACEST TRICOU STANDARDUL TAU?
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Dizajnirana za stvarni život
+        <p><strong>Conceput pentru viata reala
 </strong></p>
-        <p class="description">Ova tricou napravljena je za cjelodnevno nošenje, od jutra do večeri. Ne traži prilagođavanje ni razmišljanje — jednostavno stoji dobro u svakoj situaciji.
+        <p class="description">Acest tricou este facut pentru purtare intreaga zi, de dimineata pana seara. Nu cere ajustari si nici nu trebuie sa te gandesti la el - pur si simplu arata bine in orice situatie.
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Kroj koji razumije tijelo
+        <p><strong>Kroj care razumije tijelo
 </strong></p>
-        <p class="description">Kroj je razvijan da prati liniju tijela bez stezanja i naglašava ono što treba. Rezultat je uredan, samopouzdan izgled bez osjećaja nelagode.
+        <p class="description">Croiala a fost dezvoltata ca sa urmeze linia corpului fara sa stranga si sa evidentieze exact ce trebuie. Rezultatul este un aspect ingrijit si increzator, fara senzatie de disconfort.
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Osjeti razliku već pri prvom nošenju
+        <p><strong>Simte diferenta chiar de la prima purtare
 </strong></p>
-        <p class="description">Materijal je mekan, lagan i prozračan na koži. Nakon prvog nošenja jasno je zašto ova tricou brzo postaje ona koju najčešće biraš.
+        <p class="description">Materialul este moale, usor si aerisit pe piele. Dupa prima purtare este clar de ce acest tricou devine rapid cel pe care il alegi cel mai des.
 </p>
       </div>
     </div>
@@ -362,7 +362,7 @@ if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() ) 
 
 <!-- here we include new file BOXERIRICE-->
 
-<?php if ( has_term( array( 'bokserice', 'bokserice-sastavi-paket',  'orto-bokserice' ), 'product_cat', get_the_ID() )  && !has_term( 'black-friday', 'product_cat', get_the_ID() ) ): ?>
+<?php if ( has_term( array( 'boxeri', 'boxeri-creeaza-pachet',  'orto-boxeri' ), 'product_cat', get_the_ID() )  && !has_term( 'black-friday', 'product_cat', get_the_ID() ) ): ?>
 
 
 
@@ -409,13 +409,13 @@ endif;
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-        Fleksibilan rez za snažnije noge
+        Croiala flexibila pentru picioare mai puternice
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Cjelodnevna udobnost
+        <p><strong>Confort pe tot parcursul zilei
 </strong></p>
-        <p class="description">Posebno dizajnirano za muškarce s debljim bedrima. Elastični i rastezljivi materijal pruža maksimalnu udobnost bez zatezanja ili neugodnog pojasa. Donje rublje ostaje na mjestu i ne podiže se, pa se možete slobodno kretati cijeli dan.</p>
+        <p class="description">Creat special pentru barbatii cu coapse mai puternice. Materialul elastic si extensibil ofera confort maxim fara strangere sau presiune neplacuta in talie. Lenjeria ramane la locul ei si nu se ridica, astfel incat va puteti misca liber toata ziua.</p>
       </div>
 
     
@@ -445,13 +445,13 @@ endif;
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-       Manje trošenja i oštećenja
+       Mai putina uzura si deteriorare
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Super izdržljivo 💪
+        <p><strong>Super rezistent 💪
 </strong></p>
-        <p class="description">Zaboravite na stalnu kupovinu poderanog donjeg rublja. NORIKS šortsevi su napravljeni od jačeg materijala – traju duže i štede vam put u trgovinu.
+        <p class="description">Uitati de cumpararea constanta a lenjeriei deteriorate. Boxerii NORIKS sunt realizati dintr-un material mai rezistent - dureaza mai mult si va scutesc de drumuri suplimentare la magazin.
 </p>
       </div>
 
@@ -460,9 +460,9 @@ endif;
         
         <p class="description">
         
-        ✅ Manje poderanja  <br/>
-        ✅ Manje znojenja  <br/>
-        ✅ Udobnost tijekom cijelog dana <br/>
+        ✅ Mai putine rupturi  <br/>
+        ✅ Mai putina transpiratie  <br/>
+        ✅ Confort pe tot parcursul zilei <br/>
                 
         </p>
       </div>
@@ -494,13 +494,13 @@ endif;
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-       Dovoljno prostora za sve
+       Destul spatiu pentru tot
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Dečki, dopustite svom međunožju da slobodno diše!
+        <p><strong>Baieti, lasati zona intima sa respire liber!
 </strong></p>
-        <p class="description">NORIKS donje rublje pruža podršku tijekom cijelog dana, a da pritom ne gubi oblik. Nebeski mekan Modal materijal rasteže se i savršeno pristaje na pravim mjestima. Prostor za vaše “gadžete” je prostraniji i fleksibilniji, pa se ne osjećate skučenima.</p>
+        <p class="description">Lenjeria NORIKS ofera sustinere pe tot parcursul zilei fara sa-si piarda forma. Materialul din modal, extrem de moale, este flexibil si se aseaza perfect in zonele potrivite. Spatiul pentru partile intime este mai generos si mai flexibil, astfel incat sa nu va simtiti constransi.</p>
       </div>
 
    
@@ -559,15 +559,15 @@ endif;
 
 $products = array();
 
-// If current product is in category 'bokserice' → load all products from that category
-if ( has_term( array( 'bokserice', 'orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() ) ) {
+// If current product is in category 'boxeri' → load all products from that category
+if ( has_term( array( 'boxeri', 'orto-boxeri', 'boxeri-creeaza-pachet' ), 'product_cat', get_the_ID() ) ) {
 
-    // Get all products from category 'bokserice'
+    // Get all products from category 'boxeri'
     $wc_products = wc_get_products( array(
         'limit'    => 8,
         'orderby'  => 'menu_order',
         'order'    => 'ASC',
-        'category' => array( 'bokserice' )
+        'category' => array( 'boxeri' )
     ) );
 
     if ( ! empty( $wc_products ) ) {
@@ -777,7 +777,7 @@ a:hover {
 
 <section style="display:block; max-width:1440px; margin:0 auto; padding-bottom:30px;" class="most-popular">
   <div class="container" style="padding-left:10px; padding-right:10px;">
-    <h2 class="section-title" style="margin-bottom:20px;">Gotove kombinacije – jednostavno i brzo</h2>
+    <h2 class="section-title" style="margin-bottom:20px;">Gotove kombinacije – jednostavno i rapid</h2>
 
     <div class="products-grid slider-mobile">
       <?php foreach ($products as $index => $product): ?>
@@ -859,10 +859,10 @@ a:hover {
 
                 if ($shirt_count != 1):
                   if ($alt_output == false):
-                    $is_boxers = has_term( array( 'bokserice', 'orto-bokserice' , 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id );
+                    $is_boxers = has_term( array( 'boxeri', 'orto-boxeri' , 'boxeri-creeaza-pachet' ), 'product_cat', $current_product_id );
 
                     if ($is_boxers):
-                      $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . "€ po boksericama";
+                      $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . "€ pe boxeri";
                     else:
                       $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . get_field("singlepp_priceper_after","options");
                     endif;
@@ -982,13 +982,13 @@ a:hover {
       <!--<h4 style="" class="highlight"><?php echo get_field("singlepp_content_standard_reviews_t1","options"); ?></h4>-->
       <h1 style="color:black;     margin-bottom: 4px;">
           
-          <?php if ( !has_term( array( 'bokserice', 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() ) ): ?>
+          <?php if ( !has_term( array( 'boxeri', 'boxeri-creeaza-pachet' ), 'product_cat', get_the_ID() ) ): ?>
           
           <?php echo get_field("singlepp_content_standard_reviews_t2","options"); ?>
           
           <?php else: ?>
           
-          Nisi sam u potrazi za savršenim boksericama.
+          Nu esti singur in cautarea boxerilor perfecti.
           
           <?php endif; ?>
           
@@ -1063,7 +1063,7 @@ a:hover {
 
   // Detect if current product belongs to boxeri group
   $current_product_id = (function_exists('is_product') && is_product()) ? get_queried_object_id() : get_the_id();
-  $is_boxeri_page  = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id );
+  $is_boxeri_page  = has_term( array( 'boxeri','orto-boxeri', 'boxeri-creeaza-pachet' ), 'product_cat', $current_product_id );
 
   // Include review pools
   if ( ! $is_boxeri_page )  {
@@ -1132,7 +1132,7 @@ a:hover {
 
       $is_boxeri = false;
       if ( $product_id ) {
-          $is_boxeri = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $product_id );
+          $is_boxeri = has_term( array( 'boxeri','orto-boxeri', 'boxeri-creeaza-pachet' ), 'product_cat', $product_id );
       }
 
       $cache_key = $transient_key . ( $is_boxeri ? '_boxeri' : '_all' );
@@ -1153,13 +1153,13 @@ a:hover {
       ];
 
       if ( $is_boxeri ) {
-          $args['category'] = [ 'bokserice' ];
+          $args['category'] = [ 'boxeri' ];
       } else {
           $args['tax_query'] = [
               [
                   'taxonomy' => 'product_cat',
                   'field'    => 'slug',
-                  'terms'    => [ 'bokserice' ],
+                  'terms'    => [ 'boxeri' ],
                   'operator' => 'NOT IN',
               ],
           ];
@@ -1194,8 +1194,8 @@ a:hover {
    *  - /auto_reviews/boxeri-slike/
    *  - /auto_reviews/tricouri-slike/
    */
-  function get_review_avatar_pool(string $type = 'majice'): array {
-    $type = ($type === 'bokserice') ? 'bokserice' : 'majice';
+  function get_review_avatar_pool(string $type = 'tricouri'): array {
+    $type = ($type === 'boxeri') ? 'boxeri' : 'tricouri';
 
     $dir_path = trailingslashit(get_stylesheet_directory()) . 'auto_reviews/' . $type . '-slike/';
     $dir_url  = trailingslashit(get_stylesheet_directory_uri()) . 'auto_reviews/' . $type . '-slike/';
@@ -1396,7 +1396,7 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
   $daily_seed = $today_obj->format('Y-m-d');
 
   // Avatar pools based on page category
-  $avatar_type = $is_boxeri_page ? 'bokserice' : 'majice';
+  $avatar_type = $is_boxeri_page ? 'boxeri' : 'tricouri';
   $avatar_pool = get_review_avatar_pool($avatar_type);
 
   $product_pool = get_wc_product_pool();
@@ -1450,7 +1450,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
       </button>
       <button type="button" class="reviews-tab" data-tab="shipping"
         style="appearance:none;background:transparent;border:1px solid transparent;border-bottom:0;padding:8px 14px;border-radius:0;font-weight:700;">
-        <?php echo esc_html__('Recenzije dostave', 'your-textdomain'); ?> (389)
+        <?php echo esc_html__('Recenzije livrarii', 'your-textdomain'); ?> (389)
       </button>
     </div>
 
@@ -1459,7 +1459,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
       <?php if (!empty($initial_product)) : foreach ($initial_product as $review) :
         $name  = $review['name'] ?? 'Anonymní';
         $text  = $review['text'] ?? '';
-        $title = !empty($review['product_title']) ? $review['product_title'] : 'Jedna Gri Majica';
+        $title = !empty($review['product_title']) ? $review['product_title'] : 'Jedna Gri Tricoul';
         $url   = !empty($review['product_url'])   ? $review['product_url']   : '#';
         $stars = '★★★★★';
         $date_display = $review['assigned_date'] ?? '';
@@ -1482,7 +1482,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
               <div class="avatar">👤</div>
             <?php endif; ?>
             <div class="name"><?php echo esc_html($name); ?></div>
-            <span class="verified"><?php _e('Potvrđeno','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Verificat','your-textdomain'); ?></span>
           </div>
           <div class="content"><?php echo esc_html($text); ?></div>
         </article>
@@ -1494,7 +1494,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
       <?php if (!empty($initial_ship)) : foreach ($initial_ship as $review) :
         $name  = $review['name'] ?? 'Anonymní';
         $text  = $review['text'] ?? '';
-        $title = !empty($review['product_title']) ? $review['product_title'] : 'Jedna Gri Majica';
+        $title = !empty($review['product_title']) ? $review['product_title'] : 'Jedna Gri Tricoul';
         $url   = !empty($review['product_url'])   ? $review['product_url']   : '#';
         $stars = '★★★★★';
         $date_display = $review['assigned_date'] ?? '';
@@ -1519,7 +1519,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
               <div class="avatar">👤</div>
             <?php endif; ?>
             <div class="name"><?php echo esc_html($name); ?></div>
-            <span class="verified"><?php _e('Potvrđeno','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Verificat','your-textdomain'); ?></span>
           </div>
           <?php if (!empty($review['headline'])) : ?>
             <div class="headline"><?php echo esc_html($review['headline']); ?></div>
@@ -1598,7 +1598,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
         article.className = 'review-card is-new';
 
         const url       = review.product_url   || '#';
-        const title     = review.product_title || 'Jedna Gri Majica';
+        const title     = review.product_title || 'Jedna Gri Tricoul';
         const name      = review.name          || 'Anonymní';
         const text      = review.text          || '';
         const headline  = review.headline      || '';
@@ -1614,7 +1614,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
           <div class="identity">
             ${avatarHtml(avatarUrl)}
             <div class="name">${esc(name)}</div>
-            <span class="verified"><?php _e('Potvrđeno','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Verificat','your-textdomain'); ?></span>
           </div>
           ${headline ? `<div class="headline">${esc(headline)}</div>` : ''}
           <div class="content">${esc(text)}</div>
@@ -1966,5 +1966,3 @@ $faq_list3 = get_field('faq_list_3', 'option');
   });
 </script>
 		
-
-

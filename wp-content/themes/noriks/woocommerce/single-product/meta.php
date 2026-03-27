@@ -198,11 +198,11 @@ global $product;
 
 $is_singles_boxers = has_term( 'singles-boxers', 'product_cat', $current_product_id );
 
-$is_boxers = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id ) && ! has_term( array( 'black-friday', 'majice-i-bokserice-paketi	' ), 'product_cat', $current_product_id );
+$is_boxers = has_term( array( 'boxeri','orto-boxeri', 'boxeri-creeaza-pachet' ), 'product_cat', $current_product_id ) && ! has_term( array( 'black-friday', 'tricouri-si-boxeri-pachete' ), 'product_cat', $current_product_id );
 
-$is_carape = has_term( array( 'carape', 'zimske-carape' ), 'product_cat', $current_product_id );
+$is_carape = has_term( array( 'sosete', 'sosete-de-iarna' ), 'product_cat', $current_product_id );
 
-$is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	', 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id );
+$is_mixed_bundle = has_term( array( 'black-friday', 'tricouri-si-boxeri-pachete', 'orto-starter', 'orto-tricou-boxeri' ), 'product_cat', $current_product_id );
 
 ?>
 
@@ -435,11 +435,11 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
         <?php echo get_field("singlepp_acc_t_1","options"); ?>
         
         
-        <?php elseif(  has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id )  ): ?>
+        <?php elseif(  has_term( array( 'orto-starter', 'orto-tricou-boxeri' ), 'product_cat', $current_product_id )  ): ?>
         
         
         
-                Naše premium tricouri izrađene su od vrhunske mješavine 60% prstenasto predenog pamuka i 40% poliestera, što osigurava izuzetno mekanu tkaninu otpornu na gužvanje.  <br><br>NORIKS boxeri izrađene su od vrhunske mješavine 95% modala i 5% elastana, što osigurava izuzetno mekanu i elastičnu tkaninu koja se savršeno prilagođava tijelu. Elastičan pojas dizajniran je za optimalno pristajanje, pružajući udobnost bez stezanja i savršen izgled ispod odjeć   <br>
+                Tricourile noastre premium sunt realizate dintr-un amestec de 60% bumbac ring-spun si 40% poliester, pentru un material foarte moale si rezistent la sifonare. <br><br>Boxerii NORIKS sunt realizati din 95% modal si 5% elastan, oferind un material moale si elastic care se adapteaza perfect corpului. Banda elastica este conceputa pentru potrivire optima, oferind confort fara strangere si un aspect excelent sub haine. <br>
         
         <?php else: ?>
         
@@ -495,7 +495,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
     </div>
 
 
-    <!-- 3 - savjeti za pranje-->
+    <!-- 3 - savjeti za spalare-->
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3><?php echo get_field("singlepp_acc_h_2","options"); ?></h3>
@@ -506,11 +506,11 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
         <?php echo get_field("singlepp_acc_t_2","options"); ?>
         
          
-        <?php elseif(  has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id )  ): ?>
+        <?php elseif(  has_term( array( 'orto-starter', 'orto-tricou-boxeri' ), 'product_cat', $current_product_id )  ): ?>
         
         
         
-                         Perite culori s culoarema.  Program za nježno pranje na hladnoj vodi.  Sušite ravno položeno ili u sušilici na niskoj temperaturi.  Ne izbjeljivati              
+                         Spalati culorile similare impreuna. Folositi un program delicat cu apa rece. Uscati pe suprafata plana sau in uscator la temperatura joasa. Nu folositi inalbitor.              
         
         
           <?php else: ?>
@@ -529,8 +529,8 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
       </div>
       <div class="accordion-content">
        <p></p>
-       Toliko vjerujemo da će ti se NORIKS svidjeti da imaš <b data-stringify-type="bold">30 dana</b> za povrat ili besplatnu zamjenu.
-Bez papirologije, bez stresa – riješimo u par klikova. </p>
+       Avem atat de multa incredere ca NORIKS iti va placea incat ai <b data-stringify-type="bold">30 de zile</b> pentru retur sau schimb gratuit.
+Fara birocratie, fara stres - rezolvam totul in doar cateva clickuri. </p>
 
 <p>
     
@@ -544,7 +544,7 @@ Bez papirologije, bez stresa – riješimo u par klikova. </p>
     info@noriks.com
   </a>
 </p>
-<p>Samo nam napiši mail da želiš zamjenu i <b data-stringify-type="bold">odmah ćemo sve srediti.</b></p>
+<p>Trimite-ne doar un e-mail daca doresti un schimb si <b data-stringify-type="bold">rezolvam imediat totul.</b></p>
        
        
       </div>

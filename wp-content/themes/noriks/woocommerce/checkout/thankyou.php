@@ -3,7 +3,7 @@
  * Thankyou page — Post-purchase upsell with two-step flow
  *
  * Step 1: Single product offer (boxeri)
- * Step 2: 6-product grid (after "Ne želim" or after adding 1 item)
+ * Step 2: 6-product grid (after "Nu doresc" or after adding 1 item)
  *
  * Style: Red background, no border-radius, red buttons
  *
@@ -25,7 +25,7 @@ foreach ( $order->get_items() as $item ) {
     // Categories are the source of truth
     $cats = wp_get_post_terms( $item->get_product_id(), 'product_cat', array('fields' => 'slugs') );
     $cat_str = is_array($cats) ? strtolower(implode(' ', $cats)) : '';
-    // Majica: category has "majic" OR name has "majic"
+    // Tricoul: category has "majic" OR name has "majic"
     $is_tricou = ( strpos($cat_str, 'majic') !== false || strpos($name, 'majic') !== false );
     // Boxeri: category has "boxer/bokser/orto" OR SKU has "box" OR name has "bokser/airflow"
     $is_boks = ( strpos($cat_str, 'boxer') !== false || strpos($cat_str, 'bokser') !== false || strpos($cat_str, 'orto') !== false || strpos($sku, 'box') !== false || strpos($name, 'bokser') !== false || strpos($name, 'airflow') !== false );
@@ -36,14 +36,14 @@ foreach ( $order->get_items() as $item ) {
 }
 if ( !$has_boxeri ) $has_only_boxeri = false;
 
-// ONLY boxeri in order → upsell MAJICE, else → upsell BOKSERICE
+// ONLY boxeri in order → upsell MAJICE, else → upsell BOXERI
 $upsell_is_tricouri = $has_only_boxeri;
 
 if ( $upsell_is_tricouri ) {
     $upsell_product_id = 250; // Negru tricou (variable)
     $upsell_name       = 'Crne Tricouri';
     $upsell_qty_prices = array( 1 => 12.99, 3 => 29.99, 6 => 39.99 );
-    $upsell_qty_names  = array( 1 => '1x Negru Majica', 3 => '3x Crne Tricouri', 6 => '6x Crnih Majica' );
+    $upsell_qty_names  = array( 1 => '1x Negru Tricoul', 3 => '3x Crne Tricouri', 6 => '6x Crnih Tricoul' );
     $upsell_qty_images = array(
         1 => 'https://noriks.com/ro/wp-content/uploads/2025/09/black-1.jpg',
         3 => 'https://noriks.com/ro/wp-content/uploads/2025/09/black-3x.jpg',
@@ -126,7 +126,7 @@ $grid_args = array(
 
 // Try boxeri/tricouri categories first
 $grid_products = array();
-foreach ( array( 'bokserice', 'boxerice', 'majice', 'tricou' ) as $cat_slug ) {
+foreach ( array( 'boxeri', 'boxerice', 'tricouri', 'tricou' ) as $cat_slug ) {
     $cat = get_term_by( 'slug', $cat_slug, 'product_cat' );
     if ( $cat ) {
         $grid_args['category'] = array( $cat_slug );
@@ -450,7 +450,7 @@ body.woocommerce-order-received .woocommerce {
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
     <h1 style="color:#fff;font-family:'Roboto',sans-serif;font-size:28px;font-weight:700;margin:0;">Comanda a fost primita!</h1>
-    <p style="color:rgba(255,255,255,0.85);font-family:'Roboto',sans-serif;font-size:15px;margin:10px 0 0;">Broj comenzi: #<?php echo $order->get_order_number(); ?></p>
+    <p style="color:rgba(255,255,255,0.85);font-family:'Roboto',sans-serif;font-size:15px;margin:10px 0 0;">Numarul comenzii: #<?php echo $order->get_order_number(); ?></p>
 </div>
 <script>(function(){var k='splash_<?php echo $order->get_id(); ?>';if(sessionStorage.getItem(k)){document.getElementById('order-splash').style.display='none';return;}sessionStorage.setItem(k,'1');setTimeout(function(){var s=document.getElementById('order-splash');s.style.opacity='0';setTimeout(function(){s.style.display='none';},600);},2000);})();</script>
 
@@ -462,9 +462,9 @@ body.woocommerce-order-received .woocommerce {
         <div class="ty-success" style="background:#fde8e8;">
             <div class="ty-success-icon" style="background:#dc3545;">✕</div>
             <h1>Comanda a esuat</h1>
-            <p>Banka je odbila transakciju. Pokušajte ponovno.</p>
+            <p>Banca a respins tranzactia. Incercati din nou.</p>
             <p style="margin-top:16px;">
-                <a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" style="display:inline-block;background:#E8450E;color:#fff;padding:12px 32px;text-decoration:none;font-weight:700;">Pokušaj ponovno</a>
+                <a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" style="display:inline-block;background:#E8450E;color:#fff;padding:12px 32px;text-decoration:none;font-weight:700;">Incearca din nou</a>
             </p>
         </div>
     <?php else : ?>
@@ -472,7 +472,7 @@ body.woocommerce-order-received .woocommerce {
         <!-- ✅ Success -->
         <div class="ty-success">
             <div class="ty-success-icon">✓</div>
-            <h1>Vaša comanda je zaprimljena!</h1>
+            <h1>Comanda dvs. a fost primita!</h1>
             <p>Potvrdu ste primili na <?php echo esc_html( $order->get_billing_email() ); ?></p>
             <span class="ty-order-num">Comanda #<?php echo $order->get_order_number(); ?></span>
         </div>
@@ -487,7 +487,7 @@ body.woocommerce-order-received .woocommerce {
 
                 <div class="tyuo_timer" style="position:relative;">
                     <div class="timer_wrapper">
-                        <div class="special_offer_txt">Zadnja prilika – ponuda ističe za</div>
+                        <div class="special_offer_txt">Ultima sansa - oferta expira in</div>
                         <div class="time" id="ty-timer">04:40</div>
                     </div>
                     <div class="title"><?php echo esc_html($upsell_title_text); ?></div>
@@ -496,11 +496,11 @@ body.woocommerce-order-received .woocommerce {
                 <div class="tyuo_middle_section">
                     <div class="sub_title">
                         <span class="sub_title__icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.293" viewBox="0 0 15 11.293"><path d="M50.915,62.211,46.07,57.366a.44.44,0,0,1,0-.623L47.208,55.6a.44.44,0,0,1,.623,0l3.084,3.084a.441.441,0,0,0,.623,0l7.512-7.513a.44.44,0,0,1,.623,0l1.138,1.138a.44.44,0,0,1,0,.623l-9.273,9.274a.441.441,0,0,1-.623,0" transform="translate(-12.941 319.806)" fill="#47b426"></path></svg></span>
-                        Bez dodatne dostave – sve u jednom paketu
+                        Bez dodatne livrarii – sve u jednom pachetu
                     </div>
                     <div class="clue_text">
                         <span class="clue_text__icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="14.333" viewBox="0 0 15 14.333"><path d="M6.885.383,5.1,4a.686.686,0,0,1-.517.375l-3.994.58a.686.686,0,0,0-.38,1.17L3.1,8.945a.686.686,0,0,1,.2.607L2.614,13.53a.686.686,0,0,0,1,.723l3.572-1.878a.686.686,0,0,1,.639,0l3.572,1.878a.686.686,0,0,0,1-.723l-.682-3.978a.686.686,0,0,1,.2-.607l2.89-2.817a.686.686,0,0,0-.38-1.17l-3.994-.58A.686.686,0,0,1,9.9,4L8.116.383a.686.686,0,0,0-1.23,0" fill="#47b426"></path></svg></span>
-                        Upotpuni kombinaciju i uštedi
+                        Completeaza setul si economiseste
                     </div>
                 </div>
 
@@ -558,15 +558,15 @@ body.woocommerce-order-received .woocommerce {
                             <?php if ( $upsell_variations ) : ?>
                                 <?php foreach ( $upsell_variations as $v ) : ?>
                                 <option value="<?php echo $v['id']; ?>" <?php selected( strtolower($v['size']), strtolower($customer_size) ); ?>>
-                                    Črna, <?php echo esc_html( $v['size'] ); ?>
+                                    Negru, <?php echo esc_html( $v['size'] ); ?>
                                 </option>
                                 <?php endforeach; ?>
                             <?php else : ?>
-                                <option value="">Črna, S</option>
-                                <option value="">Črna, M</option>
-                                <option value="">Črna, L</option>
-                                <option value="">Črna, XL</option>
-                                <option value="">Črna, XXL</option>
+                                <option value="">Negru, S</option>
+                                <option value="">Negru, M</option>
+                                <option value="">Negru, L</option>
+                                <option value="">Negru, XL</option>
+                                <option value="">Negru, XXL</option>
                             <?php endif; ?>
                         </select>
                     </div>
@@ -574,8 +574,8 @@ body.woocommerce-order-received .woocommerce {
                     <div class="ty-upsell-status" id="ty-upsell-status"></div>
 
                     <div class="buttons-section">
-                        <a class="pass-btn" id="ty-btn-skip">Ne želim</a>
-                        <div class="buy-btn" id="ty-btn-add" data-product-id="<?php echo esc_attr( $upsell_product_id ); ?>">DODAJ U NARUDŽBU</div>
+                        <a class="pass-btn" id="ty-btn-skip">Nu doresc</a>
+                        <div class="buy-btn" id="ty-btn-add" data-product-id="<?php echo esc_attr( $upsell_product_id ); ?>">ADAUGA LA COMANDA</div>
                     </div>
                 </div>
 
@@ -589,15 +589,15 @@ body.woocommerce-order-received .woocommerce {
                 <div class="ty-grid-header" style="cursor:pointer;flex-direction:column;position:relative;">
                     <span class="ty-upsell-close" id="ty-step2-close" style="position:absolute;top:10px;right:12px;font-size:20px;color:#000;cursor:pointer;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-weight:300;">✕</span>
                     <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:8px;">
-                        <div style="font-size:15px;font-weight:400;color:#000;">Posebna ponuda ističe</div>
+                        <div style="font-size:15px;font-weight:400;color:#000;">Oferta speciala expira in</div>
                         <div class="time" id="ty-timer-2" style="display:inline-block;background:#e22b26;color:#fff;padding:2px 10px;border-radius:4px;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;">05:00</div>
                     </div>
-                    <div style="font-size:20px;font-weight:700;color:#000;line-height:1.3;text-align:center;padding-top:10px;">Dodajte bilo koji produs s 50% popusta</div>
+                    <div style="font-size:20px;font-weight:700;color:#000;line-height:1.3;text-align:center;padding-top:10px;">Adauga orice produs cu 50% reducere</div>
                 </div>
                 <div class="ty-section-body open" id="ty-grid-body">
                 <div class="ty-section-body-inner" style="padding:0;">
                 <div class="ty-grid-trust">
-                    ✔ Sve šaljemo u istom paketu
+                    ✔ Trimitem totul in acelasi pachet
                 </div>
                 <div class="ty-grid">
                     <?php foreach ( $grid_products as $gp ) :
@@ -624,7 +624,7 @@ body.woocommerce-order-received .woocommerce {
                     ?>
                     <div class="ty-grid-item">
                         <img src="<?php echo esc_url( $gp_img_url ); ?>" alt="<?php echo esc_attr( $gp->get_name() ); ?>">
-                        <div class="g-category">BOKSERICE</div>
+                        <div class="g-category">BOXERI</div>
                         <div class="g-name"><?php echo esc_html( $gp->get_name() ); ?></div>
                         <div class="g-price-old"><?php echo number_format( $gp_price, 2, ',', '.' ); ?>€</div>
                         <div class="g-price-new"><?php echo number_format( $gp_sale, 2, ',', '.' ); ?>€</div>
@@ -638,14 +638,14 @@ body.woocommerce-order-received .woocommerce {
                         <button class="g-add-btn g-select-btn"
                                 data-product-id="<?php echo $gp->get_id(); ?>"
                                 data-sale-price="<?php echo $gp_sale; ?>">
-                            IZBERI
+                            ALEGE
                         </button>
                     </div>
                     <?php endforeach; ?>
                 </div>
                 <div class="buttons-section">
-                    <a class="pass-btn" id="ty-grid-close">Ne želim</a>
-                    <div class="buy-btn" id="ty-grid-add-all">DODAJ K NARUDŽBI</div>
+                    <a class="pass-btn" id="ty-grid-close">Nu doresc</a>
+                    <div class="buy-btn" id="ty-grid-add-all">ADAUGA LA COMANDA</div>
                 </div>
                 </div><!-- /ty-section-body-inner -->
                 </div><!-- /ty-section-body -->
@@ -657,7 +657,7 @@ body.woocommerce-order-received .woocommerce {
         <!-- 📋 Order items -->
         <div class="ty-section" id="ty-order-items-section">
             <div class="ty-section-header open" onclick="tyToggle(this)">
-                <span id="ty-order-items-header">Stavke comenzi (<?php echo $order->get_item_count(); ?>)</span>
+                <span id="ty-order-items-header">Produse din comanda (<?php echo $order->get_item_count(); ?>)</span>
                 <span class="ty-chevron">+</span>
             </div>
             <div class="ty-section-body open">
@@ -698,7 +698,7 @@ body.woocommerce-order-received .woocommerce {
         <!-- 📍 Address -->
         <div class="ty-section">
             <div class="ty-section-header open" onclick="tyToggle(this)">
-                <span>Adresa dostave</span>
+                <span>Adresa livrarii</span>
                 <span class="ty-chevron">+</span>
             </div>
             <div class="ty-section-body open">
@@ -762,7 +762,7 @@ body.woocommerce-order-received .woocommerce {
             localStorage.removeItem('ty_added_' + orderId);
             localStorage.removeItem(stepKey);
             localStorage.removeItem(key);
-            // Auto-open "Stavke comenzi" and "Adresa dostave" sections
+            // Auto-open "Produse din comanda" and "Adresa livrarii" sections
             document.querySelectorAll('.ty-section .ty-section-header').forEach(function(h) {
                 if (!h.classList.contains('open')) {
                     h.classList.add('open');
@@ -832,7 +832,7 @@ body.woocommerce-order-received .woocommerce {
                     // Update item count in header by ID
                     var headerSpan = document.getElementById('ty-order-items-header');
                     if (headerSpan) {
-                        headerSpan.textContent = 'Stavke comenzi (' + d.data.item_count + ')';
+                        headerSpan.textContent = 'Produse din comanda (' + d.data.item_count + ')';
                     }
                     // Make sure section stays open
                     var section = document.getElementById('ty-order-items-section');
@@ -864,7 +864,7 @@ body.woocommerce-order-received .woocommerce {
         });
     }
 
-    // ─── Step 1: "Ne želim" → show grid ───
+    // ─── Step 1: "Nu doresc" → show grid ───
     var skipBtn = document.getElementById('ty-btn-skip');
     if (skipBtn) {
         skipBtn.addEventListener('click', function() {
@@ -916,7 +916,7 @@ body.woocommerce-order-received .woocommerce {
                 })
                 .catch(function() {
                     addBtn.disabled = false;
-                    addBtn.textContent = 'DODAJ U NARUDŽBU';
+                    addBtn.textContent = 'ADAUGA LA COMANDA';
                 });
         });
     }
@@ -929,7 +929,7 @@ body.woocommerce-order-received .woocommerce {
                 var el = this;
                 if (el.classList.contains('selected')) {
                     el.classList.remove('selected');
-                    el.textContent = 'IZBERI';
+                    el.textContent = 'ALEGE';
                     el.style.background = '#000';
                 } else {
                     el.classList.add('selected');
@@ -939,10 +939,10 @@ body.woocommerce-order-received .woocommerce {
             });
         });
 
-        // "Ne želim" — close all, show summary without upsells
+        // "Nu doresc" — close all, show summary without upsells
         document.getElementById('ty-grid-close').addEventListener('click', closeAll);
 
-        // "DODAJ K NARUDŽBI" — add all selected items, then close
+        // "ADAUGA LA COMANDA" — add all selected items, then close
         var gridAddAll = document.getElementById('ty-grid-add-all');
         if (gridAddAll) {
             gridAddAll.addEventListener('click', function() {
@@ -1049,14 +1049,14 @@ function removeUpsellItem(btn) {
                             if (itemsBody) itemsBody.innerHTML = d2.data.items_html;
                             var headerSpan = document.getElementById('ty-order-items-header');
                             if (headerSpan) {
-                                headerSpan.textContent = 'Stavke comenzi (' + d2.data.item_count + ')';
+                                headerSpan.textContent = 'Produse din comanda (' + d2.data.item_count + ')';
                             }
                         }
                     });
             } else {
                 btn.disabled = false;
                 btn.textContent = '✕';
-                alert(d.data || 'Greška');
+                alert(d.data || 'Eroare');
             }
         })
         .catch(function() {

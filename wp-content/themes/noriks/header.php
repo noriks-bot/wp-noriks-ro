@@ -149,8 +149,8 @@
                     </a>
                     <!--
                     <div class="dropdown-menu">
-                        <a href="/ro/product-category/boxeri-sastavi-paket/">Creeaza-ti pachetul</a>
-                        <a href="/ro/product-category/bokserice/">Pachete gata pregatite</a>
+                        <a href="/ro/product-category/boxeri-creeaza-pachet/">Creeaza-ti pachetul</a>
+                        <a href="/ro/product-category/boxeri/">Pachete gata pregatite</a>
                     </div>
                     -->
                 </div>
