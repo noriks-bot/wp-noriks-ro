@@ -359,11 +359,11 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
         <div id="pdf">
     <div class="pdf-title-container">
         <h3 class="pdf-title">
-            KUPITE E-KNJIGU<!--            <span class="green-label">-->
+            CUMPARA E-BOOK-UL<!--            <span class="green-label">-->
 <!--                --><!--            </span>-->
         </h3>
     </div>
-    <p class="pdf-description">Kada kupite e-knjigu, besplatno Vam dajemo costurile livrarii.</p>
+    <p class="pdf-description">Cand cumparati e-book-ul, va oferim gratuit costurile de livrare.</p>
 
     <div id="pdf-grid">
         <div class="table-grid">

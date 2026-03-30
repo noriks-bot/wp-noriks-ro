@@ -878,7 +878,7 @@ body.woocommerce-order-received .woocommerce {
         addBtn.addEventListener('click', function() {
             if (addBtn.disabled) return;
             addBtn.disabled = true;
-            addBtn.textContent = 'Dodajem...';
+            addBtn.textContent = 'Se adauga...';
 
             var select = document.getElementById('ty-variation-select');
             var qtyRadio = document.querySelector('input[name="ty_qty"]:checked');
@@ -896,7 +896,7 @@ body.woocommerce-order-received .woocommerce {
             fetch(ajaxUrl, { method: 'POST', body: fd })
                 .then(function(r) { return r.json(); })
                 .then(function(d) {
-                    addBtn.textContent = '✓ DODANO';
+                    addBtn.textContent = '✓ ADAUGAT';
                     addBtn.classList.add('added');
                     // Remember in localStorage
                     var ak = 'ty_added_' + orderId;
@@ -933,7 +933,7 @@ body.woocommerce-order-received .woocommerce {
                     el.style.background = '#000';
                 } else {
                     el.classList.add('selected');
-                    el.innerHTML = '✔ IZBRANO <span style="font-size:10px;opacity:0.7;margin-left:4px;">odstrani</span>';
+                    el.innerHTML = '✔ SELECTAT <span style="font-size:10px;opacity:0.7;margin-left:4px;">elimina</span>';
                     el.style.background = '#2E7D32';
                 }
             });
@@ -951,7 +951,7 @@ body.woocommerce-order-received .woocommerce {
                     closeAll();
                     return;
                 }
-                gridAddAll.textContent = 'Dodajem...';
+                gridAddAll.textContent = 'Se adauga...';
                 gridAddAll.style.pointerEvents = 'none';
 
                 var promises = [];
@@ -996,7 +996,7 @@ body.woocommerce-order-received .woocommerce {
         if (mainBtn) {
             var mainPid = mainBtn.getAttribute('data-product-id');
             if (addedMap.hasOwnProperty(mainPid) || addedMap.hasOwnProperty(String(mainPid))) {
-                mainBtn.textContent = '✓ DODANO';
+                mainBtn.textContent = '✓ ADAUGAT';
                 mainBtn.classList.add('added');
                 mainBtn.disabled = true;
                 var mainDd = document.getElementById('ty-variation-select');

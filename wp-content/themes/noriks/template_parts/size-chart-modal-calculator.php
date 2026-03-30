@@ -454,7 +454,7 @@ border: 1px solid #ccc;
     
 
     
-    30 dana jamstva na zamjenu marimi
+    30 de zile garantie pentru schimbarea marimii
 
          
    
@@ -510,7 +510,7 @@ border: 1px solid #ccc;
     
 
     
-     30 dana jamstva na zamjenu marimi
+     30 de zile garantie pentru schimbarea marimii
 
          
    

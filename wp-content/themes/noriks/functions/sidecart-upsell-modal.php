@@ -565,7 +565,7 @@ function noriks_upsell_modal_markup() {
             $.post(woocommerce_params.ajax_url, data, function(res) {
                 
                 if (res.success !== false && res.fragments) {
-                    $btn.removeClass('adding').addClass('added').text('✓ DODANO!');
+                    $btn.removeClass('adding').addClass('added').text('✓ ADAUGAT!');
                     
                     // Apply fragments to update side cart
                     $.each(res.fragments, function(key, value) {
@@ -583,7 +583,7 @@ function noriks_upsell_modal_markup() {
                     $('#noriks-modal-error').text(msg).show();
                 } else {
                     // Fallback: no fragments but no error either — refresh
-                    $btn.removeClass('adding').addClass('added').text('✓ DODANO!');
+                    $btn.removeClass('adding').addClass('added').text('✓ ADAUGAT!');
                     $(document.body).trigger('wc_fragment_refresh');
                     setTimeout(closeModal, 800);
                 }

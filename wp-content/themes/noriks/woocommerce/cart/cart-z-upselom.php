@@ -875,11 +875,11 @@ img.emoji {
 
         <div class="upsell-actions">
           <button type="button" class="upsell-add-btn" id="upsell-add-btn">
-            <span id="upsell-btn-text"><?php echo $upsell_in_cart ? 'DODANO' : 'Adauga in cos'; ?></span>
+            <span id="upsell-btn-text"><?php echo $upsell_in_cart ? 'ADAUGAT' : 'Adauga in cos'; ?></span>
           </button>
 
           <button type="button" class="upsell-remove-btn" id="upsell-remove-btn" <?php echo $upsell_in_cart ? '' : 'style="display:none"'; ?>>
-        ️ <span>Odstrani</span>
+        ️ <span>Elimina</span>
           </button>
         </div>
 
@@ -958,7 +958,7 @@ img.emoji {
       if (removeBtn) removeBtn.style.display = isAdded ? 'inline-flex' : 'none';
 
       setOptionsDisabled(isAdded);
-      if (btnText) btnText.textContent = isAdded ? 'DODANO' : 'Adauga in cos';
+      if (btnText) btnText.textContent = isAdded ? 'ADAUGAT' : 'Adauga in cos';
     }
 
     function clearAttrHiddenInputs(){
