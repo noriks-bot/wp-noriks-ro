@@ -273,6 +273,51 @@ function enqueue_main_styles() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_main_styles');
 
+function noriks_ro_output_theme_style_fallback() {
+    if ( is_admin() ) {
+        return;
+    }
+
+    $styles = array(
+        'main.css',
+        'header.css',
+        'footer.css',
+    );
+
+    if ( function_exists( 'is_product' ) && is_product() ) {
+        $styles[] = 'product.css';
+    }
+
+    if ( is_front_page() ) {
+        $styles[] = 'homepage.css';
+    }
+
+    if ( function_exists( 'is_cart' ) && is_cart() ) {
+        $styles[] = 'cart.css';
+    }
+
+    if ( function_exists( 'is_checkout' ) && is_checkout() ) {
+        $styles[] = 'checkout.css';
+    }
+
+    $styles = array_unique( $styles );
+
+    foreach ( $styles as $style_file ) {
+        $style_path = get_template_directory() . '/css/' . $style_file;
+        if ( ! file_exists( $style_path ) ) {
+            continue;
+        }
+
+        printf(
+            '<link rel="stylesheet" id="noriks-ro-fallback-%1$s" href="%2$s?ver=%3$s" media="all" />' . "\n",
+            esc_attr( sanitize_title( $style_file ) ),
+            esc_url( get_template_directory_uri() . '/css/' . $style_file ),
+            esc_attr( filemtime( $style_path ) )
+        );
+    }
+}
+add_action( 'wp_head', 'noriks_ro_output_theme_style_fallback', 99 );
+
 function custom_quantity_buttons() {
     if (is_product()) {
 
