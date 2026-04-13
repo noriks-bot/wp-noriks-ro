@@ -74,13 +74,13 @@ global $product;
           <div class="feature">
           
   <img src="<?php echo get_template_directory_uri(); ?>/img/cod_icon_.png" alt="Customer Support Icon" class="feature__icon info-icon">
-          <p class="feature__text">Plaćanje i pouzećem</p>
+          <p class="feature__text">Plata ramburs</p>
         </div>
         
         
         <div class="feature">
       <img src="https://noriks.com/ro/wp-content/uploads/2025/07/footer_icon1-1.png" alt="Shirt Icon" class="feature__icon info-icon">
-          <p class="feature__text">Isprobajte 30 dana, bez rizika</p>
+          <p class="feature__text">Testeaza 30 de zile, fara risc</p>
         </div>
         
         
@@ -90,7 +90,7 @@ global $product;
      
        
         <img src="https://noriks.com/ro/wp-content/uploads/2025/07/footer_icon3-1.png" alt="Shipping Icon" class="feature__icon info-icon">
-          <p class="feature__text">Besplatna dostava za narudžbe iznad 70 €</p>
+          <p class="feature__text">Livrare gratuita pentru comenzi de peste 70 EUR</p>
         </div>
 
     
@@ -106,7 +106,7 @@ global $product;
 <div class="shipping-box">
   <h2 id="shipping-window" class="shipping-title"></h2>
   <p class="shipping-sub">
-    Naručite u sljedećih <span id="midnight-countdown" class="countdown"></span>
+    Comanda in urmatoarele <span id="midnight-countdown" class="countdown"></span>
   </p>
 </div>
 
@@ -133,7 +133,7 @@ global $product;
 
 <script>
   (function () {
-    const weekdays = ['nedjelja','ponedjeljak','utorak','srijeda','četvrtak','petak','subota'];
+    const weekdays = ['duminica','luni','marti','miercuri','joi','vineri','sambata'];
 
     // Helper to add business days (skip Saturday/Sunday)
     function addBusinessDays(date, days) {
@@ -159,7 +159,7 @@ global $product;
     }
 
     const windowEl = document.getElementById('shipping-window');
-    windowEl.textContent = `Dostava od ${weekdays[first.getDay()]}  ${formatDayMonth(first)} do ${weekdays[second.getDay()]}, ${formatDayMonth(second)}`;
+    windowEl.textContent = `Livrare intre ${weekdays[first.getDay()]} ${formatDayMonth(first)} si ${weekdays[second.getDay()]} ${formatDayMonth(second)}`;
 
     // Countdown to midnight
     const cdEl = document.getElementById('midnight-countdown');
@@ -198,11 +198,11 @@ global $product;
 
 $is_singles_boxers = has_term( 'singles-boxers', 'product_cat', $current_product_id );
 
-$is_boxers = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id ) && ! has_term( array( 'black-friday', 'majice-i-bokserice-paketi	' ), 'product_cat', $current_product_id );
+$is_boxers = has_term( array( 'boxeri','orto-boxeri', 'boxeri-creeaza-pachet' ), 'product_cat', $current_product_id ) && ! has_term( array( 'black-friday', 'tricouri-si-boxeri-pachete' ), 'product_cat', $current_product_id );
 
-$is_carape = has_term( array( 'carape', 'zimske-carape' ), 'product_cat', $current_product_id );
+$is_carape = has_term( array( 'sosete', 'sosete-de-iarna' ), 'product_cat', $current_product_id );
 
-$is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	', 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id );
+$is_mixed_bundle = has_term( array( 'black-friday', 'tricouri-si-boxeri-pachete', 'orto-starter', 'orto-tricou-boxeri' ), 'product_cat', $current_product_id );
 
 ?>
 
@@ -435,11 +435,11 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
         <?php echo get_field("singlepp_acc_t_1","options"); ?>
         
         
-        <?php elseif(  has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id )  ): ?>
+        <?php elseif(  has_term( array( 'orto-starter', 'orto-tricou-boxeri' ), 'product_cat', $current_product_id )  ): ?>
         
         
         
-                Naše premium majice izrađene su od vrhunske mješavine 60% prstenasto predenog pamuka i 40% poliestera, što osigurava izuzetno mekanu tkaninu otpornu na gužvanje.  <br><br>NORIKS bokserice izrađene su od vrhunske mješavine 95% modala i 5% elastana, što osigurava izuzetno mekanu i elastičnu tkaninu koja se savršeno prilagođava tijelu. Elastičan pojas dizajniran je za optimalno pristajanje, pružajući udobnost bez stezanja i savršen izgled ispod odjeć   <br>
+                Tricourile noastre premium sunt realizate dintr-un amestec de 60% bumbac ring-spun si 40% poliester, pentru un material foarte moale si rezistent la sifonare. <br><br>Boxerii NORIKS sunt realizati din 95% modal si 5% elastan, oferind un material moale si elastic care se adapteaza perfect corpului. Banda elastica este conceputa pentru potrivire optima, oferind confort fara strangere si un aspect excelent sub haine. <br>
         
         <?php else: ?>
         
@@ -461,7 +461,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
      <!-- 2 - slika tablica velicina -->
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <h3>Tablica veličina</h3>
+        <h3>Tablice marime</h3>
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
@@ -481,13 +481,13 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
                   
     <?php elseif(  $is_mixed_bundle ): ?>
     
-     <img src="https://noriks.com/ro/wp-content/uploads/2026/04/hr_majice.jpeg">
+     <img src="https://noriks.com/ro/wp-content/uploads/2025/08/Izdelek-brez-naslova-8-1-e1755177806475.png">
 <img src="/ro/wp-content/uploads/2025/12/boxers_size.jpg">
         
           <?php else: ?>
       
       
-       <img src="https://noriks.com/ro/wp-content/uploads/2026/04/hr_majice.jpeg">
+       <img src="https://noriks.com/ro/wp-content/uploads/2025/08/Izdelek-brez-naslova-8-1-e1755177806475.png">
         
             
         <?php endif; ?>
@@ -495,7 +495,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
     </div>
 
 
-    <!-- 3 - savjeti za pranje-->
+    <!-- 3 - savjeti za spalare-->
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3><?php echo get_field("singlepp_acc_h_2","options"); ?></h3>
@@ -506,11 +506,11 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
         <?php echo get_field("singlepp_acc_t_2","options"); ?>
         
          
-        <?php elseif(  has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id )  ): ?>
+        <?php elseif(  has_term( array( 'orto-starter', 'orto-tricou-boxeri' ), 'product_cat', $current_product_id )  ): ?>
         
         
         
-                         Perite boje s bojama.  Program za nježno pranje na hladnoj vodi.  Sušite ravno položeno ili u sušilici na niskoj temperaturi.  Ne izbjeljivati              
+                         Spalati culorile similare impreuna. Folositi un program delicat cu apa rece. Uscati pe suprafata plana sau in uscator la temperatura joasa. Nu folositi inalbitor.              
         
         
           <?php else: ?>
@@ -529,8 +529,8 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	'
       </div>
       <div class="accordion-content">
        <p></p>
-       Toliko vjerujemo da će ti se NORIKS svidjeti da imaš <b data-stringify-type="bold">30 dana</b> za povrat ili besplatnu zamjenu.
-Bez papirologije, bez stresa – riješimo u par klikova. </p>
+       Avem atat de multa incredere ca NORIKS iti va placea incat ai <b data-stringify-type="bold">30 de zile</b> pentru retur sau schimb gratuit.
+Fara birocratie, fara stres - rezolvam totul in doar cateva clickuri. </p>
 
 <p>
     
@@ -544,7 +544,7 @@ Bez papirologije, bez stresa – riješimo u par klikova. </p>
     info@noriks.com
   </a>
 </p>
-<p>Samo nam napiši mail da želiš zamjenu i <b data-stringify-type="bold">odmah ćemo sve srediti.</b></p>
+<p>Trimite-ne doar un e-mail daca doresti un schimb si <b data-stringify-type="bold">rezolvam imediat totul.</b></p>
        
        
       </div>

@@ -88,7 +88,7 @@ $(this).append('<div class="qty-btn-group"><button type="button" class="qty-btn 
     
     
     <!-- !!!!!!     COUNTDOWN    TIMER   !!! --!>
-                <!-- KOŠARICA – OBAVIJEST O REZERVACIJI -->
+                <!-- COS - NOTIFICARE DE REZERVARE -->
                 <div class="wc-reserve-note" id="wc-reserve-note" role="status" aria-live="polite">
                   <span class="wc-reserve-note__icon" aria-hidden="true">
                     <!-- ikona "i" -->
@@ -99,8 +99,8 @@ $(this).append('<div class="qty-btn-group"><button type="button" class="qty-btn 
                     </svg>
                   </span>
                   <span class="wc-reserve-note__text">
-                    Molimo, požuri! Netko je upravo naručio jedan od proizvoda u tvojoj košarici. 
-                    Rezervacija vrijedi još samo <strong id="wc-reserve-timer">10:00</strong> minuta.
+                    Te rugam grabeste-te! Cineva tocmai a comandat unul dintre produsele din cosul tau. 
+                    Rezervarea mai este valabila doar <strong id="wc-reserve-timer">10:00</strong> minute.
                   </span>
                 </div>
                 
@@ -373,7 +373,7 @@ $(this).append('<div class="qty-btn-group"><button type="button" class="qty-btn 
  */
 
 
-$TRIGGER_CATEGORY_SLUGS = array( 'bokserice', 'boxers', 'singles-boxers', 'orto-bokserice', 'majice-i-bokserice-paketi', 'black-friday' );
+$TRIGGER_CATEGORY_SLUGS = array( 'boxeri', 'boxers', 'singles-boxers', 'orto-boxeri', 'tricouri-si-boxeri-pachete', 'black-friday' );
 
 $UPSELL_ID_CAT  = 4154;  // ID1 (when category match)
 $UPSELL_ID_ELSE = 4162;  // ID2 (when NO category match) <-- change 999 to your real product id
@@ -479,7 +479,7 @@ $img_id     = $display_obj->get_image_id();
 $upsell_img = $img_id ? wp_get_attachment_image_url( $img_id, 'woocommerce_thumbnail' ) : wc_placeholder_img_src('woocommerce_thumbnail');
 
 $desc = wp_strip_all_tags( $display_obj->get_short_description() );
-if ( ! $desc ) $desc = 'Odličen dodatek k tvoji narudžbi.';
+if ( ! $desc ) $desc = 'Un adaos excelent la comanda ta.';
 
 $price_pill = wp_strip_all_tags( wc_price( $display_obj->get_price() ) );
 
@@ -832,7 +832,7 @@ img.emoji {
   <div class="upsell-card">
       
       
-      <div class="gck-popular-badge">Posebna ponuda <img draggable="false" role="img" class="emoji" alt="🔥" src="https://s.w.org/images/core/emoji/17.0.2/svg/1f525.svg"></div>
+      <div class="gck-popular-badge">Oferta speciala <img draggable="false" role="img" class="emoji" alt="🔥" src="https://s.w.org/images/core/emoji/17.0.2/svg/1f525.svg"></div>
 
     <div class="upsell-head">
       <input class="upsell-check" id="upsell-check" type="checkbox" <?php checked( $upsell_in_cart ); ?> />
@@ -875,11 +875,11 @@ img.emoji {
 
         <div class="upsell-actions">
           <button type="button" class="upsell-add-btn" id="upsell-add-btn">
-            <span id="upsell-btn-text"><?php echo $upsell_in_cart ? 'DODANO' : 'Dodaj u košaricu'; ?></span>
+            <span id="upsell-btn-text"><?php echo $upsell_in_cart ? 'ADAUGAT' : 'Adauga in cos'; ?></span>
           </button>
 
           <button type="button" class="upsell-remove-btn" id="upsell-remove-btn" <?php echo $upsell_in_cart ? '' : 'style="display:none"'; ?>>
-        ️ <span>Odstrani</span>
+        ️ <span>Elimina</span>
           </button>
         </div>
 
@@ -888,7 +888,7 @@ img.emoji {
 
     <div class="upsell-loader" aria-hidden="true">
       <div class="upsell-loader__dots"><span></span><span></span><span></span></div>
-      <div class="upsell-loader__text">Obrađujem…</div>
+      <div class="upsell-loader__text">Se proceseaza...</div>
     </div>
   </div>
 
@@ -958,7 +958,7 @@ img.emoji {
       if (removeBtn) removeBtn.style.display = isAdded ? 'inline-flex' : 'none';
 
       setOptionsDisabled(isAdded);
-      if (btnText) btnText.textContent = isAdded ? 'DODANO' : 'Dodaj u košaricu';
+      if (btnText) btnText.textContent = isAdded ? 'ADAUGAT' : 'Adauga in cos';
     }
 
     function clearAttrHiddenInputs(){
@@ -1155,14 +1155,14 @@ img.emoji {
 
           if (type === 'variable') {
             if (!hasAllRequiredSelections()) {
-              alert('Odaberi sve opcije (npr. veličinu) prije dodavanja.');
+              alert('Selecteaza toate optiunile (de ex. marimea) inainte de adaugare.');
               checkbox.checked = false;
               syncAddedUI(false);
               setBusy(false);
               return;
             }
             if (!varIdHidden.value) {
-              alert('Odabrana kombinacija nije dostupna. Probaj drugu opciju.');
+              alert('Combinatia selectata nu este disponibila. Incearca alta optiune.');
               checkbox.checked = false;
               syncAddedUI(false);
               setBusy(false);
@@ -1192,7 +1192,7 @@ img.emoji {
           if (!res.ok || data?.error) {
             checkbox.checked = false;
             syncAddedUI(false);
-            alert('Ne mogu dodati proizvod. Provjeri odabrane opcije (varijacije) i dostupnost.');
+            alert('Nu pot adauga produsul. Verifica optiunile selectate (variatiile) si disponibilitatea.');
             setBusy(false);
             return;
           }
@@ -1220,7 +1220,7 @@ img.emoji {
         }
 
         if (!removeUrl) {
-          alert('Ne mogu ukloniti proizvod (ne mogu pronaći remove link u košarici).');
+          alert('Nu pot elimina produsul (nu gasesc linkul de eliminare din cos).');
           checkbox.checked = true;
           syncAddedUI(true);
           setBusy(false);
@@ -1256,7 +1256,7 @@ img.emoji {
 
       } catch(e){
         console.error(e);
-        alert('Nešto je pošlo po zlu. Pogledaj DevTools → Network.');
+        alert('Ceva nu a mers bine. Verifica DevTools -> Network.');
         checkbox.checked = !checkbox.checked;
         syncAddedUI();
         setBusy(false);
@@ -1303,4 +1303,3 @@ img.emoji {
 
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
-

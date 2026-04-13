@@ -15,7 +15,7 @@ if ( WC()->cart->is_empty() ) return;
 <div class="before_form container container--xs">
 
 <form name="checkout" method="post" class="checkout woocommerce-checkout"
-      action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data" aria-label="Plaćanje">
+      action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data" aria-label="Plata">
 
   <div class="col2-set" id="customer_details">
     <div class="col-1 clearfix">
@@ -32,7 +32,7 @@ if ( WC()->cart->is_empty() ) return;
 
         <!-- SHIPPING -->
         <div id="custom_shipping">
-          <h3>Dostava</h3>
+          <h3>Livrare</h3>
           <ul class="shipping_method_custom">
             <li class="standard-shipping shipping-tab">
               <input name="shipping_method[0]" data-index="0" id="shipping_method_0_standard_custom"
@@ -47,7 +47,7 @@ if ( WC()->cart->is_empty() ) return;
                     <span class="shipping_method_delivery_price tag tag--red">
                       <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>
                     </span>
-                    <span class="delivery_img"><img decoding="async" class="hrvatska_posta standard" src="https://images.vigo-shop.com/general/curriers/home_small_paket24@2x.png"/></span>
+                    <span class="delivery_img"><img decoding="async" class="romania_posta standard" src="https://images.vigo-shop.com/general/curriers/home_small_pachet24@2x.png"/></span>
                   </div>
                 </div>
               </label>
@@ -55,24 +55,24 @@ if ( WC()->cart->is_empty() ) return;
           </ul>
           <div class="delivery-from-eu-warehouse">
             <img decoding="async" class="delivery-from-eu-warehouse__icon" src="https://images.vigo-shop.com/general/flags/eu-warehouse.svg">
-            <span class="delivery-from-eu-warehouse__text">Skladište u EU</span>
+            <span class="delivery-from-eu-warehouse__text">Depozit in UE</span>
           </div>
         </div>
 
         <!-- COD prompt -->
         <div id="hs-cod-checkout-prompt" style="display:none;">
-          <div class="cod-prompt-text">Dovršite narudžbu sada, <strong>platite pouzećem 🙂</strong></div>
+          <div class="cod-prompt-text">Finalizati comanda acum, <strong>platiti ramburs 🙂</strong></div>
           <img decoding="async" class="cod-prompt-image" src="https://images.vigo-shop.com/general/checkout/cod/uni_cash_on_delivery.svg">
         </div>
 
         <!-- VAT -->
         <div id="hs-vat-tax-checkout-prompt">
-          <span class="tax-and-vat-checkout-claims">Nema dodatnih troškova za carinu</span>
-          <span class="tax-and-vat-checkout-claims">PDV je uključen u cijenu</span>
+          <span class="tax-and-vat-checkout-claims">Fara costuri suplimentare de vama</span>
+          <span class="tax-and-vat-checkout-claims">TVA-ul este inclus in pret</span>
         </div>
 
         <!-- PAYMENT + ORDER SUMMARY + BUTTON — via WC hooks -->
-        <h3 class="payment-title">Način plaćanja</h3>
+        <h3 class="payment-title">Metoda de plata</h3>
         <?php woocommerce_checkout_payment(); ?>
 
         <?php wp_nonce_field( 'woocommerce-process_checkout', 'woocommerce-process-checkout-nonce' ); ?>
@@ -92,18 +92,18 @@ if ( WC()->cart->is_empty() ) return;
     <img decoding="async" src="https://images.vigo-shop.com/general/guarantee_money_back/satisfaction_icon_hr.png">
   </div>
   <div class="flex__item--autosize f--m checkout-warranty__text">
-    <strong>Kupujte bez brige </strong><br>Povrat novca moguć u roku od 90 dana
+    <strong>Cumparati fara griji </strong><br>Rambursare posibila in termen de 90 de zile
   </div>
 </div>
 
 <!-- Terms -->
 <div class="agreed_terms_txt">
-  <span class="policy-agreement-obligation">Klikom na gumb <strong>Naruči</strong> pristajem na narudžbu uz obvezu plaćanja.</span><br>
+  <span class="policy-agreement-obligation">Prin apasarea butonului <strong>Comanda</strong> accept comanda cu obligatia de plata.</span><br>
   <div class="terms-checkbox-and-links">
     <label class="checkbox">
       <input type="checkbox" class="input-checkbox" name="agree_to_checkout_terms" id="agree_to_terms_checkbox" value="1">
     </label>
-    Pročitao sam i prihvaćam <a href="#" id="terms_conditions_link">Opće uvjete prodaje</a> i <a href="#" id="withdrawal_policy_link">pravo na odustajanje</a>.
+    Am citit si accept <a href="#" id="terms_conditions_link">Termenii si conditiile de vanzare</a> si <a href="#" id="withdrawal_policy_link">dreptul de retragere</a>.
   </div>
 </div>
 
@@ -114,7 +114,7 @@ if ( WC()->cart->is_empty() ) return;
 <script>
 jQuery(function($){
   /* Delivery dates — same logic as product page (meta.php) */
-  var days=['nedjelja','ponedjeljak','utorak','srijeda','četvrtak','petak','subota'];
+  var days=['duminica','luni','marti','miercuri','joi','vineri','sambata'];
   function addBiz(d,n){var r=new Date(d);while(n>0){r.setDate(r.getDate()+1);if(r.getDay()!==0&&r.getDay()!==6)n--;}return r;}
   var now=new Date(),from=addBiz(now,2),to=addBiz(now,3);
   $('#js-delivery-dates').text(days[from.getDay()]+', '+from.getDate()+'.'+(from.getMonth()+1)+'. - '+days[to.getDay()]+', '+to.getDate()+'.'+(to.getMonth()+1)+'.');

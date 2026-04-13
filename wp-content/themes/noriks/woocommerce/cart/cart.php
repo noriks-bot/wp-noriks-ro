@@ -99,8 +99,8 @@ $(this).append('<div class="qty-btn-group"><button type="button" class="qty-btn 
                     </svg>
                   </span>
                   <span class="wc-reserve-note__text">
-                    Molimo, požuri! Netko je upravo naručio jedan od proizvoda u tvojoj košarici. 
-                    Rezervacija vrijedi još samo <strong id="wc-reserve-timer">10:00</strong> minuta.
+                    Te rugam, grabeste-te! Cineva tocmai a comandat unul dintre produsele din cosul tau.
+                    Rezervarea mai este valabila doar <strong id="wc-reserve-timer">10:00</strong> minute.
                   </span>
                 </div>
                 
@@ -391,4 +391,3 @@ $(this).append('<div class="qty-btn-group"><button type="button" class="qty-btn 
 
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
-
