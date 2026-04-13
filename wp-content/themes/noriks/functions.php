@@ -318,6 +318,58 @@ function noriks_ro_output_theme_style_fallback() {
 }
 add_action( 'wp_head', 'noriks_ro_output_theme_style_fallback', 99 );
 
+function noriks_ro_output_inline_theme_styles() {
+    if ( is_admin() ) {
+        return;
+    }
+
+    $styles = array(
+        'main.css',
+        'header.css',
+        'footer.css',
+    );
+
+    if ( function_exists( 'is_product' ) && is_product() ) {
+        $styles[] = 'product.css';
+    }
+
+    if ( is_front_page() ) {
+        $styles[] = 'homepage.css';
+    }
+
+    if ( function_exists( 'is_cart' ) && is_cart() ) {
+        $styles[] = 'cart.css';
+    }
+
+    if ( function_exists( 'is_checkout' ) && is_checkout() ) {
+        $styles[] = 'checkout.css';
+    }
+
+    $styles = array_unique( $styles );
+    $inline_css = '';
+
+    foreach ( $styles as $style_file ) {
+        $style_path = get_template_directory() . '/css/' . $style_file;
+        if ( ! file_exists( $style_path ) ) {
+            continue;
+        }
+
+        $contents = file_get_contents( $style_path );
+        if ( false === $contents || '' === trim( $contents ) ) {
+            continue;
+        }
+
+        $inline_css .= "\n/* " . $style_file . " */\n" . $contents . "\n";
+    }
+
+    if ( '' === $inline_css ) {
+        return;
+    }
+
+    echo "<style id=\"noriks-ro-inline-theme-styles\">\n" . $inline_css . "\n</style>\n";
+}
+add_action( 'wp_head', 'noriks_ro_output_inline_theme_styles', 100 );
+
 function custom_quantity_buttons() {
     if (is_product()) {
 
