@@ -359,7 +359,7 @@ if ( is_shop() ) {
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2"]');
 
 // CATEGORY: /bokserice + ALL CHILD CATEGORIES
-} elseif ( is_product_category_or_child('bokserice') ) {
+} elseif ( is_product_category_or_child('boxeri') ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2-2-2"]');
 
@@ -367,23 +367,23 @@ if ( is_shop() ) {
 } elseif (
     is_product_category_or_child('bestsellers') ||
     is_product_category_or_child('veliki-paketi') ||
-    is_product_category_or_child('starter-paketi')
+    is_product_category_or_child('pachete-starter')
 ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-3"]');
 
 // CATEGORY: /majice + children
-} elseif ( is_product_category_or_child('majice') ) {
+} elseif ( is_product_category_or_child('tricouri') ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2-2"]');
 
 // CATEGORY: /kompleti + children
-} elseif ( is_product_category_or_child('kompleti') ) {
+} elseif ( is_product_category_or_child('seturi-boxeri') ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset"]');
 
 // CATEGORY: /carape + children
-} elseif ( is_product_category_or_child('carape') ) {
+} elseif ( is_product_category_or_child('sosete') ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2"]');
 

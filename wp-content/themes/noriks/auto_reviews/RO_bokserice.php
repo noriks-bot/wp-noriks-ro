@@ -1,0 +1,23 @@
+<?php
+$auto_reviews_en = array(
+    array("name" => "Andrei M.", "text" => "Boxerii își păstrează forma chiar și după multe spălări."),
+    array("name" => "Ion P.", "text" => "Material moale, nimic nu zgârie și nu strânge."),
+    array("name" => "David S.", "text" => "Foarte confortabili toată ziua, abia îi simt."),
+    array("name" => "Timo R.", "text" => "Elasticul ține bine dar nu strânge."),
+    array("name" => "Alexandru D.", "text" => "Respirabili și ușori, perfecți pentru zi cu zi și antrenament."),
+    array("name" => "Leon K.", "text" => "Își păstrează forma chiar și după mai multe spălări."),
+    array("name" => "Patrick C.", "text" => "Plăcuți pe piele și fără cusături deranjante."),
+    array("name" => "Marius V.", "text" => "Chiar și după o zi lungă, totul stă la locul lui."),
+    array("name" => "Robert L.", "text" => "Se simt imediat de calitate când îi iei în mână."),
+    array("name" => "Nicolae G.", "text" => "Fără deformare, fără deplasare, pur și simplu confortabili."),
+    array("name" => "Sebastian B.", "text" => "Croială excelentă, stau bine fără a fi prea strânși."),
+    array("name" => "Florin J.", "text" => "Picioarele nu se ridică, mare plus."),
+    array("name" => "Matei S.", "text" => "Materialul respiră bine și rămâne plăcut uscat."),
+    array("name" => "Denis K.", "text" => "Foarte curat confecționați și par rezistenți."),
+    array("name" => "Cristian H.", "text" => "Raportul calitate-preț e chiar puternic."),
+    array("name" => "Mihai N.", "text" => "Stau bine chiar dacă ești între două mărimi."),
+    array("name" => "Adrian M.", "text" => "Ideali pentru muncă și sport, nu mai port alții."),
+    array("name" => "Bogdan B.", "text" => "Foarte confortabili, chiar și la stat mult pe scaun la birou."),
+    array("name" => "Sorin Z.", "text" => "Fără iritații, nici în zilele calde."),
+    array("name" => "Vlad F.", "text" => "I-am încercat o dată și am comandat imediat mai multe perechi."),
+);

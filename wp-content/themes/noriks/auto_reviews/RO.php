@@ -1,0 +1,23 @@
+<?php
+$auto_reviews_en = array(
+    array("name" => "Andrei M.", "text" => "Culoarea rămâne vibrantă chiar și după multe spălări."),
+    array("name" => "Mihai H.", "text" => "Tricoul Noriks m-a surprins plăcut. Materialul e moale, se potrivește bine și e confortabil toată ziua."),
+    array("name" => "David K.", "text" => "Arată premium și se simte la fel."),
+    array("name" => "Adrian S.", "text" => "Croiala e modernă, fără a strânge."),
+    array("name" => "Ion R.", "text" => "Exact un astfel de basic căutam de mult."),
+    array("name" => "Alexandru T.", "text" => "Ușor, confortabil și totuși opac."),
+    array("name" => "Cristian B.", "text" => "Se potrivește atât la birou cât și în timp liber."),
+    array("name" => "Marius P.", "text" => "Își păstrează forma chiar și după mai multe spălări."),
+    array("name" => "Sorin W.", "text" => "Materialul nu zgârie și pare cu adevărat de calitate."),
+    array("name" => "Dan D.", "text" => "Plăcut pe piele și foarte ușor de combinat."),
+    array("name" => "Nicolae F.", "text" => "Se poartă super și arată mult mai scump."),
+    array("name" => "Dragoș L.", "text" => "Rămâne confortabil toată ziua și nu se deplasează."),
+    array("name" => "Leon G.", "text" => "Raport calitate-preț excelent."),
+    array("name" => "Patrick E.", "text" => "Minimalist, curat confecționat și potrivit pentru fiecare zi."),
+    array("name" => "Sebastian V.", "text" => "Se usucă repede și e ideal pentru călătorii."),
+    array("name" => "Robert A.", "text" => "Lungime bună, chiar și pentru bărbații mai înalți."),
+    array("name" => "Florin N.", "text" => "Chiar și după o zi lungă rămâne proaspăt și confortabil."),
+    array("name" => "Bogdan J.", "text" => "Croiala e chiar reușită, nici prea strâmt, nici prea larg."),
+    array("name" => "Vlad U.", "text" => "A devenit imediat unul dintre tricourile mele cele mai purtate."),
+    array("name" => "Matei Z.", "text" => "Simplu, confortabil și perfect pentru fiecare zi."),
+);
