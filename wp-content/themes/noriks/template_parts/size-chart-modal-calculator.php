@@ -454,7 +454,7 @@ border: 1px solid #ccc;
     
 
     
-    30 dana jamstva na zamjenu veličine
+    Garanție de 30 de zile pentru schimbul mărimii
 
          
    
@@ -510,7 +510,7 @@ border: 1px solid #ccc;
     
 
     
-     30 dana jamstva na zamjenu veličine
+     Garanție de 30 de zile pentru schimbul mărimii
 
          
    
