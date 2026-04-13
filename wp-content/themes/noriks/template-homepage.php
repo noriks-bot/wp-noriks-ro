@@ -38,7 +38,7 @@ get_header(); ?>
   <div class="hero__media" aria-hidden="true">
     <!-- Replace with your image -->
     <img
-      src="<?php echo get_template_directory_uri(); ?>/img/noriks-hero.jpeg"
+      src="<?php echo get_template_directory_uri(); ?>/img/Rhapsody_3-pack_1.jpg"
       alt=""
     />
   </div>
@@ -47,9 +47,9 @@ get_header(); ?>
 
   <div class="hero__content">
     <!--<p class="hero__eyebrow">NOVO: NORIKS </p>-->
-    <h1 class="hero__title">Majica koja rješava sve probleme.</h1>
+    <h1 class="hero__title">Tricoul care rezolvă toate problemele.</h1>
 
-    <a class="hero__btn" href="/ro/shop">KUPUJTE SADA</a>
+    <a class="hero__btn" href="/ro/shop">CUMPĂRĂ ACUM</a>
   </div>
 </section>
 
