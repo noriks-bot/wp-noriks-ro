@@ -172,8 +172,8 @@
     </a>
 
     <div class="language-selector mobile-only" onclick="openLanguageModal()">
-        <img src="https://static.devit.software/countries/flags/rectangle/<?php echo get_field("webshop_icon", "options"); ?>" alt="" class="flag">
-        <span><?php echo get_field("webshop_language", "options"); ?></span>
+        <img src="https://static.devit.software/countries/flags/rectangle/ro.svg" alt="" class="flag">
+        <span>Romania (RO)</span>
     </div>
 </nav>
 
@@ -203,8 +203,8 @@
 </a>
       
         <div class="language-selector mobile-only" onclick="openLanguageModal()">
-          <img src="https://static.devit.software/countries/flags/rectangle/<?php echo get_field("webshop_icon", "options"); ?>" alt="" class="flag">
-          <span><?php echo get_field("webshop_language", "options"); ?></span>
+          <img src="https://static.devit.software/countries/flags/rectangle/ro.svg" alt="" class="flag">
+          <span>Romania (RO)</span>
         </div>
 
     </nav>
@@ -223,8 +223,8 @@
 
     <div class="navbar-right">
       <div class="language-selector hidden-mobile" onclick="openLanguageModal()">
-        <img src="https://static.devit.software/countries/flags/rectangle/<?php echo get_field("webshop_icon", "options"); ?>" alt="" class="flag">
-        <span><?php echo get_field("webshop_language", "options"); ?></span>
+        <img src="https://static.devit.software/countries/flags/rectangle/ro.svg" alt="" class="flag">
+        <span>Romania (RO)</span>
       </div>
 
       <div class="cart-auto-icon">
