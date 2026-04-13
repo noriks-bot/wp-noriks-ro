@@ -33,29 +33,29 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <?php
 if ( ! empty( $order->get_billing_first_name() ) ) {
 	/* translators: %s: Customer first name */
-	printf( esc_html__( 'Hej  %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) );
+	printf( esc_html__( 'Salut %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) );
 } else {
-	printf( esc_html__( 'Hej ,', 'woocommerce' ) );
+	printf( esc_html__( 'Salut,', 'woocommerce' ) );
 }
 ?>
 </p>
 <?php if ( $email_improvements_enabled ) : ?>
 
 
-	<p style="color:black;">Tvoje naročilo je uspešno prejeto – hvala, ker si izbral NORIKS!
+	<p style="color:black;">Comanda ta a fost primită cu succes – îți mulțumim că ai ales NORIKS!
 	<br/>	<br/>
-	Zdaj pripravljamo tvoj NORIKS izdelek in kmalu bo na poti.
+	Acum pregătim produsul tău NORIKS și în curând va fi pe drum.
     <br/><br/>
-    Samo udobje in dober občutek – ves dan.<br/><br/>
+    Doar confort și stare de bine – toată ziua.<br/><br/>
     
-    Sporočili ti bomo, ko bo tvoj paket odposlan.<br/>
-    Če boš karkoli potreboval – tukaj smo. 🙂<br/><br/>
+    Te anunțăm imediat ce coletul este expediat.<br/>
+    Dacă ai nevoie de ceva – suntem aici. 🙂<br/><br/>
     
     
-    <strong>Če si se zmotil pri velikosti, količini ali barvi naročila – brez skrbi!</strong><br/>
-    Odgovori neposredno na ta e-mail in sporoči, kaj je treba spremeniti pred pošiljanjem paketa. Z veseljem bomo vse hitro uredili.<br/><br/>
+    <strong>Dacă ai greșit mărimea, cantitatea sau culoarea comenzii – nu-ți face griji!</strong><br/>
+    Răspunde direct la acest e-mail și spune-ne ce trebuie schimbat înainte de expedierea coletului. Rezolvăm totul rapid, cu drag.<br/><br/>
     
-    Ekipa NORIKS
+    Echipa NORIKS
     </p>
 
 	
@@ -65,20 +65,20 @@ if ( ! empty( $order->get_billing_first_name() ) ) {
 	<?php /* translators: %s: Order number */ ?>
 	
 		
-	<p style="color:black;">Tvoje naročilo je uspešno prejeto – hvala, ker si izbral NORIKS!
+	<p style="color:black;">Comanda ta a fost primită cu succes – îți mulțumim că ai ales NORIKS!
 	<br/>	<br/>
-Zdaj pripravljamo tvoj NORIKS izdelek in kmalu bo na poti.
+Acum pregătim produsul tău NORIKS și în curând va fi pe drum.
     <br/><br/>
-    Samo udobje in dober občutek – ves dan.<br/><br/>
+    Doar confort și stare de bine – toată ziua.<br/><br/>
     
-    Sporočili ti bomo, ko bo tvoj paket odposlan.<br/>
-    Če boš karkoli potreboval – tukaj smo. 🙂<br/><br/>
+    Te anunțăm imediat ce coletul este expediat.<br/>
+    Dacă ai nevoie de ceva – suntem aici. 🙂<br/><br/>
     
     
-    <strong>Če si se zmotil pri velikosti, količini ali barvi naročila – brez skrbi!</strong><br/>
-    Odgovori neposredno na ta e-mail in sporoči, kaj je treba spremeniti pred pošiljanjem paketa. Z veseljem bomo vse hitro uredili.<br/><br/>
+    <strong>Dacă ai greșit mărimea, cantitatea sau culoarea comenzii – nu-ți face griji!</strong><br/>
+    Răspunde direct la acest e-mail și spune-ne ce trebuie schimbat înainte de expedierea coletului. Rezolvăm totul rapid, cu drag.<br/><br/>
     
-    Ekipa NORIKS
+    Echipa NORIKS
     </p>
 
 

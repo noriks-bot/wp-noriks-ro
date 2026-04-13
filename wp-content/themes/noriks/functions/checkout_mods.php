@@ -327,7 +327,7 @@ add_action( 'wp_footer', function() {
         $('form.checkout').css({'opacity':'0.4','pointer-events':'none','transition':'opacity 0.3s'});
       });
       $(document.body).on('checkout_error', function(){
-        $('#place_order').css('opacity','1').text('Naroči');
+        $('#place_order').css('opacity','1').text('Comandă');
         $('form.checkout').css({'opacity':'1','pointer-events':''});
       });
 
@@ -455,17 +455,17 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     // Labels, placeholders, required
     $fields['billing']['billing_first_name']['label'] = 'Ime';
     $fields['billing']['billing_first_name']['placeholder'] = 'Ime';
-    $fields['billing']['billing_last_name']['label'] = 'Prezime';
-    $fields['billing']['billing_last_name']['placeholder'] = 'Prezime';
-    $fields['billing']['billing_address_1']['label'] = 'Ulica';
-    $fields['billing']['billing_address_1']['placeholder'] = 'Ulica';
-    $fields['billing']['billing_address_2']['label'] = 'Kućni broj';
-    $fields['billing']['billing_address_2']['placeholder'] = 'Kućni broj';
+    $fields['billing']['billing_last_name']['label'] = 'Nume';
+    $fields['billing']['billing_last_name']['placeholder'] = 'Nume';
+    $fields['billing']['billing_address_1']['label'] = 'Stradă';
+    $fields['billing']['billing_address_1']['placeholder'] = 'Stradă';
+    $fields['billing']['billing_address_2']['label'] = 'Număr';
+    $fields['billing']['billing_address_2']['placeholder'] = 'Număr';
     $fields['billing']['billing_address_2']['required'] = true;
-    $fields['billing']['billing_postcode']['label'] = 'Poštanski broj';
-    $fields['billing']['billing_postcode']['placeholder'] = 'Poštanski broj';
-    $fields['billing']['billing_city']['label'] = 'Grad';
-    $fields['billing']['billing_city']['placeholder'] = 'Odaberite grad';
+    $fields['billing']['billing_postcode']['label'] = 'Cod poștal';
+    $fields['billing']['billing_postcode']['placeholder'] = 'Cod poștal';
+    $fields['billing']['billing_city']['label'] = 'Oraș';
+    $fields['billing']['billing_city']['placeholder'] = 'Alege orașul';
     $fields['billing']['billing_phone']['label'] = 'Telefon';
     $fields['billing']['billing_phone']['placeholder'] = 'Telefonska številka';
     $fields['billing']['billing_phone']['required'] = true;
@@ -513,11 +513,11 @@ add_filter( 'woocommerce_form_field_text', function( $field, $key ) {
  * Billing title
  */
 add_action( 'woocommerce_before_checkout_billing_form', function() {
-    echo '<h3 class="checkout-billing-title">Plačilo in dostava</h3>';
+    echo '<h3 class="checkout-billing-title">Plată și livrare</h3>';
 });
 
 add_filter( 'default_checkout_billing_country', function() { return 'SI'; });
-add_filter( 'woocommerce_order_button_text', function() { return 'Naroči'; });
+add_filter( 'woocommerce_order_button_text', function() { return 'Comandă'; });
 
 /**
  * Payment gateway order: COD → Stripe → PayPal
@@ -540,7 +540,7 @@ add_action( 'woocommerce_cart_calculate_fees', function( $cart ) {
 
     $chosen_gateway = WC()->session->get( 'chosen_payment_method' );
     if ( $chosen_gateway === 'cod' ) {
-        $cart->add_fee( 'Plačilo po povzetju', 1.99, false );
+        $cart->add_fee( 'Plată ramburs', 1.99, false );
     }
 });
 
@@ -611,7 +611,7 @@ add_action('woocommerce_review_order_before_submit', function(){
     </script>
     <?php
     endif;
-    echo '<h3 class="place-order-title" style="display:block;margin:15px 0 10px;">Povzetek naročila</h3>';
+    echo '<h3 class="place-order-title" style="display:block;margin:15px 0 10px;">Sumarul comenzii</h3>';
     echo '<div class="vigo-checkout-total order-total shop_table" style="margin-bottom:20px;">';
     woocommerce_order_review();
     echo '</div>';

@@ -239,7 +239,7 @@ body.woocommerce-checkout #payment .payment_box fieldset {
 
 /* ===== Field descriptions via CSS ::after ===== */
 #billing_email_field::after {
-  content: 'Za potrditev naročila in sledenje pošiljki';
+  content: 'Pentru confirmarea comenzii și urmărirea coletului';
   display: block;
   font-size: 13px;
   color: #5f6061;

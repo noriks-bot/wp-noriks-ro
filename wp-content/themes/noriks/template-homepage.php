@@ -47,9 +47,9 @@ get_header(); ?>
 
   <div class="hero__content">
     <!--<p class="hero__eyebrow">NOVO: NORIKS </p>-->
-    <h1 class="hero__title">Majica, ki reši vse težave.</h1>
+    <h1 class="hero__title">Tricoul care rezolvă toate problemele.</h1>
 
-    <a class="hero__btn" href="/si/shop">KUPITE ZDAJ</a>
+    <a class="hero__btn" href="/ro/shop">CUMPĂRĂ ACUM</a>
   </div>
 </section>
 
@@ -171,16 +171,16 @@ get_header(); ?>
   
   <section class="collections">
   <div class="collections__header">
-    <h2 class="collections__title">Nakupuj po kolekciji</h2>
+    <h2 class="collections__title">Cumpără după colecție</h2>
 
-    <a class="collections__cta" href="/si/shop">
-      Vsi izdelki <span aria-hidden="true">›</span>
+    <a class="collections__cta" href="/ro/shop">
+      Toate produsele <span aria-hidden="true">›</span>
     </a>
   </div>
 
   <div class="collections__grid">
     <!-- Card 1 -->
-    <a class="collection-card" href="/si/product-category/majice/">
+    <a class="collection-card" href="/ro/product-category/majice/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-majice.jpeg"
@@ -191,10 +191,10 @@ get_header(); ?>
       <div class="collection-card__body">
         <div class="collection-card__text">
           <div class="collection-card__topline">
-            <h3 class="collection-card__name">Majice</h3>
+            <h3 class="collection-card__name">Tricouri</h3>
           </div>
           <p class="collection-card__desc">
-           Udobje ves dan. Brez zategovanja.
+           Confort toată ziua. Fără strângere.
           </p>
         </div>
 
@@ -203,7 +203,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 2 -->
-    <a class="collection-card" href="/si/product-category/bokserice/">
+    <a class="collection-card" href="/ro/product-category/bokserice/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-boksarice.jpeg"
@@ -214,10 +214,10 @@ get_header(); ?>
       <div class="collection-card__body">
         <div class="collection-card__text">
           <div class="collection-card__topline">
-            <h3 class="collection-card__name">Bokserice</h3>
+            <h3 class="collection-card__name">Boxeri</h3>
           </div>
           <p class="collection-card__desc">
-          Mehke. Zračne. Zanesljive.
+          Moi. Aerisiți. De încredere.
 
           </p>
         </div>
@@ -227,7 +227,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 3 -->
-    <a class="collection-card" href="/si/product-category/kompleti/">
+    <a class="collection-card" href="/ro/product-category/kompleti/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-kompleti.jpeg"
@@ -238,11 +238,11 @@ get_header(); ?>
       <div class="collection-card__body">
         <div class="collection-card__text">
           <div class="collection-card__topline">
-            <h3 class="collection-card__name">Kompleti</h3>
+            <h3 class="collection-card__name">Seturi</h3>
        
           </div>
           <p class="collection-card__desc">
-Najboljša vrednost v paketu.
+Cea mai bună valoare în pachet.
           </p>
         </div>
 
@@ -251,7 +251,7 @@ Najboljša vrednost v paketu.
     </a>
     
     <!-- Card 3 -->
-    <a class="collection-card" href="/si/product-category/starter-paketi/">
+    <a class="collection-card" href="/ro/product-category/starter-paketi/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/starter-paket_.jpeg"
@@ -587,8 +587,8 @@ a:hover {
       <?php echo get_field("homepage_section_2_t1"); ?>
     </h2>
 
-    <a class="collections__cta" href="/si/shop">
-      Vsi izdelki  <span aria-hidden="true">›</span>
+    <a class="collections__cta" href="/ro/shop">
+      Toate produsele  <span aria-hidden="true">›</span>
     </a>
   </div>
 
@@ -873,5 +873,4 @@ a:hover {
 	</div><!-- #primary -->
 <?php
 get_footer();
-
 

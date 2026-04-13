@@ -1155,7 +1155,7 @@ img.emoji {
 
           if (type === 'variable') {
             if (!hasAllRequiredSelections()) {
-              alert('Odaberi sve opcije (npr. veličinu) prije dodavanja.');
+              alert('Alege toate opțiunile (de ex. mărimea) înainte de adăugare.');
               checkbox.checked = false;
               syncAddedUI(false);
               setBusy(false);
