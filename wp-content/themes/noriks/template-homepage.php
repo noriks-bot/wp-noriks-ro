@@ -38,7 +38,7 @@ get_header(); ?>
   <div class="hero__media" aria-hidden="true">
     <!-- Replace with your image -->
     <img
-      src="<?php echo get_template_directory_uri(); ?>/img/Rhapsody_3-pack_1.jpg"
+      src="<?php echo get_template_directory_uri(); ?>/img/noriks-hero.jpeg"
       alt=""
     />
   </div>
@@ -47,9 +47,9 @@ get_header(); ?>
 
   <div class="hero__content">
     <!--<p class="hero__eyebrow">NOVO: NORIKS </p>-->
-    <h1 class="hero__title">Tricoul care rezolvă toate problemele.</h1>
+    <h1 class="hero__title">Tricoul care rezolva toate problemele.</h1>
 
-    <a class="hero__btn" href="/ro/shop">CUMPĂRĂ ACUM</a>
+    <a class="hero__btn" href="/ro/shop">CUMPARA ACUM</a>
   </div>
 </section>
 
@@ -171,19 +171,19 @@ get_header(); ?>
   
   <section class="collections">
   <div class="collections__header">
-    <h2 class="collections__title">Kupujte po kolekciji</h2>
+    <h2 class="collections__title">Cumparati dupa colectie</h2>
 
     <a class="collections__cta" href="/ro/shop">
-      Svi produkti <span aria-hidden="true">›</span>
+      Toate produsele <span aria-hidden="true">›</span>
     </a>
   </div>
 
   <div class="collections__grid">
     <!-- Card 1 -->
-    <a class="collection-card" href="/ro/product-category/majice/">
+    <a class="collection-card" href="/ro/product-category/tricouri/">
       <div class="collection-card__media">
         <img
-          src="<?php echo get_template_directory_uri(); ?>/img/noriks-majice.jpeg"
+          src="<?php echo get_template_directory_uri(); ?>/img/noriks-tricouri.jpeg"
           alt="Crew neck t-shirt"
         />
       </div>
@@ -191,10 +191,10 @@ get_header(); ?>
       <div class="collection-card__body">
         <div class="collection-card__text">
           <div class="collection-card__topline">
-            <h3 class="collection-card__name">Majice</h3>
+            <h3 class="collection-card__name">Tricouri</h3>
           </div>
           <p class="collection-card__desc">
-           Udobnost cijeli dan. Bez stezanja.
+           Confort toata ziua. Fara strangere.
           </p>
         </div>
 
@@ -203,7 +203,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 2 -->
-    <a class="collection-card" href="/ro/product-category/bokserice/">
+    <a class="collection-card" href="/ro/product-category/boxeri/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-boksarice.jpeg"
@@ -214,10 +214,10 @@ get_header(); ?>
       <div class="collection-card__body">
         <div class="collection-card__text">
           <div class="collection-card__topline">
-            <h3 class="collection-card__name">Bokserice</h3>
+            <h3 class="collection-card__name">Boxeri</h3>
           </div>
           <p class="collection-card__desc">
-          Mekane. Prozračne. Pouzdane.
+          Moi. Aerisiti. De incredere.
 
           </p>
         </div>
@@ -238,11 +238,11 @@ get_header(); ?>
       <div class="collection-card__body">
         <div class="collection-card__text">
           <div class="collection-card__topline">
-            <h3 class="collection-card__name">Kompleti</h3>
+            <h3 class="collection-card__name">Seturi</h3>
        
           </div>
           <p class="collection-card__desc">
-Najbolja vrijednost po paketu.
+Najbolja vrijednost po pachetu.
           </p>
         </div>
 
@@ -251,10 +251,10 @@ Najbolja vrijednost po paketu.
     </a>
     
     <!-- Card 3 -->
-    <a class="collection-card" href="/ro/product-category/starter-paketi/">
+    <a class="collection-card" href="/ro/product-category/pachete-starter/">
       <div class="collection-card__media">
         <img
-          src="<?php echo get_template_directory_uri(); ?>/img/starter-paket_.jpeg"
+          src="<?php echo get_template_directory_uri(); ?>/img/starter-pachet_.jpeg"
           alt="Long sleeve shirt"
         />
       </div>
@@ -588,7 +588,7 @@ a:hover {
     </h2>
 
     <a class="collections__cta" href="/ro/shop">
-      Svi produkti  <span aria-hidden="true">›</span>
+      Toate produsele  <span aria-hidden="true">›</span>
     </a>
   </div>
 
@@ -669,13 +669,13 @@ a:hover {
                   if ( $alt_output == false ):
 
                     $current_product_id = $product->get_id();
-                    $is_boxers = has_term( array('bokserice','bokserice-sastavi-paket'), 'product_cat', $current_product_id );
+                    $is_boxers = has_term( array('boxeri','boxeri-creeaza-pachet'), 'product_cat', $current_product_id );
 
                     if ( $is_boxers ):
                       if ( has_term('black-friday', 'product_cat', $current_product_id ) ):
                         $topseler_text = "Black Friday ";
                       else:
-                        $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . "€ po boksericama";
+                        $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . "€ pe boxeri";
                       endif;
                     else:
                       $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . get_field("singlepp_priceper_after","options");
@@ -873,6 +873,4 @@ a:hover {
 	</div><!-- #primary -->
 <?php
 get_footer();
-
-
 
