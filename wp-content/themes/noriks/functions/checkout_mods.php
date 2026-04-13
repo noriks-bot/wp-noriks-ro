@@ -453,8 +453,8 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     // phone/email priorities already set above (10/20)
 
     // Labels, placeholders, required
-    $fields['billing']['billing_first_name']['label'] = 'Ime';
-    $fields['billing']['billing_first_name']['placeholder'] = 'Ime';
+    $fields['billing']['billing_first_name']['label'] = 'Prenume';
+    $fields['billing']['billing_first_name']['placeholder'] = 'Prenume';
     $fields['billing']['billing_last_name']['label'] = 'Nume';
     $fields['billing']['billing_last_name']['placeholder'] = 'Nume';
     $fields['billing']['billing_address_1']['label'] = 'Stradă';
@@ -467,7 +467,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_city']['label'] = 'Oraș';
     $fields['billing']['billing_city']['placeholder'] = 'Alege orașul';
     $fields['billing']['billing_phone']['label'] = 'Telefon';
-    $fields['billing']['billing_phone']['placeholder'] = 'Telefonska številka';
+    $fields['billing']['billing_phone']['placeholder'] = 'Număr de telefon';
     $fields['billing']['billing_phone']['required'] = true;
     /* Description injected via JS to survive update_checkout AJAX re-renders */
     // $fields['billing']['billing_phone']['description'] = '...';

@@ -188,7 +188,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
     <p class="form-row form-row-first form-group col-xs-12 validate-required" id="billing_first_name_field" data-priority="30"><label for="billing_first_name" class="required_field">Prenume&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_first_name" id="billing_first_name" placeholder="Prenume"  value="" aria-required="true" maxlength="80" autocomplete="given-name" /></span></p><p class="form-row form-row-last form-group col-xs-12 validate-required" id="billing_last_name_field" data-priority="40"><label for="billing_last_name" class="required_field">Nume&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_last_name" id="billing_last_name" placeholder="Nume"  value="" aria-required="true" maxlength="80" autocomplete="family-name" /></span></p><div class="form-row form-row-wide col-xs-12">Introdu adresa la care vei fi disponibil <b>între 8:00 și 16:00</b>.</div><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required" id="billing_address_1_field" data-priority="50"><label for="billing_address_1" class="required_field">Stradă&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_address_1" id="billing_address_1" placeholder="Stradă"  value="" aria-required="true" maxlength="80" autocomplete="address-line1" /></span></p><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required" id="billing_address_2_field" data-priority="60"><label for="billing_address_2" class="screen-reader-text required_field">Număr&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_address_2" id="billing_address_2" placeholder="Număr"  value="" autocomplete="address-line2" maxlength="80" aria-required="true" /></span></p><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required validate-postcode" id="billing_postcode_field" data-priority="70"><label for="billing_postcode" class="required_field">Cod poștal&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text form-input" name="billing_postcode" id="billing_postcode" placeholder="Cod poștal"  value="" aria-required="true" maxlength="30" autocomplete="postal-code" /></span></p><p class="form-row form-row-wide dropdown form-group form-group col-xs-12 validate-required" id="billing_city_field" data-priority=""><label for="billing_city" class="required_field">Oraș&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><select name="billing_city" id="billing_city" class="select form-input" aria-required="true" data-allow_clear="true" data-placeholder="Alege orașul">
 							<option value=""  selected='selected'>Alege orașul</option>
 						</select></span></p><p class="form-row form-row-wide form-group col-xs-12 validate-required validate-phone" id="billing_phone_field" data-priority="10"><label for="billing_phone" class="required_field">Telefon&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text form-input" name="billing_phone" id="billing_phone" placeholder="Număr de telefon mobil"  value="" maxlength="17" aria-required="true" autocomplete="tel" /></span></p><p class="form-row form-row-wide form-group col-xs-12 validate-email" id="billing_email_field" data-priority="20"><label for="billing_email" class="">Adresă de e-mail&nbsp;<span class="optional">(opțional)</span></label><span class="woocommerce-input-wrapper"><input type="email" class="input-text form-input" name="billing_email" id="billing_email" placeholder="Adresă de e-mail"  value="" maxlength="80" autocomplete="email" /></span></p><p class="form-row form-row-wide address-field form-group col-xs-12 validate-state" id="billing_state_field" data-priority="80"><label for="billing_state" class="">Județ&nbsp;<span class="optional">(opțional)</span></label><span class="woocommerce-input-wrapper"><select name="billing_state" id="billing_state" class="state_select form-input" autocomplete="address-level1" data-placeholder="placeholder_province"  data-input-classes="form-input" data-label="Județ">
-						<option value="">Alege opțiunea&hellip;</option><option value="HR-01" >Zagreb County</option><option value="HR-02" >Krapina-Zagorje County</option><option value="HR-03" >Sisak-Moslavina County</option><option value="HR-04" >Karlovac County</option><option value="HR-05" >Varaždin County</option><option value="HR-06" >Koprivnica-Križevci County</option><option value="HR-07" >Bjelovar-Bilogora County</option><option value="HR-08" >Primorje-Gorski Kotar County</option><option value="HR-09" >Lika-Senj County</option><option value="HR-10" >Virovitica-Podravina County</option><option value="HR-11" >Požega-Slavonia County</option><option value="HR-12" >Brod-Posavina County</option><option value="HR-13" >Zadar County</option><option value="HR-14" >Osijek-Baranja County</option><option value="HR-15" >Šibenik-Knin County</option><option value="HR-16" >Vukovar-Srijem County</option><option value="HR-17" >Split-Dalmatia County</option><option value="HR-18" >Istria County</option><option value="HR-19" >Dubrovnik-Neretva County</option><option value="HR-20" >Međimurje County</option><option value="HR-21" >Zagreb City</option></select></span></p><p class="form-row form-row-wide address-field update_totals_on_change form-group col-xs-12 validate-required" id="billing_country_field" data-priority="90"><label for="billing_country" class="required_field">Country / Region&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><strong>Romania</strong><input type="hidden" name="billing_country" id="billing_country" value="RO" aria-required="true" autocomplete="do-not-autofill" class="country_to_state" readonly="readonly" /></span></p><p class="form-row kl_newsletter_checkbox_field form-group col-xs-12" id="kl_newsletter_checkbox_field" data-priority=""><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="kl_newsletter_checkbox" id="kl_newsletter_checkbox" value="1" class="input-checkbox form-input"  /> Sign me up to receive email updates and news&nbsp;<span class="optional">(opțional)</span></label></span></p><p class="form-row form-row-wide hsplus-checkout-field hsplus-checkout-field--no-top-margin hsplus-checkout-field--hidden" id="hsplus_accepts_marketing_field" data-priority="11"><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="hsplus_accepts_marketing" id="hsplus_accepts_marketing" value="1" class="input-checkbox woocommerce-form__input woocommerce-form__input-checkbox hsplus-checkbox"  /> Sign up for exclusive offers and news via text messages&nbsp;<span class="optional">(opțional)</span></label></span></p>  </div>
+						<option value="">Alege opțiunea&hellip;</option><option value="HR-01" >Zagreb County</option><option value="HR-02" >Krapina-Zagorje County</option><option value="HR-03" >Sisak-Moslavina County</option><option value="HR-04" >Karlovac County</option><option value="HR-05" >Varaždin County</option><option value="HR-06" >Koprivnica-Križevci County</option><option value="HR-07" >Bjelovar-Bilogora County</option><option value="HR-08" >Primorje-Gorski Kotar County</option><option value="HR-09" >Lika-Senj County</option><option value="HR-10" >Virovitica-Podravina County</option><option value="HR-11" >Požega-Slavonia County</option><option value="HR-12" >Brod-Posavina County</option><option value="HR-13" >Zadar County</option><option value="HR-14" >Osijek-Baranja County</option><option value="HR-15" >Šibenik-Knin County</option><option value="HR-16" >Vukovar-Srijem County</option><option value="HR-17" >Split-Dalmatia County</option><option value="HR-18" >Istria County</option><option value="HR-19" >Dubrovnik-Neretva County</option><option value="HR-20" >Međimurje County</option><option value="HR-21" >Zagreb City</option></select></span></p><p class="form-row form-row-wide address-field update_totals_on_change form-group col-xs-12 validate-required" id="billing_country_field" data-priority="90"><label for="billing_country" class="required_field">Country / Region&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><strong>Romania</strong><input type="hidden" name="billing_country" id="billing_country" value="RO" aria-required="true" autocomplete="do-not-autofill" class="country_to_state" readonly="readonly" /></span></p><p class="form-row kl_newsletter_checkbox_field form-group col-xs-12" id="kl_newsletter_checkbox_field" data-priority=""><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="kl_newsletter_checkbox" id="kl_newsletter_checkbox" value="1" class="input-checkbox form-input"  /> Înscrie-mă pentru a primi noutăți și oferte prin e-mail&nbsp;<span class="optional">(opțional)</span></label></span></p><p class="form-row form-row-wide hsplus-checkout-field hsplus-checkout-field--no-top-margin hsplus-checkout-field--hidden" id="hsplus_accepts_marketing_field" data-priority="11"><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="hsplus_accepts_marketing" id="hsplus_accepts_marketing" value="1" class="input-checkbox woocommerce-form__input woocommerce-form__input-checkbox hsplus-checkbox"  /> Înscrie-mă pentru oferte exclusive și noutăți prin SMS&nbsp;<span class="optional">(opțional)</span></label></span></p>  </div>
 
   </div>
 
@@ -294,7 +294,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
   <input id="payment_method_braintree_credit_card" type="radio" class="input-radio" name="payment_method" value="braintree_credit_card"  data-order_button_text="Comanda" />
 
   <label for="payment_method_braintree_credit_card">
-    Kreditna kartica <span class="payment-fee-free">Besplatno</span><div class="sv-wc-payment-gateway-card-icons"><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-visa.svg" alt="visa" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-mastercard.svg" alt="mastercard" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-maestro.svg" alt="maestro" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /></div>  </label>
+    Kartă bancară <span class="payment-fee-free">Gratuit</span><div class="sv-wc-payment-gateway-card-icons"><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-visa.svg" alt="visa" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-mastercard.svg" alt="mastercard" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-maestro.svg" alt="maestro" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /></div>  </label>
       <div class="payment_box payment_method_braintree_credit_card" style="display:none;">
       <fieldset id="wc-braintree-credit-card-credit-card-form" aria-label="Informacije o plaćanju"><legend style="display:none;">Informacije o plaćanju</legend><div class="wc-braintree-credit-card-new-payment-method-form js-wc-braintree-credit-card-new-payment-method-form"><input type="hidden" name="wc-braintree-credit-card-card-type" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-enabled" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-verified" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-order-total" value="21.98" />		<input type="hidden" id="wc_braintree_credit_card_payment_nonce" name="wc_braintree_credit_card_payment_nonce" />
 		<input type="hidden" id="wc-braintree-credit-card-device-data" name="wc_braintree_device_data" />
@@ -323,7 +323,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
   <input id="payment_method_braintree_paypal" type="radio" class="input-radio" name="payment_method" value="braintree_paypal"  data-order_button_text="Comanda" />
 
   <label for="payment_method_braintree_paypal">
-    PayPal <span class="payment-fee-free">Besplatno</span><img decoding="async" src="https://images.vigo-shop.com/general/checkout/paypal/PayPal.svg" alt="PayPal">  </label>
+    PayPal <span class="payment-fee-free">Gratuit</span><img decoding="async" src="https://images.vigo-shop.com/general/checkout/paypal/PayPal.svg" alt="PayPal">  </label>
       <div class="payment_box payment_method_braintree_paypal" style="display:none;">
       <fieldset id="wc-braintree-paypal-paypal-form" aria-label="Informacije o plaćanju"><legend style="display:none;">Informacije o plaćanju</legend><div class="wc-braintree-paypal-new-payment-method-form js-wc-braintree-paypal-new-payment-method-form">		<input type="hidden" id="wc_braintree_paypal_payment_nonce" name="wc_braintree_paypal_payment_nonce" />
 		<input type="hidden" id="wc-braintree-paypal-device-data" name="wc_braintree_device_data" />
@@ -347,7 +347,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 			</div>
 	
 		        <div id="hs-cod-checkout-prompt" style="display:none;">
-            <div class="cod-prompt-text">Dovršite narudžbu sada, <strong>platite pouzećem 🙂</strong></div>
+            <div class="cod-prompt-text">Finalizează comanda acum, <strong>plătește ramburs 🙂</strong></div>
             <img decoding="async" class="cod-prompt-image" src="https://images.vigo-shop.com/general/checkout/cod/uni_cash_on_delivery.svg">
         </div>
 
@@ -359,11 +359,11 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
         <div id="pdf">
     <div class="pdf-title-container">
         <h3 class="pdf-title">
-            KUPITE E-KNJIGU<!--            <span class="green-label">-->
+            CUMPĂRĂ E-BOOK-UL<!--            <span class="green-label">-->
 <!--                --><!--            </span>-->
         </h3>
     </div>
-    <p class="pdf-description">Kada kupite e-knjigu, besplatno Vam dajemo troškove dostave.</p>
+    <p class="pdf-description">Când cumperi e-book-ul, primești livrare gratuită.</p>
 
     <div id="pdf-grid">
         <div class="table-grid">
@@ -375,15 +375,15 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <!--                <div class="top-price-label">-->
 <!--                    <span>--><!--</span>-->
 <!--                </div>-->
-                <label for="ebook_true">E-knjiga</label>
+                <label for="ebook_true">E-book</label>
             </div>
             <div id="pdf-select-false" class="cell-grid column-selected top">
                 <input type="radio" id="ebook_false"  name="ebook_offer" value="false" checked>
-                <label for="ebook_false">Ne želim e-knjigu</label>
+                <label for="ebook_false">Nu doresc e-book-ul</label>
             </div>
 
             <div class="cell-grid">
-                E-knjiga:
+                E-book:
             </div>
             <div class="cell-grid column-option">
                 <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>            </div>
@@ -395,11 +395,11 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                 Livrare:
             </div>
             <div class="cell-grid column-option">
-                Besplatno            </div>
+                Gratuit            </div>
             <div class="cell-grid column-selected">
                 <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>            </div>
                         <div class="cell-grid">
-                Ukupna comanda:
+                Total comandă:
             </div>
             <div class="cell-grid totals column-option bottom">
                 <span class="totals"><span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span></span>
@@ -410,14 +410,14 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
     </div>
     <p class="pdf-more-info">
         <img decoding="async" src="https://images.vigo-shop.com/general/checkout/pdf_info_icon.svg">
-        <u>Više informacija o e-knjizi</u>
+        <u>Mai multe informații despre e-book</u>
     </p>
     <p class="pdf-more-info-description">
-        Odaberite našu e-knjigu i dobijte pristup trikovima koji mijenjaju život, savjetima za uštedu novca i vrhunskoj pogodnosti. Također štedite na otpremi. Odaberite e-knjigu za pametniju, lakšu i pristupačniju budućnost!</p>
+        Alege e-book-ul nostru și obține acces la trucuri utile, sfaturi pentru a economisi bani și beneficii excelente. În plus, economisești și la livrare. Alege e-book-ul pentru un viitor mai inteligent, mai simplu și mai accesibil!</p>
 </div>
 
 
-<h3 class="place-order-title" style="display: block;">Sažetak comenzi</h3>
+<h3 class="place-order-title" style="display: block;">Rezumat comandă</h3>
 <div class="vigo-checkout-total order-total shop_table woocommerce-checkout-review-order-table">
     <div class="grid m-top--s review-all-products-container">
 
@@ -986,16 +986,16 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
         <div class="partial_inner_section">
             <img src="https://images.vigo-shop.com/general/banner_icons/delivery_icon.svg" alt="">
             <div class="text_wrapper">
-                Dostavlja: Paket24 Hrvatske pošte            </div>
+                Livrare prin: Paket24 Hrvatska pošta            </div>
         </div>
 
                     <div class="partial_inner_section">
                 <img src="https://images.vigo-shop.com/general/banner_icons/COD_icon.svg" alt="">
-                <div class="text_wrapper">Plata ramburs</div>
+                <div class="text_wrapper">Plată ramburs</div>
             </div>
                 <div class="partial_inner_section delivery-from-eu-warehouse ">
             <img class="delivery-from-eu-warehouse__icon" src="https://images.vigo-shop.com/general/flags/eu-warehouse.svg">
-            <div class="text_wrapper delivery-from-eu-warehouse__text">Depozit in UE</div>
+            <div class="text_wrapper delivery-from-eu-warehouse__text">Depozit în UE</div>
         </div>
             </div>
 </div>
@@ -1171,4 +1171,36 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
         <link rel='stylesheet' id='check-client-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/check-client/css/check-client-8571deb0ef.css' type='text/css' media='all' />
 </div>
 </body>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var replacements = new Map([
+    ['Telefon', 'Telefon'],
+    ['Dovršite narudžbu sada, platite pouzećem 🙂', 'Finalizează comanda acum, plătește ramburs 🙂'],
+    ['Nema dodatnih troškova za carinu', 'Fără costuri suplimentare pentru vamă'],
+    ['PDV je uključen u cijenu', 'TVA-ul este inclus în preț'],
+    ['Plaćanje pouzećem', 'Plată ramburs'],
+    ['Dostava', 'Livrare'],
+    ['Sažetak comenzi', 'Rezumat comandă'],
+    ['Skladište u EU', 'Depozit în UE'],
+    ['Dostavlja: Paket24 Hrvatske pošte', 'Livrare prin: Paket24 Hrvatska pošta'],
+    ['Paket24 Hrvatske pošte', 'Paket24 Hrvatska pošta']
+  ]);
+
+  var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  var nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(function (node) {
+    var text = node.nodeValue;
+    var trimmed = text.replace(/\s+/g, ' ').trim();
+    if (replacements.has(trimmed)) {
+      node.nodeValue = text.replace(trimmed, replacements.get(trimmed));
+    }
+  });
+
+  document.querySelectorAll('[placeholder]').forEach(function (el) {
+    var value = el.getAttribute('placeholder');
+    if (replacements.has(value)) el.setAttribute('placeholder', replacements.get(value));
+  });
+});
+</script>
 </html>
