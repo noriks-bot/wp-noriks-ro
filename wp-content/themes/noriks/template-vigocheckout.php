@@ -22,12 +22,12 @@ if (!defined('ABSPATH')) exit;
 <link rel='dns-prefetch' href='//static.klaviyo.com' />
 <link rel='dns-prefetch' href='//js.braintreegateway.com' />
 <meta name="title" content="Dovršite kupnju" />
-<meta name="description" content="Sve što vam treba na jednom mjestu. Istražite veliki izbor produsului po najnižim cijenama. Kliknite sada i uživajte u najboljim ponudama i velikoj raznolikosti!" />
+<meta name="description" content="Tot ce aveți nevoie într-un singur loc. Explorați gama largă de produse la cele mai mici prețuri. Faceți clic acum și bucurați-vă de cele mai bune oferte și de o mare varietate!" />
 <meta name="image" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x310.png" />
 <meta property="og:locale" content="ro" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Dovršite kupnju" />
-<meta property="og:description" content="Sve što vam treba na jednom mjestu. Istražite veliki izbor produsului po najnižim cijenama. Kliknite sada i uživajte u najboljim ponudama i velikoj raznolikosti!" />
+<meta property="og:description" content="Tot ce aveți nevoie într-un singur loc. Explorați gama largă de produse la cele mai mici prețuri. Faceți clic acum și bucurați-vă de cele mai bune oferte și de o mare varietate!" />
 <meta property="og:image" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x310.png" />
 <meta property="og:image:alt" content="Vigoshop - Dovršite kupnju" />
 <style id='classic-theme-styles-inline-css' type='text/css'>
@@ -478,7 +478,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
     </div>
     <div class="flex__item--autosize f--m checkout-warranty__text">
         <strong>Kupujte bez brige </strong><br>
-        Povrat novca moguć u roku od 90 dana    </div>
+        Returnarea banilor posibilă în termen de 90 de zile    </div>
 </div>
 
 <div class="agreed_terms_txt">
