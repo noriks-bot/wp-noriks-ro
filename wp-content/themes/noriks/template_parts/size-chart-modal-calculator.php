@@ -454,7 +454,7 @@ border: 1px solid #ccc;
     
 
     
-    30 de zile garantie pentru schimbarea marimii
+    30 dana jamstva na zamjenu veličine
 
          
    
@@ -510,7 +510,7 @@ border: 1px solid #ccc;
     
 
     
-     30 de zile garantie pentru schimbarea marimii
+     30 dana jamstva na zamjenu veličine
 
          
    
@@ -620,7 +620,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const baseSize = getBaseSize(height, weight);
             const bodyType = selectedInput.value;
             const finalSize = adjustSize(baseSize, bodyType);
-            resultDiv.innerHTML = `Marime recomandata: <strong>${finalSize}</strong>`;
+            resultDiv.innerHTML = `Preporučena veličina: <strong>${finalSize}</strong>`;
             resultDiv.style.display = "block";
             
             
@@ -681,3 +681,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 </script>
+

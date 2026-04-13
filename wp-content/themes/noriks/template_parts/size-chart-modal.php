@@ -73,7 +73,7 @@
 </style>
 
 
-<?php if ( has_term( array( 'orto-starter', 'orto-tricou-boxeri' ), 'product_cat', get_the_ID() ) ): ?>  
+<?php if ( has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', get_the_ID() ) ): ?>  
 
 <style>
 
@@ -96,33 +96,33 @@
     top: 5px; right: 5px; font-size: 24px; font-weight: bold; cursor: pointer;
     background: black; border-radius: 1px; width: 40px; height: 40px; text-align: center; color: white;">&times;</span>
 
-  <div  style="<?php if ( has_term( array( 'orto-starter', 'orto-tricou-boxeri' ), 'product_cat', get_the_ID() ) ): ?>  display: block; <?php endif; ?>"
+  <div  style="<?php if ( has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', get_the_ID() ) ): ?>  display: block; <?php endif; ?>"
         class="size-chart-left">
       
-      <?php if ( has_term( array( 'boxeri', 'orto-boxeri' , 'boxeri-creeaza-pachet' ), 'product_cat', get_the_ID() )   && 
+      <?php if ( has_term( array( 'bokserice', 'orto-bokserice' , 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() )   && 
        !has_term( 'black-friday', 'product_cat', get_the_ID() )   ): ?>
       
     <img
     
     style="margin-top: 70px;margin-bottom: 70px;"
     
-      src="/ro/wp-content/uploads/2025/12/boxers_size.jpg"
+      src="/hr/wp-content/uploads/2025/12/boxers_size.jpg"
       alt="Size Guide">
       
       
        
-      <?php elseif ( has_term( array( 'sosete', 'sosete-de-iarna' ), 'product_cat', get_the_ID() ) ): ?>
+      <?php elseif ( has_term( array( 'carape', 'zimske-carape	' ), 'product_cat', get_the_ID() ) ): ?>
       
       
        <img
     
     style="margin-top: 70px;margin-bottom: 70px;"
     
-      src="/ro/wp-content/uploads/2025/11/Nogavice_tabela_velikosti.jpg"
+      src="/hr/wp-content/uploads/2025/11/Nogavice_tabela_velikosti.jpg"
       alt="Size Guide">
       
       
-      <?php elseif ( has_term( array( 'orto-starter', 'orto-tricou-boxeri' ), 'product_cat', get_the_ID() ) ): ?>
+      <?php elseif ( has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', get_the_ID() ) ): ?>
       
       
       
@@ -130,7 +130,7 @@
     
     style="margin-top: 35px;margin-bottom: 0px;"
     
-      src="https://noriks.com/ro/wp-content/uploads/2025/08/Izdelek-brez-naslova-8-1-e1755177806475.png"
+      src="https://noriks.com/hr/wp-content/uploads/2026/04/hr_majice.jpeg"
       alt="Size Guide">
       
       
@@ -138,7 +138,7 @@
     
     style="margin-top: 0px;margin-bottom: 0px;"
     
-      src="/ro/wp-content/uploads/2025/12/boxers_size.jpg"
+      src="/hr/wp-content/uploads/2025/12/boxers_size.jpg"
       alt="Size Guide">
      
       
@@ -150,7 +150,7 @@
     
     style="margin-top: 70px;margin-bottom: 70px;"
     
-      src="https://noriks.com/ro/wp-content/uploads/2025/08/Izdelek-brez-naslova-8-1-e1755177806475.png"
+      src="https://noriks.com/hr/wp-content/uploads/2026/04/hr_majice.jpeg"
       alt="Size Guide">
       
       <?php endif; ?>

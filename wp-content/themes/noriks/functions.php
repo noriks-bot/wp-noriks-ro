@@ -70,6 +70,28 @@ function noriks_get_abandoned_carts($request) {
 }
 
 
+// Bulk cleanup abandoned carts that have orders
+add_action('rest_api_init', function() {
+    register_rest_route('noriks/v1', '/abandoned-carts/cleanup', array(
+        'methods' => 'POST',
+        'callback' => function($req) {
+            global $wpdb;
+            $table = $wpdb->prefix . 'cartflows_ca_cart_abandonment';
+            $body = json_decode($req->get_body(), true);
+            $ids = array_map('intval', $body['ids'] ?? []);
+            if (empty($ids)) return new WP_REST_Response(['error' => 'No IDs'], 400);
+            $cleaned = 0;
+            foreach ($ids as $id) {
+                if ($wpdb->update($table, ['order_status' => 'completed'], ['id' => $id, 'order_status' => 'abandoned'])) $cleaned++;
+            }
+            return new WP_REST_Response(['cleaned' => $cleaned, 'total' => count($ids)], 200);
+        },
+        'permission_callback' => function() {
+            return isset($_GET['key']) && $_GET['key'] === 'n0r1k5-c4rt-4cc355';
+        }
+    ));
+});
+
 
 
 /**
@@ -79,7 +101,7 @@ function noriks_get_abandoned_carts($request) {
 add_action('init', function () {
 	// Server-side redirect for NON-AJAX adds (highest priority wins)
 	add_filter('woocommerce_add_to_cart_redirect', function ($url) {
-		return home_url('/ro/cart/'); // or wc_get_cart_url()
+		return home_url('/hr/cart/'); // or wc_get_cart_url()
 	}, 9999);
 });
  */
@@ -273,103 +295,6 @@ function enqueue_main_styles() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_main_styles');
 
-function noriks_ro_output_theme_style_fallback() {
-    if ( is_admin() ) {
-        return;
-    }
-
-    $styles = array(
-        'main.css',
-        'header.css',
-        'footer.css',
-    );
-
-    if ( function_exists( 'is_product' ) && is_product() ) {
-        $styles[] = 'product.css';
-    }
-
-    if ( is_front_page() ) {
-        $styles[] = 'homepage.css';
-    }
-
-    if ( function_exists( 'is_cart' ) && is_cart() ) {
-        $styles[] = 'cart.css';
-    }
-
-    if ( function_exists( 'is_checkout' ) && is_checkout() ) {
-        $styles[] = 'checkout.css';
-    }
-
-    $styles = array_unique( $styles );
-
-    foreach ( $styles as $style_file ) {
-        $style_path = get_template_directory() . '/css/' . $style_file;
-        if ( ! file_exists( $style_path ) ) {
-            continue;
-        }
-
-        printf(
-            '<link rel="stylesheet" id="noriks-ro-fallback-%1$s" href="%2$s?ver=%3$s" media="all" />' . "\n",
-            esc_attr( sanitize_title( $style_file ) ),
-            esc_url( get_template_directory_uri() . '/css/' . $style_file ),
-            esc_attr( filemtime( $style_path ) )
-        );
-    }
-}
-add_action( 'wp_head', 'noriks_ro_output_theme_style_fallback', 99 );
-
-function noriks_ro_output_inline_theme_styles() {
-    if ( is_admin() ) {
-        return;
-    }
-
-    $styles = array(
-        'main.css',
-        'header.css',
-        'footer.css',
-    );
-
-    if ( function_exists( 'is_product' ) && is_product() ) {
-        $styles[] = 'product.css';
-    }
-
-    if ( is_front_page() ) {
-        $styles[] = 'homepage.css';
-    }
-
-    if ( function_exists( 'is_cart' ) && is_cart() ) {
-        $styles[] = 'cart.css';
-    }
-
-    if ( function_exists( 'is_checkout' ) && is_checkout() ) {
-        $styles[] = 'checkout.css';
-    }
-
-    $styles = array_unique( $styles );
-    $inline_css = '';
-
-    foreach ( $styles as $style_file ) {
-        $style_path = get_template_directory() . '/css/' . $style_file;
-        if ( ! file_exists( $style_path ) ) {
-            continue;
-        }
-
-        $contents = file_get_contents( $style_path );
-        if ( false === $contents || '' === trim( $contents ) ) {
-            continue;
-        }
-
-        $inline_css .= "\n/* " . $style_file . " */\n" . $contents . "\n";
-    }
-
-    if ( '' === $inline_css ) {
-        return;
-    }
-
-    echo "<style id=\"noriks-ro-inline-theme-styles\">\n" . $inline_css . "\n</style>\n";
-}
-add_action( 'wp_head', 'noriks_ro_output_inline_theme_styles', 100 );
-
 function custom_quantity_buttons() {
     if (is_product()) {
 
@@ -483,7 +408,7 @@ function custom_quantity_buttons() {
                 qtyField.hide();
                 // Add custom quantity buttons
                 qtyWrapper.append(`
-                    <div class="label choose-your-pack"><label for="choose-your-pack">Odaberite svoj pachet</label></div>
+                    <div class="label choose-your-pack"><label for="choose-your-pack">Odaberite svoj paket</label></div>
                     <div class="custom-qty-buttons">
                         <button type="button" class="qty-btn" data-qty="1"><?php echo esc_html($show_123_qty_1_t1); ?>  <br/><span class="qty-off">-<?php echo esc_html($discount_1); ?><?php echo esc_html($show_123_qty_2_t2); ?> </span> <span class="qty-off-text"><?php echo wc_price($price_per_one_1); ?> <?php echo esc_html($show_123_qty_1_t3); ?></span> </button>
                         <button type="button" class="qty-btn" data-qty="2"><?php echo esc_html($show_123_qty_2_t1); ?> <br/><span class="qty-off">-<?php echo esc_html($discount_2); ?><?php echo esc_html($show_123_qty_2_t2); ?></span><span class="qty-off-text"><?php echo wc_price($price_per_one_2); ?> <?php echo esc_html($show_123_qty_2_t3); ?></span></button>
@@ -512,7 +437,7 @@ function custom_quantity_buttons() {
                 qtyField.hide();
                 // Add custom quantity buttons
                 qtyWrapper.append(`
-                    <div class="label choose-your-pack"><label for="choose-your-pack">Odaberite svoj pachet</label></div>
+                    <div class="label choose-your-pack"><label for="choose-your-pack">Odaberite svoj paket</label></div>
                     <div class="custom-qty-buttons">
                         <button type="button" class="qty-btn" data-qty="1">3 pack  <br/><span class="qty-off">39% OFF</span> <span class="qty-off-text">€15,75 per item</span> </button>
                         <button type="button" class="qty-btn" data-qty="2">6 pack <br/><span class="qty-off"> 49% OFF</span><span class="qty-off-text">€15,75 per item</span></button>
@@ -607,7 +532,7 @@ function custom_quantity_buttons() {
                 qtyField.hide();
                 // Add custom quantity buttons
                 qtyWrapper.append(`
-                    <div class="label choose-your-pack"><label for="choose-your-pack">Odaberite svoj pachet</label></div>
+                    <div class="label choose-your-pack"><label for="choose-your-pack">Odaberite svoj paket</label></div>
                     <div class="custom-qty-buttons">
                         <button type="button" class="qty-btn" data-qty="6"><?php echo esc_html($show_6912_qty_1_t1); ?>  <br/><span class="qty-off">-<?php echo esc_html($discount_1); ?><?php echo esc_html($show_6912_qty_2_t2); ?> </span> <span class="qty-off-text"><?php echo wc_price($price_per_one_1); ?> <?php echo esc_html($show_6912_qty_1_t3); ?></span> </button>
                         <button type="button" class="qty-btn" data-qty="9"><?php echo esc_html($show_6912_qty_2_t1); ?> <br/><span class="qty-off">-<?php echo esc_html($discount_2); ?><?php echo esc_html($show_6912_qty_2_t2); ?></span><span class="qty-off-text"><?php echo wc_price($price_per_one_2); ?> <?php echo esc_html($show_6912_qty_2_t3); ?></span></button>
@@ -636,7 +561,7 @@ function custom_quantity_buttons() {
                 qtyField.hide();
                 // Add custom quantity buttons
                 qtyWrapper.append(`
-                    <div class="label choose-your-pack"><label for="choose-your-pack">Odaberite svoj pachet</label></div>
+                    <div class="label choose-your-pack"><label for="choose-your-pack">Odaberite svoj paket</label></div>
                     <div class="custom-qty-buttons">
                         <button type="button" class="qty-btn" data-qty="1">2 pack  <br/><span class="qty-off">39% OFF</span> <span class="qty-off-text">€15,75 per item</span> </button>
                         <button type="button" class="qty-btn" data-qty="2">4 pack <br/><span class="qty-off"> 49% OFF</span><span class="qty-off-text">€15,75 per item</span></button>
@@ -665,7 +590,7 @@ function custom_quantity_buttons() {
                 qtyField.hide();
                 // Add custom quantity buttons
                 qtyWrapper.append(`
-                    <div class="label choose-your-pack"><label for="choose-your-pack">Odaberite svoj pachet</label></div>
+                    <div class="label choose-your-pack"><label for="choose-your-pack">Odaberite svoj paket</label></div>
                     <div class="custom-qty-buttons">
                         <button type="button" class="qty-btn" data-qty="1">12 pack  <br/><span class="qty-off">39% OFF</span> <span class="qty-off-text">€15,75 per item</span> </button>
                         <button type="button" class="qty-btn" data-qty="2">24 pack <br/><span class="qty-off"> 49% OFF</span><span class="qty-off-text">€15,75 per item</span></button>
@@ -839,15 +764,58 @@ function custom_loop_columns() {
     return 4; // 4 products per row
 }
 
+function noriks_should_use_collection_gallery_image_for_loop($product_id) {
+    return noriks_get_collection_gallery_image_for_loop($product_id) > 0;
+}
+
+function noriks_get_collection_gallery_image_for_loop($product_id) {
+    if ( ! is_tax( 'collections' ) ) {
+        return 0;
+    }
+
+    $term = get_queried_object();
+    if ( ! ( $term instanceof WP_Term ) ) {
+        return 0;
+    }
+
+    $raw = get_term_meta( $term->term_id, 'noriks_collection_gallery_image_map', true );
+    if ( empty( $raw ) || ! function_exists( 'noriks_collection_order_ids_from_string' ) ) {
+        return 0;
+    }
+
+    if ( ! function_exists( 'noriks_collection_gallery_image_map_from_string' ) ) {
+        return 0;
+    }
+
+    $map = noriks_collection_gallery_image_map_from_string( $raw );
+    return isset( $map[ $product_id ] ) ? (int) $map[ $product_id ] : 0;
+}
 
 
 
 add_action( 'woocommerce_before_shop_loop_item_title', 'add_second_product_thumbnail', 11 );
 function add_second_product_thumbnail() {
     global $product;
+    if ( ! $product ) {
+        return;
+    }
+
+    $product_id = $product->get_id();
     $gallery = $product->get_gallery_image_ids();
-    if ( ! empty( $gallery ) ) {
-        $second = wp_get_attachment_image_src( $gallery[0], 'woocommerce_thumbnail' );
+    if ( empty( $gallery ) && ! noriks_should_use_collection_gallery_image_for_loop( $product_id ) ) {
+        return;
+    }
+
+    $secondary_image_id = 0;
+
+    if ( noriks_should_use_collection_gallery_image_for_loop( $product_id ) ) {
+        $secondary_image_id = get_post_thumbnail_id( $product_id );
+    } elseif ( ! empty( $gallery ) ) {
+        $secondary_image_id = (int) $gallery[0];
+    }
+
+    if ( $secondary_image_id ) {
+        $second = wp_get_attachment_image_src( $secondary_image_id, 'woocommerce_thumbnail' );
         if ( $second ) {
             echo '<img class="secondary-image" src="' . esc_url( $second[0] ) . '" alt="" />';
         }
@@ -962,6 +930,23 @@ function my_alt_loop_product_thumbnail() {
     }
 
     $product_id = $product->get_id();
+
+    if ( noriks_should_use_collection_gallery_image_for_loop( $product_id ) ) {
+        $selected_gallery_image_id = noriks_get_collection_gallery_image_for_loop( $product_id );
+        if ( $selected_gallery_image_id ) {
+            echo wp_get_attachment_image(
+                $selected_gallery_image_id,
+                'woocommerce_thumbnail',
+                false,
+                array(
+                    'class'   => 'attachment-woocommerce_thumbnail size-woocommerce_thumbnail',
+                    'loading' => 'lazy',
+                    'alt'     => esc_attr( $product->get_name() ),
+                )
+            );
+            return;
+        }
+    }
 
     // Get your ACF image field (adjust field name if needed)
     // If the field returns an image ID:

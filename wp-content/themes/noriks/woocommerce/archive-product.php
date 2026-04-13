@@ -46,23 +46,23 @@ function is_active_menu_item( $path ) {
 <nav class="category-menu">
   <ul>
     <li class="<?php echo is_shop() ? 'active' : ''; ?>">
-      <a href="/ro/shop">Toate produsele</a>
+      <a href="/hr/shop">Svi produkti</a>
     </li>
 
-    <li class="<?php echo is_active_menu_item('/product-category/tricouri') ? 'active' : ''; ?>">
-      <a href="/ro/product-category/tricouri/">Tricouri</a>
+    <li class="<?php echo is_active_menu_item('/product-category/majice') ? 'active' : ''; ?>">
+      <a href="/hr/product-category/majice/">Majice</a>
     </li>
 
-    <li class="<?php echo is_active_menu_item('/product-category/boxeri') ? 'active' : ''; ?>">
-      <a href="/ro/product-category/boxeri/">Boxeri</a>
+    <li class="<?php echo is_active_menu_item('/product-category/bokserice') ? 'active' : ''; ?>">
+      <a href="/hr/product-category/bokserice/">Bokserice</a>
     </li>
 
     <li class="<?php echo is_active_menu_item('/product-category/kompleti') ? 'active' : ''; ?>">
-      <a href="/ro/product-category/kompleti/">Seturi</a>
+      <a href="/hr/product-category/kompleti/">Kompleti</a>
     </li>
 
-    <li class="<?php echo is_active_menu_item('/product-category/sosete') ? 'active' : ''; ?>">
-      <a href="/ro/product-category/sosete/">Sosete</a>
+    <li class="<?php echo is_active_menu_item('/product-category/carape') ? 'active' : ''; ?>">
+      <a href="/hr/product-category/carape/">Čarape</a>
     </li>
   </ul>
 </nav>
@@ -358,22 +358,22 @@ if ( is_shop() ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2"]');
 
-// CATEGORY: /boxeri + ALL CHILD CATEGORIES
-} elseif ( is_product_category_or_child('boxeri') ) {
+// CATEGORY: /bokserice + ALL CHILD CATEGORIES
+} elseif ( is_product_category_or_child('bokserice') ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2-2-2"]');
 
 // CATEGORY GROUP
 } elseif (
     is_product_category_or_child('bestsellers') ||
-    is_product_category_or_child('veliki-pacheti') ||
-    is_product_category_or_child('pachete-starter')
+    is_product_category_or_child('veliki-paketi') ||
+    is_product_category_or_child('starter-paketi')
 ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-3"]');
 
-// CATEGORY: /tricouri + children
-} elseif ( is_product_category_or_child('tricouri') ) {
+// CATEGORY: /majice + children
+} elseif ( is_product_category_or_child('majice') ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2-2"]');
 
@@ -382,8 +382,8 @@ if ( is_shop() ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset"]');
 
-// CATEGORY: /sosete + children
-} elseif ( is_product_category_or_child('sosete') ) {
+// CATEGORY: /carape + children
+} elseif ( is_product_category_or_child('carape') ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2"]');
 

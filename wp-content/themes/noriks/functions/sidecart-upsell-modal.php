@@ -75,7 +75,7 @@ function noriks_ajax_add_to_cart() {
     } else {
         // Get WC notices for error message
         $notices = wc_get_notices('error');
-        $msg = !empty($notices) ? strip_tags($notices[0]['notice'] ?? $notices[0]) : 'Eroare la adaugare';
+        $msg = !empty($notices) ? strip_tags($notices[0]['notice'] ?? $notices[0]) : 'Greška pri dodavanju';
         wc_clear_notices();
         wp_send_json_error(['message' => $msg]);
     }
@@ -178,7 +178,7 @@ function noriks_upsell_modal_markup() {
                     </div>
                 </div>
                 <div class="noriks-modal-qty-row">
-                    <span class="noriks-attr-label">CANTITATE</span>
+                    <span class="noriks-attr-label">KOLIČINA</span>
                     <select id="noriks-qty-val" class="noriks-qty-select">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -193,8 +193,8 @@ function noriks_upsell_modal_markup() {
                     </select>
                 </div>
                 <div id="noriks-modal-attributes" class="noriks-modal-attributes"></div>
-                <div id="noriks-modal-error" class="noriks-modal-error" style="display:none;">Alegeti toate optiunile</div>
-                <button id="noriks-modal-add" class="noriks-modal-add-btn">ADAUGA IN COS</button>
+                <div id="noriks-modal-error" class="noriks-modal-error" style="display:none;">Odaberite sve opcije</div>
+                <button id="noriks-modal-add" class="noriks-modal-add-btn">DODAJ U KOŠARICU</button>
             </div>
 
         </div>
@@ -447,7 +447,7 @@ function noriks_upsell_modal_markup() {
                 $attrs.append($group);
             });
 
-            $('#noriks-modal-add').text('ADAUGA IN COS').removeClass('adding added');
+            $('#noriks-modal-add').text('DODAJ U KOŠARICU').removeClass('adding added');
 
             // Auto-select first option for each attribute
             setTimeout(function() {
@@ -565,7 +565,7 @@ function noriks_upsell_modal_markup() {
             $.post(woocommerce_params.ajax_url, data, function(res) {
                 
                 if (res.success !== false && res.fragments) {
-                    $btn.removeClass('adding').addClass('added').text('✓ ADAUGAT!');
+                    $btn.removeClass('adding').addClass('added').text('✓ DODANO!');
                     
                     // Apply fragments to update side cart
                     $.each(res.fragments, function(key, value) {
@@ -578,18 +578,18 @@ function noriks_upsell_modal_markup() {
                         closeModal();
                     }, 800);
                 } else if (res.success === false) {
-                    $btn.removeClass('adding').text('ADAUGA IN COS');
-                    var msg = (res.data && res.data.message) ? res.data.message : 'Eroare la adaugare';
+                    $btn.removeClass('adding').text('DODAJ U KOŠARICU');
+                    var msg = (res.data && res.data.message) ? res.data.message : 'Greška pri dodavanju';
                     $('#noriks-modal-error').text(msg).show();
                 } else {
                     // Fallback: no fragments but no error either — refresh
-                    $btn.removeClass('adding').addClass('added').text('✓ ADAUGAT!');
+                    $btn.removeClass('adding').addClass('added').text('✓ DODANO!');
                     $(document.body).trigger('wc_fragment_refresh');
                     setTimeout(closeModal, 800);
                 }
             }).fail(function(xhr) {
-                $btn.removeClass('adding').text('ADAUGA IN COS');
-                $('#noriks-modal-error').text('Eroare la adaugare').show();
+                $btn.removeClass('adding').text('DODAJ U KOŠARICU');
+                $('#noriks-modal-error').text('Greška pri dodavanju').show();
             });
         });
 

@@ -42,18 +42,18 @@ if ( ! empty( $order->get_billing_first_name() ) ) {
 <?php if ( $email_improvements_enabled ) : ?>
 
 
-	<p style="color:black;">Comanda ta a fost primita cu succes - iti multumim ca ai ales NORIKS!
+	<p style="color:black;">Tvoja narudžba je uspješno zaprimljena – hvala ti što si odabrao NORIKS!
 	<br/>	<br/>
-	Pregatim acum produsul tau NORIKS si in curand va porni spre tine.
+	Sad pripremamo tvoj NORIKS proizvod i uskoro kreće na put.
     <br/><br/>
-    Doar confort si o senzatie placuta - toata ziua.<br/><br/>
+    Samo udobnost i dobar osjećaj – cijeli dan.<br/><br/>
     
-    Te vom anunta imediat ce pachetul tau porneste spre tine.<br/>
-    Ako ti bilo ce zatreba – tu smo. 🙂<br/><br/>
+    Javit ćemo ti čim tvoj paket krene prema tebi.<br/>
+    Ako ti bilo što zatreba – tu smo. 🙂<br/><br/>
     
     
-    <strong>Daca ati gresit marimea, cantitatea sau culoarea in comanda - fara griji!</strong><br/>
-    Odgovorite direktno na ovaj e-mail i javite nam ce treba promijeniti prije slanja pacheta. Rado vom sve rapid srediti.<br/><br/>
+    <strong>Ako ste se zabunili oko veličine, količine ili boje u narudžbi – bez brige!</strong><br/>
+    Odgovorite direktno na ovaj e-mail i javite nam što treba promijeniti prije slanja paketa. Rado ćemo sve brzo srediti.<br/><br/>
     
     NORIKS tim
     </p>
@@ -65,18 +65,18 @@ if ( ! empty( $order->get_billing_first_name() ) ) {
 	<?php /* translators: %s: Order number */ ?>
 	
 		
-	<p style="color:black;">Comanda ta a fost primita cu succes - iti multumim ca ai ales NORIKS!
+	<p style="color:black;">Tvoja narudžba je uspješno zaprimljena – hvala ti što si odabrao NORIKS!
 	<br/>	<br/>
-Pregatim acum produsul tau NORIKS si in curand va porni spre tine.
+Sad pripremamo tvoj NORIKS proizvod i uskoro kreće na put.
     <br/><br/>
-    Doar confort si o senzatie placuta - toata ziua.<br/><br/>
+    Samo udobnost i dobar osjećaj – cijeli dan.<br/><br/>
     
-    Te vom anunta imediat ce pachetul tau porneste spre tine.<br/>
-    Ako ti bilo ce zatreba – tu smo. 🙂<br/><br/>
+    Javit ćemo ti čim tvoj paket krene prema tebi.<br/>
+    Ako ti bilo što zatreba – tu smo. 🙂<br/><br/>
     
     
-    <strong>Daca ati gresit marimea, cantitatea sau culoarea in comanda - fara griji!</strong><br/>
-    Odgovorite direktno na ovaj e-mail i javite nam ce treba promijeniti prije slanja pacheta. Rado vom sve rapid srediti.<br/><br/>
+    <strong>Ako ste se zabunili oko veličine, količine ili boje u narudžbi – bez brige!</strong><br/>
+    Odgovorite direktno na ovaj e-mail i javite nam što treba promijeniti prije slanja paketa. Rado ćemo sve brzo srediti.<br/><br/>
     
     NORIKS tim
     </p>
