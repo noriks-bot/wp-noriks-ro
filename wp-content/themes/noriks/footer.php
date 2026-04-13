@@ -113,8 +113,8 @@
        
       </a>
         
-              <p class="footer-brand-dec" style="padding-right: 100px; font-size:12px;" >NORIKS a fost creat pentru a rezolva o problema simpla, dar adesea ignorata: barbatii merita haine care chiar li se potrivesc.
-Nascut din frustrarea fata de piesele basic prea scurte, prea stramte si prost croite, NORIKS creeaza articole atemporale pentru o constitutie mai puternica - mai lungi, mai comode si gandite atent exact acolo unde conteaza cel mai mult. 
+              <p class="footer-brand-dec" style="padding-right: 100px; font-size:12px;" >NORIKS je nastao kako bi riješio jednostavan, ali često zanemaren problem: muškarci zaslužuju odjeću koja im stvarno pristaje.
+Proizašao iz frustracije kratkim, uskim i loše krojenim osnovnim komadima, NORIKS dizajnira bezvremenske komade za snažniju građu — duže, udobnije i promišljeno izrađene tamo gdje je najvažnije. 
 </p>
       </div>
     </div>

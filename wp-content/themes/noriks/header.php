@@ -46,18 +46,18 @@
 	<div class="top-header">
   <div class="marquee">
     <div class="marquee-content">
-      <span><a href="/ro/shop">Livrare gratuita pentru comenzi de peste 70 EUR</a></span>
-      <span><a href="/ro/shop">30 de zile fara risc - incearca fara griji</a></span>
+      <span><a href="/ro/shop">Besplatna dostava za narudžbe iznad 70 €</a></span>
+      <span><a href="/ro/shop">30 dana bez rizika – probaj bez brige</a></span>
       <!--<span><a href="/ro/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
 
       <!-- DUPLICATED for seamless infinite loop -->
-      <span><a href="/ro/shop">Livrare gratuita pentru comenzi de peste 70 EUR</a></span>
-      <span><a href="/ro/shop">30 de zile fara risc - incearca fara griji</a></span>
+      <span><a href="/ro/shop">Besplatna dostava za narudžbe iznad 70 €</a></span>
+      <span><a href="/ro/shop">30 dana bez rizika – probaj bez brige</a></span>
      <!-- <span><a href="/ro/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
       
        <!-- DUPLICATED for seamless infinite loop -->
-      <span><a href="/ro/shop">Livrare gratuita pentru comenzi de peste 70 EUR</a></span>
-      <span><a href="/ro/shop">30 de zile fara risc - incearca fara griji</a></span>
+      <span><a href="/ro/shop">Besplatna dostava za narudžbe iznad 70 €</a></span>
+      <span><a href="/ro/shop">30 dana bez rizika – probaj bez brige</a></span>
      <!-- <span><a href="/ro/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
     </div>
   </div>
@@ -135,8 +135,8 @@
                         
                     <!--
                     <div class="dropdown-menu">
-                        <a href="/ro/shop">Creeaza-ti pachetul</a>
-                        <a href="/ro/product-category/bundles/">Pachete gata pregatite</a>
+                        <a href="/ro/shop">Sastavi svoj paket</a>
+                        <a href="/ro/product-category/bundles/">Gotovi paketi</a>
                     </div>
                     -->
                 </div>
@@ -149,8 +149,8 @@
                     </a>
                     <!--
                     <div class="dropdown-menu">
-                        <a href="/ro/product-category/boxeri-creeaza-pachet/">Creeaza-ti pachetul</a>
-                        <a href="/ro/product-category/boxeri/">Pachete gata pregatite</a>
+                        <a href="/ro/product-category/bokserice-sastavi-paket/">Sastavi svoj paket</a>
+                        <a href="/ro/product-category/bokserice/">Gotovi paketi</a>
                     </div>
                     -->
                 </div>
@@ -272,10 +272,6 @@
     <img src="https://static.devit.software/countries/flags/rectangle/eu.svg"><span>English (Europe)</span>
   </a>
   
-<a href="/ro" class="language-option">
-    <img src="https://static.devit.software/countries/flags/rectangle/ro.svg"><span>Romania (RO)</span>
-  </a>
-
 <a href="/hr" class="language-option">
     <img src="https://static.devit.software/countries/flags/rectangle/hr.svg"><span>Croatia (HR)</span>
   </a>
