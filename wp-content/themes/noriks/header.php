@@ -19,6 +19,179 @@
 
 <?php wp_head(); ?>
 
+<style id="noriks-ro-header-fix">
+.top-header {
+  width: 100%;
+  background: #d5d5d5;
+  padding: 2px 0;
+  overflow: hidden;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  color: black;
+}
+
+.marquee-content {
+  display: inline-flex;
+  align-items: center;
+  color: black;
+  gap: 70px;
+  animation: marqueeScroll 28s linear infinite;
+}
+
+.marquee-content span {
+  display: inline-block;
+  color: black;
+}
+
+.marquee-content a {
+  color: black;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.header.navbar {
+  background-color: black;
+  padding: 5px 20px 5px 10px;
+}
+
+.header .container-header {
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header .navbar-center {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.header .navbar-center a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.59px !important;
+}
+
+.header .navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.header .language-selector {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.05);
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+.language-selector .flag,
+.language-selector img.flag,
+.language-option img {
+  width: 20px !important;
+  max-width: 20px !important;
+  min-width: 20px !important;
+  height: 15px !important;
+  object-fit: cover !important;
+  display: inline-block !important;
+}
+
+.language-selector span {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header .mobile-menu-toggle {
+  display: none;
+  font-size: 33px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  .header .mobile-menu-toggle {
+    display: block;
+  }
+
+  .header .navbar-center {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 350px;
+    height: 100vh;
+    background-color: #111;
+    padding: 40px 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 999999999;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.4);
+  }
+
+  .header .navbar-center.active {
+    left: 0;
+  }
+
+  .header .navbar-center a {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+    text-decoration: none;
+  }
+
+  .header .navbar-right {
+    display: none;
+  }
+
+  .language-selector.mobile-only {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+    color: white;
+  }
+
+  .language-selector.mobile-only .flag,
+  .language-selector.mobile-only img.flag {
+    width: 24px !important;
+    max-width: 24px !important;
+    min-width: 24px !important;
+    height: auto !important;
+  }
+}
+</style>
+
 
 <!-- SqualoMail Popup -->
 <!--
