@@ -461,7 +461,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'seturi-tricouri-si-boxeri',
      <!-- 2 - slika tablica velicina -->
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <h3>Tablica veličina</h3>
+        <h3>Tabel de mărimi</h3>
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
@@ -529,8 +529,8 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'seturi-tricouri-si-boxeri',
       </div>
       <div class="accordion-content">
        <p></p>
-       Toliko vjerujemo da će ti se NORIKS svidjeti da imaš <b data-stringify-type="bold">30 dana</b> za povrat ili besplatnu zamjenu.
-Bez papirologije, bez stresa – riješimo u par klikova. </p>
+       Suntem atât de siguri că veți iubi NORIKS, că aveți <b data-stringify-type="bold">30 de zile</b> pentru returnare sau schimb gratuit.
+Fără birocrație, fără stres – rezolvăm totul în câteva clicuri. </p>
 
 <p>
     
