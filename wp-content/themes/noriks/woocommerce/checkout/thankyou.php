@@ -462,9 +462,9 @@ body.woocommerce-order-received .woocommerce {
         <div class="ty-success" style="background:#fde8e8;">
             <div class="ty-success-icon" style="background:#dc3545;">✕</div>
             <h1>Comanda a eșuat</h1>
-            <p>Banka je odbila transakciju. Pokušajte ponovno.</p>
+            <p>Banca a respins tranzacția. Încearcă din nou.</p>
             <p style="margin-top:16px;">
-                <a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" style="display:inline-block;background:#E8450E;color:#fff;padding:12px 32px;text-decoration:none;font-weight:700;">Pokušaj ponovno</a>
+                <a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" style="display:inline-block;background:#E8450E;color:#fff;padding:12px 32px;text-decoration:none;font-weight:700;">Încearcă din nou</a>
             </p>
         </div>
     <?php else : ?>
@@ -487,7 +487,7 @@ body.woocommerce-order-received .woocommerce {
 
                 <div class="tyuo_timer" style="position:relative;">
                     <div class="timer_wrapper">
-                        <div class="special_offer_txt">Zadnja prilika – ponuda ističe za</div>
+                        <div class="special_offer_txt">Ultima șansă – oferta expiră în</div>
                         <div class="time" id="ty-timer">04:40</div>
                     </div>
                     <div class="title"><?php echo esc_html($upsell_title_text); ?></div>
