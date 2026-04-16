@@ -202,7 +202,7 @@ $is_boxers = has_term( array( 'boxeri','orto-bokserice', 'seturi-boxeri' ), 'pro
 
 $is_carape = has_term( array( 'sosete', 'sosete-de-iarna' ), 'product_cat', $current_product_id );
 
-$is_mixed_bundle = has_term( array( 'black-friday', 'seturi-tricouri-si-boxeri', 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id );
+$is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id );
 
 ?>
 
@@ -439,7 +439,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'seturi-tricouri-si-boxeri',
         
         
         
-                Naše premium majice izrađene su od vrhunske mješavine 60% prstenasto predenog pamuka i 40% poliestera, što osigurava izuzetno mekanu tkaninu otpornu na gužvanje.  <br><br>NORIKS bokserice izrađene su od vrhunske mješavine 95% modala i 5% elastana, što osigurava izuzetno mekanu i elastičnu tkaninu koja se savršeno prilagođava tijelu. Elastičan pojas dizajniran je za optimalno pristajanje, pružajući udobnost bez stezanja i savršen izgled ispod odjeć   <br>
+                Tricourile noastre premium sunt fabricate dintr-un amestec premium de 60% bumbac filat în inel și 40% poliester, ceea ce asigură o țesătură extrem de moale și rezistentă la șifonare. <br><br>Boxerii NORIKS sunt fabricați dintr-un amestec premium de 95% modal și 5% elastan, ceea ce asigură o țesătură extrem de moale și elastică, care se adaptează perfect corpului. Talia elastică este concepută pentru o potrivire optimă, oferind confort fără constricție și un aspect perfect sub haine. <br>
         
         <?php else: ?>
         
@@ -477,17 +477,17 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'seturi-tricouri-si-boxeri',
         <?php elseif(  $is_carape ): ?>
         
         
-                  <img src="/ro/wp-content/uploads/2025/11/Șosete_tabela_velikosti.jpg">
+                  <img src="https://noriks.com/ro/wp-content/uploads/2026/04/nogavice_ro.jpg">
                   
     <?php elseif(  $is_mixed_bundle ): ?>
     
-     <img src="https://noriks.com/ro/wp-content/uploads/2026/04/hr_majice.jpeg">
-<img src="/ro/wp-content/uploads/2025/12/boxers_size.jpg">
+     <img src="https://noriks.com/ro/wp-content/uploads/2026/04/tablica_ro.jpg">
+<img src="https://noriks.com/ro/wp-content/uploads/2026/04/bokserice_ro.jpg">
         
           <?php else: ?>
       
       
-       <img src="https://noriks.com/ro/wp-content/uploads/2026/04/hr_majice.jpeg">
+       <img src="https://noriks.com/ro/wp-content/uploads/2026/04/tablica_ro.jpg">
         
             
         <?php endif; ?>
@@ -510,7 +510,7 @@ $is_mixed_bundle = has_term( array( 'black-friday', 'seturi-tricouri-si-boxeri',
         
         
         
-                         Perite boje s bojama.  Program za nježno pranje na hladnoj vodi.  Sušite ravno položeno ili u sušilici na niskoj temperaturi.  Ne izbjeljivati              
+                      Spălați culorile cu alte culori. Ciclu delicat în apă rece. Uscați întins sau în uscător la temperatură joasă. Nu folosiți clor.     
         
         
           <?php else: ?>
@@ -544,7 +544,7 @@ Fără birocrație, fără stres – rezolvăm totul în câteva clicuri. </p>
     info@noriks.com
   </a>
 </p>
-<p>Samo nam napiši mail da želiš zamjenu i <b data-stringify-type="bold">odmah ćemo sve srediti.</b></p>
+<p>Trimiteți-ne un e-mail în care să spuneți că doriți un înlocuitor și <b data-stringify-type="bold">ne vom ocupa imediat de asta.</b></p>
        
        
       </div>

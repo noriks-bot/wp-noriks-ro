@@ -180,7 +180,7 @@ get_header(); ?>
 
   <div class="collections__grid">
     <!-- Card 1 -->
-    <a class="collection-card" href="/ro/product-category/majice/">
+    <a class="collection-card" href="/ro/product-category/tricouri/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-majice.jpeg"
@@ -203,7 +203,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 2 -->
-    <a class="collection-card" href="/ro/product-category/bokserice/">
+    <a class="collection-card" href="/ro/product-category/boxeri/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-boksarice.jpeg"
@@ -227,7 +227,7 @@ get_header(); ?>
     </a>
 
     <!-- Card 3 -->
-    <a class="collection-card" href="/ro/product-category/kompleti/">
+    <a class="collection-card" href="/ro/product-category/seturi/">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/noriks-kompleti.jpeg"
@@ -251,7 +251,7 @@ Cea mai bună valoare în pachet.
     </a>
     
     <!-- Card 3 -->
-    <a class="collection-card" href="/ro/product-category/starter-paketi/">
+    <a class="collection-card" href="https://noriks.com/ro/shop/?yith_wcan=1&product_cat=pachete-starter&orderby=popularity">
       <div class="collection-card__media">
         <img
           src="<?php echo get_template_directory_uri(); ?>/img/starter-paket_.jpeg"

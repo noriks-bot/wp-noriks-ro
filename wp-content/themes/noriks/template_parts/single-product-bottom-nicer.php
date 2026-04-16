@@ -19,17 +19,17 @@ if (  has_term( array( 'starter-paketi','orto-starter' ), 'product_cat', get_the
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-ZAŠTO LJUDI BIRAJU STARTER PAKET?
+DE CE ALEG OAMENII PACHETUL STARTER?
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
         <p  style="    font-style: italic;
-    line-height: 1.2;"  ><strong>“Uzeo sam jer nisam bio siguran hoće li mi odgovarati.” 
+    line-height: 1.2;"  ><strong>„L-am luat pentru că nu eram sigur dacă mi se va potrivi.”
 
 
 
 </strong><span style="font-weight:normal;">Marko - Zagreb</span></p>
-        <p class="description">Mnogi kupci krenu sa starter paketom jer žele prvo vidjeti kako NORIKS stoji i kako se nosi. Jedna majica i jedne bokserice dovoljne su da bez velikog ulaganja donesu odluku.
+        <p class="description">Mulți clienți încep cu pachetul de început pentru că vor să vadă mai întâi cum se potrivește NORIKS și cum se poartă. Un tricou și o pereche de boxeri sunt suficiente pentru a lua o decizie fără o investiție mare.
 
 
 
@@ -38,25 +38,24 @@ ZAŠTO LJUDI BIRAJU STARTER PAKET?
 
       <div style="margin-left: 20px;" class="why-point">
         <p  style="    font-style: italic;
-    line-height: 1.2;" ><strong>“Po prvem nošenju sem takoj naročil še.” 
+    line-height: 1.2;" ><strong>„După prima purtare, am comandat imediat mai multe.”
 
 
 
 </strong><span style="font-weight:normal;">Pavle - Split</span></p>
-        <p class="description">Više od 95% kupaca nakon starter paketa ponovno naruči. Ne zato što su planirali, nego zato što već prvi dan osjete razliku u kroju, udobnosti i kvaliteti.
-
+        <p class="description">Peste 95% dintre clienți comandă din nou după ce au terminat pachetul de început. Nu pentru că ar fi plănuit, ci pentru că simt diferența de potrivire, confort și calitate chiar în prima zi.
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
         <p  style="    font-style: italic;
-    line-height: 1.2;"  ><strong>“Materijal i fit su me uvjerili.” 
+    line-height: 1.2;"  ><strong>„Materialul și croiala m-au convins.”
 
 
 
 </strong><span style="font-weight:normal;">Ante - Pula</span></p>
-        <p class="description">Majica in boksarice so mehke, lahke in prijetne na koži. Začetni paket je najpogostejši razlog, da NORIKS hitro postane del vsakodnevne garderobe.
+        <p class="description">Tricourile și boxerii sunt moi, ușori și delicate cu pielea. Pachetul de început este cel mai frecvent motiv pentru care NORIKS devine rapid parte din garderoba ta de zi cu zi.
 
 
 
@@ -83,38 +82,38 @@ ZAŠTO LJUDI BIRAJU STARTER PAKET?
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-KOMBINACIJA KOJA SE NOSI SVAKI DAN
+O COMBINAȚIE CARE POATE FI PURTATĂ ÎN FIECARE ZI
 
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Dizajnirano za cjelodnevnu udobnost
+        <p><strong>Conceput pentru confort pe tot parcursul zilei
 
 
 </strong></p>
-        <p class="description">Majica i bokserice napravljene su za nošenje od jutra do večeri, bez prilagođavanja i nelagode. Sve stoji na mjestu, ne steže i omogućuje slobodno kretanje tijekom cijelog dana.
+        <p class="description">Tricoul și pantalonii scurți boxer sunt concepuți pentru a fi purtați de dimineața până seara, fără ajustări sau disconfort. Totul rămâne la locul lui, nu este constrângător și permite mișcarea liberă pe tot parcursul zilei.
 
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Kroj koji radi s tijelom
+        <p><strong>O croială care se potrivește corpului
 
 
 </strong></p>
-        <p class="description">Kroj majice naglašava gornji dio tijela, dok bokserice pružaju dovoljno prostora i stabilnost bez podizanja. Rezultat je siguran, opušten osjećaj i uredan izgled u svakoj situaciji.
+        <p class="description">Croiala tricoului pune în valoare partea superioară a corpului, în timp ce boxerii oferă suficient spațiu și stabilitate fără a ridica greutăți. Rezultatul este o senzație de siguranță, relaxare și un aspect îngrijit în orice situație.
 
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Kvaliteta koju osjetiš odmah
+        <p><strong>Calitate pe care o simți imediat
 
 
 </strong></p>
-        <p class="description">Materijali su mekani, prozračni i ugodni na koži, bez gubitka oblika nakon pranja. Već pri prvom nošenju jasno je zašto ova kombinacija brzo postaje dio svakodnevne garderobe.
+        <p class="description">Materialele sunt moi, respirabile și confortabile pe piele, fără a-și pierde forma după spălare. Este clar de la prima purtare de ce această combinație devine rapid parte din garderoba ta de zi cu zi.
 
 
 </p>
@@ -143,7 +142,7 @@ KOMBINACIJA KOJA SE NOSI SVAKI DAN
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-NAJLAKŠI I NAJSIGURNIJI POČETAK
+CEL MAI UȘOR ȘI MAI SIGUR ÎNCEPUT
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
@@ -151,31 +150,31 @@ NAJLAKŠI I NAJSIGURNIJI POČETAK
 
 
 </strong></p>
-        <p class="description">Zato što ti omogućuje da upoznaš kvalitetu bez velikog ulaganja.
-Namesto da vnaprej kupiš več kosov, vzameš eno majico in ene boksarice — ravno dovolj, da vidiš, kako stojijo, kako se nosijo in kakšen je občutek materiala.
+        <p class="description">Pentru că îți permite să cunoști calitatea fără o investiție mare.
+
+În loc să cumperi multe în avans, iei un tricou și o pereche de boxeri — suficient cât să vezi cum se potrivesc, cum se poartă și cum se simte materialul.
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Osmišljeno za prvi korak
-
+        <p><strong>Conceput pentru primul pas
 
 </strong></p>
-        <p class="description">Starter paket je osmišljen kao prvo iskustvo, ne kao zaliha.
-Dostupan je samo jednom po kupcu i po posebnoj cijeni, kako bi odluka bila jednostavna i bez razmišljanja.
+        <p class="description">Pachetul de început este conceput ca o primă experiență, nu ca stoc.
+Este disponibil o singură dată per client și la un preț special, astfel încât decizia să fie simplă și fără gândire.
 
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Iskustvo koje se ponavlja
-
+        <p><strong>O experiență recurentă
 
 </strong></p>
-        <p class="description">Većina muškaraca nakon toga nastavi s NORIKS-om jer shvati razliku u kroju, udobnosti i kvaliteti.
-Ali prvi korak je ovaj — najmanji rizik, najčišći dojam. 
+        <p class="description">Majoritatea bărbaților continuă apoi cu NORIKS pentru că înțeleg diferența de potrivire, confort și calitate.
+
+Dar primul pas este acesta - cel mai mic risc, cea mai curată impresie.
 
 </p>
       </div>
@@ -362,7 +361,7 @@ if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() ) 
 
 <!-- here we include new file BOXERIRICE-->
 
-<?php if ( has_term( array( 'bokserice', 'bokserice-sastavi-paket',  'orto-bokserice' ), 'product_cat', get_the_ID() )  && !has_term( 'black-friday', 'product_cat', get_the_ID() ) ): ?>
+<?php if ( has_term( array( 'boxeri', 'bokserice-sastavi-paket',  'orto-bokserice' ), 'product_cat', get_the_ID() )  && !has_term( 'black-friday', 'product_cat', get_the_ID() ) ): ?>
 
 
 
@@ -409,13 +408,13 @@ endif;
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-        Fleksibilan rez za snažnije noge
+       Croială flexibilă pentru picioare mai puternice
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Cjelodnevna udobnost
+        <p><strong>Confort pe tot parcursul zilei
 </strong></p>
-        <p class="description">Posebno dizajnirano za muškarce s debljim bedrima. Elastični i rastezljivi materijal pruža maksimalnu udobnost bez zatezanja ili neugodnog pojasa. Donje rublje ostaje na mjestu i ne podiže se, pa se možete slobodno kretati cijeli dan.</p>
+        <p class="description">Special conceput pentru bărbații cu coapse mai groase. Materialul elastic și elastic oferă confort maxim, fără a strânge sau a crea o talie inconfortabilă. Lenjeria intimă rămâne la locul ei și nu se ridică, astfel încât te poți mișca liber toată ziua.</p>
       </div>
 
     
@@ -445,13 +444,13 @@ endif;
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-       Manje trošenja i oštećenja
+      Mai puțină uzură și deteriorare
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Super izdržljivo 💪
+        <p><strong>Super durabil 💪
 </strong></p>
-        <p class="description">Zaboravite na stalnu kupovinu poderanog donjeg rublja. NORIKS šortsevi su napravljeni od jačeg materijala – traju duže i štede vam put u trgovinu.
+        <p class="description">Uită de cumpărarea constantă a lenjeriei intime rupte. Pantalonii scurți NORIKS sunt fabricați dintr-un material mai rezistent - rezistă mai mult și te scutesc de o călătorie până la magazin.
 </p>
       </div>
 
@@ -460,9 +459,9 @@ endif;
         
         <p class="description">
         
-        ✅ Manje poderanja  <br/>
-        ✅ Manje znojenja  <br/>
-        ✅ Udobnost tijekom cijelog dana <br/>
+     ✅ Mai puține rupturi <br/>
+✅ Mai puțină transpirație <br/>
+✅ Confort pe tot parcursul zilei <br/>
                 
         </p>
       </div>
@@ -494,13 +493,13 @@ endif;
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-       Dovoljno prostora za sve
+      Spațiu suficient pentru toată lumea
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Dečki, dopustite svom međunožju da slobodno diše!
+        <p><strong>Băieți, lăsați-vă inghinală să respire liber!
 </strong></p>
-        <p class="description">NORIKS donje rublje pruža podršku tijekom cijelog dana, a da pritom ne gubi oblik. Nebeski mekan Modal materijal rasteže se i savršeno pristaje na pravim mjestima. Prostor za vaše “gadžete” je prostraniji i fleksibilniji, pa se ne osjećate skučenima.</p>
+        <p class="description">Lenjeria intimă NORIKS oferă susținere pe tot parcursul zilei, fără a-și pierde forma. Materialul Modal extrem de moale se întinde și se potrivește perfect în locurile potrivite. Spațiul pentru „gadgeturi” este mai spațios și flexibil, astfel încât să nu te simți înghesuită.</p>
       </div>
 
    
@@ -1446,11 +1445,11 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
     <div class="reviews-tabs" style="display:flex;gap:18px;border-bottom:1px solid #cbc8c8;margin-bottom:18px;">
       <button type="button" class="reviews-tab is-active" data-tab="product"
         style="appearance:none;background:#00000008;border:1px solid #cbc8c8;border-bottom:0;padding:8px 14px;border-radius:0;font-weight:700;">
-        <?php echo esc_html__('Recenzije proizvoda', 'your-textdomain'); ?> (692)
+        <?php echo esc_html__('Recenzii de produse', 'your-textdomain'); ?> (692)
       </button>
       <button type="button" class="reviews-tab" data-tab="shipping"
         style="appearance:none;background:transparent;border:1px solid transparent;border-bottom:0;padding:8px 14px;border-radius:0;font-weight:700;">
-        <?php echo esc_html__('Recenzije dostave', 'your-textdomain'); ?> (389)
+        <?php echo esc_html__('Recenzii  livrarea', 'your-textdomain'); ?> (389)
       </button>
     </div>
 
