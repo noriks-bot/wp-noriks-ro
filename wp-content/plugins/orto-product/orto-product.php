@@ -52,6 +52,7 @@ function gck_get_bundle_offers( $product_id = null ) : array {
 
         $regular = isset($row['cena_1']) ? (float) $row['cena_1'] : 0;
         $sale    = isset($row['cena_2']) ? (float) $row['cena_2'] : 0;
+        /* DEBUG */ echo '<!-- ORTO DEBUG: cena_1_raw=' . ($row['cena_1'] ?? 'NULL') . ' cena_2_raw=' . ($row['cena_2'] ?? 'NULL') . ' regular=' . $regular . ' sale=' . $sale . ' -->';
         if ( $sale <= 0 ) continue;
 
         $saving_amount = $regular - $sale;
