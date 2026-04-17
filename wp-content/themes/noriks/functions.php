@@ -6,6 +6,12 @@
  */
 
 include(get_template_directory() . '/functions/checkout_mods.php');
+
+/* Force currency symbol to "lei" on frontend */
+add_filter( 'woocommerce_currency_symbol', function( $symbol ) {
+    if ( ! is_admin() ) return 'lei';
+    return $symbol;
+}, 9999 );
 include(get_template_directory() . '/functions/thankyou_upsell.php');
 include(get_template_directory() . '/functions/cpts.php');
 include(get_template_directory() . '/functions/options.php');

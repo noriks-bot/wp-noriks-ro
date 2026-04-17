@@ -4437,7 +4437,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						
       <div class="dynamic-cart-original-price-container"> 
         <span id="dynamic_cart_original_price_amount" class="dynamic-cart-original-price">36.95</span>
-        <span id="dynamic_cart_original_price_currency_symbol" class="dynamic-cart-original-price-currency-symbol">&#x20AC;</span>
+        <span id="dynamic_cart_original_price_currency_symbol" class="dynamic-cart-original-price-currency-symbol">lei</span>
       
         
       </div>
@@ -7398,11 +7398,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div>
           <div class="qty-item-left">
 	<div class="quantity-title">1 par <span class="savebanner">Prihranite <span class="dp-d1 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">49</span>%</span></div>
-	<div class="quantity-subtitle">prihranite <span class="dp-pd dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">17.96</span>&#x20AC;</div>
+	<div class="quantity-subtitle">prihranite <span class="dp-pd dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">17.96</span>lei</div>
 </div>
 <div class="qty-item-right">
-	<div class="reduced-price"><span class="dp-rp1t dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">18.99&#x20AC;</span> <span class="per_pair">/par</span></div>
-	<div class="original-price"><span class="dp-op dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">36.95</span>&#x20AC;</div>
+	<div class="reduced-price"><span class="dp-rp1t dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">18.99lei</span> <span class="per_pair">/par</span></div>
+	<div class="original-price"><span class="dp-op dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">36.95</span>lei</div>
 </div>
 <!-- <div class="quantity-banner">🔥 Najbolj priljubljeno</div> -->
         </div>
@@ -7413,11 +7413,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div>
           <div class="qty-item-left">
 	<div class="quantity-title">2 para <span class="savebanner">Prihranite <span class="dp-d2 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">60</span>%</span></div>
-	<div class="quantity-subtitle">prihranite <span class="dp-pd2 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">44.28</span>&#x20AC; <div><span class="free-shipping-2">Brezpla&#x10D;na dostava</span></div></div>
+	<div class="quantity-subtitle">prihranite <span class="dp-pd2 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">44.28</span>lei <div><span class="free-shipping-2">Brezpla&#x10D;na dostava</span></div></div>
 </div>
 <div class="qty-item-right">
-	<div class="reduced-price"><span class="dp-rp2 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">14.81</span>&#x20AC; <span class="per_pair">/par</span></div>
-	<div class="original-price"><span class="dp-op dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">36.95</span>&#x20AC;</div>
+	<div class="reduced-price"><span class="dp-rp2 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">14.81</span>lei <span class="per_pair">/par</span></div>
+	<div class="original-price"><span class="dp-op dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">36.95</span>lei</div>
 </div>
 <div class="quantity-banner all-countries">&#x1F525; Najbolj priljubljeno</div>
         </div>
@@ -7428,11 +7428,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div>
           <div class="qty-item-left">
 	<div class="quantity-title">3 pari <span class="savebanner">Prihranite <span class="dp-d3 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">62</span>%</span></div>
-	<div class="quantity-subtitle">prihranite <span class="dp-pd3 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">69.26</span>&#x20AC; <div><span class="free-shipping">Brezpla&#x10D;na dostava</span></div></div>
+	<div class="quantity-subtitle">prihranite <span class="dp-pd3 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">69.26</span>lei <div><span class="free-shipping">Brezpla&#x10D;na dostava</span></div></div>
 </div>
 <div class="qty-item-right">
-	<div class="reduced-price"><span class="dp-rp3 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">13.86</span>&#x20AC; <span class="per_pair">/par</span></div>
-	<div class="original-price"><span class="dp-op dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">36.95</span>&#x20AC;</div>
+	<div class="reduced-price"><span class="dp-rp3 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">13.86</span>lei <span class="per_pair">/par</span></div>
+	<div class="original-price"><span class="dp-op dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">36.95</span>lei</div>
 </div>
 <div class="quantity-banner individual-countries">&#x1F525; Najbolj priljubljeno</div>
         </div>
@@ -7443,11 +7443,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div>
           <div class="qty-item-left">
 	<div class="quantity-title">5 parov <span class="savebanner">Prihranite <span class="dp-d5 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">73</span>%</span></div>
-	<div class="quantity-subtitle">prihranite <span class="dp-pd5 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">135.38</span>&#x20AC; <div><span class="free-shipping">Brezpla&#x10D;na dostava</span></div></div>
+	<div class="quantity-subtitle">prihranite <span class="dp-pd5 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">135.38</span>lei <div><span class="free-shipping">Brezpla&#x10D;na dostava</span></div></div>
 </div>
 <div class="qty-item-right">
-	<div class="reduced-price"><span class="dp-rp5 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">9.87</span>&#x20AC; <span class="per_pair">/par</span></div>
-	<div class="original-price"><span class="dp-op dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">36.95</span>&#x20AC;</div>
+	<div class="reduced-price"><span class="dp-rp5 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">9.87</span>lei <span class="per_pair">/par</span></div>
+	<div class="original-price"><span class="dp-op dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">36.95</span>lei</div>
 </div>
 <div class="quantity-banner">Najbolj&#x161;a ponudba</div>
         </div>
@@ -7652,8 +7652,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       
                     </div>
                     <div class="related-product-both-prices">
-                      <span class="related-product-reduced-price">3.99&#x20AC;</span>
-                      <span class="related-product-original-price">11.95&#x20AC;</span>
+                      <span class="related-product-reduced-price">3.99lei</span>
+                      <span class="related-product-original-price">11.95lei</span>
                     </div>
                   <p></p>
                 </div>
@@ -9999,8 +9999,8 @@ setDeliveryDate();
 		<div class="sct-bar__content container">
 			<div class="sct-bar__title">Ortopedski vlo&#x17E;ki z masa&#x17E;nimi to&#x10D;kami | STEPEASE</div>
 			<div class="sct-bar__price">
-				<span class="sct-bar__price-rp"><span class="dp-rp1 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">18.99</span>&#x20AC;</span>
-				<span class="sct-bar__price-op"><s><span class="dp-op dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">36.95</span>&#x20AC;</s></span>
+				<span class="sct-bar__price-rp"><span class="dp-rp1 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">18.99</span>lei</span>
+				<span class="sct-bar__price-op"><s><span class="dp-op dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">36.95</span>lei</s></span>
 				<span class="sct-bar__price-d"><svg style="width: 12px;" viewBox="0 0 12 12"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 0h3a2 2 0 012 2v3a1 1 0 01-.3.7l-6 6a1 1 0 01-1.4 0l-4-4a1 1 0 010-1.4l6-6A1 1 0 017 0zm2 2a1 1 0 102 0 1 1 0 00-2 0z" fill="#fff"/></svg><span class="dp-d1 dp-all" style="display: none; white-space:inherit; text-decoration: inherit;">49</span>%</span>
 
 			</div>
