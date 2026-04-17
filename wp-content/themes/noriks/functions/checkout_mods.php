@@ -338,6 +338,10 @@ add_action( 'wp_footer', function() {
       color: #707070 !important;
       text-transform: uppercase !important;
     }
+    /* Hide billing_postcode — not used in RO checkout */
+    body.woocommerce-checkout #billing_postcode_field {
+      display: none !important;
+    }
     /* Hide billing_country + billing_state — force RO, use custom county */
     body.woocommerce-checkout #billing_country_field,
     body.woocommerce-checkout #billing_state_field {
