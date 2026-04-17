@@ -341,17 +341,23 @@ add_action( 'wp_footer', function() {
     }
     /* ===== Select2 dropdown — remove gap between input and options ===== */
     .select2-container--open .select2-dropdown {
-      margin-top: -1px !important;
-      border-top: none !important;
+      margin-top: 0 !important;
+      border-top: 1px solid #c9c9c9 !important;
+      top: 0 !important;
     }
     .select2-container--open .select2-dropdown--below {
       top: 0 !important;
     }
-    .select2-container--open .select2-dropdown--above {
-      bottom: 0 !important;
+    .select2-container .select2-dropdown {
+      position: absolute !important;
     }
     .select2-search--dropdown {
       padding: 4px 8px !important;
+    }
+    .select2-search--dropdown .select2-search__field {
+      padding: 8px !important;
+      border: 1px solid #ccc !important;
+      border-radius: 3px !important;
     }
 
     /* Hide billing_postcode — not used in RO checkout */
