@@ -65,6 +65,13 @@ add_action( 'wp_enqueue_scripts', function() {
 
 
 
+    // RO checkout JS — county/locality dropdowns
+    $js_file = $dir . '/js/ro-checkout-localitati.js';
+    wp_enqueue_script( 'ro-checkout-localitati', $uri . '/js/ro-checkout-localitati.js', array('jquery','selectWoo'), file_exists($js_file) ? filemtime($js_file) : '1', true );
+    wp_localize_script( 'ro-checkout-localitati', 'roLocalitatiConfig', array(
+        'jsonUrl' => $uri . '/js/ro-localitati.json',
+    ));
+
 }, 9999 );
 
 /**
@@ -288,45 +295,52 @@ add_action( 'wp_footer', function() {
     }
 
     /* ===== BL/SC/ET/AP — 4 columns in a row ===== */
-    body.woocommerce-checkout #billing_bl_field,
-    body.woocommerce-checkout #billing_sc_field,
-    body.woocommerce-checkout #billing_et_field,
-    body.woocommerce-checkout #billing_ap_field {
+    body.woocommerce-checkout #billing_address_bl_field,
+    body.woocommerce-checkout #billing_address_sc_field,
+    body.woocommerce-checkout #billing_address_et_field,
+    body.woocommerce-checkout #billing_address_ap_field {
       width: 23.5% !important;
       display: inline-block !important;
       vertical-align: top !important;
       margin-right: 2% !important;
       float: none !important;
     }
-    body.woocommerce-checkout #billing_ap_field {
+    body.woocommerce-checkout #billing_address_ap_field {
       margin-right: 0 !important;
     }
 
     /* ===== Județ / Localitate dropdowns ===== */
-    body.woocommerce-checkout #billing_state_field {
-      width: 100% !important;
-      display: block !important;
-    }
-    body.woocommerce-checkout #billing_city_field {
+    body.woocommerce-checkout #billing_county_field,
+    body.woocommerce-checkout #billing_locality_field {
       width: 100% !important;
     }
-    body.woocommerce-checkout #billing_state_field .select2-selection {
+    body.woocommerce-checkout #billing_county_field .select2-selection,
+    body.woocommerce-checkout #billing_locality_field .select2-selection {
       min-height: 50px !important;
       border: 1.5px solid #c9c9c9 !important;
       border-radius: 4px !important;
       box-shadow: inset 1px 1px 3px 0 rgba(0,0,0,0.15) !important;
       padding: 8px 12px !important;
     }
-    body.woocommerce-checkout #billing_state_field .select2-selection__rendered {
+    body.woocommerce-checkout #billing_county_field .select2-selection__rendered,
+    body.woocommerce-checkout #billing_locality_field .select2-selection__rendered {
       line-height: 32px !important;
       font-size: 16px !important;
       color: #333 !important;
+      padding-left: 6px !important;
     }
-    body.woocommerce-checkout #billing_state_field .select2-selection__arrow {
+    body.woocommerce-checkout #billing_county_field .select2-selection__arrow,
+    body.woocommerce-checkout #billing_locality_field .select2-selection__arrow {
       height: 50px !important;
     }
-    /* Hide billing_country — force RO */
-    body.woocommerce-checkout #billing_country_field {
+    body.woocommerce-checkout #billing_county_field .select2-selection__placeholder,
+    body.woocommerce-checkout #billing_locality_field .select2-selection__placeholder {
+      color: #707070 !important;
+      text-transform: uppercase !important;
+    }
+    /* Hide billing_country + billing_state — force RO, use custom county */
+    body.woocommerce-checkout #billing_country_field,
+    body.woocommerce-checkout #billing_state_field {
       display: none !important;
     }
 
@@ -510,32 +524,29 @@ add_filter( 'body_class', function( $classes ) {
 });
 
 /**
- * WC checkout field config — match vigoshop RO layout
- * RO has: phone → email → name → judet (state) → localitate (city) → stradă → nr → BL/SC/ET/AP → postcode
+ * WC checkout field config — match vigoshop RO layout exactly
+ * Custom fields: billing_county (select) + billing_locality (select) + billing_address_bl/sc/et/ap
  */
 add_filter( 'woocommerce_checkout_fields', function( $fields ) {
-    // Order — match vigoshop RO: phone → email → name → state → city → address → postcode
+    // Remove WC default state/city — we use custom county/locality
+    unset( $fields['billing']['billing_state'] );
+    unset( $fields['billing']['billing_city'] );
+    unset( $fields['billing']['billing_company'] );
+
+    // Order — match vigoshop RO
     $fields['billing']['billing_phone']['priority']       = 10;
     $fields['billing']['billing_email']['priority']       = 20;
     $fields['billing']['billing_first_name']['priority']  = 30;
     $fields['billing']['billing_last_name']['priority']   = 40;
-    $fields['billing']['billing_state']['priority']       = 50;
-    $fields['billing']['billing_city']['priority']        = 55;
-    $fields['billing']['billing_address_1']['priority']   = 60;
-    $fields['billing']['billing_address_2']['priority']   = 65;
-    $fields['billing']['billing_postcode']['priority']    = 90;
+    $fields['billing']['billing_address_1']['priority']   = 70;
+    $fields['billing']['billing_address_2']['priority']   = 80;
+    $fields['billing']['billing_postcode']['priority']    = 130;
 
-    // Labels, placeholders, required
+    // Labels, placeholders
     $fields['billing']['billing_first_name']['label'] = 'Prenume';
     $fields['billing']['billing_first_name']['placeholder'] = 'Prenume';
     $fields['billing']['billing_last_name']['label'] = 'Nume';
     $fields['billing']['billing_last_name']['placeholder'] = 'Nume';
-    $fields['billing']['billing_state']['label'] = 'Județ';
-    $fields['billing']['billing_state']['placeholder'] = 'Alege județ';
-    $fields['billing']['billing_state']['required'] = true;
-    $fields['billing']['billing_city']['label'] = 'Localitate';
-    $fields['billing']['billing_city']['placeholder'] = 'Localitate';
-    $fields['billing']['billing_city']['required'] = true;
     $fields['billing']['billing_address_1']['label'] = 'Stradă';
     $fields['billing']['billing_address_1']['placeholder'] = 'Stradă';
     $fields['billing']['billing_address_2']['label'] = 'Nr';
@@ -550,54 +561,76 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_email']['placeholder'] = 'Adresă de e-mail';
     $fields['billing']['billing_email']['required'] = true;
     $fields['billing']['billing_country']['default'] = 'RO';
-    unset( $fields['billing']['billing_company'] );
 
-    // Add BL, SC, ET, AP fields for Romanian block addresses
-    $fields['billing']['billing_bl'] = array(
-        'label'       => 'BL',
-        'placeholder' => 'BL',
-        'required'    => false,
-        'class'       => array('form-row','form-group','col-xs-3'),
-        'input_class' => array('input-text','form-input'),
-        'priority'    => 70,
+    // Custom county dropdown (same IDs as vigoshop.ro)
+    $county_options = array(
+        '' => 'ALEGE - JUDET',
+        '1'=>'Alba','2'=>'Arad','3'=>'Arges','4'=>'Bacau','5'=>'Bihor',
+        '6'=>'Bistrita-Nasaud','7'=>'Botosani','8'=>'Braila','9'=>'Brasov',
+        '10'=>'Bucuresti','11'=>'Buzau','12'=>'Calarasi','13'=>'Caras-Severin',
+        '14'=>'Cluj','15'=>'Constanta','16'=>'Covasna','17'=>'Dambovita',
+        '18'=>'Dolj','19'=>'Galati','20'=>'Giurgiu','21'=>'Gorj',
+        '22'=>'Harghita','23'=>'Hunedoara','24'=>'Ialomita','25'=>'Iasi',
+        '26'=>'Ilfov','27'=>'Maramures','28'=>'Mehedinti','29'=>'Mures',
+        '30'=>'Neamt','31'=>'Olt','32'=>'Prahova','33'=>'Salaj',
+        '34'=>'Satu Mare','35'=>'Sibiu','36'=>'Suceava','37'=>'Teleorman',
+        '38'=>'Timis','39'=>'Tulcea','40'=>'Valcea','41'=>'Vaslui','42'=>'Vrancea',
     );
-    $fields['billing']['billing_sc'] = array(
-        'label'       => 'SC',
-        'placeholder' => 'SC',
-        'required'    => false,
-        'class'       => array('form-row','form-group','col-xs-3'),
-        'input_class' => array('input-text','form-input'),
-        'priority'    => 75,
+    $fields['billing']['billing_county'] = array(
+        'type'        => 'select',
+        'label'       => '',
+        'required'    => true,
+        'options'     => $county_options,
+        'class'       => array('form-row','form-row-wide','form-group','col-xs-12','validate-required'),
+        'input_class' => array('select','form-input'),
+        'priority'    => 50,
+        'custom_attributes' => array('data-placeholder' => 'ALEGE - JUDET', 'data-allow_clear' => 'true'),
     );
-    $fields['billing']['billing_et'] = array(
-        'label'       => 'ET',
-        'placeholder' => 'ET',
-        'required'    => false,
-        'class'       => array('form-row','form-group','col-xs-3'),
-        'input_class' => array('input-text','form-input'),
-        'priority'    => 80,
+
+    // Custom locality dropdown (populated by JS)
+    $fields['billing']['billing_locality'] = array(
+        'type'        => 'select',
+        'label'       => '',
+        'required'    => true,
+        'options'     => array('' => 'ALEGE - LOCALITATE'),
+        'class'       => array('form-row','form-row-wide','form-group','col-xs-12','validate-required'),
+        'input_class' => array('select','form-input'),
+        'priority'    => 60,
+        'custom_attributes' => array('data-placeholder' => 'ALEGE - LOCALITATE', 'data-allow_clear' => 'true'),
     );
-    $fields['billing']['billing_ap'] = array(
-        'label'       => 'AP',
-        'placeholder' => 'AP',
-        'required'    => false,
-        'class'       => array('form-row','form-group','col-xs-3'),
-        'input_class' => array('input-text','form-input'),
-        'priority'    => 85,
+
+    // BL, SC, ET, AP — match vigoshop field names
+    $fields['billing']['billing_address_bl'] = array(
+        'label' => 'BL', 'placeholder' => 'BL', 'required' => false,
+        'class' => array('form-row','form-group','col-xs-3'),
+        'input_class' => array('input-text','form-input'), 'priority' => 90,
+    );
+    $fields['billing']['billing_address_sc'] = array(
+        'label' => 'SC', 'placeholder' => 'SC', 'required' => false,
+        'class' => array('form-row','form-group','col-xs-3'),
+        'input_class' => array('input-text','form-input'), 'priority' => 100,
+    );
+    $fields['billing']['billing_address_et'] = array(
+        'label' => 'ET', 'placeholder' => 'ET', 'required' => false,
+        'class' => array('form-row','form-group','col-xs-3'),
+        'input_class' => array('input-text','form-input'), 'priority' => 110,
+    );
+    $fields['billing']['billing_address_ap'] = array(
+        'label' => 'AP', 'placeholder' => 'AP', 'required' => false,
+        'class' => array('form-row','form-group','col-xs-3'),
+        'input_class' => array('input-text','form-input'), 'priority' => 120,
     );
 
     // Vigoshop CSS classes
     $fields['billing']['billing_first_name']['class'] = array('form-row','form-row-first','form-group','col-xs-12','validate-required');
     $fields['billing']['billing_last_name']['class']  = array('form-row','form-row-last','form-group','col-xs-12','validate-required');
-    $fields['billing']['billing_state']['class']      = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required','validate-state');
-    $fields['billing']['billing_city']['class']        = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required');
-    $fields['billing']['billing_address_1']['class']  = array('form-row','form-row-first','address-field','form-group','col-xs-8','validate-required');
-    $fields['billing']['billing_address_2']['class']  = array('form-row','form-row-last','address-field','form-group','col-xs-4','validate-required');
+    $fields['billing']['billing_address_1']['class']  = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required');
+    $fields['billing']['billing_address_2']['class']  = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required');
     $fields['billing']['billing_postcode']['class']   = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required','validate-postcode');
     $fields['billing']['billing_phone']['class']      = array('form-row','form-row-wide','form-group','col-xs-12','validate-required','validate-phone');
     $fields['billing']['billing_email']['class']      = array('form-row','form-row-wide','form-group','col-xs-12','validate-email');
 
-    // Input class — vigoshop uses 'form-input' alongside WC's 'input-text'
+    // Input class
     foreach ( $fields['billing'] as &$f ) {
         if ( !isset($f['input_class']) ) {
             $f['input_class'] = array( 'input-text', 'form-input' );
@@ -769,31 +802,49 @@ add_action('woocommerce_checkout_process', function(){
 });
 
 /**
- * Save BL/SC/ET/AP custom fields to order meta
+ * Save custom RO fields to order meta
  */
 add_action('woocommerce_checkout_update_order_meta', function( $order_id ) {
-    $custom = array('billing_bl', 'billing_sc', 'billing_et', 'billing_ap');
+    $custom = array('billing_county', 'billing_locality', 'billing_address_bl', 'billing_address_sc', 'billing_address_et', 'billing_address_ap');
     foreach ( $custom as $key ) {
         if ( ! empty( $_POST[$key] ) ) {
             update_post_meta( $order_id, '_' . $key, sanitize_text_field( $_POST[$key] ) );
         }
     }
+    // Also save county name (not just ID) for readability
+    if ( ! empty( $_POST['billing_county'] ) ) {
+        $counties = array('1'=>'Alba','2'=>'Arad','3'=>'Arges','4'=>'Bacau','5'=>'Bihor','6'=>'Bistrita-Nasaud','7'=>'Botosani','8'=>'Braila','9'=>'Brasov','10'=>'Bucuresti','11'=>'Buzau','12'=>'Calarasi','13'=>'Caras-Severin','14'=>'Cluj','15'=>'Constanta','16'=>'Covasna','17'=>'Dambovita','18'=>'Dolj','19'=>'Galati','20'=>'Giurgiu','21'=>'Gorj','22'=>'Harghita','23'=>'Hunedoara','24'=>'Ialomita','25'=>'Iasi','26'=>'Ilfov','27'=>'Maramures','28'=>'Mehedinti','29'=>'Mures','30'=>'Neamt','31'=>'Olt','32'=>'Prahova','33'=>'Salaj','34'=>'Satu Mare','35'=>'Sibiu','36'=>'Suceava','37'=>'Teleorman','38'=>'Timis','39'=>'Tulcea','40'=>'Valcea','41'=>'Vaslui','42'=>'Vrancea');
+        $cid = sanitize_text_field($_POST['billing_county']);
+        if (isset($counties[$cid])) {
+            update_post_meta( $order_id, '_billing_county_name', $counties[$cid] );
+            // Map to WC billing_state for shipping compatibility
+            $order = wc_get_order($order_id);
+            if ($order) { $order->set_billing_state($counties[$cid]); $order->save(); }
+        }
+    }
+    // Map locality to WC billing_city
+    if ( ! empty( $_POST['billing_locality'] ) ) {
+        $order = wc_get_order($order_id);
+        if ($order) { $order->set_billing_city(sanitize_text_field($_POST['billing_locality'])); $order->save(); }
+    }
 });
 
 /**
- * Display BL/SC/ET/AP in admin order page
+ * Display custom RO fields in admin order page
  */
 add_action('woocommerce_admin_order_data_after_billing_address', function( $order ) {
-    $bl = get_post_meta( $order->get_id(), '_billing_bl', true );
-    $sc = get_post_meta( $order->get_id(), '_billing_sc', true );
-    $et = get_post_meta( $order->get_id(), '_billing_et', true );
-    $ap = get_post_meta( $order->get_id(), '_billing_ap', true );
+    $county = get_post_meta( $order->get_id(), '_billing_county_name', true );
+    $locality = get_post_meta( $order->get_id(), '_billing_locality', true );
+    $bl = get_post_meta( $order->get_id(), '_billing_address_bl', true );
+    $sc = get_post_meta( $order->get_id(), '_billing_address_sc', true );
+    $et = get_post_meta( $order->get_id(), '_billing_address_et', true );
+    $ap = get_post_meta( $order->get_id(), '_billing_address_ap', true );
+    if ($county) echo '<p><strong>Județ:</strong> ' . esc_html($county) . '</p>';
+    if ($locality) echo '<p><strong>Localitate:</strong> ' . esc_html($locality) . '</p>';
     $parts = array();
     if ($bl) $parts[] = 'BL: ' . esc_html($bl);
     if ($sc) $parts[] = 'SC: ' . esc_html($sc);
     if ($et) $parts[] = 'ET: ' . esc_html($et);
     if ($ap) $parts[] = 'AP: ' . esc_html($ap);
-    if ($parts) {
-        echo '<p><strong>Bloc:</strong> ' . implode(', ', $parts) . '</p>';
-    }
+    if ($parts) echo '<p><strong>Bloc:</strong> ' . implode(', ', $parts) . '</p>';
 });
