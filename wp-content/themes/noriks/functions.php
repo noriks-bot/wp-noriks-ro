@@ -39,7 +39,7 @@ function auto_apply_coupon_from_url() {
 
 
 
-// Dodaj v functions.php ali kot mu-plugin
+// Add to functions.php or as mu-plugin
 add_action('rest_api_init', function() {
     register_rest_route('noriks/v1', '/abandoned-carts', array(
         'methods' => 'GET',
