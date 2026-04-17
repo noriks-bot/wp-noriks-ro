@@ -742,7 +742,7 @@ add_action( 'woocommerce_cart_calculate_fees', function( $cart ) {
 
     $chosen_gateway = WC()->session->get( 'chosen_payment_method' );
     if ( $chosen_gateway === 'cod' ) {
-        $cart->add_fee( 'Plata la livrare', 1.99, false );
+        $cart->add_fee( 'Plata la livrare', 9.99, false );  // RON (approx 1.99 EUR)
     }
 });
 
