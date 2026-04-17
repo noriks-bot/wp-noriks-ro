@@ -731,13 +731,19 @@ add_filter( 'woocommerce_order_button_text', function() { return 'Comandă'; });
  * Payment gateway order: COD → Stripe → PayPal
  */
 /**
- * Override COD gateway title to show fee in RON
+ * Override COD gateway — force title without EUR price, show RON fee badge instead
  */
 add_filter( 'woocommerce_gateway_title', function( $title, $id ) {
     if ( $id === 'cod' ) {
         return 'Plata la livrare';
     }
     return $title;
+}, 10, 2 );
+add_filter( 'woocommerce_gateway_icon', function( $icon, $id ) {
+    if ( $id === 'cod' ) {
+        return '<span style="display:inline-block;padding:3px 10px;border-radius:5px;background:#e8e8e8;color:#555;font-size:13px;font-weight:500;margin-left:8px;vertical-align:middle;">9,99 lei</span>';
+    }
+    return $icon;
 }, 10, 2 );
 
 add_filter( 'woocommerce_available_payment_gateways', function( $gw ) {
