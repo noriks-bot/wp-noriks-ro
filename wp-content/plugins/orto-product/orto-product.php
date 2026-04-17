@@ -50,16 +50,12 @@ function gck_get_bundle_offers( $product_id = null ) : array {
         $tekst1 = trim((string)($row['tekst_1'] ?? ''));
         $title  = trim($tekst1 . ' ');
 
-        /* Read raw from postmeta — ACF Number field strips decimals */
-        $mi = $idx - 1;
-        $regular = floatval(get_post_meta($product_id, '_singlepp_orto_pairs_' . $mi . '_cena_1', true));
-        $sale    = floatval(get_post_meta($product_id, '_singlepp_orto_pairs_' . $mi . '_cena_2', true));
-        if ($regular == 0 && isset($row['cena_1'])) $regular = floatval($row['cena_1']);
-        if ($sale == 0 && isset($row['cena_2'])) $sale = floatval($row['cena_2']);
+        $regular = isset($row['cena_1']) ? (float) $row['cena_1'] : 0;
+        $sale    = isset($row['cena_2']) ? (float) $row['cena_2'] : 0;
         if ( $sale <= 0 ) continue;
 
         $saving_amount = $regular - $sale;
-        $saving_text   = "Economie totală " . number_format($saving_amount, 2, ',', '.') . " lei";
+        $saving_text   = "Economie totală " . number_format($saving_amount, 2, '.', '') . " lei";
 
         $p1  = trim((string)($row['p1'] ?? ''));
         $p2  = trim((string)($row['p2'] ?? ''));
@@ -74,9 +70,9 @@ function gck_get_bundle_offers( $product_id = null ) : array {
                 "id"     => $offer_id,
                 "qty"    => $qty,
                 "title"  => $title,
-                "per"    => number_format($sale, 2, ',', '.'),
-                "total"  => number_format($sale, 2, ',', '.'),
-                "regular" => number_format($regular, 2, ',', '.'), // cena_1
+                "per"    => number_format($sale, 2, '.', ''),
+                "total"  => number_format($sale, 2, '.', ''),
+                "regular" => number_format($regular, 2, '.', ''), // cena_1
                 "saving" => $saving_text,
                 "p1"     => $p1,
                 "p2"     => $p2,
@@ -93,9 +89,9 @@ function gck_get_bundle_offers( $product_id = null ) : array {
             "id"     => $offer_id,
             "qty"    => $qty,
             "title"  => $title,
-            "per"    => number_format($per_item_fixed, 2, ',', '.'),
-            "total"  => number_format($sale, 2, ',', '.'),
-            "regular" => number_format($regular, 2, ',', '.'), // cena_1
+            "per"    => number_format($per_item_fixed, 2, '.', ''),
+            "total"  => number_format($sale, 2, '.', ''),
+            "regular" => number_format($regular, 2, '.', ''), // cena_1
             "saving" => $saving_text,
             "p1"     => $p1,
             "p2"     => $p2,
@@ -782,7 +778,7 @@ function gck_render_bundle_selector() {
     && !has_term( array( 'starter-paketi' ), 'product_cat', $product_id ) 
     
     )  :  ?>
-                — <span class="bundle-option-title"><?php echo number_format( (float) $data['per'], 2, ',', '.' ); ?> lei / buc</span>
+                — <span class="bundle-option-title"><?php echo number_format( (float) $data['per'], 2 ); ?> lei / buc</span>
                 
                 
                 <?php endif; ?>
@@ -793,7 +789,7 @@ function gck_render_bundle_selector() {
                 <!--
                 <div class="bundle-total-line">
                     <span style="font-weight:normal;">Total:</span>
-                    <span class="line-total"><?php echo number_format( (float) $data['total'], 2, ',', '.' ); ?> lei</span>
+                    <span class="line-total"><?php echo number_format( (float) $data['total'], 2 ); ?> lei</span>
                 </div>
 
 -->
@@ -803,11 +799,11 @@ function gck_render_bundle_selector() {
 
     <?php if ( ! empty($data['regular']) && (float)$data['regular'] > (float)$data['total'] ) : ?>
         <span class="gck-regular-price">
-            <?php echo number_format( (float) $data['regular'], 2, ',', '.' ); ?> lei
+            <?php echo number_format( (float) $data['regular'], 2 ); ?> lei
         </span>
     <?php endif; ?>
 
-    <span class="line-total"><?php echo number_format( (float) $data['total'], 2, ',', '.' ); ?> lei</span>
+    <span class="line-total"><?php echo number_format( (float) $data['total'], 2 ); ?> lei</span>
 </div>
 
 
@@ -994,7 +990,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const total = selectedRadio.dataset.total;
         const priceElem = document.querySelector('.cart .summary .price .woocommerce-Price-amount');
         if (priceElem && total) {
-            priceElem.innerHTML = total + ' lei';
+            priceElem.innerHTML = total.replace('.', ',') + ' lei';
         }
     }
 
