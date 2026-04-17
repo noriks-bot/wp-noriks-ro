@@ -339,17 +339,12 @@ add_action( 'wp_footer', function() {
       color: #707070 !important;
       text-transform: uppercase !important;
     }
-    /* ===== Select2 dropdown — remove gap between input and options ===== */
-    .select2-container--open .select2-dropdown {
-      margin-top: 0 !important;
-      border-top: 1px solid #c9c9c9 !important;
-      top: 0 !important;
-    }
+    /* ===== Select2 dropdown — tight to input ===== */
     .select2-container--open .select2-dropdown--below {
-      top: 0 !important;
+      margin-top: -2px !important;
     }
-    .select2-container .select2-dropdown {
-      position: absolute !important;
+    .select2-container--open .select2-dropdown--above {
+      margin-bottom: -2px !important;
     }
     .select2-search--dropdown {
       padding: 4px 8px !important;

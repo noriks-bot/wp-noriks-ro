@@ -37,8 +37,8 @@ jQuery(function($){
   }
 
   // Init Select2 on county and locality
-  $('#billing_county').select2($.extend(s2config('Nu există rezultate'), { dropdownParent: $('#billing_county_field') }));
-  $('#billing_locality').select2($.extend(s2config('Selectați mai întâi județul'), { dropdownParent: $('#billing_locality_field') }));
+  $('#billing_county').select2(s2config('Nu există rezultate'));
+  $('#billing_locality').select2(s2config('Selectați mai întâi județul'));
 
   // Load locality data
   $.getJSON(jsonUrl, function(data) {
@@ -96,10 +96,10 @@ jQuery(function($){
   $(document.body).on('updated_checkout', function() {
     reorderFields();
     if (!$('#billing_county').data('select2')) {
-      $('#billing_county').select2($.extend(s2config('Nu există rezultate'), { dropdownParent: $('#billing_county_field') }));
+      $('#billing_county').select2(s2config('Nu există rezultate'));
     }
     if (!$('#billing_locality').data('select2')) {
-      $('#billing_locality').select2($.extend(s2config('Selectați mai întâi județul'), { dropdownParent: $('#billing_locality_field') }));
+      $('#billing_locality').select2(s2config('Selectați mai întâi județul'));
     }
   });
 });
