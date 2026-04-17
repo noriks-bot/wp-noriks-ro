@@ -752,7 +752,7 @@ $hide_secondary    = get_post_meta(get_the_ID(), '_landigs_hide_secondary', true
 $offer_options     = get_post_meta(get_the_ID(), '_landigs_offer_options', true);
 
 if ($primary_label === '') {
-    $primary_label = 'Barva';
+    $primary_label = 'Culoare';
 }
 
 if ($secondary_label === '') {

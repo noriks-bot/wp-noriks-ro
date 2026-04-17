@@ -1046,3 +1046,15 @@ function noriks_term_group( $group ) {
     return $groups[ $group ] ?? array();
 }
 
+
+// Override WC attribute labels for RO
+add_filter('woocommerce_attribute_label', function($label, $name, $product) {
+    $map = array(
+        'barva' => 'Culoare',
+        'boja' => 'Culoare',
+        'velicina' => 'Mărime',
+        'vel' => 'Mărime',
+    );
+    $key = strtolower($name);
+    return isset($map[$key]) ? $map[$key] : $label;
+}, 10, 3);

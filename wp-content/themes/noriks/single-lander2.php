@@ -976,7 +976,7 @@ Individualni rezultati mogu se razlikovati. </em>
                 </h6>
        
                 <h6>
-                 Najbolje što muškarac može nositi.
+                 Cei mai buni boxeri pe care îi vei purta vreodată.
                 </h6>
            
               </div>

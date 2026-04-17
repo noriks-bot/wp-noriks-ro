@@ -83,12 +83,12 @@ function noriks_render_landigs_meta_box($post) {
     $fields = array(
         '_landigs_target_product_id'  => '',
         '_landigs_target_product_url' => '',
-        '_landigs_primary_label'      => 'Barva',
+        '_landigs_primary_label'      => 'Culoare',
         '_landigs_primary_options'    => "Črna|#000000\nBela|#f5f5f5\nSiva|#9ca3af\nTemno modra|#243647\nRjava|#7c5a3c\nOlivna|#607d33",
         '_landigs_secondary_label'    => 'Velikost',
         '_landigs_secondary_options'  => "S\nM\nL\nXL\nXXL\n3XL\n4XL",
         '_landigs_hide_secondary'     => '0',
-        '_landigs_offer_options'      => "1|1 majica|odličen začetni paket 89,99 lei|PRIHRANITE 49%\n2|2 majici|najboljše razmerje med ceno in količino 179,99 lei|PRIHRANITE 59%\n3|3 majice|največji prihranek na kos 269,99 lei|PRIHRANITE 62%\n5|5 majic|največji paket za maksimalni prihranek 499,99 lei|PRIHRANITE 73%",
+        '_landigs_offer_options'      => "1|1 tricou|pachet de start excelent 89,99 lei|ECONOMISIȚI 49%\n2|2 tricouri|cel mai bun raport preț-cantitate 179,99 lei|ECONOMISIȚI 59%\n3|3 tricouri|cea mai mare economie per bucată 269,99 lei|ECONOMISIȚI 62%\n5|5 tricouri|pachetul maxim pentru economie maximă 499,99 lei|ECONOMISIȚI 73%",
     );
 
     echo '<table class="form-table"><tbody>';
@@ -184,12 +184,12 @@ function noriks_ensure_default_step_landing() {
 
     update_post_meta($post_id, '_landigs_target_product_id', 3421);
     update_post_meta($post_id, '_landigs_target_product_url', home_url('/ro/product/noriks-majica/'));
-    update_post_meta($post_id, '_landigs_primary_label', 'Barva');
+    update_post_meta($post_id, '_landigs_primary_label', 'Culoare');
     update_post_meta($post_id, '_landigs_primary_options', "Črna|#000000\nBela|#f5f5f5\nSiva|#9ca3af\nTemno modra|#243647\nRjava|#7c5a3c\nOlivna|#607d33");
     update_post_meta($post_id, '_landigs_secondary_label', 'Velikost');
     update_post_meta($post_id, '_landigs_secondary_options', "S\nM\nL\nXL\nXXL\n3XL\n4XL");
     update_post_meta($post_id, '_landigs_hide_secondary', '0');
-    update_post_meta($post_id, '_landigs_offer_options', "1|1 majica|odličen začetni paket 89,99 lei|PRIHRANITE 49%\n2|2 majici|najboljše razmerje med ceno in količino 179,99 lei|PRIHRANITE 59%\n3|3 majice|največji prihranek na kos 269,99 lei|PRIHRANITE 62%\n5|5 majic|največji paket za maksimalni prihranek 499,99 lei|PRIHRANITE 73%");
+    update_post_meta($post_id, '_landigs_offer_options', "1|1 tricou|pachet de start excelent 89,99 lei|ECONOMISIȚI 49%\n2|2 tricouri|cel mai bun raport preț-cantitate 179,99 lei|ECONOMISIȚI 59%\n3|3 tricouri|cea mai mare economie per bucată 269,99 lei|ECONOMISIȚI 62%\n5|5 tricouri|pachetul maxim pentru economie maximă 499,99 lei|ECONOMISIȚI 73%");
     flush_rewrite_rules(false);
 }
 
@@ -486,7 +486,7 @@ function noriks_add_collection_term_fields() {
         <input type="text" id="noriks-collection-bottom-banner-button-url" name="noriks_collection_bottom_banner_button_url" value="">
     </div>
     <div class="form-field term-group">
-        <label for="noriks-collection-bottom-banner-bg-color"><?php esc_html_e('Barva ozadja spodnjega bannerja', 'textdomain'); ?></label>
+        <label for="noriks-collection-bottom-banner-bg-color"><?php esc_html_e('Culoare fundal banner inferior', 'textdomain'); ?></label>
         <input type="color" id="noriks-collection-bottom-banner-bg-color" name="noriks_collection_bottom_banner_bg_color" value="#f0eaea">
     </div>
     <div class="form-field term-group">
@@ -589,7 +589,7 @@ function noriks_edit_collection_term_fields($term) {
         <td><input type="text" id="noriks-collection-bottom-banner-button-url" name="noriks_collection_bottom_banner_button_url" value="<?php echo esc_attr($bottom_banner_button_url); ?>" class="large-text"></td>
     </tr>
     <tr class="form-field term-group-wrap">
-        <th scope="row"><label for="noriks-collection-bottom-banner-bg-color"><?php esc_html_e('Barva ozadja spodnjega bannerja', 'textdomain'); ?></label></th>
+        <th scope="row"><label for="noriks-collection-bottom-banner-bg-color"><?php esc_html_e('Culoare fundal banner inferior', 'textdomain'); ?></label></th>
         <td><input type="color" id="noriks-collection-bottom-banner-bg-color" name="noriks_collection_bottom_banner_bg_color" value="<?php echo esc_attr($bottom_banner_bg_color ? $bottom_banner_bg_color : '#f0eaea'); ?>"></td>
     </tr>
     <tr class="form-field term-group-wrap">
