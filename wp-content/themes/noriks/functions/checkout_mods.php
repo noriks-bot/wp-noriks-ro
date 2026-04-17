@@ -315,8 +315,8 @@ add_action( 'wp_footer', function() {
     <script id="noriks-checkout-validation">
     jQuery(function($){
       var messages = {
-        required: '\u2715 Informație obligatorie',
-        billing_address_2: '\u2715 Dacă nu aveți număr, scrieți BB',
+        required: '\u2715 Câmp obligatoriu',
+        billing_address_2: '\u2715 Dacă nu aveți număr, introduceți F.N.',
       };
       var submitted = false; /* only validate after first submit attempt */
       /* Set submitted=true when WC native button is clicked */
@@ -465,18 +465,18 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_postcode']['label'] = 'Cod poștal';
     $fields['billing']['billing_postcode']['placeholder'] = 'Cod poștal';
     $fields['billing']['billing_city']['label'] = 'Oraș';
-    $fields['billing']['billing_city']['placeholder'] = 'Alege orașul';
+    $fields['billing']['billing_city']['placeholder'] = 'Oraș';
     $fields['billing']['billing_phone']['label'] = 'Telefon';
-    $fields['billing']['billing_phone']['placeholder'] = 'Număr de telefon';
+    $fields['billing']['billing_phone']['placeholder'] = 'Număr de telefon mobil';
     $fields['billing']['billing_phone']['required'] = true;
     /* Description injected via JS to survive update_checkout AJAX re-renders */
     // $fields['billing']['billing_phone']['description'] = '...';
     $fields['billing']['billing_email']['label'] = 'Adresă de e-mail';
     $fields['billing']['billing_email']['placeholder'] = 'Adresă de e-mail';
     /* Description injected via JS to survive update_checkout AJAX re-renders */
-    // $fields['billing']['billing_email']['description'] = 'Za potvrdu narudžbe i praćenje pošiljke';
+    // $fields['billing']['billing_email']['description'] = 'Pentru confirmarea comenzii și urmărirea coletului';
     $fields['billing']['billing_email']['required'] = true;
-    $fields['billing']['billing_country']['default'] = 'RO';
+    $fields['billing']['billing_country']['default'] = 'HR';
     unset( $fields['billing']['billing_company'] );
 
     // Vigoshop CSS classes
@@ -502,7 +502,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
  */
 add_filter( 'woocommerce_form_field_text', function( $field, $key ) {
     if ( $key === 'billing_last_name' ) {
-        $field .= '<div class="form-row form-row-wide col-xs-12">Introduceți adresa la care veți fi disponibil(ă) <b>între 8:00 și 16:00</b>.</div>';
+        $field .= '<div class="form-row form-row-wide col-xs-12">Introduceți adresa unde veți fi disponibil <b>între 8:00 și 16:00</b>.</div>';
     }
     return $field;
 }, 10, 2 );
@@ -540,7 +540,7 @@ add_action( 'woocommerce_cart_calculate_fees', function( $cart ) {
 
     $chosen_gateway = WC()->session->get( 'chosen_payment_method' );
     if ( $chosen_gateway === 'cod' ) {
-        $cart->add_fee( 'Plată ramburs', 1.99, false );
+        $cart->add_fee( 'Plata la livrare', 1.99, false );
     }
 });
 
@@ -591,11 +591,15 @@ add_action('woocommerce_review_order_before_submit', function(){
             method:'POST',
             body:new URLSearchParams({coupon_code:code,security:'<?php echo wp_create_nonce("apply-coupon"); ?>'}),
             headers:{'Content-Type':'application/x-www-form-urlencoded'}
-        }).then(function(r){return r.text();}).then(function(html){
+        }).then(function(r){
+            var ok=r.ok;return r.text().then(function(html){return{ok:ok,html:html};});
+        }).then(function(res){
             msg.style.display='block';
-            if(html.indexOf('error')!==-1){
+            var isError=!res.ok||res.html.indexOf('error')!==-1||res.html.indexOf('ne postoji')!==-1||res.html.indexOf('nije valjan')!==-1||res.html.indexOf('removed')!==-1;
+            if(isError){
                 msg.style.background='#fde8e8';msg.style.color='#c00';
-                msg.innerHTML=html.replace(/<[^>]*>/g,'')||'Codul cuponului nu este valid.';
+                var txt=res.html.replace(/<[^>]*>/g,'').trim();
+                msg.innerHTML='❌ '+(txt||'Codul cuponului nu este valid.');
             }else{
                 msg.style.background='#e8fde8';msg.style.color='#080';
                 msg.innerHTML='✅ Cupon aplicat!';
@@ -611,7 +615,7 @@ add_action('woocommerce_review_order_before_submit', function(){
     </script>
     <?php
     endif;
-    echo '<h3 class="place-order-title" style="display:block;margin:15px 0 10px;">Sumarul comenzii</h3>';
+    echo '<h3 class="place-order-title" style="display:block;margin:15px 0 10px;">Rezumatul comenzii</h3>';
     echo '<div class="vigo-checkout-total order-total shop_table" style="margin-bottom:20px;">';
     woocommerce_order_review();
     echo '</div>';
@@ -646,7 +650,7 @@ add_filter('woocommerce_checkout_posted_data', function($data){
 });
 
 /**
- * Validate billing_address_2 (kućni broj) is required
+ * Validate billing_address_2 (număr) is required
  */
 add_action('woocommerce_checkout_process', function(){
     if ( empty( $_POST['billing_address_2'] ) ) {
