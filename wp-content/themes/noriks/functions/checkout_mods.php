@@ -258,6 +258,35 @@ add_action( 'wp_footer', function() {
       margin-bottom: 16px !important;
     }
 
+    /* ===== BL/SC/ET/AP — 4 columns in a row ===== */
+    body.woocommerce-checkout #billing_bl_field,
+    body.woocommerce-checkout #billing_sc_field,
+    body.woocommerce-checkout #billing_et_field,
+    body.woocommerce-checkout #billing_ap_field {
+      width: 24% !important;
+      display: inline-block !important;
+      vertical-align: top !important;
+      margin-right: 1% !important;
+      float: none !important;
+    }
+    body.woocommerce-checkout #billing_ap_field {
+      margin-right: 0 !important;
+    }
+    /* Stradă + Nr side by side */
+    body.woocommerce-checkout #billing_address_1_field {
+      width: 65% !important;
+      display: inline-block !important;
+      vertical-align: top !important;
+      margin-right: 2% !important;
+      float: none !important;
+    }
+    body.woocommerce-checkout #billing_address_2_field {
+      width: 33% !important;
+      display: inline-block !important;
+      vertical-align: top !important;
+      float: none !important;
+    }
+
     /* ===== FIELD VALIDATION STATES ===== */
     /* Override WC default validation styles so ours always win */
     body.woocommerce-checkout .form-row.noriks-invalid.woocommerce-validated input,
@@ -438,60 +467,98 @@ add_filter( 'body_class', function( $classes ) {
 });
 
 /**
- * WC checkout field config — match vigoshop HR layout
+ * WC checkout field config — match vigoshop RO layout
+ * RO has: phone → email → name → judet (state) → localitate (city) → stradă → nr → BL/SC/ET/AP → postcode
  */
 add_filter( 'woocommerce_checkout_fields', function( $fields ) {
-    // Order — match vigoshop: name → address → phone → email
+    // Order — match vigoshop RO: phone → email → name → state → city → address → postcode
     $fields['billing']['billing_phone']['priority']       = 10;
     $fields['billing']['billing_email']['priority']       = 20;
     $fields['billing']['billing_first_name']['priority']  = 30;
     $fields['billing']['billing_last_name']['priority']   = 40;
-    $fields['billing']['billing_address_1']['priority']   = 50;
-    $fields['billing']['billing_address_2']['priority']   = 60;
-    $fields['billing']['billing_postcode']['priority']    = 70;
-    $fields['billing']['billing_city']['priority']        = 80;
-    // phone/email priorities already set above (10/20)
+    $fields['billing']['billing_state']['priority']       = 50;
+    $fields['billing']['billing_city']['priority']        = 55;
+    $fields['billing']['billing_address_1']['priority']   = 60;
+    $fields['billing']['billing_address_2']['priority']   = 65;
+    $fields['billing']['billing_postcode']['priority']    = 90;
 
     // Labels, placeholders, required
     $fields['billing']['billing_first_name']['label'] = 'Prenume';
     $fields['billing']['billing_first_name']['placeholder'] = 'Prenume';
     $fields['billing']['billing_last_name']['label'] = 'Nume';
     $fields['billing']['billing_last_name']['placeholder'] = 'Nume';
+    $fields['billing']['billing_state']['label'] = 'Județ';
+    $fields['billing']['billing_state']['placeholder'] = 'Alege județ';
+    $fields['billing']['billing_state']['required'] = true;
+    $fields['billing']['billing_city']['label'] = 'Localitate';
+    $fields['billing']['billing_city']['placeholder'] = 'Alege localitate';
+    $fields['billing']['billing_city']['required'] = true;
     $fields['billing']['billing_address_1']['label'] = 'Stradă';
     $fields['billing']['billing_address_1']['placeholder'] = 'Stradă';
-    $fields['billing']['billing_address_2']['label'] = 'Număr';
-    $fields['billing']['billing_address_2']['placeholder'] = 'Număr';
+    $fields['billing']['billing_address_2']['label'] = 'Nr';
+    $fields['billing']['billing_address_2']['placeholder'] = 'Nr';
     $fields['billing']['billing_address_2']['required'] = true;
     $fields['billing']['billing_postcode']['label'] = 'Cod poștal';
     $fields['billing']['billing_postcode']['placeholder'] = 'Cod poștal';
-    $fields['billing']['billing_city']['label'] = 'Oraș';
-    $fields['billing']['billing_city']['placeholder'] = 'Oraș';
     $fields['billing']['billing_phone']['label'] = 'Telefon';
     $fields['billing']['billing_phone']['placeholder'] = 'Număr de telefon mobil';
     $fields['billing']['billing_phone']['required'] = true;
-    /* Description injected via JS to survive update_checkout AJAX re-renders */
-    // $fields['billing']['billing_phone']['description'] = '...';
     $fields['billing']['billing_email']['label'] = 'Adresă de e-mail';
     $fields['billing']['billing_email']['placeholder'] = 'Adresă de e-mail';
-    /* Description injected via JS to survive update_checkout AJAX re-renders */
-    // $fields['billing']['billing_email']['description'] = 'Pentru confirmarea comenzii și urmărirea coletului';
     $fields['billing']['billing_email']['required'] = true;
-    $fields['billing']['billing_country']['default'] = 'HR';
+    $fields['billing']['billing_country']['default'] = 'RO';
     unset( $fields['billing']['billing_company'] );
+
+    // Add BL, SC, ET, AP fields for Romanian block addresses
+    $fields['billing']['billing_bl'] = array(
+        'label'       => 'BL',
+        'placeholder' => 'BL',
+        'required'    => false,
+        'class'       => array('form-row','form-group','col-xs-3'),
+        'input_class' => array('input-text','form-input'),
+        'priority'    => 70,
+    );
+    $fields['billing']['billing_sc'] = array(
+        'label'       => 'SC',
+        'placeholder' => 'SC',
+        'required'    => false,
+        'class'       => array('form-row','form-group','col-xs-3'),
+        'input_class' => array('input-text','form-input'),
+        'priority'    => 75,
+    );
+    $fields['billing']['billing_et'] = array(
+        'label'       => 'ET',
+        'placeholder' => 'ET',
+        'required'    => false,
+        'class'       => array('form-row','form-group','col-xs-3'),
+        'input_class' => array('input-text','form-input'),
+        'priority'    => 80,
+    );
+    $fields['billing']['billing_ap'] = array(
+        'label'       => 'AP',
+        'placeholder' => 'AP',
+        'required'    => false,
+        'class'       => array('form-row','form-group','col-xs-3'),
+        'input_class' => array('input-text','form-input'),
+        'priority'    => 85,
+    );
 
     // Vigoshop CSS classes
     $fields['billing']['billing_first_name']['class'] = array('form-row','form-row-first','form-group','col-xs-12','validate-required');
     $fields['billing']['billing_last_name']['class']  = array('form-row','form-row-last','form-group','col-xs-12','validate-required');
-    $fields['billing']['billing_address_1']['class']  = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required');
-    $fields['billing']['billing_address_2']['class']  = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required');
+    $fields['billing']['billing_state']['class']      = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required','validate-state');
+    $fields['billing']['billing_city']['class']        = array('form-row','form-row-wide','address-field','dropdown','form-group','col-xs-12','validate-required');
+    $fields['billing']['billing_address_1']['class']  = array('form-row','form-row-first','address-field','form-group','col-xs-8','validate-required');
+    $fields['billing']['billing_address_2']['class']  = array('form-row','form-row-last','address-field','form-group','col-xs-4','validate-required');
     $fields['billing']['billing_postcode']['class']   = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required','validate-postcode');
-    $fields['billing']['billing_city']['class']       = array('form-row','form-row-wide','dropdown','form-group','col-xs-12','validate-required');
     $fields['billing']['billing_phone']['class']      = array('form-row','form-row-wide','form-group','col-xs-12','validate-required','validate-phone');
     $fields['billing']['billing_email']['class']      = array('form-row','form-row-wide','form-group','col-xs-12','validate-email');
 
     // Input class — vigoshop uses 'form-input' alongside WC's 'input-text'
     foreach ( $fields['billing'] as &$f ) {
-        $f['input_class'] = array( 'input-text', 'form-input' );
+        if ( !isset($f['input_class']) ) {
+            $f['input_class'] = array( 'input-text', 'form-input' );
+        }
     }
 
     return $fields;
@@ -502,7 +569,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
  */
 add_filter( 'woocommerce_form_field_text', function( $field, $key ) {
     if ( $key === 'billing_last_name' ) {
-        $field .= '<div class="form-row form-row-wide col-xs-12">Introduceți adresa unde veți fi disponibil <b>între 8:00 și 16:00</b>.</div>';
+        $field .= '<div class="form-row form-row-wide col-xs-12">Vă rugăm să introduceți adresa la care vă aflați <b>între orele 9:00 și 17:00</b>.</div>';
     }
     return $field;
 }, 10, 2 );
@@ -655,5 +722,35 @@ add_filter('woocommerce_checkout_posted_data', function($data){
 add_action('woocommerce_checkout_process', function(){
     if ( empty( $_POST['billing_address_2'] ) ) {
         wc_add_notice( 'Vă rugăm introduceți numărul.', 'error' );
+    }
+});
+
+/**
+ * Save BL/SC/ET/AP custom fields to order meta
+ */
+add_action('woocommerce_checkout_update_order_meta', function( $order_id ) {
+    $custom = array('billing_bl', 'billing_sc', 'billing_et', 'billing_ap');
+    foreach ( $custom as $key ) {
+        if ( ! empty( $_POST[$key] ) ) {
+            update_post_meta( $order_id, '_' . $key, sanitize_text_field( $_POST[$key] ) );
+        }
+    }
+});
+
+/**
+ * Display BL/SC/ET/AP in admin order page
+ */
+add_action('woocommerce_admin_order_data_after_billing_address', function( $order ) {
+    $bl = get_post_meta( $order->get_id(), '_billing_bl', true );
+    $sc = get_post_meta( $order->get_id(), '_billing_sc', true );
+    $et = get_post_meta( $order->get_id(), '_billing_et', true );
+    $ap = get_post_meta( $order->get_id(), '_billing_ap', true );
+    $parts = array();
+    if ($bl) $parts[] = 'BL: ' . esc_html($bl);
+    if ($sc) $parts[] = 'SC: ' . esc_html($sc);
+    if ($et) $parts[] = 'ET: ' . esc_html($et);
+    if ($ap) $parts[] = 'AP: ' . esc_html($ap);
+    if ($parts) {
+        echo '<p><strong>Bloc:</strong> ' . implode(', ', $parts) . '</p>';
     }
 });
