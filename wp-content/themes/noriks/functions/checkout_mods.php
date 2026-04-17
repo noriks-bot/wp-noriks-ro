@@ -739,12 +739,7 @@ add_filter( 'woocommerce_gateway_title', function( $title, $id ) {
     }
     return $title;
 }, 10, 2 );
-add_filter( 'woocommerce_gateway_icon', function( $icon, $id ) {
-    if ( $id === 'cod' ) {
-        return '<span style="display:inline-block;padding:3px 10px;border-radius:5px;background:#e8e8e8;color:#555;font-size:13px;font-weight:500;margin-left:8px;vertical-align:middle;">9,99 lei</span>';
-    }
-    return $icon;
-}, 10, 2 );
+
 
 add_filter( 'woocommerce_available_payment_gateways', function( $gw ) {
     $order = array('cod','stripe_cc','ppcp-gateway');
