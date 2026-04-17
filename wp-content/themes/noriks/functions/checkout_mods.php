@@ -63,12 +63,7 @@ add_action( 'wp_enqueue_scripts', function() {
     $file = $dir . '/css/checkout.css';
     wp_enqueue_style( 'noriks-checkout', $uri . '/css/checkout.css', $prev, file_exists($file) ? md5_file($file) : '1' );
 
-    // RO localități JS — loads cities per județ
-    $js_file = $dir . '/js/ro-checkout-localitati.js';
-    wp_enqueue_script( 'ro-checkout-localitati', $uri . '/js/ro-checkout-localitati.js', array('jquery','select2'), file_exists($js_file) ? filemtime($js_file) : '1', true );
-    wp_localize_script( 'ro-checkout-localitati', 'roLocalitatiConfig', array(
-        'jsonUrl' => $uri . '/js/ro-localitati.json',
-    ));
+
 
 }, 9999 );
 
@@ -308,27 +303,26 @@ add_action( 'wp_footer', function() {
     }
 
     /* ===== Județ / Localitate dropdowns ===== */
-    body.woocommerce-checkout #billing_state_field,
-    body.woocommerce-checkout #billing_city_field {
+    body.woocommerce-checkout #billing_state_field {
       width: 100% !important;
       display: block !important;
     }
-    body.woocommerce-checkout #billing_state_field .select2-selection,
-    body.woocommerce-checkout #billing_city_field .select2-selection {
+    body.woocommerce-checkout #billing_city_field {
+      width: 100% !important;
+    }
+    body.woocommerce-checkout #billing_state_field .select2-selection {
       min-height: 50px !important;
       border: 1.5px solid #c9c9c9 !important;
       border-radius: 4px !important;
       box-shadow: inset 1px 1px 3px 0 rgba(0,0,0,0.15) !important;
       padding: 8px 12px !important;
     }
-    body.woocommerce-checkout #billing_state_field .select2-selection__rendered,
-    body.woocommerce-checkout #billing_city_field .select2-selection__rendered {
+    body.woocommerce-checkout #billing_state_field .select2-selection__rendered {
       line-height: 32px !important;
       font-size: 16px !important;
       color: #333 !important;
     }
-    body.woocommerce-checkout #billing_state_field .select2-selection__arrow,
-    body.woocommerce-checkout #billing_city_field .select2-selection__arrow {
+    body.woocommerce-checkout #billing_state_field .select2-selection__arrow {
       height: 50px !important;
     }
     /* Hide billing_country — force RO */
@@ -540,7 +534,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_state']['placeholder'] = 'Alege județ';
     $fields['billing']['billing_state']['required'] = true;
     $fields['billing']['billing_city']['label'] = 'Localitate';
-    $fields['billing']['billing_city']['placeholder'] = 'Alege localitate';
+    $fields['billing']['billing_city']['placeholder'] = 'Localitate';
     $fields['billing']['billing_city']['required'] = true;
     $fields['billing']['billing_address_1']['label'] = 'Stradă';
     $fields['billing']['billing_address_1']['placeholder'] = 'Stradă';
@@ -596,7 +590,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_first_name']['class'] = array('form-row','form-row-first','form-group','col-xs-12','validate-required');
     $fields['billing']['billing_last_name']['class']  = array('form-row','form-row-last','form-group','col-xs-12','validate-required');
     $fields['billing']['billing_state']['class']      = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required','validate-state');
-    $fields['billing']['billing_city']['class']        = array('form-row','form-row-wide','address-field','dropdown','form-group','col-xs-12','validate-required');
+    $fields['billing']['billing_city']['class']        = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required');
     $fields['billing']['billing_address_1']['class']  = array('form-row','form-row-first','address-field','form-group','col-xs-8','validate-required');
     $fields['billing']['billing_address_2']['class']  = array('form-row','form-row-last','address-field','form-group','col-xs-4','validate-required');
     $fields['billing']['billing_postcode']['class']   = array('form-row','form-row-wide','address-field','form-group','col-xs-12','validate-required','validate-postcode');
