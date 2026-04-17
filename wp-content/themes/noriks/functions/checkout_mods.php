@@ -279,18 +279,19 @@ add_action( 'wp_footer', function() {
       margin-right: 2% !important;
     }
 
-    /* ===== Stradă + Nr side by side (73/25) ===== */
+    /* ===== Stradă + Nr side by side — Nr same width as BL/SC/ET/AP ===== */
     body.woocommerce-checkout #billing_address_1_field {
-      width: 73% !important;
+      width: 74.5% !important;
       display: inline-block !important;
       vertical-align: top !important;
       margin-right: 2% !important;
       float: none !important;
     }
     body.woocommerce-checkout #billing_address_2_field {
-      width: 25% !important;
+      width: 23.5% !important;
       display: inline-block !important;
       vertical-align: top !important;
+      margin-right: 0 !important;
       float: none !important;
     }
 
