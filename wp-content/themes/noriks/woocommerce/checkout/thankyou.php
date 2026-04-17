@@ -51,7 +51,7 @@ if ( $upsell_is_tricouri ) {
     );
     $upsell_title_text = 'Adaugă tricouri acum – 50% reducere';
 } else {
-    $upsell_product_id = 2781; // Crne Boksarice
+    $upsell_product_id = 2781; // Boxeri Negri
     $upsell_name       = 'Boxeri Negri';
     $upsell_qty_prices = array( 1 => 7.99, 3 => 19.99, 5 => 29.99 );
     $upsell_qty_names  = array( 1 => '1x Boxeri Negri', 3 => '3x Boxeri Negri', 5 => '5x Boxeri Negri' );
@@ -515,7 +515,7 @@ body.woocommerce-order-received .woocommerce {
                             $chk = $is_mid ? ' checked' : '';
                         ?>
                         <label class="ty-qty-btn<?php echo $cls; ?>" style="flex:1;text-align:center;padding:10px 0;border:2px solid <?php echo $border; ?>;border-radius:4px;font-weight:700;font-size:14px;cursor:pointer;background:<?php echo $bg; ?>;color:#000;">
-                            <input type="radio" name="ty_qty" value="<?php echo $q; ?>"<?php echo $chk; ?> style="display:none;"> <?php echo $q; ?>x kom
+                            <input type="radio" name="ty_qty" value="<?php echo $q; ?>"<?php echo $chk; ?> style="display:none;"> <?php echo $q; ?>x buc
                         </label>
                         <?php endforeach; ?>
                     </div>
