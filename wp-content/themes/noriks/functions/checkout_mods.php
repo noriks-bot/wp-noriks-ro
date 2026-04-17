@@ -63,6 +63,13 @@ add_action( 'wp_enqueue_scripts', function() {
     $file = $dir . '/css/checkout.css';
     wp_enqueue_style( 'noriks-checkout', $uri . '/css/checkout.css', $prev, file_exists($file) ? md5_file($file) : '1' );
 
+    // RO localități JS — loads cities per județ
+    $js_file = $dir . '/js/ro-checkout-localitati.js';
+    wp_enqueue_script( 'ro-checkout-localitati', $uri . '/js/ro-checkout-localitati.js', array('jquery','select2'), file_exists($js_file) ? filemtime($js_file) : '1', true );
+    wp_localize_script( 'ro-checkout-localitati', 'roLocalitatiConfig', array(
+        'jsonUrl' => $uri . '/js/ro-localitati.json',
+    ));
+
 }, 9999 );
 
 /**
