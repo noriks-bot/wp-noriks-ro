@@ -93,7 +93,7 @@ $topseler_text =  get_field("singlepp_bestseller_text", "options");
              $topseler_text =  "Zimska ponuda"; 
              
             else:
-                 $topseler_text =  get_field("singlepp_priceper_before","options") . " " . $tmp_price . " ".  "€ po boksericama"; 
+                 $topseler_text =  get_field("singlepp_priceper_before","options") . " " . $tmp_price . " ".  "lei per pereche"; 
             endif;
          
          

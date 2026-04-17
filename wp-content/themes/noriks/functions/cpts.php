@@ -88,7 +88,7 @@ function noriks_render_landigs_meta_box($post) {
         '_landigs_secondary_label'    => 'Velikost',
         '_landigs_secondary_options'  => "S\nM\nL\nXL\nXXL\n3XL\n4XL",
         '_landigs_hide_secondary'     => '0',
-        '_landigs_offer_options'      => "1|1 majica|odličen začetni paket 17.96€|PRIHRANITE 49%\n2|2 majici|najboljše razmerje med ceno in količino 44.28€|PRIHRANITE 59%\n3|3 majice|največji prihranek na kos 69.26€|PRIHRANITE 62%\n5|5 majic|največji paket za maksimalni prihranek 135.38€|PRIHRANITE 73%",
+        '_landigs_offer_options'      => "1|1 majica|odličen začetni paket 89,99 lei|PRIHRANITE 49%\n2|2 majici|najboljše razmerje med ceno in količino 179,99 lei|PRIHRANITE 59%\n3|3 majice|največji prihranek na kos 269,99 lei|PRIHRANITE 62%\n5|5 majic|največji paket za maksimalni prihranek 499,99 lei|PRIHRANITE 73%",
     );
 
     echo '<table class="form-table"><tbody>';
@@ -189,7 +189,7 @@ function noriks_ensure_default_step_landing() {
     update_post_meta($post_id, '_landigs_secondary_label', 'Velikost');
     update_post_meta($post_id, '_landigs_secondary_options', "S\nM\nL\nXL\nXXL\n3XL\n4XL");
     update_post_meta($post_id, '_landigs_hide_secondary', '0');
-    update_post_meta($post_id, '_landigs_offer_options', "1|1 majica|odličen začetni paket 17.96€|PRIHRANITE 49%\n2|2 majici|najboljše razmerje med ceno in količino 44.28€|PRIHRANITE 59%\n3|3 majice|največji prihranek na kos 69.26€|PRIHRANITE 62%\n5|5 majic|največji paket za maksimalni prihranek 135.38€|PRIHRANITE 73%");
+    update_post_meta($post_id, '_landigs_offer_options', "1|1 majica|odličen začetni paket 89,99 lei|PRIHRANITE 49%\n2|2 majici|najboljše razmerje med ceno in količino 179,99 lei|PRIHRANITE 59%\n3|3 majice|največji prihranek na kos 269,99 lei|PRIHRANITE 62%\n5|5 majic|največji paket za maksimalni prihranek 499,99 lei|PRIHRANITE 73%");
     flush_rewrite_rules(false);
 }
 

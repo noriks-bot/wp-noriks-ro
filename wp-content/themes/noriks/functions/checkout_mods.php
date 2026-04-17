@@ -752,7 +752,7 @@ add_filter( 'woocommerce_available_payment_gateways', function( $gw ) {
 add_filter( 'woocommerce_enable_order_notes_field', '__return_false' );
 
 /**
- * COD fee — add 1.99€ surcharge when Cash on Delivery is selected
+ * COD fee — add 9.99 lei surcharge when Cash on Delivery is selected
  */
 add_action( 'woocommerce_cart_calculate_fees', function( $cart ) {
     if ( is_admin() && ! defined( 'DOING_AJAX' ) ) return;

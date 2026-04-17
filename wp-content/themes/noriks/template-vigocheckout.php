@@ -226,7 +226,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                         </div>
                         <div class="inner-wrapper-img">
                                                         <span class="shipping_method_delivery_price tag tag--red">
-                                <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>                            </span>
+                                <span class="woocommerce-Price-amount amount"><bdi>14,99<span class="woocommerce-Price-currencySymbol">lei</span></bdi></span>                            </span>
                                                         <span class="delivery_img"><img decoding="async" class="gls standard" src="<?php echo esc_url( WC()->plugin_url() . '/assets/images/shipping_providers/gls.png' ); ?>"/></span>
                         </div>
                     </div>
@@ -261,10 +261,10 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                             <div class="f--l f--bold surprise_title">Produs surpriza</div>
                             <div class="tag_wrapper">
                                 <div class="tag tag--red">
-                                    <span class="woocommerce-Price-amount amount"><bdi>3,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>                                </div>
+                                    <span class="woocommerce-Price-amount amount"><bdi>3,99<span class="woocommerce-Price-currencySymbol">lei</span></bdi></span>                                </div>
                             </div>
                         </div>
-                        <div class="f--m c--darkgray s-top--s">U vrijednosti između 5 € i 15 €.</div>
+                        <div class="f--m c--darkgray s-top--s">În valoare între 25 lei și 75 lei.</div>
                     </div>
                     <div class="vigo-checkout-gift__img">
                         <img decoding="async" class="img" src="https://images.vigo-shop.com/general/present_responsive.svg" alt="Gift icon">
@@ -286,7 +286,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
   <input id="payment_method_cod" type="radio" class="input-radio" name="payment_method" value="cod"  checked='checked' data-order_button_text="" />
 
   <label for="payment_method_cod">
-    Plata la livrare <span class="payment-fee-not-free"><span class="woocommerce-Price-amount amount">1,99<span class="woocommerce-Price-currencySymbol">&euro;</span></span></span><div class="hs-checkout__payment-method-cod-icon-container">
+    Plata la livrare <span class="payment-fee-not-free"><span class="woocommerce-Price-amount amount">9,99<span class="woocommerce-Price-currencySymbol">lei</span></span></span><div class="hs-checkout__payment-method-cod-icon-container">
         <img decoding="async" class="hs-checkout__payment-method-cod-icon" src="https://images.vigo-shop.com/general/checkout/cod/uni_cash_on_delivery.svg" />
     </div>  </label>
   </li>
@@ -386,7 +386,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                 E-book:
             </div>
             <div class="cell-grid column-option">
-                <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>            </div>
+                <span class="woocommerce-Price-amount amount"><bdi>14,99<span class="woocommerce-Price-currencySymbol">lei</span></bdi></span>            </div>
             <div class="cell-grid column-selected">
                 /
             </div>
@@ -397,15 +397,15 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
             <div class="cell-grid column-option">
                 Gratuit            </div>
             <div class="cell-grid column-selected">
-                <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>            </div>
+                <span class="woocommerce-Price-amount amount"><bdi>14,99<span class="woocommerce-Price-currencySymbol">lei</span></bdi></span>            </div>
                         <div class="cell-grid">
                 Total comandă:
             </div>
             <div class="cell-grid totals column-option bottom">
-                <span class="totals"><span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span></span>
+                <span class="totals"><span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">lei</span></bdi></span></span>
             </div>
             <div class="cell-grid column-selected bottom">
-                <span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>            </div>
+                <span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">lei</span></bdi></span>            </div>
         </div>
     </div>
     <p class="pdf-more-info">
@@ -430,7 +430,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                                                                                 </div>
                                             </div>
                     <div class="info-price">
-                        <span class="review-sale-price"> <span class="woocommerce-Price-amount amount"><bdi>18,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span></span>                    </div>
+                        <span class="review-sale-price"> <span class="woocommerce-Price-amount amount"><bdi>18,99<span class="woocommerce-Price-currencySymbol">lei</span></bdi></span></span>                    </div>
                     <div class="review-product-remove">
                                             </div>
                 </div>
@@ -444,7 +444,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                         GLS                    </div>
                 </div>
 
-                                    <div class="review-addons-price review-sale-price"> <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>                    </div>
+                                    <div class="review-addons-price review-sale-price"> <span class="woocommerce-Price-amount amount"><bdi>14,99<span class="woocommerce-Price-currencySymbol">lei</span></bdi></span>                    </div>
                 
                 <div class="review-product-remove"></div>
 
@@ -454,7 +454,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 
         <div class="vigo-checkout-total__sum flex flex--middle border_price">
         <div class="flex__item f--l">
-            Ukupni iznos: <span class="f--bold price_total_wrapper"><span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>        </div>
+            Ukupni iznos: <span class="f--bold price_total_wrapper"><span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">lei</span></bdi></span>        </div>
     </div>
 </div>
 

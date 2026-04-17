@@ -441,9 +441,9 @@ function custom_quantity_buttons() {
                 qtyWrapper.append(`
                     <div class="label choose-your-pack"><label for="choose-your-pack">Alege pachetul tău</label></div>
                     <div class="custom-qty-buttons">
-                        <button type="button" class="qty-btn" data-qty="1">3 pack  <br/><span class="qty-off">39% OFF</span> <span class="qty-off-text">€15,75 per item</span> </button>
-                        <button type="button" class="qty-btn" data-qty="2">6 pack <br/><span class="qty-off"> 49% OFF</span><span class="qty-off-text">€15,75 per item</span></button>
-                        <button type="button" class="qty-btn" data-qty="3">9 pack <br/><span class="qty-off"> 59% OFF</span><span class="qty-off-text">€15,75 per item</span></button>
+                        <button type="button" class="qty-btn" data-qty="1">3 pack  <br/><span class="qty-off">39% OFF</span> <span class="qty-off-text">lei per bucată</span> </button>
+                        <button type="button" class="qty-btn" data-qty="2">6 pack <br/><span class="qty-off"> 49% OFF</span><span class="qty-off-text">lei per bucată</span></button>
+                        <button type="button" class="qty-btn" data-qty="3">9 pack <br/><span class="qty-off"> 59% OFF</span><span class="qty-off-text">lei per bucată</span></button>
                     </div>
                      <style>.first-qty {
                             display: block !important;
@@ -565,9 +565,9 @@ function custom_quantity_buttons() {
                 qtyWrapper.append(`
                     <div class="label choose-your-pack"><label for="choose-your-pack">Alege pachetul tău</label></div>
                     <div class="custom-qty-buttons">
-                        <button type="button" class="qty-btn" data-qty="1">2 pack  <br/><span class="qty-off">39% OFF</span> <span class="qty-off-text">€15,75 per item</span> </button>
-                        <button type="button" class="qty-btn" data-qty="2">4 pack <br/><span class="qty-off"> 49% OFF</span><span class="qty-off-text">€15,75 per item</span></button>
-                        <button type="button" class="qty-btn" data-qty="3">8 pack <br/><span class="qty-off"> 59% OFF</span><span class="qty-off-text">€15,75 per item</span></button>
+                        <button type="button" class="qty-btn" data-qty="1">2 pack  <br/><span class="qty-off">39% OFF</span> <span class="qty-off-text">lei per bucată</span> </button>
+                        <button type="button" class="qty-btn" data-qty="2">4 pack <br/><span class="qty-off"> 49% OFF</span><span class="qty-off-text">lei per bucată</span></button>
+                        <button type="button" class="qty-btn" data-qty="3">8 pack <br/><span class="qty-off"> 59% OFF</span><span class="qty-off-text">lei per bucată</span></button>
                     </div>
                      <style>.first-qty {
                             display: block !important;
@@ -594,9 +594,9 @@ function custom_quantity_buttons() {
                 qtyWrapper.append(`
                     <div class="label choose-your-pack"><label for="choose-your-pack">Alege pachetul tău</label></div>
                     <div class="custom-qty-buttons">
-                        <button type="button" class="qty-btn" data-qty="1">12 pack  <br/><span class="qty-off">39% OFF</span> <span class="qty-off-text">€15,75 per item</span> </button>
-                        <button type="button" class="qty-btn" data-qty="2">24 pack <br/><span class="qty-off"> 49% OFF</span><span class="qty-off-text">€15,75 per item</span></button>
-                        <button type="button" class="qty-btn" data-qty="3">36 pack <br/><span class="qty-off"> 59% OFF</span><span class="qty-off-text">€15,75 per item</span></button>
+                        <button type="button" class="qty-btn" data-qty="1">12 pack  <br/><span class="qty-off">39% OFF</span> <span class="qty-off-text">lei per bucată</span> </button>
+                        <button type="button" class="qty-btn" data-qty="2">24 pack <br/><span class="qty-off"> 49% OFF</span><span class="qty-off-text">lei per bucată</span></button>
+                        <button type="button" class="qty-btn" data-qty="3">36 pack <br/><span class="qty-off"> 59% OFF</span><span class="qty-off-text">lei per bucată</span></button>
                     </div>
                      <style>.first-qty {
                             display: block !important;
@@ -880,7 +880,7 @@ function custom_price_for_specific_product($price, $product) {
             $custom_price = "<span class='special-multipack-price' style='color: red;   
     font-size: 18px !important;
     color: #f83a3a;
-    letter-spacing: -0.5px !important;'>Od 13.99€</span>";
+    letter-spacing: -0.5px !important;'>De la 13,99 lei</span>";
             $regular_price = $product->get_regular_price();
 
             if ($custom_price < $regular_price) {

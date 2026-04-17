@@ -90,7 +90,7 @@ global $product;
      
        
         <img src="https://noriks.com/ro/wp-content/uploads/2025/07/footer_icon3-1.png" alt="Shipping Icon" class="feature__icon info-icon">
-          <p class="feature__text">Livrare gratuită pentru comenzi de peste 70 €</p>
+          <p class="feature__text">Livrare gratuită pentru comenzi de peste 350 lei</p>
         </div>
 
     

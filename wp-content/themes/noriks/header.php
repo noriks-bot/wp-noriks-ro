@@ -46,17 +46,17 @@
 	<div class="top-header">
   <div class="marquee">
     <div class="marquee-content">
-      <span><a href="/ro/shop">Livrare gratuită pentru comenzi de peste 70 €</a></span>
+      <span><a href="/ro/shop">Livrare gratuită pentru comenzi de peste 350 lei</a></span>
       <span><a href="/ro/shop">30 de zile fără risc - încearcă fără griji</a></span>
       <!--<span><a href="/ro/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
 
       <!-- DUPLICATED for seamless infinite loop -->
-      <span><a href="/ro/shop">Livrare gratuită pentru comenzi de peste 70 €</a></span>
+      <span><a href="/ro/shop">Livrare gratuită pentru comenzi de peste 350 lei</a></span>
       <span><a href="/ro/shop">30 de zile fără risc - încearcă fără griji</a></span>
      <!-- <span><a href="/ro/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
       
        <!-- DUPLICATED for seamless infinite loop -->
-      <span><a href="/ro/shop">Livrare gratuită pentru comenzi de peste 70 €</a></span>
+      <span><a href="/ro/shop">Livrare gratuită pentru comenzi de peste 350 lei</a></span>
       <span><a href="/ro/shop">30 de zile fără risc - încearcă fără griji</a></span>
      <!-- <span><a href="/ro/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
     </div>
