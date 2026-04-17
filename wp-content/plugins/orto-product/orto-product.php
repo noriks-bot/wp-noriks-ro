@@ -55,7 +55,7 @@ function gck_get_bundle_offers( $product_id = null ) : array {
         if ( $sale <= 0 ) continue;
 
         $saving_amount = $regular - $sale;
-        $saving_text   = "Economie totală " . number_format($saving_amount, 2, '.', '') . "€";
+        $saving_text   = "Economie totală " . number_format($saving_amount, 2, '.', '') . " lei";
 
         $p1  = trim((string)($row['p1'] ?? ''));
         $p2  = trim((string)($row['p2'] ?? ''));
@@ -778,7 +778,7 @@ function gck_render_bundle_selector() {
     && !has_term( array( 'starter-paketi' ), 'product_cat', $product_id ) 
     
     )  :  ?>
-                — <span class="bundle-option-title"><?php echo number_format( (float) $data['per'], 2 ); ?>€ / buc</span>
+                — <span class="bundle-option-title"><?php echo number_format( (float) $data['per'], 2 ); ?> lei / buc</span>
                 
                 
                 <?php endif; ?>
@@ -789,7 +789,7 @@ function gck_render_bundle_selector() {
                 <!--
                 <div class="bundle-total-line">
                     <span style="font-weight:normal;">Total:</span>
-                    <span class="line-total"><?php echo number_format( (float) $data['total'], 2 ); ?>€</span>
+                    <span class="line-total"><?php echo number_format( (float) $data['total'], 2 ); ?> lei</span>
                 </div>
 
 -->
@@ -799,11 +799,11 @@ function gck_render_bundle_selector() {
 
     <?php if ( ! empty($data['regular']) && (float)$data['regular'] > (float)$data['total'] ) : ?>
         <span class="gck-regular-price">
-            <?php echo number_format( (float) $data['regular'], 2 ); ?>€
+            <?php echo number_format( (float) $data['regular'], 2 ); ?> lei
         </span>
     <?php endif; ?>
 
-    <span class="line-total"><?php echo number_format( (float) $data['total'], 2 ); ?>€</span>
+    <span class="line-total"><?php echo number_format( (float) $data['total'], 2 ); ?> lei</span>
 </div>
 
 
@@ -990,7 +990,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const total = selectedRadio.dataset.total;
         const priceElem = document.querySelector('.cart .summary .price .woocommerce-Price-amount');
         if (priceElem && total) {
-            priceElem.innerHTML = total.replace('.', ',') + ' €';
+            priceElem.innerHTML = total.replace('.', ',') + ' lei';
         }
     }
 
