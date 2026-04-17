@@ -405,16 +405,34 @@ add_action( 'wp_footer', function() {
         billing_address_2: '\u2715 Dacă nu aveți număr, introduceți F.N.',
       };
       var submitted = false; /* only validate after first submit attempt */
-      /* Set submitted=true when WC native button is clicked */
-      $('form.checkout').on('checkout_place_order', function(){ submitted = true; });
-      $(document).on('click', '#place_order', function(){
+
+      /* Intercept submit — validate all fields before WC AJAX */
+      $('form.checkout').on('checkout_place_order', function(){
         submitted = true;
-        $(this).css('opacity','0.6').text('Se procesează...');
+        var allValid = true;
+        $('.woocommerce-checkout .form-row.validate-required, .woocommerce-checkout .form-row.validate-email, .woocommerce-checkout .form-row.validate-phone').each(function(){
+          var input = $(this).find('input, select').first();
+          if (input.length && !validateField(input[0], true)) allValid = false;
+        });
+        if (!allValid) {
+          var firstErr = $('.form-row.noriks-invalid').first();
+          if (firstErr.length) $('html, body').animate({ scrollTop: firstErr.offset().top - 100 }, 300);
+          return false;
+        }
+        $('#place_order').css('opacity','0.6').text('Se procesează...');
         $('form.checkout').css({'opacity':'0.4','pointer-events':'none','transition':'opacity 0.3s'});
+        return true;
       });
+
       $(document.body).on('checkout_error', function(){
         $('#place_order').css('opacity','1').text('Comandă');
         $('form.checkout').css({'opacity':'1','pointer-events':''});
+        submitted = true;
+        /* Re-validate all fields to show red borders */
+        $('.woocommerce-checkout .form-row.validate-required, .woocommerce-checkout .form-row.validate-email, .woocommerce-checkout .form-row.validate-phone').each(function(){
+          var input = $(this).find('input, select').first();
+          if (input.length) validateField(input[0], true);
+        });
       });
 
       function showError($row, msg) {
