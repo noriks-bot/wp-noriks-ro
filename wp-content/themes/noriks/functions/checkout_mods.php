@@ -338,6 +338,21 @@ add_action( 'wp_footer', function() {
       color: #707070 !important;
       text-transform: uppercase !important;
     }
+    /* ===== Select2 dropdown — remove gap between input and options ===== */
+    .select2-container--open .select2-dropdown {
+      margin-top: -1px !important;
+      border-top: none !important;
+    }
+    .select2-container--open .select2-dropdown--below {
+      top: 0 !important;
+    }
+    .select2-container--open .select2-dropdown--above {
+      bottom: 0 !important;
+    }
+    .select2-search--dropdown {
+      padding: 4px 8px !important;
+    }
+
     /* Hide billing_postcode — not used in RO checkout */
     body.woocommerce-checkout #billing_postcode_field {
       display: none !important;
