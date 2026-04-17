@@ -655,7 +655,7 @@
         openSidecart(trigger);
       })
       .catch(function () {
-        window.alert("Dodavanje u košaricu trenutno nije dostupno. Provjeri sidecart/plugin konfiguraciju.");
+        window.alert("Adăugarea în coș nu este disponibilă momentan.");
       });
   }
 

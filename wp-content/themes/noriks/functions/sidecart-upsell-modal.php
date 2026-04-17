@@ -178,7 +178,7 @@ function noriks_upsell_modal_markup() {
                     </div>
                 </div>
                 <div class="noriks-modal-qty-row">
-                    <span class="noriks-attr-label">KOLIČINA</span>
+                    <span class="noriks-attr-label">CANTITATE</span>
                     <select id="noriks-qty-val" class="noriks-qty-select">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -194,7 +194,7 @@ function noriks_upsell_modal_markup() {
                 </div>
                 <div id="noriks-modal-attributes" class="noriks-modal-attributes"></div>
                 <div id="noriks-modal-error" class="noriks-modal-error" style="display:none;">Alege toate opțiunile</div>
-                <button id="noriks-modal-add" class="noriks-modal-add-btn">DODAJ U KOŠARICU</button>
+                <button id="noriks-modal-add" class="noriks-modal-add-btn">ADAUGĂ ÎN COȘ</button>
             </div>
 
         </div>
@@ -447,7 +447,7 @@ function noriks_upsell_modal_markup() {
                 $attrs.append($group);
             });
 
-            $('#noriks-modal-add').text('DODAJ U KOŠARICU').removeClass('adding added');
+            $('#noriks-modal-add').text('ADAUGĂ ÎN COȘ').removeClass('adding added');
 
             // Auto-select first option for each attribute
             setTimeout(function() {
@@ -578,7 +578,7 @@ function noriks_upsell_modal_markup() {
                         closeModal();
                     }, 800);
                 } else if (res.success === false) {
-                    $btn.removeClass('adding').text('DODAJ U KOŠARICU');
+                    $btn.removeClass('adding').text('ADAUGĂ ÎN COȘ');
                     var msg = (res.data && res.data.message) ? res.data.message : 'Greška pri dodavanju';
                     $('#noriks-modal-error').text(msg).show();
                 } else {
@@ -588,7 +588,7 @@ function noriks_upsell_modal_markup() {
                     setTimeout(closeModal, 800);
                 }
             }).fail(function(xhr) {
-                $btn.removeClass('adding').text('DODAJ U KOŠARICU');
+                $btn.removeClass('adding').text('ADAUGĂ ÎN COȘ');
                 $('#noriks-modal-error').text('Greška pri dodavanju').show();
             });
         });
