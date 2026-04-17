@@ -2,7 +2,7 @@
 /**
  * Thankyou page — Post-purchase upsell with two-step flow
  *
- * Step 1: Single product offer (boksarice)
+ * Step 1: Single product offer (boxeri)
  * Step 2: 6-product grid (after "Ne želim" or after adding 1 item)
  *
  * Style: Red background, no border-radius, red buttons
@@ -14,51 +14,51 @@
 defined( 'ABSPATH' ) || exit;
 
 // ─── Upsell product config — detect what to offer ───
-// Check if order has ONLY boksarice (no majice, no komplet)
-$has_only_boksarice = true;
-$has_boksarice = false;
+// Check if order has ONLY boxeri (no tricouri, no set)
+$has_only_boxeri = true;
+$has_boxeri = false;
 foreach ( $order->get_items() as $item ) {
     $name = strtolower( $item->get_name() );
     $product = $item->get_product();
     $sku = $product ? strtolower( $product->get_sku() ) : '';
-    // Check if item is majica
+    // Check if item is tricou
     // Categories are the source of truth
     $cats = wp_get_post_terms( $item->get_product_id(), 'product_cat', array('fields' => 'slugs') );
     $cat_str = is_array($cats) ? strtolower(implode(' ', $cats)) : '';
     // Majica: category has "majic" OR name has "majic"
-    $is_majica = ( strpos($cat_str, 'tricou') !== false || strpos($name, 'tricou') !== false );
+    $is_tricou = ( strpos($cat_str, 'tricou') !== false || strpos($name, 'tricou') !== false );
     // Boksarice: category has "boxer/bokser/orto" OR SKU has "box" OR name has "bokser/airflow"
     $is_boks = ( strpos($cat_str, 'boxer') !== false || strpos($cat_str, 'boxer') !== false || strpos($cat_str, 'orto') !== false || strpos($sku, 'box') !== false || strpos($name, 'boxer') !== false || strpos($name, 'airflow') !== false );
     // Komplet
-    $is_komplet = ( strpos($name, 'setur') !== false || strpos($cat_str, 'setur') !== false );
-    if ( $is_boks ) $has_boksarice = true;
-    if ( $is_majica || $is_komplet ) $has_only_boksarice = false;
+    $is_set = ( strpos($name, 'set') !== false || strpos($cat_str, 'set') !== false );
+    if ( $is_boks ) $has_boxeri = true;
+    if ( $is_tricou || $is_set ) $has_only_boxeri = false;
 }
-if ( !$has_boksarice ) $has_only_boksarice = false;
+if ( !$has_boxeri ) $has_only_boxeri = false;
 
-// ONLY boksarice in order → upsell MAJICE, else → upsell BOKSERICE
-$upsell_is_majice = $has_only_boksarice;
+// ONLY boxeri in order → upsell MAJICE, else → upsell BOKSERICE
+$upsell_is_tricouri = $has_only_boxeri;
 
-if ( $upsell_is_majice ) {
-    $upsell_product_id = 250; // Crna majica (variable)
-    $upsell_name       = 'Crne Tricouri';
+if ( $upsell_is_tricouri ) {
+    $upsell_product_id = 250; // Crna tricou (variable)
+    $upsell_name       = 'Tricouri Negre';
     $upsell_qty_prices = array( 1 => 12.99, 3 => 29.99, 6 => 39.99 );
-    $upsell_qty_names  = array( 1 => '1x Crna Majica', 3 => '3x Crne Tricouri', 6 => '6x Crnih Majica' );
+    $upsell_qty_names  = array( 1 => '1x Tricou Negru', 3 => '3x Tricouri Negre', 6 => '6x Tricouri Negre' );
     $upsell_qty_images = array(
         1 => 'https://noriks.com/ro/wp-content/uploads/2025/09/black-1.jpg',
         3 => 'https://noriks.com/ro/wp-content/uploads/2025/09/black-3x.jpg',
-        6 => 'https://noriks.com/ro/wp-content/uploads/2026/01/15xcrnamajica.png',
+        6 => 'https://noriks.com/ro/wp-content/uploads/2026/01/15xcrnatricou.png',
     );
     $upsell_title_text = 'Adaugă tricouri acum – 50% reducere';
 } else {
     $upsell_product_id = 2781; // Crne Boksarice
-    $upsell_name       = 'Crne Boksarice';
+    $upsell_name       = 'Boxeri Negri';
     $upsell_qty_prices = array( 1 => 7.99, 3 => 19.99, 5 => 29.99 );
-    $upsell_qty_names  = array( 1 => '1x Crne Boksarice', 3 => '3x Crne Boksarice', 5 => '5x Crnih Bokseric' );
+    $upsell_qty_names  = array( 1 => '1x Boxeri Negri', 3 => '3x Boxeri Negri', 5 => '5x Boxeri Negri' );
     $upsell_qty_images = array(
-        1 => 'https://noriks.com/ro/wp-content/uploads/2025/11/crne-boksarice-produktna.jpg',
-        3 => 'https://noriks.com/ro/wp-content/uploads/2025/11/boksarice_3x_crne.png',
-        5 => 'https://noriks.com/ro/wp-content/uploads/2026/01/boksarice_5x_crne.png',
+        1 => 'https://noriks.com/ro/wp-content/uploads/2025/11/crne-boxeri-produktna.jpg',
+        3 => 'https://noriks.com/ro/wp-content/uploads/2025/11/boxeri_3x_crne.png',
+        5 => 'https://noriks.com/ro/wp-content/uploads/2026/01/boxeri_5x_crne.png',
     );
     $upsell_title_text = 'Adaugă boxeri acum – 50% reducere';
 }
@@ -124,9 +124,9 @@ $grid_args = array(
     'type'    => array( 'simple', 'variable' ),
 );
 
-// Try boksarice/majice categories first
+// Try boxeri/tricouri categories first
 $grid_products = array();
-foreach ( array( 'boksarice', 'boxerice', 'majice', 'majica' ) as $cat_slug ) {
+foreach ( array( 'boxeri', 'boxerice', 'tricouri', 'tricou' ) as $cat_slug ) {
     $cat = get_term_by( 'slug', $cat_slug, 'product_cat' );
     if ( $cat ) {
         $grid_args['category'] = array( $cat_slug );
@@ -890,7 +890,7 @@ body.woocommerce-order-received .woocommerce {
             fd.append('variation_id', select ? select.value : '');
             fd.append('sale_price', '<?php echo $upsell_sale_price; ?>');
             fd.append('quantity', qty);
-            fd.append('upsell_type', '<?php echo $upsell_is_majice ? "post_purchase_step1_majica" : "post_purchase_step1_bokserica"; ?>');
+            fd.append('upsell_type', '<?php echo $upsell_is_tricouri ? "post_purchase_step1_tricou" : "post_purchase_step1_bokserica"; ?>');
             fd.append('nonce', nonce);
 
             fetch(ajaxUrl, { method: 'POST', body: fd })
