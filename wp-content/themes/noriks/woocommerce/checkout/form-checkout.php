@@ -44,9 +44,8 @@ if ( WC()->cart->is_empty() ) return;
                     <strong class="hs-custom-date" id="js-delivery-dates"></strong>
                   </div>
                   <div class="inner-wrapper-img">
-                    <span class="shipping_method_delivery_price tag tag--red">
-                      <?php
-                        $shipping_price = '';
+                    <?php
+                        $shipping_cost = 0;
                         $packages = WC()->shipping()->get_packages();
                         if ( ! empty( $packages ) ) {
                           foreach ( $packages as $pkg ) {
@@ -55,21 +54,19 @@ if ( WC()->cart->is_empty() ) return;
                               $chosen_id = isset($chosen[0]) ? $chosen[0] : '';
                               foreach ( $pkg['rates'] as $rate ) {
                                 if ( $rate->get_id() === $chosen_id || empty($chosen_id) ) {
-                                  $cost = $rate->get_cost();
-                                  if ( floatval($cost) == 0 ) {
-                                    $shipping_price = '<span style="background:#9ce79c;color:#228b22;padding:3px 10px;border-radius:5px;">Gratuit</span>';
-                                  } else {
-                                    $shipping_price = wc_price($cost);
-                                  }
+                                  $shipping_cost = floatval($rate->get_cost());
                                   break 2;
                                 }
                               }
                             }
                           }
                         }
-                        echo $shipping_price ?: wc_price(0);
+                        if ( $shipping_cost == 0 ) {
+                          echo '<span class="shipping_method_delivery_price" style="display:inline-block;background:#9ce79c;color:#228b22;padding:3px 10.5px;border-radius:5px;font-size:14px;font-weight:500;">Gratuit</span>';
+                        } else {
+                          echo '<span class="shipping_method_delivery_price" style="display:inline-block;background:#9ce79c;color:#228b22;padding:3px 10.5px;border-radius:5px;font-size:14px;font-weight:500;">' . wc_price($shipping_cost) . '</span>';
+                        }
                       ?>
-                    </span>
                     <span class="delivery_img"><img decoding="async" class="fan-courier standard" src="https://images.vigo-shop.com/general/curriers/home_small_fan.png"/></span>
                   </div>
                 </div>
