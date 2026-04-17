@@ -5,13 +5,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (!qtyInput || !insPrice || !delPrice) return;
 
-  const baseSale = parseFloat(insPrice.textContent.replace(',', '.').replace(/[^\d.]/g, ''));
-  const baseRegular = parseFloat(delPrice.textContent.replace(',', '.').replace(/[^\d.]/g, ''));
+  /* Parse EU format: 1.191,99 → remove thousand sep (.) first, then decimal sep (,) → (.) */
+  function parseEUPrice(text) {
+    return parseFloat(text.replace(/\./g, '').replace(',', '.').replace(/[^\d.]/g, ''));
+  }
+  const baseSale = parseEUPrice(insPrice.textContent);
+  const baseRegular = parseEUPrice(delPrice.textContent);
 
   if (isNaN(baseSale) || isNaN(baseRegular)) return;
 
   function formatPrice(price) {
-    return price.toFixed(2).replace('.', ',') + ' lei';
+    var parts = price.toFixed(2).split('.');
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    return parts.join(',') + ' lei';
   }
 
   function updatePrice() {
