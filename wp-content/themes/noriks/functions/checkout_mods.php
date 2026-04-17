@@ -371,7 +371,9 @@ add_action( 'wp_footer', function() {
     /* Error state — white bg, red border */
     body.woocommerce-checkout .form-row.noriks-invalid input,
     body.woocommerce-checkout .form-row.noriks-invalid select,
-    body.woocommerce-checkout .form-row.noriks-invalid .select2-selection {
+    body.woocommerce-checkout .form-row.noriks-invalid .select2-selection,
+    body.woocommerce-checkout #billing_county_field.noriks-invalid .select2-selection,
+    body.woocommerce-checkout #billing_locality_field.noriks-invalid .select2-selection {
       border: 2px solid #CC0000 !important;
       background-color: #fff !important;
       box-shadow: none !important;
@@ -391,7 +393,9 @@ add_action( 'wp_footer', function() {
     /* Valid state — green border, light green bg */
     body.woocommerce-checkout .form-row.noriks-valid input,
     body.woocommerce-checkout .form-row.noriks-valid select,
-    body.woocommerce-checkout .form-row.noriks-valid .select2-selection {
+    body.woocommerce-checkout .form-row.noriks-valid .select2-selection,
+    body.woocommerce-checkout #billing_county_field.noriks-valid .select2-selection,
+    body.woocommerce-checkout #billing_locality_field.noriks-valid .select2-selection {
       border: 2px solid #4CAF50 !important;
       background-color: #E8F5E9 !important;
       box-shadow: none !important;
