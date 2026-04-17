@@ -730,6 +730,16 @@ add_filter( 'woocommerce_order_button_text', function() { return 'Comandă'; });
 /**
  * Payment gateway order: COD → Stripe → PayPal
  */
+/**
+ * Override COD gateway title to show fee in RON
+ */
+add_filter( 'woocommerce_gateway_title', function( $title, $id ) {
+    if ( $id === 'cod' ) {
+        return 'Plata la livrare';
+    }
+    return $title;
+}, 10, 2 );
+
 add_filter( 'woocommerce_available_payment_gateways', function( $gw ) {
     $order = array('cod','stripe_cc','ppcp-gateway');
     $sorted = array();
