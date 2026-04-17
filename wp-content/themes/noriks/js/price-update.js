@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (isNaN(baseSale) || isNaN(baseRegular)) return;
 
   function formatPrice(price) {
-    return price.toFixed(2).replace('.', ',') + ' \u20AC';
+    return price.toFixed(2).replace('.', ',') + ' lei';
   }
 
   function updatePrice() {
