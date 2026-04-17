@@ -50,12 +50,8 @@ function gck_get_bundle_offers( $product_id = null ) : array {
         $tekst1 = trim((string)($row['tekst_1'] ?? ''));
         $title  = trim($tekst1 . ' ');
 
-        /* Read prices directly from postmeta to preserve decimals (ACF Number field may strip them) */
-        $meta_prefix = '_singlepp_orto_pairs_' . ($idx - 1);
-        $regular_raw = get_post_meta($product_id, $meta_prefix . '_cena_1', true);
-        $sale_raw    = get_post_meta($product_id, $meta_prefix . '_cena_2', true);
-        $regular = $regular_raw !== '' ? (float) $regular_raw : (isset($row['cena_1']) ? (float) $row['cena_1'] : 0);
-        $sale    = $sale_raw !== '' ? (float) $sale_raw : (isset($row['cena_2']) ? (float) $row['cena_2'] : 0);
+        $regular = isset($row['cena_1']) ? floatval(str_replace(',', '.', $row['cena_1'])) : 0;
+        $sale    = isset($row['cena_2']) ? floatval(str_replace(',', '.', $row['cena_2'])) : 0;
         if ( $sale <= 0 ) continue;
 
         $saving_amount = $regular - $sale;
