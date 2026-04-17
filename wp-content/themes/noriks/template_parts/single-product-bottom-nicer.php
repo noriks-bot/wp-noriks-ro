@@ -331,16 +331,16 @@ if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() ) 
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Kroj koji razumije tijelo
+        <p><strong>Un croi care înțelege corpul
 </strong></p>
-        <p class="description">Kroj je razvijan da prati liniju tijela bez stezanja i naglašava ono što treba. Rezultat je uredan, samopouzdan izgled bez osjećaja nelagode.
+        <p class="description">Croiul a fost conceput să urmeze linia corpului fără să strângă, evidențiind ceea ce trebuie. Rezultatul este un aspect îngrijit și încrezător, fără senzația de disconfort.
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Osjeti razliku već pri prvom nošenju
+        <p><strong>Simte diferența de la prima purtare
 </strong></p>
-        <p class="description">Material je mehak, lahek in zračen na koži. Po prvem nošenju je jasno, zakaj ta majica hitro postane tista, po kateri najpogosteje posežeš.
+        <p class="description">Materialul este moale, ușor și respirabil pe piele. După prima purtare, devine clar de ce acest tricou devine rapid cel pe care îl alegi cel mai des.
 </p>
       </div>
     </div>
