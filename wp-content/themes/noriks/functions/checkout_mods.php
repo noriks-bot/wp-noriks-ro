@@ -346,7 +346,7 @@ add_action( 'wp_footer', function() {
     }
     .select2-dropdown {
       border-color: #c9c9c9 !important;
-      margin-top: -33px !important;
+      margin-top: -45px !important;
       border-top: none !important;
       border-top-left-radius: 0 !important;
       border-top-right-radius: 0 !important;
