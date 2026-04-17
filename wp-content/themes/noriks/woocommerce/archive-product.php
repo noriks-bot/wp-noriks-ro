@@ -378,7 +378,7 @@ if ( is_shop() ) {
     echo do_shortcode('[yith_wcan_filters slug="default-preset-2-2-2"]');
 
 // CATEGORY: /kompleti + children
-} elseif ( is_product_category_or_child('seturi-boxeri') ) {
+} elseif ( is_product_category_or_child('seturi') ) {
 
     echo do_shortcode('[yith_wcan_filters slug="default-preset"]');
 

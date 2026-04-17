@@ -170,7 +170,7 @@ if ( $is_singles_boxers ) {
     
 ?>
 
-<h2 class="option-title">Barva</h2>
+<h2 class="option-title">Culoare</h2>
 
 
 <?php

@@ -1,6 +1,6 @@
 
 <?php 
-if (  has_term( array( 'starter-paketi','orto-starter' ), 'product_cat', get_the_id() )  )   : 
+if (  has_term( array( 'pachete-starter','orto-starter' ), 'product_cat', get_the_id() )  )   : 
 ?>
 
 
@@ -11,8 +11,7 @@ if (  has_term( array( 'starter-paketi','orto-starter' ), 'product_cat', get_the
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-          <img style="" src="<?php echo get_template_directory_uri(); ?>/img/starter-1.png
-">
+          <img style="" src="https://noriks.com/ro/wp-content/uploads/2026/04/ro.jpg">
       </div>
     </div>
 
@@ -74,8 +73,7 @@ DE CE ALEG OAMENII PACHETUL STARTER?
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-           <img style="" src="<?php echo get_template_directory_uri(); ?>/img/starter-2.png
-">
+           <img style="" src="https://noriks.com/ro/wp-content/uploads/2026/04/ro1.jpg">
       </div>
     </div>
 
@@ -134,8 +132,7 @@ O COMBINAȚIE CARE POATE FI PURTATĂ ÎN FIECARE ZI
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-          <img style="" src="<?php echo get_template_directory_uri(); ?>/img/starter-3.png
-">
+          <img style="" src="https://noriks.com/ro/wp-content/uploads/2026/04/ro3.jpg">
       </div>
     </div>
 
@@ -438,7 +435,7 @@ endif;
 
     <!-- Left Video -->
     <div class="why-col">
-       <img src="/ro/wp-content/uploads/2025/12/recreate_this_picture_to_look_more_real_same_text_on_it_zidddz68sbcgp6wmizbl.jpg">
+       <img src="https://noriks.com/ro/wp-content/uploads/2026/04/detajl_prednosti-RO-4.jpg">
     </div>
 
     <!-- Right Content -->
@@ -559,14 +556,14 @@ endif;
 $products = array();
 
 // If current product is in category 'bokserice' → load all products from that category
-if ( has_term( array( 'bokserice', 'orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() ) ) {
+if ( has_term( array( 'boxeri', 'orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() ) ) {
 
     // Get all products from category 'bokserice'
     $wc_products = wc_get_products( array(
         'limit'    => 8,
         'orderby'  => 'menu_order',
         'order'    => 'ASC',
-        'category' => array( 'bokserice' )
+        'category' => array( 'boxeri' )
     ) );
 
     if ( ! empty( $wc_products ) ) {
