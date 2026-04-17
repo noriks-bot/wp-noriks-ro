@@ -568,6 +568,18 @@ add_filter( 'body_class', function( $classes ) {
  * WC checkout field config — match vigoshop RO layout exactly
  * Custom fields: billing_county (select) + billing_locality (select) + billing_address_bl/sc/et/ap
  */
+/**
+ * Override WC default address field priorities so street comes AFTER our custom county/locality
+ */
+add_filter( 'woocommerce_default_address_fields', function( $fields ) {
+    $fields['address_1']['priority'] = 70;
+    $fields['address_2']['priority'] = 71;
+    $fields['city']['priority']      = 60;
+    $fields['state']['priority']     = 50;
+    $fields['postcode']['priority']  = 130;
+    return $fields;
+}, 999 );
+
 add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     // Remove WC default state/city — we use custom county/locality
     unset( $fields['billing']['billing_state'] );
@@ -576,13 +588,14 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     unset( $fields['billing']['billing_postcode'] );  // RO doesn't use postcode
 
     // Order — match vigoshop RO
+    // Vigoshop RO order: phone(10) > email(20) > name(30/40) > judet(50) > localitate(60) > strada+nr(70/71) > BL/SC/ET/AP(80-83)
     $fields['billing']['billing_phone']['priority']       = 10;
     $fields['billing']['billing_email']['priority']       = 20;
     $fields['billing']['billing_first_name']['priority']  = 30;
     $fields['billing']['billing_last_name']['priority']   = 40;
     // county=50, locality=60 (set in custom field definitions below)
     $fields['billing']['billing_address_1']['priority']   = 70;
-    $fields['billing']['billing_address_2']['priority']   = 75;
+    $fields['billing']['billing_address_2']['priority']   = 71;
 
     // Labels, placeholders
     $fields['billing']['billing_first_name']['label'] = 'Prenume';
