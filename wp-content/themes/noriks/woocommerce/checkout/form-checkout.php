@@ -45,7 +45,30 @@ if ( WC()->cart->is_empty() ) return;
                   </div>
                   <div class="inner-wrapper-img">
                     <span class="shipping_method_delivery_price tag tag--red">
-                      <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>
+                      <?php
+                        $shipping_price = '';
+                        $packages = WC()->shipping()->get_packages();
+                        if ( ! empty( $packages ) ) {
+                          foreach ( $packages as $pkg ) {
+                            if ( ! empty( $pkg['rates'] ) ) {
+                              $chosen = WC()->session->get('chosen_shipping_methods');
+                              $chosen_id = isset($chosen[0]) ? $chosen[0] : '';
+                              foreach ( $pkg['rates'] as $rate ) {
+                                if ( $rate->get_id() === $chosen_id || empty($chosen_id) ) {
+                                  $cost = $rate->get_cost();
+                                  if ( floatval($cost) == 0 ) {
+                                    $shipping_price = '<span style="background:#9ce79c;color:#228b22;padding:3px 10px;border-radius:5px;">Gratuit</span>';
+                                  } else {
+                                    $shipping_price = wc_price($cost);
+                                  }
+                                  break 2;
+                                }
+                              }
+                            }
+                          }
+                        }
+                        echo $shipping_price ?: wc_price(0);
+                      ?>
                     </span>
                     <span class="delivery_img"><img decoding="async" class="fan-courier standard" src="https://images.vigo-shop.com/general/curriers/home_small_fan.png"/></span>
                   </div>
