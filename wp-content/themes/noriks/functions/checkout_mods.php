@@ -265,33 +265,75 @@ add_action( 'wp_footer', function() {
       margin-bottom: 16px !important;
     }
 
-    /* ===== BL/SC/ET/AP — 4 columns in a row ===== */
-    body.woocommerce-checkout #billing_bl_field,
-    body.woocommerce-checkout #billing_sc_field,
-    body.woocommerce-checkout #billing_et_field,
-    body.woocommerce-checkout #billing_ap_field {
-      width: 24% !important;
+    /* ===== Prenume + Nume side by side (50/50) ===== */
+    body.woocommerce-checkout #billing_first_name_field,
+    body.woocommerce-checkout #billing_last_name_field {
+      width: 49% !important;
       display: inline-block !important;
       vertical-align: top !important;
-      margin-right: 1% !important;
       float: none !important;
     }
-    body.woocommerce-checkout #billing_ap_field {
-      margin-right: 0 !important;
+    body.woocommerce-checkout #billing_first_name_field {
+      margin-right: 2% !important;
     }
-    /* Stradă + Nr side by side */
+
+    /* ===== Stradă + Nr side by side (73/25) ===== */
     body.woocommerce-checkout #billing_address_1_field {
-      width: 65% !important;
+      width: 73% !important;
       display: inline-block !important;
       vertical-align: top !important;
       margin-right: 2% !important;
       float: none !important;
     }
     body.woocommerce-checkout #billing_address_2_field {
-      width: 33% !important;
+      width: 25% !important;
       display: inline-block !important;
       vertical-align: top !important;
       float: none !important;
+    }
+
+    /* ===== BL/SC/ET/AP — 4 columns in a row ===== */
+    body.woocommerce-checkout #billing_bl_field,
+    body.woocommerce-checkout #billing_sc_field,
+    body.woocommerce-checkout #billing_et_field,
+    body.woocommerce-checkout #billing_ap_field {
+      width: 23.5% !important;
+      display: inline-block !important;
+      vertical-align: top !important;
+      margin-right: 2% !important;
+      float: none !important;
+    }
+    body.woocommerce-checkout #billing_ap_field {
+      margin-right: 0 !important;
+    }
+
+    /* ===== Județ / Localitate dropdowns ===== */
+    body.woocommerce-checkout #billing_state_field,
+    body.woocommerce-checkout #billing_city_field {
+      width: 100% !important;
+      display: block !important;
+    }
+    body.woocommerce-checkout #billing_state_field .select2-selection,
+    body.woocommerce-checkout #billing_city_field .select2-selection {
+      min-height: 50px !important;
+      border: 1.5px solid #c9c9c9 !important;
+      border-radius: 4px !important;
+      box-shadow: inset 1px 1px 3px 0 rgba(0,0,0,0.15) !important;
+      padding: 8px 12px !important;
+    }
+    body.woocommerce-checkout #billing_state_field .select2-selection__rendered,
+    body.woocommerce-checkout #billing_city_field .select2-selection__rendered {
+      line-height: 32px !important;
+      font-size: 16px !important;
+      color: #333 !important;
+    }
+    body.woocommerce-checkout #billing_state_field .select2-selection__arrow,
+    body.woocommerce-checkout #billing_city_field .select2-selection__arrow {
+      height: 50px !important;
+    }
+    /* Hide billing_country — force RO */
+    body.woocommerce-checkout #billing_country_field {
+      display: none !important;
     }
 
     /* ===== FIELD VALIDATION STATES ===== */
