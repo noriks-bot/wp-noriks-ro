@@ -78,8 +78,23 @@ jQuery(function($){
     $(this).closest('#billing_locality_field').removeClass('noriks-invalid custom-validation-fail');
   });
 
+  // Force field order in DOM — move street/nr AFTER locality
+  function reorderFields() {
+    var $wrapper = $('.woocommerce-billing-fields__field-wrapper');
+    if (!$wrapper.length) return;
+    var $locality = $('#billing_locality_field');
+    var $addr1 = $('#billing_address_1_field');
+    var $addr2 = $('#billing_address_2_field');
+    if ($locality.length && $addr1.length && $locality.index() > $addr1.index()) {
+      $addr1.detach().insertAfter($locality);
+      $addr2.detach().insertAfter($addr1);
+    }
+  }
+  reorderFields();
+
   // After WC AJAX update_checkout, re-init select2
   $(document.body).on('updated_checkout', function() {
+    reorderFields();
     if (!$('#billing_county').data('select2')) {
       $('#billing_county').select2(s2config('Nu există rezultate'));
     }
