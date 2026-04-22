@@ -207,7 +207,7 @@ if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() ) 
         <video 
           autoplay muted loop playsinline 
           class="why-video">
-          <source src="https://noriks.com/ro/wp-content/uploads/2025/09/noriks_gif_hr_2-1.mp4" type="video/mp4">
+          <source src="https://noriks.com/ro/wp-content/themes/noriks/videos/noriks_gif_en_2-1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>

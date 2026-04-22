@@ -49,20 +49,20 @@ function is_active_menu_item( $path ) {
       <a href="/ro/shop">Toate produsele</a>
     </li>
 
-    <li class="<?php echo is_active_menu_item('/product-category/majice') ? 'active' : ''; ?>">
-      <a href="/ro/product-category/majice/">Tricouri</a>
+    <li class="<?php echo is_active_menu_item('/product-category/tricouri') ? 'active' : ''; ?>">
+      <a href="/ro/product-category/tricouri/">Tricouri</a>
     </li>
 
-    <li class="<?php echo is_active_menu_item('/product-category/bokserice') ? 'active' : ''; ?>">
-      <a href="/ro/product-category/bokserice/">Boxeri</a>
+    <li class="<?php echo is_active_menu_item('/product-category/boxeri') ? 'active' : ''; ?>">
+      <a href="/ro/product-category/boxeri/">Boxeri</a>
     </li>
 
-    <li class="<?php echo is_active_menu_item('/product-category/kompleti') ? 'active' : ''; ?>">
-      <a href="/ro/product-category/kompleti/">Seturi</a>
+    <li class="<?php echo is_active_menu_item('/product-category/seturi') ? 'active' : ''; ?>">
+      <a href="/ro/product-category/seturi/">Seturi</a>
     </li>
 
-    <li class="<?php echo is_active_menu_item('/product-category/carape') ? 'active' : ''; ?>">
-      <a href="/ro/product-category/carape/">Șosete</a>
+    <li class="<?php echo is_active_menu_item('/product-category/sosete') ? 'active' : ''; ?>">
+      <a href="/ro/product-category/sosete/">Șosete</a>
     </li>
   </ul>
 </nav>
