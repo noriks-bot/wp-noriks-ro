@@ -42,7 +42,7 @@ $upsell_is_tricouri = $has_only_boxeri;
 if ( $upsell_is_tricouri ) {
     $upsell_product_id = 250; // Crna tricou (variable)
     $upsell_name       = 'Tricouri Negre';
-    $upsell_qty_prices = array( 1 => 12.99, 3 => 29.99, 6 => 39.99 );
+    $upsell_qty_prices = array( 1 => 65.99, 3 => 149.99, 6 => 199.99 );
     $upsell_qty_names  = array( 1 => '1x Tricou Negru', 3 => '3x Tricouri Negre', 6 => '6x Tricouri Negre' );
     $upsell_qty_images = array(
         1 => 'https://noriks.com/ro/wp-content/uploads/2025/09/black-1.jpg',
@@ -53,12 +53,12 @@ if ( $upsell_is_tricouri ) {
 } else {
     $upsell_product_id = 2781; // Boxeri Negri
     $upsell_name       = 'Boxeri Negri';
-    $upsell_qty_prices = array( 1 => 7.99, 3 => 19.99, 5 => 29.99 );
+    $upsell_qty_prices = array( 1 => 24.99, 3 => 74.97, 5 => 124.96 );
     $upsell_qty_names  = array( 1 => '1x Boxeri Negri', 3 => '3x Boxeri Negri', 5 => '5x Boxeri Negri' );
     $upsell_qty_images = array(
-        1 => 'https://noriks.com/ro/wp-content/uploads/2025/11/crne-boxeri-produktna.jpg',
-        3 => 'https://noriks.com/ro/wp-content/uploads/2025/11/boxeri_3x_crne.png',
-        5 => 'https://noriks.com/ro/wp-content/uploads/2026/01/boxeri_5x_crne.png',
+        1 => 'https://noriks.com/ro/wp-content/uploads/2025/11/crne-boksarice-produktna-600x600.jpg',
+        3 => 'https://noriks.com/ro/wp-content/uploads/2025/11/boksarice_3x_crne-600x600.png',
+        5 => 'https://noriks.com/ro/wp-content/uploads/2026/01/boksarice_5x_crne-600x600.png',
     );
     $upsell_title_text = 'Adaugă boxeri acum – 50% reducere';
 }
@@ -478,7 +478,7 @@ body.woocommerce-order-received .woocommerce {
         </div>
 
         <!-- ═══ STEP 1: VIGOSHOP UPSELL (COD only) ═══ -->
-        <?php if ( $order->get_payment_method() === 'cod' && (float)$order->get_total() <= 120 ) : ?>
+        <?php if ( $order->get_payment_method() === 'cod' && (float)$order->get_total() <= 600 ) : ?>
         <div class="ty_upsell_one_wrapper show" id="ty-upsell"
              style="position:static !important;display:block !important;width:100% !important;max-width:520px !important;height:auto !important;top:auto !important;left:auto !important;transform:none !important;opacity:1 !important;visibility:visible !important;z-index:auto !important;backdrop-filter:none !important;margin:0 !important;padding:0 !important;"
              data-order-id="<?php echo $order->get_id(); ?>"
