@@ -6,6 +6,7 @@
  */
 
 include(get_template_directory() . '/functions/checkout_mods.php');
+include(get_template_directory() . '/functions/metakocka_export.php');
 
 /* Force currency symbol to "lei" on frontend */
 add_filter( 'woocommerce_currency_symbol', function( $symbol ) {
