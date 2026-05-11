@@ -2,21 +2,43 @@
 /**
  * Metakocka export — REST API order response massaging
  *
- * Background-only handler: user keeps filling the checkout exactly as before.
- * When Metakocka pulls an order via the WooCommerce REST API
- * (woocommerce_rest_prepare_shop_order_object), we:
- *   1. Force billing.country and shipping.country to "RO".
- *   2. Backfill shipping.email / phone / city / state from custom meta when set.
- *   3. Prefix the custom RO address fields with "BL:", "SC:", "ET:", "AP:"
- *      on the BILLING and SHIPPING meta keys so Metakocka can map them
- *      straight into the delivery address.
- *   4. Translate the WC state code (AB, AR, …) into the full judet name
- *      (Alba, Arad, …) for both billing and shipping.
- *   5. Fall back to billing values when shipping.city / shipping.state are
- *      empty (covers checkouts without a separate shipping form).
+ * Background-only handler. The user keeps filling the checkout exactly as
+ * before; this only adjusts what Metakocka sees when it pulls orders via
+ * the WooCommerce REST API (woocommerce_rest_prepare_shop_order_object).
  *
- * Logic is a 1:1 port of the working filter from the reference theme
- * (storefront-child / checkout_fiters.php → my_wc_prepare_shop_order).
+ * Behaviour is matched 1:1 to the reference project
+ * (storefront-child / functions/checkout_fiters.php :: my_wc_prepare_shop_order)
+ * which is known to import correctly into Metakocka.
+ *
+ * What we change in the REST response:
+ *   1. Force billing.country and shipping.country to "RO".
+ *   2. Backfill shipping.email / phone / city / state from custom meta
+ *      (_shipping_email, _shipping_phone, _shipping_city2, _shipping_jud)
+ *      when those keys exist. Older RO order flows use them; in noriks-ro
+ *      they are typically empty and this is a no-op.
+ *   3. Translate the WC state code (AB, AR, ...) to the full judet name
+ *      (Alba, Arad, ...) for both billing and shipping — defensive, since
+ *      noriks-ro usually stores the full name already (set_billing_state
+ *      with the resolved county name).
+ *   4. Fall back to billing values when shipping.city / shipping.state are
+ *      empty (covers checkouts without a separate shipping form, which is
+ *      the standard noriks-ro flow).
+ *
+ * What we deliberately DO NOT change:
+ *   - The raw stored values of _billing_address_bl|sc|et|ap and the
+ *     _shipping_* counterparts. The reference theme has a block that
+ *     looks like it prefixes them with "BL:"/"SC:"/"ET:"/"AP:" but the
+ *     condition is structured so update_post_meta is never reached
+ *     (the constructed string always starts with the label, so
+ *     `strpos !== false` is always true and the else branch never runs).
+ *     The values therefore remain unprefixed in the database and in
+ *     meta_data on the REST response. We mirror that behaviour exactly
+ *     so:
+ *       - the admin order page in noriks-ro (which prepends "BL: " when
+ *         rendering, see checkout_mods.php) keeps showing a single
+ *         label, not a doubled "BL: BL:5".
+ *       - Metakocka receives the same shape it currently consumes from
+ *         the reference store.
  *
  * @package noriks
  */
@@ -34,7 +56,7 @@ function noriks_ro_metakocka_prepare_order( $response, $object, $request ) {
 
     $order_id = $order_data['id'];
 
-    // 1) Force country = RO
+    // 1) Force country = RO on both addresses
     $order_data['billing']['country']  = 'RO';
     $order_data['shipping']['country'] = 'RO';
 
@@ -42,60 +64,15 @@ function noriks_ro_metakocka_prepare_order( $response, $object, $request ) {
     $shipping_email = get_post_meta( $order_id, '_shipping_email', true );
     $shipping_phone = get_post_meta( $order_id, '_shipping_phone', true );
     $shipping_city2 = get_post_meta( $order_id, '_shipping_city2', true );
-    $shipping_jud   = get_post_meta( $order_id, '_shipping_jud', true );
+    $shipping_jud   = get_post_meta( $order_id, '_shipping_jud',   true );
 
     if ( $shipping_email !== '' ) { $order_data['shipping']['email'] = $shipping_email; }
     if ( $shipping_phone !== '' ) { $order_data['shipping']['phone'] = $shipping_phone; }
     if ( $shipping_city2 !== '' ) { $order_data['shipping']['city']  = $shipping_city2; }
     if ( $shipping_jud   !== '' ) { $order_data['shipping']['state'] = $shipping_jud; }
 
-    // 3) Prefix BL/SC/ET/AP meta values so Metakocka picks up labelled parts.
-    //    We persist the prefix to the DB only if the stored value does not
-    //    already contain the label, then expose the prefixed value back
-    //    through meta_data on the response.
-    $prefix_map = array(
-        '_billing_address_bl'  => 'BL:',
-        '_billing_address_sc'  => 'SC:',
-        '_billing_address_et'  => 'ET:',
-        '_billing_address_ap'  => 'AP:',
-        '_shipping_address_bl' => 'BL:',
-        '_shipping_address_sc' => 'SC:',
-        '_shipping_address_et' => 'ET:',
-        '_shipping_address_ap' => 'AP:',
-    );
-
-    foreach ( $prefix_map as $meta_key => $label ) {
-        $stored = get_post_meta( $order_id, $meta_key, true );
-
-        // Skip if there is nothing to label.
-        if ( $stored === '' || $stored === null ) {
-            continue;
-        }
-
-        // Only add the prefix if it is not already present.
-        if ( strpos( (string) $stored, $label ) === false ) {
-            $stored = $label . $stored;
-            update_post_meta( $order_id, $meta_key, $stored );
-        }
-
-        // Reflect the (possibly updated) value in the REST response too.
-        if ( ! empty( $order_data['meta_data'] ) && is_array( $order_data['meta_data'] ) ) {
-            foreach ( $order_data['meta_data'] as $idx => $meta_obj ) {
-                $key = is_object( $meta_obj ) ? $meta_obj->key : ( isset( $meta_obj['key'] ) ? $meta_obj['key'] : null );
-                if ( $key === $meta_key ) {
-                    if ( is_object( $meta_obj ) && isset( $meta_obj->value ) ) {
-                        $order_data['meta_data'][ $idx ]->value = $stored;
-                    } elseif ( is_array( $meta_obj ) ) {
-                        $order_data['meta_data'][ $idx ]['value'] = $stored;
-                    }
-                }
-            }
-        }
-    }
-
-    // 4) Map state code → full judet name (defensive — in noriks-ro the
-    //    state is usually already a full name, but we keep parity with the
-    //    reference theme in case a code slips through).
+    // 3) Judet code -> full name (defensive; usually no-op in noriks-ro
+    //    because billing_state is already a full name)
     $county_map = array(
         'AB' => 'Alba',
         'AR' => 'Arad',
@@ -151,7 +128,7 @@ function noriks_ro_metakocka_prepare_order( $response, $object, $request ) {
         $order_data['shipping']['state'] = $county_map[ $ss ];
     }
 
-    // 5) Fall back to billing values when shipping is empty
+    // 4) Fall back to billing values when shipping is empty
     if ( empty( $order_data['shipping']['state'] ) ) {
         $order_data['shipping']['state'] = $order_data['billing']['state'];
     }
