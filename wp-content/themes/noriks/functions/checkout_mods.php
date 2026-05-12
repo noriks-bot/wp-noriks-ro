@@ -605,7 +605,26 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     unset( $fields['billing']['billing_state'] );
     unset( $fields['billing']['billing_city'] );
     unset( $fields['billing']['billing_company'] );
-    unset( $fields['billing']['billing_postcode'] );  // RO doesn't use postcode
+
+    // Postcode: user does NOT enter it. JS writes it automatically when
+    // the localitate is selected (postcode is bundled into each option).
+    // We keep the WC standard billing_postcode field so it is submitted
+    // with the form and stored on the order (and exported to Metakocka),
+    // but render it as a hidden field — no label, not required, no focus.
+    if ( isset( $fields['billing']['billing_postcode'] ) ) {
+        $fields['billing']['billing_postcode']['type']        = 'hidden';
+        $fields['billing']['billing_postcode']['required']    = false;
+        $fields['billing']['billing_postcode']['label']       = '';
+        $fields['billing']['billing_postcode']['placeholder'] = '';
+        $fields['billing']['billing_postcode']['priority']    = 999;
+        $fields['billing']['billing_postcode']['class']       = array( 'noriks-hidden-postcode' );
+        $fields['billing']['billing_postcode']['input_class'] = array( 'noriks-hidden-postcode-input' );
+        $fields['billing']['billing_postcode']['custom_attributes'] = array(
+            'autocomplete' => 'off',
+            'tabindex'     => '-1',
+            'aria-hidden'  => 'true',
+        );
+    }
 
     // Order — match vigoshop RO
     // Vigoshop RO order: phone(10) > email(20) > name(30/40) > judet(50) > localitate(60) > strada+nr(70/71) > BL/SC/ET/AP(80-83)

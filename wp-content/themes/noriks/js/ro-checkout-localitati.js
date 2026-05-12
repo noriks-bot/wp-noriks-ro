@@ -1,13 +1,29 @@
 /**
  * RO Checkout — County + Locality dropdowns (same as vigoshop.ro)
- * billing_county = select with 42 județe
- * billing_locality = select populated via JSON based on selected county
+ * billing_county    = select with 42 județe
+ * billing_locality  = select populated via JSON based on selected county
+ *                     each option carries its postcode as a data attribute
+ * billing_postcode  = hidden field, written automatically when locality
+ *                     selection changes (user does not type it)
+ *
+ * JSON format (ro-localitati.json):
+ *   { "1": [ {"name": "Abrud", "postcode": "515100"}, ... ], "2": [...], ... }
  */
 jQuery(function($){
   var localitatiData = null;
   var jsonUrl = (typeof roLocalitatiConfig !== 'undefined') ? roLocalitatiConfig.jsonUrl : null;
 
   if (!jsonUrl) return;
+
+  // Set the hidden billing_postcode field whenever locality changes.
+  function syncPostcodeFromLocality() {
+    var $loc = $('#billing_locality');
+    var $pc  = $('#billing_postcode');
+    if (!$pc.length) return;
+    var pc = $loc.find('option:selected').data('postcode') || '';
+    // Allow shops to override; for empty cases keep the previous value cleared.
+    $pc.val(pc).trigger('change');
+  }
 
   // Select2 config matching vigoshop
   function s2config(noResultsText) {
@@ -58,10 +74,20 @@ jQuery(function($){
     if (localitatiData && localitatiData[countyId]) {
       var cities = localitatiData[countyId];
       for (var i = 0; i < cities.length; i++) {
-        $loc.append('<option value="' + cities[i] + '">' + cities[i] + '</option>');
+        var c = cities[i];
+        // Backward compatibility: support both old format (string) and new format ({name,postcode})
+        var name = (typeof c === 'string') ? c : (c.name || '');
+        var pc   = (typeof c === 'string') ? '' : (c.postcode || '');
+        if (!name) continue;
+        var $opt = $('<option/>')
+          .attr('value', name)
+          .attr('data-postcode', pc)
+          .text(name);
+        $loc.append($opt);
       }
     }
     $loc.val('').trigger('change.select2');
+    syncPostcodeFromLocality();
   }
 
   // County change — populate localities
@@ -73,9 +99,10 @@ jQuery(function($){
     }
   });
 
-  // Locality change — clear error
+  // Locality change — clear error + sync postcode
   $('#billing_locality').on('change', function() {
     $(this).closest('#billing_locality_field').removeClass('noriks-invalid custom-validation-fail');
+    syncPostcodeFromLocality();
   });
 
   // Force field order in DOM — move street/nr AFTER locality

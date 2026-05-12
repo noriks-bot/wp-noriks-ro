@@ -407,3 +407,9 @@ body.woocommerce-checkout .noriks-order-summary .review-product-info div {
 
 /* More space between total and Naroči button */
 .noriks-order-summary .vigo-checkout-total__sum { margin-bottom: 10px !important; }
+
+/* RO checkout: postcode is auto-filled by JS from locality, never user-typed */
+#billing_postcode_field,
+.woocommerce-billing-fields__field-wrapper .noriks-hidden-postcode {
+  display: none !important;
+}
