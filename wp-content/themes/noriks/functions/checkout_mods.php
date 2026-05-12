@@ -929,6 +929,37 @@ add_action('woocommerce_checkout_update_order_meta', function( $order_id ) {
         $order = wc_get_order($order_id);
         if ($order) { $order->set_billing_city(sanitize_text_field($_POST['billing_locality'])); $order->save(); }
     }
+
+    // SERVER-SIDE postcode lookup from county + locality.
+    // Authoritative — does not rely on client-side JS to fill #billing_postcode,
+    // which may be missing on custom checkout templates. Falls back to '000000'
+    // so the field is always populated for Metakocka import.
+    if ( ! empty( $_POST['billing_locality'] ) && ! empty( $_POST['billing_county'] ) ) {
+        $json_path = get_template_directory() . '/js/ro-localitati.json';
+        if ( file_exists( $json_path ) ) {
+            $loc_data = json_decode( file_get_contents( $json_path ), true );
+            if ( is_array( $loc_data ) ) {
+                $cid_post = sanitize_text_field( $_POST['billing_county'] );
+                $loc_post = sanitize_text_field( $_POST['billing_locality'] );
+                $postcode = '';
+                if ( isset( $loc_data[ $cid_post ] ) && is_array( $loc_data[ $cid_post ] ) ) {
+                    foreach ( $loc_data[ $cid_post ] as $entry ) {
+                        if ( is_array( $entry ) && isset( $entry['name'] ) && $entry['name'] === $loc_post ) {
+                            $postcode = isset( $entry['postcode'] ) ? (string) $entry['postcode'] : '';
+                            break;
+                        }
+                    }
+                }
+                if ( $postcode === '' ) { $postcode = '000000'; }
+                $order = wc_get_order( $order_id );
+                if ( $order ) {
+                    $order->set_billing_postcode( $postcode );
+                    $order->set_shipping_postcode( $postcode );
+                    $order->save();
+                }
+            }
+        }
+    }
 });
 
 /**
