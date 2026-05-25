@@ -481,13 +481,13 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
                   
     <?php elseif(  $is_mixed_bundle ): ?>
     
-     <img src="https://noriks.com/ro/wp-content/uploads/2026/04/tablica_ro.jpg">
+     <img src="<?php echo get_template_directory_uri(); ?>/img/tabela-velikosti-majice.jpg">
 <img src="https://noriks.com/ro/wp-content/uploads/2026/04/bokserice_ro.jpg">
         
           <?php else: ?>
       
       
-       <img src="https://noriks.com/ro/wp-content/uploads/2026/04/tablica_ro.jpg">
+       <img src="<?php echo get_template_directory_uri(); ?>/img/tabela-velikosti-majice.jpg">
         
             
         <?php endif; ?>
