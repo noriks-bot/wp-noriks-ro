@@ -5,6 +5,7 @@
  * @package storefront
  */
 
+include(get_template_directory() . '/functions/product-type.php');
 include(get_template_directory() . '/functions/checkout_mods.php');
 include(get_template_directory() . '/functions/metakocka_export.php');
 

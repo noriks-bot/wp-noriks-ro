@@ -1,6 +1,19 @@
 
-<?php 
-if (  has_term( array( 'pachete-starter','orto-starter' ), 'product_cat', get_the_id() )  )   : 
+<?php
+/* Bunion / ortopas / fisiorest: dedicate why-secțiuni (fără return — apoi
+   rulează sistemul comun de recenzii). Restul produselor rămân neatinse. */
+if ( function_exists( 'noriks_is_type' ) ) {
+    if ( noriks_is_type( 'bunion' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-bunion' );
+    } elseif ( noriks_is_type( 'ortopas' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-ortopas' );
+    } elseif ( noriks_is_type( 'fisiorest' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-fisiorest' );
+    }
+}
+?>
+<?php
+if (  has_term( array( 'pachete-starter','orto-starter' ), 'product_cat', get_the_id() )  )   :
 ?>
 
 
@@ -581,20 +594,32 @@ endif;
     padding-right: 10px;" class="comparison-intro comparison-intro-gray ">
       <!--<h4 style="" class="highlight"><?php echo get_field("singlepp_content_standard_reviews_t1","options"); ?></h4>-->
       <h1 style="color:black;     margin-bottom: 4px;">
-          
-          <?php if ( !has_term( array( 'bokserice', 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() ) ): ?>
-          
+
+          <?php if ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>
+
+          Nu ești singur în lupta cu tensiunea din gât.
+
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>
+
+          Nu ești singur în lupta cu durerile cauzate de halux.
+
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>
+
+          Nu ești singur în lupta cu durerile de spate.
+
+          <?php elseif ( !has_term( array( 'bokserice', 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() ) ): ?>
+
           <?php echo get_field("singlepp_content_standard_reviews_t2","options"); ?>
-          
+
           <?php else: ?>
-          
+
           Nisi sam u potrazi za savršenim boksericama.
-          
+
           <?php endif; ?>
-          
-          
+
+
           </h1>
-    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?></p>
+    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>Mii de oameni folosesc deja NORIKS FisioRest pentru mai puțină durere și tensiune în gât – tracțiune, vibrație și căldură într-un singur dispozitiv.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>Mii de oameni folosesc deja corectorul de halux NORIKS pentru mai puțină durere și o poziție mai corectă a degetului mare – acasă, la TV sau în timpul somnului.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>Mii de oameni poartă deja centura ortopedică NORIKS pentru mai puțină durere și un spate mai stabil – la muncă, la ridicat greutăți și la statul îndelungat pe scaun.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
     </div>
   </section>
   </div>
@@ -664,9 +689,18 @@ endif;
   // Detect if current product belongs to bokserice group
   $current_product_id = (function_exists('is_product') && is_product()) ? get_queried_object_id() : get_the_id();
   $is_bokserice_page  = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id );
+  $is_ortopas_page    = ( function_exists('noriks_is_type') && noriks_is_type('ortopas', $current_product_id) );
+  $is_bunion_page     = ( function_exists('noriks_is_type') && noriks_is_type('bunion', $current_product_id) );
+  $is_fisiorest_page  = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest', $current_product_id) );
 
-  // Include review pools
-  if ( ! $is_bokserice_page )  {
+  // Include review pools (own pool per product group)
+  if ( $is_fisiorest_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/RO_fisiorest.php';
+  } elseif ( $is_bunion_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/RO_bunion.php';
+  } elseif ( $is_ortopas_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/RO_ortopas.php';
+  } elseif ( ! $is_bokserice_page )  {
     include get_stylesheet_directory() . '/auto_reviews/'.$reviews_language.'.php';
   } else {
     include get_stylesheet_directory() . '/auto_reviews/' . $reviews_language . '_bokserice.php';
@@ -731,11 +765,17 @@ endif;
       }
 
       $is_bokserice = false;
+      $is_ortopas   = false;
+      $is_bunion    = false;
+      $is_fisiorest = false;
       if ( $product_id ) {
           $is_bokserice = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $product_id );
+          $is_ortopas   = ( function_exists('noriks_is_type') && noriks_is_type('ortopas', $product_id) );
+          $is_bunion    = ( function_exists('noriks_is_type') && noriks_is_type('bunion', $product_id) );
+          $is_fisiorest = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest', $product_id) );
       }
 
-      $cache_key = $transient_key . ( $is_bokserice ? '_bokserice' : '_all' );
+      $cache_key = $transient_key . ( $is_fisiorest ? '_fisiorest' : ( $is_bunion ? '_bunion' : ( $is_ortopas ? '_ortopas' : ( $is_bokserice ? '_bokserice' : '_all' ) ) ) );
 
       if ( function_exists( 'get_transient' ) ) {
           $cached = get_transient( $cache_key );
@@ -752,7 +792,13 @@ endif;
           'order'   => 'DESC',
       ];
 
-      if ( $is_bokserice ) {
+      if ( $is_fisiorest ) {
+          $args['category'] = [ 'orto-fisiorest' ];
+      } elseif ( $is_bunion ) {
+          $args['category'] = [ 'orto-bunion' ];
+      } elseif ( $is_ortopas ) {
+          $args['category'] = [ 'orto-ortopas' ];
+      } elseif ( $is_bokserice ) {
           $args['category'] = [ 'bokserice' ];
       } else {
           $args['tax_query'] = [
@@ -997,7 +1043,8 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
 
   // Avatar pools based on page category
   $avatar_type = $is_bokserice_page ? 'bokserice' : 'majice';
-  $avatar_pool = get_review_avatar_pool($avatar_type);
+  // Belt + bunion + fisiorest: text-only reviews (no avatar images).
+  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page ) ? array() : get_review_avatar_pool($avatar_type);
 
   $product_pool = get_wc_product_pool();
 
@@ -1038,6 +1085,10 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
   $prod_count = count($auto_reviews_en);
   $ship_count = count($auto_reviews_ship);
 ?>
+
+<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page ) : ?>
+<style>/* belt + bunion + fisiorest: text-only reviews, no avatar */ #reviews-section .avatar { display: none !important; }</style>
+<?php endif; ?>
 
 <section id="reviews-section" class="basic-reviews-section" style="margin-bottom:40px!important;padding-bottom:40px!important;">
   <div class="container basic-reviews-section-container" style="width:100%;max-width:1440px;padding-top:20px!important;margin:0 auto;padding-left: 10px; padding-right: 10px;">
@@ -1450,10 +1501,56 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
 
 
 
-<?php 
+<?php
 $faq_list = get_field('faq_list', 'option');
 $faq_list2 = get_field('faq_list_2', 'option');
 $faq_list3 = get_field('faq_list_3', 'option');
+
+$is_ortopas_faq   = ( function_exists('noriks_is_type') && noriks_is_type('ortopas') );
+$is_bunion_faq    = ( function_exists('noriks_is_type') && noriks_is_type('bunion') );
+$is_fisiorest_faq = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') );
+
+// Corector halux — FAQ despre produs (traducere, NORIKS).
+$bunion_faq = array(
+  array( 'questioon' => 'Cât de repede mă voi simți mai bine?', 'answer' => 'Aproximativ 30 de minute — atât durează până când disconfortul se ameliorează. Cu utilizare regulată timp de două săptămâni, vei simți o ușurare semnificativă în activitățile zilnice, precum mersul, statul în picioare sau somnul.' ),
+  array( 'questioon' => 'Cât de repede voi observa o diferență la halux?', 'answer' => 'În funcție de gravitatea haluxului, majoritatea cumpărătorilor observă o îmbunătățire vizibilă după 4–8 săptămâni. Halux ușor: 4 săptămâni. Halux moderat: 4 săptămâni. Halux sever: 8 săptămâni.' ),
+  array( 'questioon' => 'Se poate purta în pantofi? Pot merge cu el?', 'answer' => 'Nu, nu intră în pantof. Da, poți merge cu el. Însă este destinat repausului — când stai întins pe canapea, te uiți la TV, citești sau dormi.' ),
+  array( 'questioon' => 'Ce fac dacă îmi este inconfortabil?', 'answer' => 'Este perfect normal! Corectorul NORIKS este conceput suficient de ferm încât să alinieze articulația degetului mare, să oprească inflamația și să reducă disconfortul. Ai putea avea nevoie de 1–2 ședințe ca să te obișnuiești, după care te vei simți mult mai bine!' ),
+  array( 'questioon' => 'Cât timp ar trebui să îl folosesc?', 'answer' => 'Recomandăm să începi cu 30 de minute pe zi și să crești treptat până la o ședință de 1 până la 3 ore. Când te simți confortabil, îl poți purta chiar și în timpul somnului. Folosește-l în timp ce te relaxezi — pe canapea, la TV, citind sau dormind.' ),
+  array( 'questioon' => 'Va ajuta în cazul afecțiunii mele specifice?', 'answer' => 'Corectorul NORIKS este ideal pentru: ameliorarea disconfortului care afectează activitățile zilnice, precum mersul sau statul în picioare; ușurarea disconfortului cauzat de halux în timpul repausului sau somnului; tratarea haluxului în stadiu incipient care ar putea avansa; haluxul revenit după operație; ajutarea în cazul unui halux sever, pregătit pentru operație; precum și ca opțiune non-chirurgicală eficientă.' ),
+  array( 'questioon' => 'Se va potrivi piciorului meu? Există o parte stângă și una dreaptă?', 'answer' => 'Indiferent de mărimea piciorului — de la cel mai mic picior de copil până la un picior mare de adult — corectorul NORIKS se potrivește confortabil. Nu are părți! Datorită designului adaptabil, se ajustează la fel de ușor la piciorul stâng sau drept.' ),
+);
+
+// Centură ortopedică — FAQ despre produs (traducere, NORIKS).
+$ortopas_faq = array(
+  array( 'questioon' => 'Cât de repede simt ameliorarea durerii?', 'answer' => 'Mulți utilizatori simt o ușurare vizibilă a sciaticii și a durerilor lombare imediat după ce pun centura NORIKS. Compresia sa țintită oferă un sprijin imediat, stabilizează coloana și reduce presiunea asupra nervilor. Pentru un efect de durată, recomandăm să porți centura în mod constant, conform instrucțiunilor, cel puțin două săptămâni. În timp, cu o utilizare corectă și obiceiuri sănătoase, vei putea simți o ușurare de durată și o mobilitate mai bună.' ),
+  array( 'questioon' => 'Cum se pune corect centura?', 'answer' => 'Poartă centura NORIKS în jurul șoldurilor, puțin sub linia taliei. Trebuie să fie deasupra zonei sacrale (partea inferioară a spatelui, chiar deasupra feselor) și sub creasta iliacă (partea superioară a șoldurilor laterale). Pentru mai multe informații, consultă instrucțiunile de utilizare.' ),
+  array( 'questioon' => 'Centura îmi slăbește mușchii?', 'answer' => 'Nu, centura NORIKS nu slăbește mușchii așa cum o face un corset pentru spate. Doar ajută la menținerea împreună a articulațiilor SI și reface tensiunea normală a ligamentelor. O poți purta săptămâni sau luni fără teama de atrofie musculară.' ),
+  array( 'questioon' => 'Pot purta centura și în timpul somnului?', 'answer' => 'Da, poți purta centura și noaptea. Durata purtării nu este limitată, iar purtarea îndelungată nu are efecte negative.' ),
+  array( 'questioon' => 'Cât de strâns să o pun?', 'answer' => 'Centura trebuie să se potrivească strâns, dar nu prea strâns, ca să eviți disconfortul. Trebuie să te poți mișca fără probleme, fără ca centura să te taie sau să alunece. Tensiunea se reglează ușor cu benzile elastice.' ),
+  array( 'questioon' => 'Cui o recomandați?', 'answer' => 'Tuturor celor care se confruntă cu dureri lombare, sciatică, tensiune musculară, hernie de disc, dureri de șold sau de bazin, precum și cu probleme la articulația SI. Indiferent de vârstă, sex, înălțime și greutate.' ),
+  array( 'questioon' => 'Există o garanție de returnare a banilor?', 'answer' => 'Oferim o garanție a satisfacției! Dacă nu ești mulțumit de centura NORIKS, contactează-ne la info@noriks.com pentru returnare și rambursare în 90 de zile. Termenul se calculează de la primirea centurii.' ),
+);
+
+// FisioRest — FAQ despre produs (traducere, NORIKS).
+$fisiorest_faq = array(
+  array( 'questioon' => 'Cum funcționează NORIKS FisioRest?', 'answer' => 'FisioRest combină tracțiunea, căldura și masajul prin vibrații cu un design ergonomic din spumă cu memorie. Această tehnologie întinde gâtul exact la unghiul potrivit și descarcă coloana cervicală. Apoi, masajul cald și liniștitor stimulează afluxul de sânge bogat în oxigen și nutrienți către mușchi, ajutând la regenerarea țesuturilor.' ),
+  array( 'questioon' => 'Prin ce este FisioRest mai bun decât alte dispozitive?', 'answer' => 'NORIKS FisioRest este special pentru că îmbină <strong>trei terapii într-una</strong> — căldură, masaj și tracțiune blândă — care relaxează mușchii și realiniază gâtul pentru o ușurare de durată. În plus, este <strong>fără fir, sigur pentru somn și învelit în mătase răcoritoare</strong> pentru un confort pe care nu îl vei găsi în altă parte.' ),
+  array( 'questioon' => 'Cum se folosește FisioRest?', 'answer' => '1. Încarcă-l cu cablul USB-C și încărcătorul incluse, aproximativ 4 până la 6 ore. 2. Ține apăsat butonul de masaj sau de căldură 5 secunde, până când se aprinde ledul. 3. Apasă din nou butoanele pentru a schimba viteza masajului și setările de căldură. 4. Bucură-te de un masaj relaxant!' ),
+  array( 'questioon' => 'Cât timp ar trebui să folosesc FisioRest?', 'answer' => 'Recomandăm să începi cu 15 minute, ca gâtul să se obișnuiască. În timp, poți ajunge la o ședință completă. Ca reper: un ciclu de căldură blândă, masaj și tracțiune durează 30 de minute, ceea ce este de obicei timpul ideal pentru ca gâtul să se relaxeze și să-și recapete curbura naturală.' ),
+  array( 'questioon' => 'Este FisioRest fără fir?', 'answer' => 'Da! NORIKS FisioRest este complet fără fir și reîncărcabil pentru utilizarea zilnică.' ),
+  array( 'questioon' => 'Cum se curăță FisioRest?', 'answer' => 'Materialul este rezistent la uleiuri și praf, dar recomandăm să ștergi FisioRest după utilizare cu un șervețel dezinfectant, deoarece husa pernei nu se poate spăla.' ),
+  array( 'questioon' => 'Este sigur pentru toată lumea?', 'answer' => 'NORIKS FisioRest este conceput să se potrivească tuturor, indiferent de vârstă sau sex. Totuși, fiecare situație este diferită. Pentru îndrumări detaliate, adaptate nevoilor tale, recomandăm consultarea unui medic.' ),
+  array( 'questioon' => 'Îl pot returna dacă nu văd rezultate?', 'answer' => 'Desigur! Oferim o garanție completă de returnare a banilor în 90 de zile de la livrare, dacă nu ești mulțumit de produs. Scrie-ne la info@noriks.com și îți vom răspunde în 12 ore de la primirea mesajului!' ),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq ) {
+  $is_info = ( stripos( (string) $title, 'produs' ) !== false );
+  if ( $is_fisiorest_faq && $is_info ) { return $fisiorest_faq; }
+  if ( $is_bunion_faq && $is_info )    { return $bunion_faq; }
+  if ( $is_ortopas_faq && $is_info )   { return $ortopas_faq; }
+  return $list;
+};
 ?>
 
 
@@ -1470,8 +1567,9 @@ $faq_list3 = get_field('faq_list_3', 'option');
             font-weight: 700;
             color: #222223;
             margin-bottom: 10px; "><?php echo get_field('faq_title_1', 'option'); ?></h4>
-            <?php 
-              if( $faq_list && is_array($faq_list) ): 
+            <?php
+              $faq_list = $faq_pick( get_field('faq_title_1', 'option'), $faq_list );
+              if( $faq_list && is_array($faq_list) ):
                       foreach( $faq_list as $faq_item ):
               ?>
                     <div class="faq-item">
@@ -1496,8 +1594,9 @@ $faq_list3 = get_field('faq_list_3', 'option');
             font-weight: 700;
             color: #001e36;
             margin-bottom: 10px; "><?php echo get_field('faq_title_2', 'option'); ?></h4>
-            <?php 
-              if( $faq_list2 && is_array($faq_list2) ): 
+            <?php
+              $faq_list2 = $faq_pick( get_field('faq_title_2', 'option'), $faq_list2 );
+              if( $faq_list2 && is_array($faq_list2) ):
                       foreach( $faq_list2 as $faq_item ):
               ?>
                     <div class="faq-item">
@@ -1522,8 +1621,9 @@ $faq_list3 = get_field('faq_list_3', 'option');
             font-weight: 700;
             color: #001e36;
             margin-bottom: 10px; "><?php echo get_field('faq_title_3', 'option'); ?></h4>
-            <?php 
-              if( $faq_list3 && is_array($faq_list3) ): 
+            <?php
+              $faq_list3 = $faq_pick( get_field('faq_title_3', 'option'), $faq_list3 );
+              if( $faq_list3 && is_array($faq_list3) ):
                       foreach( $faq_list3 as $faq_item ):
               ?>
                     <div class="faq-item">

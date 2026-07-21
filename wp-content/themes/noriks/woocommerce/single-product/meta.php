@@ -440,7 +440,19 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
         
         
                 Tricourile noastre premium sunt fabricate dintr-un amestec premium de 60% bumbac filat în inel și 40% poliester, ceea ce asigură o țesătură extrem de moale și rezistentă la șifonare. <br><br>Boxerii NORIKS sunt fabricați dintr-un amestec premium de 95% modal și 5% elastan, ceea ce asigură o țesătură extrem de moale și elastică, care se adaptează perfect corpului. Talia elastică este concepută pentru o potrivire optimă, oferind confort fără constricție și un aspect perfect sub haine. <br>
-        
+
+        <?php elseif( function_exists('noriks_is_type') && noriks_is_type('fisiorest', $current_product_id) ): ?>
+
+                NORIKS FisioRest este o pernă terapeutică pentru gât care combină tracțiunea, căldura și masajul prin vibrații într-un design ergonomic din spumă cu memorie. Întinde ușor gâtul la unghiul potrivit, descarcă coloana cervicală și eliberează tensiunea musculară prin căldură și masaj. Fără fir, reîncărcabilă și învelită în mătase moale și răcoritoare – sigură chiar și pentru somn.
+
+        <?php elseif( function_exists('noriks_is_type') && noriks_is_type('bunion', $current_product_id) ): ?>
+
+                Corectorul de halux NORIKS, cu terapie avansată de aliniere și mecanism articulat patentat, readuce ușor degetul mare în poziția sa naturală, ameliorează disconfortul și previne creșterea ulterioară a proeminenței. Designul flexibil îți permite să și mergi cu el. Se potrivește tuturor mărimilor de picior, fără parte stângă sau dreaptă. Pentru utilizare în repaus – în timpul odihnei, la TV, citind sau dormind.
+
+        <?php elseif( function_exists('noriks_is_type') && noriks_is_type('ortopas', $current_product_id) ): ?>
+
+                Centura ortopedică NORIKS stabilizează țintit zona inferioară a spatelui cu ajutorul compresiei țintite, aliniază corect bazinul și descarcă nervul sciatic. Subțire și discretă sub haine, cu nivel de sprijin reglabil. Potrivită în caz de dureri lombare, sciatică, tensiune musculară și probleme ale articulației SI.
+
         <?php else: ?>
         
         
@@ -459,43 +471,54 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
     
      
      <!-- 2 - slika tablica velicina -->
+     <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) ) ) ) : // nu există tabel de mărimi pentru bunion + fisiorest ?>
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3>Tabel de mărimi</h3>
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
-          
-           <?php if( $is_boxers ): ?>
-       
-        
+
+           <?php if( function_exists('noriks_is_type') && noriks_is_type('ortopas', $current_product_id) ): ?>
+
+          <div style="line-height:1.9;">
+            <strong>S/M</strong> : circumferința șoldurilor 75–110 cm<br>
+            <strong>L/XL</strong> : circumferința șoldurilor 110–140 cm<br><br>
+            Vă rugăm să măsurați circumferința șoldurilor pentru a găsi mărimea potrivită.
+          </div>
+
+        <?php elseif( $is_boxers ): ?>
+
+
           <img src="/ro/wp-content/uploads/2025/12/boxers_size.jpg">
-          
-          
-          
-        
+
+
+
+
         <?php elseif(  $is_carape ): ?>
-        
-        
+
+
                   <img src="https://noriks.com/ro/wp-content/uploads/2026/04/nogavice_ro.jpg">
-                  
+
     <?php elseif(  $is_mixed_bundle ): ?>
-    
+
      <img src="<?php echo get_template_directory_uri(); ?>/img/tabela-velikosti-majice.jpg">
 <img src="https://noriks.com/ro/wp-content/uploads/2026/04/bokserice_ro.jpg">
-        
+
           <?php else: ?>
-      
-      
+
+
        <img src="<?php echo get_template_directory_uri(); ?>/img/tabela-velikosti-majice.jpg">
-        
-            
+
+
         <?php endif; ?>
       </div>
     </div>
+    <?php endif; // /nu există tabel de mărimi pentru bunion + fisiorest ?>
 
 
     <!-- 3 - savjeti za pranje-->
+    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) ) ) ) : // fără sfaturi de spălare pentru centură/bunion/fisiorest ?>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3><?php echo get_field("singlepp_acc_h_2","options"); ?></h3>
@@ -504,20 +527,21 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
       <div class="accordion-content">
              <?php if( !$is_boxers &&  !$is_carape &&   !$is_mixed_bundle ): ?>
         <?php echo get_field("singlepp_acc_t_2","options"); ?>
-        
-         
+
+
         <?php elseif(  has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id )  ): ?>
-        
-        
-        
-                      Spălați culorile cu alte culori. Ciclu delicat în apă rece. Uscați întins sau în uscător la temperatură joasă. Nu folosiți clor.     
-        
-        
+
+
+
+                      Spălați culorile cu alte culori. Ciclu delicat în apă rece. Uscați întins sau în uscător la temperatură joasă. Nu folosiți clor.
+
+
           <?php else: ?>
             <?php echo get_field("__overwrite_sekcije_bellow_3"); ?>
         <?php endif; ?>
       </div>
     </div>
+    <?php endif; // /fără sfaturi de spălare pentru centură/bunion/fisiorest ?>
 
 
 
