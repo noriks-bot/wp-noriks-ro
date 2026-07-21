@@ -694,9 +694,15 @@ endif;
   $is_ortopas_page    = ( function_exists('noriks_is_type') && noriks_is_type('ortopas', $current_product_id) );
   $is_bunion_page     = ( function_exists('noriks_is_type') && noriks_is_type('bunion', $current_product_id) );
   $is_fisiorest_page  = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest', $current_product_id) );
+  $is_norikshers_review_page = ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $current_product_id) );
+
+  // Fallback product name shown in review cards.
+  $rv_fallback_title = $is_norikshers_review_page ? 'NORIKS HERS' : 'Jedna Siva Majica';
 
   // Include review pools (own pool per product group)
-  if ( $is_fisiorest_page ) {
+  if ( $is_norikshers_review_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/RO_norikshers.php';
+  } elseif ( $is_fisiorest_page ) {
     include get_stylesheet_directory() . '/auto_reviews/RO_fisiorest.php';
   } elseif ( $is_bunion_page ) {
     include get_stylesheet_directory() . '/auto_reviews/RO_bunion.php';
@@ -770,14 +776,16 @@ endif;
       $is_ortopas   = false;
       $is_bunion    = false;
       $is_fisiorest = false;
+      $is_norikshers = false;
       if ( $product_id ) {
           $is_bokserice = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $product_id );
           $is_ortopas   = ( function_exists('noriks_is_type') && noriks_is_type('ortopas', $product_id) );
           $is_bunion    = ( function_exists('noriks_is_type') && noriks_is_type('bunion', $product_id) );
           $is_fisiorest = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest', $product_id) );
+          $is_norikshers = ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $product_id) );
       }
 
-      $cache_key = $transient_key . ( $is_fisiorest ? '_fisiorest' : ( $is_bunion ? '_bunion' : ( $is_ortopas ? '_ortopas' : ( $is_bokserice ? '_bokserice' : '_all' ) ) ) );
+      $cache_key = $transient_key . ( $is_norikshers ? '_norikshers' : ( $is_fisiorest ? '_fisiorest' : ( $is_bunion ? '_bunion' : ( $is_ortopas ? '_ortopas' : ( $is_bokserice ? '_bokserice' : '_all' ) ) ) ) );
 
       if ( function_exists( 'get_transient' ) ) {
           $cached = get_transient( $cache_key );
@@ -794,7 +802,9 @@ endif;
           'order'   => 'DESC',
       ];
 
-      if ( $is_fisiorest ) {
+      if ( $is_norikshers ) {
+          $args['category'] = [ 'orto-norikshers', 'orto-noriks-hers' ];
+      } elseif ( $is_fisiorest ) {
           $args['category'] = [ 'orto-fisiorest' ];
       } elseif ( $is_bunion ) {
           $args['category'] = [ 'orto-bunion' ];
@@ -1045,8 +1055,8 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
 
   // Avatar pools based on page category
   $avatar_type = $is_bokserice_page ? 'bokserice' : 'majice';
-  // Belt + bunion + fisiorest: text-only reviews (no avatar images).
-  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page ) ? array() : get_review_avatar_pool($avatar_type);
+  // Belt + bunion + fisiorest + norikshers: text-only reviews (no avatar images).
+  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_review_page ) ? array() : get_review_avatar_pool($avatar_type);
 
   $product_pool = get_wc_product_pool();
 
@@ -1088,8 +1098,8 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
   $ship_count = count($auto_reviews_ship);
 ?>
 
-<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page ) : ?>
-<style>/* belt + bunion + fisiorest: text-only reviews, no avatar */ #reviews-section .avatar { display: none !important; }</style>
+<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_review_page ) : ?>
+<style>/* belt + bunion + fisiorest + norikshers: text-only reviews, no avatar */ #reviews-section .avatar { display: none !important; }</style>
 <?php endif; ?>
 
 <section id="reviews-section" class="basic-reviews-section" style="margin-bottom:40px!important;padding-bottom:40px!important;">
@@ -1112,7 +1122,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
       <?php if (!empty($initial_product)) : foreach ($initial_product as $review) :
         $name  = $review['name'] ?? 'Anonymní';
         $text  = $review['text'] ?? '';
-        $title = !empty($review['product_title']) ? $review['product_title'] : 'Jedna Siva Majica';
+        $title = !empty($review['product_title']) ? $review['product_title'] : $rv_fallback_title;
         $url   = !empty($review['product_url'])   ? $review['product_url']   : '#';
         $stars = '★★★★★';
         $date_display = $review['assigned_date'] ?? '';
@@ -1147,7 +1157,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
       <?php if (!empty($initial_ship)) : foreach ($initial_ship as $review) :
         $name  = $review['name'] ?? 'Anonymní';
         $text  = $review['text'] ?? '';
-        $title = !empty($review['product_title']) ? $review['product_title'] : 'Jedna Siva Majica';
+        $title = !empty($review['product_title']) ? $review['product_title'] : $rv_fallback_title;
         $url   = !empty($review['product_url'])   ? $review['product_url']   : '#';
         $stars = '★★★★★';
         $date_display = $review['assigned_date'] ?? '';
@@ -1251,7 +1261,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
         article.className = 'review-card is-new';
 
         const url       = review.product_url   || '#';
-        const title     = review.product_title || 'Jedna Siva Majica';
+        const title     = review.product_title || '<?php echo esc_js($rv_fallback_title); ?>';
         const name      = review.name          || 'Anonymní';
         const text      = review.text          || '';
         const headline  = review.headline      || '';
@@ -1511,6 +1521,7 @@ $faq_list3 = get_field('faq_list_3', 'option');
 $is_ortopas_faq   = ( function_exists('noriks_is_type') && noriks_is_type('ortopas') );
 $is_bunion_faq    = ( function_exists('noriks_is_type') && noriks_is_type('bunion') );
 $is_fisiorest_faq = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') );
+$is_norikshers_page = ( function_exists('noriks_is_type') && noriks_is_type('norikshers') );
 
 // Corector halux — FAQ despre produs (traducere, NORIKS).
 $bunion_faq = array(
@@ -1546,8 +1557,23 @@ $fisiorest_faq = array(
   array( 'questioon' => 'Îl pot returna dacă nu văd rezultate?', 'answer' => 'Desigur! Oferim o garanție completă de returnare a banilor în 90 de zile de la livrare, dacă nu ești mulțumit de produs. Scrie-ne la info@noriks.com și îți vom răspunde în 12 ore de la primirea mesajului!' ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq ) {
+// NORIKS HERS — FAQ despre produs (traducere, NORIKS).
+$norikshers_faq = array(
+  array( 'questioon' => 'Prin ce se deosebește de plasturii clasici pentru riduri sau de cremele pentru cicatrici?', 'answer' => 'Majoritatea plasturilor pentru riduri sunt din hârtie sau hidrocoloid, iar cremele pentru cicatrici rămân adesea doar la suprafața pielii. NORIKS HERS folosește silicon de calitate clinică, în care dermatologii au încredere de ani de zile pentru a îmbunătăți vizibil textura cicatricilor și elasticitatea pielii — iar acum este folosit și pentru reducerea ridurilor.' ),
+  array( 'questioon' => 'Poate un singur plasture să acționeze cu adevărat și asupra ridurilor, și asupra cicatricilor?', 'answer' => 'Da, pentru că atât ridurile, cât și cicatricile sunt semne ale degradării colagenului sau ale unei regenerări slabe a pielii. Siliconul susține reținerea umidității, refacerea colagenului și netezirea texturii pielii, ceea ce este benefic pentru ambele.' ),
+  array( 'questioon' => 'În cât timp voi vedea rezultate?', 'answer' => 'Majoritatea utilizatorilor observă o netezire vizibilă a liniilor fine deja după 1–3 utilizări, iar aspectul cicatricilor se îmbunătățește în 2–3 săptămâni de utilizare regulată. Cicatricile și ridurile mai adânci pot dura mai mult, dar rezultatele se acumulează în timp.' ),
+  array( 'questioon' => 'Este sigur pentru pielea sensibilă sau predispusă la acnee?', 'answer' => 'Cu siguranță. NORIKS HERS este hipoalergenic, fără latex și suficient de delicat pentru zonele sensibile, precum conturul ochilor sau al gurii, ba chiar și pentru urmele de acnee în curs de vindecare. Dacă ai pielea foarte reactivă, testează întotdeauna mai întâi pe o suprafață mică.' ),
+  array( 'questioon' => 'Cât timp îl pot purta?', 'answer' => 'Pentru cele mai bune rezultate, recomandăm să porți NORIKS HERS timp de 6–8 ore, pe timpul nopții. Îl poți folosi și în timpul zilei — ai grijă doar ca pielea de dedesubt să fie curată și fără ulei sau ser.' ),
+  array( 'questioon' => 'Cât durează o rolă?', 'answer' => 'În funcție de cât de des și unde îl folosești, o rolă poate dura 3–6 săptămâni. Fiind reutilizabil, este mult mai rentabil decât plasturii de unică folosință sau cremele.' ),
+  array( 'questioon' => 'Rămâne la locul lui în timp ce dorm?', 'answer' => 'Da! NORIKS HERS este realizat cu un adeziv prietenos cu pielea, rezistent, care urmează mișcările tale. Este respirabil și rămâne la locul lui, chiar și pentru cei care dorm pe o parte.' ),
+  array( 'questioon' => 'Pe ce zone îl pot folosi?', 'answer' => 'Oriunde! Majoritatea clienților folosesc NORIKS HERS pe: ridurile de pe frunte, ridurile dintre sprâncene, ridurile de la zâmbet, ridurile gâtului, urmele post-acnee, cicatricile de cezariană, vergeturile, cicatricile chirurgicale sau cele de la răni.' ),
+  array( 'questioon' => 'Prin ce este NORIKS HERS mai bun decât plasturii ieftini de pe internet?', 'answer' => 'Mulți plasturi vânduți online sunt de calitate slabă, subțiri sau cu un adeziv prost. NORIKS HERS folosește silicon premium, testat în laborator pentru siguranță și durabilitate, și rămâne la locul lui toată noaptea. În plus, oferim asistență dedicată pentru clienți și înlocuire mai rapidă, dacă ai nevoie de ajutor.' ),
+  array( 'questioon' => 'Există o garanție de returnare a banilor?', 'answer' => 'Da, oferim o garanție fără risc de 30 de zile. Dacă nu ești mulțumit, contactează-ne pur și simplu și rezolvăm.' ),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq ) {
   $is_info = ( stripos( (string) $title, 'produs' ) !== false );
+  if ( $is_norikshers_page && $is_info ) { return $norikshers_faq; }
   if ( $is_fisiorest_faq && $is_info ) { return $fisiorest_faq; }
   if ( $is_bunion_faq && $is_info )    { return $bunion_faq; }
   if ( $is_ortopas_faq && $is_info )   { return $ortopas_faq; }
