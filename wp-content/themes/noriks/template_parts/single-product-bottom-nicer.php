@@ -206,7 +206,7 @@ Dar primul pas este acesta - cel mai mic risc, cea mai curată impresie.
 
 
 <?php 
-if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() )  ||  has_term( 'black-friday', 'product_cat', get_the_id() )) : 
+if (  has_term( array( 'majice', 'orto-majice', 'orto-majica-darila' ), 'product_cat', get_the_id() )  ||  has_term( 'black-friday', 'product_cat', get_the_id() )) : 
 ?>
 
 
