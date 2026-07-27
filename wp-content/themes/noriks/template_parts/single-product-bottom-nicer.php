@@ -19,6 +19,8 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kompresijske-majice' );
     } elseif ( noriks_is_type( 'kidsnest' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kidsnest' );
+    } elseif ( noriks_is_type( 'ortopedski-jastuk' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-ortopedski-jastuk' );
     }
 }
 ?>
@@ -633,6 +635,10 @@ endif;
 
           Nu sunteți singurii în căutarea unui somn liniștit pentru copilul dumneavoastră.
 
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>
+
+          Nu ești singur în căutarea unui stat pe scaun fără durere.
+
           <?php elseif ( !has_term( array( 'bokserice', 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() ) ): ?>
 
           <?php echo get_field("singlepp_content_standard_reviews_t2","options"); ?>
@@ -645,7 +651,7 @@ endif;
 
 
           </h1>
-    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>Mii de oameni folosesc deja NORIKS FisioRest pentru mai puțină durere și tensiune în gât – tracțiune, vibrație și căldură într-un singur dispozitiv.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>Mii de oameni folosesc deja corectorul de halux NORIKS pentru mai puțină durere și o poziție mai corectă a degetului mare – acasă, la TV sau în timpul somnului.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>Mii de oameni poartă deja centura ortopedică NORIKS pentru mai puțină durere și un spate mai stabil – la muncă, la ridicat greutăți și la statul îndelungat pe scaun.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Mii de femei folosesc deja benzile din silicon cu colagen NORIKS Hers pentru vizibil mai puține riduri și linii fine – simplu, în timp ce dorm.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Mii de bărbați poartă deja boxerii absorbanți NORIKS pentru uscăciune și încredere în sine – fără absorbante și fără scutece.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Mii de bărbați poartă deja tricoul compresiv NORIKS pentru un abdomen netezit, o postură mai bună și mai multă încredere.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Mii de părinți au înlocuit deja perna obișnuită cu NORIKS KidsNest – nopți mai liniștite, respirație pe nas și un somn cu adevărat odihnitor.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
+    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>Mii de oameni folosesc deja NORIKS FisioRest pentru mai puțină durere și tensiune în gât – tracțiune, vibrație și căldură într-un singur dispozitiv.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>Mii de oameni folosesc deja corectorul de halux NORIKS pentru mai puțină durere și o poziție mai corectă a degetului mare – acasă, la TV sau în timpul somnului.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>Mii de oameni poartă deja centura ortopedică NORIKS pentru mai puțină durere și un spate mai stabil – la muncă, la ridicat greutăți și la statul îndelungat pe scaun.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Mii de femei folosesc deja benzile din silicon cu colagen NORIKS Hers pentru vizibil mai puține riduri și linii fine – simplu, în timp ce dorm.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Mii de bărbați poartă deja boxerii absorbanți NORIKS pentru uscăciune și încredere în sine – fără absorbante și fără scutece.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Mii de bărbați poartă deja tricoul compresiv NORIKS pentru un abdomen netezit, o postură mai bună și mai multă încredere.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Mii de părinți au înlocuit deja perna obișnuită cu NORIKS KidsNest – nopți mai liniștite, respirație pe nas și un somn cu adevărat odihnitor.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>Mii de clienți folosesc deja perna ortopedică NORIKS ErgoSit pentru un stat pe scaun fără dureri de coccis, de spate și de șolduri – în mașină, la birou și acasă.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
     </div>
   </section>
   </div>
@@ -722,16 +728,20 @@ endif;
   $is_leakboxers_page = ( function_exists('noriks_is_type') && noriks_is_type('leakboxers', $current_product_id) );
   $is_kompmajice_page = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice', $current_product_id) );
   $is_kidsnest_page   = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest', $current_product_id) );
+  $is_jastuk_page     = ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk', $current_product_id) );
 
   // Fallback product name shown in review cards.
   $rv_fallback_title = $is_kidsnest_page ? 'Perna NORIKS KidsNest'
+                     : ( $is_jastuk_page ? 'Perna ortopedică NORIKS ErgoSit'
                      : ( $is_leakboxers_page ? 'Boxeri absorbanți NORIKS'
                      : ( $is_kompmajice_page ? 'Tricou compresiv NORIKS FIT'
-                     : ( $is_norikshers_review_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) );
+                     : ( $is_norikshers_review_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) ) );
 
   // Include review pools (own pool per product group)
   if ( $is_kidsnest_page ) {
     include get_stylesheet_directory() . '/auto_reviews/RO_kidsnest.php';
+  } elseif ( $is_jastuk_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/RO_ortopedski_jastuk.php';
   } elseif ( $is_leakboxers_page ) {
     include get_stylesheet_directory() . '/auto_reviews/RO_leakboxers.php';
   } elseif ( $is_kompmajice_page ) {
@@ -814,6 +824,7 @@ endif;
       $is_fisiorest = false;
       $is_norikshers = false;
       $is_kidsnest  = false;
+      $is_jastuk    = false;
       if ( $product_id ) {
           $is_bokserice = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $product_id );
           $is_ortopas   = ( function_exists('noriks_is_type') && noriks_is_type('ortopas', $product_id) );
@@ -821,9 +832,10 @@ endif;
           $is_fisiorest = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest', $product_id) );
           $is_norikshers = ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $product_id) );
           $is_kidsnest  = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest', $product_id) );
+          $is_jastuk    = ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk', $product_id) );
       }
 
-      $cache_key = $transient_key . ( $is_kidsnest ? '_kidsnest' : ( $is_norikshers ? '_norikshers' : ( $is_fisiorest ? '_fisiorest' : ( $is_bunion ? '_bunion' : ( $is_ortopas ? '_ortopas' : ( $is_bokserice ? '_bokserice' : '_all' ) ) ) ) ) );
+      $cache_key = $transient_key . ( $is_kidsnest ? '_kidsnest' : ( $is_jastuk ? '_jastuk' : ( $is_norikshers ? '_norikshers' : ( $is_fisiorest ? '_fisiorest' : ( $is_bunion ? '_bunion' : ( $is_ortopas ? '_ortopas' : ( $is_bokserice ? '_bokserice' : '_all' ) ) ) ) ) ) );
 
       if ( function_exists( 'get_transient' ) ) {
           $cached = get_transient( $cache_key );
@@ -842,6 +854,8 @@ endif;
 
       if ( $is_kidsnest ) {
           $args['category'] = [ 'orto-kidsnest' ];
+      } elseif ( $is_jastuk ) {
+          $args['category'] = [ 'orto-ortopedski-jastuk' ];
       } elseif ( $is_norikshers ) {
           $args['category'] = [ 'orto-norikshers', 'orto-noriks-hers' ];
       } elseif ( $is_fisiorest ) {
@@ -1095,8 +1109,8 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
 
   // Avatar pools based on page category
   $avatar_type = $is_bokserice_page ? 'bokserice' : 'majice';
-  // Belt + bunion + fisiorest + norikshers + leak boxers + kompresijske majice + kidsnest: text-only reviews (no avatar images).
-  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_review_page || $is_leakboxers_page || $is_kompmajice_page || $is_kidsnest_page ) ? array() : get_review_avatar_pool($avatar_type);
+  // Belt + bunion + fisiorest + norikshers + leak boxers + kompresijske majice + kidsnest + ortopedski jastuk: text-only reviews (no avatar images).
+  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_review_page || $is_leakboxers_page || $is_kompmajice_page || $is_kidsnest_page || $is_jastuk_page ) ? array() : get_review_avatar_pool($avatar_type);
 
   // On single-product landing pages (leak boxers / kompresijske majice) the cards should
   // reference THIS product (via $rv_fallback_title), not random pool products.
@@ -1140,8 +1154,8 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
   $ship_count = count($auto_reviews_ship);
 ?>
 
-<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_review_page || $is_leakboxers_page || $is_kompmajice_page || $is_kidsnest_page ) : ?>
-<style>/* belt + bunion + fisiorest + norikshers + leakboxers + kompmajice + kidsnest: text-only reviews, no avatar */ #reviews-section .avatar { display: none !important; }</style>
+<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_review_page || $is_leakboxers_page || $is_kompmajice_page || $is_kidsnest_page || $is_jastuk_page ) : ?>
+<style>/* belt + bunion + fisiorest + norikshers + leakboxers + kompmajice + kidsnest + jastuk: text-only reviews, no avatar */ #reviews-section .avatar { display: none !important; }</style>
 <?php endif; ?>
 
 <section id="reviews-section" class="basic-reviews-section" style="margin-bottom:40px!important;padding-bottom:40px!important;">
@@ -1567,6 +1581,7 @@ $is_norikshers_page = ( function_exists('noriks_is_type') && noriks_is_type('nor
 $is_leakboxers_faq = ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') );
 $is_kompmajice_faq = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') );
 $is_kidsnest_faq   = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') );
+$is_jastuk_faq     = ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') );
 
 // NORIKS FIT (tricou compresiv/modelator) — FAQ despre produs (traducere, NORIKS FIT).
 $kompmajice_faq = array(
@@ -1595,6 +1610,17 @@ $kidsnest_faq = array(
   array( 'questioon' => 'Copilul meu chiar o va folosi?', 'answer' => 'Da. Forma ergonomică se simte ca un sprijin, nu ca ceva ciudat — majoritatea copiilor se obișnuiesc în 1–2 nopți. Părinții ne spun adesea că, după prima săptămână, copiii nu mai vor să doarmă fără ea. Structura cu 3 zone primește capul în mod natural — nu există un „mod corect”, nu există luptă înainte de culcare.' ),
   array( 'questioon' => 'Funcționează dacă copilul meu respiră deja pe gură?', 'answer' => 'Da — exact pentru astfel de copii a fost concepută. Structura cu 3 zone ajută la prevenirea înclinării capului pe spate, din cauza căreia gura se deschide în somn. La majoritatea copiilor, în 7–14 nopți buzele se închid natural și respirația pe nas revine.' ),
   array( 'questioon' => 'Ce se întâmplă dacă nu îl ajută pe copilul meu?', 'answer' => 'Lăsați copilul să doarmă pe KidsNest 30 de nopți. Dacă nu vedeți nicio diferență — mai puțină respirație pe gură, nopți mai liniștite, somn mai odihnitor — scrieți-ne și vă returnăm banii. Fără întrebări și fără litere mici.' ),
+);
+
+// Perna ortopedică ErgoSit — FAQ despre produs (NORIKS).
+$jastuk_faq = array(
+  array( 'questioon' => 'Cum ameliorează NORIKS ErgoSit durerea la statul pe scaun?', 'answer' => 'ErgoSit are un decupaj pentru coccis care elimină presiunea directă asupra osului coccigian și a nervului sciatic, în timp ce forma anatomică din spumă cu memorie de înaltă densitate distribuie greutatea uniform pe șolduri și coapse. Astfel se descarcă punctele sensibile și se susține o postură sănătoasă și dreaptă.' ),
+  array( 'questioon' => 'Unde pot folosi perna?', 'answer' => 'Oriunde stai jos — în mașină, pe scaunul de birou, pe scaunul de la masă, în scaunul cu rotile sau acasă. Baza stabilă, antiderapantă, o ține pe loc, astfel confortul merge cu tine toată ziua.' ),
+  array( 'questioon' => 'Se turtește spuma în timp?', 'answer' => 'Nu. ErgoSit folosește spumă cu memorie de înaltă densitate, care își păstrează forma și fermitatea chiar și după o utilizare zilnică îndelungată, spre deosebire de pernele ieftine, care se turtesc rapid.' ),
+  array( 'questioon' => 'Husa se poate spăla?', 'answer' => 'Da. Husa se scoate și se poate spăla la mașină, astfel perna rămâne proaspătă și curată. Materialul este respirabil, hipoalergenic și certificat OEKO-TEX®.' ),
+  array( 'questioon' => 'Se potrivește scaunului meu?', 'answer' => 'ErgoSit are o formă universală și se potrivește majorității scaunelor auto, de birou și de bucătărie, precum și scaunelor cu rotile. Nu există mărimi — un singur model se potrivește tuturor.' ),
+  array( 'questioon' => 'În cât timp simt diferența?', 'answer' => 'Majoritatea utilizatorilor simt mai puțină presiune pe coccis și un stat pe scaun mai confortabil încă din prima zi. Pentru o postură mai bună și mai puțină durere de spate, efectul se consolidează prin utilizare regulată.' ),
+  array( 'questioon' => 'Există o garanție de returnare a banilor?', 'answer' => 'Da, fiecare NORIKS ErgoSit vine cu o garanție de confort de 60 de zile. Dacă nu simți mai puțină durere și mai mult confort, contactează-ne și rezolvăm.' ),
 );
 
 // Corector halux — FAQ despre produs (traducere, NORIKS).
@@ -1645,9 +1671,10 @@ $norikshers_faq = array(
   array( 'questioon' => 'Există o garanție de returnare a banilor?', 'answer' => 'Da, oferim o garanție fără risc de 30 de zile. Dacă nu ești mulțumit, contactează-ne pur și simplu și rezolvăm.' ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq ) {
+$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq ) {
   $is_info = ( stripos( (string) $title, 'produs' ) !== false );
   if ( $is_kidsnest_faq && $is_info )  { return $kidsnest_faq; }
+  if ( $is_jastuk_faq && $is_info )   { return $jastuk_faq; }
   if ( $is_leakboxers_faq && $is_info ) { return $leakboxers_faq; }
   if ( $is_kompmajice_faq && $is_info ) { return $kompmajice_faq; }
   if ( $is_norikshers_page && $is_info ) { return $norikshers_faq; }

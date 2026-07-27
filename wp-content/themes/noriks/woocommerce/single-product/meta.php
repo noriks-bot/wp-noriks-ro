@@ -459,8 +459,38 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
     <?php endif; ?>
 
 
-    <!-- 1 - detajli --> <!-- ascuns pentru norikshers -->
-    <?php if ( ! ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $current_product_id) ) ) : ?>
+    <!-- Perna ortopedică ErgoSit: primele doua locuri din accordion (copie a originalului, RO) -->
+    <?php if ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk', $current_product_id) ) : ?>
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <h3>Specificațiile produsului</h3>
+        <div class="toggle">+</div>
+      </div>
+      <div class="accordion-content">
+        <ul style="margin:8px 0 12px; padding-left:18px;">
+          <li style="margin:0 0 8px;"><strong>Husa exterioară:</strong> Tricot respirabil, detașabilă și lavabilă la mașină, hipoalergenică</li>
+          <li style="margin:0 0 8px;"><strong>Nucleul:</strong> Spumă adaptivă OrthoFlex™ | Netoxică, certificată OEKO-TEX® | Concepută pentru descărcarea presiunii + alinierea posturii</li>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <h3>Prin ce este atât de specială?</h3>
+        <div class="toggle">+</div>
+      </div>
+      <div class="accordion-content">
+        <ul style="margin:8px 0 12px; padding-left:18px;">
+          <li style="margin:0 0 10px;"><strong>Spuma cu memorie OrthoFlex™:</strong> Spumă de înaltă densitate care descarcă presiunea și se adaptează fără să se turtească — susține coccisul, șoldurile și coloana pentru confort pe toată ziua.</li>
+          <li style="margin:0 0 10px;"><strong>Husa BreatheEase™:</strong> Moale, respirabilă și delicată cu pielea. Se scoate și se spală la mașină, ca perna să rămână mereu proaspătă.</li>
+          <li style="margin:0 0 10px;"><strong>Sprijin echilibrat:</strong> Nici prea moale, nici prea tare. Concepută să alinieze postura și să calmeze punctele dureroase după ore lungi de stat pe scaun.</li>
+        </ul>
+      </div>
+    </div>
+    <?php endif; ?>
+
+
+    <!-- 1 - detajli --> <!-- ascuns pentru norikshers + perna ortopedică -->
+    <?php if ( ! ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $current_product_id) ) && ! ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk', $current_product_id) ) ) : ?>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3><?php echo get_field("singlepp_acc_h_1","options"); ?></h3>
@@ -524,7 +554,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
 
      <!-- 2 - slika tablica velicina -->
-     <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) ) ) ) : // nu există tabel de mărimi pentru bunion + fisiorest + norikshers ?>
+     <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) ) ) : // nu există tabel de mărimi pentru bunion + fisiorest + norikshers + perna ortopedică ?>
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3>Tabel de mărimi</h3>
@@ -645,7 +675,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
 
     <!-- 3 - savjeti za pranje--> <!-- ascuns si pentru kidsnest -->
-    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('kidsnest', $current_product_id) ) ) ) : // fără sfaturi de spălare pentru centură/bunion/fisiorest/norikshers/kidsnest ?>
+    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('kidsnest', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) ) ) : // fără sfaturi de spălare pentru centură/bunion/fisiorest/norikshers/kidsnest/perna ortopedică ?>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3><?php echo get_field("singlepp_acc_h_2","options"); ?></h3>

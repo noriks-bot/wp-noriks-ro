@@ -20,7 +20,7 @@ $lbv = get_template_directory_uri() . '/img/leakboxers-videos/';
       <p>Absorbante care se aud, scutece care se văd pe sub haine și teama constantă de scurgeri. Meritați o soluție care arată și se simte ca lenjeria obișnuită.</p>
       <ul class="lbx-check">
         <li><strong>250 kg</strong> de deșeuri pe an per utilizator</li>
-        <li>Peste <strong>800 €</strong> aruncați în fiecare an</li>
+        <li>Peste <strong>4.000 lei</strong> aruncați în fiecare an</li>
         <li>Produsele de unică folosință sunt voluminoase și pline de chimicale</li>
       </ul>
       <a class="lbx-cta lbx-cta-solid" href="#bundle-selector">Vreau încrederea înapoi →</a>
@@ -124,7 +124,7 @@ $lbv = get_template_directory_uri() . '/img/leakboxers-videos/';
           <tr><td>Discret sub haine</td><td class="us ok">✓</td><td class="no">✕</td><td class="ok">✓</td></tr>
           <tr><td>Lavabil și reutilizabil</td><td class="us ok">✓</td><td class="no">✕</td><td class="ok">✓</td></tr>
           <tr><td>Protecție împotriva mirosului</td><td class="us ok">✓</td><td class="mid">chimicale</td><td class="no">✕</td></tr>
-          <tr><td>Cost anual</td><td class="us ok">✓ scăzut</td><td class="mid">800 €+</td><td class="ok">scăzut</td></tr>
+          <tr><td>Cost anual</td><td class="us ok">✓ scăzut</td><td class="mid">4.000 lei+</td><td class="ok">scăzut</td></tr>
           <tr><td>Ecologic</td><td class="us ok">✓</td><td class="no">✕ 250 kg de deșeuri</td><td class="ok">✓</td></tr>
         </tbody>
       </table>
