@@ -169,16 +169,54 @@
      
       
       
+      <?php elseif ( function_exists('noriks_is_type') && noriks_is_type( 'leakboxers' ) ): ?>
+
+      <div style="margin:30px 0;padding:0 6px;">
+        <p style="margin:0 0 4px;font-weight:700;font-size:15px;">Cum se măsoară șoldurile</p>
+        <p style="margin:0 0 14px;line-height:1.6;font-size:14px;color:#333;">Înfășurați centimetrul în jurul celei mai late părți a șoldurilor (peste fese), fără a strânge, și notați măsura în centimetri.</p>
+        <table style="width:100%;border-collapse:collapse;font-size:14px;">
+          <thead><tr style="background:#12233b;color:#fff;">
+            <th style="padding:9px 10px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Mărime</th><th style="padding:9px 10px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Șolduri (cm)</th>
+          </tr></thead>
+          <tbody>
+          <?php foreach ( array(array('S','până la 76 cm','până la 30"'),array('M','77 – 85 cm','30 – 33"'),array('L','86 – 94 cm','34 – 37"'),array('XL','95 – 102 cm','37 – 40"'),array('2XL','103 – 114 cm','41 – 45"'),array('3XL','115 – 121 cm','45 – 48"'),array('4XL','122 – 129 cm','48 – 51"'),array('5XL','130 – 137 cm','51 – 54"'),array('6XL','138 – 145 cm','54 – 57"'),array('7XL','146 – 153 cm','57 – 60"'),array('8XL','154 cm și peste','61" și peste') ) as $i=>$r): ?>
+            <tr style="background:<?php echo ($i%2)?'#f5f7f9':'#fff'; ?>;border-bottom:1px solid #eee;">
+              <td style="padding:8px 10px;font-weight:700;"><?php echo esc_html($r[0]); ?></td><td style="padding:8px 10px;"><?php echo esc_html($r[1]); ?></td>
+            </tr>
+          <?php endforeach; ?>
+          </tbody>
+        </table>
+        <p style="margin-top:12px;font-size:14px;color:#444;"><strong>Sunteți între două mărimi?</strong> Recomandăm mărimea mai mare, pentru confort optim și absorbție maximă.</p>
+      </div>
+
+      <?php elseif ( function_exists('noriks_is_type') && noriks_is_type( 'kompresijske-majice' ) ): ?>
+
+      <div style="margin:30px 0;padding:0 6px;">
+        <table style="width:100%;border-collapse:collapse;font-size:16px;">
+          <thead><tr style="background:#111;color:#fff;">
+            <th style="padding:11px 12px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Mărime</th><th style="padding:11px 12px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Greutate corespunzătoare</th>
+          </tr></thead>
+          <tbody>
+          <?php foreach ( array(array('S','50 – 70 kg'),array('M','70 – 90 kg'),array('L','90 – 110 kg'),array('XL','110 – 130 kg'),array('2XL','130 – 150 kg'),array('3XL','150 – 170 kg'),array('4XL','170 – 190 kg'),array('5XL','190 – 210 kg') ) as $i=>$r): ?>
+            <tr style="background:<?php echo ($i%2)?'#f2f2f2':'#fff'; ?>;border-bottom:1px solid #e6e6e6;">
+              <td style="padding:11px 12px;font-weight:800;"><?php echo esc_html($r[0]); ?></td><td style="padding:11px 12px;font-weight:700;"><?php echo esc_html($r[1]); ?></td>
+            </tr>
+          <?php endforeach; ?>
+          </tbody>
+        </table>
+        <p style="margin-top:12px;font-size:14px;color:#444;">Alegeți mărimea în funcție de greutatea dumneavoastră. Sunteți între două mărimi? Pentru o compresie mai puternică, alegeți mărimea mai mică.</p>
+      </div>
+
       <?php else: ?>
-      
-      
+
+
        <img
-    
+
     style="margin-top: 70px;margin-bottom: 70px;"
-    
+
       src="https://noriks.com/ro/wp-content/uploads/2026/04/tablica_ro.jpg"
       alt="Size Guide">
-      
+
       <?php endif; ?>
       
       
