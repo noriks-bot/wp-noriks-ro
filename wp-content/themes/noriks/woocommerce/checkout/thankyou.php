@@ -51,14 +51,14 @@ if ( $upsell_is_tricouri ) {
     );
     $upsell_title_text = 'Adaugă tricouri acum – 50% reducere';
 } else {
-    $upsell_product_id = 2781; // Boxeri Negri
-    $upsell_name       = 'Boxeri Negri';
+    $upsell_product_id = 2829; // Boxeri Gri (siva verzija, ista struktura kot crna)
+    $upsell_name       = 'Boxeri Gri';
     $upsell_qty_prices = array( 1 => 24.99, 3 => 74.97, 5 => 124.96 );
-    $upsell_qty_names  = array( 1 => '1x Boxeri Negri', 3 => '3x Boxeri Negri', 5 => '5x Boxeri Negri' );
+    $upsell_qty_names  = array( 1 => '1x Boxeri Gri', 3 => '3x Boxeri Gri', 5 => '5x Boxeri Gri' );
     $upsell_qty_images = array(
-        1 => 'https://noriks.com/ro/wp-content/uploads/2025/11/crne-boksarice-produktna-600x600.jpg',
-        3 => 'https://noriks.com/ro/wp-content/uploads/2025/11/boksarice_3x_crne-600x600.png',
-        5 => 'https://noriks.com/ro/wp-content/uploads/2026/01/boksarice_5x_crne-600x600.png',
+        1 => 'https://noriks.com/ro/wp-content/uploads/2025/11/sive-boksarice-produktna.jpg',
+        3 => 'https://noriks.com/ro/wp-content/uploads/2025/11/sive-boksarice-produktna.jpg', // TODO: 3x siva kompozitna, ko obstaja
+        5 => 'https://noriks.com/ro/wp-content/uploads/2025/11/sive-boksarice-produktna.jpg', // TODO: 5x siva kompozitna, ko obstaja
     );
     $upsell_title_text = 'Adaugă boxeri acum – 50% reducere';
 }
