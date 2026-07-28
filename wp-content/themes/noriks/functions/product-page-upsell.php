@@ -41,6 +41,14 @@ function noriks_pp_upsell_register_fields() {
 				'instructions' => 'Adaugă caseta "Cumpără împreună și economisește" imediat sub butonul Adaugă în coș. Clientul alege mărimea, iar 4 bucăți se adaugă la prețul de upsell. Valabil doar pentru acest produs.',
 				'ui'           => 1,
 			),
+			array(
+				'key'          => 'field_noriks_pp_upsell2',
+				'label'        => 'Afișează upsell #2 sub buton (2 tricouri: negru + gri)',
+				'name'         => 'noriks_pp_upsell2',
+				'type'         => 'true_false',
+				'instructions' => 'Al doilea upsell: pachet de 2 tricouri (1 negru + 1 gri), clientul alege o singură mărime pentru ambele. Independent de primul comutator.',
+				'ui'           => 1,
+			),
 		),
 		'location'   => array(
 			array(
