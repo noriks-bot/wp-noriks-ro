@@ -15,6 +15,7 @@ add_filter( 'woocommerce_currency_symbol', function( $symbol ) {
     return $symbol;
 }, 9999 );
 include(get_template_directory() . '/functions/thankyou_upsell.php');
+include(get_template_directory() . '/functions/product-page-upsell.php'); // upsell okvir ispod gumba na stranici proizvoda (ACF prekidac)
 include(get_template_directory() . '/functions/cpts.php');
 include(get_template_directory() . '/functions/options.php');
 include(get_template_directory() . '/functions/single_product_mods.php');
