@@ -434,7 +434,7 @@ function noriks_pp_upsell2_config() {
 	return apply_filters( 'noriks_pp_upsell2_config', array(
 		'product_a'  => 250,   // Crna majica (varijabilni proizvod) — nosi stavku u košarici
 		'product_b'  => 471,   // Siva majica (varijabilni proizvod)
-		'total'      => 94.99, // cijena cijelog paketa (2 komada)
+		'total'      => 84.99, // cijena cijelog paketa (2 komada)
 		'title'      => '1x Tricou negru + 1x gri',
 		'desc'       => 'Două tricouri de bază în pachet — adaugă-le la comandă cu %s%% reducere.',
 		'size_attr'  => 'Mărime',
