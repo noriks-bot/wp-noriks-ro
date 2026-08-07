@@ -662,6 +662,16 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
 
 
+        <?php elseif( noriks_is_type( 'kompresijske-nogavice', $current_product_id ) ): ?>
+
+          <div style="line-height:1.9;">
+            <strong>S/M</strong> : mărime încălțăminte 36–40 / circumferința gambei : 23–36 cm<br>
+            <strong>L/XL</strong> : mărime încălțăminte 40–44 / circumferința gambei : 36–45 cm<br>
+            <strong>2XL</strong> : mărime încălțăminte 44–48 / circumferința gambei : 45–56 cm<br><br>
+            Vă rugăm să măsurați circumferința gambei în cel mai lat punct pentru a găsi mărimea potrivită.<br><br>
+            Recomandăm să alegeți mărimea după circumferința gambei, nu după mărimea obișnuită la încălțăminte.
+          </div>
+
         <?php elseif(  $is_carape ): ?>
 
 
