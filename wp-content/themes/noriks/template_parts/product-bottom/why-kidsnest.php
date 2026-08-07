@@ -23,7 +23,7 @@ $kn = get_template_directory_uri() . '/img/kidsnest/';
 <!-- ============ 2) Incepeti chiar in seara asta — imagine STANGA, text DREAPTA ============ -->
 <section class="kn-sec">
   <div class="kn-wrap kn-row2">
-    <div class="kn-media"><img src="<?php echo esc_url( $kn.'01-poravnan.webp' ); ?>" alt="Perfect aliniat — capul, gâtul și coloana vertebrală în timpul somnului" loading="lazy" onerror="this.style.display='none'"></div>
+    <div class="kn-media"><img src="<?php echo esc_url( $kn.'01-poravnan-ro.webp' ); ?>" alt="Perfect aliniat — capul, gâtul și coloana vertebrală în timpul somnului" loading="lazy" onerror="this.style.display='none'"></div>
     <div class="kn-copy">
       <p class="kn-eyebrow">Dezvoltat împreună cu stomatologi pentru căile respiratorii ale copiilor</p>
       <h2 class="kn-h2 kn-h2-blue">Începeți chiar în seara asta să corectați daunele ascunse.</h2>

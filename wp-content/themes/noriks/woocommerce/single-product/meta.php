@@ -575,7 +575,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
            <?php if( function_exists('noriks_is_type') && noriks_is_type('kidsnest', $current_product_id) ): ?>
 
           <div class="kn-size">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/kidsnest/tablica-velicine.webp" alt="Mărimi KidsNest în funcție de vârstă" style="width:100%;height:auto;border-radius:10px;display:block;margin:0 0 12px;" loading="lazy">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/kidsnest/tablica-velicine-ro.webp" alt="Mărimi KidsNest în funcție de vârstă" style="width:100%;height:auto;border-radius:10px;display:block;margin:0 0 12px;" loading="lazy">
             <p style="margin:0;line-height:1.6;"><strong>Copilul este între două mărimi?</strong> Alegeți întotdeauna mărimea mai mare. Perna este concepută să susțină o aliniere sănătoasă pe măsură ce copilul crește — mărimea mai mare oferă mai mult spațiu și o perioadă de utilizare mai lungă.</p>
           </div>
 
