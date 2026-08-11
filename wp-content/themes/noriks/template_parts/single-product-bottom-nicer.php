@@ -633,7 +633,11 @@ endif;
 
           Nu ești singur în căutarea unei siluete mai definite și a unei posturi mai bune.
 
-          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kneefix') ): ?>
+
+           Nu sunteți singurul care caută un genunchi mai stabil.
+
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kneefix') ): ?>Mii de clienți poartă deja orteza NORIKS KneeFix pentru un genunchi mai stabil – pe scări, la plimbare și în timpul statului prelungit în picioare.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>
 
           Nu sunteți singurii în căutarea unui somn liniștit pentru copilul dumneavoastră.
 
@@ -730,17 +734,21 @@ endif;
   $is_leakboxers_page = ( function_exists('noriks_is_type') && noriks_is_type('leakboxers', $current_product_id) );
   $is_kompmajice_page = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice', $current_product_id) );
   $is_kidsnest_page   = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest', $current_product_id) );
+  $is_kneefix_page    = ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) );
   $is_jastuk_page     = ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk', $current_product_id) );
 
   // Fallback product name shown in review cards.
-  $rv_fallback_title = $is_kidsnest_page ? 'Perna NORIKS KidsNest'
+  $rv_fallback_title = $is_kneefix_page ? 'Orteză pentru genunchi NORIKS KneeFix'
+                     : ( $is_kidsnest_page ? 'Perna NORIKS KidsNest'
                      : ( $is_jastuk_page ? 'Perna ortopedică NORIKS ErgoSit'
                      : ( $is_leakboxers_page ? 'Boxeri absorbanți NORIKS'
                      : ( $is_kompmajice_page ? 'Tricou compresiv NORIKS FIT'
-                     : ( $is_norikshers_review_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) ) );
+                     : ( $is_norikshers_review_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) ) ) );
 
   // Include review pools (own pool per product group)
-  if ( $is_kidsnest_page ) {
+  if ( $is_kneefix_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/RO_kneefix.php';
+  } elseif ( $is_kidsnest_page ) {
     include get_stylesheet_directory() . '/auto_reviews/RO_kidsnest.php';
   } elseif ( $is_jastuk_page ) {
     include get_stylesheet_directory() . '/auto_reviews/RO_ortopedski_jastuk.php';
@@ -1112,7 +1120,7 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
   // Avatar pools based on page category
   $avatar_type = $is_bokserice_page ? 'bokserice' : 'majice';
   // Belt + bunion + fisiorest + norikshers + leak boxers + kompresijske majice + kidsnest + ortopedski jastuk: text-only reviews (no avatar images).
-  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_review_page || $is_leakboxers_page || $is_kompmajice_page || $is_kidsnest_page || $is_jastuk_page ) ? array() : get_review_avatar_pool($avatar_type);
+  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_review_page || $is_leakboxers_page || $is_kompmajice_page || $is_kidsnest_page || $is_jastuk_page || $is_kneefix_page ) ? array() : get_review_avatar_pool($avatar_type);
 
   // On single-product landing pages (leak boxers / kompresijske majice) the cards should
   // reference THIS product (via $rv_fallback_title), not random pool products.
@@ -1156,7 +1164,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
   $ship_count = count($auto_reviews_ship);
 ?>
 
-<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_review_page || $is_leakboxers_page || $is_kompmajice_page || $is_kidsnest_page || $is_jastuk_page ) : ?>
+<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_review_page || $is_leakboxers_page || $is_kompmajice_page || $is_kidsnest_page || $is_jastuk_page || $is_kneefix_page ) : ?>
 <style>/* belt + bunion + fisiorest + norikshers + leakboxers + kompmajice + kidsnest + jastuk: text-only reviews, no avatar */ #reviews-section .avatar { display: none !important; }</style>
 <?php endif; ?>
 
@@ -1583,6 +1591,7 @@ $is_norikshers_page = ( function_exists('noriks_is_type') && noriks_is_type('nor
 $is_leakboxers_faq = ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') );
 $is_kompmajice_faq = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') );
 $is_kidsnest_faq   = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') );
+$is_kneefix_faq   = ( function_exists('noriks_is_type') && noriks_is_type('kneefix') );
 $is_jastuk_faq     = ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') );
 
 // NORIKS FIT (tricou compresiv/modelator) — FAQ despre produs (traducere, NORIKS FIT).
@@ -1605,6 +1614,37 @@ $leakboxers_faq = array(
 );
 
 // Perna KidsNest pentru copii — FAQ despre produs (NORIKS, afirmatii atenuate).
+$kneefix_faq = array(
+  array(
+    'questioon' => 'Este KneeFix potrivită pentru purtare zilnică?',
+    'answer'    => 'Da. NORIKS KneeFix a fost creată tocmai pentru mișcările zilnice — mers, muncă, urcatul scărilor sau statul mai mult în picioare.',
+  ),
+  array(
+    'questioon' => 'Pot regla singur compresia?',
+    'answer'    => 'Da. Cu rotița de precizie încorporată reglați compresia singur — atât sprijin cât vă este confortabil.',
+  ),
+  array(
+    'questioon' => 'Alunecă orteza în timpul mersului?',
+    'answer'    => 'KneeFix are o margine siliconică antiderapantă care ajută la reducerea alunecării și răsucirii ortezei în timpul purtării.',
+  ),
+  array(
+    'questioon' => 'Pot purta orteza pe sub haine?',
+    'answer'    => 'Da. Croiala flexibilă și subțire permite purtarea confortabilă sub majoritatea hainelor de zi cu zi.',
+  ),
+  array(
+    'questioon' => 'Este orteza potrivită pentru ambii genunchi?',
+    'answer'    => 'La comandă alegeți partea (stânga sau dreapta), astfel încât orteza să se potrivească exact genunchiului pe care doriți să îl sprijiniți.',
+  ),
+  array(
+    'questioon' => 'Pot purta orteza timp îndelungat?',
+    'answer'    => 'Orteza este creată pentru purtare zilnică. Mulți clienți o poartă la serviciu, la plimbare și în activitățile zilnice.',
+  ),
+  array(
+    'questioon' => 'Cum aleg mărimea?',
+    'answer'    => 'Mărimile sunt stabilite în funcție de greutatea corporală: S (50–60 kg), M (61–75 kg), L (76–90 kg), XL (91–110 kg) și 2XL (110 kg+).',
+  ),
+);
+
 $kidsnest_faq = array(
   array( 'questioon' => 'Cât de repede voi vedea că respirația pe gură încetează?', 'answer' => 'Majoritatea părinților observă o respirație mai liniștită și mai puține treziri cu gura deschisă în primele 5–7 nopți. Până în noaptea a 14-a, la majoritatea copiilor sforăitul se calmează, iar buzele rămân închise. Diferența completă — o poziție vizibil mai bună și un somn mai liniștit — este descrisă de părinți cel mai adesea în jurul zilelor 21–30. Folosiți perna în fiecare noapte.' ),
   array( 'questioon' => 'Pentru ce vârstă este destinată KidsNest?', 'answer' => 'KidsNest vine în trei mărimi: 1–3, 3–9 și 9–18 ani. Cea mai importantă fereastră este între 3 și 9 ani, când cerul gurii și maxilarul se dezvoltă cel mai intens — dar fiecare vârstă are mărimea și beneficiul ei.' ),
@@ -1673,8 +1713,9 @@ $norikshers_faq = array(
   array( 'questioon' => 'Există o garanție de returnare a banilor?', 'answer' => 'Da, oferim o garanție fără risc de 30 de zile. Dacă nu ești mulțumit, contactează-ne pur și simplu și rezolvăm.' ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq ) {
+$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
   $is_info = ( stripos( (string) $title, 'produs' ) !== false );
+  if ( $is_kneefix_faq && $is_info )    { return $kneefix_faq; }
   if ( $is_kidsnest_faq && $is_info )  { return $kidsnest_faq; }
   if ( $is_jastuk_faq && $is_info )   { return $jastuk_faq; }
   if ( $is_leakboxers_faq && $is_info ) { return $leakboxers_faq; }
