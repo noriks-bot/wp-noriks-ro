@@ -31,6 +31,8 @@ function noriks_product_type_map() : array {
         // Compression socks: universal orto category + RO front-facing socks slug.
         'kompresijske-nogavice'   => array( 'orto-kompresijske-carape' ),
         'ortopas'                 => array( 'orto-ortopas', 'ortopas' ),
+        // KneeFix ortopedska steznica za koljeno.
+        'kneefix'                 => array( 'orto-kneefix' ),
         'bunion'                  => array( 'orto-bunion', 'bunion' ),
         'fisiorest'               => array( 'orto-fisiorest', 'fisiorest' ),
         'norikshers'              => array( 'orto-norikshers', 'orto-noriks-hers', 'norikshers' ),
