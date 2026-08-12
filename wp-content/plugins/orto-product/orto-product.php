@@ -695,6 +695,18 @@ function gck_render_bundle_selector() {
       .color-smeda { background: #9f6f4e; }
       .color-zelena { background: #65633c; }
       .color-tamnoplava { background: #2a3262; }
+      /* RUMUNSKI nazivi boja — vrijednosti atributa na RO tržištu (bez njih je krug prazan). */
+      .color-negru { background: #000; }
+      .color-negre { background: #000; }
+      .color-alb   { background: #fff; border: 1px solid #ccc; }
+      .color-albe  { background: #fff; border: 1px solid #ccc; }
+      .color-gri   { background: #706d78; }
+      .color-bej   { background: #e4e0cf; }
+      .color-bleumarin { background: #2a3262; }
+      .color-maro  { background: #9f6f4e; }
+      .color-verde { background: #65633c; }
+      .color-albastru { background: #203240; }
+      .color-rosu  { background: #ba212f; }
 
       .bundle-option input[type="radio"] {
           -webkit-appearance: none;
