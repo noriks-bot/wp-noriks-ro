@@ -1641,7 +1641,7 @@ $kneefix_faq = array(
   ),
   array(
     'questioon' => 'Cum aleg mărimea?',
-    'answer'    => 'Mărimile sunt stabilite în funcție de greutatea corporală: S (50–60 kg), M (61–75 kg), L (76–90 kg), XL (91–110 kg) și 2XL (110 kg+).',
+    'answer'    => 'Mărimile sunt stabilite în funcție de greutatea corporală: M (50–75 kg), L (76–90 kg), XL (91–110 kg) și 2XL (110 kg+).',
   ),
 );
 
