@@ -31,7 +31,7 @@ $kf_img = function( $file, $alt ) use ( $kf, $kf_path ) {
 <!-- ============ 1) Când fiecare pas devine neplăcut ============ -->
 <section class="kfx-sec">
   <div class="kfx-wrap kfx-row2">
-    <div class="kfx-media"><?php echo $kf_img('13_stepenice.jpg','Durere de genunchi la coborârea scărilor'); ?></div>
+    <div class="kfx-media"><?php echo $kf_img('kf-ro-3.webp','Durere de genunchi la coborârea scărilor'); ?></div>
     <div class="kfx-copy">
       <h2 class="kfx-h2">Când fiecare pas devine neplăcut</h2>
       <p class="kfx-lead">La început este adesea doar o ușoară tensiune.</p>
@@ -133,14 +133,14 @@ $kf_img = function( $file, $alt ) use ( $kf, $kf_path ) {
       <p>NORIKS KneeFix a fost conceput pentru a face mișcările zilnice mai plăcute — fără limitări inutile. Materialul flexibil se adaptează mai bine zilei dumneavoastră și sprijină genunchiul exact acolo unde este nevoie.</p>
       <a class="kfx-cta" href="#bundle-selector">Alege-ți mărimea →</a>
     </div>
-    <div class="kfx-media"><?php echo $kf_img('05_lifestyle_RO.webp','KneeFix în fiecare zi — plimbare, bicicletă, antrenament'); ?></div>
+    <div class="kfx-media"><?php echo $kf_img('kf-ro-1.webp','KneeFix în fiecare zi — plimbare, bicicletă, antrenament'); ?></div>
   </div>
 </section>
 
 <!-- ============ 7) Recomandat pentru sprijinul zilnic al genunchiului ============ -->
 <section class="kfx-sec">
   <div class="kfx-wrap kfx-row2">
-    <div class="kfx-media"><?php echo $kf_img('06_medic_RO.webp','Recomandat pentru sprijinul zilnic al genunchiului'); ?></div>
+    <div class="kfx-media"><?php echo $kf_img('kf-ro-2.webp','Recomandat pentru sprijinul zilnic al genunchiului'); ?></div>
     <div class="kfx-copy">
       <h2 class="kfx-h2">Recomandat pentru sprijinul zilnic al genunchiului</h2>
       <ul class="kfx-check">
