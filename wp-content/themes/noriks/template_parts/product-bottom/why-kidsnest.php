@@ -43,7 +43,7 @@ $kn = get_template_directory_uri() . '/img/kidsnest/';
       <p>Perna ergonomică pentru copii menține <strong>capul și gâtul în aliniere naturală și ajută la prevenirea înclinării capului</strong> pe timpul nopții. Astfel coloana vertebrală rămâne corect aliniată — chiar dacă copilul se foiește mult în somn.</p>
       <p><strong>Rezultatul: un somn mai liniștit și o recuperare mai bună.</strong></p>
     </div>
-    <div class="kn-media"><img src="<?php echo esc_url( $kn.'02-san.jpg' ); ?>" alt="Copil dormind liniștit pe perna KidsNest" loading="lazy" onerror="this.style.display='none'"></div>
+    <div class="kn-media"><img src="<?php echo esc_url( $kn.'kn-ro-2.webp' ); ?>" alt="Copil dormind liniștit pe perna KidsNest" loading="lazy" onerror="this.style.display='none'"></div>
   </div>
 </section>
 
@@ -92,7 +92,7 @@ $kn = get_template_directory_uri() . '/img/kidsnest/';
 <!-- ============ 6) Calitatea materialelor — imagine STANGA, text DREAPTA ============ -->
 <section class="kn-sec">
   <div class="kn-wrap kn-row2">
-    <div class="kn-media"><img src="<?php echo esc_url( $kn.'03-detalj.webp' ); ?>" alt="KidsNest — structura cu 3 zone și țesătura respirabilă în prim-plan" loading="lazy" onerror="this.style.display='none'"></div>
+    <div class="kn-media"><img src="<?php echo esc_url( $kn.'kn-ro-6.webp' ); ?>" alt="KidsNest — structura cu 3 zone și țesătura respirabilă în prim-plan" loading="lazy" onerror="this.style.display='none'"></div>
     <div class="kn-copy">
       <h2 class="kn-h2 kn-h2-blue">Calitate care se simte — noapte de noapte.</h2>
       <p>Tricotul dens și respirabil și suprafața atent modelată nu sunt acolo de dragul aspectului — <strong>fiecare zonă are rolul ei</strong>. Mijlocul primește delicat capul, marginile susțin gâtul, iar structura își păstrează forma chiar și după luni de utilizare zilnică.</p>
