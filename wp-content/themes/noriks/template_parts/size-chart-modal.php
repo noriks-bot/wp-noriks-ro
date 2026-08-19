@@ -241,6 +241,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeX = document.getElementById("close-size-chart-x");
 
   // Open using a class so CSS controls display across breakpoints
+  /* Klik na sliku/tablicu velicina u akordeonu otvara isti modal. */
+  document.addEventListener("click", function (e) {
+    if (e.target.closest(".js-open-size-chart")) { openModal(e); }
+  });
+
   openBtn?.addEventListener("click", function (e) {
     e.preventDefault();
     modal.classList.add("show");
