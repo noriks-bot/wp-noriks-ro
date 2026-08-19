@@ -7,6 +7,7 @@
 
 include(get_template_directory() . '/functions/product-type.php');
 include(get_template_directory() . '/functions/pack-switcher.php'); // alegerea marimii pachetului + alte combinatii de culori (pachete X buc.)
+include(get_template_directory() . '/functions/flash-deals-banner.php'); // traka sezonske rasprodaje
 include(get_template_directory() . '/functions/checkout_mods.php');
 include(get_template_directory() . '/functions/metakocka_export.php');
 
