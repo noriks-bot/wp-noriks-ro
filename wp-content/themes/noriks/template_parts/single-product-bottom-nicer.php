@@ -750,12 +750,16 @@ endif;
   $is_jastuk_page     = ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk', $current_product_id) );
 
   // Fallback product name shown in review cards.
-  $rv_fallback_title = $is_kneefix_page ? 'Orteză pentru genunchi NORIKS KneeFix'
+  $rv_fallback_title = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ) ? 'Șosete compresive NORIKS'
+                     : ( $is_ortopas_page ? 'Centură ortopedică NORIKS'
+                     : ( $is_bunion_page ? 'Corector monturi NORIKS'
+                     : ( $is_fisiorest_page ? 'NORIKS FisioRest'
+                     : ( $is_kneefix_page ? 'Orteză pentru genunchi NORIKS KneeFix'
                      : ( $is_kidsnest_page ? 'Perna NORIKS KidsNest'
                      : ( $is_jastuk_page ? 'Perna ortopedică NORIKS ErgoSit'
                      : ( $is_leakboxers_page ? 'Boxeri absorbanți NORIKS'
                      : ( $is_kompmajice_page ? 'Tricou compresiv NORIKS FIT'
-                     : ( $is_norikshers_review_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) ) ) );
+                     : ( $is_norikshers_review_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) ) ) ) ) ) ) );
 
   // Include review pools (own pool per product group)
   if ( $is_kneefix_page ) {
