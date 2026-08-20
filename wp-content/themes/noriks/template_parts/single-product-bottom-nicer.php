@@ -609,7 +609,19 @@ endif;
       <!--<h4 style="" class="highlight"><?php echo get_field("singlepp_content_standard_reviews_t1","options"); ?></h4>-->
       <h1 style="color:black;     margin-bottom: 4px;">
 
-          <?php if ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>
+          <?php if ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>
+
+          
+
+          Nu ești singurul care caută șosete compresive perfecte.
+
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bokserice') ): ?>
+
+          
+
+          Nu ești singurul care caută boxeri perfecți.
+
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>
 
           Nu ești singur în lupta cu tensiunea din gât.
 
@@ -657,7 +669,7 @@ endif;
 
 
           </h1>
-    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>Mii de oameni folosesc deja NORIKS FisioRest pentru mai puțină durere și tensiune în gât – tracțiune, vibrație și căldură într-un singur dispozitiv.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>Mii de oameni folosesc deja corectorul de halux NORIKS pentru mai puțină durere și o poziție mai corectă a degetului mare – acasă, la TV sau în timpul somnului.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>Mii de oameni poartă deja centura ortopedică NORIKS pentru mai puțină durere și un spate mai stabil – la muncă, la ridicat greutăți și la statul îndelungat pe scaun.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Mii de femei folosesc deja benzile din silicon cu colagen NORIKS Hers pentru vizibil mai puține riduri și linii fine – simplu, în timp ce dorm.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Mii de bărbați poartă deja boxerii absorbanți NORIKS pentru uscăciune și încredere în sine – fără absorbante și fără scutece.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Mii de bărbați poartă deja tricoul compresiv NORIKS pentru un abdomen netezit, o postură mai bună și mai multă încredere.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Mii de părinți au înlocuit deja perna obișnuită cu NORIKS KidsNest – nopți mai liniștite, respirație pe nas și un somn cu adevărat odihnitor.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>Mii de clienți folosesc deja perna ortopedică NORIKS ErgoSit pentru un stat pe scaun fără dureri de coccis, de spate și de șolduri – în mașină, la birou și acasă.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
+    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>Mii de bărbați poartă deja șosetele compresive NORIKS pentru picioare mai ușoare și mai puțin obosite – la muncă, în călătorii și la antrenament.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bokserice') ): ?>Mii de bărbați poartă deja boxerii NORIKS – confort care ține toată ziua.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>Mii de oameni folosesc deja NORIKS FisioRest pentru mai puțină durere și tensiune în gât – tracțiune, vibrație și căldură într-un singur dispozitiv.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>Mii de oameni folosesc deja corectorul de halux NORIKS pentru mai puțină durere și o poziție mai corectă a degetului mare – acasă, la TV sau în timpul somnului.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>Mii de oameni poartă deja centura ortopedică NORIKS pentru mai puțină durere și un spate mai stabil – la muncă, la ridicat greutăți și la statul îndelungat pe scaun.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Mii de femei folosesc deja benzile din silicon cu colagen NORIKS Hers pentru vizibil mai puține riduri și linii fine – simplu, în timp ce dorm.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Mii de bărbați poartă deja boxerii absorbanți NORIKS pentru uscăciune și încredere în sine – fără absorbante și fără scutece.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Mii de bărbați poartă deja tricoul compresiv NORIKS pentru un abdomen netezit, o postură mai bună și mai multă încredere.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Mii de părinți au înlocuit deja perna obișnuită cu NORIKS KidsNest – nopți mai liniștite, respirație pe nas și un somn cu adevărat odihnitor.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>Mii de clienți folosesc deja perna ortopedică NORIKS ErgoSit pentru un stat pe scaun fără dureri de coccis, de spate și de șolduri – în mașină, la birou și acasă.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
     </div>
   </section>
   </div>
@@ -835,6 +847,7 @@ endif;
       $is_norikshers = false;
       $is_kidsnest  = false;
       $is_jastuk    = false;
+      $is_nogavice = false;
       if ( $product_id ) {
           $is_bokserice = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $product_id );
           $is_ortopas   = ( function_exists('noriks_is_type') && noriks_is_type('ortopas', $product_id) );
@@ -843,9 +856,10 @@ endif;
           $is_norikshers = ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $product_id) );
           $is_kidsnest  = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest', $product_id) );
           $is_jastuk    = ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk', $product_id) );
+          $is_nogavice = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice', $product_id) );
       }
 
-      $cache_key = $transient_key . ( $is_kidsnest ? '_kidsnest' : ( $is_jastuk ? '_jastuk' : ( $is_norikshers ? '_norikshers' : ( $is_fisiorest ? '_fisiorest' : ( $is_bunion ? '_bunion' : ( $is_ortopas ? '_ortopas' : ( $is_bokserice ? '_bokserice' : '_all' ) ) ) ) ) ) );
+      $cache_key = $transient_key . ( $is_kidsnest ? '_kidsnest' : ( $is_jastuk ? '_jastuk' : ( $is_norikshers ? '_norikshers' : ( $is_fisiorest ? '_fisiorest' : ( $is_bunion ? '_bunion' : ( $is_ortopas ? '_ortopas' : ( $is_bokserice ? '_bokserice' : ( $is_nogavice ? '_nogavice' : '_all' ) ) ) ) ) ) ) );
 
       if ( function_exists( 'get_transient' ) ) {
           $cached = get_transient( $cache_key );
@@ -876,7 +890,9 @@ endif;
           $args['category'] = [ 'orto-ortopas' ];
       } elseif ( $is_bokserice ) {
           $args['category'] = [ 'bokserice' ];
-      } else {
+      } elseif ( $is_nogavice ) {
+        $args['category'] = [ 'orto-kompresijske-carape' ];
+    } else {
           // Stranice majica: bazen SAMO iz kategorije majica (s podkategorijama).
           // Prije je uzimao sve osim bokserica, pa su recenzije o majicama
           // zavrsavale pod orto proizvodima (Cloth XXL, Cool Curl…).
