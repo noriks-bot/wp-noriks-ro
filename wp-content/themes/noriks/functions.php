@@ -1074,3 +1074,5 @@ add_filter('woocommerce_attribute_label', function($label, $name, $product) {
     $key = strtolower($name);
     return isset($map[$key]) ? $map[$key] : $label;
 }, 10, 3);
+
+require_once get_template_directory() . '/functions/manuals-page.php';
