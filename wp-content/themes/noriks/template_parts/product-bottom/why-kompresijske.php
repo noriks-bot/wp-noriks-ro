@@ -60,7 +60,7 @@ $knv = get_template_directory_uri() . '/img/kompresijske-videos/';
           <tr><td>Fermoar întărit, nu se blochează niciodată</td><td class="mid">—</td><td class="no">✕</td><td class="us ok">✓</td></tr>
           <tr><td>Țesătură respirabilă</td><td class="mid">~</td><td class="no">✕</td><td class="us ok">✓</td></tr>
           <tr><td>Confort toată ziua (+12 ore)</td><td class="mid">~</td><td class="no">✕</td><td class="us ok">✓</td></tr>
-          <tr><td>Garanție de returnare a banilor 60 de zile</td><td class="no">✕</td><td class="no">✕</td><td class="us ok">✓</td></tr>
+          <tr><td>Garanție de returnare a banilor 30 de zile</td><td class="no">✕</td><td class="no">✕</td><td class="us ok">✓</td></tr>
           <tr class="knc-price"><td>Preț pe pereche</td><td>de la 445 RON</td><td>~79 RON</td><td class="us">de la 122 RON</td></tr>
         </tbody>
       </table>

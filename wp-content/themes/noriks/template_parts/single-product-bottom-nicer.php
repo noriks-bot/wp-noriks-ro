@@ -1718,7 +1718,7 @@ $jastuk_faq = array(
   array( 'questioon' => 'Husa se poate spăla?', 'answer' => 'Da. Husa se scoate și se poate spăla la mașină, astfel perna rămâne proaspătă și curată. Materialul este respirabil, hipoalergenic și certificat OEKO-TEX®.' ),
   array( 'questioon' => 'Se potrivește scaunului meu?', 'answer' => 'ErgoSit are o formă universală și se potrivește majorității scaunelor auto, de birou și de bucătărie, precum și scaunelor cu rotile. Nu există mărimi — un singur model se potrivește tuturor.' ),
   array( 'questioon' => 'În cât timp simt diferența?', 'answer' => 'Majoritatea utilizatorilor simt mai puțină presiune pe coccis și un stat pe scaun mai confortabil încă din prima zi. Pentru o postură mai bună și mai puțină durere de spate, efectul se consolidează prin utilizare regulată.' ),
-  array( 'questioon' => 'Există o garanție de returnare a banilor?', 'answer' => 'Da, fiecare NORIKS ErgoSit vine cu o garanție de confort de 60 de zile. Dacă nu simți mai puțină durere și mai mult confort, contactează-ne și rezolvăm.' ),
+  array( 'questioon' => 'Există o garanție de returnare a banilor?', 'answer' => 'Da, fiecare NORIKS ErgoSit vine cu o garanție de confort de 30 de zile. Dacă nu simți mai puțină durere și mai mult confort, contactează-ne și rezolvăm.' ),
 );
 
 // Corector halux — FAQ despre produs (traducere, NORIKS).

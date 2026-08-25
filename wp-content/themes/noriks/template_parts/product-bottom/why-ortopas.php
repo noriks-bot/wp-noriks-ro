@@ -46,7 +46,7 @@ $opz_cmp_rows = array(
     array( 'Preț accesibil',                 true,  false ),
     array( 'Relaxare imediată',              true,  false ),
     array( 'Fără așteptare',                 true,  false ),
-    array( 'Garanție de returnare a banilor în 60 de zile', true, false ),
+    array( 'Garanție de returnare a banilor în 30 de zile', true, false ),
     array( 'Costuri pe termen lung',         false, true  ),
 );
 /* Mnenja s sliko — 8) sekcija */

@@ -83,7 +83,7 @@ $oj_img = function( $file, $alt ) use ( $oj ) {
 <section class="oj-sec oj-stills-sec">
   <div class="oj-trustbar" aria-hidden="true">
     <div class="oj-trustbar-track">
-      <?php $oj_trust = array('PESTE 120.000 DE CLIENȚI','NOTĂ 4,8/5','OEKO-TEX®','RECOMANDATĂ DE MEDICI','GARANȚIE 60 DE ZILE','DESIGN ORTOPEDIC');
+      <?php $oj_trust = array('PESTE 120.000 DE CLIENȚI','NOTĂ 4,8/5','OEKO-TEX®','RECOMANDATĂ DE MEDICI','GARANȚIE 30 DE ZILE','DESIGN ORTOPEDIC');
       for ( $r = 0; $r < 2; $r++ ) { foreach ( $oj_trust as $t ) { echo '<span class="oj-trust-item">'.esc_html($t).'</span><span class="oj-trust-dot">•</span>'; } } ?>
     </div>
   </div>
@@ -177,10 +177,10 @@ $oj_img = function( $file, $alt ) use ( $oj ) {
 <section class="oj-sec oj-guar-sec">
   <div class="oj-wrap">
   <div class="oj-guarantee oj-row2">
-    <div class="oj-guar-badge"><?php echo $oj_img('15_znacka_60_dana_HR.png','Garanție de 60 de zile de returnare a banilor'); ?></div>
+    <div class="oj-guar-badge"><?php echo $oj_img('15_znacka_30_dana.png','Garanție de 30 de zile de returnare a banilor'); ?></div>
     <div class="oj-guar-copy">
       <h2 class="oj-h2 oj-h2-light">Testeaz-o <em class="oj-pink-i">60 de zile</em>, fără nicio grijă</h2>
-      <p>Nu e ușor să găsești perna potrivită — multe se turtesc sau pur și simplu nu aduc o ușurare reală. De aceea, fiecare NORIKS <strong>ErgoSit</strong> vine cu <strong>garanția noastră de confort de 60 de zile</strong>.</p>
+      <p>Nu e ușor să găsești perna potrivită — multe se turtesc sau pur și simplu nu aduc o ușurare reală. De aceea, fiecare NORIKS <strong>ErgoSit</strong> vine cu <strong>garanția noastră de confort de 30 de zile</strong>.</p>
       <p>Ia-o cu tine la birou, în mașină sau pentru orele lungi de acasă. Dacă nu simți mai puțină durere și mai mult confort în statul pe scaun de zi cu zi, echipa noastră se va asigura că totul este așa cum trebuie.</p>
       <p>Pentru că, atunci când vine vorba de sănătatea și confortul tău, credem că diferența trebuie <strong>simțită</strong>, nu doar sperată.</p>
     </div>
