@@ -173,7 +173,7 @@ $oj_img = function( $file, $alt ) use ( $oj ) {
   </div>
 </section>
 
-<!-- ============ 11) Isprobajte 60 dana — TAMNA, značka LIJEVO, tekst DESNO ============ -->
+<!-- ============ 11) Isprobajte 30 dana — TAMNA, značka LIJEVO, tekst DESNO ============ -->
 <section class="oj-sec oj-guar-sec">
   <div class="oj-wrap">
   <div class="oj-guarantee oj-row2">

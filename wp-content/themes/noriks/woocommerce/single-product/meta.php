@@ -742,7 +742,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
       </div>
       <div class="accordion-content">
        <p></p>
-       Suntem atât de siguri că veți iubi NORIKS, că aveți <b data-stringify-type="bold">30 de zile</b> pentru returnare sau schimb gratuit.
+       Suntem atât de siguri că veți iubi NORIKS, că aveți <b data-stringify-type="bold">30 de zile</b> pentru returnare sau schimb.
 Fără birocrație, fără stres – rezolvăm totul în câteva clicuri. </p>
 
 <p>

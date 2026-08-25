@@ -1742,7 +1742,7 @@ function gck_render_bundle_selector() {
                     <?php endif; /* $gck_shgifts vs SHBOX/normal render */ ?>
 
                     <?php if ( ! $gck_no_attrs ) : ?>
-                    <small style="display: block; line-height: 1;"><?php esc_html_e( 'Oferim 30 de zile pentru returnarea banilor sau schimb gratuit – cumpărături fără griji!
+                    <small style="display: block; line-height: 1;"><?php esc_html_e( 'Oferim 30 de zile pentru returnarea banilor sau schimb – cumpărături fără griji!
 ', 'gift-card-kompetentnost' ); ?></small>
                     <?php endif; ?>
                 </div>
