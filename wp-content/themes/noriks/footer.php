@@ -105,9 +105,8 @@
 			<div class="nf-wrap nf-main-grid">
 
 				<div class="nf-brand-col">
-					<p class="nf-brand-tagline">Haine pentru o conformație mai puternică, croite să ți se potrivească cu adevărat.</p>
 					<p class="nf-brand-desc"><?php echo esc_html( $nf_brand ); ?></p>
-					<a class="nf-btn nf-btn-outline" href="/ro/shop">Vezi colecția</a>
+					<a class="nf-btn nf-btn-outline" href="/ro/shop">Cumpără acum</a>
 				</div>
 
 				<nav class="nf-links">
