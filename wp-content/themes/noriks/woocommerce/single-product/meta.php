@@ -460,7 +460,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
       <div class="accordion-content">
         <p>Sfatul pe care l-ați auzit este doar pe jumătate adevărat. Da, cerul gurii se fixează în jurul vârstei de 9 ani. Dar fața se dezvoltă până la 20 de ani, maxilarul inferior crește până la 17, iar căile respiratorii se adaptează în permanență.</p>
         <p>De aceea, fiecare noapte de respirație pe gură după 9 ani adaugă daune noi peste cele vechi: scrâșnitul dinților, dureri de cap, somn care nu odihnește, scăderea concentrării — și o oboseală pe care toți o confundă cu lenea. Adolescentul dumneavoastră nu este leneș. El abia respiră șase ore în fiecare noapte.</p>
-        <p>KidsNest în mărimea <strong>9–18 ani</strong> este realizată pentru un cap, un gât și niște umeri mai mari. Alt contur, altă înălțime, alt sprijin. Același mecanism de bază: alinierea corectă a capului, gâtului și maxilarului, toată noaptea, pe un corp care încă mai crește.</p>
+        <p>KidsNest în mărimea <strong>9–14 ani</strong> este realizată pentru un cap, un gât și niște umeri mai mari. Alt contur, altă înălțime, alt sprijin. Același mecanism de bază: alinierea corectă a capului, gâtului și maxilarului, toată noaptea, pe un corp care încă mai crește.</p>
         <p>Ce observă părinții: sforăitul se calmează în 7 până la 14 nopți, revine energia adevărată de dimineață, durerile de cap pălesc, concentrarea se întoarce.</p>
         <p>Cea mai bună fereastră rămâne între 3 și 9 ani. O fereastră puternică este între 8 și 18. Niciuna nu este complet închisă — dar fiecare noapte de așteptare adaugă presiune unui corp care încearcă să se refacă.</p>
         <p><strong>Ziua de ieri a trecut. Seara aceasta este încă a dumneavoastră.</strong></p>
@@ -510,7 +510,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
          <?php if( function_exists('noriks_is_type') && noriks_is_type( 'kidsnest', $current_product_id ) ): ?>
 
-                NORIKS KidsNest este realizată din spumă cu memorie hipoalergenică, certificată OEKO-TEX® — fără formaldehidă, metale grele sau BPA — cu o husă respirabilă, lavabilă, care se scoate simplu.<br><br>Structura sa ergonomică cu 3 zone primește delicat capul, susține gâtul și ajută la menținerea coloanei vertebrale în aliniere naturală — chiar și atunci când copilul se întoarce mult pe timpul nopții. Astfel încurajează respirația pe nas și un somn mai liniștit și mai profund.<br><br>Disponibilă în trei mărimi (1–3, 3–9 și 9–18 ani), crește odată cu copilul dumneavoastră și oferă înălțimea de sprijin potrivită în fiecare etapă de dezvoltare.
+                NORIKS KidsNest este realizată din spumă cu memorie hipoalergenică, certificată OEKO-TEX® — fără formaldehidă, metale grele sau BPA — cu o husă respirabilă, lavabilă, care se scoate simplu.<br><br>Structura sa ergonomică cu 3 zone primește delicat capul, susține gâtul și ajută la menținerea coloanei vertebrale în aliniere naturală — chiar și atunci când copilul se întoarce mult pe timpul nopții. Astfel încurajează respirația pe nas și un somn mai liniștit și mai profund.<br><br>Disponibilă în trei mărimi (1–3, 3–9 și 9–14 ani), crește odată cu copilul dumneavoastră și oferă înălțimea de sprijin potrivită în fiecare etapă de dezvoltare.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) ): ?>
 
