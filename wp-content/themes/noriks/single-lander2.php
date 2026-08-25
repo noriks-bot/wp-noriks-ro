@@ -1060,7 +1060,7 @@ Individualni rezultati mogu se razlikovati. </em>
                         ">
                         <p class="announcement-bar__message">
                           <span>
-                            <a style="font-size: 1.2rem;" href="https://noriks.com/ro/product-category/bokserice/" title="">70% reducere azi → Perioadă de probă de 14 de zile fără risc</a>
+                            <a style="font-size: 1.2rem;" href="https://noriks.com/ro/product-category/bokserice/" title="">70% reducere azi → Perioadă de probă de 30 de zile fără risc</a>
                           </span>
                         </p>
                       </div>

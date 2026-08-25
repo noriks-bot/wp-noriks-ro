@@ -25,7 +25,7 @@ $bun_results = array(
 
 // De ce să ne alegi — comparație (isti stil kot knc-table na nogavicah z zadrgo)
 $bun_cmp = array(
-    'Garanție de returnare a banilor în 14 de zile',
+    'Garanție de returnare a banilor în 30 de zile',
     'Ameliorează disconfortul',
     'Previne creșterea haluxului',
     'Îmbunătățește în timp starea haluxului',
@@ -116,7 +116,7 @@ $bun_steps = array(
         <li>Intensitate <strong>reglabilă</strong> a întinderii</li>
         <li>Conceput și recomandat de <strong>specialiști medicali</strong></li>
         <li><strong>Simplu de folosit</strong> și portabil</li>
-        <li><strong>Garanție de returnare a banilor în 14 de zile</strong> („rezultate sau banii înapoi"), pentru că suntem atât de siguri de produsul nostru și știm că te va ajuta</li>
+        <li><strong>Garanție de returnare a banilor în 30 de zile</strong> („rezultate sau banii înapoi"), pentru că suntem atât de siguri de produsul nostru și știm că te va ajuta</li>
       </ul>
     </div>
     <div class="bun-col bun-media">

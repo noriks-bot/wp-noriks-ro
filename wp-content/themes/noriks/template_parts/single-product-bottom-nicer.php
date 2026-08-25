@@ -1654,7 +1654,7 @@ $is_jastuk_faq     = ( function_exists('noriks_is_type') && noriks_is_type('orto
 $kompmajice_faq = array(
   array( 'questioon' => 'Cui îi este destinat NORIKS FIT?', 'answer' => 'NORIKS FIT este creat pentru bărbații care își doresc un aspect mai suplu, vor să-și recapete încrederea în propriul corp, să-și corecteze postura, să se simtă mai plini de energie pe parcursul zilei și să arate mai supli sub orice haine.' ),
   array( 'questioon' => 'Cum funcționează de fapt tricoul NORIKS FIT?', 'answer' => 'NORIKS FIT folosește o țesătură compresivă ionică avansată, care activează răspunsul natural al corpului. Fibrele micro-țesute stimulează o circulație sănătoasă și te ajută să menții o postură dreaptă de dimineața până seara. Purtat regulat, oferă un tors vizibil mai bine conturat, o aliniere mai bună a coloanei și mai multă încredere în sine.' ),
-  array( 'questioon' => 'Cât de repede voi observa rezultate?', 'answer' => 'Fiecare corp este diferit, dar majoritatea clienților raportează o schimbare vizibilă în primele 14 de zile. Pentru efect maxim, poartă NORIKS FIT zilnic și combină-l cu o alimentație echilibrată și mișcare regulată.' ),
+  array( 'questioon' => 'Cât de repede voi observa rezultate?', 'answer' => 'Fiecare corp este diferit, dar majoritatea clienților raportează o schimbare vizibilă în primele 30 de zile. Pentru efect maxim, poartă NORIKS FIT zilnic și combină-l cu o alimentație echilibrată și mișcare regulată.' ),
   array( 'questioon' => 'Se vede pe sub cămașă?', 'answer' => 'Nu. NORIKS FIT este subțire, discret și invizibil sub orice cămașă, modelând în același timp abdomenul și pieptul și susținând postura.' ),
   array( 'questioon' => 'Cum se spală și din ce este făcut?', 'answer' => 'Este realizat din 80 % nailon și 20 % elastan. Spală-l la rece, pe un program delicat, ca să păstrezi compresia și să prelungești durata de viață a țesăturii.' ),
 );
@@ -1740,7 +1740,7 @@ $ortopas_faq = array(
   array( 'questioon' => 'Pot purta centura și în timpul somnului?', 'answer' => 'Da, poți purta centura și noaptea. Durata purtării nu este limitată, iar purtarea îndelungată nu are efecte negative.' ),
   array( 'questioon' => 'Cât de strâns să o pun?', 'answer' => 'Centura trebuie să se potrivească strâns, dar nu prea strâns, ca să eviți disconfortul. Trebuie să te poți mișca fără probleme, fără ca centura să te taie sau să alunece. Tensiunea se reglează ușor cu benzile elastice.' ),
   array( 'questioon' => 'Cui o recomandați?', 'answer' => 'Tuturor celor care se confruntă cu dureri lombare, sciatică, tensiune musculară, hernie de disc, dureri de șold sau de bazin, precum și cu probleme la articulația SI. Indiferent de vârstă, sex, înălțime și greutate.' ),
-  array( 'questioon' => 'Există o garanție de returnare a banilor?', 'answer' => 'Oferim o garanție a satisfacției! Dacă nu ești mulțumit de centura NORIKS, contactează-ne la info@noriks.com pentru returnare și rambursare în 14 de zile. Termenul se calculează de la primirea centurii.' ),
+  array( 'questioon' => 'Există o garanție de returnare a banilor?', 'answer' => 'Oferim o garanție a satisfacției! Dacă nu ești mulțumit de centura NORIKS, contactează-ne la info@noriks.com pentru returnare și rambursare în 30 de zile. Termenul se calculează de la primirea centurii.' ),
 );
 
 // FisioRest — FAQ despre produs (traducere, NORIKS).
@@ -1752,7 +1752,7 @@ $fisiorest_faq = array(
   array( 'questioon' => 'Este FisioRest fără fir?', 'answer' => 'Da! NORIKS FisioRest este complet fără fir și reîncărcabil pentru utilizarea zilnică.' ),
   array( 'questioon' => 'Cum se curăță FisioRest?', 'answer' => 'Materialul este rezistent la uleiuri și praf, dar recomandăm să ștergi FisioRest după utilizare cu un șervețel dezinfectant, deoarece husa pernei nu se poate spăla.' ),
   array( 'questioon' => 'Este sigur pentru toată lumea?', 'answer' => 'NORIKS FisioRest este conceput să se potrivească tuturor, indiferent de vârstă sau sex. Totuși, fiecare situație este diferită. Pentru îndrumări detaliate, adaptate nevoilor tale, recomandăm consultarea unui medic.' ),
-  array( 'questioon' => 'Îl pot returna dacă nu văd rezultate?', 'answer' => 'Desigur! Oferim o garanție completă de returnare a banilor în 14 de zile de la livrare, dacă nu ești mulțumit de produs. Scrie-ne la info@noriks.com și îți vom răspunde în 12 ore de la primirea mesajului!' ),
+  array( 'questioon' => 'Îl pot returna dacă nu văd rezultate?', 'answer' => 'Desigur! Oferim o garanție completă de returnare a banilor în 30 de zile de la livrare, dacă nu ești mulțumit de produs. Scrie-ne la info@noriks.com și îți vom răspunde în 12 ore de la primirea mesajului!' ),
 );
 
 // NORIKS HERS — FAQ despre produs (traducere, NORIKS).
@@ -1766,7 +1766,7 @@ $norikshers_faq = array(
   array( 'questioon' => 'Rămâne la locul lui în timp ce dorm?', 'answer' => 'Da! NORIKS HERS este realizat cu un adeziv prietenos cu pielea, rezistent, care urmează mișcările tale. Este respirabil și rămâne la locul lui, chiar și pentru cei care dorm pe o parte.' ),
   array( 'questioon' => 'Pe ce zone îl pot folosi?', 'answer' => 'Oriunde! Majoritatea clienților folosesc NORIKS HERS pe: ridurile de pe frunte, ridurile dintre sprâncene, ridurile de la zâmbet, ridurile gâtului, urmele post-acnee, cicatricile de cezariană, vergeturile, cicatricile chirurgicale sau cele de la răni.' ),
   array( 'questioon' => 'Prin ce este NORIKS HERS mai bun decât plasturii ieftini de pe internet?', 'answer' => 'Mulți plasturi vânduți online sunt de calitate slabă, subțiri sau cu un adeziv prost. NORIKS HERS folosește silicon premium, testat în laborator pentru siguranță și durabilitate, și rămâne la locul lui toată noaptea. În plus, oferim asistență dedicată pentru clienți și înlocuire mai rapidă, dacă ai nevoie de ajutor.' ),
-  array( 'questioon' => 'Există o garanție de returnare a banilor?', 'answer' => 'Da, oferim o garanție fără risc de 14 de zile. Dacă nu ești mulțumit, contactează-ne pur și simplu și rezolvăm.' ),
+  array( 'questioon' => 'Există o garanție de returnare a banilor?', 'answer' => 'Da, oferim o garanție fără risc de 30 de zile. Dacă nu ești mulțumit, contactează-ne pur și simplu și rezolvăm.' ),
 );
 
 $faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
