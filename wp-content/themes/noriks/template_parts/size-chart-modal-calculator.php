@@ -454,7 +454,7 @@ border: 1px solid #ccc;
     
 
     
-    Garanție de 30 de zile pentru schimbul mărimii
+    Garanție de 14 de zile pentru schimbul mărimii
 
          
    
@@ -510,7 +510,7 @@ border: 1px solid #ccc;
     
 
     
-     Garanție de 30 de zile pentru schimbul mărimii
+     Garanție de 14 de zile pentru schimbul mărimii
 
          
    

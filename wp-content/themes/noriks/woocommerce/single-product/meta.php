@@ -80,7 +80,7 @@ global $product;
         
         <div class="feature">
       <img src="https://noriks.com/ro/wp-content/uploads/2025/07/footer_icon1-1.png" alt="Shirt Icon" class="feature__icon info-icon">
-          <p class="feature__text">Testează 30 de zile, fără risc</p>
+          <p class="feature__text">Testează 14 de zile, fără risc</p>
         </div>
         
         
@@ -742,7 +742,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
       </div>
       <div class="accordion-content">
        <p></p>
-       Suntem atât de siguri că veți iubi NORIKS, că aveți <b data-stringify-type="bold">30 de zile</b> pentru returnare sau schimb gratuit.
+       Suntem atât de siguri că veți iubi NORIKS, că aveți <b data-stringify-type="bold">14 de zile</b> pentru returnare sau schimb gratuit.
 Fără birocrație, fără stres – rezolvăm totul în câteva clicuri. </p>
 
 <p>

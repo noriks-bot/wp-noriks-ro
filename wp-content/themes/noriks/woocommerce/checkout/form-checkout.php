@@ -91,7 +91,7 @@ if ( WC()->cart->is_empty() ) return;
     <img decoding="async" src="https://images.vigo-shop.com/general/guarantee_money_back/satisfaction_icon_hr.png">
   </div>
   <div class="flex__item--autosize f--m checkout-warranty__text">
-    <strong>Cumpărați fără griji </strong><br>Returnarea banilor este posibilă în termen de 90 de zile
+    <strong>Cumpărați fără griji </strong><br>Returnarea banilor este posibilă în termen de 14 de zile
   </div>
 </div>
 
