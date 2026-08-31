@@ -11,6 +11,7 @@ include(get_template_directory() . '/functions/flash-deals-banner.php'); // trak
 include(get_template_directory() . '/functions/checkout_mods.php');
 include(get_template_directory() . '/functions/phone-validate.php');
 include(get_template_directory() . '/functions/shop-filter-links.php'); // filtri kategorij brez YITH vticnika // nezno preverjanje telefonske stevilke
+include(get_template_directory() . '/functions/cart-notice.php'); // brez zelene vrstice "dodano v kosarico"
 include(get_template_directory() . '/functions/metakocka_export.php');
 
 /* Force currency symbol to "lei" on frontend */
