@@ -19,6 +19,8 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kompresijske-majice' );
     } elseif ( noriks_is_type( 'kneefix' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kneefix' );
+    } elseif ( noriks_is_type( 'controlpro' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-controlpro' );
     } elseif ( noriks_is_type( 'kidsnest' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kidsnest' );
     } elseif ( noriks_is_type( 'ortopedski-jastuk' ) ) {
@@ -645,10 +647,12 @@ endif;
 
           Nu ești singur în căutarea unei siluete mai definite și a unei posturi mai bune.
 
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ): ?>Nu sunteți singurul căruia exercițiile Kegel nu i-au adus rezultate.
           <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kneefix') ): ?>
 
            Nu sunteți singurul care caută un genunchi mai stabil.
 
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ): ?>Mii de bărbați folosesc deja NORIKS ControlPro — rezistență reală în locul strângerii în gol.
           <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kneefix') ): ?>Mii de clienți poartă deja orteza NORIKS KneeFix pentru un genunchi mai stabil – pe scări, la plimbare și în timpul statului prelungit în picioare.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>
 
           Nu sunteți singurii în căutarea unui somn liniștit pentru copilul dumneavoastră.
@@ -760,9 +764,12 @@ endif;
                      : ( $is_leakboxers_page ? 'Boxeri absorbanți NORIKS'
                      : ( $is_kompmajice_page ? 'Tricou compresiv NORIKS FIT'
                      : ( $is_norikshers_review_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) ) ) ) ) ) ) );
+  if ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ) { $rv_fallback_title = 'NORIKS ControlPro antrenor planșeu pelvin'; }
 
   // Include review pools (own pool per product group)
-  if ( $is_kneefix_page ) {
+  if ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ) {
+    include get_stylesheet_directory() . '/auto_reviews/RO_controlpro.php';
+  } elseif ( $is_kneefix_page ) {
     include get_stylesheet_directory() . '/auto_reviews/RO_kneefix.php';
   } elseif ( $is_kidsnest_page ) {
     include get_stylesheet_directory() . '/auto_reviews/RO_kidsnest.php';
@@ -908,6 +915,8 @@ endif;
         $args['category'] = [ 'orto-kompresijske-carape' ];
     } elseif ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $product_id) ) {
         $args['category'] = [ 'orto-kneefix' ];
+      } elseif ( function_exists('noriks_is_type') && noriks_is_type('controlpro', $product_id) ) {
+        $args['category'] = [ 'orto-controlpro' ];
     } elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers', $product_id) ) {
         $args['category'] = [ 'orto-leak-boxers', 'leak-boxers' ];
     } elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice', $product_id) ) {
@@ -1769,9 +1778,22 @@ $norikshers_faq = array(
   array( 'questioon' => 'Există o garanție de returnare a banilor?', 'answer' => 'Da, oferim o garanție fără risc de 30 de zile. Dacă nu ești mulțumit, contactează-ne pur și simplu și rezolvăm.' ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
+$controlpro_faq = array(
+  array( 'questioon' => 'Cum se folosește?', 'answer' => 'Așezați-vă pe scaun, puneți aparatul <strong>între genunchi</strong> și strângeți împotriva rezistenței. Recomandăm <strong>3 serii a câte 10 repetări pe zi</strong>, aproximativ cinci minute.' ),
+  array( 'questioon' => 'Trebuie introdus ceva?', 'answer' => 'Nu. Fără sonde, fără inserție. Aparatul lucrează <strong>în exteriorul corpului</strong>.' ),
+  array( 'questioon' => 'Când pot aștepta rezultate?', 'answer' => 'Majoritatea utilizatorilor raportează primele schimbări după <strong>3 până la 6 săptămâni</strong> de exercițiu regulat.' ),
+  array( 'questioon' => 'Are nevoie de baterii sau aplicație?', 'answer' => 'Nu. Aparatul este complet mecanic — fără baterii, cabluri sau aplicație. Are doar un <strong>contor de repetări</strong>.' ),
+  array( 'questioon' => 'Prin ce diferă de aparatele EMS?', 'answer' => 'Aparatele EMS contractă mușchiul în locul dumneavoastră. ControlPro cere ca <strong>munca să o faceți singur</strong> împotriva unei rezistențe reale.' ),
+  array( 'questioon' => 'Este potrivit după operația de prostată?', 'answer' => 'Da, mulți îl folosesc tocmai după operația de prostată. Dacă sunteți în recuperare, consultați mai întâi medicul.' ),
+  array( 'questioon' => 'Cum se curăță?', 'answer' => 'Ștergeți cu o lavetă umedă și detergent delicat. Nu scufundați în apă.' ),
+  array( 'questioon' => 'Cum este livrarea?', 'answer' => 'Livrarea este <strong>discretă</strong>, în cutie neutră, fără indicarea conținutului.' ),
+  array( 'questioon' => 'Îl pot returna?', 'answer' => 'Da, aveți <strong>30 de zile</strong> pentru returnarea banilor. Este suficient un e-mail, fără formulare.' ),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
   $is_info = ( stripos( (string) $title, 'produs' ) !== false );
   if ( $is_kneefix_faq && $is_info )    { return $kneefix_faq; }
+  if ( $is_controlpro_faq && $is_info ) { return $controlpro_faq; }
   if ( $is_kidsnest_faq && $is_info )  { return $kidsnest_faq; }
   if ( $is_jastuk_faq && $is_info )   { return $jastuk_faq; }
   if ( $is_leakboxers_faq && $is_info ) { return $leakboxers_faq; }

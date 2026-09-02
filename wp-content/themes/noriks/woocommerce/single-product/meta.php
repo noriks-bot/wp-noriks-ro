@@ -512,7 +512,12 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
                 NORIKS KidsNest este realizată din spumă cu memorie hipoalergenică, certificată OEKO-TEX® — fără formaldehidă, metale grele sau BPA — cu o husă respirabilă, lavabilă, care se scoate simplu.<br><br>Structura sa ergonomică cu 3 zone primește delicat capul, susține gâtul și ajută la menținerea coloanei vertebrale în aliniere naturală — chiar și atunci când copilul se întoarce mult pe timpul nopții. Astfel încurajează respirația pe nas și un somn mai liniștit și mai profund.<br><br>Disponibilă în trei mărimi (1–3, 3–9 și 9–14 ani), crește odată cu copilul dumneavoastră și oferă înălțimea de sprijin potrivită în fiecare etapă de dezvoltare.
 
-         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) ): ?>
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('controlpro', $current_product_id) ): ?>
+
+                NORIKS ControlPro este un antrenor mecanic pentru planșeul pelvin, cu rezistență fizică reală. În loc să strângeți în gol, primiți ceva împotriva căruia puteți împinge — același principiu al încărcării progresive prin care se întărește orice alt mușchi din corp.<br><br>Se folosește șezând: aparatul se așază între genunchi și se strânge împotriva rezistenței — 3 serii a câte 10 repetări pe zi, aproximativ cinci minute. Fără sonde și fără inserție, fără cabluri, gel, baterii sau aplicații. Contorul integrat de repetări arată cât ați lucrat.<br><br>Construcția este solidă, cu perne moi pe suporturi, care nu apasă nici după mai multe serii. Rezistența crește progresiv pe măsură ce mușchii se întăresc.<br><br>Este destinat bărbaților care vor să recâștige controlul vezicii — după operația de prostată, la scurgeri în timpul efortului sau după luni lungi de exerciții Kegel fără rezultat. Livrarea este discretă, în cutie neutră, fără însemne.
+
+
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) ): ?>
 
                 NORIKS KneeFix este o orteză flexibilă pentru genunchi care combină patru funcții într-un singur sistem de susținere: compresie reglabilă printr-o rotiță precisă, stabilizatoare laterale duble, o pernuță din gel care descarcă rotula și o margine siliconică antiderapantă care menține orteza la locul ei.<br><br>Spre deosebire de ortezele rigide, KneeFix nu imobilizează genunchiul — îl susține în timpul mișcării naturale. Compresia se reglează într-o secundă: dimineața mai strâns, după-amiaza mai lejer, în funcție de cât stai în picioare. Genunchiul capătă astfel stabilitate la ridicare, pe scări, la plimbare și la statul prelungit în picioare.<br><br>Materialul este ușor, respirabil și evacuează umezeala, așa că orteza poate fi purtată ore întregi fără transpirație și fără să taie. Este subțire și discretă — sub pantaloni aproape că nu se observă.<br><br>Este disponibilă în mărimi de la S la 2XL în funcție de greutatea corporală și în variante pentru genunchiul stâng și drept, astfel încât potrivirea rămâne precisă.
 
@@ -568,7 +573,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
 
      <!-- 2 - slika tablica velicina -->
-     <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) )) : // nu există tabel de mărimi pentru bunion + fisiorest + norikshers + perna ortopedică ?>
+     <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) )) : // nu există tabel de mărimi pentru bunion + fisiorest + norikshers + perna ortopedică ?>
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3>Tabel de mărimi</h3>
@@ -699,7 +704,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
 
     <!-- 3 - savjeti za pranje--> <!-- ascuns si pentru kidsnest -->
-    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('kidsnest', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) )) : // fără sfaturi de spălare pentru centură/bunion/fisiorest/norikshers/kidsnest/perna ortopedică ?>
+    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('kidsnest', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) )) : // fără sfaturi de spălare pentru centură/bunion/fisiorest/norikshers/kidsnest/perna ortopedică ?>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3><?php echo get_field("singlepp_acc_h_2","options"); ?></h3>
