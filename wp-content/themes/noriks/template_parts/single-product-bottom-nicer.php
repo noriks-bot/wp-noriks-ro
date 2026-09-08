@@ -25,6 +25,12 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kidsnest' );
     } elseif ( noriks_is_type( 'ortopedski-jastuk' ) ) {
         get_template_part( 'template_parts/product-bottom/why-ortopedski-jastuk' );
+    } elseif ( noriks_is_type( 'cloath' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-cloath' );
+    } elseif ( noriks_is_type( 'cloud' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-cloud' );
+    } elseif ( noriks_is_type( 'hyd' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-hyd' );
     }
 }
 ?>
@@ -765,9 +771,18 @@ endif;
                      : ( $is_kompmajice_page ? 'Tricou compresiv NORIKS FIT'
                      : ( $is_norikshers_review_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) ) ) ) ) ) ) );
   if ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ) { $rv_fallback_title = 'NORIKS ControlPro antrenor planșeu pelvin'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) { $rv_fallback_title = 'NORIKS HYD'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('cloud') ) { $rv_fallback_title = 'NORIKS Cloud'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) { $rv_fallback_title = 'Polar NORIKS Cloth XXL'; }
 
   // Include review pools (own pool per product group)
-  if ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ) {
+if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) {
+    include get_stylesheet_directory() . '/auto_reviews/RO_hyd.php';
+} elseif ( function_exists('noriks_is_type') && noriks_is_type('cloud') ) {
+    include get_stylesheet_directory() . '/auto_reviews/RO_cloud.php';
+} elseif ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) {
+    include get_stylesheet_directory() . '/auto_reviews/RO_cloath.php';
+} elseif ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ) {
     include get_stylesheet_directory() . '/auto_reviews/RO_controlpro.php';
   } elseif ( $is_kneefix_page ) {
     include get_stylesheet_directory() . '/auto_reviews/RO_kneefix.php';
@@ -1791,8 +1806,45 @@ $controlpro_faq = array(
   array( 'questioon' => 'Îl pot returna?', 'answer' => 'Da, aveți <strong>30 de zile</strong> pentru returnarea banilor. Este suficient un e-mail, fără formulare.' ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
+$is_cloath_faq = ( function_exists('noriks_is_type') && noriks_is_type('cloath') );
+$cloath_faq = array(
+  array(
+    'questioon' => 'Ce se întâmplă dacă nu sunt mulțumit de achiziție?',
+    'answer'    => 'Ai 30 de zile ca să încerci laveta fără riscuri. Dacă nu ești mulțumit de rezultat, scrie-ne la suport și îți returnăm banii — fără hârtii și fără explicații.',
+  ),
+  array(
+    'questioon' => 'Din ce este făcută laveta?',
+    'answer'    => 'Din țesătură densă din microfibră, cu design pe două fețe: partea pufoasă adună murdăria și apa, iar cea în plasă lustruiește. Marginea este întărită cu o bandă moale care nu zgârie.',
+  ),
+  array(
+    'questioon' => 'De ce este mai scumpă decât lavetele obișnuite?',
+    'answer'    => 'Pentru că e mai densă și mai grea decât microfibra standard — absoarbe de câteva ori mai multă apă, nu lasă scame și rezistă la sute de spălări. Una singură înlocuiește un șir întreg de lavete ieftine care se destramă după câteva spălări.',
+  ),
+  array(
+    'questioon' => 'Cât durează față de lavetele obișnuite?',
+    'answer'    => 'Cu întreținere corectă rezistă la sute de utilizări. Lavetele din magazin își pierd de obicei densitatea după vreo 20 de spălări și încep să lase urme.',
+  ),
+  array(
+    'questioon' => 'Lasă urme sau pete?',
+    'answer'    => 'Nu. Datorită densității și designului pe două fețe, apa este absorbită în loc să fie întinsă, așa că sticla și oglinzile rămân fără urme — și fără scame.',
+  ),
+  array(
+    'questioon' => 'Cum se spală cel mai bine?',
+    'answer'    => 'La mașină, la 40 °C, cu detergent fără balsam (balsamul înfundă fibrele și scade absorbția). Nu folosi înălbitor și nu usca în uscător — usuc-o la aer.',
+  ),
+  array(
+    'questioon' => 'De ce laveta pare mai închisă la culoare în unele filmări?',
+    'answer'    => 'Din cauza luminii. Laveta este gri închis cu margine neagră; în lumină puternică pare mai deschisă, iar în interior mai închisă.',
+  ),
+  array(
+    'questioon' => 'Este potrivită ca și cadou?',
+    'answer'    => 'Da — pachetele 3+3 și 8+4 sunt printre cele mai frecvente cadouri de casă nouă și de sărbători. Laveta vine împăturită frumos, gata de dăruit.',
+  ),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
   $is_info = ( stripos( (string) $title, 'produs' ) !== false );
+  if ( $is_cloath_faq && $is_info ) { return $cloath_faq; }
   if ( $is_kneefix_faq && $is_info )    { return $kneefix_faq; }
   if ( $is_controlpro_faq && $is_info ) { return $controlpro_faq; }
   if ( $is_kidsnest_faq && $is_info )  { return $kidsnest_faq; }
