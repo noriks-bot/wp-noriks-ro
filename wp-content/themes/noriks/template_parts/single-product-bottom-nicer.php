@@ -1842,8 +1842,82 @@ $cloath_faq = array(
   ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
+$is_cloud_faq = ( function_exists('noriks_is_type') && noriks_is_type('cloud') );
+$cloud_faq = array(
+  array(
+    'questioon' => 'Ce fac dacă perna nu mi se potrivește?',
+    'answer'    => 'Ai 60 de nopți ca s-o încerci. Dacă nu ești mulțumit, scrie-ne la suport și îți returnăm toată suma — fără condiții și fără hârtii.',
+  ),
+  array(
+    'questioon' => 'Cum se folosește corect perna?',
+    'answer'    => 'Întinde-te pe o parte, pune perna între genunchi și strânge banda în jurul piciorului de sus. Șoldurile, bazinul și coloana trebuie să fie în linie dreaptă. Banda se poate scoate, iar perna poate fi folosită sub glezne sau sub gât.',
+  ),
+  array(
+    'questioon' => 'Chiar rămâne la locul ei când mă întorc?',
+    'answer'    => 'Da. Banda reglabilă cu capse înconjoară piciorul și ține perna lângă genunchi, așa că nu iese ca o pernă obișnuită. Banda are două poziții de strângere, în funcție de circumferința piciorului.',
+  ),
+  array(
+    'questioon' => 'Din ce este făcută perna?',
+    'answer'    => 'Miezul este din spumă cu memorie de calitate medicală, cu perforații care asigură circulația aerului. Husa este din material respirabil, se scoate și se spală. Materialele sunt certificate OEKO-TEX® STANDARD 100 și CertiPUR-EU.',
+  ),
+  array(
+    'questioon' => 'Este prea tare sau prea moale?',
+    'answer'    => 'Are fermitate medie — suficientă cât să mențină distanța dintre picioare toată noaptea, dar sub presiune se muleaază pe forma genunchiului. Nu se turtește și revine la formă după ce te ridici.',
+  ),
+  array(
+    'questioon' => 'Cum se spală?',
+    'answer'    => 'Scoate husa și spal-o la mașină la 40 °C, fără balsam și fără înălbitor, apoi usuc-o la aer. Spuma nu se spală la mașină — la nevoie șterge-o cu o lavetă umedă și las-o să se usuce.',
+  ),
+  array(
+    'questioon' => 'Cât durează până mă obișnuiesc?',
+    'answer'    => 'Majoritatea utilizatorilor simt diferența din prima sau a doua noapte. Dacă ești obișnuit să dormi cu genunchii lipiți, primele nopți distanța poate părea ciudată — corpul se adaptează de obicei într-o săptămână.',
+  ),
+  array(
+    'questioon' => 'Este potrivită în sarcină?',
+    'answer'    => 'Da. În sarcină se recomandă somnul pe partea stângă, iar perna dintre genunchi descarcă șoldurile și zona lombară. Dacă ai complicații medicale, consultă medicul înainte de utilizare.',
+  ),
+);
+
+$is_hyd_faq = ( function_exists('noriks_is_type') && noriks_is_type('hyd') );
+$hyd_faq = array(
+  array(
+    'questioon' => 'Ce este apa cu hidrogen?',
+    'answer'    => 'Este apă potabilă obișnuită în care s-a dizolvat hidrogen molecular (H₂). Hidrogenul este cea mai mică moleculă, iar cercetările îl asociază cu o acțiune antioxidantă selectivă.',
+  ),
+  array(
+    'questioon' => 'Cât durează un ciclu?',
+    'answer'    => 'Ciclul scurt durează 3 minute și oferă aproximativ 1.600 ppb de hidrogen, iar cel lung 10 minute și până la 3.000 ppb. Ciclul se alege printr-o apăsare de buton.',
+  ),
+  array(
+    'questioon' => 'Apa atinge plasticul?',
+    'answer'    => 'Nu. Sticla este din sticlă borosilicată cu bază din oțel inoxidabil, așa că apa nu are gust de plastic și nu conține particule.',
+  ),
+  array(
+    'questioon' => 'Ce fel de apă pot folosi?',
+    'answer'    => 'Orice apă potabilă — de la robinet, filtrată, îmbuteliată sau distilată. Datorită membranei PEM/SPE, aparatul nu are nevoie de minerale.',
+  ),
+  array(
+    'questioon' => 'Trebuie schimbat filtrul?',
+    'answer'    => 'Nu. Generatorul are filtru permanent, deci nu există consumabile și nici costuri suplimentare.',
+  ),
+  array(
+    'questioon' => 'Cum se încarcă?',
+    'answer'    => 'Prin cablu USB; încărcarea completă durează 30–60 de minute și ajunge pentru mai multe cicluri. Nu încărca sticla cât timp are apă în ea.',
+  ),
+  array(
+    'questioon' => 'Când beau apa?',
+    'answer'    => 'Cel mai bine imediat după ciclu, în circa 30 de minute, pentru că în timp concentrația de hidrogen scade.',
+  ),
+  array(
+    'questioon' => 'Ce fac dacă nu sunt mulțumit?',
+    'answer'    => 'Ai 30 de zile pentru returnarea banilor. În plus, aparatul are 1 an garanție.',
+  ),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
   $is_info = ( stripos( (string) $title, 'produs' ) !== false );
+  if ( $is_hyd_faq && $is_info ) { return $hyd_faq; }
+  if ( $is_cloud_faq && $is_info ) { return $cloud_faq; }
   if ( $is_cloath_faq && $is_info ) { return $cloath_faq; }
   if ( $is_kneefix_faq && $is_info )    { return $kneefix_faq; }
   if ( $is_controlpro_faq && $is_info ) { return $controlpro_faq; }
