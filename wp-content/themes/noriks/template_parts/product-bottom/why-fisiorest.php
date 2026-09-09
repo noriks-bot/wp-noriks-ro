@@ -18,7 +18,7 @@ $fis_science = array(
 );
 $fis_v = get_template_directory_uri() . '/img/fisiorest-videos/';
 $fis_i = get_template_directory_uri() . '/img/fisiorest/';
-$fis_hero_video = $fis_v . 'hero.mp4';
+$fis_hero_video = $fis_v . 'hero-v2.mp4';
 
 // 3) Recomandat de specialiști
 $fis_experts = array(
@@ -151,7 +151,7 @@ $fis_upgrades = array(
       <h2 class="fis-h2">Proiectat de ingineri. Realizat după standardele fizioterapiei</h2>
       <p>Am investit peste 50.000 € și 2 ani de dezvoltare pentru ca NORIKS să nu fie doar un aparat de masaj pentru gât. Este un dispozitiv complet de terapie a gâtului care tratează cu adevărat cauza. Fiecare comandă trece printr-un control riguros de calitate, ca să ajungă în stare perfectă.</p>
     </div>
-    <div class="fis-row2-media"><video src="<?php echo esc_url( $fis_v.'hero.mp4' ); ?>" muted autoplay loop playsinline preload="metadata"></video></div>
+    <div class="fis-row2-media"><video src="<?php echo esc_url( $fis_v.'hero-v2.mp4' ); ?>" muted autoplay loop playsinline preload="metadata"></video></div>
   </div>
 </section>
 
