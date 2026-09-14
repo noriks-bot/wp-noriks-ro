@@ -31,6 +31,14 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-cloud' );
     } elseif ( noriks_is_type( 'hyd' ) ) {
         get_template_part( 'template_parts/product-bottom/why-hyd' );
+    } elseif ( noriks_is_type( 'snug' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-snug' );
+    } elseif ( noriks_is_type( 'kompwom' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-kompwom' );
+    } elseif ( noriks_is_type( 'pal' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-pal' );
+    } elseif ( noriks_is_type( 'red' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-red' );
     }
 }
 ?>
@@ -774,8 +782,21 @@ endif;
   if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) { $rv_fallback_title = 'NORIKS HYD'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('cloud') ) { $rv_fallback_title = 'NORIKS Cloud'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) { $rv_fallback_title = 'Polar NORIKS Cloth XXL'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) { $rv_fallback_title = 'NORIKS Snug pernă pentru tot corpul'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) { $rv_fallback_title = 'NORIKS FIT Woman tricou modelator'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('pal') ) { $rv_fallback_title = 'NORIKS Pal baston de mers'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('red') ) { $rv_fallback_title = 'NORIKS RedRelief terapie cu lumină roșie'; }
 
   // Include review pools (own pool per product group)
+if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) {
+  include get_stylesheet_directory() . '/auto_reviews/RO_snug.php';
+} elseif ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) {
+  include get_stylesheet_directory() . '/auto_reviews/RO_kompwom.php';
+} elseif ( function_exists('noriks_is_type') && noriks_is_type('pal') ) {
+  include get_stylesheet_directory() . '/auto_reviews/RO_pal.php';
+} elseif ( function_exists('noriks_is_type') && noriks_is_type('red') ) {
+  include get_stylesheet_directory() . '/auto_reviews/RO_red.php';
+} else
 if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) {
     include get_stylesheet_directory() . '/auto_reviews/RO_hyd.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('cloud') ) {
@@ -1197,7 +1218,11 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
         noriks_is_type('bra') ||
         noriks_is_type('hyd') ||
         noriks_is_type('snore') ||
-        noriks_is_type('cloud')
+        noriks_is_type('cloud') ||
+        noriks_is_type('snug') ||
+        noriks_is_type('kompwom') ||
+        noriks_is_type('pal') ||
+        noriks_is_type('red')
   );
   // fotografije osoba: samo na odjeci (majice, bokserice, kompleti), ne na ortopedskim pomagalima
   $avatar_pool = $noriks_no_photos ? array() : get_review_avatar_pool($avatar_type);
@@ -1914,8 +1939,160 @@ $hyd_faq = array(
   ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
+$is_snug = ( function_exists('noriks_is_type') && noriks_is_type('snug') );
+$snug_faq = array(
+  array(
+    'questioon' => 'Care sunt dimensiunile pernei?',
+    'answer'    => 'O singură mărime: <strong>105 cm lungime și 30 cm lățime</strong>. Susține de la umăr până la genunchi, dar nu ocupă tot patul — de aceea e ușor de ținut și te întorci ușor cu ea.',
+  ),
+  array(
+    'questioon' => 'Se turtește în timp?',
+    'answer'    => 'Nu. Umplutura este formată din mii de fibre fine și elastice care revin la formă. Sprijinul pe care îl simți în prima noapte este același și după nouăzeci de nopți.',
+  ),
+  array(
+    'questioon' => 'Cu ce este umplută?',
+    'answer'    => 'Cu umplutură din fibre de înaltă elasticitate — moale și plăcută la exterior, fermă și susținătoare în interior. Fără spumă cu memorie, care se încălzește.',
+  ),
+  array(
+    'questioon' => 'Cum se spală?',
+    'answer'    => 'Husa se scoate și se spală la mașină la 40 °C. Perna în sine nu se spală la mașină — la nevoie, aerisește-o și las-o să se usuce la aer.',
+  ),
+  array(
+    'questioon' => 'Este potrivită în sarcină?',
+    'answer'    => 'Da. Forma de S susține burta în față și spatele în spate, iar poziția recomandată în sarcină este somnul pe partea stângă. În caz de complicații medicale, consultă medicul.',
+  ),
+  array(
+    'questioon' => 'Cât durează obișnuința?',
+    'answer'    => 'Majoritatea găsesc poziția până în a doua noapte. Forma de S e diferită de o pernă dreaptă, așa că în primele nopți corpul învață unde să se așeze.',
+  ),
+  array(
+    'questioon' => 'Ce culori sunt disponibile?',
+    'answer'    => 'Șase culori: albastru, roz, gri, verde, mov și bleumarin. Culoarea o alegi pe această pagină, înainte de a adăuga în coș.',
+  ),
+  array(
+    'questioon' => 'O pot returna?',
+    'answer'    => 'Da, ai <strong>30 de zile</strong> pentru returnarea banilor sau schimb. E suficient un e-mail, fără formulare.',
+  ),
+);
+
+$is_kompwom = ( function_exists('noriks_is_type') && noriks_is_type('kompwom') );
+$kompwom_faq = array(
+  array(
+    'questioon' => 'Cum îmi aleg mărimea?',
+    'answer'    => 'După circumferința bustului — ea decide cum stă tricoul pe piept și pe umeri. Dacă ești între două mărimi, ia-o pe cea <strong>mai mare</strong>. Disponibil de la S la 3XL.',
+  ),
+  array(
+    'questioon' => 'Se vede pe sub haine?',
+    'answer'    => 'Nu. Tricotajul este fără cusături, subțire și mat, așa că dispare sub cămașă, sacou sau o rochie mulată. Nu are margine care să se contureze.',
+  ),
+  array(
+    'questioon' => 'Se rulează în timpul zilei?',
+    'answer'    => 'Nu. Compresia se distribuie pe lățime, în loc să apese într-un singur punct, așa că tricoul rămâne pe loc chiar și după o zi întreagă.',
+  ),
+  array(
+    'questioon' => 'Liniile 3D sunt imprimate?',
+    'answer'    => 'Nu. Țesătura este <strong>împletită chiar în material</strong>, așa că nimic nu crapă și nimic nu se cojește în timp, indiferent de câte spălări.',
+  ),
+  array(
+    'questioon' => 'Cât de tare strânge?',
+    'answer'    => 'Ferm, dar niciodată strâmt. Trebuie să poți respira și mânca normal, fără să te gândești la tricou. Dacă urma pe piele se vede la douăzeci de minute după ce l-ai scos, mărimea e prea mică.',
+  ),
+  array(
+    'questioon' => 'Cum se spală?',
+    'answer'    => 'La mașină, la <strong>30 °C</strong>. Fără înălbitori, fără călcat și fără uscător — lasă-l să se usuce la aer.',
+  ),
+  array(
+    'questioon' => 'Ce culori sunt disponibile?',
+    'answer'    => 'Trei culori: negru, gri închis și roz. Culoarea și mărimea le alegi pe această pagină, înainte de a adăuga în coș.',
+  ),
+  array(
+    'questioon' => 'Îl pot returna?',
+    'answer'    => 'Da, ai <strong>30 de zile</strong> pentru returnarea banilor sau schimbul mărimii. E suficient un e-mail, fără formulare.',
+  ),
+);
+
+$is_pal = ( function_exists('noriks_is_type') && noriks_is_type('pal') );
+$pal_faq = array(
+  array(
+    'questioon' => 'La ce folosește al doilea mâner?',
+    'answer'    => 'Pentru <strong>ridicare</strong>. Mânerul de jos îl apuci când te ridici din fotoliu, din pat sau de pe un scaun jos — presiunea merge vertical în jos, așa că nu trebuie să te apleci în față și nici să ceri ajutor.',
+  ),
+  array(
+    'questioon' => 'Chiar stă singur în picioare?',
+    'answer'    => 'Da. Baza are <strong>patru picioare de cauciuc</strong> care țin bastonul drept când îi dai drumul. Nu cade pe jos, așa că nu trebuie să te apleci după el.',
+  ),
+  array(
+    'questioon' => 'Alunecă pe podele netede?',
+    'answer'    => 'Nu. Picioarele sunt din cauciuc antiderapant și țin pe gresie, parchet și laminat. Baza se adaptează și la teren denivelat, afară.',
+  ),
+  array(
+    'questioon' => 'Cum funcționează lanterna?',
+    'answer'    => 'Lanterna este integrată în mâner și se aprinde cu un buton. Luminează drumul din fața ta — pentru drumul de noapte la baie sau o plimbare pe înserat.',
+  ),
+  array(
+    'questioon' => 'Ce face alarma?',
+    'answer'    => 'Apăsarea butonului pornește un <strong>semnal sonor puternic</strong>, care îi avertizează pe cei din casă dacă ai căzut sau ai nevoie de ajutor.',
+  ),
+  array(
+    'questioon' => 'Se poate regla înălțimea?',
+    'answer'    => 'Da. Înălțimea se reglează în câteva secunde, fără unelte, așa că bastonul se potrivește oricărei staturi.',
+  ),
+  array(
+    'questioon' => 'Se pliază?',
+    'answer'    => 'Da. Se pliază în mai multe părți și încape în geantă sau în torpedoul mașinii — practic pentru călătorii și vizite la medic.',
+  ),
+  array(
+    'questioon' => 'Îl pot returna?',
+    'answer'    => 'Da, ai <strong>30 de zile</strong> pentru returnarea banilor sau schimb. E suficient un e-mail, fără formulare.',
+  ),
+);
+
+$is_red = ( function_exists('noriks_is_type') && noriks_is_type('red') );
+$red_faq = array(
+  array(
+    'questioon' => 'Cum ajută terapia cu lumină roșie în sindromul de tunel carpian?',
+    'answer'    => 'Lumina roșie și infraroșie pătrunde în țesut și stimulează <strong>producția de energie celulară (ATP)</strong>, ceea ce ajută la calmarea inflamației din jurul nervului median, la îmbunătățirea circulației și la susținerea vindecării naturale.',
+  ),
+  array(
+    'questioon' => 'În cât timp apar primele rezultate?',
+    'answer'    => 'Majoritatea utilizatorilor simt mai puține furnicături nocturne în <strong>1 – 2 săptămâni</strong>. O schimbare mai clară a forței de prindere apare de obicei în jurul săptămânii a patra. Recomandăm folosirea regulată, zilnică, timp de cel puțin opt săptămâni.',
+  ),
+  array(
+    'questioon' => 'Este sigur de folosit în fiecare zi?',
+    'answer'    => 'Da. Dispozitivul este conceput pentru <strong>ședințe zilnice de 15 minute</strong>. Lumina, la aceste doze, nu încălzește țesutul. Dispozitivul se oprește singur la finalul ședinței.',
+  ),
+  array(
+    'questioon' => 'Funcționează pentru ambele mâini?',
+    'answer'    => 'Da, banda se poate pune <strong>și pe mâna stângă, și pe cea dreaptă</strong>. Dacă ai probleme la ambele mâini, fă două ședințe de 15 minute una după alta sau alege pachetul cu două dispozitive.',
+  ),
+  array(
+    'questioon' => 'Pentru ce mărimi de mână se potrivește?',
+    'answer'    => 'Banda elastică, cu curea reglabilă, se potrivește <strong>majorității mărimilor de mână de adult</strong>, inclusiv celor mai mari. Orificiul pentru degetul mare ține dispozitivul pe loc pe toată durata ședinței.',
+  ),
+  array(
+    'questioon' => 'Ce conține pachetul?',
+    'answer'    => '1× bandă NORIKS RED, <strong>1× cablu de încărcare USB-C</strong> și instrucțiuni cu protocolul de terapie recomandat.',
+  ),
+  array(
+    'questioon' => 'Cât ține bateria?',
+    'answer'    => 'O încărcare ajunge pentru <strong>până la 4 ședințe</strong>. Dispozitivul se încarcă prin cablu USB-C, așa că îl încarci de la încărcătorul telefonului sau de la laptop.',
+  ),
+  array(
+    'questioon' => 'Înlocuiește medicul?',
+    'answer'    => 'Nu. NORIKS RED este un dispozitiv de uz casnic și <strong>nu înlocuiește consultul medical</strong> și nici tratamentul prescris. În caz de dureri persistente sau puternice, mergi la medic.',
+  ),
+  array(
+    'questioon' => 'Îl pot returna?',
+    'answer'    => 'Da, ai <strong>30 de zile</strong> pentru returnarea banilor sau schimb. E suficient un e-mail, fără formulare.',
+  ),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
   $is_info = ( stripos( (string) $title, 'produs' ) !== false );
+  if ( $is_snug && $is_info ) { return $snug_faq; }
+  if ( $is_kompwom && $is_info ) { return $kompwom_faq; }
+  if ( $is_pal && $is_info ) { return $pal_faq; }
+  if ( $is_red && $is_info ) { return $red_faq; }
   if ( $is_hyd_faq && $is_info ) { return $hyd_faq; }
   if ( $is_cloud_faq && $is_info ) { return $cloud_faq; }
   if ( $is_cloath_faq && $is_info ) { return $cloath_faq; }

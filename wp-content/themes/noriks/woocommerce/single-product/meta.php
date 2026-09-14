@@ -508,7 +508,23 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
       </div>
       <div class="accordion-content">
 
-         <?php if( function_exists('noriks_is_type') && noriks_is_type( 'kidsnest', $current_product_id ) ): ?>
+                  <?php if( function_exists('noriks_is_type') && noriks_is_type('snug', $current_product_id) ): ?>
+
+                <strong>NORIKS Snug</strong> este o pernă pentru tot corpul, în formă de S. Majoritatea pernelor de corp sunt drepte — corpul tău nu este. De aceea Snug urmează linia corpului și susține umerii, șoldurile și genunchii în același timp.<br><br>Când dormi pe o parte fără sprijin, umărul duce toată greutatea, șoldul se lasă, iar coloana se răsucește. Trei puncte de sprijin distribuie greutatea, așa că niciun loc nu duce toată sarcina.<br><br>Dimensiunile sunt 105 cm lungime și 30 cm lățime — suficient cât să te susțină de la umăr până la genunchi, fără să ocupe tot patul. Umplutura este din mii de fibre fine și elastice, care revin la formă și nu se turtesc nici după luni de folosire.<br><br>Husa răcoritoare se scoate și se spală la mașină la 40 °C, iar materialul lasă aerul să treacă toată noaptea. Disponibilă în șase culori: albastru, roz, gri, verde, mov și bleumarin.
+
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kompwom', $current_product_id) ): ?>
+
+                <strong>NORIKS FIT Woman</strong> este un tricou modelator în care relieful este împletit chiar în material, nu imprimat pe el. O bandă lată trece peste abdomen și șolduri, iar alta peste spate.<br><br>Compresia este distribuită pe lățime, nu strânsă într-un singur punct, așa că nimic nu intră în piele. Abdomenul rămâne neted, talia mai îngustă, iar spatele primește un sprijin care te ajută să stai mai drept.<br><br>Tricotajul este fără cusături, subțire și mat — dispare sub cămașă, sacou sau o rochie mulată. Nu se rulează în timpul zilei și nu se conturează pe sub haine.<br><br>Spală la mașină la 30 °C, fără înălbitori, călcat și uscător. Disponibil în trei culori (negru, gri închis, roz) și în mărimi de la S la 3XL. Dacă ești între două mărimi, ia-o pe cea mai mare.
+
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('pal', $current_product_id) ): ?>
+
+                <strong>NORIKS Pal</strong> este un baston gândit în jurul unei singure probleme: ridicarea. Pe lângă mânerul de sus are și un al doilea mâner, mai jos, de care te apuci când te ridici din fotoliu, din pat sau de pe un scaun jos — fără să te apleci în față și fără ajutorul altcuiva.<br><br>Patru picioare de cauciuc țin bastonul drept când îi dai drumul. Nu cade pe jos, așa că nu trebuie să te apleci după el. Baza este antiderapantă și rămâne stabilă pe gresie, parchet și pe teren denivelat.<br><br>În mâner este integrată o lanternă care luminează drumul din fața ta — pentru drumul la baie noaptea sau o plimbare pe înserat. Lângă ea este și o alarmă sonoră, care îi avertizează pe cei din casă dacă ai căzut sau ai nevoie de ajutor.<br><br>Bastonul este pliabil și încape în geantă sau în torpedoul mașinii, iar înălțimea se reglează în câteva secunde, fără unelte, pentru orice statură.
+
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('red', $current_product_id) ): ?>
+
+                <strong>NORIKS RedRelief</strong> este o bandă pentru încheietură care combină cele mai studiate două lungimi de undă din terapia cu lumină roșie: lumina roșie de 660 nm calmează inflamația de la suprafață, iar infraroșul de 850 nm pătrunde mai adânc, până la țesutul din jurul nervului median.<br><br>Lumina se transformă în țesut în energie celulară (ATP) și stimulează circulația locală — două procese care fac parte din refacerea naturală a organismului. De aceea se folosește în sindromul de tunel carpian, tendinită, artrită și dureri de mână și încheietură.<br><br>În bandă sunt integrate 48 de LED-uri duble, distribuite pe toată partea interioară, așa că lumina acoperă toată încheietura, nu doar un punct. Sunt disponibile 4 moduri de lucru și 3 niveluri de putere.<br><br>Dispozitivul este fără fir și se încarcă prin cablu USB-C — o încărcare ajunge pentru până la 4 ședințe. Cântărește doar 126 g, are orificiu pentru degetul mare și curea reglabilă, așa că se potrivește și pe mâna stângă, și pe cea dreaptă. Se recomandă o ședință de 15 minute pe zi; dispozitivul se oprește singur la final.
+
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type( 'kidsnest', $current_product_id ) ): ?>
 
                 NORIKS KidsNest este realizată din spumă cu memorie hipoalergenică, certificată OEKO-TEX® — fără formaldehidă, metale grele sau BPA — cu o husă respirabilă, lavabilă, care se scoate simplu.<br><br>Structura sa ergonomică cu 3 zone primește delicat capul, susține gâtul și ajută la menținerea coloanei vertebrale în aliniere naturală — chiar și atunci când copilul se întoarce mult pe timpul nopții. Astfel încurajează respirația pe nas și un somn mai liniștit și mai profund.<br><br>Disponibilă în trei mărimi (1–3, 3–9 și 9–14 ani), crește odată cu copilul dumneavoastră și oferă înălțimea de sprijin potrivită în fiecare etapă de dezvoltare.
 
@@ -573,7 +589,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
 
      <!-- 2 - slika tablica velicina -->
-     <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) )) : // nu există tabel de mărimi pentru bunion + fisiorest + norikshers + perna ortopedică ?>
+     <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) ) && ! ( function_exists('noriks_is_type') && noriks_is_type('snug', $current_product_id) ) && ! ( function_exists('noriks_is_type') && noriks_is_type('pal', $current_product_id) ) && ! ( function_exists('noriks_is_type') && noriks_is_type('red', $current_product_id) )) : // nu există tabel de mărimi pentru bunion + fisiorest + norikshers + perna ortopedică ?>
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3>Tabel de mărimi</h3>
@@ -686,7 +702,55 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
                   <img class="js-open-size-chart" style="cursor:pointer;" src="https://noriks.com/ro/wp-content/uploads/2026/04/nogavice_ro.jpg">
 
-    <?php elseif(  $is_mixed_bundle ): ?>
+    <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kompwom', $current_product_id) ): ?>
+
+          <div class="kwm-size">
+            <p style="margin:0 0 14px;line-height:1.6;">Alege mărimea după <strong>circumferința bustului</strong> — ea decide cum stă tricoul pe piept și pe umeri. Dacă ești între două mărimi, ia-o pe cea <strong>mai mare</strong>.</p>
+            <table style="width:100%;border-collapse:collapse;font-size:14px;">
+              <thead>
+                <tr style="background:#a8536b;color:#fff;">
+                  <th style="padding:9px 10px;text-align:left;">Mărime</th>
+                  <th style="padding:9px 10px;text-align:left;">Circumferință bust</th>
+                  <th style="padding:9px 10px;text-align:left;">Circumferință talie</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr style="background:#fff;border-bottom:1px solid #f0e6ea;">
+                    <td style="padding:9px 10px;font-weight:700;">S<span style="display:block;font-size:11.5px;font-weight:600;color:#a08d95;">US 0–4</span></td>
+                    <td style="padding:9px 10px;">78 – 83 cm</td>
+                    <td style="padding:9px 10px;">65 – 71 cm</td>
+                  </tr>
+                  <tr style="background:#fbf7f8;border-bottom:1px solid #f0e6ea;">
+                    <td style="padding:9px 10px;font-weight:700;">M<span style="display:block;font-size:11.5px;font-weight:600;color:#a08d95;">US 6–8</span></td>
+                    <td style="padding:9px 10px;">83 – 89 cm</td>
+                    <td style="padding:9px 10px;">71 – 77 cm</td>
+                  </tr>
+                  <tr style="background:#fff;border-bottom:1px solid #f0e6ea;">
+                    <td style="padding:9px 10px;font-weight:700;">L<span style="display:block;font-size:11.5px;font-weight:600;color:#a08d95;">US 10–12</span></td>
+                    <td style="padding:9px 10px;">89 – 95 cm</td>
+                    <td style="padding:9px 10px;">77 – 83 cm</td>
+                  </tr>
+                  <tr style="background:#fbf7f8;border-bottom:1px solid #f0e6ea;">
+                    <td style="padding:9px 10px;font-weight:700;">XL<span style="display:block;font-size:11.5px;font-weight:600;color:#a08d95;">US 14</span></td>
+                    <td style="padding:9px 10px;">95 – 102 cm</td>
+                    <td style="padding:9px 10px;">83 – 88 cm</td>
+                  </tr>
+                  <tr style="background:#fff;border-bottom:1px solid #f0e6ea;">
+                    <td style="padding:9px 10px;font-weight:700;">2XL<span style="display:block;font-size:11.5px;font-weight:600;color:#a08d95;">US 16–18</span></td>
+                    <td style="padding:9px 10px;">102 – 108 cm</td>
+                    <td style="padding:9px 10px;">88 – 94 cm</td>
+                  </tr>
+                  <tr style="background:#fbf7f8;border-bottom:1px solid #f0e6ea;">
+                    <td style="padding:9px 10px;font-weight:700;">3XL<span style="display:block;font-size:11.5px;font-weight:600;color:#a08d95;">US 20</span></td>
+                    <td style="padding:9px 10px;">108 – 115 cm</td>
+                    <td style="padding:9px 10px;">94 – 100 cm</td>
+                  </tr>
+              </tbody>
+            </table>
+            <p style="margin:14px 0 0;line-height:1.6;"><strong>Cum măsori:</strong> bustul peste partea cea mai lată, talia în locul cel mai îngust. Măsoară peste lenjerie, cu banda lipită, dar nu strânsă.</p>
+          </div>
+
+        <?php elseif(  $is_mixed_bundle ): ?>
 
      <img class="js-open-size-chart" style="cursor:pointer;" src="<?php echo get_template_directory_uri(); ?>/img/tabela-velikosti-majice.jpg">
 <img class="js-open-size-chart" style="cursor:pointer;" src="https://noriks.com/ro/wp-content/uploads/2026/04/bokserice_ro.jpg">
