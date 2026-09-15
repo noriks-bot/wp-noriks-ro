@@ -526,7 +526,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type( 'kidsnest', $current_product_id ) ): ?>
 
-                NORIKS KidsNest este realizată din spumă cu memorie hipoalergenică, certificată OEKO-TEX® — fără formaldehidă, metale grele sau BPA — cu o husă respirabilă, lavabilă, care se scoate simplu.<br><br>Structura sa ergonomică cu 3 zone primește delicat capul, susține gâtul și ajută la menținerea coloanei vertebrale în aliniere naturală — chiar și atunci când copilul se întoarce mult pe timpul nopții. Astfel încurajează respirația pe nas și un somn mai liniștit și mai profund.<br><br>Disponibilă în trei mărimi (1–3, 3–9 și 9–14 ani), crește odată cu copilul dumneavoastră și oferă înălțimea de sprijin potrivită în fiecare etapă de dezvoltare.
+                NORIKS KidsNest este realizată din spumă cu memorie hipoalergenică, certificată OEKO-TEX® — fără formaldehidă, metale grele sau BPA — cu o husă din tricot respirabil.<br><br>Structura sa ergonomică cu 3 zone primește delicat capul, susține gâtul și ajută la menținerea coloanei vertebrale în aliniere naturală — chiar și atunci când copilul se întoarce mult pe timpul nopții. Astfel încurajează respirația pe nas și un somn mai liniștit și mai profund.<br><br>Disponibilă în trei mărimi (1–3, 3–9 și 9–14 ani), crește odată cu copilul dumneavoastră și oferă înălțimea de sprijin potrivită în fiecare etapă de dezvoltare.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('controlpro', $current_product_id) ): ?>
 

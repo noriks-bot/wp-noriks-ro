@@ -15,7 +15,7 @@ $kn = get_template_directory_uri() . '/img/kidsnest/';
 <!-- ============ 1) Trust marquee (banda albastra, deruleaza) ============ -->
 <div class="kn-marquee" aria-hidden="true">
   <div class="kn-marquee-track">
-    <?php $kn_ticker = array('RECOMANDAT DE PEDIATRI','SPUMĂ CU MEMORIE OEKO-TEX®','STRUCTURĂ CU 3 ZONE','90 DE NOPȚI DE PROBĂ','HIPOALERGENIC','HUSĂ LAVABILĂ');
+    <?php $kn_ticker = array('RECOMANDAT DE PEDIATRI','SPUMĂ CU MEMORIE OEKO-TEX®','STRUCTURĂ CU 3 ZONE','90 DE NOPȚI DE PROBĂ','HIPOALERGENIC','TRICOT RESPIRABIL');
     for ( $r = 0; $r < 2; $r++ ) { foreach ( $kn_ticker as $t ) { echo '<span class="kn-tick">'.esc_html($t).'</span><span class="kn-dot">•</span>'; } } ?>
   </div>
 </div>
@@ -96,7 +96,7 @@ $kn = get_template_directory_uri() . '/img/kidsnest/';
     <div class="kn-copy">
       <h2 class="kn-h2 kn-h2-blue">Calitate care se simte — noapte de noapte.</h2>
       <p>Tricotul dens și respirabil și suprafața atent modelată nu sunt acolo de dragul aspectului — <strong>fiecare zonă are rolul ei</strong>. Mijlocul primește delicat capul, marginile susțin gâtul, iar structura își păstrează forma chiar și după luni de utilizare zilnică.</p>
-      <p>Husa se scoate și se spală la mașină, spuma este <strong>hipoalergenică și rezistentă la acarieni</strong> — astfel perna rămâne proaspătă, curată și pregătită pentru fiecare noapte. Fără adâncituri, fără aplatizare, fără compromisuri.</p>
+      <p>Tricotul este respirabil, iar spuma este <strong>hipoalergenică și rezistentă la acarieni</strong> — astfel perna rămâne proaspătă, curată și pregătită pentru fiecare noapte. Fără adâncituri, fără aplatizare, fără compromisuri.</p>
       <p><strong>O pernă care și după un an arată — și susține — ca în prima zi.</strong></p>
     </div>
   </div>
