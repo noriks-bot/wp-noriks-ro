@@ -39,6 +39,8 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-pal' );
     } elseif ( noriks_is_type( 'red' ) ) {
         get_template_part( 'template_parts/product-bottom/why-red' );
+    } elseif ( noriks_is_type( 'kneeheat' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-kneeheat' );
     }
 }
 ?>
@@ -786,6 +788,7 @@ endif;
   if ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) { $rv_fallback_title = 'NORIKS FIT Woman tricou modelator'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('pal') ) { $rv_fallback_title = 'NORIKS Pal baston de mers'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('red') ) { $rv_fallback_title = 'NORIKS RedRelief terapie cu lumină roșie'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') ) { $rv_fallback_title = 'NORIKS KneeHeat dispozitiv de încălzire și masaj pentru genunchi'; }
 
   // Include review pools (own pool per product group)
 if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) {
@@ -796,6 +799,8 @@ if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) {
   include get_stylesheet_directory() . '/auto_reviews/RO_pal.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('red') ) {
   include get_stylesheet_directory() . '/auto_reviews/RO_red.php';
+} elseif ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') ) {
+  include get_stylesheet_directory() . '/auto_reviews/RO_kneeheat.php';
 } else
 if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) {
     include get_stylesheet_directory() . '/auto_reviews/RO_hyd.php';
@@ -1222,7 +1227,8 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
         noriks_is_type('snug') ||
         noriks_is_type('kompwom') ||
         noriks_is_type('pal') ||
-        noriks_is_type('red')
+        noriks_is_type('red') ||
+        noriks_is_type('kneeheat')
   );
   // fotografije osoba: samo na odjeci (majice, bokserice, kompleti), ne na ortopedskim pomagalima
   $avatar_pool = $noriks_no_photos ? array() : get_review_avatar_pool($avatar_type);
@@ -2087,12 +2093,49 @@ $red_faq = array(
   ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
+$is_kneeheat = ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') );
+$kneeheat_faq = array(
+  array(
+    'questioon' => 'Cum funcționează de fapt dispozitivul?',
+    'answer'    => 'Căldura de până la <strong>42 °C</strong> dilată vasele de sânge și facilitează fluxul de sânge către țesutul mai profund. Compresia ritmică cu aer împinge lichidul acumulat și readuce sânge proaspăt, iar vibrațiile de <strong>60 Hz</strong> eliberează rigiditatea din jurul articulației. Toate cele trei terapii funcționează simultan.',
+  ),
+  array(
+    'questioon' => 'Pentru ce probleme este destinat?',
+    'answer'    => 'Pentru probleme cronice, apărute treptat — un genunchi rigid, dureros sau umflat, care apare odată cu vârsta și efortul. În cazul unei leziuni recente, al unei operații recente sau al tulburărilor de circulație, consultați mai întâi medicul.',
+  ),
+  array(
+    'questioon' => 'Cât durează o ședință?',
+    'answer'    => '<strong>12 minute.</strong> Dispozitivul pornește cu un singur buton și se oprește singur la finalul ședinței.',
+  ),
+  array(
+    'questioon' => 'Când se simte diferența?',
+    'answer'    => 'Mulți simt că genunchiul este mai relaxat încă după prima ședință. O schimbare mai vizibilă apare de obicei după <strong>7–14 zile</strong> de utilizare zilnică.',
+  ),
+  array(
+    'questioon' => 'Îl pot folosi pe ambii genunchi?',
+    'answer'    => 'Da. Manșeta se potrivește la piciorul stâng și la cel drept — dacă vă supără amândoi, porniți câte o ședință pe fiecare.',
+  ),
+  array(
+    'questioon' => 'Prin ce diferă de un dispozitiv TENS sau de o pernă termică?',
+    'answer'    => 'TENS acoperă semnalul durerii, iar perna termică încălzește doar suprafața și se răcește în câteva minute. KneeHeat îmbină căldura de durată, compresia și vibrațiile pentru a acționa asupra țesutului mai profund.',
+  ),
+  array(
+    'questioon' => 'Trebuie încărcat?',
+    'answer'    => 'Da, dispozitivul este fără fir și se încarcă prin cablul USB-C inclus. O încărcare ajunge pentru mai multe ședințe.',
+  ),
+  array(
+    'questioon' => 'Se potrivește la orice mărime de picior?',
+    'answer'    => 'Benzile sunt reglabile, iar în pachet se află și o bandă de prelungire pentru circumferințe mai mari ale piciorului.',
+  ),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
   $is_info = ( stripos( (string) $title, 'produs' ) !== false );
   if ( $is_snug && $is_info ) { return $snug_faq; }
   if ( $is_kompwom && $is_info ) { return $kompwom_faq; }
   if ( $is_pal && $is_info ) { return $pal_faq; }
   if ( $is_red && $is_info ) { return $red_faq; }
+  if ( $is_kneeheat && $is_info ) { return $kneeheat_faq; }
   if ( $is_hyd_faq && $is_info ) { return $hyd_faq; }
   if ( $is_cloud_faq && $is_info ) { return $cloud_faq; }
   if ( $is_cloath_faq && $is_info ) { return $cloath_faq; }
