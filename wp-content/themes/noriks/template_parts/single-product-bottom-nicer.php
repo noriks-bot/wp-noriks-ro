@@ -779,7 +779,7 @@ endif;
                      : ( $is_jastuk_page ? 'Perna ortopedică NORIKS ErgoSit'
                      : ( $is_leakboxers_page ? 'Boxeri absorbanți NORIKS'
                      : ( $is_kompmajice_page ? 'Tricou compresiv NORIKS FIT'
-                     : ( $is_norikshers_review_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) ) ) ) ) ) ) );
+                     : ( $is_norikshers_review_page ? 'NORIKS HERS' : 'Un tricou gri' ) ) ) ) ) ) ) ) );
   if ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ) { $rv_fallback_title = 'NORIKS ControlPro antrenor planșeu pelvin'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) { $rv_fallback_title = 'NORIKS HYD'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('cloud') ) { $rv_fallback_title = 'NORIKS Cloud'; }
