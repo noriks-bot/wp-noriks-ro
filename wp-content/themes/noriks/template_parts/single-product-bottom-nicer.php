@@ -1235,7 +1235,14 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
 
   // On single-product landing pages (leak boxers / kompresijske majice) the cards should
   // reference THIS product (via $rv_fallback_title), not random pool products.
-  $product_pool = ( $is_leakboxers_page || $is_kompmajice_page || $is_kneefix_page ) ? array() : get_wc_product_pool();
+    // Izdelki z lastnim imenom v karticah mnenj ne smejo dobiti nakljucnega izdelka iz kataloga.
+  $rv_own_name = ( function_exists('noriks_is_type') && (
+      noriks_is_type('cloud') || noriks_is_type('cloath') || noriks_is_type('hyd') || noriks_is_type('snug')
+   || noriks_is_type('kompwom') || noriks_is_type('pal') || noriks_is_type('red') || noriks_is_type('kneeheat')
+   || noriks_is_type('controlpro') || noriks_is_type('kidsnest') || noriks_is_type('ortopedski-jastuk')
+   || noriks_is_type('bunion') || noriks_is_type('fisiorest') || noriks_is_type('ortopas')
+   || noriks_is_type('norikshers') || noriks_is_type('kompresijske-nogavice') ) );
+  $product_pool = ( $is_leakboxers_page || $is_kompmajice_page || $is_kneefix_page || $rv_own_name ) ? array() : get_wc_product_pool();
 
   // 1) Stable daily shuffle of review pools
   $auto_reviews_en   = shuffle_with_seed($auto_reviews_en,   'pool-en:'   . $daily_seed);
@@ -2130,7 +2137,8 @@ $kneeheat_faq = array(
 );
 
 $faq_pick = function( $title, $list ) use ( $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
-  $is_info = ( stripos( (string) $title, 'produs' ) !== false );
+  // Odporno na naslov sklopa: sprejme romunsko 'produs' in podedovano hrvasko 'proizvod'.
+  $is_info = ( stripos( (string) $title, 'produs' ) !== false ) || ( stripos( (string) $title, 'proizvod' ) !== false );
   if ( $is_snug && $is_info ) { return $snug_faq; }
   if ( $is_kompwom && $is_info ) { return $kompwom_faq; }
   if ( $is_pal && $is_info ) { return $pal_faq; }
