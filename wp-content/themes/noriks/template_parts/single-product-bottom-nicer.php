@@ -35,6 +35,8 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-snug' );
     } elseif ( noriks_is_type( 'kompwom' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kompwom' );
+    } elseif ( noriks_is_type( 'bowl' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-bowl' );
     } elseif ( noriks_is_type( 'pal' ) ) {
         get_template_part( 'template_parts/product-bottom/why-pal' );
     } elseif ( noriks_is_type( 'red' ) ) {
@@ -787,6 +789,7 @@ endif;
   if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) { $rv_fallback_title = 'NORIKS Snug pernă pentru tot corpul'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) { $rv_fallback_title = 'NORIKS FIT Woman tricou modelator'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('pal') ) { $rv_fallback_title = 'NORIKS Pal baston de mers'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('bowl') ) { $rv_fallback_title = 'NORIKS Bowl bol ortopedic pentru câini'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('red') ) { $rv_fallback_title = 'NORIKS RedRelief terapie cu lumină roșie'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') ) { $rv_fallback_title = 'NORIKS KneeHeat dispozitiv de încălzire și masaj pentru genunchi'; }
 
@@ -795,6 +798,8 @@ if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) {
   include get_stylesheet_directory() . '/auto_reviews/RO_snug.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) {
   include get_stylesheet_directory() . '/auto_reviews/RO_kompwom.php';
+} elseif ( function_exists('noriks_is_type') && noriks_is_type('bowl') ) {
+  include get_stylesheet_directory() . '/auto_reviews/RO_bowl.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('pal') ) {
   include get_stylesheet_directory() . '/auto_reviews/RO_pal.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('red') ) {
@@ -1226,6 +1231,7 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
         noriks_is_type('cloud') ||
         noriks_is_type('snug') ||
         noriks_is_type('kompwom') ||
+        noriks_is_type('bowl') ||
         noriks_is_type('pal') ||
         noriks_is_type('red') ||
         noriks_is_type('kneeheat')
@@ -1238,7 +1244,7 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
     // Izdelki z lastnim imenom v karticah mnenj ne smejo dobiti nakljucnega izdelka iz kataloga.
   $rv_own_name = ( function_exists('noriks_is_type') && (
       noriks_is_type('cloud') || noriks_is_type('cloath') || noriks_is_type('hyd') || noriks_is_type('snug')
-   || noriks_is_type('kompwom') || noriks_is_type('pal') || noriks_is_type('red') || noriks_is_type('kneeheat')
+   || noriks_is_type('kompwom') || noriks_is_type('bowl') || noriks_is_type('pal') || noriks_is_type('red') || noriks_is_type('kneeheat')
    || noriks_is_type('controlpro') || noriks_is_type('kidsnest') || noriks_is_type('ortopedski-jastuk')
    || noriks_is_type('bunion') || noriks_is_type('fisiorest') || noriks_is_type('ortopas')
    || noriks_is_type('norikshers') || noriks_is_type('kompresijske-nogavice') ) );
@@ -2024,6 +2030,24 @@ $kompwom_faq = array(
   ),
 );
 
+$is_bowl = ( function_exists('noriks_is_type') && noriks_is_type('bowl') );
+$bowl_faq = array(
+  array('questioon' => 'Pentru ce câini este potrivit bolul?',
+    'answer'    => 'Pentru <strong>rasele mici</strong> — teckel, buldog francez, schnauzer, mops, bichon maltez și altele similare. Bolul are un diametru de 15 cm și o capacitate de aproximativ 430 ml.'),
+  array('questioon' => 'La ce folosește înclinarea de 15°?',
+    'answer'    => 'Bolul este înclinat spre câine, așa că hrana alunecă spre el, iar capul și gâtul sunt într-o poziție mai naturală. Câinele nu trebuie să împingă botul în colțul bolului și nici să își îndoaie gâtul până la podea.'),
+  array('questioon' => 'De ce este înălțat?',
+    'answer'    => 'Suportul de 11 cm ridică bolul mai aproape de înălțimea câinelui, astfel încât acesta mănâncă în picioare, cu mai puțină îndoire a gâtului și a spatelui. Este deosebit de comod pentru câinii în vârstă.'),
+  array('questioon' => 'Îl pot folosi pentru apă?',
+    'answer'    => 'Da. Bolul este din oțel inoxidabil și este la fel de potrivit pentru hrană și pentru apă. Mulți stăpâni iau două — unul pentru hrană, altul pentru apă.'),
+  array('questioon' => 'Cum se curăță?',
+    'answer'    => 'Clătiți bolul cu apă caldă și detergent de vase. Oțelul neted nu absoarbe mirosurile și nu reține resturile de hrană precum plasticul.'),
+  array('questioon' => 'Alunecă pe podea?',
+    'answer'    => 'Suportul este stabil și nu se răstoarnă când câinele mănâncă. Pe podelele foarte netede recomandăm un suport antiderapant dedesubt.'),
+  array('questioon' => 'Îl pot returna?',
+    'answer'    => 'Da, aveți <strong>30 de zile</strong> pentru returnarea banilor. Este suficient un e-mail, fără formulare.'),
+);
+
 $is_pal = ( function_exists('noriks_is_type') && noriks_is_type('pal') );
 $pal_faq = array(
   array(
@@ -2136,11 +2160,12 @@ $kneeheat_faq = array(
   ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
+$faq_pick = function( $title, $list ) use ( $is_bowl, $bowl_faq, $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
   // Odporno na naslov sklopa: sprejme romunsko 'produs' in podedovano hrvasko 'proizvod'.
   $is_info = ( stripos( (string) $title, 'produs' ) !== false ) || ( stripos( (string) $title, 'proizvod' ) !== false );
   if ( $is_snug && $is_info ) { return $snug_faq; }
   if ( $is_kompwom && $is_info ) { return $kompwom_faq; }
+  if ( $is_bowl && $is_info ) { return $bowl_faq; }
   if ( $is_pal && $is_info ) { return $pal_faq; }
   if ( $is_red && $is_info ) { return $red_faq; }
   if ( $is_kneeheat && $is_info ) { return $kneeheat_faq; }
