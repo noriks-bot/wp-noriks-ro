@@ -53,17 +53,14 @@
     <div class="marquee-content">
       <span><a href="/ro/shop"><?php echo $mq_ico_truck; ?>Livrare gratuită pentru comenzi de peste 350 lei</a></span>
       <span><a href="/ro/shop"><?php echo $mq_ico_shield; ?>30 de zile fără risc - încearcă fără griji</a></span>
-      <!--<span><a href="/ro/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
 
       <!-- DUPLICATED for seamless infinite loop -->
       <span><a href="/ro/shop"><?php echo $mq_ico_truck; ?>Livrare gratuită pentru comenzi de peste 350 lei</a></span>
       <span><a href="/ro/shop"><?php echo $mq_ico_shield; ?>30 de zile fără risc - încearcă fără griji</a></span>
-     <!-- <span><a href="/ro/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
       
        <!-- DUPLICATED for seamless infinite loop -->
       <span><a href="/ro/shop"><?php echo $mq_ico_truck; ?>Livrare gratuită pentru comenzi de peste 350 lei</a></span>
       <span><a href="/ro/shop"><?php echo $mq_ico_shield; ?>30 de zile fără risc - încearcă fără griji</a></span>
-     <!-- <span><a href="/ro/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
     </div>
   </div>
 </div>
