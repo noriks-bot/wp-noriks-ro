@@ -54,19 +54,19 @@ $opz_cmp_rows = array(
 /* Mnenja s sliko — 8) sekcija */
 $opz_reviews = array(
     array(
-        'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-1.webp',
+        'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-1.webp?v=20261026',
         'title' => 'Mare ajutor împotriva durerilor din zona lombară',
         'text'  => 'Centura NORIKS mi-a ușurat cu adevărat viața. Funcționează exact așa cum promite. Mă pot apleca din nou fără dureri.',
         'name'  => 'Elena M.',
     ),
     array(
-        'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-2.jpg',
+        'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-2.webp?v=20261026',
         'title' => 'Moale și confortabilă',
         'text'  => 'Fizioterapeutul meu mi-a recomandat o centură pentru durerile de spate. Am mai încercat și alte centuri, dar aceasta este mult mai confortabilă la șezut și la aplecat. Cu toate acestea, oferă un sprijin excelent!',
         'name'  => 'Iulia U.',
     ),
     array(
-        'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-3.webp',
+        'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-3.webp?v=20261026',
         'title' => 'Excelentă!',
         'text'  => 'Mă ajută să stau drept și am senzația că merg mai vertical. Durerile s-au redus considerabil și, în sfârșit, mă pot ridica fără durere chiar și după ce stau mult timp jos. Port centura aproximativ 2–3 ore pe zi – în principal la serviciu.',
         'name'  => 'Ion D.',
@@ -187,7 +187,7 @@ $opz_no  = '<svg class="opz-no" viewBox="0 0 24 24" width="20" height="20" aria-
           <tr>
             <th class="opz-th-feat"></th>
             <th class="opz-th-brand">NORIKS</th>
-            <th class="opz-th-alt">Fizio</th>
+            <th class="opz-th-alt">Fizioterapie</th>
           </tr>
         </thead>
         <tbody>
