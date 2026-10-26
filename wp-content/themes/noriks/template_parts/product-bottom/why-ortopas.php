@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
  *       potrebni RO (romunski) sliki.
  * ------------------------------------------------------------------ */
 $opz_vid_dir      = get_template_directory_uri() . '/img/ortopas-videos/';
-$opz_img_collage  = 'https://noriks.com/hr/wp-content/uploads/2026/07/ortopas-hr-9.png'; // 1) zadovoljne stranke (slika) — TODO RO image
+$opz_img_collage  = 'https://noriks.com/hr/wp-content/uploads/2026/10/ortopas-hr-9.webp'; // 1) zadovoljne stranke (slika) — TODO RO image
 $opz_video_relief = $opz_vid_dir . 'relief.mp4';                                          // 2) naravno olajšanje (video)
 $opz_video_cause  = $opz_vid_dir . 'cause.mp4';                                           // 3) pravi vzrok (video)
 $opz_img_indik    = get_template_directory_uri() . '/img/ortopas/ortopas-indikacije.png'; // lokalizirana grafika indikacij // lokalizirana grafika indikacij // 5) kako deluje (slika) — TODO RO image
