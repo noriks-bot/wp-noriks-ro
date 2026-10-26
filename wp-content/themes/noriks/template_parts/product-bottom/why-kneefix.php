@@ -4,13 +4,13 @@
  * Sekcije i redoslijed preslikani s referentne stranice, tekst na HR,
  * slike su NORIKS kreative iz img/kneefix/. Svaka sekcija ima sliku s jedne
  * i tekst s druge strane (naizmjenično) — nema sekcija koje su samo slika.
- *   1. Când fiecare pas devine neplăcut   slika lijevo   13_stepenice
+ *   1. Când fiecare pas devine neplăcut   slika lijevo   kf-ro-3
  *   2. Poate nu este vorba doar de uzură   slika desno    14_zglob
  *   3. Sprijin pentru genunchi activi         slika lijevo   08_aktivno
  *   4. 4 funcții. Un sentiment mai stabil.    slika desno    03_funkcije
  *   5. Sprijin confortabil în 3 pași          slika lijevo   04_koraki
- *   6. Mai mult confort în fiecare zi      slika desno    05_lifestyle
- *   7. Preporučeno za potporu koljena     slika lijevo   06_zdravnik
+ *   6. Mai mult confort în fiecare zi      slika desno    kf-ro-1
+ *   7. Preporučeno za potporu koljena     slika lijevo   kf-ro-2
  *   8. Diferența se simte                  slika desno    07_vs
  *   9. Ce spun clienții noștri                3 kartice      10/11/12
  * Recenzije i FAQ renderira zajednički reviews.php (ne ovdje).
