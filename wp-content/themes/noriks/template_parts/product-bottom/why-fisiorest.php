@@ -18,7 +18,8 @@ $fis_science = array(
 );
 $fis_v = get_template_directory_uri() . '/img/fisiorest-videos/';
 $fis_i = get_template_directory_uri() . '/img/fisiorest/';
-$fis_hero_video = $fis_v . 'hero-v2.mp4';
+$fis_ver = '?v=20261027';
+$fis_hero_video = $fis_v . 'hero-v2.mp4' . $fis_ver;
 
 // 3) Recomandat de specialiști
 $fis_experts = array(
@@ -35,16 +36,16 @@ $fis_ugc = array(
 );
 // 5) ThermoTrac 3-în-1
 $fis_thermo = array(
-    array( 'vid' => $fis_v.'v10.mp4', 'title' => 'Terapie prin tracțiune' ),
-    array( 'vid' => $fis_v.'v07.mp4', 'title' => 'Terapie prin vibrație' ),
-    array( 'vid' => $fis_v.'v05.mp4', 'title' => 'Terapie prin căldură' ),
+    array( 'vid' => $fis_v.'v10.mp4' . $fis_ver, 'title' => 'Terapie prin tracțiune' ),
+    array( 'vid' => $fis_v.'v07.mp4' . $fis_ver, 'title' => 'Terapie prin vibrație' ),
+    array( 'vid' => $fis_v.'v05.mp4' . $fis_ver, 'title' => 'Terapie prin căldură' ),
 );
 // 6) Patru îmbunătățiri
 $fis_upgrades = array(
-    array( 't' => 'Baterie reîncărcabilă',    'd' => 'Ia-l oriunde — bateria de 2500 mAh rezistă până la 2 ore.' , 'ico' => 'battery-v2.png' ),
-    array( 't' => 'Husă din mătase de dud',   'd' => 'Învelit în mătase răcoritoare pentru o senzație moale, luxoasă.' , 'ico' => 'silk-v2.png' ),
-    array( 't' => 'Oprire după 30 min',       'd' => 'Patru sesiuni de câte 30 de minute la o singură încărcare, fără griji.' , 'ico' => 'timer-v2.png' ),
-    array( 't' => 'Căldură reglată',          'd' => 'Încălzire la 50 °C cu tehnologia avansată ThermoTrac.' , 'ico' => 'heat-v2.png' ),
+    array( 't' => 'Baterie reîncărcabilă',    'd' => 'Ia-l oriunde — bateria de 2500 mAh rezistă până la 2 ore.' , 'ico' => 'battery-v2.png?v=20261027' ),
+    array( 't' => 'Husă din mătase de dud',   'd' => 'Învelit în mătase răcoritoare pentru o senzație moale, luxoasă.' , 'ico' => 'silk-v2.png?v=20261027' ),
+    array( 't' => 'Oprire după 30 min',       'd' => 'Patru sesiuni de câte 30 de minute la o singură încărcare, fără griji.' , 'ico' => 'timer-v2.png?v=20261027' ),
+    array( 't' => 'Căldură reglată',          'd' => 'Încălzire la 50 °C cu tehnologia avansată ThermoTrac.' , 'ico' => 'heat-v2.png?v=20261027' ),
 );
 ?>
 
@@ -151,14 +152,14 @@ $fis_upgrades = array(
       <h2 class="fis-h2">Proiectat de ingineri. Realizat după standardele fizioterapiei</h2>
       <p>Am investit peste 50.000 € și 2 ani de dezvoltare pentru ca NORIKS să nu fie doar un aparat de masaj pentru gât. Este un dispozitiv complet de terapie a gâtului care tratează cu adevărat cauza. Fiecare comandă trece printr-un control riguros de calitate, ca să ajungă în stare perfectă.</p>
     </div>
-    <div class="fis-row2-media"><video src="<?php echo esc_url( $fis_v.'hero-v2.mp4' ); ?>" muted autoplay loop playsinline preload="metadata"></video></div>
+    <div class="fis-row2-media"><video src="<?php echo esc_url( $fis_v.'hero-v2.mp4' . $fis_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video></div>
   </div>
 </section>
 
 <!-- ============ 8) De 14x mai ieftin ============ -->
 <section class="fis-cheaper">
   <div class="fis-wrap fis-row2">
-    <div class="fis-row2-media"><img src="<?php echo esc_url( $fis_i.'fis-produkt-kvadrat.jpg' ); ?>" alt="NORIKS FisioRest" loading="lazy"></div>
+    <div class="fis-row2-media"><img src="<?php echo esc_url( $fis_i.'fis-produkt-kvadrat.jpg' . $fis_ver ); ?>" alt="NORIKS FisioRest" loading="lazy"></div>
     <div class="fis-row2-copy">
       <p class="fis-eyebrow">TERAPIE SIGURĂ ȘI RELAXANTĂ</p>
       <h2 class="fis-h2">De 14× mai ieftin decât ședințele săptămânale</h2>
