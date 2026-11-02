@@ -15,7 +15,7 @@ $wdir = get_template_directory_uri() . '/img/slabproof/';
         <h2 class="wslabproof__h2">Șosetă de lucru cu pernuță, <em>croită sub gleznă</em></h2>
         <p class="wslabproof__p">NORIKS SlabProof este o șosetă de lucru cu pernuță pentru beton, croită sub gleznă. E făcută pentru pantofi de lucru, adidași de protecție cu bombeu metalic și zilele toride în pantaloni scurți, când o șosetă înaltă doar vă încurcă.</p>
         <p class="wslabproof__p">Sub talpă are aceeași pernă ca modelul mai înalt: densă sub călcâi și sub partea din față a tălpii, acolo unde betonul lovește cel mai tare. Peste partea de sus a labei piciorului trece o zonă din plasă, călcâiul și degetele sunt întărite, iar limba înălțată de la călcâi împiedică spatele pantofului să frece pielea.</p>
-        <p class="wslabproof__p">Șoseta e neagră și vine în trei mărimi: M, L și XL. Se spală la mașină la rece și se usucă în uscător la temperatură joasă, împreună cu hainele de lucru — fără spălare de mână și fără detergent special.</p>
+        <p class="wslabproof__p">Șoseta e neagră și vine în trei mărimi: 39–42, 43–45 și 46–49. Se spală la mașină la rece și se usucă în uscător la temperatură joasă, împreună cu hainele de lucru — fără spălare de mână și fără detergent special.</p>
         <p class="wslabproof__zak">Pernă pentru beton, în croială pentru pantofi de lucru joși.</p>
       </div>
     </div>

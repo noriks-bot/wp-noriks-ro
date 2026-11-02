@@ -7,7 +7,7 @@
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 $noriks_st = array(
     'uvod'    => 'Alegeți mărimea după <strong>numărul de pantof (EU)</strong>.',
-    'glava'   => array( 'Mărime', 'Număr de pantof (EU) – bărbați', 'Număr de pantof (EU) – femei' ),
+    'glava'   => array( 'Număr de pantof (EU)' ),
     'vrstice' => function_exists( 'noriks_tradesman_sizes' ) ? noriks_tradesman_sizes() : array(),
     'opomba'  => 'Sunteți între două mărimi? Luați-o pe cea mai mare.',
 );

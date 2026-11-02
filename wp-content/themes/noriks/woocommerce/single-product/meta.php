@@ -522,7 +522,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('tradesman', $current_product_id) ): ?>
 
-                NORIKS Tradesman sunt șosete de lucru groase din bambus pentru toți cei care stau și merg toată ziua în bocanci de lucru – pe șantier, în depozit, în atelier sau afară, iarna. Pernuța moale amortizează fiecare pas pe beton și pe pământul înghețat, călcâiul și degetele întărite fac față bocancilor rigizi, iar banda pentru arcadă și manșeta dublă țin șoseta pe loc toată tura.<br><br><strong>Compoziție:</strong> 56 % lyocell din bambus, 38 % nailon, 6 % elastan – rezistă natural la mirosurile neplăcute, absorb umezeala și sunt foarte moi pe piele. <strong>Construcție:</strong> susținere a gleznei la 360°, bandă pentru arcadă, pernuță, ventilație din plasă, manșetă dublă cu buclă de tras, călcâi întărit. Înălțime: clasică (crew), aproximativ 18 cm de la călcâi până la margine.<br><br><strong>Mărimi (număr de pantof EU):</strong> M 39–42, L 42,5–46, XL 46,5–49,5. Culori: negru și alb. <strong>Întreținere:</strong> spălați la rece, uscați la aer.<br><br>Cu NORIKS aveți 30 de zile pentru returnarea banilor, livrare gratuită peste 350 lei și plata ramburs.
+                NORIKS Tradesman sunt șosete de lucru groase din bambus pentru toți cei care stau și merg toată ziua în bocanci de lucru – pe șantier, în depozit, în atelier sau afară, iarna. Pernuța moale amortizează fiecare pas pe beton și pe pământul înghețat, călcâiul și degetele întărite fac față bocancilor rigizi, iar banda pentru arcadă și manșeta dublă țin șoseta pe loc toată tura.<br><br><strong>Compoziție:</strong> 56 % lyocell din bambus, 38 % nailon, 6 % elastan – rezistă natural la mirosurile neplăcute, absorb umezeala și sunt foarte moi pe piele. <strong>Construcție:</strong> susținere a gleznei la 360°, bandă pentru arcadă, pernuță, ventilație din plasă, manșetă dublă cu buclă de tras, călcâi întărit. Înălțime: clasică (crew), aproximativ 18 cm de la călcâi până la margine.<br><br><strong>Mărimi (număr de pantof EU):</strong> 39–42, 43–45, 46–49. Culoare: negru. <strong>Întreținere:</strong> spălați la rece, uscați la aer.<br><br>Cu NORIKS aveți 30 de zile pentru returnarea banilor, livrare gratuită peste 350 lei și plata ramburs.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slabproof', $current_product_id) ): ?>
 
@@ -761,9 +761,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
             <table style="width:100%;border-collapse:collapse;font-size:14px;">
               <thead>
                 <tr style="background:#a9683f;color:#fff;">
-                  <th style="padding:9px 8px;text-align:left;">Mărime</th>
-                  <th style="padding:9px 8px;text-align:left;">Număr de pantof (EU) – bărbați</th>
-                  <th style="padding:9px 8px;text-align:left;">Număr de pantof (EU) – femei</th>
+                  <th style="padding:9px 8px;text-align:left;">Număr de pantof (EU)</th>
                 </tr>
               </thead>
               <tbody>
@@ -789,7 +787,6 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
             <table style="width:100%;border-collapse:collapse;font-size:14px;">
               <thead>
                 <tr style="background:#d2632e;color:#fff;">
-                  <th style="padding:9px 10px;text-align:left;">Mărime</th>
                   <th style="padding:9px 10px;text-align:left;">Număr încălțăminte EU</th>
                 </tr>
               </thead>
@@ -799,7 +796,6 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
                   $bg = ( $i % 2 ) ? '#faf7f0' : '#fff'; ?>
                   <tr style="background:<?php echo $bg; ?>;border-bottom:1px solid #eee;">
                     <td style="padding:9px 10px;font-weight:700;"><?php echo esc_html( $r[0] ); ?></td>
-                    <td style="padding:9px 10px;"><?php echo esc_html( $r[1] ); ?></td>
                   </tr>
                 <?php endforeach; ?>
               </tbody>
