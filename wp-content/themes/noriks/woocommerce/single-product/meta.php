@@ -516,6 +516,10 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
                 <strong>NORIKS FIT Woman</strong> este un tricou modelator în care relieful este împletit chiar în material, nu imprimat pe el. O bandă lată trece peste abdomen și șolduri, iar alta peste spate.<br><br>Compresia este distribuită pe lățime, nu strânsă într-un singur punct, așa că nimic nu intră în piele. Abdomenul rămâne neted, talia mai îngustă, iar spatele primește un sprijin care te ajută să stai mai drept.<br><br>Tricotajul este fără cusături, subțire și mat — dispare sub cămașă, sacou sau o rochie mulată. Nu se rulează în timpul zilei și nu se conturează pe sub haine.<br><br>Spală la mașină la 30 °C, fără înălbitori, călcat și uscător. Disponibil în trei culori (negru, gri închis, roz) și în mărimi de la S la 3XL. Dacă ești între două mărimi, ia-o pe cea mai mare.
 
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slabproof', $current_product_id) ): ?>
+
+                <strong>NORIKS SlabProof</strong> sunt șosete de lucru făcute pentru oamenii care stau toată ziua pe beton. Bocancii de lucru protejează piciorul, dar nu-l amortizează — betonul nu cedează deloc, așa că fiecare pas ajunge în călcâie, genunchi și spate. Singurul lucru care poate atenua acest șoc e șoseta.<br><br>De aceea au <strong>amortizare pe zone</strong>: pernuțe dense sub călcâi și sub partea din față a tălpii, exact acolo unde lovește betonul, și tricotaj subțire în rest, ca bocancul să nu devină prea strâmt. Călcâiul și degetele sunt întărite cu nailon tricotat dublu, în cele două locuri unde șosetele cedează primele.<br><br>Plasa aerisită de pe partea de sus a labei piciorului și tricotajul care elimină transpirația țin picioarele uscate toată tura. Amestecul nu conține lână, așa că nimic nu zgârie și piciorul nu se supraîncălzește.<br><br>Manșeta lată, reiată, ține șoseta sus fără să strângă gamba, buzunarul adânc pentru călcâi, cu limbă, nu o lasă să coboare în bocanc, iar banda de pe arcadă ține piciorul să nu alunece.<br><br>Sunt disponibile în negru, în mărimile M (EU 39–42), L (EU 43–45) și XL (EU 46–49). Aveți <strong>30 de zile pentru returnarea banilor</strong>, iar livrarea este gratuită pentru comenzi peste 350 lei.
+
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('bowl', $current_product_id) ): ?>
 
                 <strong>NORIKS Bowl</strong> este un bol înălțat pentru hrană și apă, destinat câinilor de talie mică. Bolul stă pe un suport de oțel înalt de 11 cm și este înclinat cu 15°, astfel încât câinele mănâncă în picioare, cu capul într-o poziție mai naturală, în loc să își îndoaie gâtul până la podea.<br><br>Bolul este puțin adânc (5 cm), așa că mustățile nu ating marginea, iar hrana nu este împinsă în afară. Diametrul este de 15 cm, iar capacitatea de aproximativ 430 ml — suficient pentru o porție sau apă pentru un câine mic.<br><br>Atât bolul, cât și suportul sunt fabricate din oțel inoxidabil. Suprafața netedă nu absoarbe mirosurile și nu reține resturile de hrană precum plasticul; este suficient să îl clătiți cu apă caldă și detergent de vase.<br><br>Este potrivit pentru rase mici precum teckelul, buldogul francez, schnauzerul, mopsul și bichonul maltez.
@@ -710,6 +714,31 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
                   <img class="js-open-size-chart" style="cursor:pointer;" src="https://noriks.com/ro/wp-content/uploads/2026/04/nogavice_ro.jpg">
 
+    <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slabproof', $current_product_id) ): ?>
+
+          <div class="noriks-size">
+            <p style="margin:0 0 14px;line-height:1.6;">Comandați <strong>numărul obișnuit de încălțăminte</strong>. Tricotajul se întinde, așa că fiecare mărime acoperă mai multe numere.</p>
+            <table style="width:100%;border-collapse:collapse;font-size:14px;">
+              <thead>
+                <tr style="background:#d2632e;color:#fff;">
+                  <th style="padding:9px 10px;text-align:left;">Mărime</th>
+                  <th style="padding:9px 10px;text-align:left;">Număr încălțăminte EU</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+                foreach ( noriks_slabproof_sizes() as $i => $r ) :
+                  $bg = ( $i % 2 ) ? '#faf7f0' : '#fff'; ?>
+                  <tr style="background:<?php echo $bg; ?>;border-bottom:1px solid #eee;">
+                    <td style="padding:9px 10px;font-weight:700;"><?php echo esc_html( $r[0] ); ?></td>
+                    <td style="padding:9px 10px;"><?php echo esc_html( $r[1] ); ?></td>
+                  </tr>
+                <?php endforeach; ?>
+              </tbody>
+            </table>
+            <p style="margin:14px 0 0;line-height:1.6;"><strong>Între două mărimi?</strong> Luați-o pe cea mai mare — perna de la călcâi și banda de pe arcadă se așază la locul lor doar când șoseta nu e prea mică.</p>
+          </div>
+
     <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kompwom', $current_product_id) ): ?>
 
           <div class="kwm-size">
@@ -783,7 +812,11 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
-             <?php if( function_exists('noriks_is_type') && noriks_is_type( 'leakboxers', $current_product_id ) ): ?>
+             <?php if( function_exists('noriks_is_type') && noriks_is_type('slabproof', $current_product_id) ): ?>
+
+                Spălare la mașină la rece, împreună cu hainele de lucru. Uscare în uscător la temperatură joasă. Fără spălare de mână, fără uscare pe sfoară și fără detergent special.
+
+             <?php elseif( function_exists('noriks_is_type') && noriks_is_type( 'leakboxers', $current_product_id ) ): ?>
 
                 Spălați la 30–40 °C, pe un program pentru rufe delicate. Fără balsam și fără înălbitor. Uscați la aer. Își păstrează puterea de absorbție sute de spălări.
 
