@@ -56,9 +56,9 @@ $nwc_testimonials = array(
     <p class="nwc-kicker nwc-kicker--c">Videoclipuri de la clienți</p>
     <h2 class="nwc-h2 nwc-h2--c">Ascultați <em>clienții noștri</em> <span class="nwc-stars">★★★★★</span></h2>
     <div class="nwc-vids">
-      <?php echo $nwc_video( 1, 'Videoclip client 1 — NORIKS WineCooler' ); ?>
-      <?php echo $nwc_video( 2, 'Videoclip client 2 — NORIKS WineCooler' ); ?>
-      <?php echo $nwc_video( 3, 'Videoclip client 3 — NORIKS WineCooler' ); ?>
+      <?php echo $nwc_video( 1, 'Videoclipul clientului 1 — NORIKS WineCooler' ); ?>
+      <?php echo $nwc_video( 2, 'Videoclipul clientului 2 — NORIKS WineCooler' ); ?>
+      <?php echo $nwc_video( 3, 'Videoclipul clientului 3 — NORIKS WineCooler' ); ?>
     </div>
   </div>
 </section>

@@ -38,7 +38,7 @@ $sl_img  = function( $file, $alt ) use ( $sl, $sl_path ) {
         <li class="is-yes">Hainele cad mai drept</li>
         <li class="is-no">Pliuri sub tricoul mulat</li>
         <li class="is-no">Margine care se rulează și taie când stați jos</li>
-        <li class="is-no">Ascuns sub tricouri largi</li>
+        <li class="is-no">Ascunderea sub tricouri largi</li>
       </ul>
       <a class="nsl-cta" href="#bundle-selector">Alegeți culoarea și mărimea</a>
     </div>
