@@ -516,6 +516,10 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
                 <strong>NORIKS FIT Woman</strong> este un tricou modelator în care relieful este împletit chiar în material, nu imprimat pe el. O bandă lată trece peste abdomen și șolduri, iar alta peste spate.<br><br>Compresia este distribuită pe lățime, nu strânsă într-un singur punct, așa că nimic nu intră în piele. Abdomenul rămâne neted, talia mai îngustă, iar spatele primește un sprijin care te ajută să stai mai drept.<br><br>Tricotajul este fără cusături, subțire și mat — dispare sub cămașă, sacou sau o rochie mulată. Nu se rulează în timpul zilei și nu se conturează pe sub haine.<br><br>Spală la mașină la 30 °C, fără înălbitori, călcat și uscător. Disponibil în trei culori (negru, gri închis, roz) și în mărimi de la S la 3XL. Dacă ești între două mărimi, ia-o pe cea mai mare.
 
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slim', $current_product_id) ): ?>
+
+                <strong>NORIKS Slim</strong> sunt chiloți modelatori cu talie înaltă. Banda lată trece încrucișat peste abdomen și continuă pe șolduri și pe spate, așa că presiunea este distribuită în jurul întregii talii, nu strânsă pe o singură linie.<br><br>Abdomenul este netezit, talia pare mai subțire, iar hainele cad mai drept — fără pliuri deasupra pantalonilor și fără margine care se vede sub rochie.<br><br>Tricotajul este subțire, moale și respirabil, cu inserții elastice din plasă și inserție din bumbac. Chiloții nu se rulează în jos și nu alunecă în timpul zilei, așa că îi îmbrăcați dimineața și uitați de ei până seara.<br><br>Sunt disponibili în șase culori (negru, culoarea pielii, bleumarin, lila, fucsia și prună) și în mărimi de la XS la 5XL. Alegeți mărimea după circumferința taliei; dacă sunteți între două mărimi, alegeți-o pe cea mai mare.
+
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('tradesman', $current_product_id) ): ?>
 
                 NORIKS Tradesman sunt șosete de lucru groase din bambus pentru toți cei care stau și merg toată ziua în bocanci de lucru – pe șantier, în depozit, în atelier sau afară, iarna. Pernuța moale amortizează fiecare pas pe beton și pe pământul înghețat, călcâiul și degetele întărite fac față bocancilor rigizi, iar banda pentru arcadă și manșeta dublă țin șoseta pe loc toată tura.<br><br><strong>Compoziție:</strong> 56 % lyocell din bambus, 38 % nailon, 6 % elastan – rezistă natural la mirosurile neplăcute, absorb umezeala și sunt foarte moi pe piele. <strong>Construcție:</strong> susținere a gleznei la 360°, bandă pentru arcadă, pernuță, ventilație din plasă, manșetă dublă cu buclă de tras, călcâi întărit. Înălțime: clasică (crew), aproximativ 18 cm de la călcâi până la margine.<br><br><strong>Mărimi (număr de pantof EU):</strong> M 39–42, L 42,5–46, XL 46,5–49,5. Culori: negru și alb. <strong>Întreținere:</strong> spălați la rece, uscați la aer.<br><br>Cu NORIKS aveți 30 de zile pentru returnarea banilor, livrare gratuită peste 350 lei și plata ramburs.
@@ -717,6 +721,33 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
 
                   <img class="js-open-size-chart" style="cursor:pointer;" src="https://noriks.com/ro/wp-content/uploads/2026/04/nogavice_ro.jpg">
+
+    <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slim', $current_product_id) ): ?>
+
+          <div class="slm-size">
+            <p style="margin:0 0 14px;line-height:1.6;">Alegeți mărimea după <strong>circumferința taliei</strong>, nu după mărimea obișnuită a hainelor. Dacă sunteți între două mărimi, alegeți-o pe cea <strong>mai mare</strong>.</p>
+            <table style="width:100%;border-collapse:collapse;font-size:14px;">
+              <thead>
+                <tr style="background:#a3336b;color:#fff;">
+                  <th style="padding:9px 10px;text-align:left;">Mărime</th>
+                  <th style="padding:9px 10px;text-align:left;">Mărime EU</th>
+                  <th style="padding:9px 10px;text-align:left;">Circumferința taliei</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+                foreach ( noriks_slim_sizes() as $i => $r ) :
+                  $bg = ( $i % 2 ) ? '#fbf2f6' : '#fff'; ?>
+                  <tr style="background:<?php echo $bg; ?>;border-bottom:1px solid #f1e3ea;">
+                    <td style="padding:9px 10px;font-weight:700;"><?php echo esc_html( $r[0] ); ?></td>
+                    <td style="padding:9px 10px;"><?php echo esc_html( $r[1] ); ?></td>
+                    <td style="padding:9px 10px;"><?php echo esc_html( $r[2] ); ?></td>
+                  </tr>
+                <?php endforeach; ?>
+              </tbody>
+            </table>
+            <p style="margin:14px 0 0;line-height:1.6;"><strong>Cum să vă măsurați:</strong> înfășurați centimetrul în jurul părții celei mai înguste a trunchiului, puțin deasupra buricului. Centimetrul trebuie să fie orizontal și lipit de corp, dar nu strâns.</p>
+          </div>
 
     <?php elseif( function_exists('noriks_is_type') && noriks_is_type('tradesman', $current_product_id) ): ?>
 

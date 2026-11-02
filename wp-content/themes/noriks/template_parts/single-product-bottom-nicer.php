@@ -47,6 +47,8 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-slabproof' );
     } elseif ( noriks_is_type( 'tradesman' ) ) {
         get_template_part( 'template_parts/product-bottom/why-tradesman' );
+    } elseif ( noriks_is_type( 'slim' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-slim' );
     }
 }
 ?>
@@ -325,7 +327,7 @@ if (  has_term( array( 'majice', 'orto-majice', 'orto-majica-darila' ), 'product
       <!--<h4 style="" class="highlight"><?php echo get_field("singlepp_content_standard_reviews_t1","options"); ?></h4>-->
       <h1 style="color:black;     margin-bottom: 4px;">
 
-          <?php if ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ): ?>Nu sunteți singurul ale cărui picioare abia așteaptă odihna după o tură întreagă în bocanci.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ): ?>Nu sunteți singurii cărora le ard tălpile după o tură pe beton.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>
+          <?php if ( function_exists('noriks_is_type') && noriks_is_type('slim') ): ?>Nu sunteți singura care caută o linie netedă sub haine.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ): ?>Nu sunteți singurul ale cărui picioare abia așteaptă odihna după o tură întreagă în bocanci.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ): ?>Nu sunteți singurii cărora le ard tălpile după o tură pe beton.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>
 
           
 
@@ -387,7 +389,7 @@ if (  has_term( array( 'majice', 'orto-majice', 'orto-majica-darila' ), 'product
 
 
           </h1>
-    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ): ?>Mii de muncitori lucrează deja în șosetele NORIKS Tradesman – pernuță moale, călcâi întărit și bandă pentru arcadă.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ): ?>Mii de meseriași lucrează deja în șosetele NORIKS SlabProof – amortizare pe zone acolo unde lovește betonul, călcâi și degete întărite și picioare uscate toată tura.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>Mii de bărbați poartă deja șosetele compresive NORIKS pentru picioare mai ușoare și mai puțin obosite – la muncă, în călătorii și la antrenament.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bokserice') ): ?>Mii de bărbați poartă deja boxerii NORIKS – confort care ține toată ziua.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>Mii de oameni folosesc deja NORIKS FisioRest pentru mai puțină durere și tensiune în gât – tracțiune, vibrație și căldură într-un singur dispozitiv.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>Mii de oameni folosesc deja corectorul de halux NORIKS pentru mai puțină durere și o poziție mai corectă a degetului mare – acasă, la TV sau în timpul somnului.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>Mii de oameni poartă deja centura ortopedică NORIKS pentru mai puțină durere și un spate mai stabil – la muncă, la ridicat greutăți și la statul îndelungat pe scaun.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Mii de femei folosesc deja benzile din silicon cu colagen NORIKS Hers pentru vizibil mai puține riduri și linii fine – simplu, în timp ce dorm.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Mii de bărbați poartă deja boxerii absorbanți NORIKS pentru uscăciune și încredere în sine – fără absorbante și fără scutece.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Mii de bărbați poartă deja tricoul compresiv NORIKS pentru un abdomen netezit, o postură mai bună și mai multă încredere.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Mii de părinți au înlocuit deja perna obișnuită cu NORIKS KidsNest – nopți mai liniștite, respirație pe nas și un somn cu adevărat odihnitor.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>Mii de clienți folosesc deja perna ortopedică NORIKS ErgoSit pentru un stat pe scaun fără dureri de coccis, de spate și de șolduri – în mașină, la birou și acasă.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
+    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('slim') ): ?>Mii de femei poartă deja NORIKS Slim – lenjerie modelatoare care netezește silueta și rămâne la locul ei.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ): ?>Mii de muncitori lucrează deja în șosetele NORIKS Tradesman – pernuță moale, călcâi întărit și bandă pentru arcadă.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ): ?>Mii de meseriași lucrează deja în șosetele NORIKS SlabProof – amortizare pe zone acolo unde lovește betonul, călcâi și degete întărite și picioare uscate toată tura.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>Mii de bărbați poartă deja șosetele compresive NORIKS pentru picioare mai ușoare și mai puțin obosite – la muncă, în călătorii și la antrenament.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bokserice') ): ?>Mii de bărbați poartă deja boxerii NORIKS – confort care ține toată ziua.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>Mii de oameni folosesc deja NORIKS FisioRest pentru mai puțină durere și tensiune în gât – tracțiune, vibrație și căldură într-un singur dispozitiv.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>Mii de oameni folosesc deja corectorul de halux NORIKS pentru mai puțină durere și o poziție mai corectă a degetului mare – acasă, la TV sau în timpul somnului.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>Mii de oameni poartă deja centura ortopedică NORIKS pentru mai puțină durere și un spate mai stabil – la muncă, la ridicat greutăți și la statul îndelungat pe scaun.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Mii de femei folosesc deja benzile din silicon cu colagen NORIKS Hers pentru vizibil mai puține riduri și linii fine – simplu, în timp ce dorm.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Mii de bărbați poartă deja boxerii absorbanți NORIKS pentru uscăciune și încredere în sine – fără absorbante și fără scutece.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Mii de bărbați poartă deja tricoul compresiv NORIKS pentru un abdomen netezit, o postură mai bună și mai multă încredere.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Mii de părinți au înlocuit deja perna obișnuită cu NORIKS KidsNest – nopți mai liniștite, respirație pe nas și un somn cu adevărat odihnitor.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>Mii de clienți folosesc deja perna ortopedică NORIKS ErgoSit pentru un stat pe scaun fără dureri de coccis, de spate și de șolduri – în mașină, la birou și acasă.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
     </div>
   </section>
   </div>
@@ -490,6 +492,7 @@ if (  has_term( array( 'majice', 'orto-majice', 'orto-majica-darila' ), 'product
   if ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') ) { $rv_fallback_title = 'NORIKS KneeHeat dispozitiv de încălzire și masaj pentru genunchi'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ) { $rv_fallback_title = 'NORIKS SlabProof™ Șosete de Lucru'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ) { $rv_fallback_title = 'Șosete de lucru NORIKS Tradesman'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('slim') ) { $rv_fallback_title = 'NORIKS Slim chiloți modelatori'; }
 
   // Include review pools (own pool per product group)
 if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) {
@@ -508,6 +511,8 @@ if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) {
   include get_stylesheet_directory() . '/auto_reviews/RO_slabproof.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ) {
   include get_stylesheet_directory() . '/auto_reviews/RO_tradesman.php';
+} elseif ( function_exists('noriks_is_type') && noriks_is_type('slim') ) {
+  include get_stylesheet_directory() . '/auto_reviews/RO_slim.php';
 } else
 if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) {
     include get_stylesheet_directory() . '/auto_reviews/RO_hyd.php';
@@ -938,7 +943,8 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
         noriks_is_type('red') ||
         noriks_is_type('kneeheat') ||
         noriks_is_type('slabproof') ||
-        noriks_is_type('tradesman')
+        noriks_is_type('tradesman') ||
+        noriks_is_type('slim')
   );
   // fotografije osoba: samo na odjeci (majice, bokserice, kompleti), ne na ortopedskim pomagalima
   // MAJICE i BOKSERICE: recenzije BEZ fotografija - isti uvjet kao nove why sekcije.
@@ -953,7 +959,7 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
     // Izdelki z lastnim imenom v karticah mnenj ne smejo dobiti nakljucnega izdelka iz kataloga.
   $rv_own_name = ( function_exists('noriks_is_type') && (
       noriks_is_type('cloud') || noriks_is_type('cloath') || noriks_is_type('hyd') || noriks_is_type('snug')
-   || noriks_is_type('kompwom') || noriks_is_type('bowl') || noriks_is_type('pal') || noriks_is_type('red') || noriks_is_type('kneeheat') || noriks_is_type('slabproof') || noriks_is_type('tradesman')
+   || noriks_is_type('kompwom') || noriks_is_type('bowl') || noriks_is_type('pal') || noriks_is_type('red') || noriks_is_type('kneeheat') || noriks_is_type('slabproof') || noriks_is_type('tradesman') || noriks_is_type('slim')
    || noriks_is_type('controlpro') || noriks_is_type('kidsnest') || noriks_is_type('ortopedski-jastuk')
    || noriks_is_type('bunion') || noriks_is_type('fisiorest') || noriks_is_type('ortopas')
    || noriks_is_type('norikshers') || noriks_is_type('kompresijske-nogavice') ) );
@@ -1739,6 +1745,28 @@ $kompwom_faq = array(
   ),
 );
 
+$is_slim = ( function_exists('noriks_is_type') && noriks_is_type('slim') );
+$slim_faq = array(
+  array('questioon' => 'Cum aleg mărimea?',
+    'answer'    => 'Măsurați <strong>circumferința taliei</strong> în partea cea mai îngustă a trunchiului, puțin deasupra buricului, și comparați cu tabelul de mărimi (XS până la 5XL). Dacă sunteți între două mărimi, alegeți-o pe cea <strong>mai mare</strong>.'),
+  array('questioon' => 'Se rulează în jos?',
+    'answer'    => 'Nu. Banda lată încrucișată trece în jurul întregii talii — în față, lateral și în spate — așa că presiunea se distribuie în loc să strângă pe o singură linie. Chiloții rămân la locul lor și când stați jos.'),
+  array('questioon' => 'Se văd prin haine?',
+    'answer'    => 'Nu. Tricotajul este subțire și neted, fără cusături groase, așa că dispar sub rochia mulată, blugi și colanți.'),
+  array('questioon' => 'Îi port în loc de chiloți sau peste ei?',
+    'answer'    => 'Cum vă este mai comod. Majoritatea îi poartă singuri, ca lenjerie obișnuită, dar îi puteți purta și peste chiloți subțiri.'),
+  array('questioon' => 'Îi pot purta după naștere?',
+    'answer'    => 'Multe mame îi poartă după naștere pentru că sunt moi și respirabili. După o cezariană sau dacă nu sunteți sigură, consultați-vă medicul înainte de a-i purta.'),
+  array('questioon' => 'Cât de tare strâng?',
+    'answer'    => 'Ferm, dar nu strâmt. Trebuie să puteți respira și sta jos normal. Dacă vă jenează undeva sau lasă o urmă adâncă, alegeți o mărime mai mare.'),
+  array('questioon' => 'Cum se spală?',
+    'answer'    => 'Manual sau în mașină la <strong>30 °C</strong>, într-un săculeț pentru rufe. Fără înălbitor, călcare și uscător — uscați la aer.'),
+  array('questioon' => 'Ce culori sunt disponibile?',
+    'answer'    => 'Șase culori: negru, culoarea pielii, bleumarin, lila, fucsia și prună. Culoarea și mărimea le alegeți pe această pagină înainte de a adăuga în coș.'),
+  array('questioon' => 'Îi pot returna?',
+    'answer'    => 'Da, aveți <strong>30 de zile</strong> pentru returnarea banilor sau schimbarea mărimii. Este suficient un e-mail, fără formulare.'),
+);
+
 $is_tradesman = ( function_exists('noriks_is_type') && noriks_is_type('tradesman') );
 $tradesman_faq = array(
   array('questioon' => 'Din ce sunt făcute?',
@@ -1909,12 +1937,13 @@ $kneeheat_faq = array(
   ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_tradesman, $tradesman_faq, $is_slabproof, $slabproof_faq, $is_bowl, $bowl_faq, $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
+$faq_pick = function( $title, $list ) use ( $is_slim, $slim_faq, $is_tradesman, $tradesman_faq, $is_slabproof, $slabproof_faq, $is_bowl, $bowl_faq, $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
   // Odporno na naslov sklopa: sprejme romunsko 'produs' in podedovano hrvasko 'proizvod'.
   $is_info = ( stripos( (string) $title, 'produs' ) !== false ) || ( stripos( (string) $title, 'proizvod' ) !== false );
   if ( $is_snug && $is_info ) { return $snug_faq; }
   if ( $is_kompwom && $is_info ) { return $kompwom_faq; }
   if ( $is_tradesman && $is_info ) { return $tradesman_faq; }
+  if ( $is_slim && $is_info ) { return $slim_faq; }
   if ( $is_slabproof && $is_info ) { return $slabproof_faq; }
   if ( $is_bowl && $is_info ) { return $bowl_faq; }
   if ( $is_pal && $is_info ) { return $pal_faq; }
