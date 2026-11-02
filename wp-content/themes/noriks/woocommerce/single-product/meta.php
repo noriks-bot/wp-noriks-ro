@@ -516,6 +516,10 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
                 <strong>NORIKS FIT Woman</strong> este un tricou modelator în care relieful este împletit chiar în material, nu imprimat pe el. O bandă lată trece peste abdomen și șolduri, iar alta peste spate.<br><br>Compresia este distribuită pe lățime, nu strânsă într-un singur punct, așa că nimic nu intră în piele. Abdomenul rămâne neted, talia mai îngustă, iar spatele primește un sprijin care te ajută să stai mai drept.<br><br>Tricotajul este fără cusături, subțire și mat — dispare sub cămașă, sacou sau o rochie mulată. Nu se rulează în timpul zilei și nu se conturează pe sub haine.<br><br>Spală la mașină la 30 °C, fără înălbitori, călcat și uscător. Disponibil în trei culori (negru, gri închis, roz) și în mărimi de la S la 3XL. Dacă ești între două mărimi, ia-o pe cea mai mare.
 
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('tradesman', $current_product_id) ): ?>
+
+                NORIKS Tradesman sunt șosete de lucru groase din bambus pentru toți cei care stau și merg toată ziua în bocanci de lucru – pe șantier, în depozit, în atelier sau afară, iarna. Pernuța moale amortizează fiecare pas pe beton și pe pământul înghețat, călcâiul și degetele întărite fac față bocancilor rigizi, iar banda pentru arcadă și manșeta dublă țin șoseta pe loc toată tura.<br><br><strong>Compoziție:</strong> 56 % lyocell din bambus, 38 % nailon, 6 % elastan – rezistă natural la mirosurile neplăcute, absorb umezeala și sunt foarte moi pe piele. <strong>Construcție:</strong> susținere a gleznei la 360°, bandă pentru arcadă, pernuță, ventilație din plasă, manșetă dublă cu buclă de tras, călcâi întărit. Înălțime: clasică (crew), aproximativ 18 cm de la călcâi până la margine.<br><br><strong>Mărimi (număr de pantof EU):</strong> M 39–42, L 42,5–46, XL 46,5–49,5. Culori: negru și alb. <strong>Întreținere:</strong> spălați la rece, uscați la aer.<br><br>Cu NORIKS aveți 30 de zile pentru returnarea banilor, livrare gratuită peste 350 lei și plata ramburs.
+
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slabproof', $current_product_id) ): ?>
 
                 <strong>NORIKS SlabProof</strong> sunt șosete de lucru făcute pentru oamenii care stau toată ziua pe beton. Bocancii de lucru protejează piciorul, dar nu-l amortizează — betonul nu cedează deloc, așa că fiecare pas ajunge în călcâie, genunchi și spate. Singurul lucru care poate atenua acest șoc e șoseta.<br><br>De aceea au <strong>amortizare pe zone</strong>: pernuțe dense sub călcâi și sub partea din față a tălpii, exact acolo unde lovește betonul, și tricotaj subțire în rest, ca bocancul să nu devină prea strâmt. Călcâiul și degetele sunt întărite cu nailon tricotat dublu, în cele două locuri unde șosetele cedează primele.<br><br>Plasa aerisită de pe partea de sus a labei piciorului și tricotajul care elimină transpirația țin picioarele uscate toată tura. Amestecul nu conține lână, așa că nimic nu zgârie și piciorul nu se supraîncălzește.<br><br>Manșeta lată, reiată, ține șoseta sus fără să strângă gamba, buzunarul adânc pentru călcâi, cu limbă, nu o lasă să coboare în bocanc, iar banda de pe arcadă ține piciorul să nu alunece.<br><br>Sunt disponibile în negru, în mărimile M (EU 39–42), L (EU 43–45) și XL (EU 46–49). Aveți <strong>30 de zile pentru returnarea banilor</strong>, iar livrarea este gratuită pentru comenzi peste 350 lei.
@@ -714,6 +718,35 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
                   <img class="js-open-size-chart" style="cursor:pointer;" src="https://noriks.com/ro/wp-content/uploads/2026/04/nogavice_ro.jpg">
 
+    <?php elseif( function_exists('noriks_is_type') && noriks_is_type('tradesman', $current_product_id) ): ?>
+
+          <div class="noriks-size">
+            <p style="margin:0 0 14px;line-height:1.6;">Alegeți mărimea după <strong>numărul de pantof (EU)</strong>.</p>
+            <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+            <table style="width:100%;border-collapse:collapse;font-size:14px;">
+              <thead>
+                <tr style="background:#a9683f;color:#fff;">
+                  <th style="padding:9px 8px;text-align:left;">Mărime</th>
+                  <th style="padding:9px 8px;text-align:left;">Număr de pantof (EU) – bărbați</th>
+                  <th style="padding:9px 8px;text-align:left;">Număr de pantof (EU) – femei</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php foreach ( noriks_tradesman_sizes() as $i => $r ) :
+                  $bg = ( $i % 2 ) ? '#fdf8f5' : '#fff'; ?>
+                  <tr style="background:<?php echo $bg; ?>;border-bottom:1px solid #eee;">
+                    <?php foreach ( $r as $j => $c ) : ?>
+                    <td style="padding:9px 8px;<?php echo $j ? '' : 'font-weight:700;white-space:nowrap;'; ?>"><?php echo esc_html( $c ); ?></td>
+                    <?php endforeach; ?>
+                  </tr>
+                <?php endforeach; ?>
+              </tbody>
+            </table>
+            </div>
+            <p style="margin:12px 0 0;line-height:1.6;">Sunteți între două mărimi? Luați-o pe cea mai mare.</p>
+            <p style="margin:14px 0 0;line-height:1.6;">Dacă mărimea nu vi se potrivește, aveți 30 de zile pentru returnare sau schimb.</p>
+          </div>
+
     <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slabproof', $current_product_id) ): ?>
 
           <div class="noriks-size">
@@ -805,7 +838,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
 
     <!-- 3 - savjeti za pranje--> <!-- ascuns si pentru kidsnest -->
-    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('kidsnest', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) )) : // fără sfaturi de spălare pentru centură/bunion/fisiorest/norikshers/kidsnest/perna ortopedică ?>
+    <?php if ( ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('kidsnest', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) ) ) && ! ( function_exists('noriks_is_type') && noriks_is_type('tradesman', $current_product_id) ) ) : // fără sfaturi de spălare pentru centură/bunion/fisiorest/norikshers/kidsnest/perna ortopedică ?>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3><?php echo get_field("singlepp_acc_h_2","options"); ?></h3>
