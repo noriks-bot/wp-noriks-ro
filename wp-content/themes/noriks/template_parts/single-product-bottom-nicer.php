@@ -37,6 +37,8 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kompwom' );
     } elseif ( noriks_is_type( 'bowl' ) ) {
         get_template_part( 'template_parts/product-bottom/why-bowl' );
+    } elseif ( noriks_is_type( 'winecooler' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-winecooler' );
     } elseif ( noriks_is_type( 'pal' ) ) {
         get_template_part( 'template_parts/product-bottom/why-pal' );
     } elseif ( noriks_is_type( 'red' ) ) {
@@ -377,6 +379,10 @@ if (  has_term( array( 'majice', 'orto-majice', 'orto-majica-darila' ), 'product
 
           Nu ești singur în căutarea unui stat pe scaun fără durere.
 
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('winecooler') ): ?>
+
+          Nu sunteți singurul căruia vinul din pahar i se încălzește prea repede.
+
           <?php elseif ( !has_term( array( 'bokserice', 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() ) ): ?>
 
           <?php echo get_field("singlepp_content_standard_reviews_t2","options"); ?>
@@ -389,7 +395,7 @@ if (  has_term( array( 'majice', 'orto-majice', 'orto-majica-darila' ), 'product
 
 
           </h1>
-    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('slim') ): ?>Mii de femei poartă deja NORIKS Slim – lenjerie modelatoare care netezește silueta și rămâne la locul ei.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ): ?>Mii de muncitori lucrează deja în șosetele NORIKS Tradesman – pernuță moale, călcâi întărit și bandă pentru arcadă.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ): ?>Mii de meseriași lucrează deja în șosetele NORIKS SlabProof – amortizare pe zone acolo unde lovește betonul, călcâi și degete întărite și picioare uscate toată tura.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>Mii de bărbați poartă deja șosetele compresive NORIKS pentru picioare mai ușoare și mai puțin obosite – la muncă, în călătorii și la antrenament.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bokserice') ): ?>Mii de bărbați poartă deja boxerii NORIKS – confort care ține toată ziua.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>Mii de oameni folosesc deja NORIKS FisioRest pentru mai puțină durere și tensiune în gât – tracțiune, vibrație și căldură într-un singur dispozitiv.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>Mii de oameni folosesc deja corectorul de halux NORIKS pentru mai puțină durere și o poziție mai corectă a degetului mare – acasă, la TV sau în timpul somnului.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>Mii de oameni poartă deja centura ortopedică NORIKS pentru mai puțină durere și un spate mai stabil – la muncă, la ridicat greutăți și la statul îndelungat pe scaun.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Mii de femei folosesc deja benzile din silicon cu colagen NORIKS Hers pentru vizibil mai puține riduri și linii fine – simplu, în timp ce dorm.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Mii de bărbați poartă deja boxerii absorbanți NORIKS pentru uscăciune și încredere în sine – fără absorbante și fără scutece.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Mii de bărbați poartă deja tricoul compresiv NORIKS pentru un abdomen netezit, o postură mai bună și mai multă încredere.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Mii de părinți au înlocuit deja perna obișnuită cu NORIKS KidsNest – nopți mai liniștite, respirație pe nas și un somn cu adevărat odihnitor.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>Mii de clienți folosesc deja perna ortopedică NORIKS ErgoSit pentru un stat pe scaun fără dureri de coccis, de spate și de șolduri – în mașină, la birou și acasă.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
+    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('slim') ): ?>Mii de femei poartă deja NORIKS Slim – lenjerie modelatoare care netezește silueta și rămâne la locul ei.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('tradesman') ): ?>Mii de muncitori lucrează deja în șosetele NORIKS Tradesman – pernuță moale, călcâi întărit și bandă pentru arcadă.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ): ?>Mii de meseriași lucrează deja în șosetele NORIKS SlabProof – amortizare pe zone acolo unde lovește betonul, călcâi și degete întărite și picioare uscate toată tura.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>Mii de bărbați poartă deja șosetele compresive NORIKS pentru picioare mai ușoare și mai puțin obosite – la muncă, în călătorii și la antrenament.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bokserice') ): ?>Mii de bărbați poartă deja boxerii NORIKS – confort care ține toată ziua.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>Mii de oameni folosesc deja NORIKS FisioRest pentru mai puțină durere și tensiune în gât – tracțiune, vibrație și căldură într-un singur dispozitiv.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>Mii de oameni folosesc deja corectorul de halux NORIKS pentru mai puțină durere și o poziție mai corectă a degetului mare – acasă, la TV sau în timpul somnului.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>Mii de oameni poartă deja centura ortopedică NORIKS pentru mai puțină durere și un spate mai stabil – la muncă, la ridicat greutăți și la statul îndelungat pe scaun.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Mii de femei folosesc deja benzile din silicon cu colagen NORIKS Hers pentru vizibil mai puține riduri și linii fine – simplu, în timp ce dorm.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Mii de bărbați poartă deja boxerii absorbanți NORIKS pentru uscăciune și încredere în sine – fără absorbante și fără scutece.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Mii de bărbați poartă deja tricoul compresiv NORIKS pentru un abdomen netezit, o postură mai bună și mai multă încredere.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Mii de părinți au înlocuit deja perna obișnuită cu NORIKS KidsNest – nopți mai liniștite, respirație pe nas și un somn cu adevărat odihnitor.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>Mii de clienți folosesc deja perna ortopedică NORIKS ErgoSit pentru un stat pe scaun fără dureri de coccis, de spate și de șolduri – în mașină, la birou și acasă.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('winecooler') ): ?>Mii de oameni își răcesc deja vinul cu NORIKS WineCooler – o tijă din oțel inoxidabil cu turnător, fără frapieră cu gheață și fără vin diluat.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
     </div>
   </section>
   </div>
@@ -488,6 +494,7 @@ if (  has_term( array( 'majice', 'orto-majice', 'orto-majica-darila' ), 'product
   if ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) { $rv_fallback_title = 'NORIKS FIT Woman tricou modelator'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('pal') ) { $rv_fallback_title = 'NORIKS Pal baston de mers'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('bowl') ) { $rv_fallback_title = 'NORIKS Bowl bol ortopedic pentru câini'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('winecooler') ) { $rv_fallback_title = 'NORIKS WineCooler răcitor de vin'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('red') ) { $rv_fallback_title = 'NORIKS RedRelief terapie cu lumină roșie'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') ) { $rv_fallback_title = 'NORIKS KneeHeat dispozitiv de încălzire și masaj pentru genunchi'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ) { $rv_fallback_title = 'NORIKS SlabProof™ Șosete de Lucru'; }
@@ -501,6 +508,8 @@ if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) {
   include get_stylesheet_directory() . '/auto_reviews/RO_kompwom.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('bowl') ) {
   include get_stylesheet_directory() . '/auto_reviews/RO_bowl.php';
+} elseif ( function_exists('noriks_is_type') && noriks_is_type('winecooler') ) {
+  include get_stylesheet_directory() . '/auto_reviews/RO_winecooler.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('pal') ) {
   include get_stylesheet_directory() . '/auto_reviews/RO_pal.php';
 } elseif ( function_exists('noriks_is_type') && noriks_is_type('red') ) {
@@ -938,7 +947,7 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
         noriks_is_type('cloud') ||
         noriks_is_type('snug') ||
         noriks_is_type('kompwom') ||
-        noriks_is_type('bowl') ||
+        ( noriks_is_type('bowl') || noriks_is_type('winecooler') ) ||
         noriks_is_type('pal') ||
         noriks_is_type('red') ||
         noriks_is_type('kneeheat') ||
@@ -959,7 +968,7 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
     // Izdelki z lastnim imenom v karticah mnenj ne smejo dobiti nakljucnega izdelka iz kataloga.
   $rv_own_name = ( function_exists('noriks_is_type') && (
       noriks_is_type('cloud') || noriks_is_type('cloath') || noriks_is_type('hyd') || noriks_is_type('snug')
-   || noriks_is_type('kompwom') || noriks_is_type('bowl') || noriks_is_type('pal') || noriks_is_type('red') || noriks_is_type('kneeheat') || noriks_is_type('slabproof') || noriks_is_type('tradesman') || noriks_is_type('slim')
+   || noriks_is_type('kompwom') || ( noriks_is_type('bowl') || noriks_is_type('winecooler') ) || noriks_is_type('pal') || noriks_is_type('red') || noriks_is_type('kneeheat') || noriks_is_type('slabproof') || noriks_is_type('tradesman') || noriks_is_type('slim')
    || noriks_is_type('controlpro') || noriks_is_type('kidsnest') || noriks_is_type('ortopedski-jastuk')
    || noriks_is_type('bunion') || noriks_is_type('fisiorest') || noriks_is_type('ortopas')
    || noriks_is_type('norikshers') || noriks_is_type('kompresijske-nogavice') ) );
@@ -1937,7 +1946,21 @@ $kneeheat_faq = array(
   ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_slim, $slim_faq, $is_tradesman, $tradesman_faq, $is_slabproof, $slabproof_faq, $is_bowl, $bowl_faq, $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
+$is_winecooler = ( function_exists('noriks_is_type') && noriks_is_type('winecooler') );
+$winecooler_faq = array(
+  array('questioon' => 'Cum funcționează oferta pentru mai multe bucăți?',
+    'answer'    => 'Alegeți pur și simplu oferta <strong>2x buc</strong>, <strong>4x buc</strong> sau <strong>6x buc</strong> — în coș ajunge numărul ales de răcitoare de vin, iar reducerea se calculează automat.'),
+  array('questioon' => 'Ce metode de plată pot folosi?',
+    'answer'    => 'La noi puteți plăti cu Apple Pay, Google Pay, Mastercard și Visa.'),
+  array('questioon' => 'Cum funcționează?',
+    'answer'    => 'Puneți tija de răcire în congelator pentru cel puțin 1 oră. Introduceți tija răcită în sticla de vin. Beți o gură ca să faceți puțin loc și bucurați-vă de un vin perfect răcit la fiecare pahar turnat.'),
+  array('questioon' => 'Informații despre livrare',
+    'answer'    => 'Livrare gratuită pentru comenzi peste 350 lei. Termenul de livrare este de 5–12 zile lucrătoare de la data expedierii.'),
+  array('questioon' => 'Politica de retur',
+    'answer'    => 'Dreptul de retur în termen de 30 de zile. Dacă nu sunteți complet mulțumit de achiziție, contactați-ne în termen de 30 de zile de la primirea comenzii și vă ajutăm cu plăcere cu returnarea produsului sau a banilor.'),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_winecooler, $winecooler_faq, $is_slim, $slim_faq, $is_tradesman, $tradesman_faq, $is_slabproof, $slabproof_faq, $is_bowl, $bowl_faq, $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
   // Odporno na naslov sklopa: sprejme romunsko 'produs' in podedovano hrvasko 'proizvod'.
   $is_info = ( stripos( (string) $title, 'produs' ) !== false ) || ( stripos( (string) $title, 'proizvod' ) !== false );
   if ( $is_snug && $is_info ) { return $snug_faq; }
@@ -1946,6 +1969,7 @@ $faq_pick = function( $title, $list ) use ( $is_slim, $slim_faq, $is_tradesman, 
   if ( $is_slim && $is_info ) { return $slim_faq; }
   if ( $is_slabproof && $is_info ) { return $slabproof_faq; }
   if ( $is_bowl && $is_info ) { return $bowl_faq; }
+  if ( $is_winecooler && $is_info ) { return $winecooler_faq; }
   if ( $is_pal && $is_info ) { return $pal_faq; }
   if ( $is_red && $is_info ) { return $red_faq; }
   if ( $is_kneeheat && $is_info ) { return $kneeheat_faq; }
