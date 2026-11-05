@@ -8,7 +8,7 @@ $auto_reviews_en = array(
     array("name" => "Florin M.", "text" => "Am încercat toate mărcile posibile. Astea sunt cele mai bune. Amortizarea chiar se simte."),
     array("name" => "Vasile C.", "text" => "Cinci luni de purtat zilnic și tot ca noi. Merită fiecare leu."),
     array("name" => "Cristian B.", "text" => "Credeam că problema e la pantofi. Până la urmă îmi trebuiau doar șosete bune."),
-    array("name" => "Adrian N.", "text" => "Perna de sub călcâi e genială. Se simte pe beton din prima zi."),
+    array("name" => "Adrian N.", "text" => "Perna de sub călcâi e genială. Se simte la muncă din prima zi."),
     array("name" => "Marian R.", "text" => "Nu mai transpir în bocanci. Șosetele astea chiar respiră."),
     array("name" => "Ionuț V.", "text" => "Am cumpărat două perechi, am mai comandat patru. Nu-mi mai trebuie nimic altceva."),
     array("name" => "Dumitru L.", "text" => "În sfârșit o șosetă care nu se destramă după o lună. Călcâiul întărit chiar funcționează."),
@@ -16,5 +16,5 @@ $auto_reviews_en = array(
     array("name" => "Bogdan H.", "text" => "Călcâi și degete întărite, pernă sub călcâi. Șosete de lucru serioase."),
     array("name" => "Daniel G.", "text" => "Se poartă comod, nu strâng, nu alunecă. Tot ce-mi trebuie."),
     array("name" => "Nicolae J.", "text" => "Cinci stele. Am comandat trei perechi imediat după ce am încercat-o pe prima."),
-    array("name" => "Cătălin Ș.", "text" => "Lucrez pe beton toată ziua. În sfârșit șosete comode până la sfârșitul turei."),
+    array("name" => "Cătălin Ș.", "text" => "Lucrez în picioare toată ziua. În sfârșit șosete comode până la sfârșitul turei."),
 );

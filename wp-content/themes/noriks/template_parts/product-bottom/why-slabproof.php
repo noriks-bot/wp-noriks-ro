@@ -13,22 +13,22 @@ $wdir = get_template_directory_uri() . '/img/slabproof/';
       <div class="wslabproof__tekst">
         <div class="wslabproof__kicker">CROIALĂ JOASĂ</div>
         <h2 class="wslabproof__h2">Șosetă de lucru cu pernuță, <em>croită sub gleznă</em></h2>
-        <p class="wslabproof__p">NORIKS SlabProof este o șosetă de lucru cu pernuță pentru beton, croită sub gleznă. E făcută pentru pantofi de lucru, adidași de protecție cu bombeu metalic și zilele toride în pantaloni scurți, când o șosetă înaltă doar vă încurcă.</p>
-        <p class="wslabproof__p">Sub talpă are aceeași pernă ca modelul mai înalt: densă sub călcâi și sub partea din față a tălpii, acolo unde betonul lovește cel mai tare. Peste partea de sus a labei piciorului trece o zonă din plasă, călcâiul și degetele sunt întărite, iar limba înălțată de la călcâi împiedică spatele pantofului să frece pielea.</p>
+        <p class="wslabproof__p">NORIKS SlabProof este o șosetă de lucru cu pernuță pentru o zi întreagă în picioare, croită sub gleznă. E făcută pentru pantofi de lucru, adidași de protecție cu bombeu metalic și zilele toride în pantaloni scurți, când o șosetă înaltă doar vă încurcă.</p>
+        <p class="wslabproof__p">Sub talpă are aceeași pernă ca modelul mai înalt: densă sub călcâi și sub partea din față a tălpii, acolo unde pasul lovește cel mai tare. Peste partea de sus a labei piciorului trece o zonă din plasă, călcâiul și degetele sunt întărite, iar limba înălțată de la călcâi împiedică spatele pantofului să frece pielea.</p>
         <p class="wslabproof__p">Șoseta e neagră și vine în trei mărimi: 39–42, 43–45 și 46–49. Se spală la mașină la rece și se usucă în uscător la temperatură joasă, împreună cu hainele de lucru — fără spălare de mână și fără detergent special.</p>
-        <p class="wslabproof__zak">Pernă pentru beton, în croială pentru pantofi de lucru joși.</p>
+        <p class="wslabproof__zak">Pernă pentru fiecare zi de muncă, în croială pentru pantofi de lucru joși.</p>
       </div>
     </div>
   </section>
 
   <section class="wslabproof__s">
     <div class="wslabproof__v wslabproof__v--rev">
-      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-05.webp' ); ?>" alt="Amortizare exact acolo unde betonul lovește cel mai tare" loading="eager" decoding="async"></div>
+      <div class="wslabproof__media"><img src="<?php echo esc_url( $wdir . 'slabproof-05.webp' ); ?>" alt="Amortizare exact acolo unde pasul lovește cel mai tare" loading="eager" decoding="async"></div>
       <div class="wslabproof__tekst">
         <div class="wslabproof__kicker">AMORTIZARE PE ZONE</div>
-        <h2 class="wslabproof__h2">Amortizare exact acolo unde <em>betonul lovește cel mai tare</em></h2>
+        <h2 class="wslabproof__h2">Amortizare exact acolo unde <em>pasul lovește cel mai tare</em></h2>
         <p class="wslabproof__p">Nu noi am inventat amortizarea. Dar NORIKS SlabProof e o șosetă a cărei amortizare e făcută pentru podeaua pe care stați toată ziua: densă acolo unde lovesc călcâiul și partea din față a tălpii și subțire în rest, ca să nu umple niciodată pantoful și să nu strângă piciorul.</p>
-        <p class="wslabproof__p">Pernuțele dense sunt așezate sub călcâi și sub partea din față a tălpii, exact în locurile unde betonul izbește cel mai tare la fiecare pas. În rest șoseta e subțire, așa că amortizează pasul fără ca pantoful să pară strâmt. Pernuțele sunt distribuite după punctele de impact, nu uniform pe toată talpa.</p>
+        <p class="wslabproof__p">Pernuțele dense sunt așezate sub călcâi și sub partea din față a tălpii, exact în locurile care primesc cel mai puternic șoc la fiecare pas. În rest șoseta e subțire, așa că amortizează pasul fără ca pantoful să pară strâmt. Pernuțele sunt distribuite după punctele de impact, nu uniform pe toată talpa.</p>
         <p class="wslabproof__p">Croiala joasă, sub gleznă, e făcută pentru pantofi de lucru, adidași de protecție cu bombeu metalic și zilele toride în pantaloni scurți. Sub talpă are aceeași amortizare pe zone ca modelul mai înalt, doar că șoseta se termină sub gleznă. Limba de la călcâi protejează în plus călcâiul de marginea pantofului jos.</p>
         <p class="wslabproof__zak">Densă sub călcâi și sub partea din față a tălpii, subțire în rest.</p>
       </div>
@@ -69,10 +69,10 @@ $wdir = get_template_directory_uri() . '/img/slabproof/';
       <div class="wslabproof__tekst">
         <div class="wslabproof__kicker">NU E VINA PANTOFILOR</div>
         <h2 class="wslabproof__h2">Niciodată n-a fost <em>vina pantofilor</em></h2>
-        <p class="wslabproof__p">Pantofii de protecție sunt făcuți să apere degetele, nu să amortizeze piciorul. Asta e treaba lor. Dar betonul nu cedează niciun milimetru și fiecare pas trebuie să ajungă undeva. Când pantoful nu mai poate, rămâne șoseta.</p>
-        <p class="wslabproof__p">Același pantof, același beton. Singurul lucru care s-a schimbat e șoseta. Turele de douăsprezece ore pe beton sunt ca un drum cu camionul fără amortizoare — iar singurul lucru care poate atenua șocul sunt cam doi centimetri și jumătate de șosetă.</p>
+        <p class="wslabproof__p">Pantofii de protecție sunt făcuți să apere degetele, nu să amortizeze piciorul. Asta e treaba lor. Dar podeaua tare nu cedează niciun milimetru și fiecare pas trebuie să ajungă undeva. Când pantoful nu mai poate, rămâne șoseta.</p>
+        <p class="wslabproof__p">Același pantof, aceeași muncă. Singurul lucru care s-a schimbat e șoseta. Turele de douăsprezece ore în picioare sunt ca un drum cu camionul fără amortizoare — iar singurul lucru care poate atenua șocul sunt cam doi centimetri și jumătate de șosetă.</p>
         <p class="wslabproof__p">De aceea NORIKS SlabProof e făcută astfel încât acești doi centimetri și jumătate să fie cum trebuie: pernă densă sub călcâi și sub partea din față a tălpii, iar restul subțire și aerisit.</p>
-        <p class="wslabproof__zak">Același pantof, același beton — doar altă șosetă.</p>
+        <p class="wslabproof__zak">Același pantof, aceeași muncă — doar altă șosetă.</p>
       </div>
     </div>
   </section>
@@ -97,10 +97,10 @@ $wdir = get_template_directory_uri() . '/img/slabproof/';
       <div class="wslabproof__tekst">
         <div class="wslabproof__kicker">COMPARAȚIE</div>
         <h2 class="wslabproof__h2">Nu toate șosetele de lucru <em>sunt făcute la fel</em></h2>
-        <p class="wslabproof__p">Multipack-ul ieftin, perechea scumpă din lână sau șoseta făcută pentru betonul pe care chiar stați. Le-am comparat după lucrurile care contează la muncă: fără găuri după un an pe beton, amortizare acolo unde lovește betonul, prospețime în pantoful de lucru. Fiecare dintre ele se vede abia după câteva săptămâni de muncă.</p>
+        <p class="wslabproof__p">Multipack-ul ieftin, perechea scumpă din lână sau șoseta făcută pentru munca pe care chiar o faceți. Le-am comparat după lucrurile care contează la muncă: fără găuri după un an de muncă, amortizare acolo unde lovește pasul, prospețime în pantoful de lucru. Fiecare dintre ele se vede abia după câteva săptămâni de muncă.</p>
         <p class="wslabproof__p">Ne-am uitat și să nu existe mâncărime de la lână sau supraîncălzire, iar spatele pantofului să nu frece călcâiul. Multipack-ul ieftin e ieftin, apoi îl cumpărați din nou; lâna are un preț mai mare; NORIKS SlabProof îl cumpărați o dată, pentru mult timp.</p>
         <p class="wslabproof__p">Lâna bună ține, asta i-o recunoaștem. Dar vara zgârie și în pantoful de lucru încălzește. NORIKS SlabProof e făcută pentru podeaua pe care stați, nu pentru poteca de munte.</p>
-        <p class="wslabproof__zak">Făcută pentru beton, nu pentru munte.</p>
+        <p class="wslabproof__zak">Făcută pentru muncă, nu pentru munte.</p>
       </div>
     </div>
   </section>
@@ -111,8 +111,8 @@ $wdir = get_template_directory_uri() . '/img/slabproof/';
       <div class="wslabproof__tekst">
         <div class="wslabproof__kicker">CINE LE FACE</div>
         <h2 class="wslabproof__h2">Nu le-a gândit un comerciant de șosete, ci un <em>electrician</em></h2>
-        <p class="wslabproof__p">În spatele acestei șosete stă un electrician cu douăzeci și doi de ani de meserie, mai ales pe șantiere mari: spitale, depozite, centre de distribuție. Podele de beton și zile de douăsprezece ore. Ani la rând a muncit în picioare, pe același beton ca și dumneavoastră.</p>
-        <p class="wslabproof__p">La douăzeci de ani nu simți asta. La patruzeci și cinci, picioarele îți sunt terminate până la prânz și consumi un pachet de șosete pe lună — călcâie găurite, ude până la amiază. Șosetele deveneau tot mai subțiri și mai scurte, pline de găuri după o lună, iar nimeni nu făcea o șosetă pentru omul care stă toată ziua pe beton.</p>
+        <p class="wslabproof__p">În spatele acestei șosete stă un electrician cu douăzeci și doi de ani de meserie, mai ales pe șantiere mari: spitale, depozite, centre de distribuție. Podele dure și zile de douăsprezece ore. Ani la rând a muncit în picioare, exact ca dumneavoastră.</p>
+        <p class="wslabproof__p">La douăzeci de ani nu simți asta. La patruzeci și cinci, picioarele îți sunt terminate până la prânz și consumi un pachet de șosete pe lună — călcâie găurite, ude până la amiază. Șosetele deveneau tot mai subțiri și mai scurte, pline de găuri după o lună, iar nimeni nu făcea o șosetă pentru omul care muncește toată ziua în picioare.</p>
         <p class="wslabproof__p">Așa că și-a făcut-o pe a lui: întărită acolo unde se rupe mereu, uscată și care stă pe loc. A purtat-o un an la muncă înainte să fie gata pentru alții.</p>
         <p class="wslabproof__zak">Făcut de meseriași, pentru meseriași.</p>
       </div>
