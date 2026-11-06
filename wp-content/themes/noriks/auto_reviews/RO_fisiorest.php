@@ -1,5 +1,5 @@
 <?php
-// Review pool for the NORIKS FisioRest neck therapy pillow.
+// Review pool for the NORIKS NeckRelax neck therapy pillow.
 // Text-only (no images), Romanian.
 $auto_reviews_en = array(
     array("name" => "Tina C.",      "text" => "Stau toată ziua la calculator și gâtul mă durea constant. După două săptămâni de utilizare seara, durerea a scăzut vizibil, iar postura este mai bună. În sfârșit dorm fără rigiditate."),
@@ -15,7 +15,7 @@ $auto_reviews_en = array(
     array("name" => "Matei Z.",     "text" => "Produs excelent pentru relaxare după antrenament. Gâtul și umerii sunt mai puțin încordați."),
     array("name" => "Eva C.",       "text" => "Îl folosesc în fiecare seară câte 15 minute. Somnul este mai profund, iar rigiditatea de dimineață a dispărut."),
     array("name" => "Radu D.",      "text" => "Confecționat calitativ, fără fir și practic. Tracțiunea chiar descarcă coloana cervicală."),
-    array("name" => "Ștefania J.",  "text" => "După ore lungi la volan, FisioRest îmi relaxează minunat gâtul. Nu-mi mai pot imagina viața fără el."),
+    array("name" => "Ștefania J.",  "text" => "După ore lungi la volan, NeckRelax îmi relaxează minunat gâtul. Nu-mi mai pot imagina viața fără el."),
     array("name" => "Luca T.",      "text" => "La început o senzație neobișnuită de întindere, dar devine repede plăcută. Durerile sunt mai mici."),
     array("name" => "Barbara N.",   "text" => "Perna este confortabilă și plăcut de caldă. Tensiunea din gât se eliberează încă de la prima ședință."),
     array("name" => "Andrei M.",    "text" => "Combinația de căldură, masaj și tracțiune chiar funcționează. În fiecare seară abia aștept să o folosesc."),

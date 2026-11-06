@@ -584,7 +584,7 @@ $is_mixed_bundle = has_term( array( 'seturi', 'seturi-tricouri-si-boxeri', 'orto
 
         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('fisiorest', $current_product_id) ): ?>
 
-                NORIKS FisioRest este o pernă terapeutică pentru gât care combină tracțiunea, căldura și masajul prin vibrații într-un design ergonomic din spumă cu memorie. Întinde ușor gâtul la unghiul potrivit, descarcă coloana cervicală și eliberează tensiunea musculară prin căldură și masaj. Fără fir, reîncărcabilă și învelită în mătase moale și răcoritoare – sigură chiar și pentru somn.
+                NORIKS NeckRelax este o pernă terapeutică pentru gât care combină tracțiunea, căldura și masajul prin vibrații într-un design ergonomic din spumă cu memorie. Întinde ușor gâtul la unghiul potrivit, descarcă coloana cervicală și eliberează tensiunea musculară prin căldură și masaj. Fără fir, reîncărcabilă și învelită în mătase moale și răcoritoare – sigură chiar și pentru somn.
 
         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('bunion', $current_product_id) ): ?>
 
@@ -957,7 +957,7 @@ Fără birocrație, fără stres – rezolvăm totul în câteva clicuri. </p>
         'kidsnest' => array( 'noriks-kidsnest.pdf', 'NORIKS KidsNest — pernă ortopedică pentru copii' ),
         'kneefix' => array( 'noriks-kneefix.pdf', 'NORIKS KneeFix — orteză ortopedică pentru genunchi' ),
         'ortopedski-jastuk' => array( 'noriks-ergosit.pdf', 'NORIKS ErgoSit — pernă ortopedică de ședere' ),
-        'fisiorest' => array( 'noriks-fisiorest.pdf', 'NORIKS FisioRest — dispozitiv pentru gât' ),
+        'fisiorest' => array( 'noriks-fisiorest.pdf', 'NORIKS NeckRelax — dispozitiv pentru gât' ),
         'bunion' => array( 'noriks-bunion-fix.pdf', 'NORIKS Bunion Fix — corector pentru monturi' ),
         'ortopas' => array( 'noriks-ortopas.pdf', 'Centură ortopedică NORIKS pentru spate' ),
     );

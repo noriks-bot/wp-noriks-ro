@@ -48,7 +48,7 @@ function noriks_manuals_list() {
         array(
             'file'  => 'noriks-fisiorest.pdf',
             'sku'   => 'NORIKS-FISIOREST',
-            'title' => 'NORIKS FisioRest — dispozitiv pentru gât',
+            'title' => 'NORIKS NeckRelax — dispozitiv pentru gât',
             'sub'   => 'Tracțiune, căldură și masaj cu vibrații într-o ședință de 15 până la 30 de minute.',
         ),
         array(
