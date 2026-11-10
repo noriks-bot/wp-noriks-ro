@@ -1,27 +1,24 @@
 <?php
 /**
- * product-bottom: NORIKS WineCooler — štapić za hlađenje vina s izljevom (orto-winecooler).
- * Original: lindnerco.nl/products/wijnkoeler-geen-lauwe-wijn-meer — vsebina 1:1 z originalom
- * (isti vrstni red, ista besedila, prevedena v hrvascino), oblika po NORIKS stilu (kot why-hands.php):
- *   1) Videi kupaca (3 videa, preprosta mreza)
- *   2) Recite zbogom toplom vinu + 4 prednosti (harmonike originala kot kartice z besedilom)
- *   3) Za ljubitelje vina — slika levo, besedilo desno
- *   4) Higijena i vrhunska kvaliteta — 6 mnenj v preprosti mrezi (brez tekocega traku)
- *   5) Odlično 4,8 / 5
- *   6) NORIKS pogoji (30 dana za povrat, besplatna dostava iznad 70 EUR) — besedilo levo, slika desno
- * Brez promo pasice, tekocega traku, valovitih razdelilnikov, animacij in dodatkov v nakupni skatli.
- * FAQ originala je v reviews.php ($winecooler_faq), mnenja v auto_reviews/HR_winecooler.php
- * (tja so prestavljeni tudi 3 citati iz okvirja "Poslušajte naše kupce" iz nakupne skatle originala).
- * Slike: img/winecooler/ (logotip konkurenta na skatli zamenjan z NORIKS, napisi prevedeni v hrvascino).
+ * product-bottom: NORIKS WineCooler — stapic za hlajenje vina z izlivom (orto-winecooler).
+ *
+ * 10.11.2026 predelano: opisni bloki originala (4 kartice prednosti, "za ljubitelje vina"
+ * in "higiena in vrhunska kakovost") zamenjani z novimi sekcijami iz
+ * ~/Desktop/winecoler/sekcije-RO.html (razredi fis-*, isti sistem kot why-fisiorest.php).
+ * Videi kupcev, ocene in FAQ ostanejo nespremenjeni.
+ *
+ * Vrstni red: videi kupcev -> 4 razlogi -> video hero -> nerjaveco jeklo + 3 videi
+ * -> 3 koraki -> 4 detajli (ikone) -> darilo -> 3 kosi -> ocene -> NORIKS pogoji.
+ *
+ * FAQ je v reviews.php / single-product-bottom-nicer.php ($winecooler_faq),
+ * mnenja v auto_reviews/RO_winecooler.php. Slike in videi: img/winecooler/.
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 $nwc      = get_template_directory_uri() . '/img/winecooler/';
 $nwc_path = get_template_directory() . '/img/winecooler/';
-$nwc_img  = function( $file, $alt ) use ( $nwc, $nwc_path ) {
-  if ( ! file_exists( $nwc_path . $file ) ) { return ''; }
-  return '<img src="' . esc_url( $nwc . $file ) . '" alt="' . esc_attr( $alt ) . '" loading="eager">';
-};
+
+/* video kupca (3 navpicni videi z lastnim gumbom za predvajanje) */
 $nwc_video = function( $n, $label ) use ( $nwc, $nwc_path ) {
   $file = 'wc-video-' . $n . '.mp4'; $poster = 'wc-video-' . $n . '-poster.webp';
   if ( ! file_exists( $nwc_path . $file ) ) { return ''; }
@@ -31,15 +28,7 @@ $nwc_video = function( $n, $label ) use ( $nwc, $nwc_path ) {
     . '<button type="button" class="nwc-play" aria-label="' . esc_attr( 'Redă videoclipul: ' . $label ) . '"></button></div>';
 };
 
-/* 2) prednosti — 1:1 z originala (harmonike) */
-$nwc_feat = array(
-  array( 'Calitate superioară', 'Realizat din oțel inoxidabil de înaltă calitate, potrivit pentru contactul cu alimentele, acest produs oferă calitate durabilă și fiabilitate în utilizarea de zi cu zi.' ),
-  array( 'Plăcere instantanee', 'Ușor de folosit, se montează rapid și este incredibil de practic — o soluție simplă pentru a vă bucura de vin fără niciun efort.' ),
-  array( 'Turnare perfectă', 'Spuneți adio vărsărilor. Acest turnător asigură de fiecare dată o turnare uniformă, fără picurare, și păstrează vinul și masa impecabil de curate.' ),
-  array( 'Descoperiți gustul deplin', 'Aerarea integrată permite aromelor vinului să se dezvolte pe deplin, îmbunătățind gustul și oferind o experiență mai bogată.' ),
-);
-
-/* 4) mnenja — 1:1 z originala (isti vrstni red, ista imena) */
+/* mnenja — 1:1 z originalom */
 $nwc_testimonials = array(
   array( 'Un lucru excelent', 'Un lucru excelent, răcește uniform și toarnă fără să verse.', 'Emma Molenaar' ),
   array( 'Practic', 'E practic că dopul și închide sticla; nicio picătură pe fața de masă.', 'Lars van Dam' ),
@@ -63,50 +52,42 @@ $nwc_testimonials = array(
   </div>
 </section>
 
-<!-- 2) RECITE ZBOGOM TOPLOM VINU + prednosti -->
-<section class="nwc-sec">
-  <div class="nwc-wrap">
-    <h2 class="nwc-h2 nwc-h2--c">Spuneți adio <em>vinului cald</em></h2>
-    <p class="nwc-sub">Acum vă puteți bucura de fiecare dată de un vin perfect răcit, fără grija căldurii!</p>
-    <div class="nwc-feat">
-      <?php foreach ( $nwc_feat as $f ) : ?>
-      <article class="nwc-feat__card">
-        <h3><?php echo esc_html( $f[0] ); ?></h3>
-        <p><?php echo esc_html( $f[1] ); ?></p>
-      </article>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</section>
+<!-- NOVE SEKCIJE (10.11.2026) -->
+<section class="fis-science"><div class="fis-wrap"><div class="fis-box"><h2 class="fis-title">4 motive pentru care îl vei îndrăgi</h2><div class="fis-grid">
+<div class="fis-card"><h3 class="fis-card-title">Răcește din interior</h3><p class="fis-card-text">Bastonul răcește vinul <strong>direct în sticlă</strong>, fără frapieră cu gheață.</p></div>
+<div class="fis-card"><h3 class="fis-card-title">Vinul nu se diluează</h3><p class="fis-card-text">Fără cuburi de gheață în pahar, <strong>gustul rămâne curat</strong> până la ultima înghițitură.</p></div>
+<div class="fis-card"><h3 class="fis-card-title">Toarnă fără să picure</h3><p class="fis-card-text">Turnătorul încorporat <strong>toarnă uniform</strong>, iar fața de masă rămâne curată.</p></div>
+<div class="fis-card"><h3 class="fis-card-title">Se curăță ușor</h3><p class="fis-card-text">Turnătorul se detașează, iar bastonul <strong>se spală în mașina de vase</strong>.</p></div>
+</div></div></div></section>
 
-<!-- 3) ZA LJUBITELJE VINA — slika lijevo -->
-<section class="nwc-sec nwc-tint">
-  <div class="nwc-wrap nwc-row2">
-    <div class="nwc-media"><?php echo $nwc_img( 'wc-ljubitelji-vina.webp', 'Turnarea vinului răcit cu turnătorul NORIKS WineCooler pe plajă' ); ?></div>
-    <div class="nwc-copy">
-      <p class="nwc-kicker">Răcire</p>
-      <h2 class="nwc-h2">Pentru <em>iubitorii de vin</em></h2>
-      <p>O sticlă deschisă pe masă se încălzește în jumătate de oră, iar frapiera cu gheață diluează vinul și lasă o baltă pe fața de masă. Tija rezolvă ambele probleme: o răciți în congelator, o introduceți în sticlă și răcește vinul <strong>din interior</strong>.</p>
-      <p>În doar <strong>10–15 minute</strong> aduce vinul la temperatura de servire și îl menține rece <strong>până la 3 ore</strong> — suficient pentru o seară întreagă pe terasă.</p>
-      <p>Datorită turnătorului integrat, tija rămâne în sticlă în timp ce turnați: nu trebuie scoasă, nu picură, iar vinul nu apucă să se încălzească între două pahare.</p>
-      <p class="nwc-big">Cu această tijă de răcire, vinul dumneavoastră rămâne perfect răcit de la primul pahar turnat până la ultima înghițitură.</p>
-    </div>
-  </div>
-</section>
+<section class="fis-hero"><video class="fis-hero-vid" src="<?php echo esc_url( $nwc ); ?>winecooler-hero.mp4" muted autoplay loop playsinline preload="metadata"></video><div class="fis-hero-overlay"></div><div class="fis-hero-inner"><h2 class="fis-hero-title">Vin rece de la primul pahar până la ultima înghițitură.</h2></div></section>
 
-<!-- 4) HIGIJENA I VRHUNSKA KVALITETA — slika desno -->
-<section class="nwc-sec">
-  <div class="nwc-wrap nwc-row2 nwc-row2--rev">
-    <div class="nwc-copy">
-      <p class="nwc-kicker">Calitate</p>
-      <h2 class="nwc-h2">Igienă și <em>calitate superioară</em></h2>
-      <p>Ne bazăm pe oțel inoxidabil de cea mai bună calitate, potrivit pentru contactul cu alimentele, pentru o calitate și o durabilitate de neegalat, astfel încât tija dumneavoastră de răcire să funcționeze fiabil ani la rând.</p>
-      <p>Tija de răcire pentru vin are un turnător detașabil, așa că se curăță ușor și temeinic cu apă caldă.</p>
-      <p class="nwc-big">Se poate spăla în mașina de spălat vase.</p>
-    </div>
-    <div class="nwc-media"><?php echo $nwc_img( 'wc-higijena.webp', 'Tija de răcire NORIKS WineCooler și o sticlă de vin' ); ?></div>
-  </div>
-</section>
+<section class="fis-experts"><div class="fis-wrap fis-exp-grid"><div class="fis-exp-quote"><h2 class="fis-h2">Oțel inoxidabil care răcește din interior</h2>
+<p>Răcești bastonul în congelator și îl introduci în sticlă. În <strong>10–15 minute</strong> vinul ajunge la temperatura ideală de servire și rămâne rece <strong>până la 3 ore</strong>.</p>
+<p>✔ Oțel inoxidabil potrivit pentru alimente<br>✔ Turnătorul cu aerare eliberează aroma<br>✔ Se potrivește majorității sticlelor standard</p>
+<p class="fis-exp-author"><strong>Privește de aproape</strong><br>Cum funcționează WineCooler în practică.</p></div>
+<div class="fis-exp-cards">
+<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $nwc ); ?>winecooler-rod.mp4" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Oțel inoxidabil</div><div class="fis-exp-role">Robust și durabil</div></div></div>
+<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $nwc ); ?>winecooler-bottle.mp4" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Răcește din interior</div><div class="fis-exp-role">Sticla rămâne uscată</div></div></div>
+<div class="fis-exp-card nk-media"><video src="<?php echo esc_url( $nwc ); ?>winecooler-pour.mp4" muted autoplay loop playsinline preload="metadata"></video><div class="fis-exp-cap"><div class="fis-exp-name">Turnare</div><div class="fis-exp-role">Fără picături</div></div></div>
+</div></div></section>
+
+<section class="fis-thermo"><div class="fis-wrap"><p class="fis-eyebrow">Cum funcționează</p><h2 class="fis-h2 fis-center">3 pași până la vinul rece</h2><div class="fis-thermo-grid">
+<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $nwc ); ?>winecooler-freezer.mp4" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">1. În congelator</div></div>
+<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $nwc ); ?>winecooler-insert.mp4" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">2. În sticlă</div></div>
+<div class="fis-thermo-card nk-media"><video src="<?php echo esc_url( $nwc ); ?>winecooler-table.mp4" muted autoplay loop playsinline preload="metadata"></video><div class="fis-thermo-label">3. Savurează</div></div>
+</div></div></section>
+
+<section class="fis-upg"><div class="fis-wrap"><h2 class="fis-h2 fis-center">Detalii care fac diferența</h2><div class="fis-upg-grid">
+<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $nwc ); ?>ikona-1.svg"><div class="fis-upg-title">Oțel inoxidabil</div><p class="fis-upg-text">Potrivit pentru alimente, te servește ani de zile.</p></div>
+<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $nwc ); ?>ikona-2.svg"><div class="fis-upg-title">Aerare</div><p class="fis-upg-text">Turnătorul ajută la eliberarea aromei vinului.</p></div>
+<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $nwc ); ?>ikona-3.svg"><div class="fis-upg-title">Mașina de vase</div><p class="fis-upg-text">Scoți turnătorul și speli bastonul în câteva secunde.</p></div>
+<div class="fis-upg-card"><img class="fis-upg-ico" alt="" src="<?php echo esc_url( $nwc ); ?>ikona-4.svg"><div class="fis-upg-title">Mărime universală</div><p class="fis-upg-text">Se potrivește majorității sticlelor de vin standard.</p></div>
+</div></div></section>
+
+<section class="fis-eng"><div class="fis-wrap fis-row2"><div class="fis-row2-copy"><h2 class="fis-h2">Cadou elegant pentru iubitorii de vin</h2><p>Cutia neagră NORIKS este gata de oferit – de Crăciun, de ziua de naștere sau ca atenție pentru gazdă. Trebuie doar să o dăruiești.</p></div><div class="fis-row2-media nk-media nk-wide"><video src="<?php echo esc_url( $nwc ); ?>winecooler-gift.mp4" muted autoplay loop playsinline preload="metadata"></video></div></div></section>
+
+<section class="fis-cheaper"><div class="fis-wrap fis-row2"><div class="fis-row2-media nk-media"><img src="<?php echo esc_url( $nwc ); ?>winecooler-3-kusy.jpg" alt="NORIKS WineCooler" loading="lazy"></div><div class="fis-row2-copy"><p class="fis-eyebrow">ACHIZIȚIE AVANTAJOASĂ</p><h2 class="fis-h2">3 bucăți: una pentru tine, două cadou</h2><p>Un WineCooler costă <span data-price="1">131,99 lei</span>. În pachetul de 3 buc. plătești <span data-price="3">288,99 lei</span>, adică doar <span data-price="3-unit">96,33 lei</span> pe bucată. Cu 30 de zile pentru returnarea banilor.</p></div></div></section>
 
 <!-- 5) ODLIČNO 4,8 / 5 -->
 <section class="nwc-sec nwc-tint">
@@ -232,6 +213,197 @@ $nwc_testimonials = array(
   .nwc-wrap { padding: 0 16px; }
   .nwc-vids { gap: 8px; }
   .nwc-feat, .nwc-rev { grid-template-columns: 1fr; }
+}
+
+/* ===== NOVE SEKCIJE (fis-*) — sekcije.css ===== */
+/* 2) Video hero */
+  .fis-hero { position: relative; width: 100vw; left: 50%; margin-left: -50vw; min-height: 520px; display: flex; align-items: center; overflow: hidden; }
+  .fis-hero-vid { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .fis-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.05) 55%); }
+  .fis-hero-inner { position: relative; z-index: 2; max-width: 1180px; margin: 0 auto; padding: 0 40px; width: 100%; box-sizing: border-box; }
+  .fis-hero-title { color: #fff; font-weight: 800; font-size: clamp(27px,4vw,46px); line-height: 1.15; max-width: 640px; margin: 0; text-shadow: 0 2px 14px rgba(0,0,0,0.4); }
+  @media (max-width: 768px) { .fis-hero { min-height: 380px; } .fis-hero-inner { padding: 0 22px; } }
+
+  /* zajednički */
+  .fis-h2 { font-size: clamp(24px,3vw,34px); font-weight: 800; color: #1c1c1c; line-height: 1.2; margin: 0 0 18px; }
+  .fis-center { text-align: center; }
+  .fis-eyebrow { font-size: 13px; letter-spacing: 1px; text-transform: uppercase; color: #555; margin: 0 0 8px; }
+
+  /* 3) Stručnjaci */
+  .fis-experts { padding: 44px 0; }
+  .fis-exp-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: start; }
+  .fis-exp-quote p { font-size: 15.5px; line-height: 1.6; color: #333; margin: 0 0 14px; }
+  .fis-exp-author { color: #1c1c1c; }
+  .fis-exp-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .fis-exp-card { position: relative; border-radius: 14px; overflow: hidden; aspect-ratio: 3/4; background: #222; }
+  .fis-exp-card video,
+  .fis-exp-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .fis-exp-cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px; color: #fff; background: linear-gradient(0deg, rgba(0,0,0,.75), rgba(0,0,0,0)); }
+  .fis-exp-name { font-weight: 800; font-size: 18px; }
+  .fis-exp-role { font-size: 13px; }
+  .fis-exp-org { font-size: 12px; font-style: italic; opacity: .9; }
+
+  /* 4) UGC */
+  .fis-ugc { background: #223047; padding: 40px 0; }
+  .fis-ugc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .fis-ugc-media { border-radius: 12px; overflow: hidden; aspect-ratio: 3/4; background: #000; }
+  .fis-ugc-media video,
+  .fis-ugc-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .fis-ugc-cap { color: #eee; font-size: 14px; line-height: 1.5; margin: 10px 0 0; }
+
+  /* 5) ThermoTrac */
+  .fis-thermo { background: #f0efe9; padding: 44px 0; }
+  .fis-thermo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .fis-thermo-card { position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 4/3; background: #111; }
+  .fis-thermo-card video { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .fis-thermo-label { position: absolute; left: 16px; bottom: 14px; color: #fff; font-weight: 800; font-size: 18px; text-shadow: 0 1px 8px rgba(0,0,0,.6); }
+
+  /* 6) Upgrades */
+  .fis-upg { padding: 44px 0; }
+  .fis-upg-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+  .fis-upg-ico { width: 56px; height: 56px; object-fit: contain; display: block; margin: 0 auto 14px; }
+  .fis-upg-title { font-weight: 800; color: #1c1c1c; margin: 0 0 8px; font-size: 16px; }
+  .fis-upg-text { font-size: 14px; line-height: 1.5; color: #444; margin: 0; }
+
+  /* 7 + 8) row2 */
+  .fis-eng, .fis-cheaper { padding: 40px 0; }
+  .fis-cheaper { background: #f4f4f4; }
+  .fis-row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center; }
+  .fis-row2-copy p { font-size: 15.5px; line-height: 1.65; color: #333; }
+  .fis-row2-media { border-radius: 16px; overflow: hidden; }
+  .fis-row2-media video,
+  .fis-row2-media img { width: 100%; height: auto; display: block; }
+  .fis-cheaper .fis-row2-media { aspect-ratio: 1 / 1; }
+  .fis-cheaper .fis-row2-media video,
+  .fis-cheaper .fis-row2-media img { height: 100%; object-fit: cover; }
+
+  @media (max-width: 900px) {
+    .fis-exp-grid { grid-template-columns: 1fr; gap: 24px; }
+    .fis-ugc-grid { grid-template-columns: 1fr 1fr; }
+    .fis-thermo-grid { grid-template-columns: 1fr; }
+    .fis-upg-grid { grid-template-columns: 1fr 1fr; gap: 22px; }
+    .fis-row2 { grid-template-columns: 1fr; gap: 22px; }
+    .fis-cheaper .fis-row2-media { order: 2; }
+  }
+  @media (max-width: 560px) {
+    .fis-exp-cards { grid-template-columns: 1fr 1fr; }
+    .fis-ugc-grid { grid-template-columns: 1fr; }
+  }
+
+  /* 1) Znanstveno potkrijepljeno — siva kartica */
+  .fis-science { background: #f4f4f4; padding: 44px 0; }
+  .fis-wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+  .fis-box { background: transparent; border-radius: 0; padding: 0; }
+  .fis-title { font-size: clamp(23px,2.9vw,32px); font-weight: 800; color: #1c1c1c; line-height: 1.2; margin: 0 0 26px; }
+  .fis-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+  .fis-card { padding: 0 22px; border-left: 1px solid #dcdcdc; }
+  .fis-card:first-child { border-left: 0; padding-left: 0; }
+  .fis-card-title { font-size: 17px; font-weight: 800; color: #1c1c1c; margin: 0 0 10px; }
+  .fis-card-text { font-size: 15px; line-height: 1.55; color: #333; margin: 0; }
+  @media (max-width: 820px) {
+    .fis-grid { grid-template-columns: 1fr 1fr; gap: 22px 0; }
+    .fis-card:nth-child(odd) { border-left: 0; padding-left: 0; }
+  }
+  @media (max-width: 480px) {
+    .fis-grid { grid-template-columns: 1fr; }
+    .fis-card { border-left: 0; padding-left: 0; }
+  }
+
+  /* Nema "Tablica veličina" linka na FisioRest-u (identično kao bunion). */
+  .noriks-global-sizechart, .gck-size-link, .gck-size-link-wrap,
+  #open-size-chart, #open-size-chartCustom { display: none !important; }
+
+  /* Kratki opis: sakrij standardne točke (•), razmaci. */
+  .woocommerce-product-details__short-description ul { list-style: none; margin: 8px 0 26px; padding-left: 0; }
+  .woocommerce-product-details__short-description ul li { list-style: none; padding-left: 0; margin-left: 0; }
+  .woocommerce-product-details__short-description p:has(+ ul) { margin-top: 20px; margin-bottom: 4px; }
+/* NORIKS majica — dodatki za nove sekcije */
+.nk-media{position:relative;overflow:hidden;background:#eee}
+.nk-media>video,.nk-media>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.fis-cheaper .nk-media{aspect-ratio:1/1}
+.pv-wide,.nk-wide{aspect-ratio:16/10}
+.fis-hero{left:auto!important;margin-left:0!important;width:100%!important}
+
+/* ===== NORIKS – mobilna prilagoditev sekcij (telefon, do 767 px) =====
+   Velja za majico in boksarice (isti razredi). Dodaj na KONEC sekcije.css. */
+@media (max-width:767px){
+  /* 1) 4 razlike: kartice 2 x 2 namesto dolgega seznama */
+  .fis-science{padding:30px 0!important}
+  .fis-science .fis-title{font-size:22px!important;line-height:1.25!important;margin-bottom:16px!important}
+  .fis-science .fis-grid{grid-template-columns:1fr 1fr!important;gap:10px!important}
+  .fis-science .fis-card{background:#fff;border:0!important;border-radius:14px;padding:14px 12px!important}
+  .fis-science .fis-card-title{font-size:15px!important;line-height:1.25;margin:0 0 6px!important}
+  .fis-science .fis-card-text{font-size:13.5px!important;line-height:1.45!important}
+
+  /* 2) hero video: višji, besedilo spodaj */
+  .fis-hero{min-height:62vh!important;align-items:flex-end!important;padding-bottom:28px}
+  .fis-hero-overlay{background:linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,0) 60%)!important}
+  .fis-hero-title{font-size:clamp(24px,7.4vw,32px)!important}
+
+  /* 3) vrstice, ki se drsajo vstran (videi materiala, mnenja kupcev, 3 stvari) */
+  .fis-exp-cards,.fis-ugc-grid,.fis-thermo-grid{display:flex!important;gap:12px!important;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 -16px!important;padding:0 16px 4px!important;scroll-padding-left:16px}
+  .fis-exp-cards::-webkit-scrollbar,.fis-ugc-grid::-webkit-scrollbar,.fis-thermo-grid::-webkit-scrollbar{display:none}
+  .fis-exp-card{flex:0 0 64%!important;scroll-snap-align:start}
+  .fis-ugc-card{flex:0 0 76%!important;scroll-snap-align:start}
+  .fis-thermo-card{flex:0 0 80%!important;scroll-snap-align:start;aspect-ratio:4/5!important}
+  .fis-ugc-cap{font-size:14px!important;line-height:1.4}
+  .fis-exp-grid{gap:18px!important}
+
+  /* 4) barve: polne vrstice, zadnja na sredini */
+  .nk-col-grid{display:flex!important;flex-wrap:wrap;justify-content:center;gap:10px!important}
+  .nk-col{flex:0 0 calc((100% - 30px)/4);box-sizing:border-box;padding:6px!important}
+  .nk-col-grid:has(> .nk-col:nth-child(5):last-child) .nk-col,
+  .nk-col-grid:has(> .nk-col:nth-child(6):last-child) .nk-col{flex-basis:calc((100% - 20px)/3)}
+  .nk-col{min-width:0}
+  .nk-col span{font-size:clamp(10px,3.1vw,12px)!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+  .nk-col-note{gap:6px 14px!important;font-size:13.5px}
+
+  /* 5) primerjalna tabela: ozki stolpci, brez lomljenja besed */
+  .nk-cmp-row{grid-template-columns:minmax(0,1fr) 96px 84px!important}
+  .nk-cmp-row>div{padding:12px 8px!important;font-size:13.5px!important;line-height:1.35}
+  .nk-cmp-head>div{padding:14px 6px!important}
+  .nk-cmp-brand{font-size:12px!important;letter-spacing:0!important;line-height:1.2;word-break:keep-all;overflow-wrap:normal;hyphens:none}
+  .nk-cmp-price{font-size:15px!important;line-height:1.2}
+  .nk-cmp-note{font-size:11px!important;line-height:1.25}
+
+  /* 6) splošno: manj praznega prostora, berljivi naslovi */
+  .fis-h2{font-size:clamp(21px,6.4vw,26px)!important;line-height:1.2!important}
+  .fis-thermo,.fis-ugc,.fis-experts,.nk-colors,.fis-upg,.fis-eng,.fis-cheaper,.nk-cmp{padding-top:36px!important;padding-bottom:36px!important}
+
+  /* 7) sekcija ocen */
+  .nk-rev .nk-sum{gap:10px!important}
+  .nk-rev .nk-sum .nk-box{padding:16px!important}
+  .nk-rev .nk-feat{display:flex!important;gap:12px!important;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 -16px!important;padding:0 16px 4px!important;scroll-padding-left:16px}
+  .nk-rev .nk-feat::-webkit-scrollbar,.nk-rev .nk-chips::-webkit-scrollbar{display:none}
+  .nk-rev .nk-feat>.nk-box{flex:0 0 80%;scroll-snap-align:start}
+  .nk-rev .nk-chips{flex-wrap:nowrap!important;overflow-x:auto;scrollbar-width:none;margin-left:-16px!important;margin-right:-16px!important;padding:0 16px!important}
+  .nk-rev .nk-chip{flex:none;white-space:nowrap}
+  .nk-rev .nk-list .nk-card:nth-child(n+4){display:none}  /* na telefonu prve 3, ostale z gumbom »Več ocen« */
+}
+
+/* zelo ozki telefoni (320–374 px, npr. iPhone SE 1. gen., manjši Android) */
+@media (max-width:374px){
+  .fis-wrap{padding-left:12px!important;padding-right:12px!important}
+  .fis-science .fis-grid{gap:8px!important}
+  .fis-science .fis-card{padding:12px 10px!important}
+  .fis-science .fis-card-title{font-size:14px!important}
+  .fis-science .fis-card-text{font-size:12.5px!important}
+  .fis-exp-cards,.fis-ugc-grid,.fis-thermo-grid,.nk-rev .nk-feat{margin:0 -12px!important;padding:0 12px 4px!important;scroll-padding-left:12px}
+  .fis-exp-card{flex-basis:72%!important}.fis-ugc-card{flex-basis:82%!important}.fis-thermo-card{flex-basis:86%!important}.nk-rev .nk-feat>.nk-box{flex-basis:86%}
+  .nk-col-grid{gap:6px!important}.nk-col{flex-basis:calc((100% - 18px)/4);padding:4px!important}
+  .nk-col-grid:has(> .nk-col:nth-child(5):last-child) .nk-col,.nk-col-grid:has(> .nk-col:nth-child(6):last-child) .nk-col{flex-basis:calc((100% - 12px)/3)}
+  .nk-cmp-row{grid-template-columns:minmax(0,1fr) 86px 72px!important}
+  .nk-cmp-row>div{font-size:12.5px!important;padding:10px 6px!important}
+  .nk-cmp-price{font-size:13.5px!important}
+}
+/* veliki telefoni (430–767 px, npr. Pro Max, Galaxy Ultra, zložljivi): več kartic naenkrat */
+@media (min-width:430px) and (max-width:767px){
+  .fis-exp-card{flex-basis:46%!important}.fis-ugc-card{flex-basis:58%!important}.fis-thermo-card{flex-basis:64%!important}.nk-rev .nk-feat>.nk-box{flex-basis:62%}
+}
+@media (min-width:560px) and (max-width:767px){
+  .fis-exp-card{flex-basis:36%!important}.fis-ugc-card{flex-basis:40%!important}.fis-thermo-card{flex-basis:46%!important;aspect-ratio:3/4!important}.nk-rev .nk-feat>.nk-box{flex-basis:46%}
+  .fis-science .fis-grid{grid-template-columns:repeat(4,1fr)!important}
+  .nk-col{flex-basis:calc((100% - 60px)/7)!important}
 }
 </style>
 
