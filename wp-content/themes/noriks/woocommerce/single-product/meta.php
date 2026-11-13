@@ -960,6 +960,20 @@ Fără birocrație, fără stres – rezolvăm totul în câteva clicuri. </p>
         'fisiorest' => array( 'noriks-fisiorest.pdf', 'NORIKS NeckRelax — dispozitiv pentru gât' ),
         'bunion' => array( 'noriks-bunion-fix.pdf', 'NORIKS Bunion Fix — corector pentru monturi' ),
         'ortopas' => array( 'noriks-ortopas.pdf', 'Centură ortopedică NORIKS pentru spate' ),
+        'slim' => array( 'noriks-slim.pdf', 'NORIKS Slim — chiloți modelatori cu talie înaltă' ),
+        'red' => array( 'noriks-redrelief.pdf', 'NORIKS RedRelief — terapie cu lumină roșie pentru încheietură' ),
+        'pal' => array( 'noriks-pal.pdf', 'NORIKS Pal — baston cu al doilea mâner' ),
+        'cloath' => array( 'noriks-polar-cloth.pdf', 'Polar NORIKS Cloth XXL — lavetă de curățare doar cu apă' ),
+        'slabproof' => array( 'noriks-slabproof.pdf', 'NORIKS SlabProof — șosete de lucru cu pernuță' ),
+        'controlpro' => array( 'noriks-controlpro.pdf', 'NORIKS ControlPro — aparat pentru mușchii planșeului pelvin' ),
+        'tradesman' => array( 'noriks-tradesman.pdf', 'NORIKS Tradesman — șosete de lucru cu pernuță și susținere a bolții plantare' ),
+        'bowl' => array( 'noriks-bowl.pdf', 'NORIKS Bowl — castron ortopedic pentru câini cu înclinare de 15°' ),
+        'cloud' => array( 'noriks-cloud.pdf', 'NORIKS Cloud — pernă ortopedică între genunchi' ),
+        'kneeheat' => array( 'noriks-kneeheat.pdf', 'NORIKS KneeHeat — încălzire, compresie și masaj pentru genunchi' ),
+        'mamafit' => array( 'noriks-mamafit.pdf', 'NORIKS MamaFit — chiloți compresivi postnatali 360°' ),
+        'snug' => array( 'noriks-snug.pdf', 'NORIKS Snug — pernă pentru tot corpul în formă de S' ),
+        'hyd' => array( 'noriks-hyd.pdf', 'NORIKS HYD — sticlă pentru apă cu hidrogen, cu electroliză PEM' ),
+        'winecooler' => array( 'noriks-winecooler.pdf', 'NORIKS WineCooler — răcitor de vin cu turnător' ),
     );
     $noriks_manual = null;
     if ( function_exists('noriks_is_type') ) {

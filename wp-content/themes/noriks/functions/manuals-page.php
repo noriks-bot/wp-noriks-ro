@@ -75,6 +75,90 @@ function noriks_manuals_list() {
             'title' => 'NORIKS KidsNest — pernă ortopedică pentru copii',
             'sub'   => 'Trei mărimi care cresc odată cu copilul și susțin poziția corectă a capului.',
         ),
+        array(
+            'file'  => 'noriks-slim.pdf',
+            'sku'   => 'NORIKS-SLIM',
+            'title' => 'NORIKS Slim — chiloți modelatori cu talie înaltă',
+            'sub'   => 'Bandă încrucișată 360°, talie înaltă și tricot fără cusături pentru purtare zilnică.',
+        ),
+        array(
+            'file'  => 'noriks-redrelief.pdf',
+            'sku'   => 'NORIKS-RED',
+            'title' => 'NORIKS RedRelief — terapie cu lumină roșie pentru încheietură',
+            'sub'   => 'Lungime de undă dublă, 660 nm și 850 nm, 48 de LED-uri duble, ședință de 15 minute.',
+        ),
+        array(
+            'file'  => 'noriks-pal.pdf',
+            'sku'   => 'NORIKS-PAL',
+            'title' => 'NORIKS Pal — baston cu al doilea mâner',
+            'sub'   => 'Al doilea mâner pentru ridicare, patru picioare, lanternă și alarmă. Pliabil și reglabil pe înălțime.',
+        ),
+        array(
+            'file'  => 'noriks-polar-cloth.pdf',
+            'sku'   => 'NORIKS-CLOATH',
+            'title' => 'Polar NORIKS Cloth XXL — lavetă de curățare doar cu apă',
+            'sub'   => 'Format 60 × 40 cm, construcție pe două fețe, absoarbe până la 600 ml de apă. Fără spray-uri și fără substanțe chimice.',
+        ),
+        array(
+            'file'  => 'noriks-slabproof.pdf',
+            'sku'   => 'NORIKS-SLABPROOF',
+            'title' => 'NORIKS SlabProof — șosete de lucru cu pernuță',
+            'sub'   => 'Croială joasă sub gleznă, pernuțe pe zone sub călcâi și sub partea din față a tălpii.',
+        ),
+        array(
+            'file'  => 'noriks-controlpro.pdf',
+            'sku'   => 'NORIKS-CONTROLPRO',
+            'title' => 'NORIKS ControlPro — aparat pentru mușchii planșeului pelvin',
+            'sub'   => 'Exercițiu cu rezistență între genunchi: trei serii a câte zece strângeri pe zi, fără inserție și fără aplicație.',
+        ),
+        array(
+            'file'  => 'noriks-tradesman.pdf',
+            'sku'   => 'NORIKS-SLABPROOF-2',
+            'title' => 'NORIKS Tradesman — șosete de lucru cu pernuță și susținere a bolții plantare',
+            'sub'   => 'Bambus, pernuțe pe zone, bandă sub bolta plantară și manșetă dublă pentru ture lungi în bocanci de lucru.',
+        ),
+        array(
+            'file'  => 'noriks-bowl.pdf',
+            'sku'   => 'NORIKS-BOWL',
+            'title' => 'NORIKS Bowl — castron ortopedic pentru câini cu înclinare de 15°',
+            'sub'   => 'Ridicat la 11 cm și înclinat la 15° — câinele mănâncă într-o poziție mai naturală, fără să-și îndoaie gâtul până la podea.',
+        ),
+        array(
+            'file'  => 'noriks-cloud.pdf',
+            'sku'   => 'NORIKS-CLOUD',
+            'title' => 'NORIKS Cloud — pernă ortopedică între genunchi',
+            'sub'   => 'Pentru somnul pe o parte: menține genunchii și șoldurile în linie, cu o bandă reglabilă care o ține pe loc toată noaptea.',
+        ),
+        array(
+            'file'  => 'noriks-kneeheat.pdf',
+            'sku'   => 'NORIKS-KNEEHEAT',
+            'title' => 'NORIKS KneeHeat — încălzire, compresie și masaj pentru genunchi',
+            'sub'   => 'Trei terapii într-o singură ședință: căldură până la 42 °C, compresie cu aer și vibrații de 60 Hz. Ședința durează 12 minute.',
+        ),
+        array(
+            'file'  => 'noriks-mamafit.pdf',
+            'sku'   => 'NORIKS-SLIM-2',
+            'title' => 'NORIKS MamaFit — chiloți compresivi postnatali 360°',
+            'sub'   => 'Talie înaltă și compresie încrucișată 360° — susținere a abdomenului în față, lateral și în spate.',
+        ),
+        array(
+            'file'  => 'noriks-snug.pdf',
+            'sku'   => 'NORIKS-SNUG',
+            'title' => 'NORIKS Snug — pernă pentru tot corpul în formă de S',
+            'sub'   => 'Susține umerii, șoldurile și genunchii în același timp. Dimensiuni 105 × 30 cm, husă răcoritoare.',
+        ),
+        array(
+            'file'  => 'noriks-hyd.pdf',
+            'sku'   => 'NORIKS-HYD',
+            'title' => 'NORIKS HYD — sticlă pentru apă cu hidrogen, cu electroliză PEM',
+            'sub'   => 'Transformă apa obișnuită în apă cu hidrogen. Ciclu de 3 sau 10 minute, filtru permanent, sticlă și oțel inoxidabil.',
+        ),
+        array(
+            'file'  => 'noriks-winecooler.pdf',
+            'sku'   => 'NORIKS-WINECOOLER',
+            'title' => 'NORIKS WineCooler — răcitor de vin cu turnător',
+            'sub'   => 'Baston din oțel inoxidabil care răcește sticla din interior și toarnă fără să picure.',
+        ),
     );
 }
 
