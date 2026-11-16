@@ -1084,3 +1084,4 @@ add_filter('woocommerce_attribute_label', function($label, $name, $product) {
 }, 10, 3);
 
 require_once get_template_directory() . '/functions/manuals-page.php';
+include(get_template_directory() . '/functions/black-friday.php'); // Black Friday pristajalna stran /black-friday/
