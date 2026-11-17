@@ -13,55 +13,21 @@
  */
 defined( 'ABSPATH' ) || exit;
 
-// ─── Upsell product config — detect what to offer ───
-// Check if order has ONLY boxeri (no tricouri, no set)
-$has_only_boxeri = true;
-$has_boxeri = false;
-foreach ( $order->get_items() as $item ) {
-    $name = strtolower( $item->get_name() );
-    $product = $item->get_product();
-    $sku = $product ? strtolower( $product->get_sku() ) : '';
-    // Check if item is tricou
-    // Categories are the source of truth
-    $cats = wp_get_post_terms( $item->get_product_id(), 'product_cat', array('fields' => 'slugs') );
-    $cat_str = is_array($cats) ? strtolower(implode(' ', $cats)) : '';
-    // Majica: category has "majic" OR name has "majic"
-    $is_tricou = ( strpos($cat_str, 'tricou') !== false || strpos($name, 'tricou') !== false );
-    // Boksarice: category has "boxer/bokser/orto" OR SKU has "box" OR name has "bokser/airflow"
-    $is_boks = ( strpos($cat_str, 'boxer') !== false || strpos($cat_str, 'boxer') !== false || strpos($cat_str, 'orto') !== false || strpos($sku, 'box') !== false || strpos($name, 'boxer') !== false || strpos($name, 'airflow') !== false );
-    // Komplet
-    $is_set = ( strpos($name, 'set') !== false || strpos($cat_str, 'set') !== false );
-    if ( $is_boks ) $has_boxeri = true;
-    if ( $is_tricou || $is_set ) $has_only_boxeri = false;
-}
-if ( !$has_boxeri ) $has_only_boxeri = false;
+// ─── Korak 1: kaj ponudimo ───
+// Vedno CRNA MAJICA (17. 11. 2026). Prej: samo kupci bokseric so dobili majice,
+// vsi ostali sive bokserice - bokseric v ponudbi po nakupu ni vec.
+$upsell_is_tricouri = true;
 
-// ONLY boxeri in order → upsell MAJICE, else → upsell BOKSERICE
-$upsell_is_tricouri = $has_only_boxeri;
-
-if ( $upsell_is_tricouri ) {
-    $upsell_product_id = 250; // Crna tricou (variable)
-    $upsell_name       = 'Tricouri Negre';
-    $upsell_qty_prices = array( 1 => 65.99, 3 => 149.99, 6 => 199.99 );
-    $upsell_qty_names  = array( 1 => '1x Tricou Negru', 3 => '3x Tricouri Negre', 6 => '6x Tricouri Negre' );
-    $upsell_qty_images = array(
-        1 => 'https://noriks.com/ro/wp-content/uploads/2025/09/black-1.jpg',
-        3 => 'https://noriks.com/ro/wp-content/uploads/2025/09/black-3x.jpg',
-        6 => 'https://noriks.com/ro/wp-content/uploads/2026/01/15xcrnatricou.png',
-    );
-    $upsell_title_text = 'Adaugă tricouri acum – 50% reducere';
-} else {
-    $upsell_product_id = 2829; // Boxeri Gri (siva verzija, ista struktura kot crna)
-    $upsell_name       = 'Boxeri Gri';
-    $upsell_qty_prices = array( 1 => 24.99, 3 => 74.97, 5 => 124.96 );
-    $upsell_qty_names  = array( 1 => '1x Boxeri Gri', 3 => '3x Boxeri Gri', 5 => '5x Boxeri Gri' );
-    $upsell_qty_images = array(
-        1 => get_template_directory_uri() . '/img/upsell/siva-1x-v2.webp',
-        3 => get_template_directory_uri() . '/img/upsell/siva-3x-v2.png',
-        5 => get_template_directory_uri() . '/img/upsell/siva-5x-v2.png',
-    );
-    $upsell_title_text = 'Adaugă boxeri acum – 50% reducere';
-}
+$upsell_product_id = 250; // Crna tricou (variable)
+$upsell_name       = 'Tricouri Negre';
+$upsell_qty_prices = array( 1 => 39.99, 3 => 99.99, 6 => 174.99 );
+$upsell_qty_names  = array( 1 => '1x Tricou Negru', 3 => '3x Tricouri Negre', 6 => '6x Tricouri Negre' );
+$upsell_qty_images = array(
+    1 => 'https://noriks.com/ro/wp-content/uploads/2025/09/black-1.jpg',
+    3 => 'https://noriks.com/ro/wp-content/uploads/2025/09/black-3x.jpg',
+    6 => 'https://noriks.com/hr/wp-content/uploads/2026/01/15xcrnamajica.png',
+);
+$upsell_title_text = 'Adaugă tricouri acum – 50% reducere';
 $upsell_product    = wc_get_product( $upsell_product_id );
 $upsell_image      = $upsell_qty_images[1];
 // Get unit price from first variation (variable products have empty parent price)
