@@ -1965,7 +1965,28 @@ $winecooler_faq = array(
     'answer'    => 'Dreptul de retur în termen de 30 de zile. Dacă nu sunteți complet mulțumit de achiziție, contactați-ne în termen de 30 de zile de la primirea comenzii și vă ajutăm cu plăcere cu returnarea produsului sau a banilor.'),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_winecooler, $winecooler_faq, $is_slim, $slim_faq, $is_tradesman, $tradesman_faq, $is_slabproof, $slabproof_faq, $is_bowl, $bowl_faq, $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
+// NORIKS MamaBelt: pogosta vprasanja (kot HR auto_reviews/FAQ_HR_mamabelt.php).
+$is_mamabelt = ( function_exists('noriks_is_type') && noriks_is_type('mamabelt') );
+$mamabelt_faq = array(
+  array('questioon' => 'Cum se montează adaptorul?',
+    'answer'    => 'În patru pași: treceți cureaua adaptorului printre șezut și spătar, conduceți-o pe sub șezut (fără să fie răsucită), treceți capătul prin deschiderea de sus și cea de jos a cataramei și trageți în jos, pentru ca adaptorul să se fixeze bine.'),
+  array('questioon' => 'Cum se prinde apoi centura?',
+    'answer'    => 'Ca de obicei – doar că partea de jos a centurii de siguranță se trece prin cârligul adaptorului înainte de a o prinde. Astfel, partea de jos a centurii rămâne jos, peste coapse.'),
+  array('questioon' => 'Se va slăbi pe scaun?',
+    'answer'    => 'Cureaua adaptorului are lungime reglabilă și, după strângere, ține ferm. Stratul interior al adaptorului este din oțel, iar cel exterior din cauciuc termoplastic.'),
+  array('questioon' => 'Se potrivește mașinii mele?',
+    'answer'    => 'Adaptorul se montează pe scaun, iar cureaua se reglează pe lungime, așa că se potrivește majorității scaunelor auto standard.'),
+  array('questioon' => 'Îl pot folosi și după sarcină?',
+    'answer'    => 'Da. Deși a fost conceput pentru sarcină, se potrivește oricui îl deranjează partea de jos a centurii peste burtă.'),
+  array('questioon' => 'Ce culori sunt disponibile?',
+    'answer'    => 'Negru și roz.'),
+  array('questioon' => 'Există reducere pentru mai multe bucăți?',
+    'answer'    => 'Da – la cumpărarea a 2 sau 3 bucăți, prețul pe bucată este mai mic. Ofertele le găsiți deasupra butonului de comandă.'),
+  array('questioon' => 'Ce se întâmplă dacă nu mi se potrivește?',
+    'answer'    => 'Aveți 30 de zile pentru returnarea banilor. Livrarea este gratuită la comenzile de peste 350 lei, iar plata se face ramburs, la primirea coletului.'),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_mamabelt, $mamabelt_faq, $is_winecooler, $winecooler_faq, $is_slim, $slim_faq, $is_tradesman, $tradesman_faq, $is_slabproof, $slabproof_faq, $is_bowl, $bowl_faq, $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_page, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq, $is_jastuk_faq, $jastuk_faq, $is_kneefix_faq, $kneefix_faq ) {
   // Odporno na naslov sklopa: sprejme romunsko 'produs' in podedovano hrvasko 'proizvod'.
   $is_info = ( stripos( (string) $title, 'produs' ) !== false ) || ( stripos( (string) $title, 'proizvod' ) !== false );
   if ( $is_snug && $is_info ) { return $snug_faq; }
@@ -1974,6 +1995,7 @@ $faq_pick = function( $title, $list ) use ( $is_winecooler, $winecooler_faq, $is
   if ( $is_slim && $is_info ) { return $slim_faq; }
   if ( $is_slabproof && $is_info ) { return $slabproof_faq; }
   if ( $is_bowl && $is_info ) { return $bowl_faq; }
+  if ( $is_mamabelt && $is_info ) { return $mamabelt_faq; }
   if ( $is_winecooler && $is_info ) { return $winecooler_faq; }
   if ( $is_pal && $is_info ) { return $pal_faq; }
   if ( $is_red && $is_info ) { return $red_faq; }
