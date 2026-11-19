@@ -15,7 +15,7 @@ $kn = get_template_directory_uri() . '/img/kidsnest/';
 <!-- ============ 1) Trust marquee (banda albastra, deruleaza) ============ -->
 <div class="kn-marquee" aria-hidden="true">
   <div class="kn-marquee-track">
-    <?php $kn_ticker = array('RECOMANDAT DE PEDIATRI','SPUMĂ CU MEMORIE OEKO-TEX®','STRUCTURĂ CU 3 ZONE','90 DE NOPȚI DE PROBĂ','HIPOALERGENIC','TRICOT RESPIRABIL');
+    <?php $kn_ticker = array('RECOMANDAT DE PEDIATRI','SPUMĂ CU MEMORIE','STRUCTURĂ CU 3 ZONE','90 DE NOPȚI DE PROBĂ','HIPOALERGENIC','TRICOT RESPIRABIL');
     for ( $r = 0; $r < 2; $r++ ) { foreach ( $kn_ticker as $t ) { echo '<span class="kn-tick">'.esc_html($t).'</span><span class="kn-dot">•</span>'; } } ?>
   </div>
 </div>

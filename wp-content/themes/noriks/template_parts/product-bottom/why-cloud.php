@@ -213,17 +213,15 @@ $cd_cases = array(
 
 <!-- ============ 8) Standardi ============ -->
 <section class="ncd-sec ncd-dark">
-  <div class="ncd-wrap ncd-row2">
+  <div class="ncd-wrap">
     <div class="ncd-copy">
       <h2 class="ncd-h2">Fabricată după standarde stricte</h2>
       <p>Materialele sunt testate pentru substanțe nocive, iar spuma este certificată. Designul respectă standardele elvețiene de calitate.</p>
       <ul class="ncd-check">
-        <li><strong>OEKO-TEX® STANDARD 100</strong> — fără substanțe nocive</li>
         <li><strong>CertiPUR-EU</strong> — spumă cu memorie certificată</li>
         <li><strong>Proiectat în Elveția</strong>, fabricat după standarde europene</li>
       </ul>
     </div>
-    <div class="ncd-media"><?php echo $cd_img('cld-certifikati.webp','OEKO-TEX i CertiPUR-EU certifikati'); ?></div>
   </div>
 </section>
 

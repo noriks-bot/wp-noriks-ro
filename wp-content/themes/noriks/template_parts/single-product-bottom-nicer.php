@@ -1459,7 +1459,7 @@ $kompmajice_faq = array(
 
 // NORIKS LEAK BOXERS (boxeri pentru incontinenta) — FAQ despre produs (traducere, NORIKS).
 $leakboxers_faq = array(
-  array( 'questioon' => 'De ce peste 123.000 de bărbați au ales NORIKS?', 'answer' => 'NORIKS sunt cei mai absorbanți boxeri lavabili pentru scurgerile urinare masculine: rețin până la 300 ml, sunt certificați Oeko-Tex® și fără substanțe nocive, lavabili și reutilizabili (o alternativă ecologică la absorbantele de unică folosință), concepuți pentru confort și încredere pe toată ziua. Nu mai puțin de 87 % dintre clienți comandă din nou după prima achiziție.' ),
+  array( 'questioon' => 'De ce peste 123.000 de bărbați au ales NORIKS?', 'answer' => 'NORIKS sunt cei mai absorbanți boxeri lavabili pentru scurgerile urinare masculine: rețin până la 300 ml, sunt fără substanțe nocive, lavabili și reutilizabili (o alternativă ecologică la absorbantele de unică folosință), concepuți pentru confort și încredere pe toată ziua. Nu mai puțin de 87 % dintre clienți comandă din nou după prima achiziție.' ),
   array( 'questioon' => 'Cât absorb?', 'answer' => 'Până la 300 ml — de aproape 3 ori mai mult decât majoritatea produselor de pe piață. Datorită nucleului PureDry™ cu 7 straturi, lichidul este absorbit instantaneu și blocat adânc în interior, astfel încât pielea rămâne uscată, iar stratul exterior este hidrofob.' ),
   array( 'questioon' => 'Se văd pe sub haine?', 'answer' => 'Nu. Boxerii NORIKS sunt subțiri, discreți și flexibili — arată și se simt ca lenjeria obișnuită, fără volum inutil și fără senzația de „scutec”.' ),
   array( 'questioon' => 'Cum se spală?', 'answer' => 'Spală-i la 30–40 °C, fără balsam și fără înălbitor, și usucă-i la aer. Își păstrează puterea de absorbție sute de spălări.' ),
@@ -1502,7 +1502,7 @@ $kneefix_faq = array(
 $kidsnest_faq = array(
   array( 'questioon' => 'Cât de repede voi vedea că respirația pe gură încetează?', 'answer' => 'Majoritatea părinților observă o respirație mai liniștită și mai puține treziri cu gura deschisă în primele 5–7 nopți. Până în noaptea a 14-a, la majoritatea copiilor sforăitul se calmează, iar buzele rămân închise. Diferența completă — o poziție vizibil mai bună și un somn mai liniștit — este descrisă de părinți cel mai adesea în jurul zilelor 21–30. Folosiți perna în fiecare noapte.' ),
   array( 'questioon' => 'Pentru ce vârstă este destinată KidsNest?', 'answer' => 'KidsNest vine în trei mărimi: 1–3, 3–9 și 9–14 ani. Cea mai importantă fereastră este între 3 și 9 ani, când cerul gurii și maxilarul se dezvoltă cel mai intens — dar fiecare vârstă are mărimea și beneficiul ei.' ),
-  array( 'questioon' => 'Este sigură? Ce se află înăuntru?', 'answer' => 'KidsNest este realizată din spumă cu memorie hipoalergenică, certificată OEKO-TEX® — fără formaldehidă, metale grele sau BPA. Este rezistentă la acarieni și respirabilă, iar husa se scoate și se spală la mașină.' ),
+  array( 'questioon' => 'Este sigură? Ce se află înăuntru?', 'answer' => 'KidsNest este realizată din spumă cu memorie hipoalergenică — fără formaldehidă, metale grele sau BPA. Este rezistentă la acarieni și respirabilă, iar husa se scoate și se spală la mașină.' ),
   array( 'questioon' => 'Copilul meu chiar o va folosi?', 'answer' => 'Da. Forma ergonomică se simte ca un sprijin, nu ca ceva ciudat — majoritatea copiilor se obișnuiesc în 1–2 nopți. Părinții ne spun adesea că, după prima săptămână, copiii nu mai vor să doarmă fără ea. Structura cu 3 zone primește capul în mod natural — nu există un „mod corect”, nu există luptă înainte de culcare.' ),
   array( 'questioon' => 'Funcționează dacă copilul meu respiră deja pe gură?', 'answer' => 'Da — exact pentru astfel de copii a fost concepută. Structura cu 3 zone ajută la prevenirea înclinării capului pe spate, din cauza căreia gura se deschide în somn. La majoritatea copiilor, în 7–14 nopți buzele se închid natural și respirația pe nas revine.' ),
   array( 'questioon' => 'Ce se întâmplă dacă nu îl ajută pe copilul meu?', 'answer' => 'Lăsați copilul să doarmă pe KidsNest 30 de nopți. Dacă nu vedeți nicio diferență — mai puțină respirație pe gură, nopți mai liniștite, somn mai odihnitor — scrieți-ne și vă returnăm banii. Fără întrebări și fără litere mici.' ),
@@ -1513,7 +1513,7 @@ $jastuk_faq = array(
   array( 'questioon' => 'Cum ameliorează NORIKS ErgoSit durerea la statul pe scaun?', 'answer' => 'ErgoSit are un decupaj pentru coccis care elimină presiunea directă asupra osului coccigian și a nervului sciatic, în timp ce forma anatomică din spumă cu memorie de înaltă densitate distribuie greutatea uniform pe șolduri și coapse. Astfel se descarcă punctele sensibile și se susține o postură sănătoasă și dreaptă.' ),
   array( 'questioon' => 'Unde pot folosi perna?', 'answer' => 'Oriunde stai jos — în mașină, pe scaunul de birou, pe scaunul de la masă, în scaunul cu rotile sau acasă. Baza stabilă, antiderapantă, o ține pe loc, astfel confortul merge cu tine toată ziua.' ),
   array( 'questioon' => 'Se turtește spuma în timp?', 'answer' => 'Nu. ErgoSit folosește spumă cu memorie de înaltă densitate, care își păstrează forma și fermitatea chiar și după o utilizare zilnică îndelungată, spre deosebire de pernele ieftine, care se turtesc rapid.' ),
-  array( 'questioon' => 'Husa se poate spăla?', 'answer' => 'Da. Husa se scoate și se poate spăla la mașină, astfel perna rămâne proaspătă și curată. Materialul este respirabil, hipoalergenic și certificat OEKO-TEX®.' ),
+  array( 'questioon' => 'Husa se poate spăla?', 'answer' => 'Da. Husa se scoate și se poate spăla la mașină, astfel perna rămâne proaspătă și curată. Materialul este respirabil și hipoalergenic.' ),
   array( 'questioon' => 'Se potrivește scaunului meu?', 'answer' => 'ErgoSit are o formă universală și se potrivește majorității scaunelor auto, de birou și de bucătărie, precum și scaunelor cu rotile. Nu există mărimi — un singur model se potrivește tuturor.' ),
   array( 'questioon' => 'În cât timp simt diferența?', 'answer' => 'Majoritatea utilizatorilor simt mai puțină presiune pe coccis și un stat pe scaun mai confortabil încă din prima zi. Pentru o postură mai bună și mai puțină durere de spate, efectul se consolidează prin utilizare regulată.' ),
   array( 'questioon' => 'Există o garanție de returnare a banilor?', 'answer' => 'Da, fiecare NORIKS ErgoSit vine cu o garanție de confort de 30 de zile. Dacă nu simți mai puțină durere și mai mult confort, contactează-ne și rezolvăm.' ),
@@ -1631,7 +1631,7 @@ $cloud_faq = array(
   ),
   array(
     'questioon' => 'Din ce este făcută perna?',
-    'answer'    => 'Miezul este din spumă cu memorie de calitate medicală, cu perforații care asigură circulația aerului. Husa este din material respirabil, se scoate și se spală. Materialele sunt certificate OEKO-TEX® STANDARD 100 și CertiPUR-EU.',
+    'answer'    => 'Miezul este din spumă cu memorie de calitate medicală, cu perforații care asigură circulația aerului. Husa este din material respirabil, se scoate și se spală. Spuma este certificată CertiPUR-EU.',
   ),
   array(
     'questioon' => 'Este prea tare sau prea moale?',
