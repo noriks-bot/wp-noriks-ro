@@ -94,10 +94,10 @@ function noriks_manuals_list() {
             'sub'   => 'Al doilea mâner pentru ridicare, patru picioare, lanternă și alarmă. Pliabil și reglabil pe înălțime.',
         ),
         array(
-            'file'  => 'noriks-polar-cloth.pdf',
+            'file'  => 'noriks-duodry.pdf',
             'sku'   => 'NORIKS-CLOATH',
-            'title' => 'Polar NORIKS Cloth XXL — lavetă de curățare doar cu apă',
-            'sub'   => 'Format 60 × 40 cm, construcție pe două fețe, absoarbe până la 600 ml de apă. Fără spray-uri și fără substanțe chimice.',
+            'title' => 'NORIKS DuoDry — lavetă din microfibră cu două fețe',
+            'sub'   => 'Format 60 × 40 cm pentru baie și bucătărie. O față adună apa și murdăria, cealaltă lustruiește.',
         ),
         array(
             'file'  => 'noriks-slabproof.pdf',

@@ -1,5 +1,5 @@
 <?php
-// Bazen mnenj za Polar NORIKS Cloth XXL (orto-cloath).
+// Bazen mnenj za NORIKS DuoDry (orto-cloath).
 $auto_reviews_en = array(
     array("name" => "Elena P.", "text" => "Șterg cabina de duș o dată la două zile și în sfârșit nu mai am pete de apă. Fără niciun spray, doar apă și laveta."),
     array("name" => "Andrei M.", "text" => "Am luat pachetul de șase bucăți. Una stă în baie, una în bucătărie, una în mașină. Pentru sticlă e cea mai bună."),
@@ -15,6 +15,6 @@ $auto_reviews_en = array(
     array("name" => "Bogdan N.", "text" => "Nu lasă pete nici pe bateriile negre, iar asta era până acum cea mai mare problemă."),
     array("name" => "Adriana C.", "text" => "Spăl geamurile doar cu apă și cu laveta asta. Prima dată fără soluție și fără urme."),
     array("name" => "Florin M.", "text" => "E groasă și grea, se simte că nu e microfibră ieftină. După zece spălări e la fel."),
-    array("name" => "Raluca D.", "text" => "Am luat pachetul 3+3 și chiar merită. Una e mereu la spălat, cealaltă în folosință."),
+    array("name" => "Raluca D.", "text" => "Am luat pachetul de 6 lavete și chiar merită. Una e mereu la spălat, cealaltă în folosință."),
     array("name" => "Vlad P.", "text" => "Blatul din bucătărie îl șterg din câteva mișcări și nu rămân urme de apă. Pur și simplu funcționează."),
 );

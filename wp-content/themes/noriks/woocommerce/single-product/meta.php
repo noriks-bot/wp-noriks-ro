@@ -967,7 +967,7 @@ Fără birocrație, fără stres – rezolvăm totul în câteva clicuri. </p>
         'slim' => array( 'noriks-slim.pdf', 'NORIKS Slim — chiloți modelatori cu talie înaltă' ),
         'red' => array( 'noriks-redrelief.pdf', 'NORIKS RedRelief — terapie cu lumină roșie pentru încheietură' ),
         'pal' => array( 'noriks-pal.pdf', 'NORIKS Pal — baston cu al doilea mâner' ),
-        'cloath' => array( 'noriks-polar-cloth.pdf', 'Polar NORIKS Cloth XXL — lavetă de curățare doar cu apă' ),
+        'cloath' => array( 'noriks-duodry.pdf', 'NORIKS DuoDry — lavetă din microfibră cu două fețe' ),
         'slabproof' => array( 'noriks-slabproof.pdf', 'NORIKS SlabProof — șosete de lucru cu pernuță' ),
         'controlpro' => array( 'noriks-controlpro.pdf', 'NORIKS ControlPro — aparat pentru mușchii planșeului pelvin' ),
         'tradesman' => array( 'noriks-tradesman.pdf', 'NORIKS Tradesman — șosete de lucru cu pernuță și susținere a bolții plantare' ),

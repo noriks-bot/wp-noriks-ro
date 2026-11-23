@@ -1957,13 +1957,6 @@ function gck_render_bundle_selector() {
 
                 <br/>
 
-                <!--
-                <div class="bundle-total-line">
-                    <span style="font-weight:normal;">Total:</span>
-                    <span class="line-total"><?php echo number_format( (float) $data['total'], 2 ); ?> lei</span>
-                </div>
-
--->
 
 <div class="bundle-total-line">
     <span style="font-weight:normal;">Total:</span>

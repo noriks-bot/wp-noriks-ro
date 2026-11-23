@@ -491,7 +491,7 @@ if (  has_term( array( 'majice', 'orto-majice', 'orto-majica-darila' ), 'product
   if ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ) { $rv_fallback_title = 'NORIKS ControlPro antrenor planșeu pelvin'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) { $rv_fallback_title = 'NORIKS HYD'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('cloud') ) { $rv_fallback_title = 'NORIKS Cloud'; }
-  if ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) { $rv_fallback_title = 'Polar NORIKS Cloth XXL'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) { $rv_fallback_title = 'NORIKS DuoDry'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) { $rv_fallback_title = 'NORIKS Snug pernă pentru tot corpul'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) { $rv_fallback_title = 'NORIKS FIT Woman tricou modelator'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('pal') ) { $rv_fallback_title = 'NORIKS Pal baston de mers'; }
@@ -1611,7 +1611,7 @@ $cloath_faq = array(
   ),
   array(
     'questioon' => 'Este potrivită ca și cadou?',
-    'answer'    => 'Da — pachetele 3+3 și 8+4 sunt printre cele mai frecvente cadouri de casă nouă și de sărbători. Laveta vine împăturită frumos, gata de dăruit.',
+    'answer'    => 'Da — pachetele de 4 și 6 lavete sunt un cadou frecvent de casă nouă și de sărbători. Lavetele vin împăturite frumos, gata de dăruit.',
   ),
 );
 
