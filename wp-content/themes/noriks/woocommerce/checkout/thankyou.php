@@ -42,7 +42,7 @@ if ( $s1_cards ) {
     $s1_sizes = (array) $s1_first['sizes'];
     // izdelki z izbiro barve (npr. Slim): kupec izbere barvo in velikost
     $s1_colors = ! empty( $s1_first['pick_color'] ) ? (array) $s1_first['colors'] : array();
-    $upsell_title_text = 'Adaugă încă o bucată – preț special';
+    $upsell_title_text = ! empty( $s1_first['bf_test'] ) ? 'Adaugă un tricou compresiv FIT – preț special' : 'Adaugă încă o bucată – preț special';
 } else {
     $upsell_product_id = 250; // Crna majica (variable)
     $upsell_name       = 'Tricouri Negre';
