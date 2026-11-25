@@ -610,12 +610,15 @@ function noriks_bf_kartica( $p, $fiksna = 0, $barva = '' ) {
         $ena = null;
         foreach ( gck_get_bundle_offers( $id ) as $po ) { if ( (int) $po['qty'] === 1 ) { $ena = $po; break; } }
         if ( ! $ena ) { return null; }
+        // redna cena za kos = redna cena izdelka (RO: paket "1 buc" ima v podatkih 49,99 namesto 269,99 lei — 25. 11. 2026)
+        $red1 = (float) $p->get_regular_price();
+        if ( $red1 <= 0 ) { $red1 = (float) $ena['regular']; }
         $k['ponudbe'] = array();
         for ( $n = 1; $n <= NORIKS_BF_KOMBO_NAJVEC; $n++ ) {
-            $k['ponudbe'][] = array( 'id' => (string) $ena['id'], 'kos' => $n, 'paket' => '', 'red' => (float) $ena['regular'] * $n, 'akc' => round( $fiksna * $n, wc_get_price_decimals() ) );
+            $k['ponudbe'][] = array( 'id' => (string) $ena['id'], 'kos' => $n, 'paket' => '', 'red' => $red1 * $n, 'akc' => round( $fiksna * $n, wc_get_price_decimals() ) );
         }
         $k['offer'] = (string) $ena['id']; $k['kos'] = 1;
-        $red = (float) $ena['regular']; $akc = round( $fiksna, wc_get_price_decimals() );
+        $red = $red1; $akc = round( $fiksna, wc_get_price_decimals() );
     }
     // ena sama barva (stran kombo): barvni atribut zozimo na to barvo — izbirnik se skrije, barva se poslje sama
     if ( $barva !== '' ) {
